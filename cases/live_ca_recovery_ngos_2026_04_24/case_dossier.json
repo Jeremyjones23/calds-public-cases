@@ -1,0 +1,10 @@
+{
+  "case_id": "live_ca_recovery_ngos_2026_04_24",
+  "compiler_role": "Case Compiler",
+  "created_at": "2026-04-27T20:32:02+00:00",
+  "dossier_id": "dossier_50d38ab2d9386382",
+  "markdown_path": "case_dossier.md",
+  "publication_note": "Public-safe dossier metadata. Internal local artifact paths are intentionally omitted.",
+  "sentinel_decision": "DOWNGRADE_FOR_REVIEW",
+  "source_ledger_path": "source_ledger.json"
+}
