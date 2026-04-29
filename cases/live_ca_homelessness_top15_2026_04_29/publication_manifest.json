@@ -1,0 +1,26 @@
+{
+  "case_id": "live_ca_homelessness_top15_2026_04_29",
+  "files": {
+    "case_dossier_json": "case_dossier.json",
+    "case_dossier_markdown": "case_dossier.md",
+    "index_html": "index.html",
+    "source_ledger_json": "source_ledger.json"
+  },
+  "generated_at": "2026-04-29T19:43:32+00:00",
+  "human_review_required": true,
+  "publication_id": "publication_2443fc501d70c940",
+  "safety": {
+    "checked_files": [
+      "case_dossier.md",
+      "index.html",
+      "source_ledger.json"
+    ],
+    "errors": [],
+    "evidence_refs_checked": 50,
+    "passed": true,
+    "source_ledger_entries": 50,
+    "warnings": []
+  },
+  "sentinel_decision": "DOWNGRADE_FOR_REVIEW",
+  "source_run_label": "live_ca_homelessness_top15_2026_04_29"
+}
