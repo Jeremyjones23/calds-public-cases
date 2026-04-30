@@ -6,10 +6,10 @@
     "index_html": "index.html",
     "source_ledger_json": "source_ledger.json"
   },
-  "generated_at": "2026-04-30T14:15:06+00:00",
+  "generated_at": "2026-04-30T14:56:03+00:00",
   "human_review_required": true,
   "link_integrity": {
-    "checked_url_count": 34,
+    "checked_url_count": 70,
     "checks": [
       {
         "check_id": "link_check_5efcdfb1e9aa8cea",
@@ -111,6 +111,285 @@
         "url": "https://hopecoop.org/"
       },
       {
+        "check_id": "link_check_315173aeb8c53daf",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/680301692",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/680301692"
+      },
+      {
+        "check_id": "link_check_b9560515942872f4",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/"
+      },
+      {
+        "check_id": "link_check_e39f163e0a55dee7",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf"
+      },
+      {
+        "check_id": "link_check_6e9333496c6f834f",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.irs.gov/statistics/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data"
+      },
+      {
+        "check_id": "link_check_defa46e1eaa5205f",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/272053273.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/272053273.json"
+      },
+      {
+        "check_id": "link_check_726d8360e94c2c1a",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/272053273",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/272053273"
+      },
+      {
+        "check_id": "link_check_5edb17e1327bfe98",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Hope+the+Mission&state%5Bid%5D=CA&c_code%5Bid%5D=3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Hope+the+Mission&state%5Bid%5D=CA&c_code%5Bid%5D=3"
+      },
+      {
+        "check_id": "link_check_63ccbfbf59cca266",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/956054617.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/956054617.json"
+      },
+      {
+        "check_id": "link_check_045a2da65aa5d46f",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/956054617",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/956054617"
+      },
+      {
+        "check_id": "link_check_1783ab47d00aa09c",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Weingart+Center+Association&state%5Bid%5D=CA&c_code%5Bid%5D=3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Weingart+Center+Association&state%5Bid%5D=CA&c_code%5Bid%5D=3"
+      },
+      {
+        "check_id": "link_check_55669ad1541ad723",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/871111468.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/871111468.json"
+      },
+      {
+        "check_id": "link_check_fea244eabe373692",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/871111468",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/871111468"
+      },
+      {
+        "check_id": "link_check_df4d014be714bd7c",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=DignityMoves&state%5Bid%5D=CA&c_code%5Bid%5D=3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=DignityMoves&state%5Bid%5D=CA&c_code%5Bid%5D=3"
+      },
+      {
+        "check_id": "link_check_5f03d6cdc2198311",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/956143865.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/956143865.json"
+      },
+      {
+        "check_id": "link_check_0685deed833104fe",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/956143865",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/956143865"
+      },
+      {
+        "check_id": "link_check_c47d4b17a3c51086",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=The+People+Concern&state%5Bid%5D=CA&c_code%5Bid%5D=3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=The+People+Concern&state%5Bid%5D=CA&c_code%5Bid%5D=3"
+      },
+      {
+        "check_id": "link_check_f307694171250fe5",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/884329113.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/884329113.json"
+      },
+      {
+        "check_id": "link_check_50218dd67ea50eda",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/884329113",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/884329113"
+      },
+      {
+        "check_id": "link_check_52705e69fefd37e9",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=California+Supportive+Housing&state%5Bid%5D=CA&c_code%5Bid%5D=3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=California+Supportive+Housing&state%5Bid%5D=CA&c_code%5Bid%5D=3"
+      },
+      {
+        "check_id": "link_check_c78fede741050ce6",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/941592676.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/941592676.json"
+      },
+      {
+        "check_id": "link_check_15ab63fe840e1eae",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/941592676",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/941592676"
+      },
+      {
+        "check_id": "link_check_77ba59f42f8687f5",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Self-Help+Enterprises&state%5Bid%5D=CA&c_code%5Bid%5D=3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Self-Help+Enterprises&state%5Bid%5D=CA&c_code%5Bid%5D=3"
+      },
+      {
+        "check_id": "link_check_6e108e4a6bdb100d",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/201892523.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/201892523.json"
+      },
+      {
+        "check_id": "link_check_687af2927125de2c",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/201892523",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/201892523"
+      },
+      {
+        "check_id": "link_check_165015bb7b36e3dd",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=PATH+Ventures&state%5Bid%5D=CA&c_code%5Bid%5D=3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=PATH+Ventures&state%5Bid%5D=CA&c_code%5Bid%5D=3"
+      },
+      {
+        "check_id": "link_check_9966e841a9442c46",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/943205085.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/943205085.json"
+      },
+      {
+        "check_id": "link_check_5fe9287d98c2d27e",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/943205085"
+      },
+      {
+        "check_id": "link_check_e43a02b49650e46e",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Abode+Housing+Development&state%5Bid%5D=CA&c_code%5Bid%5D=3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Abode+Housing+Development&state%5Bid%5D=CA&c_code%5Bid%5D=3"
+      },
+      {
+        "check_id": "link_check_16493a364591e60c",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/942777955.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/942777955.json"
+      },
+      {
+        "check_id": "link_check_829cbdc35de6748a",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/942777955",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/942777955"
+      },
+      {
+        "check_id": "link_check_d313ad72d28fd1d8",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=TLCS%2C+Inc.&state%5Bid%5D=CA&c_code%5Bid%5D=3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=TLCS%2C+Inc.&state%5Bid%5D=CA&c_code%5Bid%5D=3"
+      },
+      {
         "check_id": "link_check_5ce77a389ba4c2c6",
         "content_type": "text/html;charset=utf-8",
         "error": "",
@@ -145,6 +424,15 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://epath.org/path-ventures/"
+      },
+      {
+        "check_id": "link_check_8ca774b51947536d",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/"
       },
       {
         "check_id": "link_check_e31b6a03f026176b",
@@ -210,15 +498,6 @@
         "url": "https://www.thepeopleconcern.org/homeless-services/"
       },
       {
-        "check_id": "link_check_8ca774b51947536d",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/"
-      },
-      {
         "check_id": "link_check_124764e58f0fb4fc",
         "content_type": "text/html; charset=UTF-8",
         "error": "",
@@ -228,6 +507,15 @@
         "url": "https://www.thepeopleconcern.org/"
       },
       {
+        "check_id": "link_check_07c29bb10764caa2",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/942837785",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/942837785"
+      },
+      {
         "check_id": "link_check_6ad4d2243dac422a",
         "content_type": "text/html; charset=UTF-8",
         "error": "",
@@ -235,6 +523,15 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://www.selfhelpenterprises.org/"
+      },
+      {
+        "check_id": "link_check_6d350038ee0720ea",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://hopethemission.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://hopethemission.org/"
       },
       {
         "check_id": "link_check_bf323790fc567cba",
@@ -253,6 +550,24 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://www.lsssc.org/sbd-main"
+      },
+      {
+        "check_id": "link_check_125d2ad5861139db",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://hopethemission.org/our-programs/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://hopethemission.org/our-programs/"
+      },
+      {
+        "check_id": "link_check_d7f6675199e9a1a2",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/680367046",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/680367046"
       },
       {
         "check_id": "link_check_2cca80909040ed72",
@@ -282,6 +597,15 @@
         "url": "https://dignitymoves.org/"
       },
       {
+        "check_id": "link_check_e14bc7bfc8fc8d04",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/942260626",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/942260626"
+      },
+      {
         "check_id": "link_check_783bc53863a60218",
         "content_type": "text/html;charset=utf-8",
         "error": "",
@@ -291,24 +615,6 @@
         "url": "https://www.lsssc.org/articles/get-out-there-n9t2h-wk9tc-mfxze"
       },
       {
-        "check_id": "link_check_6d350038ee0720ea",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://hopethemission.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://hopethemission.org/"
-      },
-      {
-        "check_id": "link_check_125d2ad5861139db",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://hopethemission.org/our-programs/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://hopethemission.org/our-programs/"
-      },
-      {
         "check_id": "link_check_51609fdb3cc2c783",
         "content_type": "text/html; charset=UTF-8",
         "error": "",
@@ -316,15 +622,33 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://crdc.org/"
+      },
+      {
+        "check_id": "link_check_04be6c5920519ef8",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/680248670",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/680248670"
+      },
+      {
+        "check_id": "link_check_7b539e6362267da8",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/952225798",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/952225798"
       }
     ],
-    "created_at": "2026-04-30T14:15:06+00:00",
+    "created_at": "2026-04-30T14:56:03+00:00",
     "error_count": 0,
-    "report_id": "link_integrity_877ffc7eb8873985",
+    "report_id": "link_integrity_dd705fb2eb37887b",
     "status": "PASS",
     "warning_count": 0
   },
-  "publication_id": "publication_94c4bc2fc63e75a7",
+  "publication_id": "publication_c57dd58266fe9015",
   "safety": {
     "checked_files": [
       "case_dossier.md",
@@ -332,9 +656,9 @@
       "source_ledger.json"
     ],
     "errors": [],
-    "evidence_refs_checked": 50,
+    "evidence_refs_checked": 66,
     "passed": true,
-    "source_ledger_entries": 50,
+    "source_ledger_entries": 66,
     "warnings": []
   },
   "sentinel_decision": "DOWNGRADE_FOR_REVIEW",
