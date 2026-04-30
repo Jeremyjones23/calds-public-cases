@@ -6,9 +6,325 @@
     "index_html": "index.html",
     "source_ledger_json": "source_ledger.json"
   },
-  "generated_at": "2026-04-29T19:43:32+00:00",
+  "generated_at": "2026-04-30T14:15:06+00:00",
   "human_review_required": true,
-  "publication_id": "publication_2443fc501d70c940",
+  "link_integrity": {
+    "checked_url_count": 34,
+    "checks": [
+      {
+        "check_id": "link_check_5efcdfb1e9aa8cea",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
+      },
+      {
+        "check_id": "link_check_0f80936cefa686fa",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
+      },
+      {
+        "check_id": "link_check_23f2b742e3500b68",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.hcd.ca.gov/funding/homekey",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.hcd.ca.gov/grants-and-funding/homekey/eligibility"
+      },
+      {
+        "check_id": "link_check_dc56b3c8bfc32243",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.hcd.ca.gov/grants-and-funding/homekey-plus/timeline-and-eligibility",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.hcd.ca.gov/grants-and-funding/homekey-plus/timeline-and-eligibility"
+      },
+      {
+        "check_id": "link_check_12a83b8ffd814ec0",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+      },
+      {
+        "check_id": "link_check_c3484df4ab421f13",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf"
+      },
+      {
+        "check_id": "link_check_66d03d74b19d7280",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://cityclerk.lacity.org/onlinedocs/2021/21-0112-S3_misc_6-16-23.pdf",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://cityclerk.lacity.org/onlinedocs/2021/21-0112-S3_misc_6-16-23.pdf"
+      },
+      {
+        "check_id": "link_check_e1f9018818ea8234",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://cityclerk.lacity.org/onlinedocs/2023/23-1022-s27_rpt_cao_2-10-26.pdf",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://cityclerk.lacity.org/onlinedocs/2023/23-1022-s27_rpt_cao_2-10-26.pdf"
+      },
+      {
+        "check_id": "link_check_7f5608f0d5e0b908",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc"
+      },
+      {
+        "check_id": "link_check_a1ff033489af6c41",
+        "content_type": "text/html",
+        "error": "",
+        "final_url": "https://bcsh.ca.gov/calich/hdis.html",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://bcsh.ca.gov/calich/hdis.html"
+      },
+      {
+        "check_id": "link_check_f3d154b797f8c463",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://hopecoop.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://hopecoop.org/"
+      },
+      {
+        "check_id": "link_check_5ce77a389ba4c2c6",
+        "content_type": "text/html;charset=utf-8",
+        "error": "",
+        "final_url": "https://www.weingart.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.weingart.org/"
+      },
+      {
+        "check_id": "link_check_811f22123c890409",
+        "content_type": "text/html;charset=utf-8",
+        "error": "",
+        "final_url": "https://abode.org/housing-development",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://abode.org/housing-development"
+      },
+      {
+        "check_id": "link_check_00136e174d891551",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://burbankhousing.org/our-story/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://burbankhousing.org/our-story/"
+      },
+      {
+        "check_id": "link_check_72bde5735590af09",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://epath.org/path-ventures/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://epath.org/path-ventures/"
+      },
+      {
+        "check_id": "link_check_e31b6a03f026176b",
+        "content_type": "text/html;charset=utf-8",
+        "error": "",
+        "final_url": "https://www.weingart.org/programs",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.weingart.org/programs"
+      },
+      {
+        "check_id": "link_check_7b1436213cd72c54",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://burbankhousing.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://burbankhousing.org/"
+      },
+      {
+        "check_id": "link_check_95d65b5598f150e9",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://epath.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://epath.org/"
+      },
+      {
+        "check_id": "link_check_07031c89fc23b53e",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://servicefirstnc.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://servicefirstnc.org/"
+      },
+      {
+        "check_id": "link_check_f65ecc31beabeb40",
+        "content_type": "text/html;charset=utf-8",
+        "error": "",
+        "final_url": "https://abode.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://abode.org/"
+      },
+      {
+        "check_id": "link_check_411ab0a69b82fb0b",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://www.swords-to-plowshares.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.swords-to-plowshares.org/"
+      },
+      {
+        "check_id": "link_check_7e2adeee2f5ad6d6",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://thepeopleconcern.org/homeless-services/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.thepeopleconcern.org/homeless-services/"
+      },
+      {
+        "check_id": "link_check_8ca774b51947536d",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/"
+      },
+      {
+        "check_id": "link_check_124764e58f0fb4fc",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://thepeopleconcern.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.thepeopleconcern.org/"
+      },
+      {
+        "check_id": "link_check_6ad4d2243dac422a",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.selfhelpenterprises.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.selfhelpenterprises.org/"
+      },
+      {
+        "check_id": "link_check_bf323790fc567cba",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://www.swords-to-plowshares.org/about/vision-for-impact/care",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.swords-to-plowshares.org/about/vision-for-impact/care/"
+      },
+      {
+        "check_id": "link_check_6b5f738592276613",
+        "content_type": "text/html;charset=utf-8",
+        "error": "",
+        "final_url": "https://www.lsssc.org/sbd-main",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.lsssc.org/sbd-main"
+      },
+      {
+        "check_id": "link_check_2cca80909040ed72",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://dignitymoves.org/interim-supportive-housing/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://dignitymoves.org/interim-supportive-housing/"
+      },
+      {
+        "check_id": "link_check_b99ae9171305be14",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://www.cshousing.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.cshousing.org/"
+      },
+      {
+        "check_id": "link_check_40eff21dee654d5f",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://dignitymoves.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://dignitymoves.org/"
+      },
+      {
+        "check_id": "link_check_783bc53863a60218",
+        "content_type": "text/html;charset=utf-8",
+        "error": "",
+        "final_url": "https://www.lsssc.org/articles/get-out-there-n9t2h-wk9tc-mfxze",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.lsssc.org/articles/get-out-there-n9t2h-wk9tc-mfxze"
+      },
+      {
+        "check_id": "link_check_6d350038ee0720ea",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://hopethemission.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://hopethemission.org/"
+      },
+      {
+        "check_id": "link_check_125d2ad5861139db",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://hopethemission.org/our-programs/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://hopethemission.org/our-programs/"
+      },
+      {
+        "check_id": "link_check_51609fdb3cc2c783",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://crdc.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://crdc.org/"
+      }
+    ],
+    "created_at": "2026-04-30T14:15:06+00:00",
+    "error_count": 0,
+    "report_id": "link_integrity_877ffc7eb8873985",
+    "status": "PASS",
+    "warning_count": 0
+  },
+  "publication_id": "publication_94c4bc2fc63e75a7",
   "safety": {
     "checked_files": [
       "case_dossier.md",

@@ -7,7 +7,7 @@ Bottom line: CalDS keeps Weingart Center Association at the top of this 15-entit
 ### What CalDS Found First
 
 - `E08` Official enforcement/docket triage source: Weingart Center Association (Official enforcement or docket source, 2025-10-16): An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for... Source: https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf
-- `E07` Parsed official enforcement and docket source table (Parsed enforcement and docket source table, 2025-10-16): Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { "case_id": "live_ca_homelessness_top15_2026_04_29", "created_at": "2026-04-29T19:43:07+00:00",... Source: [internal local artifact]
+- `E07` Parsed official enforcement and docket source table (Parsed enforcement and docket source table, 2025-10-16): Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { "case_id": "live_ca_homelessness_top15_2026_04_29", "created_at": "2026-04-30T14:09:17+00:00",... Source: [internal local artifact]
 - `E03` Official homelessness outcome-source manifest (Parsed official outcome source table, 2025-12-22): Official homelessness outcome-source manifest for spend-versus-results review. The CA System Performance Measures dataset says the metrics help assess progress toward preventing, reducing, and ending homelessness. CalDS uses these rows as geography-level... Source: [internal local artifact]
 - `E04` Deterministic state-award exposure versus homelessness outcome-context join (Parsed spend-versus-results join, 2026-04-29): Deterministic join from California Department of Housing and Community Development state project-award exposure to official county/Continuum of Care homelessness outcome context. County and Continuum of Care outcomes are not provider-attributable without direct program outcome records. | entity | county |... Source: [internal local artifact]
 - 46 additional evidence item(s) are in the citation ledger.
@@ -26,6 +26,23 @@ Bottom line: CalDS keeps Weingart Center Association at the top of this 15-entit
 - PATH Ventures: Medium-watch triage priority, held in watch status pending more source coverage. Why: One medium signal fired; hold for broader source collection before deep dive. Trigger: Official California housing award rows attach $42,672,927 in project-award exposure to PATH Ventures. Source: https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf
 - Abode Housing Development: Medium-watch triage priority, held in watch status pending more source coverage. Why: One medium signal fired; hold for broader source collection before deep dive. Trigger: Official California housing award rows attach $41,220,000 in project-award exposure to Abode Housing Development. Source: https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf
 - Private forensic synthesis created 5 source-cited investigation hypothesis item(s). These stay internal and require sentinel/human review before publication.
+
+### Acquisition and Completion Guard
+
+- Completion guard status: PASS_WITH_BLOCKERS.
+- Required source-family checks: 35; hits: 16; unresolved blockers: 19.
+- Top unresolved acquisition blockers:
+  - Hope the Mission: irs_990 - No citation-ready irs_990 record was recovered for Hope the Mission in the current corpus.
+  - Hope the Mission: audit - No citation-ready audit record was recovered for Hope the Mission in the current corpus.
+  - Hope the Mission: enforcement_or_docket - No citation-ready enforcement_or_docket record was recovered for Hope the Mission in the current corpus.
+  - Hope the Mission: county_contract_monitoring - No citation-ready county_contract_monitoring record was recovered for Hope the Mission in the current corpus.
+  - Weingart Center Association: irs_990 - No citation-ready irs_990 record was recovered for Weingart Center Association in the current corpus.
+  - Weingart Center Association: audit - No citation-ready audit record was recovered for Weingart Center Association in the current corpus.
+  - Weingart Center Association: county_contract_monitoring - No citation-ready county_contract_monitoring record was recovered for Weingart Center Association in the current corpus.
+  - DignityMoves: irs_990 - No citation-ready irs_990 record was recovered for DignityMoves in the current corpus.
+  - +11 additional blocker(s) in `acquisition_ledger.json`.
+- Guard note: Completion guard records both hits and misses; misses are blockers, not clearance.
+- Guard note: Dossier compilation may proceed only because unresolved source gaps are preserved for human review.
 
 ### Why This Is On A Reviewer's Desk
 
@@ -1247,7 +1264,7 @@ Review stance: The system would not close this item from summary records alone; 
 
 ## 6. Flagged Review Matrix
 
-Methodology: Waste, fraud, and abuse risk-screening matrix generated from parsed Internal Revenue Service Form 990, Federal Audit Clearinghouse, California Department of Health Care Services facility-status, California Department of Housing and Community Development Homekey/Homekey+ state-award, official enforcement/docket records, county/document index, and retrieved service-page records. The matrix tests observable risk proxies: year-over-year financial growth, spending growth, public-funds concentration, executive compensation, payroll scale, political/lobbying indicators, audit-control flags, enforcement/docket source flags, award concentration, facility closure patterns, off-scope web-language checks, official county or Continuum of Care outcome context, and remaining provider-attributable outcome gaps.
+Methodology: Waste, fraud, abuse, and mismanagement risk-screening matrix generated from parsed Internal Revenue Service Form 990, Federal Audit Clearinghouse, California Department of Health Care Services facility-status, California Department of Housing and Community Development Homekey/Homekey+ state-award, official enforcement/docket records, county/document index, and retrieved service-page records. The matrix tests observable risk proxies: year-over-year financial growth, spending growth, public-funds concentration, executive compensation, payroll scale, political/lobbying indicators, audit-control flags, enforcement/docket source flags, award concentration, facility closure patterns, off-scope web-language checks, official county or Continuum of Care outcome context, and remaining provider-attributable outcome gaps.
 
 Risk scale: Indicator levels: High=immediate reviewer follow-up, Medium=review queue, Low=context only, Data gap=required source missing or not parsed. Levels are screening priorities, not findings or allegations.
 
@@ -3975,7 +3992,7 @@ Use this ledger to move from the readable case file back to source records. The 
 | `E04` | `evidence_0805dc6501798c59` | `source_table_spend_vs_results_join` | Parsed spend-versus-results join | [internal local artifact] | 2026-04-29 | `6f03de5c56fcfa038ef2ad195bb60eada268f5764cd0bc445581059bd201ac26` |
 | `E05` | `evidence_cafb34496b1fd25c` | `org_service_pages_tlcs_inc` | Organization service page | https://hopecoop.org/ | 2026-04-29 | `f8646a31b306abd3924e5a87dfdf23ccd8cbe85d6fe4e9053230b2075591acb9` |
 | `E06` | `evidence_a16718fccd04fc89` | `public_statements_tlcs_inc` | Public statement source | https://hopecoop.org/ | 2026-04-29 | `1ee3cac5d50a90e8ba0864df86ee6ed1b8a6672805cfbe1da14abcd6f7dae879` |
-| `E07` | `evidence_a98f846f1a9e2142` | `source_table_enforcement_docket` | Parsed enforcement and docket source table | [internal local artifact] | 2025-10-16 | `060ede757454378ec67a86be5f5c8af80b44136ee22d82eee5c09aa02fed0b01` |
+| `E07` | `evidence_a98f846f1a9e2142` | `source_table_enforcement_docket` | Parsed enforcement and docket source table | [internal local artifact] | 2025-10-16 | `30757453891231563a104f5c06c105409cdaa4698f4afa94774615064626a3c1` |
 | `E08` | `evidence_dd6ada01aecefd53` | `enforcement_docket_weingart_center_association_1` | Official enforcement or docket source | https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf | 2025-10-16 | `4704d83cf192b49b41a868106f4774b607fd7d38d74e54c7fc8127d1f80cf145` |
 | `E09` | `evidence_2458d3752f003308` | `public_statements_weingart_center` | Public statement source | https://www.weingart.org/ | 2026-04-29 | `2b008aab7a0605be9b4fa5af2c23b2b15e10edf48cd76614e3d9e6eb9bc732dd` |
 | `E10` | `evidence_188e118a28be58ea` | `org_service_pages_abode_housing_development` | Organization service page | https://abode.org/housing-development | 2026-04-29 | `9fb041bcdf59305e2021e98bbf5bc4776bf6734129748881c5e8be2783fd8806` |
@@ -4050,10 +4067,13 @@ These are the durable workflow artifacts used by the compiler.
 
 | Artifact | Path |
 | --- | --- |
+| acquisition_ledger.json | `[internal local artifact] |
 | case_dossier.json | `[internal local artifact] |
 | case_dossier.md | `[internal local artifact] |
 | case_request.json | `[internal local artifact] |
 | case_scope.json | `[internal local artifact] |
+| citation_verification.json | `[internal local artifact] |
+| completion_guard.json | `[internal local artifact] |
 | context_handoff_ledger.json | `[internal local artifact] |
 | entity_network_analysis.json | `[internal local artifact] |
 | entity_triage_results.json | `[internal local artifact] |
@@ -4071,6 +4091,8 @@ These are the durable workflow artifacts used by the compiler.
 | sentinel_decision.json | `[internal local artifact] |
 | task_case_compiler.json | `[internal local artifact] |
 | task_case_director.json | `[internal local artifact] |
+| task_citation_verifier.json | `[internal local artifact] |
+| task_completion_guard.json | `[internal local artifact] |
 | task_context_steward.json | `[internal local artifact] |
 | task_entity_network_analyst.json | `[internal local artifact] |
 | task_evidence_analyst.json | `[internal local artifact] |

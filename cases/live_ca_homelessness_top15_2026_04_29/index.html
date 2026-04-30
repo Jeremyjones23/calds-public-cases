@@ -45,7 +45,7 @@
 <h3 id="what-calds-found-first">What CalDS Found First</h3>
 <ul>
 <li><a class="evidence-ref" href="#evidence-E08">E08</a> Official enforcement/docket triage source: Weingart Center Association (Official enforcement or docket source, 2025-10-16): An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for... Source: <a href="https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf">https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf</a></li>
-<li><a class="evidence-ref" href="#evidence-E07">E07</a> Parsed official enforcement and docket source table (Parsed enforcement and docket source table, 2025-10-16): Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { &quot;case_id&quot;: &quot;live_ca_homelessness_top15_2026_04_29&quot;, &quot;created_at&quot;: &quot;2026-04-29T19:43:07+00:00&quot;,... Source: [internal local artifact]</li>
+<li><a class="evidence-ref" href="#evidence-E07">E07</a> Parsed official enforcement and docket source table (Parsed enforcement and docket source table, 2025-10-16): Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { &quot;case_id&quot;: &quot;live_ca_homelessness_top15_2026_04_29&quot;, &quot;created_at&quot;: &quot;2026-04-30T14:09:17+00:00&quot;,... Source: [internal local artifact]</li>
 <li><a class="evidence-ref" href="#evidence-E03">E03</a> Official homelessness outcome-source manifest (Parsed official outcome source table, 2025-12-22): Official homelessness outcome-source manifest for spend-versus-results review. The CA System Performance Measures dataset says the metrics help assess progress toward preventing, reducing, and ending homelessness. CalDS uses these rows as geography-level... Source: [internal local artifact]</li>
 <li><a class="evidence-ref" href="#evidence-E04">E04</a> Deterministic state-award exposure versus homelessness outcome-context join (Parsed spend-versus-results join, 2026-04-29): Deterministic join from California Department of Housing and Community Development state project-award exposure to official county/Continuum of Care homelessness outcome context. County and Continuum of Care outcomes are not provider-attributable without direct program outcome records. | entity | county |... Source: [internal local artifact]</li>
 <li>46 additional evidence item(s) are in the citation ledger.</li>
@@ -64,6 +64,25 @@
 <li>PATH Ventures: Medium-watch triage priority, held in watch status pending more source coverage. Why: One medium signal fired; hold for broader source collection before deep dive. Trigger: Official California housing award rows attach $42,672,927 in project-award exposure to PATH Ventures. Source: <a href="https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf">https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</a></li>
 <li>Abode Housing Development: Medium-watch triage priority, held in watch status pending more source coverage. Why: One medium signal fired; hold for broader source collection before deep dive. Trigger: Official California housing award rows attach $41,220,000 in project-award exposure to Abode Housing Development. Source: <a href="https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf">https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</a></li>
 <li>Private forensic synthesis created 5 source-cited investigation hypothesis item(s). These stay internal and require sentinel/human review before publication.</li>
+</ul>
+<h3 id="acquisition-and-completion-guard">Acquisition and Completion Guard</h3>
+<ul>
+<li>Completion guard status: PASS_WITH_BLOCKERS.</li>
+<li>Required source-family checks: 35; hits: 16; unresolved blockers: 19.</li>
+<li>Top unresolved acquisition blockers:</li>
+</ul>
+<p>  - Hope the Mission: irs_990 - No citation-ready irs_990 record was recovered for Hope the Mission in the current corpus.</p>
+<p>  - Hope the Mission: audit - No citation-ready audit record was recovered for Hope the Mission in the current corpus.</p>
+<p>  - Hope the Mission: enforcement_or_docket - No citation-ready enforcement_or_docket record was recovered for Hope the Mission in the current corpus.</p>
+<p>  - Hope the Mission: county_contract_monitoring - No citation-ready county_contract_monitoring record was recovered for Hope the Mission in the current corpus.</p>
+<p>  - Weingart Center Association: irs_990 - No citation-ready irs_990 record was recovered for Weingart Center Association in the current corpus.</p>
+<p>  - Weingart Center Association: audit - No citation-ready audit record was recovered for Weingart Center Association in the current corpus.</p>
+<p>  - Weingart Center Association: county_contract_monitoring - No citation-ready county_contract_monitoring record was recovered for Weingart Center Association in the current corpus.</p>
+<p>  - DignityMoves: irs_990 - No citation-ready irs_990 record was recovered for DignityMoves in the current corpus.</p>
+<p>  - +11 additional blocker(s) in <code>acquisition_ledger.json</code>.</p>
+<ul>
+<li>Guard note: Completion guard records both hits and misses; misses are blockers, not clearance.</li>
+<li>Guard note: Dossier compilation may proceed only because unresolved source gaps are preserved for human review.</li>
 </ul>
 <h3 id="why-this-is-on-a-reviewer-s-desk">Why This Is On A Reviewer&#x27;s Desk</h3>
 <ul>
@@ -1205,7 +1224,7 @@
 </ul>
 <p>Review stance: The system would not close this item from summary records alone; spending and footprint need provider-attributable outcome records.</p>
 <h2 id="6-flagged-review-matrix">6. Flagged Review Matrix</h2>
-<p>Methodology: Waste, fraud, and abuse risk-screening matrix generated from parsed Internal Revenue Service Form 990, Federal Audit Clearinghouse, California Department of Health Care Services facility-status, California Department of Housing and Community Development Homekey/Homekey+ state-award, official enforcement/docket records, county/document index, and retrieved service-page records. The matrix tests observable risk proxies: year-over-year financial growth, spending growth, public-funds concentration, executive compensation, payroll scale, political/lobbying indicators, audit-control flags, enforcement/docket source flags, award concentration, facility closure patterns, off-scope web-language checks, official county or Continuum of Care outcome context, and remaining provider-attributable outcome gaps.</p>
+<p>Methodology: Waste, fraud, abuse, and mismanagement risk-screening matrix generated from parsed Internal Revenue Service Form 990, Federal Audit Clearinghouse, California Department of Health Care Services facility-status, California Department of Housing and Community Development Homekey/Homekey+ state-award, official enforcement/docket records, county/document index, and retrieved service-page records. The matrix tests observable risk proxies: year-over-year financial growth, spending growth, public-funds concentration, executive compensation, payroll scale, political/lobbying indicators, audit-control flags, enforcement/docket source flags, award concentration, facility closure patterns, off-scope web-language checks, official county or Continuum of Care outcome context, and remaining provider-attributable outcome gaps.</p>
 <p>Risk scale: Indicator levels: High=immediate reviewer follow-up, Medium=review queue, Low=context only, Data gap=required source missing or not parsed. Levels are screening priorities, not findings or allegations.</p>
 <pre class="table-block">| Risk level | Count |
 | --- | --- |
@@ -3924,7 +3943,7 @@
 | `E04` | `evidence_0805dc6501798c59` | `source_table_spend_vs_results_join` | Parsed spend-versus-results join | [internal local artifact] | 2026-04-29 | `6f03de5c56fcfa038ef2ad195bb60eada268f5764cd0bc445581059bd201ac26` |
 | `E05` | `evidence_cafb34496b1fd25c` | `org_service_pages_tlcs_inc` | Organization service page | https://hopecoop.org/ | 2026-04-29 | `f8646a31b306abd3924e5a87dfdf23ccd8cbe85d6fe4e9053230b2075591acb9` |
 | `E06` | `evidence_a16718fccd04fc89` | `public_statements_tlcs_inc` | Public statement source | https://hopecoop.org/ | 2026-04-29 | `1ee3cac5d50a90e8ba0864df86ee6ed1b8a6672805cfbe1da14abcd6f7dae879` |
-| `E07` | `evidence_a98f846f1a9e2142` | `source_table_enforcement_docket` | Parsed enforcement and docket source table | [internal local artifact] | 2025-10-16 | `060ede757454378ec67a86be5f5c8af80b44136ee22d82eee5c09aa02fed0b01` |
+| `E07` | `evidence_a98f846f1a9e2142` | `source_table_enforcement_docket` | Parsed enforcement and docket source table | [internal local artifact] | 2025-10-16 | `30757453891231563a104f5c06c105409cdaa4698f4afa94774615064626a3c1` |
 | `E08` | `evidence_dd6ada01aecefd53` | `enforcement_docket_weingart_center_association_1` | Official enforcement or docket source | https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf | 2025-10-16 | `4704d83cf192b49b41a868106f4774b607fd7d38d74e54c7fc8127d1f80cf145` |
 | `E09` | `evidence_2458d3752f003308` | `public_statements_weingart_center` | Public statement source | https://www.weingart.org/ | 2026-04-29 | `2b008aab7a0605be9b4fa5af2c23b2b15e10edf48cd76614e3d9e6eb9bc732dd` |
 | `E10` | `evidence_188e118a28be58ea` | `org_service_pages_abode_housing_development` | Organization service page | https://abode.org/housing-development | 2026-04-29 | `9fb041bcdf59305e2021e98bbf5bc4776bf6734129748881c5e8be2783fd8806` |
@@ -3993,10 +4012,13 @@
 <p>These are the durable workflow artifacts used by the compiler.</p>
 <pre class="table-block">| Artifact | Path |
 | --- | --- |
+| acquisition_ledger.json | `[internal local artifact] |
 | case_dossier.json | `[internal local artifact] |
 | case_dossier.md | `[internal local artifact] |
 | case_request.json | `[internal local artifact] |
 | case_scope.json | `[internal local artifact] |
+| citation_verification.json | `[internal local artifact] |
+| completion_guard.json | `[internal local artifact] |
 | context_handoff_ledger.json | `[internal local artifact] |
 | entity_network_analysis.json | `[internal local artifact] |
 | entity_triage_results.json | `[internal local artifact] |
@@ -4014,6 +4036,8 @@
 | sentinel_decision.json | `[internal local artifact] |
 | task_case_compiler.json | `[internal local artifact] |
 | task_case_director.json | `[internal local artifact] |
+| task_citation_verifier.json | `[internal local artifact] |
+| task_completion_guard.json | `[internal local artifact] |
 | task_context_steward.json | `[internal local artifact] |
 | task_entity_network_analyst.json | `[internal local artifact] |
 | task_evidence_analyst.json | `[internal local artifact] |
@@ -4057,7 +4081,7 @@
   <p><strong>Source reference:</strong> derived local artifact: official_outcome_source_manifest.json</p>
   <p><strong>Checksum:</strong> <code>dff6860347c8121ce00a6dd1ed287fcfc2c3d61b0a418780f1aaf48a896b331a</code></p>
   <p><strong>External source links:</strong></p>
-  <ul class="source-list"><li><a href="https://data.ca.gov/api/3/action/datastore_search">https://data.ca.gov/api/3/action/datastore_search</a></li><li><a href="https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc">https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc</a></li><li><a href="https://bcsh.ca.gov/calich/hdis.html">https://bcsh.ca.gov/calich/hdis.html</a></li></ul>
+  <ul class="source-list"><li><a href="https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc">https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc</a></li><li><a href="https://bcsh.ca.gov/calich/hdis.html">https://bcsh.ca.gov/calich/hdis.html</a></li></ul>
   <p><strong>Excerpt:</strong> Official homelessness outcome-source manifest for spend-versus-results review. The CA System Performance Measures dataset says the metrics help assess progress toward preventing, reducing, and ending homelessness. CalDS uses these rows as geography-level context only. https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc https://bcsh.ca.gov/calich/hdis.html { &quot;ca_spm&quot;: { &quot;api_base&quot;: &quot;https://data.ca.gov/api/3/action/datastore_search&quot;, &quot;fetched&quot;: true, &quot;join_grain&quot;: &quot;Continuum of Care/year-period/metric&quot;, &quot;resource_id&quot;: &quot;e02178d9-1d34-4798-9979-f50af9f1742e&quot;, &quot;r...</p>
 </article>
 
@@ -4099,10 +4123,10 @@
   <h3>E07: Parsed official enforcement and docket source table</h3>
   <p class="meta"><strong>Record:</strong> <code>source_table_enforcement_docket</code> | <strong>Source type:</strong> Parsed enforcement and docket source table | <strong>Published:</strong> 2025-10-16</p>
   <p><strong>Source reference:</strong> derived local artifact: enforcement_docket_source_summary.json</p>
-  <p><strong>Checksum:</strong> <code>060ede757454378ec67a86be5f5c8af80b44136ee22d82eee5c09aa02fed0b01</code></p>
+  <p><strong>Checksum:</strong> <code>30757453891231563a104f5c06c105409cdaa4698f4afa94774615064626a3c1</code></p>
   <p><strong>External source links:</strong></p>
   <ul class="source-list"><li><a href="https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf">https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf</a></li><li><a href="https://cityclerk.lacity.org/onlinedocs/2021/21-0112-S3_misc_6-16-23.pdf">https://cityclerk.lacity.org/onlinedocs/2021/21-0112-S3_misc_6-16-23.pdf</a></li><li><a href="https://cityclerk.lacity.org/onlinedocs/2023/23-1022-s27_rpt_cao_2-10-26.pdf">https://cityclerk.lacity.org/onlinedocs/2023/23-1022-s27_rpt_cao_2-10-26.pdf</a></li></ul>
-  <p><strong>Excerpt:</strong> Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { &quot;case_id&quot;: &quot;live_ca_homelessness_top15_2026_04_29&quot;, &quot;created_at&quot;: &quot;2026-04-29T19:43:07+00:00&quot;, &quot;methodology&quot;: &quot;Official enforcement and docket triage rows are manually curated from official federal and municipal sources when live docket parsing is not yet implemented. Rows trigger deep review only; they do not create legal conclusions.&quot;, &quot;rows&quot;: [ { &quot;caveats&quot;: [ &quot;The official federal source charges Taylor, not Weingart Center Associ...</p>
+  <p><strong>Excerpt:</strong> Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { &quot;case_id&quot;: &quot;live_ca_homelessness_top15_2026_04_29&quot;, &quot;created_at&quot;: &quot;2026-04-30T14:09:17+00:00&quot;, &quot;methodology&quot;: &quot;Official enforcement and docket triage rows are manually curated from official federal and municipal sources when live docket parsing is not yet implemented. Rows trigger deep review only; they do not create legal conclusions.&quot;, &quot;rows&quot;: [ { &quot;caveats&quot;: [ &quot;The official federal source charges Taylor, not Weingart Center Associ...</p>
 </article>
 
 
@@ -4579,7 +4603,7 @@
 </article>
 
   </section>
-  <footer>Generated 2026-04-29T19:43:32+00:00. Human review remains required before outside-facing use.</footer>
+  <footer>Generated 2026-04-30T14:14:55+00:00. Human review remains required before outside-facing use.</footer>
 </main>
 </body>
 </html>

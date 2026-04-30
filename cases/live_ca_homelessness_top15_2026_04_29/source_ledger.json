@@ -68,7 +68,6 @@
       "source_type_count_in_bundle": 1,
       "source_type_label": "Parsed official outcome source table",
       "source_urls": [
-        "https://data.ca.gov/api/3/action/datastore_search",
         "https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc",
         "https://bcsh.ca.gov/calich/hdis.html"
       ],
@@ -138,8 +137,8 @@
     {
       "active_signal_count": 2,
       "anchor": "evidence-E07",
-      "checksum": "060ede757454378ec67a86be5f5c8af80b44136ee22d82eee5c09aa02fed0b01",
-      "excerpt": "Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { \"case_id\": \"live_ca_homelessness_top15_2026_04_29\", \"created_at\": \"2026-04-29T19:43:07+00:00\", \"methodology\": \"Official enforcement and docket triage rows are manually curated from official federal and municipal sources when live docket parsing is not yet implemented. Rows trigger deep review only; they do not create legal conclusions.\", \"rows\": [ { \"caveats\": [ \"The official federal source charges Taylor, not Weingart Center Associ...",
+      "checksum": "30757453891231563a104f5c06c105409cdaa4698f4afa94774615064626a3c1",
+      "excerpt": "Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { \"case_id\": \"live_ca_homelessness_top15_2026_04_29\", \"created_at\": \"2026-04-30T14:09:17+00:00\", \"methodology\": \"Official enforcement and docket triage rows are manually curated from official federal and municipal sources when live docket parsing is not yet implemented. Rows trigger deep review only; they do not create legal conclusions.\", \"rows\": [ { \"caveats\": [ \"The official federal source charges Taylor, not Weingart Center Associ...",
       "internal_evidence_id": "evidence_a98f846f1a9e2142",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run.",
       "link_status": "derived_external_source_linked",
