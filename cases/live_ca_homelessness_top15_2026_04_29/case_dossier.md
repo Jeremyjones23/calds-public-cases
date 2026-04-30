@@ -2,12 +2,12 @@
 
 ## 1. Executive Snapshot
 
-Bottom line: CalDS screened 15 entities and keeps Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing in deep review because the strongest source-backed pattern is audit-control concerns, connected-party enforcement exposure, material public-funding exposure, and rapid financial growth. Evidence: `E20`, `E22`, `E21`. The review priority score is 63.85 / 100, source completeness is 0.0 / 100, publication confidence is 30.0 / 100, and the sentinel posture is `DOWNGRADE_FOR_REVIEW`; this is a review priority, not a formal conclusion.
+Bottom line: CalDS screened 15 entities and keeps Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing in deep review because the strongest source-backed pattern is audit-control concerns, connected-party enforcement exposure, material public-funding exposure, and rapid financial growth. Evidence: `E20`, `E22`, `E21`. The review priority score is 88.63 / 100, source completeness is 100.0 / 100, publication confidence is 65.5 / 100, and the sentinel posture is `DOWNGRADE_FOR_REVIEW`; this is a review priority, not a formal conclusion.
 
 - Case posture: internal possible waste, fraud, abuse, or mismanagement review lead; not a formal finding.
 - Entities selected for deep review: Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing.
 - Main signal pattern: audit-control concerns, connected-party enforcement exposure, material public-funding exposure, rapid financial growth, payroll or wage-growth questions, spend-versus-results mismatch, executive-compensation or payroll-governance questions, and possible scope-mismatch signals.
-- Review priority: 63.85 / 100; risk severity: 93.62 / 100; source completeness: 0.0 / 100; publication confidence: 30.0 / 100.
+- Review priority: 88.63 / 100; risk severity: 93.62 / 100; source completeness: 100.0 / 100; publication confidence: 65.5 / 100.
 - Score scope: these are case-level scores for this run's evidence bundle. They are not entity-by-entity grades, not probabilities, and not a measure of how polished the report is.
 - Current workflow state: `PENDING` with sentinel posture `DOWNGRADE_FOR_REVIEW`.
 
@@ -29,19 +29,21 @@ Why this is on a reviewer's desk:
 ### What The Score Means
 
 - What these scores apply to: the whole compiled case/run and its evidence bundle, not one nonprofit organization by itself.
-- Review priority 63.85 / 100: how urgently this case should stay in the review queue.
-- Risk severity 93.62 / 100: how strong the implemented source-backed risk indicators are.
-- Source completeness 0.0 / 100: how much of the required source set was actually recovered and conflict-free. The current formula starts at 100, subtracts 5 points for each missing-data signal, and subtracts 6 points for each contradiction signal. This run has 23 missing-data signal(s) and 0 contradiction signal(s), creating 115 missing-data penalty points and 0 contradiction penalty points; because those penalties meet or exceed the starting 100 points, the score is capped at 0.0 / 100.
-- Publication confidence 30.0 / 100: whether the record is complete enough for outside-facing use. The current formula weights source completeness at 70% and source diversity at 30%. This run has 15 source type(s), which gives 100 / 100 source-diversity confidence; with source completeness at 0.0 / 100, publication confidence becomes 0 + 30 = 30.0 / 100.
-- Meaning: a high risk-severity score with low source completeness is a strong reason to keep reviewing, not a reason to publish allegations.
+- Review priority 88.63 / 100: how urgently this case should stay in the review queue after combining risk severity, source-acquisition coverage, and publication confidence.
+- Risk severity 93.62 / 100: how strong the implemented source-backed risk indicators are. This is the flag-strength score; it does not say misconduct occurred.
+- Source completeness 100.0 / 100: whether the required source-family acquisition checks were resolved. This run resolved 35 of 35 required check(s), with 0 unresolved blocker(s) and 0 miss(es). A completed search with no public official adverse record counts as coverage, not as clearance.
+- Open gap burden: 23 caveat signal(s). These are unresolved review questions inside the evidence bundle, not proof that source acquisition failed. Current gap buckets: California Department of Housing and Community Development homelessness award record (15); Contract and payment acquisition gap record (5); Official enforcement or docket source (1); Internal Revenue Service Form 990 summary (1); Organization service page (1).
+- Contradiction burden: 0 caution signal(s). Contradictions are never positive evidence and are not rewarded; they lower publication confidence and stay in front of the reviewer. Current contradiction buckets: none.
+- Publication confidence 65.5 / 100: whether the record is sturdy enough for outside-facing use. The implemented model starts from source completeness (55%), source diversity (25%; this run's diversity component is 100 / 100), and citation traceability (20%; this run's traceability component is 100 / 100), then subtracts a bounded caveat penalty for open gaps and contradictions. This run's caveat penalty is 34.5 point(s).
+- Meaning: a high risk-severity score with meaningful open gaps is a reason to keep the case in human review and avoid overclaiming, not a reason to bury the lead.
 
 Questions this score should raise:
 
-- Which missing source records are driving the missing-data count?
-- Which missing records would most change the decision: direct contracts and payments, raw tax-return source documents, audit source documents and finding status, facility histories, or provider-attributable outcomes?
-- Are the strongest risk signals concentrated in a few selected entities, or spread across the full screened set?
-- Are the gaps caused by unavailable public records, missing ingestion coverage, or records that exist but have not been pulled into this run?
-- What would raise publication confidence enough to move from internal review lead to a stronger public brief?
+- Did CalDS complete the required source-family acquisition checks, or are there unresolved blockers?
+- Which open gap buckets would most change the decision: direct contracts and payments, raw tax-return source documents, audit source documents and finding status, facility histories, public statements, or provider-attributable outcomes?
+- Are the strongest risk signals concentrated in the selected deep-review entities, or spread across the full screened set?
+- Are the remaining gaps caused by unavailable public records, missing ingestion coverage, or records that exist but have not been pulled into this run?
+- Would a contradiction signal weaken the review lead, require correction, or show that the entity has a legitimate explanation that must be carried forward?
 
 ### Decision Needed
 
@@ -89,7 +91,7 @@ What CalDS found in the records:
 
 Key retrieved records:
 
-- `E01` Contract/payment acquisition gap: California Supportive Housing (contract_payment_discovery, 2026-04-30): California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable...
+- `E01` Contract/payment acquisition gap: California Supportive Housing (Contract and payment acquisition gap record, 2026-04-30): California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable...
 - `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
 - `E14` Deterministic state-award exposure versus homelessness outcome-context join (Parsed spend-versus-results join, 2026-04-29): Deterministic join from California Department of Housing and Community Development state project-award exposure to official county/Continuum of Care homelessness outcome context. County and Continuum of Care outcomes are not provider-attributable without...
 - 6 additional matched source item(s) appear in the citation ledger.
@@ -116,7 +118,7 @@ What CalDS found in the records:
 
 Key retrieved records:
 
-- `E02` Contract/payment acquisition gap: DignityMoves (contract_payment_discovery, 2026-04-30): DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
+- `E02` Contract/payment acquisition gap: DignityMoves (Contract and payment acquisition gap record, 2026-04-30): DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
 - `E07` Raw Form 990 artifact acquisition: DignityMoves (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service object ID:...
 - `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
 - 7 additional matched source item(s) appear in the citation ledger.
@@ -147,7 +149,7 @@ What CalDS found in the records:
 
 Key retrieved records:
 
-- `E03` Contract/payment acquisition gap: Hope the Mission (contract_payment_discovery, 2026-04-30): Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
+- `E03` Contract/payment acquisition gap: Hope the Mission (Contract and payment acquisition gap record, 2026-04-30): Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
 - `E08` Raw Form 990 artifact acquisition: Hope the Mission (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service object ID:...
 - `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
 - 7 additional matched source item(s) appear in the citation ledger.
@@ -178,7 +180,7 @@ What CalDS found in the records:
 
 Key retrieved records:
 
-- `E04` Contract/payment acquisition gap: The People Concern (contract_payment_discovery, 2026-04-30): The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
+- `E04` Contract/payment acquisition gap: The People Concern (Contract and payment acquisition gap record, 2026-04-30): The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
 - `E09` Raw Form 990 artifact acquisition: The People Concern (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service object ID:...
 - `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
 - 5 additional matched source item(s) appear in the citation ledger.
@@ -208,7 +210,7 @@ What CalDS found in the records:
 
 Key retrieved records:
 
-- `E05` Contract/payment acquisition gap: Weingart Center Association (contract_payment_discovery, 2026-04-30): Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable...
+- `E05` Contract/payment acquisition gap: Weingart Center Association (Contract and payment acquisition gap record, 2026-04-30): Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable...
 - `E06` Official enforcement/docket public-source search: Weingart Center Association (enforcement_docket_discovery, 2026-04-30): Official enforcement row already recovered: True. Status: citation_ready_official_row_present. Completed public official search count: 4. Possible public adverse search-hit count: 0. Public official search results: - U.S. Department of Justice official...
 - `E10` Raw Form 990 artifact acquisition: Weingart Center Association (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service...
 - 9 additional matched source item(s) appear in the citation ledger.
@@ -598,23 +600,26 @@ These are not nonprofit organization-specific findings. They are run-level block
 
 Lead statement: Retrieved records show a reviewable oversight signal for Hope the Mission, Weingart Center Association focused on homelessness, live, housing.
 
-Review priority score: 63.85 / 100
+Review priority score: 88.63 / 100
 
-Interpretation: reviewable triage lead with meaningful source coverage, but caveats or missing data prevent upgrade without human verification.
+Interpretation: high-priority review lead because retrieved-source coverage and entity linkage are broad, with human verification still required.
 
 The score is deterministic triage priority, not a probability, not a dollar loss estimate, and not a conclusion. CalDS now splits the score into risk severity, source completeness, and publication confidence so a strong review signal is not confused with publication readiness.
 
 | Field | Value |
 | --- | --- |
 | Risk severity score | 93.62 / 100 |
-| Source completeness score | 0.0 / 100 |
-| Publication confidence score | 30.0 / 100 |
+| Source completeness score | 100.0 / 100 |
+| Publication confidence score | 65.5 / 100 |
 | Support count | 90 |
 | Average relevance | 0.532 |
 | Source diversity | 15 |
 | Hard entity links | 37 |
-| Missing-data count | 23 |
-| Contradiction count | 0 |
+| Completion guard resolved checks | 35 of 35 |
+| Completion guard unresolved blockers | 0 blocker(s); 0 miss(es) |
+| Open gap burden | 23 caveat signal(s) |
+| Gap signal source buckets | California Department of Housing and Community Development homelessness award record (15); Contract and payment acquisition gap record (5); Official enforcement or docket source (1); Internal Revenue Service Form 990 summary (1); Organization service page (1) |
+| Contradiction count | 0 caution signal(s) |
 
 ### Sentinel Gate
 
@@ -3419,11 +3424,11 @@ Use this ledger to move from the readable case file back to source records. The 
 
 | Ref | Internal evidence ID | Record ID | Source type | Source URI | Published | Checksum |
 | --- | --- | --- | --- | --- | --- | --- |
-| `E01` | `evidence_005b3b922e1587e8` | `contract_payment_discovery_california_supportive_housing` | contract_payment_discovery | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `41342662d15a98dd04444d8c4091bffb86eec8d92203377a1da293629f146ee5` |
-| `E02` | `evidence_eed56b8b976b5cea` | `contract_payment_discovery_dignitymoves` | contract_payment_discovery | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `918455949ff81683eee73e5c1e1a94666c6ef4fe6b0ba758e1a1bb8993f20ad2` |
-| `E03` | `evidence_1cde2e75545d024f` | `contract_payment_discovery_hope_the_mission` | contract_payment_discovery | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `6e6050bc2bf31feb6e4d8036c4d950ae42a7ae672c7550c1471a1dc2980c05ee` |
-| `E04` | `evidence_173b3ea25c8c9a43` | `contract_payment_discovery_the_people_concern` | contract_payment_discovery | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `3cc5df21fce4850e120554551ae8b594e15ba6184cf68c60d01aee240e1aab2f` |
-| `E05` | `evidence_766f33f5d680d693` | `contract_payment_discovery_weingart_center_association` | contract_payment_discovery | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `d32ea8e0575d16751a7c32b45c30b7f461f7973e55852406ac364f6f416e349a` |
+| `E01` | `evidence_005b3b922e1587e8` | `contract_payment_discovery_california_supportive_housing` | Contract and payment acquisition gap record | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `41342662d15a98dd04444d8c4091bffb86eec8d92203377a1da293629f146ee5` |
+| `E02` | `evidence_eed56b8b976b5cea` | `contract_payment_discovery_dignitymoves` | Contract and payment acquisition gap record | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `918455949ff81683eee73e5c1e1a94666c6ef4fe6b0ba758e1a1bb8993f20ad2` |
+| `E03` | `evidence_1cde2e75545d024f` | `contract_payment_discovery_hope_the_mission` | Contract and payment acquisition gap record | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `6e6050bc2bf31feb6e4d8036c4d950ae42a7ae672c7550c1471a1dc2980c05ee` |
+| `E04` | `evidence_173b3ea25c8c9a43` | `contract_payment_discovery_the_people_concern` | Contract and payment acquisition gap record | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `3cc5df21fce4850e120554551ae8b594e15ba6184cf68c60d01aee240e1aab2f` |
+| `E05` | `evidence_766f33f5d680d693` | `contract_payment_discovery_weingart_center_association` | Contract and payment acquisition gap record | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `d32ea8e0575d16751a7c32b45c30b7f461f7973e55852406ac364f6f416e349a` |
 | `E06` | `evidence_f6fe5044b5956788` | `enforcement_docket_discovery_weingart_center_association` | enforcement_docket_discovery | https://www.justice.gov/ | 2026-04-30 | `9fcdbc0bb4a6fd5ae6c361cd285b78dea625041a8cddabc1003afb43de1ec966` |
 | `E07` | `evidence_3622ed0c56bb35d3` | `irs_990_raw_artifacts_dignitymoves` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip | 2023 | `f2e9cf4668349e3b211aa8e6c23ef9169703261730b46ce91ce81a25567f5a4e` |
 | `E08` | `evidence_384504f2ff2abdc2` | `irs_990_raw_artifacts_hope_the_mission` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip | 2023 | `e7d716387783b9368fe7c4f6f0ea0cd7b6ee33e6266beb37a3a8679551a44b86` |
@@ -3519,7 +3524,7 @@ Use this ledger to move from the readable case file back to source records. The 
 | Public statement source | 15 |
 | California Department of Housing and Community Development homelessness award record | 15 |
 | Federal Audit Clearinghouse audit summary | 13 |
-| contract_payment_discovery | 5 |
+| Contract and payment acquisition gap record | 5 |
 | irs_990_raw_artifact | 4 |
 | enforcement_docket_discovery | 1 |
 | Official enforcement or docket source | 1 |
