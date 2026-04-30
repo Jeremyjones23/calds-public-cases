@@ -1,16 +1,545 @@
 # Case Dossier: Live web case: top California homelessness nonprofits by state Homekey award exposure
 
-## 1. Supervisor Brief
+## 1. Executive Snapshot
 
-Bottom line: CalDS keeps DignityMoves at the top of this 15-entity case for possible waste, fraud, abuse, or mismanagement review because the top source-backed trigger is: Federal Audit Clearinghouse summary reports material weakness years=2024, internal-control deficiency years=none, not-low-risk years=2024, findings rows=0. Evidence: `E20`, `source_table_fac_audit`. The review priority score is 63.85 / 100, source completeness is 0.0 / 100, publication confidence is 30.0 / 100, and the sentinel posture is `DOWNGRADE_FOR_REVIEW`; this is a review priority, not a formal conclusion.
+Bottom line: CalDS screened 15 entities and keeps Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing in deep review because the strongest source-backed pattern is audit-control concerns, connected-party enforcement exposure, material public-funding exposure, and rapid financial growth. Evidence: `E20`, `E22`, `E21`. The review priority score is 63.85 / 100, source completeness is 0.0 / 100, publication confidence is 30.0 / 100, and the sentinel posture is `DOWNGRADE_FOR_REVIEW`; this is a review priority, not a formal conclusion.
 
-### What CalDS Found First
+- Case posture: internal possible waste, fraud, abuse, or mismanagement review lead; not a formal finding.
+- Entities selected for deep review: Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing.
+- Main signal pattern: audit-control concerns, connected-party enforcement exposure, material public-funding exposure, rapid financial growth, payroll or wage-growth questions, spend-versus-results mismatch, executive-compensation or payroll-governance questions, and possible scope-mismatch signals.
+- Review priority: 63.85 / 100; risk severity: 93.62 / 100; source completeness: 0.0 / 100; publication confidence: 30.0 / 100.
+- Current workflow state: `PENDING` with sentinel posture `DOWNGRADE_FOR_REVIEW`.
 
-- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings. Row-level... Source: [internal local artifact]
-- `E22` Official enforcement/docket triage source: Weingart Center Association (Official enforcement or docket source, 2025-10-16): An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for... Source: https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf
-- `E21` Parsed official enforcement and docket source table (Parsed enforcement and docket source table, 2025-10-16): Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { "case_id": "live_ca_homelessness_top15_2026_04_29", "created_at": "2026-04-30T21:10:11+00:00",... Source: [internal local artifact]
-- `E18` ProPublica Nonprofit Explorer Internal Revenue Service Form 990 filing summary table (Parsed Internal Revenue Service source table, 2026-04-30): ProPublica Nonprofit Explorer API filing summary for top-15 homelessness triage. ProPublica provides a public API and viewer for Internal Revenue Service nonprofit filing data. CalDS treats this as an access layer; raw Internal Revenue Service machine-readable filing data/source document filings remain controlling source documents.... Source: [internal local artifact]
-- 86 additional evidence item(s) are in the citation ledger.
+What CalDS found first:
+
+- `E22` Official enforcement/docket triage source: Weingart Center Association (Official enforcement or docket source, 2025-10-16): An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for...
+- `E21` Parsed official enforcement and docket source table (Parsed enforcement and docket source table, 2025-10-16): Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { "case_id": "live_ca_homelessness_top15_2026_04_29", "created_at": "2026-04-30T21:10:11+00:00",...
+- `E18` ProPublica Nonprofit Explorer Internal Revenue Service Form 990 filing summary table (Parsed Internal Revenue Service source table, 2026-04-30): ProPublica Nonprofit Explorer API filing summary for top-15 homelessness triage. ProPublica provides a public API and viewer for Internal Revenue Service nonprofit filing data. CalDS treats this as an access layer; raw Internal Revenue Service...
+- 15 additional evidence item(s) are in the citation ledger.
+
+Why this is on a reviewer's desk:
+
+- CalDS flags DignityMoves / Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2024, internal-control deficiency years=none, not-low-risk years=2024, findings rows=0. Evidence: `E20`. Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
+- CalDS flags Hope the Mission / Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2022, 2023, 2024, findings rows=103. Evidence: `E20`. Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
+- CalDS flags Weingart Center Association / Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2021, 2023, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2020, 2021, 2022, 2023, 2024, 2025, findings rows=22. Evidence: `E20`. Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
+- CalDS flags Weingart Center Association / Connected-party enforcement exposure: An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and State of California public funds for $27.3 million in a double-escrow transaction hidden from the lender. Los Angeles City Clerk records identify the Cheviot Hills/Shelby Homekey 3 project as Weingart-related and later describe The Weingart Shelby at 3340 Shelby Drive. Evidence: `E22`, `E21`. An official charge or indictment connected to a public-funded project or transaction chain is a hard deep-review trigger because the reviewer must verify named parties, payment flow, controls, and whether public dollars were exposed.
+- Source blockers to resolve before stronger ranking: Direct funding verification, Executive compensation, Facility status, Financial growth; plus 6 other source area(s). These are collection blockers, not adverse findings.
+
+### What The Score Means
+
+- Review priority 63.85 / 100: how urgently this case should stay in the review queue.
+- Risk severity 93.62 / 100: how strong the implemented source-backed risk indicators are.
+- Source completeness 0.0 / 100: how much of the required source set was actually recovered.
+- Publication confidence 30.0 / 100: whether the public-facing record is complete enough for outside use.
+- Meaning: a high risk-severity score with low source completeness is a strong reason to keep reviewing, not a reason to publish allegations.
+
+### Decision Needed
+
+- Human-review state: `PENDING`. The workflow is paused until a reviewer approves, downgrades, repairs, or rejects the case.
+- Sentinel posture: `DOWNGRADE_FOR_REVIEW`. Lead can proceed only as an internal reviewer-safe candidate with caveats.
+- Immediate reviewer action: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
+
+### What This Does Not Prove
+
+- This dossier does not make a formal finding of waste, fraud, or abuse. It identifies possible screening questions and source blockers for human review.
+- County or Continuum of Care outcomes are contextual unless provider-attributable outcome records are recovered and linked.
+- Connected-party enforcement exposure means an official source tied a charged person, transaction, project, or counterparty to the source chain; it does not mean the nonprofit was charged unless the cited source says that.
+- Homelessness scope-mismatch rows test whether public homelessness funds may have supported activity outside the funded scope; they do not state that the activity is categorically unlawful for a nonprofit.
+- Sentinel restrictions remain active: legal_status_context_required, missing_data.
+
+## 2. Case In One Page
+
+CalDS screened 15 entities in California for this objective: Using official California Department of Housing and Community Development Homekey and Homekey+ award lists, official homelessness outcome series, and public organization pages, identify reviewer-safe possible waste, fraud, abuse, or mismanagement screening signals among the top source-listed homelessness nonprofit co-applicants by state project-award exposure. Keep the result internal, source-cited, and clear that co-applicant project-award exposure is not the same as verified direct payment to the nonprofit. The run selected Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing for deeper review using deterministic triage thresholds. The source bundle includes California Department of Housing and Community Development homelessness award record (15), Organization service page (15), Public statement source (15), Internal Revenue Service Form 990 summary (15) and 11 other source class(es). Evidence references below use short `E##` labels, with full source details in the citation ledger.
+
+The case is not based on a row count. It is based on these source-backed review reasons:
+
+- DignityMoves: Federal Audit Clearinghouse summary reports material weakness years=2024, internal-control deficiency years=none, not-low-risk years=2024, findings rows=0. Why it matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds. Evidence: `E20`.
+- Hope the Mission: Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2022, 2023, 2024, findings rows=103. Why it matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds. Evidence: `E20`.
+- Weingart Center Association: Federal Audit Clearinghouse summary reports material weakness years=2021, 2023, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2020, 2021, 2022, 2023, 2024, 2025, findings rows=22. Why it matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds. Evidence: `E20`.
+
+Records still needed: Direct funding verification, Executive compensation, Facility status, Financial growth; plus 6 other source area(s). These gaps are collection blockers, not adverse findings.
+
+Sentinel posture remains `DOWNGRADE_FOR_REVIEW`. The score is a deterministic triage score, not a probability, not a dollar-loss estimate, and not a conclusion that misconduct occurred.
+
+## 3. Entity Briefs
+
+These briefs assume the reader has not seen the agent work. Deep-review entities are separated from watchlist or matrix-only entities so the reader can see what CalDS selected for deeper review versus what remains contextual.
+
+### Deep-Review Entities
+
+These entities crossed the implemented triage threshold for deeper forensic review in this run.
+
+#### California Supportive Housing
+
+Briefing judgment: CalDS treats California Supportive Housing as a deep-review possible waste, fraud, abuse, or mismanagement review subject because the records show spend-versus-results mismatch, and material public-funding exposure; the strongest current trigger is California Supportive Housing has state-award project geography in Alameda, Sacramento; official county or Continuum of Care context flags Alameda Continuum of Care M1a service-system volume increased from 13,827 in Jan 2023 - Dec 2023 to 15,967 in Jul 2024 - Jun 2025 (+15.5%), Sacramento Continuum of Care M1a service-system volume increased from 18,432 in Jan 2023 - Dec 2023 to 22,889 in Jul 2024 - Jun 2025 (+24.2%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$51,891,854. Evidence: `E13`, `E14`, `E12`, `E76`, `E18`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: California Supportive Housing` says or summarizes: - https://www.cshousing.org/: Home Search this site Embedded Files Skip to main content Skip to navigation Home About Us Projects Contact Us Home About Us Projects Contact Us More Home About Us Projects Contact Us California Supportive Housing Adding supportive and affordable communities one at a time Welcome to California Supportive... Evidence: `E59`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E01` Contract/payment acquisition gap: California Supportive Housing (contract_payment_discovery, 2026-04-30): California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable...
+- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
+- `E14` Deterministic state-award exposure versus homelessness outcome-context join (Parsed spend-versus-results join, 2026-04-29): Deterministic join from California Department of Housing and Community Development state project-award exposure to official county/Continuum of Care homelessness outcome context. County and Continuum of Care outcomes are not provider-attributable without...
+- 6 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- State homelessness award exposure: California Department of Housing and Community Development award lists name California Supportive Housing as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $51,891,854. Programs: Homekey Round 3, Homekey+. Award year(s): 2023, 2025. Counties: Alameda, Sacramento. Projects: CSH Enterprise Housing, CSH Elsie Housing. (year(s): 2023, 2025; place: Alameda, Sacramento; subject: California Supportive Housing; evidence `E12`, `E76`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Alameda, Sacramento: Alameda Continuum of Care M1a service-system volume increased from 13,827 in Jan 2023 - Dec 2023 to 15,967 in Jul 2024 - Jun 2025 (+15.5%), Sacramento Continuum of Care M1a service-system volume increased from 18,432 in Jan 2023 - Dec 2023 to 22,889 in Jul 2024 - Jun 2025 (+24.2%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$51,891,854. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Executive compensation, Facility status, Financial growth; plus 4 other source area(s). These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E13`, `E14`, `E12`, `E76`, `E18`.
+
+What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
+
+Recommended human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
+
+#### DignityMoves
+
+Briefing judgment: CalDS treats DignityMoves as a deep-review possible waste, fraud, abuse, or mismanagement review subject because the records show audit-control concerns, rapid financial growth, payroll or wage-growth questions, spend-versus-results mismatch, material public-funding exposure, and possible scope-mismatch signals; the strongest current trigger is Federal Audit Clearinghouse summary reports material weakness years=2024, internal-control deficiency years=none, not-low-risk years=2024, findings rows=0. Evidence: `E20`, `E18`, `E13`, `E14`, `E12`, `E67`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: DignityMoves` says or summarizes: - https://dignitymoves.org/interim-supportive-housing/: Homes for the Homeless | Interim Supportive Housing Capacity to Scale Challenge Donate Get Involved We’re Hiring! Who We Are Our Leadership Board & Advisors Lived Experience Advisory Board Our Partners What We Do Our Mission: A Future Without Street Homelessness Our Interim... Evidence: `E57`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E02` Contract/payment acquisition gap: DignityMoves (contract_payment_discovery, 2026-04-30): DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
+- `E07` Raw Form 990 artifact acquisition: DignityMoves (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service object ID:...
+- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
+- 7 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2024, internal-control deficiency years=none, not-low-risk years=2024, findings rows=0. (year(s): 2024; subject: DignityMoves; evidence `E20`.)
+- Financial growth: Internal Revenue Service parsed revenue moved from $5,610,876 in 2021 to $32,304,888 in 2023 (+475.8%). (year(s): 2021, 2023; subject: DignityMoves; evidence `E18`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $516,665 in 2021 to $1,572,234 in 2023 (+204.3%; $157,223 per employee using 10 employees). (year(s): 2021, 2023; subject: DignityMoves; evidence `E18`.)
+- Spending growth: Internal Revenue Service parsed expenses moved from $4,746,724 in 2021 to $25,122,959 in 2023 (+429.3%). (year(s): 2021, 2023; subject: DignityMoves; evidence `E18`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name DignityMoves as a co-applicant or project partner on 3 Homekey/Homekey+ project row(s), with total project-award exposure of $77,180,702. Programs: Homekey Round 3, Homekey+. Award year(s): 2023, 2024, 2025. Counties: Alameda, San Bernardino, Ventura. Projects: San Bernardino Community Wellness Campus, Dignity Village, Homekey+ Lewis Road. (year(s): 2023, 2024, 2025; place: Alameda, San Bernardino, Ventura; subject: DignityMoves; evidence `E12`, `E67`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Alameda, San Bernardino, Ventura: Alameda Continuum of Care M1a service-system volume increased from 13,827 in Jan 2023 - Dec 2023 to 15,967 in Jul 2024 - Jun 2025 (+15.5%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$77,180,702. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E20`, `E18`, `E13`, `E14`, `E12`, `E67`.
+
+What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
+
+Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
+
+#### Hope the Mission
+
+Briefing judgment: CalDS treats Hope the Mission as a deep-review possible waste, fraud, abuse, or mismanagement review subject because the records show audit-control concerns, material public-funding exposure, rapid financial growth, payroll or wage-growth questions, and spend-versus-results mismatch; the strongest current trigger is Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2022, 2023, 2024, findings rows=103. Evidence: `E20`, `E18`, `E13`, `E14`, `E12`, `E64`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Hope the Mission` says or summarizes: - https://hopethemission.org/our-programs/: try Program Tiny Homes Villages Ventura County Ways To Give Menu Toggle Donate Sponsor a Tiny Home Schedule a Pick-up Donate A Vehicle DAF & Stocks Donate Goods & Services Monthly Giving Legacy Giving Amazon Wishlist Get Involved Menu Toggle Volunteer Host A Drive Partnerships News & Events... Evidence: `E54`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E03` Contract/payment acquisition gap: Hope the Mission (contract_payment_discovery, 2026-04-30): Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
+- `E08` Raw Form 990 artifact acquisition: Hope the Mission (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service object ID:...
+- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
+- 7 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2022, 2023, 2024, findings rows=103. (year(s): 2022, 2023, 2024; subject: Hope the Mission; evidence `E20`.)
+- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $150,607,803. Top parsed program: CORONAVIRUS STATE AND LOCAL FISCAL RECOVERY FUNDS at $21,345,117. (subject: Hope the Mission; evidence `E20`.)
+- Financial growth: Internal Revenue Service parsed revenue moved from $49,730,169 in 2022 to $119,352,333 in 2023 (+140.0%). (year(s): 2022, 2023; subject: Hope the Mission; evidence `E18`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $19,579,583 in 2022 to $31,108,526 in 2023 (+58.9%; $32,919 per employee using 945 employees). (year(s): 2022, 2023; subject: Hope the Mission; evidence `E18`.)
+- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $102,056,068 / total revenue $119,352,333 = 85.5%. (year(s): 2023; subject: Hope the Mission; evidence `E18`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: Los Angeles Continuum of Care M1a service-system volume increased from 97,572 in Jan 2023 - Dec 2023 to 106,676 in Jul 2024 - Jun 2025 (+9.3%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$115,337,991. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E20`, `E18`, `E13`, `E14`, `E12`, `E64`.
+
+What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
+
+Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
+
+#### The People Concern
+
+Briefing judgment: CalDS treats The People Concern as a deep-review possible waste, fraud, abuse, or mismanagement review subject because the records show material public-funding exposure, spend-versus-results mismatch, audit-control concerns, and payroll or wage-growth questions; the strongest current trigger is Latest parsed Internal Revenue Service row with both fields is 2023: government grants $71,167,481 / total revenue $83,334,236 = 85.4%. Evidence: `E18`, `E13`, `E14`, `E12`, `E52`, `E20`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: The People Concern` says or summarizes: - https://thepeopleconcern.org/homeless-services/: Homeless Services - The People Concern Facebook X Instagram Contact Get Help Careers Volunteer Donate Home About Our Work Homeless Services Sojourn Domestic Violence Services k9 Connection Arts Program Support Ways to Give Planned Giving Monthly Giving Donate to PPTFH Corporate... Evidence: `E36`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E04` Contract/payment acquisition gap: The People Concern (contract_payment_discovery, 2026-04-30): The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
+- `E09` Raw Form 990 artifact acquisition: The People Concern (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service object ID:...
+- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
+- 5 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $71,167,481 / total revenue $83,334,236 = 85.4%. (year(s): 2023; subject: The People Concern; evidence `E18`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name The People Concern as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $53,435,650. Programs: Homekey+. Award year(s): 2025, 2026. Counties: Los Angeles. Projects: Safe Harbor I, St.Vincent Supportive Community. (year(s): 2025, 2026; place: Los Angeles; subject: The People Concern; evidence `E12`, `E52`.)
+- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=none, not-low-risk years=none, findings rows=1. (subject: The People Concern; evidence `E20`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $39,390,844 in 2022 to $52,463,892 in 2023 (+33.2%; $52,307 per employee using 1003 employees). (year(s): 2022, 2023; subject: The People Concern; evidence `E18`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: Los Angeles Continuum of Care M1a service-system volume increased from 97,572 in Jan 2023 - Dec 2023 to 106,676 in Jul 2024 - Jun 2025 (+9.3%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$53,435,650. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `E13`, `E14`, `E12`, `E52`, `E20`.
+
+What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review. It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
+
+Recommended human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
+
+#### Weingart Center Association
+
+Briefing judgment: CalDS treats Weingart Center Association as a deep-review possible waste, fraud, abuse, or mismanagement review subject because the records show audit-control concerns, connected-party enforcement exposure, rapid financial growth, material public-funding exposure, spend-versus-results mismatch, executive-compensation or payroll-governance questions, and payroll or wage-growth questions; the strongest current trigger is Federal Audit Clearinghouse summary reports material weakness years=2021, 2023, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2020, 2021, 2022, 2023, 2024, 2025, findings rows=22. Evidence: `E20`, `E22`, `E21`, `E18`, `E13`, `E14`, `E12`, `E42`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Weingart Center Association` says or summarizes: - https://www.weingart.org/programs: iors In the Press • On the Web Skid Row Cams FAQ DONATE The need is there. We’re here to help. Weingart Center goes beyond the emergency shelter approach by coupling comprehensive wraparound services with personalized housing solutions. As one of the best comprehensive human services organizations in... Evidence: `E28`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E05` Contract/payment acquisition gap: Weingart Center Association (contract_payment_discovery, 2026-04-30): Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable...
+- `E06` Official enforcement/docket public-source search: Weingart Center Association (enforcement_docket_discovery, 2026-04-30): Official enforcement row already recovered: True. Status: citation_ready_official_row_present. Completed public official search count: 4. Possible public adverse search-hit count: 0. Public official search results: - U.S. Department of Justice official...
+- `E10` Raw Form 990 artifact acquisition: Weingart Center Association (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service...
+- 9 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2021, 2023, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2020, 2021, 2022, 2023, 2024, 2025, findings rows=22. (year(s): 2020, 2021, 2022, 2023, 2024, 2025; subject: Weingart Center Association; evidence `E20`.)
+- Connected-party enforcement exposure: An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and State of California public funds for $27.3 million in a double-escrow transaction hidden from the lender. Los Angeles City Clerk records identify the Cheviot Hills/Shelby Homekey 3 project as Weingart-related and later describe The Weingart Shelby at 3340 Shelby Drive. (year(s): 2025; place: Los Angeles; subject: Weingart Center Association; evidence `E22`, `E21`.)
+- Financial growth: Internal Revenue Service parsed revenue moved from $29,856,733 in 2022 to $107,010,585 in 2023 (+258.4%). (year(s): 2022, 2023; subject: Weingart Center Association; evidence `E18`.)
+- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $100,833,258 / total revenue $107,010,585 = 94.2%. (year(s): 2023; subject: Weingart Center Association; evidence `E18`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name Weingart Center Association as a co-applicant or project partner on 3 Homekey/Homekey+ project row(s), with total project-award exposure of $95,565,300. Programs: Homekey Round 3. Award year(s): 2023. Counties: Los Angeles. Projects: The Weingart Sycamore, The Weingart Primrose, The Weingart Shelby. (year(s): 2023; place: Los Angeles; subject: Weingart Center Association; evidence `E12`, `E42`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: Los Angeles Continuum of Care M1a service-system volume increased from 97,572 in Jan 2023 - Dec 2023 to 106,676 in Jul 2024 - Jun 2025 (+9.3%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$95,565,300. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E20`, `E22`, `E21`, `E18`, `E13`, `E14`, `E12`, `E42`.
+
+What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove the nonprofit was charged, liable, or responsible; the cited official source controls the named-party legal status.
+
+Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
+
+### Watchlist And Matrix-Only Entities
+
+These entities have matrix signals or source gaps, but they were not selected for deep forensic review by the implemented triage threshold in this run.
+
+#### Abode Housing Development
+
+Briefing judgment: CalDS treats Abode Housing Development as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show executive-compensation or payroll-governance questions, rapid financial growth, audit-control concerns, payroll or wage-growth questions, and material public-funding exposure; the strongest current trigger is Latest parsed return 2023 reports LOUIS CHICOINE (EXECUTIVE DIRECTOR) of $300,007, equal to 4.72% of parsed expenses. Evidence: `E18`, `E20`, `E12`, `E37`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Abode Housing Development` says or summarizes: - https://abode.org/housing-development: hat We Do Abode Housing Development Abode Property Management Abode Services Housing Providers Outreach Need Help? Jobs and Careers Where We Work Our Reach Alameda County Santa Clara County Napa County San Francisco County San Mateo County Santa Cruz County Solano County Sonoma County Support Our... Evidence: `E24`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
+- `E18` ProPublica Nonprofit Explorer Internal Revenue Service Form 990 filing summary table (Parsed Internal Revenue Service source table, 2026-04-30): ProPublica Nonprofit Explorer API filing summary for top-15 homelessness triage. ProPublica provides a public API and viewer for Internal Revenue Service nonprofit filing data. CalDS treats this as an access layer; raw Internal Revenue Service...
+- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
+- 5 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Executive compensation: Latest parsed return 2023 reports LOUIS CHICOINE (EXECUTIVE DIRECTOR) of $300,007, equal to 4.72% of parsed expenses. (year(s): 2023; subject: Abode Housing Development; evidence `E18`.)
+- Financial growth: Internal Revenue Service parsed revenue moved from $7,841,164 in 2022 to $13,604,800 in 2023 (+73.5%). (year(s): 2022, 2023; subject: Abode Housing Development; evidence `E18`.)
+- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=2020, not-low-risk years=2018, 2019, 2021, 2022, findings rows=0. (year(s): 2018, 2019, 2020, 2021, 2022; subject: Abode Housing Development; evidence `E20`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $2,022,176 in 2022 to $2,552,716 in 2023 (+26.2%). (year(s): 2022, 2023; subject: Abode Housing Development; evidence `E18`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name Abode Housing Development as a co-applicant or project partner on 1 Homekey/Homekey+ project row(s), with total project-award exposure of $41,220,000. Programs: Homekey+. Award year(s): 2025. Counties: Santa Clara. Projects: Algarve Community Apartments. (year(s): 2025; place: Santa Clara; subject: Abode Housing Development; evidence `E12`, `E37`.)
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees audit-control context that can bear directly on stewardship of public funds, especially if findings, management responses, or corrective-action status remain unresolved. Evidence: `E18`, `E20`, `E12`, `E37`.
+
+What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
+
+Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
+
+#### Burbank Housing Development Corporation
+
+Briefing judgment: CalDS treats Burbank Housing Development Corporation as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show executive-compensation or payroll-governance questions, material public-funding exposure, spend-versus-results mismatch, and rapid financial growth; the strongest current trigger is Latest parsed return 2023 reports LAWRANCE FLORIN (chief executive officer) of $549,817, equal to 2.13% of parsed expenses. Evidence: `E18`, `E20`, `E13`, `E14`, `E12`, `E38`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Burbank Housing Development Corporation` says or summarizes: - https://burbankhousing.org/our-story/: Our Story – Burbank Housing Skip to content Attention: Burbank Housing is hiring! To see the list of current job opportunities, please visit our careers page . Residents Applicants Donate About Us FAQs Human Resources Education 2025 Annual Report News Partner Find a Home Residents Contact Us... Evidence: `E25`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
+- `E25` Official service/program page harvest: Burbank Housing Development Corporation (Organization service page, 2026-04-29): Organization: Burbank Housing Development Corporation Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://burbankhousing.org/our-story/: Our...
+- `E29` Public statement page harvest: Burbank Housing Development Corporation (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://burbankhousing.org/: oving entry to careers in the trades for Marin City residents. The program is a collaboration among Marin Housing...
+- 3 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Executive compensation: Latest parsed return 2023 reports LAWRANCE FLORIN (chief executive officer) of $549,817, equal to 2.13% of parsed expenses. (year(s): 2023; subject: Burbank Housing Development Corporation; evidence `E18`.)
+- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $215,420,651. Top parsed program: CORONAVIRUS STATE AND LOCAL FISCAL RECOVERY FUNDS at $16,702,443. (subject: Burbank Housing Development Corporation; evidence `E20`.)
+- Spending growth: Internal Revenue Service parsed expenses moved from $18,810,477 in 2022 to $25,771,273 in 2023 (+37.0%). (year(s): 2022, 2023; subject: Burbank Housing Development Corporation; evidence `E18`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name Burbank Housing Development Corporation as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $36,385,852. Programs: Homekey+. Award year(s): 2025. Counties: Napa, Sonoma. Projects: 4th and Division Apartments, 6500 Redwood Drive. (year(s): 2025; subject: Burbank Housing Development Corporation; evidence `E12`, `E38`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Napa, Sonoma: Napa Continuum of Care M1a service-system volume increased from 1,090 in Jan 2023 - Dec 2023 to 1,217 in Jul 2024 - Jun 2025 (+11.7%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$36,385,852. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `E20`, `E13`, `E14`, `E12`, `E38`.
+
+What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
+
+Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
+
+#### Community Revitalization and Development Corporation
+
+Briefing judgment: CalDS treats Community Revitalization and Development Corporation as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show executive-compensation or payroll-governance questions, rapid financial growth, payroll or wage-growth questions, spend-versus-results mismatch, and material public-funding exposure; the strongest current trigger is Latest parsed return 2023 reports WILLIAM D RUTLEDGE (PRESIDENT) of $151,354, equal to 13.02% of parsed expenses. Evidence: `E18`, `E13`, `E14`, `E12`, `E71`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Community Revitalization and Development Corporation` says or summarizes: - https://crdc.org/: CRDC Home - Community Revitalization & Development Corporation Skip to content Skip to footer HOME ABOUT US AFFORDABLE HOUSING PROJECTS CONTACT US Search Close HOME ABOUT US AFFORDABLE HOUSING PROJECTS CONTACT US We provide affordable housing for families and senior citizens. Providing Affordable Housing We focus our... Evidence: `E66`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
+- `E66` Official service/program page harvest: Community Revitalization and Development Corporation (Organization service page, 2026-04-29): Organization: Community Revitalization and Development Corporation Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://crdc.org/: CRDC Home -...
+- `E70` Public statement page harvest: Community Revitalization and Development Corporation (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://crdc.org/: CRDC Home - Community Revitalization & Development Corporation Skip to content Skip to footer HOME ABOUT US AFFORDABLE HOUSING...
+- 3 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Executive compensation: Latest parsed return 2023 reports WILLIAM D RUTLEDGE (PRESIDENT) of $151,354, equal to 13.02% of parsed expenses. (year(s): 2023; subject: Community Revitalization and Development Corporation; evidence `E18`.)
+- Financial growth: Internal Revenue Service parsed revenue moved from $1,559,120 in 2022 to $6,055,016 in 2023 (+288.4%). (year(s): 2022, 2023; subject: Community Revitalization and Development Corporation; evidence `E18`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $243,093 in 2022 to $358,911 in 2023 (+47.6%; $89,728 per employee using 4 employees). (year(s): 2022, 2023; subject: Community Revitalization and Development Corporation; evidence `E18`.)
+- Spending growth: Internal Revenue Service parsed expenses moved from $955,555 in 2022 to $1,162,854 in 2023 (+21.7%). (year(s): 2022, 2023; subject: Community Revitalization and Development Corporation; evidence `E18`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name Community Revitalization and Development Corporation as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $36,535,496. Programs: Homekey+. Award year(s): 2025. Counties: Amador, Solano. Projects: Vista Ridge, Valley View Commons. (year(s): 2025; subject: Community Revitalization and Development Corporation; evidence `E12`, `E71`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Amador, Solano: Amador Continuum of Care M1a service-system volume increased from 985 in Jan 2023 - Dec 2023 to 1,253 in Jul 2024 - Jun 2025 (+27.2%), Solano Continuum of Care M1a service-system volume increased from 1,952 in Jan 2023 - Dec 2023 to 3,096 in Jul 2024 - Jun 2025 (+58.6%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$36,535,496. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `E13`, `E14`, `E12`, `E71`.
+
+What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
+
+Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
+
+#### Habitat for Humanity Yuba/Sutter, Inc.
+
+Briefing judgment: CalDS treats Habitat for Humanity Yuba/Sutter, Inc. as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show audit-control concerns, executive-compensation or payroll-governance questions, rapid financial growth, payroll or wage-growth questions, and material public-funding exposure; the strongest current trigger is Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, 2025, internal-control deficiency years=2022, not-low-risk years=2022, 2023, 2024, 2025, findings rows=9. Evidence: `E20`, `E18`, `E12`, `E11`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Habitat for Humanity Yuba/Sutter, Inc.` says or summarizes: - https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/: Habitat for Humanity Yuba/Sutter | Habitat for Humanity California Close About Our History Board of Directors Find Your Local Affiliate Affordability Careers Advocacy Become an Advocate In The News Legislative Updates Get Involved Upcoming Events Become an Advocate... Evidence: `E27`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
+- `E27` Official service/program page harvest: Habitat for Humanity Yuba/Sutter, Inc. (Organization service page, 2026-04-29): Organization: Habitat for Humanity Yuba/Sutter, Inc. Official service/program pages fetched: 1 of 2. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): -...
+- `E11` California Department of Housing and Community Development Homekey/Homekey+ award rows: Habitat for Humanity Yuba/Sutter, Inc. (California Department of Housing and Community Development homelessness award record, 2026-02-13): Entity: Habitat for Humanity Yuba/Sutter, Inc.. Rank by parsed state project-award exposure: 14 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $35,086,396. Award rows: - 2024-02-13 Homekey Round 3: Merriment Village...
+- 3 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, 2025, internal-control deficiency years=2022, not-low-risk years=2022, 2023, 2024, 2025, findings rows=9. (year(s): 2022, 2023, 2024, 2025; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E20`.)
+- Executive compensation: Latest parsed return 2023 reports Joseph Hale (President & chief executive officer) of $135,098, equal to 2.93% of parsed expenses. (year(s): 2023; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E18`.)
+- Financial growth: Internal Revenue Service parsed revenue moved from $4,335,979 in 2022 to $10,271,607 in 2023 (+136.9%). (year(s): 2022, 2023; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E18`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $183,845 in 2022 to $1,600,872 in 2023 (+770.8%; $32,017 per employee using 50 employees). (year(s): 2022, 2023; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E18`.)
+- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $7,539,939 / total revenue $10,271,607 = 73.4%. (year(s): 2023; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E18`.)
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees audit-control context that can bear directly on stewardship of public funds, especially if findings, management responses, or corrective-action status remain unresolved. Evidence: `E20`, `E18`, `E12`, `E11`.
+
+What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed.
+
+Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
+
+#### Lutheran Social Services of Southern California
+
+Briefing judgment: CalDS treats Lutheran Social Services of Southern California as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show material public-funding exposure, audit-control concerns, executive-compensation or payroll-governance questions, and payroll or wage-growth questions; the strongest current trigger is Latest parsed Internal Revenue Service row with both fields is 2023: government grants $16,957,470 / total revenue $19,838,870 = 85.5%. Evidence: `E18`, `E20`, `E12`, `E72`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Lutheran Social Services of Southern California` says or summarizes: - https://www.lsssc.org/sbd-main: Magazine Friday Inspiration 2026 Gala & Awards Contact Donate San Bernardino County San Bernardino Community Wellness Campus Big Bear • Lucerne Valley • Yucca Valley • Barstow • Trona Help when it’s needed most for California’s Largest County As the largest geographical county in the contiguous 48 states... Evidence: `E56`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
+- `E56` Official service/program page harvest: Lutheran Social Services of Southern California (Organization service page, 2026-04-29): Organization: Lutheran Social Services of Southern California Official service/program pages fetched: 2 of 2. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://www.lsssc.org/sbd-main:...
+- `E62` Public statement page harvest: Lutheran Social Services of Southern California (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://www.lsssc.org/articles/get-out-there-n9t2h-wk9tc-mfxze: lder: About Back Mission Services Our Team Partners Financials Folder: Ways to...
+- 3 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $16,957,470 / total revenue $19,838,870 = 85.5%. (year(s): 2023; subject: Lutheran Social Services of Southern California; evidence `E18`.)
+- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=2018, 2019, 2020, not-low-risk years=2019, 2020, 2021, 2022, 2023, findings rows=10. (year(s): 2018, 2019, 2020, 2021, 2022, 2023; subject: Lutheran Social Services of Southern California; evidence `E20`.)
+- Executive compensation: Latest parsed return 2023 reports DR LASHARNDA BECKWITH (PRESIDENT & chief executive officer) of $241,871, equal to 1.35% of parsed expenses. (year(s): 2023; subject: Lutheran Social Services of Southern California; evidence `E18`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $9,258,039 in 2022 to $11,800,842 in 2023 (+27.5%; $43,385 per employee using 272 employees). (year(s): 2022, 2023; subject: Lutheran Social Services of Southern California; evidence `E18`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name Lutheran Social Services of Southern California as a co-applicant or project partner on 1 Homekey/Homekey+ project row(s), with total project-award exposure of $34,944,702. Programs: Homekey Round 3. Award year(s): 2023. Counties: San Bernardino. Projects: San Bernardino Community Wellness Campus. (year(s): 2023; place: San Bernardino; subject: Lutheran Social Services of Southern California; evidence `E12`, `E72`.)
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees audit-control context that can bear directly on stewardship of public funds, especially if findings, management responses, or corrective-action status remain unresolved. Evidence: `E18`, `E20`, `E12`, `E72`.
+
+What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review. It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
+
+Recommended human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
+
+#### PATH Ventures
+
+Briefing judgment: CalDS treats PATH Ventures as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show executive-compensation or payroll-governance questions, payroll or wage-growth questions, rapid financial growth, audit-control concerns, spend-versus-results mismatch, and material public-funding exposure; the strongest current trigger is Latest parsed return 2023 reports JENNIFER HARK-DIEtZ (President) of $423,702, equal to 7.32% of parsed expenses. Evidence: `E18`, `E20`, `E13`, `E14`, `E12`, `E41`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: PATH Ventures` says or summarizes: - https://epath.org/path-ventures/: unty PATH Ventures PATH Enterprises News & Events Building homes, community & stable lives About PATH Ventures ​PATH Ventures is a non-profit developer of supportive and affordable housing with projects located throughout California. Founded by PATH in 2007, PATH Ventures is building across the state,... Evidence: `E26`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
+- `E26` Official service/program page harvest: PATH Ventures (Organization service page, 2026-04-29): Organization: PATH Ventures Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://epath.org/path-ventures/: unty PATH Ventures PATH Enterprises...
+- `E30` Public statement page harvest: PATH Ventures (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://epath.org/: epath.org Work with PATH Careers Vendors Volunteer Support Path Get Help Select Page Who We Are About Contact Corporate...
+- 3 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Executive compensation: Latest parsed return 2023 reports JENNIFER HARK-DIEtZ (President) of $423,702, equal to 7.32% of parsed expenses. (year(s): 2023; subject: PATH Ventures; evidence `E18`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $1,461,070 in 2022 to $2,503,308 in 2023 (+71.3%; $147,253 per employee using 17 employees). (year(s): 2022, 2023; subject: PATH Ventures; evidence `E18`.)
+- Spending growth: Internal Revenue Service parsed expenses moved from $3,032,491 in 2022 to $5,786,089 in 2023 (+90.8%). (year(s): 2022, 2023; subject: PATH Ventures; evidence `E18`.)
+- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=2017, not-low-risk years=2016, 2017, findings rows=0. (year(s): 2016, 2017; subject: PATH Ventures; evidence `E20`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name PATH Ventures as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $42,672,927. Programs: Homekey+. Award year(s): 2025, 2026. Counties: Los Angeles. Projects: Path Villas East LA, PATH Villas South Park. (year(s): 2025, 2026; place: Los Angeles; subject: PATH Ventures; evidence `E12`, `E41`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: Los Angeles Continuum of Care M1a service-system volume increased from 97,572 in Jan 2023 - Dec 2023 to 106,676 in Jul 2024 - Jun 2025 (+9.3%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$42,672,927. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `E20`, `E13`, `E14`, `E12`, `E41`.
+
+What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove wrongdoing; it is a source-backed review prompt.
+
+Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
+
+#### Self-Help Enterprises
+
+Briefing judgment: CalDS treats Self-Help Enterprises as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show rapid financial growth, audit-control concerns, material public-funding exposure, possible scope-mismatch signals, payroll or wage-growth questions, and spend-versus-results mismatch; the strongest current trigger is Internal Revenue Service parsed revenue moved from $41,610,602 in 2022 to $65,987,549 in 2023 (+58.6%). Evidence: `E18`, `E20`, `E13`, `E14`, `E12`, `E68`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Self-Help Enterprises` says or summarizes: - https://www.selfhelpenterprises.org/: Self-Help Enterprises - Self-Help Enterprises Home About Us Programs News & Multimedia Get Involved Contact Us ✕ ☰ Search Search ✕ Home About Us Programs News & Multimedia Get Involved Contact Us Donate Facebook LinkedIn Translate Search Our Mission Service Area Our Impact Our Staff & Board Our... Evidence: `E48`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
+- `E14` Deterministic state-award exposure versus homelessness outcome-context join (Parsed spend-versus-results join, 2026-04-29): Deterministic join from California Department of Housing and Community Development state project-award exposure to official county/Continuum of Care homelessness outcome context. County and Continuum of Care outcomes are not provider-attributable without...
+- `E48` Official service/program page harvest: Self-Help Enterprises (Organization service page, 2026-04-29): Organization: Self-Help Enterprises Official service/program pages fetched: 2 of 2. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://www.selfhelpenterprises.org/: Self-Help Enterprises -...
+- 4 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Financial growth: Internal Revenue Service parsed revenue moved from $41,610,602 in 2022 to $65,987,549 in 2023 (+58.6%). (year(s): 2022, 2023; subject: Self-Help Enterprises; evidence `E18`.)
+- Spending growth: Internal Revenue Service parsed expenses moved from $35,659,831 in 2022 to $59,181,040 in 2023 (+66.0%). (year(s): 2022, 2023; subject: Self-Help Enterprises; evidence `E18`.)
+- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=2024, not-low-risk years=2025, findings rows=3. (year(s): 2024, 2025; subject: Self-Help Enterprises; evidence `E20`.)
+- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $101,329,080. Top parsed program: CAPITAL MAGNET FUND at $6,135,000. (subject: Self-Help Enterprises; evidence `E20`.)
+- Off-scope activity: Latest parsed return 2023 reports PoliticalCampaignActyInd=no and LobbyingActivitiesInd=yes. (year(s): 2023; subject: Self-Help Enterprises; evidence `E18`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Fresno, Merced, Tulare: Fresno Continuum of Care M1a service-system volume increased from 11,036 in Jan 2023 - Dec 2023 to 12,709 in Jul 2024 - Jun 2025 (+15.2%), Tulare Continuum of Care M1a service-system volume increased from 5,164 in Jan 2023 - Dec 2023 to 5,910 in Jul 2024 - Jun 2025 (+14.4%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$45,193,909. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `E20`, `E13`, `E14`, `E12`, `E68`.
+
+What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations. It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
+
+Recommended human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
+
+#### Service First Northern California
+
+Briefing judgment: CalDS treats Service First Northern California as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show rapid financial growth, payroll or wage-growth questions, executive-compensation or payroll-governance questions, spend-versus-results mismatch, and material public-funding exposure; the strongest current trigger is Internal Revenue Service parsed revenue moved from $4,639,426 in 2022 to $7,264,326 in 2023 (+56.6%). Evidence: `E18`, `E13`, `E14`, `E12`, `E46`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Service First Northern California` says or summarizes: - https://servicefirstnc.org/: on - Modesto Skip to content Call Us: 209-644-6300 Email: info@servicefirstnc.org Home Who We Are Our Team What We Do Outpatient Alcohol and Drug Treatment DUI Program Representative Payee Services Aquatic Therapy and Wellness Program Supportive Living Services “Options” Learning Center Transportation... Evidence: `E31`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E31` Official service/program page harvest: Service First Northern California (Organization service page, 2026-04-29): Organization: Service First Northern California Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://servicefirstnc.org/: on - Modesto Skip to...
+- `E32` Public statement page harvest: Service First Northern California (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://servicefirstnc.org/: on - Modesto Skip to content Call Us: 209-644-6300 Email: info@servicefirstnc.org Home Who We Are Our Team What We Do...
+- `E46` California Department of Housing and Community Development Homekey/Homekey+ award rows: Service First Northern California (California Department of Housing and Community Development homelessness award record, 2026-01-27): Entity: Service First Northern California. Rank by parsed state project-award exposure: 13 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $35,579,520. Award rows: - 2026-01-27 Homekey+: The Hunter House in Stockton,...
+- 2 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Financial growth: Internal Revenue Service parsed revenue moved from $4,639,426 in 2022 to $7,264,326 in 2023 (+56.6%). (year(s): 2022, 2023; subject: Service First Northern California; evidence `E18`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $3,105,229 in 2022 to $5,227,631 in 2023 (+68.3%; $41,489 per employee using 126 employees). (year(s): 2022, 2023; subject: Service First Northern California; evidence `E18`.)
+- Executive compensation: Latest parsed return 2023 reports VERNELL HILL JR (chief executive officer) of $130,000, equal to 1.72% of parsed expenses. (year(s): 2023; subject: Service First Northern California; evidence `E18`.)
+- Spending growth: Internal Revenue Service parsed expenses moved from $5,390,623 in 2022 to $7,561,906 in 2023 (+40.3%). (year(s): 2022, 2023; subject: Service First Northern California; evidence `E18`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name Service First Northern California as a co-applicant or project partner on 1 Homekey/Homekey+ project row(s), with total project-award exposure of $35,579,520. Programs: Homekey+. Award year(s): 2026. Counties: San Joaquin. Projects: The Hunter House. (year(s): 2026; subject: Service First Northern California; evidence `E12`, `E46`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: San Joaquin: San Joaquin Continuum of Care M1a service-system volume increased from 11,137 in Jan 2023 - Dec 2023 to 12,533 in Jul 2024 - Jun 2025 (+12.5%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$35,579,520. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status, Public-funds concentration. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `E13`, `E14`, `E12`, `E46`.
+
+What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations. It does not prove wrongdoing; it is a source-backed review prompt.
+
+Recommended human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
+
+#### Swords to Plowshares
+
+Briefing judgment: CalDS treats Swords to Plowshares as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show material public-funding exposure, payroll or wage-growth questions, possible scope-mismatch signals, and spend-versus-results mismatch; the strongest current trigger is Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $178,025,080. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $6,418,137. Evidence: `E20`, `E18`, `E13`, `E14`, `E12`, `E58`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: Swords to Plowshares` says or summarizes: - https://www.swords-to-plowshares.org/: e housing programs 90,000 Community meals served to increase veterans' food security $15M Won in lifetime income for veterans with disabilities + free VA healthcare for life Need assistance? Learn more about our wraparound supportive services and connect with us to access housing, employment,... Evidence: `E35`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E35` Official service/program page harvest: Swords to Plowshares (Organization service page, 2026-04-29): Organization: Swords to Plowshares Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://www.swords-to-plowshares.org/: e housing programs 90,000...
+- `E51` Public statement page harvest: Swords to Plowshares (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://www.swords-to-plowshares.org/about/vision-for-impact/care: ership Financials Careers Contact us News DONATE get care Donate today Donate...
+- `E58` California Department of Housing and Community Development Homekey/Homekey+ award rows: Swords to Plowshares (California Department of Housing and Community Development homelessness award record, 2025-09-19): Entity: Swords to Plowshares. Rank by parsed state project-award exposure: 10 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $39,044,030. Award rows: - 2025-09-19 Homekey+: 1034 Van Ness in San Francisco,
+- 1 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $178,025,080. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $6,418,137. (subject: Swords to Plowshares; evidence `E20`.)
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $2,017,562 in 2022 to $16,415,075 in 2023 (+713.6%; $64,121 per employee using 256 employees). (year(s): 2022, 2023; subject: Swords to Plowshares; evidence `E18`.)
+- Off-scope activity: Latest parsed return 2023 reports PoliticalCampaignActyInd=no and LobbyingActivitiesInd=yes. (year(s): 2023; subject: Swords to Plowshares; evidence `E18`.)
+- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $26,978,728 / total revenue $37,321,790 = 72.3%. (year(s): 2023; subject: Swords to Plowshares; evidence `E18`.)
+- State homelessness award exposure: California Department of Housing and Community Development award lists name Swords to Plowshares as a co-applicant or project partner on 1 Homekey/Homekey+ project row(s), with total project-award exposure of $39,044,030. Programs: Homekey+. Award year(s): 2025. Counties: San Francisco. Projects: 1034 Van Ness. (year(s): 2025; place: San Francisco; subject: Swords to Plowshares; evidence `E12`, `E58`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: San Francisco: San Francisco Continuum of Care M1a service-system volume increased from 19,118 in Jan 2023 - Dec 2023 to 21,255 in Jul 2024 - Jun 2025 (+11.2%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$39,044,030. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E20`, `E18`, `E13`, `E14`, `E12`, `E58`.
+
+What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review. It does not prove wrongdoing; it is a source-backed review prompt.
+
+Recommended human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
+
+#### TLCS, Inc.
+
+Briefing judgment: CalDS treats TLCS, Inc. as a watchlist or matrix-only subject, not a deep-review target selected by this run because the records show payroll or wage-growth questions, material public-funding exposure, rapid financial growth, and spend-versus-results mismatch; the strongest current trigger is Parsed salaries/compensation/benefits moved from $12,111,985 in 2022 to $17,500,055 in 2023 (+44.5%; $40,323 per employee using 434 employees). Evidence: `E18`, `E20`, `E13`, `E14`, `E12`, `E39`.
+
+Who they are / what they say they do: retrieved source `Official service/program page harvest: TLCS, Inc.` says or summarizes: - https://hopecoop.org/: for those living on the street with mental health challenges. Hope Cooperative Services See our community based mental health programs designed to support individuals with psychiatric disabilities. About Us Hope Cooperative (aka TLCS) has been providing behavioral health and supportive housing services to people... Evidence: `E15`.
+
+What CalDS found in the records:
+
+Key retrieved records:
+
+- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
+- `E15` Official service/program page harvest: TLCS, Inc. (Organization service page, 2026-04-29): Organization: TLCS, Inc. Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://hopecoop.org/: for those living on the street with mental health...
+- `E16` Public statement page harvest: TLCS, Inc. (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://hopecoop.org/: for those living on the street with mental health challenges. Hope Cooperative Services See our community based mental...
+- 3 additional matched source item(s) appear in the citation ledger.
+
+Why CalDS flagged it:
+
+- Payroll and wages: Parsed salaries/compensation/benefits moved from $12,111,985 in 2022 to $17,500,055 in 2023 (+44.5%; $40,323 per employee using 434 employees). (year(s): 2022, 2023; subject: TLCS, Inc.; evidence `E18`.)
+- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $28,978,012 / total revenue $30,779,320 = 94.1%. (year(s): 2023; subject: TLCS, Inc.; evidence `E18`.)
+- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $116,919,376. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $5,637,683. (subject: TLCS, Inc.; evidence `E20`.)
+- Financial growth: Internal Revenue Service parsed revenue moved from $22,008,043 in 2022 to $30,779,320 in 2023 (+39.9%). (year(s): 2022, 2023; subject: TLCS, Inc.; evidence `E18`.)
+- Spending growth: Internal Revenue Service parsed expenses moved from $22,353,498 in 2022 to $28,035,199 in 2023 (+25.4%). (year(s): 2022, 2023; subject: TLCS, Inc.; evidence `E18`.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Sacramento: Sacramento Continuum of Care M1a service-system volume increased from 18,432 in Jan 2023 - Dec 2023 to 22,889 in Jul 2024 - Jun 2025 (+24.2%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$40,386,000. This is a review signal, not provider attribution. Evidence `E13`, `E14`.
+- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
+
+Reviewer readout: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `E20`, `E13`, `E14`, `E12`, `E39`.
+
+What this does not prove: It does not prove wrongdoing; it is a source-backed review prompt. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
+
+Recommended human next step: Open the cited source records for TLCS, Inc. and compare the raw source wording to this row.
+
+### Case-wide Source Gaps
+
+These are not nonprofit organization-specific findings. They are run-level blockers that limit how strongly CalDS can rank or clear the case.
+
+- License/adverse-action history: California Department of Health Care Services adverse-action pages were fetched but did not expose machine-readable target rows in static text during this run.
+  Evidence: `E13`, `source_table_official_homelessness_outcomes`. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
+- Public attention and traffic: No social media account metrics, website analytics, ad-library records, or third-party traffic estimates are ingested in this run.
+  Evidence: no direct evidence ref in this row. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
+
+
+## 4. Methodology, Guardrails, and Source Status
 
 ### Triage Gate
 
@@ -41,29 +570,6 @@ Bottom line: CalDS keeps DignityMoves at the top of this 15-entity case for poss
 - Guard note: A searched_no_public_official_record status means configured public official sources were searched without recovering a public adverse record; it is not legal clearance.
 - Guard note: Dossier compilation may proceed only because unresolved source gaps are preserved for human review.
 
-### Why This Is On A Reviewer's Desk
-
-- CalDS flags DignityMoves / Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2024, internal-control deficiency years=none, not-low-risk years=2024, findings rows=0. Evidence: `E20`, `source_table_fac_audit`. Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
-- CalDS flags Habitat for Humanity Yuba/Sutter, Inc. / Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, 2025, internal-control deficiency years=2022, not-low-risk years=2022, 2023, 2024, 2025, findings rows=9. Evidence: `E20`, `source_table_fac_audit`. Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
-- CalDS flags Hope the Mission / Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2022, 2023, 2024, findings rows=103. Evidence: `E20`, `source_table_fac_audit`. Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
-- CalDS flags Weingart Center Association / Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2021, 2023, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2020, 2021, 2022, 2023, 2024, 2025, findings rows=22. Evidence: `E20`, `source_table_fac_audit`. Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
-- Source blockers to resolve before stronger ranking: Direct funding verification, Executive compensation, Facility status, Financial growth; plus 6 other source area(s). These are collection blockers, not adverse findings.
-
-### Decision Needed
-
-- Human-review state: `PENDING`. The workflow is paused until a reviewer approves, downgrades, repairs, or rejects the case.
-- Score: review priority 63.85 / 100; risk severity 93.62 / 100; source completeness 0.0 / 100; publication confidence 30.0 / 100. Risk severity answers whether the retrieved facts deserve review; publication confidence answers whether the record is ready to share.
-- Sentinel: `DOWNGRADE_FOR_REVIEW`. Lead can proceed only as an internal reviewer-safe candidate with caveats.
-- Immediate reviewer action: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
-
-### What This Does Not Prove
-
-- This dossier does not make a formal finding of waste, fraud, or abuse. It identifies possible screening questions and source blockers for human review.
-- County or Continuum of Care outcomes are contextual unless provider-attributable outcome records are recovered and linked.
-- Connected-party enforcement exposure means an official source tied a charged person, transaction, project, or counterparty to the source chain; it does not mean the nonprofit was charged unless the cited source says that.
-- Homelessness scope-mismatch rows test whether public homelessness funds may have supported activity outside the funded scope; they do not state that the activity is categorically unlawful for a nonprofit.
-- Sentinel restrictions remain active: legal_status_context_required, missing_data.
-
 ### Plain-Language Source Glossary
 
 - Federal Audit Clearinghouse: federal audit report, findings, and award data used for audit-control review.
@@ -78,485 +584,7 @@ Bottom line: CalDS keeps DignityMoves at the top of this 15-entity case for poss
 - Machine-readable filing data: structured source files used for source-system returns and extracts.
 - Source document: original audit, tax-return, or records file used as the controlling record.
 
-## 2. Entity Briefs
-
-These briefs assume the reader has not seen the agent work. Deep-review entities are separated from watchlist or matrix-only entities so the reader can see what CalDS selected for deeper review versus what remains contextual.
-
-### Deep-Review Entities
-
-These entities crossed the implemented triage threshold for deeper forensic review in this run.
-
-#### California Supportive Housing
-
-Briefing judgment: CalDS treats California Supportive Housing as a deep-review possible waste, fraud, abuse, or mismanagement review subject. Evidence: `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E76`, `source_table_state_homeless_awards`, `state_homeless_awards_california_supportive_housing`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: California Supportive Housing` says or summarizes: - https://www.cshousing.org/: Home Search this site Embedded Files Skip to main content Skip to navigation Home About Us Projects Contact Us Home About Us Projects Contact Us More Home About Us Projects Contact Us California Supportive Housing Adding supportive and affordable communities one at a time Welcome to California Supportive... Evidence: `E59`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E01` Contract/payment acquisition gap: California Supportive Housing (contract_payment_discovery, 2026-04-30): California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable...
-- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
-- `E14` Deterministic state-award exposure versus homelessness outcome-context join (Parsed spend-versus-results join, 2026-04-29): Deterministic join from California Department of Housing and Community Development state project-award exposure to official county/Continuum of Care homelessness outcome context. County and Continuum of Care outcomes are not provider-attributable without...
-- 6 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- State homelessness award exposure: California Department of Housing and Community Development award lists name California Supportive Housing as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $51,891,854. Programs: Homekey Round 3, Homekey+. Award year(s): 2023, 2025. Counties: Alameda, Sacramento. Projects: CSH Enterprise Housing, CSH Elsie Housing. (year(s): 2023, 2025; place: Alameda, Sacramento; subject: California Supportive Housing; evidence `E12`, `E76`, `source_table_state_homeless_awards`, `state_homeless_awards_california_supportive_housing`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Alameda, Sacramento: Alameda Continuum of Care M1a service-system volume increased from 13,827 in Jan 2023 - Dec 2023 to 15,967 in Jul 2024 - Jun 2025 (+15.5%), Sacramento Continuum of Care M1a service-system volume increased from 18,432 in Jan 2023 - Dec 2023 to 22,889 in Jul 2024 - Jun 2025 (+24.2%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$51,891,854. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Executive compensation, Facility status, Financial growth; plus 4 other source area(s). These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E76`, `source_table_state_homeless_awards`, `state_homeless_awards_california_supportive_housing`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.
-
-What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
-
-Boss-level next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
-
-#### DignityMoves
-
-Briefing judgment: CalDS treats DignityMoves as a deep-review possible waste, fraud, abuse, or mismanagement review subject. Evidence: `E20`, `source_table_fac_audit`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E67`, `source_table_state_homeless_awards`, `state_homeless_awards_dignitymoves`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: DignityMoves` says or summarizes: - https://dignitymoves.org/interim-supportive-housing/: Homes for the Homeless | Interim Supportive Housing Capacity to Scale Challenge Donate Get Involved We’re Hiring! Who We Are Our Leadership Board & Advisors Lived Experience Advisory Board Our Partners What We Do Our Mission: A Future Without Street Homelessness Our Interim... Evidence: `E57`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E02` Contract/payment acquisition gap: DignityMoves (contract_payment_discovery, 2026-04-30): DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
-- `E07` Raw Form 990 artifact acquisition: DignityMoves (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service object ID:...
-- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
-- 7 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2024, internal-control deficiency years=none, not-low-risk years=2024, findings rows=0. (year(s): 2024; subject: DignityMoves; evidence `E20`, `source_table_fac_audit`.)
-- Financial growth: Internal Revenue Service parsed revenue moved from $5,610,876 in 2021 to $32,304,888 in 2023 (+475.8%). (year(s): 2021, 2023; subject: DignityMoves; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $516,665 in 2021 to $1,572,234 in 2023 (+204.3%; $157,223 per employee using 10 employees). (year(s): 2021, 2023; subject: DignityMoves; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spending growth: Internal Revenue Service parsed expenses moved from $4,746,724 in 2021 to $25,122,959 in 2023 (+429.3%). (year(s): 2021, 2023; subject: DignityMoves; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name DignityMoves as a co-applicant or project partner on 3 Homekey/Homekey+ project row(s), with total project-award exposure of $77,180,702. Programs: Homekey Round 3, Homekey+. Award year(s): 2023, 2024, 2025. Counties: Alameda, San Bernardino, Ventura. Projects: San Bernardino Community Wellness Campus, Dignity Village, Homekey+ Lewis Road. (year(s): 2023, 2024, 2025; place: Alameda, San Bernardino, Ventura; subject: DignityMoves; evidence `E12`, `E67`, `source_table_state_homeless_awards`, `state_homeless_awards_dignitymoves`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Alameda, San Bernardino, Ventura: Alameda Continuum of Care M1a service-system volume increased from 13,827 in Jan 2023 - Dec 2023 to 15,967 in Jul 2024 - Jun 2025 (+15.5%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$77,180,702. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E20`, `source_table_fac_audit`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E67`, `source_table_state_homeless_awards`, `state_homeless_awards_dignitymoves`.
-
-What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
-
-Boss-level next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
-
-#### Hope the Mission
-
-Briefing judgment: CalDS treats Hope the Mission as a deep-review possible waste, fraud, abuse, or mismanagement review subject. Evidence: `E20`, `source_table_fac_audit`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E64`, `source_table_state_homeless_awards`, `state_homeless_awards_hope_the_mission`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Hope the Mission` says or summarizes: - https://hopethemission.org/our-programs/: try Program Tiny Homes Villages Ventura County Ways To Give Menu Toggle Donate Sponsor a Tiny Home Schedule a Pick-up Donate A Vehicle DAF & Stocks Donate Goods & Services Monthly Giving Legacy Giving Amazon Wishlist Get Involved Menu Toggle Volunteer Host A Drive Partnerships News & Events... Evidence: `E54`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E03` Contract/payment acquisition gap: Hope the Mission (contract_payment_discovery, 2026-04-30): Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
-- `E08` Raw Form 990 artifact acquisition: Hope the Mission (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service object ID:...
-- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
-- 7 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2022, 2023, 2024, findings rows=103. (year(s): 2022, 2023, 2024; subject: Hope the Mission; evidence `E20`, `source_table_fac_audit`.)
-- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $150,607,803. Top parsed program: CORONAVIRUS STATE AND LOCAL FISCAL RECOVERY FUNDS at $21,345,117. (subject: Hope the Mission; evidence `E20`, `source_table_fac_audit`.)
-- Financial growth: Internal Revenue Service parsed revenue moved from $49,730,169 in 2022 to $119,352,333 in 2023 (+140.0%). (year(s): 2022, 2023; subject: Hope the Mission; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $19,579,583 in 2022 to $31,108,526 in 2023 (+58.9%; $32,919 per employee using 945 employees). (year(s): 2022, 2023; subject: Hope the Mission; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $102,056,068 / total revenue $119,352,333 = 85.5%. (year(s): 2023; subject: Hope the Mission; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: Los Angeles Continuum of Care M1a service-system volume increased from 97,572 in Jan 2023 - Dec 2023 to 106,676 in Jul 2024 - Jun 2025 (+9.3%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$115,337,991. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E20`, `source_table_fac_audit`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E64`, `source_table_state_homeless_awards`, `state_homeless_awards_hope_the_mission`.
-
-What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
-
-Boss-level next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
-
-#### The People Concern
-
-Briefing judgment: CalDS treats The People Concern as a deep-review possible waste, fraud, abuse, or mismanagement review subject. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E52`, `source_table_state_homeless_awards`, `state_homeless_awards_the_people_concern`, `E20`, `source_table_fac_audit`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: The People Concern` says or summarizes: - https://thepeopleconcern.org/homeless-services/: Homeless Services - The People Concern Facebook X Instagram Contact Get Help Careers Volunteer Donate Home About Our Work Homeless Services Sojourn Domestic Violence Services k9 Connection Arts Program Support Ways to Give Planned Giving Monthly Giving Donate to PPTFH Corporate... Evidence: `E36`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E04` Contract/payment acquisition gap: The People Concern (contract_payment_discovery, 2026-04-30): The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was...
-- `E09` Raw Form 990 artifact acquisition: The People Concern (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service object ID:...
-- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
-- 5 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $71,167,481 / total revenue $83,334,236 = 85.4%. (year(s): 2023; subject: The People Concern; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name The People Concern as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $53,435,650. Programs: Homekey+. Award year(s): 2025, 2026. Counties: Los Angeles. Projects: Safe Harbor I, St.Vincent Supportive Community. (year(s): 2025, 2026; place: Los Angeles; subject: The People Concern; evidence `E12`, `E52`, `source_table_state_homeless_awards`, `state_homeless_awards_the_people_concern`.)
-- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=none, not-low-risk years=none, findings rows=1. (subject: The People Concern; evidence `E20`, `source_table_fac_audit`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $39,390,844 in 2022 to $52,463,892 in 2023 (+33.2%; $52,307 per employee using 1003 employees). (year(s): 2022, 2023; subject: The People Concern; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: Los Angeles Continuum of Care M1a service-system volume increased from 97,572 in Jan 2023 - Dec 2023 to 106,676 in Jul 2024 - Jun 2025 (+9.3%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$53,435,650. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E52`, `source_table_state_homeless_awards`, `state_homeless_awards_the_people_concern`, `E20`, `source_table_fac_audit`.
-
-What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review. It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
-
-Boss-level next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
-
-#### Weingart Center Association
-
-Briefing judgment: CalDS treats Weingart Center Association as a deep-review possible waste, fraud, abuse, or mismanagement review subject. Evidence: `E20`, `source_table_fac_audit`, `E22`, `E21`, `enforcement_docket_weingart_center_association_1`, `source_table_enforcement_docket`, `source_table_enforcement_docket_discovery`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E42`, `source_table_state_homeless_awards`, `state_homeless_awards_weingart_center`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Weingart Center Association` says or summarizes: - https://www.weingart.org/programs: iors In the Press • On the Web Skid Row Cams FAQ DONATE The need is there. We’re here to help. Weingart Center goes beyond the emergency shelter approach by coupling comprehensive wraparound services with personalized housing solutions. As one of the best comprehensive human services organizations in... Evidence: `E28`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E05` Contract/payment acquisition gap: Weingart Center Association (contract_payment_discovery, 2026-04-30): Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project row(s). No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable...
-- `E06` Official enforcement/docket public-source search: Weingart Center Association (enforcement_docket_discovery, 2026-04-30): Official enforcement row already recovered: True. Status: citation_ready_official_row_present. Completed public official search count: 4. Possible public adverse search-hit count: 0. Public official search results: - U.S. Department of Justice official...
-- `E10` Raw Form 990 artifact acquisition: Weingart Center Association (irs_990_raw_artifact, 2023): Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023. Full source document downloaded: False local path: not archived. source document SHA256: not available. Internal Revenue Service...
-- 9 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2021, 2023, internal-control deficiency years=2022, 2023, 2024, not-low-risk years=2020, 2021, 2022, 2023, 2024, 2025, findings rows=22. (year(s): 2020, 2021, 2022, 2023, 2024, 2025; subject: Weingart Center Association; evidence `E20`, `source_table_fac_audit`.)
-- Connected-party enforcement exposure: An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and State of California public funds for $27.3 million in a double-escrow transaction hidden from the lender. Los Angeles City Clerk records identify the Cheviot Hills/Shelby Homekey 3 project as Weingart-related and later describe The Weingart Shelby at 3340 Shelby Drive. (year(s): 2025; place: Los Angeles; subject: Weingart Center Association; evidence `E22`, `E21`, `enforcement_docket_weingart_center_association_1`, `source_table_enforcement_docket`, `source_table_enforcement_docket_discovery`.)
-- Financial growth: Internal Revenue Service parsed revenue moved from $29,856,733 in 2022 to $107,010,585 in 2023 (+258.4%). (year(s): 2022, 2023; subject: Weingart Center Association; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $100,833,258 / total revenue $107,010,585 = 94.2%. (year(s): 2023; subject: Weingart Center Association; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name Weingart Center Association as a co-applicant or project partner on 3 Homekey/Homekey+ project row(s), with total project-award exposure of $95,565,300. Programs: Homekey Round 3. Award year(s): 2023. Counties: Los Angeles. Projects: The Weingart Sycamore, The Weingart Primrose, The Weingart Shelby. (year(s): 2023; place: Los Angeles; subject: Weingart Center Association; evidence `E12`, `E42`, `source_table_state_homeless_awards`, `state_homeless_awards_weingart_center`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: Los Angeles Continuum of Care M1a service-system volume increased from 97,572 in Jan 2023 - Dec 2023 to 106,676 in Jul 2024 - Jun 2025 (+9.3%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$95,565,300. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E20`, `source_table_fac_audit`, `E22`, `E21`, `enforcement_docket_weingart_center_association_1`, `source_table_enforcement_docket`, `source_table_enforcement_docket_discovery`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E42`, `source_table_state_homeless_awards`, `state_homeless_awards_weingart_center`.
-
-What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove the nonprofit was charged, liable, or responsible; the cited official source controls the named-party legal status.
-
-Boss-level next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
-
-### Watchlist And Matrix-Only Entities
-
-These entities have matrix signals or source gaps, but they were not selected for deep forensic review by the implemented triage threshold in this run.
-
-#### Abode Housing Development
-
-Briefing judgment: CalDS treats Abode Housing Development as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E12`, `E37`, `source_table_state_homeless_awards`, `state_homeless_awards_abode_housing_development`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Abode Housing Development` says or summarizes: - https://abode.org/housing-development: hat We Do Abode Housing Development Abode Property Management Abode Services Housing Providers Outreach Need Help? Jobs and Careers Where We Work Our Reach Alameda County Santa Clara County Napa County San Francisco County San Mateo County Santa Cruz County Solano County Sonoma County Support Our... Evidence: `E24`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
-- `E18` ProPublica Nonprofit Explorer Internal Revenue Service Form 990 filing summary table (Parsed Internal Revenue Service source table, 2026-04-30): ProPublica Nonprofit Explorer API filing summary for top-15 homelessness triage. ProPublica provides a public API and viewer for Internal Revenue Service nonprofit filing data. CalDS treats this as an access layer; raw Internal Revenue Service...
-- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
-- 5 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Executive compensation: Latest parsed return 2023 reports LOUIS CHICOINE (EXECUTIVE DIRECTOR) of $300,007, equal to 4.72% of parsed expenses. (year(s): 2023; subject: Abode Housing Development; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Financial growth: Internal Revenue Service parsed revenue moved from $7,841,164 in 2022 to $13,604,800 in 2023 (+73.5%). (year(s): 2022, 2023; subject: Abode Housing Development; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=2020, not-low-risk years=2018, 2019, 2021, 2022, findings rows=0. (year(s): 2018, 2019, 2020, 2021, 2022; subject: Abode Housing Development; evidence `E20`, `source_table_fac_audit`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $2,022,176 in 2022 to $2,552,716 in 2023 (+26.2%). (year(s): 2022, 2023; subject: Abode Housing Development; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name Abode Housing Development as a co-applicant or project partner on 1 Homekey/Homekey+ project row(s), with total project-award exposure of $41,220,000. Programs: Homekey+. Award year(s): 2025. Counties: Santa Clara. Projects: Algarve Community Apartments. (year(s): 2025; place: Santa Clara; subject: Abode Housing Development; evidence `E12`, `E37`, `source_table_state_homeless_awards`, `state_homeless_awards_abode_housing_development`.)
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees audit-control context that can bear directly on stewardship of public funds, especially if findings, management responses, or corrective-action status remain unresolved. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E12`, `E37`, `source_table_state_homeless_awards`, `state_homeless_awards_abode_housing_development`.
-
-What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
-
-Boss-level next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
-
-#### Burbank Housing Development Corporation
-
-Briefing judgment: CalDS treats Burbank Housing Development Corporation as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E38`, `source_table_state_homeless_awards`, `state_homeless_awards_burbank_housing_development`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Burbank Housing Development Corporation` says or summarizes: - https://burbankhousing.org/our-story/: Our Story – Burbank Housing Skip to content Attention: Burbank Housing is hiring! To see the list of current job opportunities, please visit our careers page . Residents Applicants Donate About Us FAQs Human Resources Education 2025 Annual Report News Partner Find a Home Residents Contact Us... Evidence: `E25`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
-- `E25` Official service/program page harvest: Burbank Housing Development Corporation (Organization service page, 2026-04-29): Organization: Burbank Housing Development Corporation Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://burbankhousing.org/our-story/: Our...
-- `E29` Public statement page harvest: Burbank Housing Development Corporation (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://burbankhousing.org/: oving entry to careers in the trades for Marin City residents. The program is a collaboration among Marin Housing...
-- 3 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Executive compensation: Latest parsed return 2023 reports LAWRANCE FLORIN (chief executive officer) of $549,817, equal to 2.13% of parsed expenses. (year(s): 2023; subject: Burbank Housing Development Corporation; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $215,420,651. Top parsed program: CORONAVIRUS STATE AND LOCAL FISCAL RECOVERY FUNDS at $16,702,443. (subject: Burbank Housing Development Corporation; evidence `E20`, `source_table_fac_audit`.)
-- Spending growth: Internal Revenue Service parsed expenses moved from $18,810,477 in 2022 to $25,771,273 in 2023 (+37.0%). (year(s): 2022, 2023; subject: Burbank Housing Development Corporation; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name Burbank Housing Development Corporation as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $36,385,852. Programs: Homekey+. Award year(s): 2025. Counties: Napa, Sonoma. Projects: 4th and Division Apartments, 6500 Redwood Drive. (year(s): 2025; subject: Burbank Housing Development Corporation; evidence `E12`, `E38`, `source_table_state_homeless_awards`, `state_homeless_awards_burbank_housing_development`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Napa, Sonoma: Napa Continuum of Care M1a service-system volume increased from 1,090 in Jan 2023 - Dec 2023 to 1,217 in Jul 2024 - Jun 2025 (+11.7%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$36,385,852. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E38`, `source_table_state_homeless_awards`, `state_homeless_awards_burbank_housing_development`.
-
-What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
-
-Boss-level next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
-
-#### Community Revitalization and Development Corporation
-
-Briefing judgment: CalDS treats Community Revitalization and Development Corporation as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E71`, `source_table_state_homeless_awards`, `state_homeless_awards_community_revitalization_development`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Community Revitalization and Development Corporation` says or summarizes: - https://crdc.org/: CRDC Home - Community Revitalization & Development Corporation Skip to content Skip to footer HOME ABOUT US AFFORDABLE HOUSING PROJECTS CONTACT US Search Close HOME ABOUT US AFFORDABLE HOUSING PROJECTS CONTACT US We provide affordable housing for families and senior citizens. Providing Affordable Housing We focus our... Evidence: `E66`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
-- `E66` Official service/program page harvest: Community Revitalization and Development Corporation (Organization service page, 2026-04-29): Organization: Community Revitalization and Development Corporation Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://crdc.org/: CRDC Home -...
-- `E70` Public statement page harvest: Community Revitalization and Development Corporation (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://crdc.org/: CRDC Home - Community Revitalization & Development Corporation Skip to content Skip to footer HOME ABOUT US AFFORDABLE HOUSING...
-- 3 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Executive compensation: Latest parsed return 2023 reports WILLIAM D RUTLEDGE (PRESIDENT) of $151,354, equal to 13.02% of parsed expenses. (year(s): 2023; subject: Community Revitalization and Development Corporation; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Financial growth: Internal Revenue Service parsed revenue moved from $1,559,120 in 2022 to $6,055,016 in 2023 (+288.4%). (year(s): 2022, 2023; subject: Community Revitalization and Development Corporation; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $243,093 in 2022 to $358,911 in 2023 (+47.6%; $89,728 per employee using 4 employees). (year(s): 2022, 2023; subject: Community Revitalization and Development Corporation; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spending growth: Internal Revenue Service parsed expenses moved from $955,555 in 2022 to $1,162,854 in 2023 (+21.7%). (year(s): 2022, 2023; subject: Community Revitalization and Development Corporation; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name Community Revitalization and Development Corporation as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $36,535,496. Programs: Homekey+. Award year(s): 2025. Counties: Amador, Solano. Projects: Vista Ridge, Valley View Commons. (year(s): 2025; subject: Community Revitalization and Development Corporation; evidence `E12`, `E71`, `source_table_state_homeless_awards`, `state_homeless_awards_community_revitalization_development`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Amador, Solano: Amador Continuum of Care M1a service-system volume increased from 985 in Jan 2023 - Dec 2023 to 1,253 in Jul 2024 - Jun 2025 (+27.2%), Solano Continuum of Care M1a service-system volume increased from 1,952 in Jan 2023 - Dec 2023 to 3,096 in Jul 2024 - Jun 2025 (+58.6%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$36,535,496. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E71`, `source_table_state_homeless_awards`, `state_homeless_awards_community_revitalization_development`.
-
-What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
-
-Boss-level next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
-
-#### Habitat for Humanity Yuba/Sutter, Inc.
-
-Briefing judgment: CalDS treats Habitat for Humanity Yuba/Sutter, Inc. as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E20`, `source_table_fac_audit`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E12`, `E11`, `source_table_state_homeless_awards`, `state_homeless_awards_habitat_yuba_sutter`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Habitat for Humanity Yuba/Sutter, Inc.` says or summarizes: - https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/: Habitat for Humanity Yuba/Sutter | Habitat for Humanity California Close About Our History Board of Directors Find Your Local Affiliate Affordability Careers Advocacy Become an Advocate In The News Legislative Updates Get Involved Upcoming Events Become an Advocate... Evidence: `E27`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
-- `E27` Official service/program page harvest: Habitat for Humanity Yuba/Sutter, Inc. (Organization service page, 2026-04-29): Organization: Habitat for Humanity Yuba/Sutter, Inc. Official service/program pages fetched: 1 of 2. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): -...
-- `E11` California Department of Housing and Community Development Homekey/Homekey+ award rows: Habitat for Humanity Yuba/Sutter, Inc. (California Department of Housing and Community Development homelessness award record, 2026-02-13): Entity: Habitat for Humanity Yuba/Sutter, Inc.. Rank by parsed state project-award exposure: 14 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $35,086,396. Award rows: - 2024-02-13 Homekey Round 3: Merriment Village...
-- 3 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=2022, 2023, 2024, 2025, internal-control deficiency years=2022, not-low-risk years=2022, 2023, 2024, 2025, findings rows=9. (year(s): 2022, 2023, 2024, 2025; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E20`, `source_table_fac_audit`.)
-- Executive compensation: Latest parsed return 2023 reports Joseph Hale (President & chief executive officer) of $135,098, equal to 2.93% of parsed expenses. (year(s): 2023; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Financial growth: Internal Revenue Service parsed revenue moved from $4,335,979 in 2022 to $10,271,607 in 2023 (+136.9%). (year(s): 2022, 2023; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $183,845 in 2022 to $1,600,872 in 2023 (+770.8%; $32,017 per employee using 50 employees). (year(s): 2022, 2023; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $7,539,939 / total revenue $10,271,607 = 73.4%. (year(s): 2023; subject: Habitat for Humanity Yuba/Sutter, Inc.; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees audit-control context that can bear directly on stewardship of public funds, especially if findings, management responses, or corrective-action status remain unresolved. Evidence: `E20`, `source_table_fac_audit`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E12`, `E11`, `source_table_state_homeless_awards`, `state_homeless_awards_habitat_yuba_sutter`.
-
-What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed.
-
-Boss-level next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
-
-#### Lutheran Social Services of Southern California
-
-Briefing judgment: CalDS treats Lutheran Social Services of Southern California as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E12`, `E72`, `source_table_state_homeless_awards`, `state_homeless_awards_lutheran_social_services_socal`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Lutheran Social Services of Southern California` says or summarizes: - https://www.lsssc.org/sbd-main: Magazine Friday Inspiration 2026 Gala & Awards Contact Donate San Bernardino County San Bernardino Community Wellness Campus Big Bear • Lucerne Valley • Yucca Valley • Barstow • Trona Help when it’s needed most for California’s Largest County As the largest geographical county in the contiguous 48 states... Evidence: `E56`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E20` Federal Audit Clearinghouse target audit-source extraction table (Parsed Federal Audit Clearinghouse audit table, 2026-04-30): Official Federal Audit Clearinghouse source data table extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings....
-- `E56` Official service/program page harvest: Lutheran Social Services of Southern California (Organization service page, 2026-04-29): Organization: Lutheran Social Services of Southern California Official service/program pages fetched: 2 of 2. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://www.lsssc.org/sbd-main:...
-- `E62` Public statement page harvest: Lutheran Social Services of Southern California (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://www.lsssc.org/articles/get-out-there-n9t2h-wk9tc-mfxze: lder: About Back Mission Services Our Team Partners Financials Folder: Ways to...
-- 3 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $16,957,470 / total revenue $19,838,870 = 85.5%. (year(s): 2023; subject: Lutheran Social Services of Southern California; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=2018, 2019, 2020, not-low-risk years=2019, 2020, 2021, 2022, 2023, findings rows=10. (year(s): 2018, 2019, 2020, 2021, 2022, 2023; subject: Lutheran Social Services of Southern California; evidence `E20`, `source_table_fac_audit`.)
-- Executive compensation: Latest parsed return 2023 reports DR LASHARNDA BECKWITH (PRESIDENT & chief executive officer) of $241,871, equal to 1.35% of parsed expenses. (year(s): 2023; subject: Lutheran Social Services of Southern California; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $9,258,039 in 2022 to $11,800,842 in 2023 (+27.5%; $43,385 per employee using 272 employees). (year(s): 2022, 2023; subject: Lutheran Social Services of Southern California; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name Lutheran Social Services of Southern California as a co-applicant or project partner on 1 Homekey/Homekey+ project row(s), with total project-award exposure of $34,944,702. Programs: Homekey Round 3. Award year(s): 2023. Counties: San Bernardino. Projects: San Bernardino Community Wellness Campus. (year(s): 2023; place: San Bernardino; subject: Lutheran Social Services of Southern California; evidence `E12`, `E72`, `source_table_state_homeless_awards`, `state_homeless_awards_lutheran_social_services_socal`.)
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees audit-control context that can bear directly on stewardship of public funds, especially if findings, management responses, or corrective-action status remain unresolved. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E12`, `E72`, `source_table_state_homeless_awards`, `state_homeless_awards_lutheran_social_services_socal`.
-
-What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review. It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
-
-Boss-level next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
-
-#### PATH Ventures
-
-Briefing judgment: CalDS treats PATH Ventures as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E41`, `source_table_state_homeless_awards`, `state_homeless_awards_path_ventures`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: PATH Ventures` says or summarizes: - https://epath.org/path-ventures/: unty PATH Ventures PATH Enterprises News & Events Building homes, community & stable lives About PATH Ventures ​PATH Ventures is a non-profit developer of supportive and affordable housing with projects located throughout California. Founded by PATH in 2007, PATH Ventures is building across the state,... Evidence: `E26`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
-- `E26` Official service/program page harvest: PATH Ventures (Organization service page, 2026-04-29): Organization: PATH Ventures Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://epath.org/path-ventures/: unty PATH Ventures PATH Enterprises...
-- `E30` Public statement page harvest: PATH Ventures (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://epath.org/: epath.org Work with PATH Careers Vendors Volunteer Support Path Get Help Select Page Who We Are About Contact Corporate...
-- 3 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Executive compensation: Latest parsed return 2023 reports JENNIFER HARK-DIEtZ (President) of $423,702, equal to 7.32% of parsed expenses. (year(s): 2023; subject: PATH Ventures; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $1,461,070 in 2022 to $2,503,308 in 2023 (+71.3%; $147,253 per employee using 17 employees). (year(s): 2022, 2023; subject: PATH Ventures; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spending growth: Internal Revenue Service parsed expenses moved from $3,032,491 in 2022 to $5,786,089 in 2023 (+90.8%). (year(s): 2022, 2023; subject: PATH Ventures; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=2017, not-low-risk years=2016, 2017, findings rows=0. (year(s): 2016, 2017; subject: PATH Ventures; evidence `E20`, `source_table_fac_audit`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name PATH Ventures as a co-applicant or project partner on 2 Homekey/Homekey+ project row(s), with total project-award exposure of $42,672,927. Programs: Homekey+. Award year(s): 2025, 2026. Counties: Los Angeles. Projects: Path Villas East LA, PATH Villas South Park. (year(s): 2025, 2026; place: Los Angeles; subject: PATH Ventures; evidence `E12`, `E41`, `source_table_state_homeless_awards`, `state_homeless_awards_path_ventures`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: Los Angeles Continuum of Care M1a service-system volume increased from 97,572 in Jan 2023 - Dec 2023 to 106,676 in Jul 2024 - Jun 2025 (+9.3%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$42,672,927. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E41`, `source_table_state_homeless_awards`, `state_homeless_awards_path_ventures`.
-
-What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove wrongdoing; it is a source-backed review prompt.
-
-Boss-level next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
-
-#### Self-Help Enterprises
-
-Briefing judgment: CalDS treats Self-Help Enterprises as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E68`, `source_table_state_homeless_awards`, `state_homeless_awards_self_help_enterprises`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Self-Help Enterprises` says or summarizes: - https://www.selfhelpenterprises.org/: Self-Help Enterprises - Self-Help Enterprises Home About Us Programs News & Multimedia Get Involved Contact Us ✕ ☰ Search Search ✕ Home About Us Programs News & Multimedia Get Involved Contact Us Donate Facebook LinkedIn Translate Search Our Mission Service Area Our Impact Our Staff & Board Our... Evidence: `E48`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
-- `E14` Deterministic state-award exposure versus homelessness outcome-context join (Parsed spend-versus-results join, 2026-04-29): Deterministic join from California Department of Housing and Community Development state project-award exposure to official county/Continuum of Care homelessness outcome context. County and Continuum of Care outcomes are not provider-attributable without...
-- `E48` Official service/program page harvest: Self-Help Enterprises (Organization service page, 2026-04-29): Organization: Self-Help Enterprises Official service/program pages fetched: 2 of 2. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://www.selfhelpenterprises.org/: Self-Help Enterprises -...
-- 4 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Financial growth: Internal Revenue Service parsed revenue moved from $41,610,602 in 2022 to $65,987,549 in 2023 (+58.6%). (year(s): 2022, 2023; subject: Self-Help Enterprises; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spending growth: Internal Revenue Service parsed expenses moved from $35,659,831 in 2022 to $59,181,040 in 2023 (+66.0%). (year(s): 2022, 2023; subject: Self-Help Enterprises; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Audit controls: Federal Audit Clearinghouse summary reports material weakness years=none, internal-control deficiency years=2024, not-low-risk years=2025, findings rows=3. (year(s): 2024, 2025; subject: Self-Help Enterprises; evidence `E20`, `source_table_fac_audit`.)
-- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $101,329,080. Top parsed program: CAPITAL MAGNET FUND at $6,135,000. (subject: Self-Help Enterprises; evidence `E20`, `source_table_fac_audit`.)
-- Off-scope activity: Latest parsed return 2023 reports PoliticalCampaignActyInd=no and LobbyingActivitiesInd=yes. (year(s): 2023; subject: Self-Help Enterprises; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Fresno, Merced, Tulare: Fresno Continuum of Care M1a service-system volume increased from 11,036 in Jan 2023 - Dec 2023 to 12,709 in Jul 2024 - Jun 2025 (+15.2%), Tulare Continuum of Care M1a service-system volume increased from 5,164 in Jan 2023 - Dec 2023 to 5,910 in Jul 2024 - Jun 2025 (+14.4%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$45,193,909. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E68`, `source_table_state_homeless_awards`, `state_homeless_awards_self_help_enterprises`.
-
-What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations. It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
-
-Boss-level next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
-
-#### Service First Northern California
-
-Briefing judgment: CalDS treats Service First Northern California as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E46`, `source_table_state_homeless_awards`, `state_homeless_awards_service_first_northern_california`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Service First Northern California` says or summarizes: - https://servicefirstnc.org/: on - Modesto Skip to content Call Us: 209-644-6300 Email: info@servicefirstnc.org Home Who We Are Our Team What We Do Outpatient Alcohol and Drug Treatment DUI Program Representative Payee Services Aquatic Therapy and Wellness Program Supportive Living Services “Options” Learning Center Transportation... Evidence: `E31`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E31` Official service/program page harvest: Service First Northern California (Organization service page, 2026-04-29): Organization: Service First Northern California Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://servicefirstnc.org/: on - Modesto Skip to...
-- `E32` Public statement page harvest: Service First Northern California (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://servicefirstnc.org/: on - Modesto Skip to content Call Us: 209-644-6300 Email: info@servicefirstnc.org Home Who We Are Our Team What We Do...
-- `E46` California Department of Housing and Community Development Homekey/Homekey+ award rows: Service First Northern California (California Department of Housing and Community Development homelessness award record, 2026-01-27): Entity: Service First Northern California. Rank by parsed state project-award exposure: 13 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $35,579,520. Award rows: - 2026-01-27 Homekey+: The Hunter House in Stockton,...
-- 2 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Financial growth: Internal Revenue Service parsed revenue moved from $4,639,426 in 2022 to $7,264,326 in 2023 (+56.6%). (year(s): 2022, 2023; subject: Service First Northern California; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $3,105,229 in 2022 to $5,227,631 in 2023 (+68.3%; $41,489 per employee using 126 employees). (year(s): 2022, 2023; subject: Service First Northern California; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Executive compensation: Latest parsed return 2023 reports VERNELL HILL JR (chief executive officer) of $130,000, equal to 1.72% of parsed expenses. (year(s): 2023; subject: Service First Northern California; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spending growth: Internal Revenue Service parsed expenses moved from $5,390,623 in 2022 to $7,561,906 in 2023 (+40.3%). (year(s): 2022, 2023; subject: Service First Northern California; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name Service First Northern California as a co-applicant or project partner on 1 Homekey/Homekey+ project row(s), with total project-award exposure of $35,579,520. Programs: Homekey+. Award year(s): 2026. Counties: San Joaquin. Projects: The Hunter House. (year(s): 2026; subject: Service First Northern California; evidence `E12`, `E46`, `source_table_state_homeless_awards`, `state_homeless_awards_service_first_northern_california`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: San Joaquin: San Joaquin Continuum of Care M1a service-system volume increased from 11,137 in Jan 2023 - Dec 2023 to 12,533 in Jul 2024 - Jun 2025 (+12.5%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$35,579,520. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status, Public-funds concentration. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E46`, `source_table_state_homeless_awards`, `state_homeless_awards_service_first_northern_california`.
-
-What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations. It does not prove wrongdoing; it is a source-backed review prompt.
-
-Boss-level next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
-
-#### Swords to Plowshares
-
-Briefing judgment: CalDS treats Swords to Plowshares as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E20`, `source_table_fac_audit`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E58`, `source_table_state_homeless_awards`, `state_homeless_awards_swords_to_plowshares`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: Swords to Plowshares` says or summarizes: - https://www.swords-to-plowshares.org/: e housing programs 90,000 Community meals served to increase veterans' food security $15M Won in lifetime income for veterans with disabilities + free VA healthcare for life Need assistance? Learn more about our wraparound supportive services and connect with us to access housing, employment,... Evidence: `E35`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E35` Official service/program page harvest: Swords to Plowshares (Organization service page, 2026-04-29): Organization: Swords to Plowshares Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://www.swords-to-plowshares.org/: e housing programs 90,000...
-- `E51` Public statement page harvest: Swords to Plowshares (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://www.swords-to-plowshares.org/about/vision-for-impact/care: ership Financials Careers Contact us News DONATE get care Donate today Donate...
-- `E58` California Department of Housing and Community Development Homekey/Homekey+ award rows: Swords to Plowshares (California Department of Housing and Community Development homelessness award record, 2025-09-19): Entity: Swords to Plowshares. Rank by parsed state project-award exposure: 10 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $39,044,030. Award rows: - 2025-09-19 Homekey+: 1034 Van Ness in San Francisco,
-- 1 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $178,025,080. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $6,418,137. (subject: Swords to Plowshares; evidence `E20`, `source_table_fac_audit`.)
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $2,017,562 in 2022 to $16,415,075 in 2023 (+713.6%; $64,121 per employee using 256 employees). (year(s): 2022, 2023; subject: Swords to Plowshares; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Off-scope activity: Latest parsed return 2023 reports PoliticalCampaignActyInd=no and LobbyingActivitiesInd=yes. (year(s): 2023; subject: Swords to Plowshares; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $26,978,728 / total revenue $37,321,790 = 72.3%. (year(s): 2023; subject: Swords to Plowshares; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- State homelessness award exposure: California Department of Housing and Community Development award lists name Swords to Plowshares as a co-applicant or project partner on 1 Homekey/Homekey+ project row(s), with total project-award exposure of $39,044,030. Programs: Homekey+. Award year(s): 2025. Counties: San Francisco. Projects: 1034 Van Ness. (year(s): 2025; place: San Francisco; subject: Swords to Plowshares; evidence `E12`, `E58`, `source_table_state_homeless_awards`, `state_homeless_awards_swords_to_plowshares`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: San Francisco: San Francisco Continuum of Care M1a service-system volume increased from 19,118 in Jan 2023 - Dec 2023 to 21,255 in Jul 2024 - Jun 2025 (+11.2%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$39,044,030. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E20`, `source_table_fac_audit`, `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E58`, `source_table_state_homeless_awards`, `state_homeless_awards_swords_to_plowshares`.
-
-What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review. It does not prove wrongdoing; it is a source-backed review prompt.
-
-Boss-level next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
-
-#### TLCS, Inc.
-
-Briefing judgment: CalDS treats TLCS, Inc. as a watchlist or matrix-only subject, not a deep-review target selected by this run. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E39`, `source_table_state_homeless_awards`, `state_homeless_awards_tlcs_inc`.
-
-What the organization says or is described as doing: retrieved source `Official service/program page harvest: TLCS, Inc.` says or summarizes: - https://hopecoop.org/: for those living on the street with mental health challenges. Hope Cooperative Services See our community based mental health programs designed to support individuals with psychiatric disabilities. About Us Hope Cooperative (aka TLCS) has been providing behavioral health and supportive housing services to people... Evidence: `E15`.
-
-What the records show:
-
-Most relevant retrieved records:
-
-- `E12` Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table (Parsed California state homelessness award table, 2026-02-18): Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure,...
-- `E15` Official service/program page harvest: TLCS, Inc. (Organization service page, 2026-04-29): Organization: TLCS, Inc. Official service/program pages fetched: 1 of 1. Matched homelessness-scope review terms: none from configured list. Service summary from official source(s): - https://hopecoop.org/: for those living on the street with mental health...
-- `E16` Public statement page harvest: TLCS, Inc. (Public statement source, 2026-04-29): Public or official statement pages fetched: 1 of 1. Matched review terms: none from configured list. Snippets: - https://hopecoop.org/: for those living on the street with mental health challenges. Hope Cooperative Services See our community based mental...
-- 3 additional matched source item(s) appear in the citation ledger.
-
-Implemented screen results:
-
-- Payroll and wages: Parsed salaries/compensation/benefits moved from $12,111,985 in 2022 to $17,500,055 in 2023 (+44.5%; $40,323 per employee using 434 employees). (year(s): 2022, 2023; subject: TLCS, Inc.; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Public-funds concentration: Latest parsed Internal Revenue Service row with both fields is 2023: government grants $28,978,012 / total revenue $30,779,320 = 94.1%. (year(s): 2023; subject: TLCS, Inc.; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $116,919,376. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $5,637,683. (subject: TLCS, Inc.; evidence `E20`, `source_table_fac_audit`.)
-- Financial growth: Internal Revenue Service parsed revenue moved from $22,008,043 in 2022 to $30,779,320 in 2023 (+39.9%). (year(s): 2022, 2023; subject: TLCS, Inc.; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spending growth: Internal Revenue Service parsed expenses moved from $22,353,498 in 2022 to $28,035,199 in 2023 (+25.4%). (year(s): 2022, 2023; subject: TLCS, Inc.; evidence `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Sacramento: Sacramento Continuum of Care M1a service-system volume increased from 18,432 in Jan 2023 - Dec 2023 to 22,889 in Jul 2024 - Jun 2025 (+24.2%). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. State project-award exposure=$40,386,000. This is a review signal, not provider attribution. Evidence `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`.
-- Source gaps that limit judgment: Direct funding verification, Facility status. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
-
-Why this is on the review list: CalDS sees the combination reviewers care about: material public-money exposure or financial movement, plus outcome context that moved the wrong direction in matched service geographies. That does not prove provider responsibility, but it is exactly the mismatch that should be briefed up for document review. Evidence: `E18`, `source_table_irs_990_propublica`, `source_table_irs_990_raw_artifacts`, `E20`, `source_table_fac_audit`, `E13`, `E14`, `source_table_official_homelessness_outcomes`, `source_table_spend_vs_results_join`, `E12`, `E39`, `source_table_state_homeless_awards`, `state_homeless_awards_tlcs_inc`.
-
-What this does not prove: It does not prove wrongdoing; it is a source-backed review prompt. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
-
-Boss-level next step: Open the cited source records for TLCS, Inc. and compare the raw source wording to this row.
-
-### Case-wide Source Gaps
-
-These are not nonprofit organization-specific findings. They are run-level blockers that limit how strongly CalDS can rank or clear the case.
-
-- License/adverse-action history: California Department of Health Care Services adverse-action pages were fetched but did not expose machine-readable target rows in static text during this run.
-  Evidence: `E13`, `source_table_official_homelessness_outcomes`. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
-- Public attention and traffic: No social media account metrics, website analytics, ad-library records, or third-party traffic estimates are ingested in this run.
-  Evidence: no direct evidence ref in this row. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
-
-
-## 3. Score, Sentinel, and Case Context
+### Score Components and Sentinel
 
 Lead statement: Retrieved records show a reviewable oversight signal for Hope the Mission, Weingart Center Association focused on homelessness, live, housing.
 
@@ -591,7 +619,7 @@ Sentinel repair or caution items:
 - Use exact legal status and named-party scope from official sources; do not convert third-party charges into entity-level conclusions.
 - Preserve missing-data caveats in the review packet.
 
-### Case Summary
+### Case Context
 
 - Case ID: `live_ca_homelessness_top15_2026_04_29`
 - Jurisdiction: California
@@ -600,7 +628,7 @@ Sentinel repair or caution items:
 - Allowed source types: state_homelessness_award, source_extraction_state_homeless_award_table, source_extraction_official_outcome_table, source_extraction_spend_vs_results_table, org_service_page, public_statement_source, irs_990_summary, irs_990_xml, source_extraction_irs_990_table, fac_audit_summary, fac_audit_pdf, fac_findings, fac_federal_awards, source_extraction_fac_audit_table, source_extraction_fac_award_table, county_contract_or_monitoring, source_extraction_enforcement_docket_table, enforcement_or_docket_source, source_extraction_social_web_table, social_media_source
 - Review packet: `[internal local artifact]
 
-## 4. Case Dossier Orientation
+## 5. Case Dossier Orientation
 
 Status: `PENDING` human review required
 
@@ -610,7 +638,7 @@ Every substantive row below is tied to a risk indicator, evidence item, source U
 
 Dossier mode: downgraded internal review dossier with caveats preserved
 
-## 5. Evidence Detail By Entity
+## 6. Evidence Detail By Entity
 
 This section preserves the system opinion and source-fact detail behind the briefing memo. It remains an internal possible waste, fraud, abuse, or mismanagement screening opinion, not a formal allegation or outside-facing conclusion.
 
@@ -1331,7 +1359,7 @@ Specific findings that drove the flag:
 Review stance: The system would not close this item from summary records alone; spending and footprint need provider-attributable outcome records.
 
 
-## 6. Flagged Review Matrix
+## 7. Flagged Review Matrix
 
 Methodology: Waste, fraud, abuse, and mismanagement risk-screening matrix generated from parsed Internal Revenue Service Form 990 and ProPublica Nonprofit Explorer API summaries, Federal Audit Clearinghouse, California Department of Health Care Services facility-status, California Department of Housing and Community Development Homekey/Homekey+ state-award, official enforcement/docket records, county/document index, and retrieved service-page records. The matrix tests observable risk proxies: year-over-year financial growth, spending growth, public-funds concentration, executive compensation, payroll scale, political/lobbying indicators, audit-control flags, enforcement/docket source flags including connected-party official charges, award concentration, facility closure patterns, homelessness-scope web-language checks, official county or Continuum of Care outcome context, and remaining provider-attributable outcome gaps.
 
@@ -3375,7 +3403,7 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 - Human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
 - Caveat: A missing year is not an adverse signal by itself, but it prevents the growth test.
 
-## 7. Evidence Citation Ledger
+## 8. Evidence Citation Ledger
 
 Use this ledger to move from the readable case file back to source records. The packet-local `E##` labels are reading aids only; internal evidence IDs and checksums preserve replayability.
 
@@ -3492,7 +3520,7 @@ Use this ledger to move from the readable case file back to source records. The 
 | Parsed spend-versus-results join | 1 |
 | Parsed California state homelessness award table | 1 |
 
-## 8. Human-Only Next Steps
+## 9. Human-Only Next Steps
 
 These actions are outside the current CalDS runtime. They require a human reviewer or authorized records process before any escalation beyond internal review.
 
@@ -3506,7 +3534,7 @@ These actions are outside the current CalDS runtime. They require a human review
 8. Compare harvested public statements and web pages to homelessness grant scopes, contract restrictions, funding sources, and accounting records; treat statements as context until dollars and scope are linked.
 9. For connected-party enforcement rows, verify the official charging record, docket status, named parties, nonprofit relationship, transaction documents, and public-dollar flow before any entity-level statement.
 
-## 9. Artifact References
+## 10. Artifact References
 
 These are the durable workflow artifacts used by the compiler.
 
@@ -3548,6 +3576,6 @@ These are the durable workflow artifacts used by the compiler.
 | task_sentinel.json | `[internal local artifact] |
 | task_triage_screener.json | `[internal local artifact] |
 
-## 10. Human Review Required
+## 11. Human Review Required
 
 The workflow remains paused. A reviewer must explicitly approve, downgrade, repair, or reject this case before any outside-facing use.
