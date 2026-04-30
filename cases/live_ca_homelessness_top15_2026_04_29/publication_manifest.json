@@ -6,11 +6,65 @@
     "index_html": "index.html",
     "source_ledger_json": "source_ledger.json"
   },
-  "generated_at": "2026-04-30T14:56:03+00:00",
+  "generated_at": "2026-04-30T15:22:59+00:00",
   "human_review_required": true,
   "link_integrity": {
-    "checked_url_count": 70,
+    "checked_url_count": 75,
     "checks": [
+      {
+        "check_id": "link_check_12a83b8ffd814ec0",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+      },
+      {
+        "check_id": "link_check_c99fa5d5332ec0a0",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.justice.gov/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.justice.gov/"
+      },
+      {
+        "check_id": "link_check_ff6dd13112c08af1",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip"
+      },
+      {
+        "check_id": "link_check_cd5d282b368c3fd9",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+      },
+      {
+        "check_id": "link_check_9be6cb2cf147d46b",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+      },
+      {
+        "check_id": "link_check_0999e4ae8c6bc84c",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip"
+      },
       {
         "check_id": "link_check_5efcdfb1e9aa8cea",
         "content_type": "application/pdf",
@@ -46,15 +100,6 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://www.hcd.ca.gov/grants-and-funding/homekey-plus/timeline-and-eligibility"
-      },
-      {
-        "check_id": "link_check_12a83b8ffd814ec0",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
       },
       {
         "check_id": "link_check_c3484df4ab421f13",
@@ -642,13 +687,13 @@
         "url": "https://projects.propublica.org/nonprofits/organizations/952225798"
       }
     ],
-    "created_at": "2026-04-30T14:56:03+00:00",
+    "created_at": "2026-04-30T15:22:59+00:00",
     "error_count": 0,
-    "report_id": "link_integrity_dd705fb2eb37887b",
+    "report_id": "link_integrity_c6ef65aa68fd6efb",
     "status": "PASS",
     "warning_count": 0
   },
-  "publication_id": "publication_c57dd58266fe9015",
+  "publication_id": "publication_00bc6189926a51a7",
   "safety": {
     "checked_files": [
       "case_dossier.md",
@@ -656,9 +701,9 @@
       "source_ledger.json"
     ],
     "errors": [],
-    "evidence_refs_checked": 66,
+    "evidence_refs_checked": 80,
     "passed": true,
-    "source_ledger_entries": 66,
+    "source_ledger_entries": 80,
     "warnings": []
   },
   "sentinel_decision": "DOWNGRADE_FOR_REVIEW",
