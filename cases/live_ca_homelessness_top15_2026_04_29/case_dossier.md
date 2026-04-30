@@ -8,6 +8,7 @@ Bottom line: CalDS screened 15 entities and keeps Hope the Mission, Weingart Cen
 - Entities selected for deep review: Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing.
 - Main signal pattern: audit-control concerns, connected-party enforcement exposure, material public-funding exposure, rapid financial growth, payroll or wage-growth questions, spend-versus-results mismatch, executive-compensation or payroll-governance questions, and possible scope-mismatch signals.
 - Review priority: 63.85 / 100; risk severity: 93.62 / 100; source completeness: 0.0 / 100; publication confidence: 30.0 / 100.
+- Score scope: these are case-level scores for this run's evidence bundle. They are not entity-by-entity grades, not probabilities, and not a measure of how polished the report is.
 - Current workflow state: `PENDING` with sentinel posture `DOWNGRADE_FOR_REVIEW`.
 
 What CalDS found first:
@@ -27,11 +28,20 @@ Why this is on a reviewer's desk:
 
 ### What The Score Means
 
+- What these scores apply to: the whole compiled case/run and its evidence bundle, not one nonprofit organization by itself.
 - Review priority 63.85 / 100: how urgently this case should stay in the review queue.
 - Risk severity 93.62 / 100: how strong the implemented source-backed risk indicators are.
-- Source completeness 0.0 / 100: how much of the required source set was actually recovered.
-- Publication confidence 30.0 / 100: whether the public-facing record is complete enough for outside use.
+- Source completeness 0.0 / 100: how much of the required source set was actually recovered and conflict-free. The current formula starts at 100, subtracts 5 points for each missing-data signal, and subtracts 6 points for each contradiction signal. This run has 23 missing-data signal(s) and 0 contradiction signal(s), creating 115 missing-data penalty points and 0 contradiction penalty points; because those penalties meet or exceed the starting 100 points, the score is capped at 0.0 / 100.
+- Publication confidence 30.0 / 100: whether the record is complete enough for outside-facing use. The current formula weights source completeness at 70% and source diversity at 30%. This run has 15 source type(s), which gives 100 / 100 source-diversity confidence; with source completeness at 0.0 / 100, publication confidence becomes 0 + 30 = 30.0 / 100.
 - Meaning: a high risk-severity score with low source completeness is a strong reason to keep reviewing, not a reason to publish allegations.
+
+Questions this score should raise:
+
+- Which missing source records are driving the missing-data count?
+- Which missing records would most change the decision: direct contracts and payments, raw tax-return source documents, audit source documents and finding status, facility histories, or provider-attributable outcomes?
+- Are the strongest risk signals concentrated in a few selected entities, or spread across the full screened set?
+- Are the gaps caused by unavailable public records, missing ingestion coverage, or records that exist but have not been pulled into this run?
+- What would raise publication confidence enough to move from internal review lead to a stronger public brief?
 
 ### Decision Needed
 
