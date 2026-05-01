@@ -4,7 +4,7 @@
     "case_id": "live_ca_homelessness_top15_2026_04_29",
     "checked_claim_count": 1264,
     "checks": [],
-    "created_at": "2026-05-01T11:59:58+00:00",
+    "created_at": "2026-05-01T12:24:58+00:00",
     "error_count": 0,
     "status": "PASS",
     "verification_id": "citation_verification_d3df184e0bc5b7d5",
@@ -16,10 +16,10 @@
     "index_html": "index.html",
     "source_ledger_json": "source_ledger.json"
   },
-  "generated_at": "2026-05-01T12:00:54+00:00",
+  "generated_at": "2026-05-01T12:25:50+00:00",
   "human_review_required": true,
   "link_integrity": {
-    "checked_url_count": 83,
+    "checked_url_count": 86,
     "checks": [
       {
         "check_id": "link_check_12a83b8ffd814ec0",
@@ -157,13 +157,13 @@
         "url": "https://bcsh.ca.gov/calich/hdis.html"
       },
       {
-        "check_id": "link_check_f3d154b797f8c463",
-        "content_type": "text/html; charset=UTF-8",
+        "check_id": "link_check_89b442b28347cea0",
+        "content_type": "text/csv",
         "error": "",
-        "final_url": "https://hopecoop.org/",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://hopecoop.org/"
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
       },
       {
         "check_id": "link_check_315173aeb8c53daf",
@@ -182,6 +182,105 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://projects.propublica.org/nonprofits/api/"
+      },
+      {
+        "check_id": "link_check_d17c52d0a0640195",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.irs.gov/charities-non-profits/form-990-series-downloads",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.irs.gov/charities-non-profits/form-990-series-downloads"
+      },
+      {
+        "check_id": "link_check_926a2435c42eba7d",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads"
+      },
+      {
+        "check_id": "link_check_5fe9287d98c2d27e",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/943205085"
+      },
+      {
+        "check_id": "link_check_07031c89fc23b53e",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://servicefirstnc.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://servicefirstnc.org/"
+      },
+      {
+        "check_id": "link_check_07c29bb10764caa2",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/942837785",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/942837785"
+      },
+      {
+        "check_id": "link_check_829cbdc35de6748a",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/942777955",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/942777955"
+      },
+      {
+        "check_id": "link_check_045a2da65aa5d46f",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/956054617",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/956054617"
+      },
+      {
+        "check_id": "link_check_687af2927125de2c",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/201892523",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/201892523"
+      },
+      {
+        "check_id": "link_check_6e108e4a6bdb100d",
+        "content_type": "application/json; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/201892523.json",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/201892523.json"
+      },
+      {
+        "check_id": "link_check_d7f6675199e9a1a2",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/680367046",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/680367046"
+      },
+      {
+        "check_id": "link_check_f3d154b797f8c463",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://hopecoop.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://hopecoop.org/"
       },
       {
         "check_id": "link_check_e39f163e0a55dee7",
@@ -236,15 +335,6 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/956054617.json"
-      },
-      {
-        "check_id": "link_check_045a2da65aa5d46f",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/956054617",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/956054617"
       },
       {
         "check_id": "link_check_1783ab47d00aa09c",
@@ -364,24 +454,6 @@
         "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Self-Help+Enterprises&state%5Bid%5D=CA&c_code%5Bid%5D=3"
       },
       {
-        "check_id": "link_check_6e108e4a6bdb100d",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/201892523.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/201892523.json"
-      },
-      {
-        "check_id": "link_check_687af2927125de2c",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/201892523",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/201892523"
-      },
-      {
         "check_id": "link_check_165015bb7b36e3dd",
         "content_type": "application/json; charset=utf-8",
         "error": "",
@@ -400,15 +472,6 @@
         "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/943205085.json"
       },
       {
-        "check_id": "link_check_5fe9287d98c2d27e",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/943205085"
-      },
-      {
         "check_id": "link_check_e43a02b49650e46e",
         "content_type": "application/json; charset=utf-8",
         "error": "",
@@ -425,15 +488,6 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/942777955.json"
-      },
-      {
-        "check_id": "link_check_829cbdc35de6748a",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/942777955",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/942777955"
       },
       {
         "check_id": "link_check_d313ad72d28fd1d8",
@@ -472,46 +526,46 @@
         "url": "https://www.fac.gov/api"
       },
       {
-        "check_id": "link_check_fe1da725d6bad72d",
+        "check_id": "link_check_ad620e97e5e2dd9d",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/general.csv?response-content-disposition=attachment%3Bfilename%3Dgeneral.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T120040Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=1dca7ea3d91b0204e3a00386c179db0ff46cd9fe6421a9d05fc0f84b85c7213c",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/general.csv?response-content-disposition=attachment%3Bfilename%3Dgeneral.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T122536Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=9dd7adb446ec9cd4340da19a16903479715dcebc3e53c67804320ea9f0160d31",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/general.csv"
       },
       {
-        "check_id": "link_check_13fef11a2fdb190f",
+        "check_id": "link_check_c4a4a7d0ce707ffc",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/federal_awards.csv?response-content-disposition=attachment%3Bfilename%3Dfederal_awards.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T120041Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=84af74a3171e8d809a600d28f6410c91c98e09c113ed83333561df62f8c1f874",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/federal_awards.csv?response-content-disposition=attachment%3Bfilename%3Dfederal_awards.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T122537Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=0120eaa74613f3031c423af615c31d557e97d03f269edff6c6d85ff625c97140",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv"
       },
       {
-        "check_id": "link_check_4b45166f38394ddb",
+        "check_id": "link_check_259eef2209c89c9e",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings.csv?response-content-disposition=attachment%3Bfilename%3Dfindings.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T120042Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=b6bf96d46d3078a461049fbe87576e25992266ed31b876e0daf952ea95c8be02",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings.csv?response-content-disposition=attachment%3Bfilename%3Dfindings.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T122538Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=fff8b17f049efa2dcca4cbf656206b057e9132d6a7f5ff0bc3d0999f8ba4b1ba",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv"
       },
       {
-        "check_id": "link_check_54745f0cf88cb63d",
+        "check_id": "link_check_0dcebcae15a05ceb",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings_text.csv?response-content-disposition=attachment%3Bfilename%3Dfindings_text.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T120043Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=655b15609a69672cd9dd2413ce037954ddfa0f52727b92be1b6859bec187796e",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings_text.csv?response-content-disposition=attachment%3Bfilename%3Dfindings_text.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T122539Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=2514cb824ef82d3bb947c0fc40607a627b46896928c03c055ea4900907eb2236",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings_text.csv"
       },
       {
-        "check_id": "link_check_307866b1417815d3",
+        "check_id": "link_check_84a808ca0bb5faaf",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/corrective_action_plans.csv?response-content-disposition=attachment%3Bfilename%3Dcorrective_action_plans.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T120044Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=69655b67613f65a4f44512b71d28304209b9b9249faeb81379146a8eb7db112b",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/corrective_action_plans.csv?response-content-disposition=attachment%3Bfilename%3Dcorrective_action_plans.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T122540Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=6a5199a31b07395ceeebf06552d43fc2c1f7c6a853f6de33249e133777360e8d",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/corrective_action_plans.csv"
@@ -589,15 +643,6 @@
         "url": "https://epath.org/"
       },
       {
-        "check_id": "link_check_07031c89fc23b53e",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://servicefirstnc.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://servicefirstnc.org/"
-      },
-      {
         "check_id": "link_check_f65ecc31beabeb40",
         "content_type": "text/html;charset=utf-8",
         "error": "",
@@ -634,15 +679,6 @@
         "url": "https://www.thepeopleconcern.org/"
       },
       {
-        "check_id": "link_check_07c29bb10764caa2",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/942837785",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/942837785"
-      },
-      {
         "check_id": "link_check_6ad4d2243dac422a",
         "content_type": "text/html; charset=UTF-8",
         "error": "",
@@ -677,15 +713,6 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://hopethemission.org/our-programs/"
-      },
-      {
-        "check_id": "link_check_d7f6675199e9a1a2",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/680367046",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/680367046"
       },
       {
         "check_id": "link_check_6b5f738592276613",
@@ -769,19 +796,72 @@
         "url": "https://projects.propublica.org/nonprofits/organizations/952225798"
       }
     ],
-    "created_at": "2026-05-01T12:00:54+00:00",
+    "created_at": "2026-05-01T12:25:49+00:00",
     "error_count": 0,
-    "report_id": "link_integrity_79807a4a6d6a66dc",
+    "report_id": "link_integrity_254f7406bfe25044",
     "status": "PASS",
     "warning_count": 0
   },
   "link_repair": {
-    "affected_evidence_refs": [],
+    "affected_evidence_refs": [
+      "E14"
+    ],
     "note": "Stale or renamed public URLs are repaired to working source pages before publication. Links are not removed as a substitute for repair.",
-    "repaired_public_links": 0,
-    "replacements": []
+    "repaired_public_links": 10,
+    "replacements": [
+      {
+        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024120622935468_public.xml",
+        "ref": "E14"
+      },
+      {
+        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/871111468_202306_990_2024120622935468_public.xml",
+        "ref": "E14"
+      },
+      {
+        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024040522347579_public.xml",
+        "ref": "E14"
+      },
+      {
+        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/956054617_202304_990_2024040522347579_public.xml",
+        "ref": "E14"
+      },
+      {
+        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
+        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2012_05_EO%2F94-3205085_990_201106.pdf",
+        "ref": "E14"
+      },
+      {
+        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
+        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2013_03_EO%2F94-3205085_990_201206.pdf",
+        "ref": "E14"
+      },
+      {
+        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
+        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2014_03_EO%2F94-3205085_990_201306.pdf",
+        "ref": "E14"
+      },
+      {
+        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
+        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2015_03_EO%2F94-3205085_990_201406.pdf",
+        "ref": "E14"
+      },
+      {
+        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
+        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2016_07_EO%2F94-3205085_990_201506.pdf",
+        "ref": "E14"
+      },
+      {
+        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
+        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=IRS%2F943205085_201606_990_2017100314799747.pdf",
+        "ref": "E14"
+      }
+    ]
   },
-  "publication_id": "publication_76f180f337cedf75",
+  "publication_id": "publication_7fa2b98ef6e19a83",
   "safety": {
     "checked_files": [
       "case_dossier.md",
@@ -791,9 +871,33 @@
     "errors": [],
     "evidence_refs_checked": 90,
     "passed": true,
+    "source_access": {
+      "affected_evidence_refs": [],
+      "complete": true,
+      "items": [],
+      "note": "Every evidence row should have a verified public URL or remain visibly marked as source-access-required. Missing source access is never treated as completion.",
+      "partial_items": [],
+      "partial_source_access_issue_count": 0,
+      "source_access_required_count": 0
+    },
     "source_ledger_entries": 90,
     "warnings": []
   },
   "sentinel_decision": "DOWNGRADE_FOR_REVIEW",
-  "source_run_label": "live_ca_homelessness_top15_2026_04_29"
+  "source_access": {
+    "affected_evidence_refs": [],
+    "complete": true,
+    "items": [],
+    "note": "Every evidence row should have a verified public URL or remain visibly marked as source-access-required. Missing source access is never treated as completion.",
+    "partial_items": [],
+    "partial_source_access_issue_count": 0,
+    "source_access_required_count": 0
+  },
+  "source_run_label": "live_ca_homelessness_top15_2026_04_29",
+  "unverified_link_access": {
+    "affected_evidence_refs": [],
+    "items": [],
+    "note": "All public source URLs passed link verification after deterministic repairs.",
+    "unverified_public_links": 0
+  }
 }

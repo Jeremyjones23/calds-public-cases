@@ -31,7 +31,7 @@ Why this is on a reviewer's desk:
 - What these scores apply to: the whole compiled case/run and its evidence bundle, not one nonprofit organization by itself.
 - Review priority 51.52 / 100: how urgently this case should stay in the review queue after combining risk severity, source-acquisition coverage, and publication confidence.
 - Risk severity 0.0 / 100: how strong the implemented source-backed risk indicators are. This is the flag-strength score; it is not a misconduct conclusion.
-- Source completeness 0.0 / 100: whether the required source-family acquisition checks were resolved. This run resolved not available from a completion guard artifact required check(s), with 0 unresolved blocker(s) and 0 miss(es). A completed search with no public official adverse record counts as coverage, not as clearance.
+- Source completeness 0.0 / 100: whether the required source-family acquisition checks were resolved with citation-ready evidence. This run resolved not available from a completion guard artifact required check(s), with 0 unresolved blocker(s) and 0 miss(es). A completed public search with no adverse record remains an unresolved source-access blocker unless a citation-ready source hit exists; it is not clearance.
 - Open gap burden: 0 caveat signal(s). These are unresolved review questions inside the evidence bundle, not proof that source acquisition failed. Current gap buckets: none.
 - Contradiction burden: 0 caution signal(s). Contradictions are never positive evidence and are not rewarded; they lower publication confidence and stay in front of the reviewer. Current contradiction buckets: none.
 - Publication confidence 0.0 / 100: whether the record is sturdy enough for outside-facing use. The implemented model starts from source completeness (55%), source diversity (25%; this run's diversity component is 100 / 100), and citation traceability (20%; this run's traceability component is 100 / 100), then subtracts a bounded caveat penalty for open gaps and contradictions. This run's caveat penalty is 0 point(s).
@@ -1999,7 +1999,7 @@ Use this ledger to move from the readable case file back to source records. The 
 | `E01` | `evidence_d39a0b2dfe8f87c4` | `socialmodel_2024_990_summary` | Internal Revenue Service Form 990 summary | https://projects.propublica.org/nonprofits/organizations/954079133 | 2025-04-14 | `fd0b410985ab61190109d6d137b002114af439a87540aff8fa21741b763cc99b` |
 | `E02` | `evidence_aece1a42b50778d4` | `irs_990_xml_tarzana_2023` | Downloaded Internal Revenue Service Form 990 machine-readable filing data | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202441109349300129_public.xml | 202306 | `26f09caf5665f546653f55980e4115df3826ec22e0a37b56c20ac3aac48a66f4` |
 | `E03` | `evidence_b0005eb9cd6c9e16` | `irs_990_xml_manifest_missing_tarzana_2025` | Internal Revenue Service machine-readable filing-data availability manifest | https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv; https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv; https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv | 2025 | `fab9c5b9971e34bc15df238a93e4f956ef26e591c562fc4934e7cae33da6d1cf` |
-| `E04` | `evidence_798df5d7a45e0675` | `healthright_2024_irs_990_full_text_fallback` | Rendered Form 990 fallback | [internal local artifact] | 2026-04-24 | `86d71b86de5bad3f587f06518d77a4f6bcd2c82c0d3ef2f16a916b29233c303d` |
+| `E04` | `evidence_798df5d7a45e0675` | `healthright_2024_irs_990_full_text_fallback` | Rendered Form 990 secondary source | [internal local artifact] | 2026-04-24 | `86d71b86de5bad3f587f06518d77a4f6bcd2c82c0d3ef2f16a916b29233c303d` |
 | `E05` | `evidence_1b3d32aadc3cc2f2` | `fac_general_2016_06_census_0000119575` | Federal Audit Clearinghouse audit source document | https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575 | 2016-12-21 | `a037c82d24e8e15be68d5f50cd2c96c3b5c6ff7afbccb39150c319f4aea54d55` |
 | `E06` | `evidence_67a8fff3ad9e8165` | `fac_findings_filtered_targets` | Federal Audit Clearinghouse findings table | https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv | 2016-present | `814cff32cdf4b21fc65a278cf63763cf7ff35d46bdbcd98be07f8719181f973c` |
 | `E07` | `evidence_571faf39d80ecdb3` | `fac_federal_awards_filtered_targets` | Federal Audit Clearinghouse federal awards table | https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv | 2016-present | `29ff42636ec4eb8b779b05617a3e6f55cd8d1c12765f64f9097a2572573aeab0` |
@@ -2070,7 +2070,7 @@ Use this ledger to move from the readable case file back to source records. The 
 | Federal Audit Clearinghouse federal awards table | 1 |
 | Federal Audit Clearinghouse findings table | 1 |
 | Internal Revenue Service machine-readable filing-data availability manifest | 1 |
-| Rendered Form 990 fallback | 1 |
+| Rendered Form 990 secondary source | 1 |
 | Internal Revenue Service Form 990 summary | 1 |
 | Organization service page | 1 |
 | Public statement source | 1 |

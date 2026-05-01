@@ -2,12 +2,12 @@
 
 ## 1. Executive Snapshot
 
-Bottom line: CalDS screened 15 entities and keeps Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing in deep review because the strongest source-backed pattern is audit-control concerns, connected-party enforcement exposure, material public-funding exposure, and rapid financial growth. Evidence: `E20`, `E22`, `E21`. The review priority score is 88.63 / 100, source completeness is 100.0 / 100, publication confidence is 65.5 / 100, and the sentinel posture is `DOWNGRADE_FOR_REVIEW`; this is a review priority, not a formal conclusion.
+Bottom line: CalDS screened 15 entities and keeps Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing in deep review because the strongest source-backed pattern is audit-control concerns, connected-party enforcement exposure, material public-funding exposure, and rapid financial growth. Evidence: `E20`, `E22`, `E21`. The review priority score is 86.23 / 100, source completeness is 88.57 / 100, publication confidence is 59.21 / 100, and the sentinel posture is `DOWNGRADE_FOR_REVIEW`; this is a review priority, not a formal conclusion.
 
 - Case posture: internal possible waste, fraud, abuse, or mismanagement review lead; not a formal finding.
 - Entities selected for deep review: Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing.
 - Main signal pattern: audit-control concerns, connected-party enforcement exposure, material public-funding exposure, rapid financial growth, payroll or wage-growth questions, spend-versus-results mismatch, executive-compensation or payroll-governance questions, and possible scope-mismatch signals.
-- Review priority: 88.63 / 100; risk severity: 93.62 / 100; source completeness: 100.0 / 100; publication confidence: 65.5 / 100.
+- Review priority: 86.23 / 100; risk severity: 93.62 / 100; source completeness: 88.57 / 100; publication confidence: 59.21 / 100.
 - Score scope: these are case-level scores for this run's evidence bundle. They are not entity-by-entity grades, not probabilities, and not a measure of how polished the report is.
 - Current workflow state: `PENDING` with sentinel posture `DOWNGRADE_FOR_REVIEW`.
 
@@ -29,12 +29,12 @@ Why this is on a reviewer's desk:
 ### What The Score Means
 
 - What these scores apply to: the whole compiled case/run and its evidence bundle, not one nonprofit organization by itself.
-- Review priority 88.63 / 100: how urgently this case should stay in the review queue after combining risk severity, source-acquisition coverage, and publication confidence.
+- Review priority 86.23 / 100: how urgently this case should stay in the review queue after combining risk severity, source-acquisition coverage, and publication confidence.
 - Risk severity 93.62 / 100: how strong the implemented source-backed risk indicators are. This is the flag-strength score; it is not a misconduct conclusion.
-- Source completeness 100.0 / 100: whether the required source-family acquisition checks were resolved. This run resolved 35 of 35 required check(s), with 0 unresolved blocker(s) and 0 miss(es). A completed search with no public official adverse record counts as coverage, not as clearance.
+- Source completeness 88.57 / 100: whether the required source-family acquisition checks were resolved with citation-ready evidence. This run resolved 31 of 35 required check(s), with 4 unresolved blocker(s) and 0 miss(es). A completed public search with no adverse record remains an unresolved source-access blocker unless a citation-ready source hit exists; it is not clearance.
 - Open gap burden: 23 caveat signal(s). These are unresolved review questions inside the evidence bundle, not proof that source acquisition failed. Current gap buckets: California Department of Housing and Community Development homelessness award record (15); Contract and payment acquisition gap record (5); Official enforcement or docket source (1); Internal Revenue Service Form 990 summary (1); Organization service page (1).
 - Contradiction burden: 0 caution signal(s). Contradictions are never positive evidence and are not rewarded; they lower publication confidence and stay in front of the reviewer. Current contradiction buckets: none.
-- Publication confidence 65.5 / 100: whether the record is sturdy enough for outside-facing use. The implemented model starts from source completeness (55%), source diversity (25%; this run's diversity component is 100 / 100), and citation traceability (20%; this run's traceability component is 100 / 100), then subtracts a bounded caveat penalty for open gaps and contradictions. This run's caveat penalty is 34.5 point(s).
+- Publication confidence 59.21 / 100: whether the record is sturdy enough for outside-facing use. The implemented model starts from source completeness (55%), source diversity (25%; this run's diversity component is 100 / 100), and citation traceability (20%; this run's traceability component is 100 / 100), then subtracts a bounded caveat penalty for open gaps and contradictions. This run's caveat penalty is 34.5 point(s).
 - Meaning: a high risk-severity score with meaningful open gaps is a reason to keep the case in human review and avoid overclaiming, not a reason to bury the lead.
 
 Questions this score should raise:
@@ -57,7 +57,7 @@ Questions this score should raise:
 - County or Continuum of Care outcomes are contextual unless provider-attributable outcome records are recovered and linked.
 - Connected-party enforcement exposure means an official source tied a charged person, transaction, project, or counterparty to the source chain; it does not mean the nonprofit was charged unless the cited source says that.
 - Homelessness scope-mismatch rows test whether public homelessness funds may have supported activity outside the funded scope; they do not state that the activity is categorically unlawful for a nonprofit.
-- Sentinel restrictions remain active: legal_status_context_required, open_gap_burden.
+- Sentinel restrictions remain active: legal_status_context_required, source_acquisition_blockers, open_gap_burden.
 
 ## 2. Case In One Page
 
@@ -570,17 +570,21 @@ These are not nonprofit organization-specific findings. They are run-level block
 
 ### Acquisition and Completion Guard
 
-- Completion guard status: PASS.
-- Required source-family checks: 35; hits: 31; public official no-record searches: 4; unresolved blockers: 0.
-- Public official no-record coverage:
-  - Hope the Mission: enforcement_or_docket - configured public official searches found no citation-ready adverse record; this is not legal clearance.
-  - DignityMoves: enforcement_or_docket - configured public official searches found no citation-ready adverse record; this is not legal clearance.
-  - The People Concern: enforcement_or_docket - configured public official searches found no citation-ready adverse record; this is not legal clearance.
-  - California Supportive Housing: enforcement_or_docket - configured public official searches found no citation-ready adverse record; this is not legal clearance.
-- Every required source family has a recovered citation-ready hit or a public official no-record search result for the selected entities.
-- Guard note: Completion guard records hits, public official no-record searches, and misses; misses are blockers, not clearance.
-- Guard note: A searched_no_public_official_record status means configured public official sources were searched without recovering a public adverse record; it is not legal clearance.
-- Guard note: Dossier compilation may proceed only because unresolved source gaps are preserved for human review.
+- Completion guard status: PASS_WITH_BLOCKERS.
+- Required source-family checks: 35; hits: 31; public official no-record searches: 4; unresolved blockers: 4.
+- Public official no-record source-access blockers:
+  - Hope the Mission: enforcement_or_docket - configured public official searches found no citation-ready adverse record. Treat this as unresolved source access, not legal clearance.
+  - DignityMoves: enforcement_or_docket - configured public official searches found no citation-ready adverse record. Treat this as unresolved source access, not legal clearance.
+  - The People Concern: enforcement_or_docket - configured public official searches found no citation-ready adverse record. Treat this as unresolved source access, not legal clearance.
+  - California Supportive Housing: enforcement_or_docket - configured public official searches found no citation-ready adverse record. Treat this as unresolved source access, not legal clearance.
+- Top unresolved acquisition blockers:
+  - Hope the Mission: enforcement_or_docket - Configured public official enforcement_or_docket searches completed for Hope the Mission with no public adverse record recovered; this remains unresolved source access, not legal clearance. Manual PACER, local court, and records-request work may still be required.
+  - DignityMoves: enforcement_or_docket - Configured public official enforcement_or_docket searches completed for DignityMoves with no public adverse record recovered; this remains unresolved source access, not legal clearance. Manual PACER, local court, and records-request work may still be required.
+  - The People Concern: enforcement_or_docket - Configured public official enforcement_or_docket searches completed for The People Concern with no public adverse record recovered; this remains unresolved source access, not legal clearance. Manual PACER, local court, and records-request work may still be required.
+  - California Supportive Housing: enforcement_or_docket - Configured public official enforcement_or_docket searches completed for California Supportive Housing with no public adverse record recovered; this remains unresolved source access, not legal clearance. Manual PACER, local court, and records-request work may still be required.
+- Guard note: Completion guard records hits, public official no-record searches, and misses; anything short of a citation-ready hit remains a source-access blocker, not clearance.
+- Guard note: A searched_no_public_official_record status means configured public official sources were searched without recovering a public adverse record; it is not legal clearance and still leaves manual PACER, local court, records-request, or credentialed-source work unresolved.
+- Guard note: Dossier compilation may proceed as a review packet only because unresolved source-access blockers are preserved for human review.
 
 ### Plain-Language Source Glossary
 
@@ -600,7 +604,7 @@ These are not nonprofit organization-specific findings. They are run-level block
 
 Lead statement: Retrieved records show a reviewable oversight signal for Hope the Mission, Weingart Center Association, DignityMoves focused on homelessness, live, housing.
 
-Review priority score: 88.63 / 100
+Review priority score: 86.23 / 100
 
 Interpretation: high-priority review lead because retrieved-source coverage and entity linkage are broad, with human verification still required.
 
@@ -609,14 +613,14 @@ The score is deterministic triage priority, not a probability, not a dollar loss
 | Field | Value |
 | --- | --- |
 | Risk severity score | 93.62 / 100 |
-| Source completeness score | 100.0 / 100 |
-| Publication confidence score | 65.5 / 100 |
+| Source completeness score | 88.57 / 100 |
+| Publication confidence score | 59.21 / 100 |
 | Support count | 90 |
 | Average relevance | 0.532 |
 | Source diversity | 15 |
 | Hard entity links | 37 |
-| Completion guard resolved checks | 35 of 35 |
-| Completion guard unresolved blockers | 0 blocker(s); 0 miss(es) |
+| Completion guard resolved checks | 31 of 35 |
+| Completion guard unresolved blockers | 4 blocker(s); 0 miss(es) |
 | Open gap burden | 23 caveat signal(s) |
 | Gap signal source buckets | California Department of Housing and Community Development homelessness award record (15); Contract and payment acquisition gap record (5); Official enforcement or docket source (1); Internal Revenue Service Form 990 summary (1); Organization service page (1) |
 | Contradiction count | 0 caution signal(s) |
@@ -627,11 +631,12 @@ The score is deterministic triage priority, not a probability, not a dollar loss
 | --- | --- |
 | Decision | DOWNGRADE_FOR_REVIEW |
 | Rationale | Lead can proceed only as an internal reviewer-safe candidate with caveats. |
-| Flags | legal_status_context_required, open_gap_burden |
+| Flags | legal_status_context_required, source_acquisition_blockers, open_gap_burden |
 
 Sentinel repair or caution items:
 
 - Use exact legal status and named-party scope from official sources; do not convert third-party charges into entity-level conclusions.
+- Resolve completion-guard blockers or preserve them as blocking caveats before any outside-facing use.
 - Preserve open gap-burden caveats in the review packet.
 
 ### Case Context
@@ -3541,13 +3546,14 @@ These actions are outside the current CalDS runtime. They require a human review
 
 1. Open the review packet and verify each priority row against the cited evidence ledger before changing case status.
 2. Resolve sentinel caution: Use exact legal status and named-party scope from official sources; do not convert third-party charges into entity-level conclusions.
-3. Resolve sentinel caution: Preserve open gap-burden caveats in the review packet.
-4. Verify raw Internal Revenue Service machine-readable filing data or official return images for revenue, expenses, grants, officer compensation, and year-over-year movement.
-5. Open Federal Audit Clearinghouse audit source documents and findings tables to confirm audit year, finding status, federal agency, questioned-cost fields, and management response.
-6. Request county contract files, monitoring letters, corrective-action status, deliverables, and provider-level outcome records for the same year window.
-7. Benchmark officer and key employee compensation against comparable organizations and verify documented approval procedures.
-8. Compare harvested public statements and web pages to homelessness grant scopes, contract restrictions, funding sources, and accounting records; treat statements as context until dollars and scope are linked.
-9. For connected-party enforcement rows, verify the official charging record, docket status, named parties, nonprofit relationship, transaction documents, and public-dollar flow before any entity-level statement.
+3. Resolve sentinel caution: Resolve completion-guard blockers or preserve them as blocking caveats before any outside-facing use.
+4. Resolve sentinel caution: Preserve open gap-burden caveats in the review packet.
+5. Verify raw Internal Revenue Service machine-readable filing data or official return images for revenue, expenses, grants, officer compensation, and year-over-year movement.
+6. Open Federal Audit Clearinghouse audit source documents and findings tables to confirm audit year, finding status, federal agency, questioned-cost fields, and management response.
+7. Request county contract files, monitoring letters, corrective-action status, deliverables, and provider-level outcome records for the same year window.
+8. Benchmark officer and key employee compensation against comparable organizations and verify documented approval procedures.
+9. Compare harvested public statements and web pages to homelessness grant scopes, contract restrictions, funding sources, and accounting records; treat statements as context until dollars and scope are linked.
+10. For connected-party enforcement rows, verify the official charging record, docket status, named parties, nonprofit relationship, transaction documents, and public-dollar flow before any entity-level statement.
 
 ## 10. Artifact References
 
