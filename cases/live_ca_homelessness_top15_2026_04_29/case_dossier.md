@@ -14,7 +14,7 @@ Bottom line: CalDS screened 15 entities and keeps Hope the Mission, Weingart Cen
 What CalDS found first:
 
 - `E22` Official enforcement/docket triage source: Weingart Center Association (Official enforcement or docket source, 2025-10-16): An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for...
-- `E21` Parsed official enforcement and docket source table (Parsed enforcement and docket source table, 2025-10-16): Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { "case_id": "live_ca_homelessness_top15_2026_04_29", "created_at": "2026-04-30T21:10:11+00:00",...
+- `E21` Parsed official enforcement and docket source table (Parsed enforcement and docket source table, 2025-10-16): Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { "case_id": "live_ca_homelessness_top15_2026_04_29", "created_at": "2026-05-01T00:24:48+00:00",...
 - `E18` ProPublica Nonprofit Explorer Internal Revenue Service Form 990 filing summary table (Parsed Internal Revenue Service source table, 2026-04-30): ProPublica Nonprofit Explorer API filing summary for top-15 homelessness triage. ProPublica provides a public API and viewer for Internal Revenue Service nonprofit filing data. CalDS treats this as an access layer; raw Internal Revenue Service...
 - 15 additional evidence item(s) are in the citation ledger.
 
@@ -30,7 +30,7 @@ Why this is on a reviewer's desk:
 
 - What these scores apply to: the whole compiled case/run and its evidence bundle, not one nonprofit organization by itself.
 - Review priority 88.63 / 100: how urgently this case should stay in the review queue after combining risk severity, source-acquisition coverage, and publication confidence.
-- Risk severity 93.62 / 100: how strong the implemented source-backed risk indicators are. This is the flag-strength score; it does not say misconduct occurred.
+- Risk severity 93.62 / 100: how strong the implemented source-backed risk indicators are. This is the flag-strength score; it is not a misconduct conclusion.
 - Source completeness 100.0 / 100: whether the required source-family acquisition checks were resolved. This run resolved 35 of 35 required check(s), with 0 unresolved blocker(s) and 0 miss(es). A completed search with no public official adverse record counts as coverage, not as clearance.
 - Open gap burden: 23 caveat signal(s). These are unresolved review questions inside the evidence bundle, not proof that source acquisition failed. Current gap buckets: California Department of Housing and Community Development homelessness award record (15); Contract and payment acquisition gap record (5); Official enforcement or docket source (1); Internal Revenue Service Form 990 summary (1); Organization service page (1).
 - Contradiction burden: 0 caution signal(s). Contradictions are never positive evidence and are not rewarded; they lower publication confidence and stay in front of the reviewer. Current contradiction buckets: none.
@@ -57,7 +57,7 @@ Questions this score should raise:
 - County or Continuum of Care outcomes are contextual unless provider-attributable outcome records are recovered and linked.
 - Connected-party enforcement exposure means an official source tied a charged person, transaction, project, or counterparty to the source chain; it does not mean the nonprofit was charged unless the cited source says that.
 - Homelessness scope-mismatch rows test whether public homelessness funds may have supported activity outside the funded scope; they do not state that the activity is categorically unlawful for a nonprofit.
-- Sentinel restrictions remain active: legal_status_context_required, missing_data.
+- Sentinel restrictions remain active: legal_status_context_required, open_gap_burden.
 
 ## 2. Case In One Page
 
@@ -71,7 +71,7 @@ The case is not based on a row count. It is based on these source-backed review 
 
 Records still needed: Direct funding verification, Executive compensation, Facility status, Financial growth; plus 6 other source area(s). These gaps are collection blockers, not adverse findings.
 
-Sentinel posture remains `DOWNGRADE_FOR_REVIEW`. The score is a deterministic triage score, not a probability, not a dollar-loss estimate, and not a conclusion that misconduct occurred.
+Sentinel posture remains `DOWNGRADE_FOR_REVIEW`. The score is a deterministic triage score, not a probability, not a dollar-loss estimate, and not a misconduct conclusion.
 
 ## 3. Entity Briefs
 
@@ -106,7 +106,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 
-Recommended human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
+Recommended human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window. Source: risk matrix rows for this entity.
 
 #### DignityMoves
 
@@ -137,7 +137,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
 
-Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
+Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status. Source: risk matrix rows for this entity.
 
 #### Hope the Mission
 
@@ -168,7 +168,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 
-Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
+Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status. Source: risk matrix rows for this entity.
 
 #### The People Concern
 
@@ -198,7 +198,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review. It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 
-Recommended human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
+Recommended human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports. Source: risk matrix rows for this entity.
 
 #### Weingart Center Association
 
@@ -229,7 +229,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove the nonprofit was charged, liable, or responsible; the cited official source controls the named-party legal status.
 
-Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
+Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status. Source: risk matrix rows for this entity.
 
 ### Watchlist And Matrix-Only Entities
 
@@ -263,7 +263,7 @@ Reviewer readout: CalDS sees audit-control context that can bear directly on ste
 
 What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
 
-Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
+Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context. Source: risk matrix rows for this entity.
 
 #### Burbank Housing Development Corporation
 
@@ -293,7 +293,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 
-Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
+Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context. Source: risk matrix rows for this entity.
 
 #### Community Revitalization and Development Corporation
 
@@ -324,7 +324,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
 
-Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
+Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context. Source: risk matrix rows for this entity.
 
 #### Habitat for Humanity Yuba/Sutter, Inc.
 
@@ -354,7 +354,7 @@ Reviewer readout: CalDS sees audit-control context that can bear directly on ste
 
 What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked. It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed.
 
-Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
+Recommended human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status. Source: risk matrix rows for this entity.
 
 #### Lutheran Social Services of Southern California
 
@@ -384,7 +384,7 @@ Reviewer readout: CalDS sees audit-control context that can bear directly on ste
 
 What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review. It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
 
-Recommended human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
+Recommended human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports. Source: risk matrix rows for this entity.
 
 #### PATH Ventures
 
@@ -415,7 +415,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed. It does not prove wrongdoing; it is a source-backed review prompt.
 
-Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
+Recommended human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context. Source: risk matrix rows for this entity.
 
 #### Self-Help Enterprises
 
@@ -446,7 +446,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations. It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
 
-Recommended human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
+Recommended human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories. Source: risk matrix rows for this entity.
 
 #### Service First Northern California
 
@@ -477,7 +477,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations. It does not prove wrongdoing; it is a source-backed review prompt.
 
-Recommended human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
+Recommended human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories. Source: risk matrix rows for this entity.
 
 #### Swords to Plowshares
 
@@ -508,7 +508,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review. It does not prove wrongdoing; it is a source-backed review prompt.
 
-Recommended human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
+Recommended human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports. Source: risk matrix rows for this entity.
 
 #### TLCS, Inc.
 
@@ -539,7 +539,7 @@ Reviewer readout: CalDS sees the combination reviewers care about: material publ
 
 What this does not prove: It does not prove wrongdoing; it is a source-backed review prompt. It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 
-Recommended human next step: Open the cited source records for TLCS, Inc. and compare the raw source wording to this row.
+Recommended human next step: Open the cited source records for TLCS, Inc. and compare the raw source wording to this row. Source: risk matrix rows for this entity.
 
 ### Case-wide Source Gaps
 
@@ -598,13 +598,13 @@ These are not nonprofit organization-specific findings. They are run-level block
 
 ### Score Components and Sentinel
 
-Lead statement: Retrieved records show a reviewable oversight signal for Hope the Mission, Weingart Center Association focused on homelessness, live, housing.
+Lead statement: Retrieved records show a reviewable oversight signal for Hope the Mission, Weingart Center Association, DignityMoves focused on homelessness, live, housing.
 
 Review priority score: 88.63 / 100
 
 Interpretation: high-priority review lead because retrieved-source coverage and entity linkage are broad, with human verification still required.
 
-The score is deterministic triage priority, not a probability, not a dollar loss estimate, and not a conclusion. CalDS now splits the score into risk severity, source completeness, and publication confidence so a strong review signal is not confused with publication readiness.
+The score is deterministic triage priority, not a probability, not a dollar loss estimate, and not a conclusion. CalDS now splits the score into risk severity, source completeness, open gap burden, contradiction burden, and publication confidence so a strong review signal is not confused with publication readiness.
 
 | Field | Value |
 | --- | --- |
@@ -627,12 +627,12 @@ The score is deterministic triage priority, not a probability, not a dollar loss
 | --- | --- |
 | Decision | DOWNGRADE_FOR_REVIEW |
 | Rationale | Lead can proceed only as an internal reviewer-safe candidate with caveats. |
-| Flags | legal_status_context_required, missing_data |
+| Flags | legal_status_context_required, open_gap_burden |
 
 Sentinel repair or caution items:
 
 - Use exact legal status and named-party scope from official sources; do not convert third-party charges into entity-level conclusions.
-- Preserve missing-data caveats in the review packet.
+- Preserve open gap-burden caveats in the review packet.
 
 ### Case Context
 
@@ -3430,21 +3430,21 @@ Use this ledger to move from the readable case file back to source records. The 
 | `E04` | `evidence_173b3ea25c8c9a43` | `contract_payment_discovery_the_people_concern` | Contract and payment acquisition gap record | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `3cc5df21fce4850e120554551ae8b594e15ba6184cf68c60d01aee240e1aab2f` |
 | `E05` | `evidence_766f33f5d680d693` | `contract_payment_discovery_weingart_center_association` | Contract and payment acquisition gap record | https://www.hcd.ca.gov/funding/homekey/funding-overview | 2026-04-30 | `d32ea8e0575d16751a7c32b45c30b7f461f7973e55852406ac364f6f416e349a` |
 | `E06` | `evidence_f6fe5044b5956788` | `enforcement_docket_discovery_weingart_center_association` | enforcement_docket_discovery | https://www.justice.gov/ | 2026-04-30 | `9fcdbc0bb4a6fd5ae6c361cd285b78dea625041a8cddabc1003afb43de1ec966` |
-| `E07` | `evidence_3622ed0c56bb35d3` | `irs_990_raw_artifacts_dignitymoves` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip | 2023 | `f2e9cf4668349e3b211aa8e6c23ef9169703261730b46ce91ce81a25567f5a4e` |
-| `E08` | `evidence_384504f2ff2abdc2` | `irs_990_raw_artifacts_hope_the_mission` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip | 2023 | `e7d716387783b9368fe7c4f6f0ea0cd7b6ee33e6266beb37a3a8679551a44b86` |
-| `E09` | `evidence_53777fca47214e77` | `irs_990_raw_artifacts_the_people_concern` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `f5f7ea92263c28ce9d71081396d01c318d9cf9d500a3b067fa30b92fe0a92f2f` |
-| `E10` | `evidence_428b3b165581dce8` | `irs_990_raw_artifacts_weingart_center_association` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip | 2023 | `310d58ec168b8a094b2f6df7a22246bcb5406fd11409467454baaf22449c93c4` |
+| `E07` | `evidence_3622ed0c56bb35d3` | `irs_990_raw_artifacts_dignitymoves` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip | 2023 | `75759a8010411495a2893ccf1f5cdd4940c35a354f71ac8f88f582419750d635` |
+| `E08` | `evidence_384504f2ff2abdc2` | `irs_990_raw_artifacts_hope_the_mission` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip | 2023 | `d87a9839f320f16679e04397db8f0fe5976b683c11ee63a5ce0b77f3eeb5806a` |
+| `E09` | `evidence_53777fca47214e77` | `irs_990_raw_artifacts_the_people_concern` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `8178ea1767ed836c844929633cfa24ac6408ec60bcd4b8cfc67ca2bab1f6f9ea` |
+| `E10` | `evidence_428b3b165581dce8` | `irs_990_raw_artifacts_weingart_center_association` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip | 2023 | `0dbd09449f7ae78e683f647ddb4788b1fd19efb7cd67b967246bcc4bf5b46942` |
 | `E11` | `evidence_1048a1de8993c191` | `state_homeless_awards_habitat_yuba_sutter` | California Department of Housing and Community Development homelessness award record | https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf | 2026-02-13 | `45b904c642eb366c3093e57757316c9e120ee711d89a9d83bed994ea9e4ae21d` |
-| `E12` | `evidence_bce512e847005680` | `source_table_state_homeless_awards` | Parsed California state homelessness award table | [internal local artifact] | 2026-02-18 | `27aac4a2e3d73db701156263d4a01a42b6292ace75f6988811523ac889dcaef5` |
-| `E13` | `evidence_142daa7dc667d610` | `source_table_official_homelessness_outcomes` | Parsed official outcome source table | [internal local artifact] | 2025-12-22 | `c03f129abdd2bf6d632d9124ffe01fe5a708f63ed6090d2600f1f0ba5f6d3674` |
-| `E14` | `evidence_0805dc6501798c59` | `source_table_spend_vs_results_join` | Parsed spend-versus-results join | [internal local artifact] | 2026-04-29 | `1f6f78720113c9f162509ebacf49326add1c194a5d8cc0dc53cc2fac4094c3e9` |
+| `E12` | `evidence_bce512e847005680` | `source_table_state_homeless_awards` | Parsed California state homelessness award table | [internal local artifact] | 2026-02-18 | `8d21e9c1811bebf4953fd723f77805a4abda721837f168622a28760fa81b72e9` |
+| `E13` | `evidence_142daa7dc667d610` | `source_table_official_homelessness_outcomes` | Parsed official outcome source table | [internal local artifact] | 2025-12-22 | `ce2a7822961f34a00bb1f844ece58b8a2fed6df4d74fa29f03ee323804984fc6` |
+| `E14` | `evidence_0805dc6501798c59` | `source_table_spend_vs_results_join` | Parsed spend-versus-results join | [internal local artifact] | 2026-04-29 | `d343125dd179fbbebf3a2038c08ee76d82caa3f6d3ba2797c777f7d0a818eadd` |
 | `E15` | `evidence_cafb34496b1fd25c` | `org_service_pages_tlcs_inc` | Organization service page | https://hopecoop.org/ | 2026-04-29 | `52f439bafbe1a0081d86a1bc2e6b1c7bdf09075470734375b42b05880a179141` |
 | `E16` | `evidence_a16718fccd04fc89` | `public_statements_tlcs_inc` | Public statement source | https://hopecoop.org/ | 2026-04-29 | `1ee3cac5d50a90e8ba0864df86ee6ed1b8a6672805cfbe1da14abcd6f7dae879` |
 | `E17` | `evidence_131fde5817e9adcf` | `irs_990_summary_habitat_yuba_sutter` | Internal Revenue Service Form 990 summary | https://projects.propublica.org/nonprofits/organizations/680301692 | 2023 | `5d28263ef59ef08aab19caf2aedf911ad0b493d3a221728688dbdece2467e1dd` |
-| `E18` | `evidence_233d6224ad913c35` | `source_table_irs_990_propublica` | Parsed Internal Revenue Service source table | [internal local artifact] | 2026-04-30 | `a78ac31f5b4d3c882c3878401c6c860a2794dd2385f747eb1d5c7504826a8171` |
+| `E18` | `evidence_233d6224ad913c35` | `source_table_irs_990_propublica` | Parsed Internal Revenue Service source table | [internal local artifact] | 2026-04-30 | `9ca27f08499519b3ead70059269478de78ed02fadeba99a2b533cbaf388898a8` |
 | `E19` | `evidence_f5f386615a437838` | `fac_audit_summary_burbank_housing_development_corporation` | Federal Audit Clearinghouse audit summary | https://www.fac.gov/data/download/current/ | 2026-04-30 | `752bdeb153160439941b9a639df39785b65b6ee083583756a5bbddef0f45bd4a` |
-| `E20` | `evidence_0fcd1ff141bbb5b6` | `source_table_fac_audit` | Parsed Federal Audit Clearinghouse audit table | [internal local artifact] | 2026-04-30 | `3eca041abb7018cd7bd693e92658ca0fa7a855bab29966950b6adcca05317c2a` |
-| `E21` | `evidence_a98f846f1a9e2142` | `source_table_enforcement_docket` | Parsed enforcement and docket source table | [internal local artifact] | 2025-10-16 | `51b278baef89142ffad944743d3fdd7b12551ca4c53eaaa6e6ff1a142e455c32` |
+| `E20` | `evidence_0fcd1ff141bbb5b6` | `source_table_fac_audit` | Parsed Federal Audit Clearinghouse audit table | [internal local artifact] | 2026-04-30 | `94cf259a888fe626faab8030aa2075e320fc820c6c636925f21dc67e80aa3502` |
+| `E21` | `evidence_a98f846f1a9e2142` | `source_table_enforcement_docket` | Parsed enforcement and docket source table | [internal local artifact] | 2025-10-16 | `b0cdbb4bd373053c7af65ec421f09f8ecdf05730ded3fd16b80c0410412b7bfd` |
 | `E22` | `evidence_dd6ada01aecefd53` | `enforcement_docket_weingart_center_association_1` | Official enforcement or docket source | https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf | 2025-10-16 | `4704d83cf192b49b41a868106f4774b607fd7d38d74e54c7fc8127d1f80cf145` |
 | `E23` | `evidence_2458d3752f003308` | `public_statements_weingart_center` | Public statement source | https://www.weingart.org/ | 2026-04-29 | `2b008aab7a0605be9b4fa5af2c23b2b15e10edf48cd76614e3d9e6eb9bc732dd` |
 | `E24` | `evidence_188e118a28be58ea` | `org_service_pages_abode_housing_development` | Organization service page | https://abode.org/housing-development | 2026-04-29 | `760bf54cf390ebfd88b9ea6e369c126c5a3e94966aa583173493fdae2cde0303` |
@@ -3541,7 +3541,7 @@ These actions are outside the current CalDS runtime. They require a human review
 
 1. Open the review packet and verify each priority row against the cited evidence ledger before changing case status.
 2. Resolve sentinel caution: Use exact legal status and named-party scope from official sources; do not convert third-party charges into entity-level conclusions.
-3. Resolve sentinel caution: Preserve missing-data caveats in the review packet.
+3. Resolve sentinel caution: Preserve open gap-burden caveats in the review packet.
 4. Verify raw Internal Revenue Service machine-readable filing data or official return images for revenue, expenses, grants, officer compensation, and year-over-year movement.
 5. Open Federal Audit Clearinghouse audit source documents and findings tables to confirm audit year, finding status, federal agency, questioned-cost fields, and management response.
 6. Request county contract files, monitoring letters, corrective-action status, deliverables, and provider-level outcome records for the same year window.

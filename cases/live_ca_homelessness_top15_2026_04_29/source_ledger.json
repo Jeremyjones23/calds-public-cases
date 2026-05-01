@@ -130,7 +130,7 @@
     {
       "active_signal_count": 4,
       "anchor": "evidence-E07",
-      "checksum": "f2e9cf4668349e3b211aa8e6c23ef9169703261730b46ce91ce81a25567f5a4e",
+      "checksum": "75759a8010411495a2893ccf1f5cdd4940c35a354f71ac8f88f582419750d635",
       "excerpt": "Latest matched Form 990 filing for DignityMoves: EIN 871111468, tax period year 2023. Full PDF downloaded: False local path: not archived. PDF SHA256: not available. IRS object ID: 2024120622935468. Official IRS XML index confirmed: True batch ZIP: https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip. Candidate IRS XML URLs checked: https://apps.irs.gov/pub/epostcard/990/xml/2024/2024120622935468_public.xml, https://apps.irs.gov/pub/epostcard/990/xml/2024/871111468_202306_990_2024120622935468_public.xml IRS XML downloaded: True local path: [internal local artifact]",
       "internal_evidence_id": "evidence_3622ed0c56bb35d3",
       "link_note": "",
@@ -151,8 +151,8 @@
     {
       "active_signal_count": 4,
       "anchor": "evidence-E08",
-      "checksum": "e7d716387783b9368fe7c4f6f0ea0cd7b6ee33e6266beb37a3a8679551a44b86",
-      "excerpt": "Latest matched Form 990 filing for Hope the Mission: EIN 272053273, tax period year 2023. Full PDF downloaded: False local path: not archived. PDF SHA256: not available. IRS object ID: not available. Official IRS XML index confirmed: True batch ZIP: https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip. Candidate IRS XML URLs checked: none IRS XML downloaded: True local path: [internal local artifact] ZIP entry: 2024_TEOS_XML_11A/202403199349305315_public.xml....",
+      "checksum": "d87a9839f320f16679e04397db8f0fe5976b683c11ee63a5ce0b77f3eeb5806a",
+      "excerpt": "Latest matched Form 990 filing for Hope the Mission: EIN 272053273, tax period year 2023. Full PDF downloaded: False local path: not archived. PDF SHA256: not available. IRS object ID: not available. Official IRS XML index confirmed: True batch ZIP: https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip. Candidate IRS XML URLs checked: none IRS XML downloaded: True local path: [internal local artifact] ZIP entry: 2024_T...",
       "internal_evidence_id": "evidence_384504f2ff2abdc2",
       "link_note": "",
       "link_status": "external_source_linked",
@@ -172,8 +172,8 @@
     {
       "active_signal_count": 4,
       "anchor": "evidence-E09",
-      "checksum": "f5f7ea92263c28ce9d71081396d01c318d9cf9d500a3b067fa30b92fe0a92f2f",
-      "excerpt": "Latest matched Form 990 filing for The People Concern: EIN 956143865, tax period year 2023. Full PDF downloaded: False local path: not archived. PDF SHA256: not available. IRS object ID: not available. Official IRS XML index confirmed: True batch ZIP: https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip. Candidate IRS XML URLs checked: none IRS XML downloaded: True local path: [internal local artifact] ZIP entry: 2024_TEOS_XML_05A/202401369349308685_public.x...",
+      "checksum": "8178ea1767ed836c844929633cfa24ac6408ec60bcd4b8cfc67ca2bab1f6f9ea",
+      "excerpt": "Latest matched Form 990 filing for The People Concern: EIN 956143865, tax period year 2023. Full PDF downloaded: False local path: not archived. PDF SHA256: not available. IRS object ID: not available. Official IRS XML index confirmed: True batch ZIP: https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip. Candidate IRS XML URLs checked: none IRS XML downloaded: True local path: [internal local artifact] ZIP entry: 20...",
       "internal_evidence_id": "evidence_53777fca47214e77",
       "link_note": "",
       "link_status": "external_source_linked",
@@ -193,7 +193,7 @@
     {
       "active_signal_count": 4,
       "anchor": "evidence-E10",
-      "checksum": "310d58ec168b8a094b2f6df7a22246bcb5406fd11409467454baaf22449c93c4",
+      "checksum": "0dbd09449f7ae78e683f647ddb4788b1fd19efb7cd67b967246bcc4bf5b46942",
       "excerpt": "Latest matched Form 990 filing for Weingart Center Association: EIN 956054617, tax period year 2023. Full PDF downloaded: False local path: not archived. PDF SHA256: not available. IRS object ID: 2024040522347579. Official IRS XML index confirmed: True batch ZIP: https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip. Candidate IRS XML URLs checked: https://apps.irs.gov/pub/epostcard/990/xml/2024/2024040522347579_public.xml, https://apps.irs.gov/pub/epostcard/990/xml/2024/956054617_202304_990_2024040522347579_public.xml IRS XML downloaded: True local path: [internal local artifact]",
       "internal_evidence_id": "evidence_428b3b165581dce8",
       "link_note": "",
@@ -236,7 +236,7 @@
     {
       "active_signal_count": 3,
       "anchor": "evidence-E12",
-      "checksum": "27aac4a2e3d73db701156263d4a01a42b6292ace75f6988811523ac889dcaef5",
+      "checksum": "8d21e9c1811bebf4953fd723f77805a4abda721837f168622a28760fa81b72e9",
       "excerpt": "Parsed California Department of Housing and Community Development Homekey/Homekey+ award exposure table. Methodology: rank source-listed nonprofit co-applicant names by the full project-award amount attached to each award row. This is materiality exposure, not direct-payment proof. Top source-ranked co-applicant project-award exposures from official HCD tables: - Rank 1: Hope the Mission appears on 5 Homekey/Homekey+ project-award row(s), with $115,337,991 in attached project-award exposure across ['Los Angeles']. - Rank 2: Weingart Center Association appears on 3 Homekey/Homekey+ project-a...",
       "internal_evidence_id": "evidence_bce512e847005680",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run.",
@@ -264,7 +264,7 @@
     {
       "active_signal_count": 3,
       "anchor": "evidence-E13",
-      "checksum": "c03f129abdd2bf6d632d9124ffe01fe5a708f63ed6090d2600f1f0ba5f6d3674",
+      "checksum": "ce2a7822961f34a00bb1f844ece58b8a2fed6df4d74fa29f03ee323804984fc6",
       "excerpt": "Official homelessness outcome-source manifest for spend-versus-results review. The CA System Performance Measures dataset says the metrics help assess progress toward preventing, reducing, and ending homelessness. CalDS uses these rows as geography-level context only. https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc https://bcsh.ca.gov/calich/hdis.html { \"ca_spm\": { \"api_base\": \"https://data.ca.gov/api/3/action/datastore_search\", \"fetched\": true, \"join_grain\": \"Continuum of Care/year-period/metric\", \"resource_id\": \"e02178d9-1d34-4798-9979-f50af9f1742e\", \"r...",
       "internal_evidence_id": "evidence_142daa7dc667d610",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run.",
@@ -286,7 +286,7 @@
     {
       "active_signal_count": 3,
       "anchor": "evidence-E14",
-      "checksum": "1f6f78720113c9f162509ebacf49326add1c194a5d8cc0dc53cc2fac4094c3e9",
+      "checksum": "d343125dd179fbbebf3a2038c08ee76d82caa3f6d3ba2797c777f7d0a818eadd",
       "excerpt": "Deterministic join from HCD state project-award exposure to official county/Continuum of Care homelessness outcome context. County and Continuum of Care outcomes are not provider-attributable without direct program outcome records. | entity | county | risk_level | state_award_exposure | state_project_count | outcome_flags | | --- | --- | --- | --- | --- | --- | | Hope the Mission | Los Angeles | High | $115,337,991 | 5 | ['Los Angeles Continuum of Care M1a service-system volume increased from 97,572 in Jan 2023 - Dec 2023 to 106,676 in Jul 2024 - Jun 2025 (+9.3%)'] | | Weingart Center Assoc...",
       "internal_evidence_id": "evidence_0805dc6501798c59",
       "link_note": "Not externally linkable in this run; the public packet preserves the internal evidence ID, record ID, source type, checksum, and title for audit follow-up.",
@@ -368,7 +368,7 @@
     {
       "active_signal_count": 3,
       "anchor": "evidence-E18",
-      "checksum": "a78ac31f5b4d3c882c3878401c6c860a2794dd2385f747eb1d5c7504826a8171",
+      "checksum": "9ca27f08499519b3ead70059269478de78ed02fadeba99a2b533cbaf388898a8",
       "excerpt": "ProPublica Nonprofit Explorer API filing summary for top-15 homelessness triage. ProPublica provides a public API and viewer for IRS nonprofit filing data. CalDS treats this as an access layer; raw IRS XML/PDF filings remain controlling source documents. ProPublica API documentation: https://projects.propublica.org/nonprofits/api/ IRS Form 990 downloads: https://www.irs.gov/charities-non-profits/form-990-series-downloads IRS tax-exempt bulk data: https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads | entity | ein | tax_period_year | total_revenue | to...",
       "internal_evidence_id": "evidence_233d6224ad913c35",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run.",
@@ -439,7 +439,7 @@
     {
       "active_signal_count": 4,
       "anchor": "evidence-E20",
-      "checksum": "3eca041abb7018cd7bd693e92658ca0fa7a855bab29966950b6adcca05317c2a",
+      "checksum": "94cf259a888fe626faab8030aa2075e320fc820c6c636925f21dc67e80aa3502",
       "excerpt": "Official Federal Audit Clearinghouse CSV extracts filtered to matched top-15 target EINs only. Name fallback is disabled to avoid broad false positives. Rows with no Federal Audit Clearinghouse report are coverage results, not adverse findings. Row-level findings and corrective-action text are preserved when matching report IDs are found. FAC current download page: https://www.fac.gov/data/download/current/ Matched audit-summary rows: 15. Matched top federal-award rows: 12. | entity | status | audit_years | fac_report_count | fac_findings_row_count | fac_award_amount_total | material_weakne...",
       "internal_evidence_id": "evidence_0fcd1ff141bbb5b6",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run.",
@@ -467,8 +467,8 @@
     {
       "active_signal_count": 2,
       "anchor": "evidence-E21",
-      "checksum": "51b278baef89142ffad944743d3fdd7b12551ca4c53eaaa6e6ff1a142e455c32",
-      "excerpt": "Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { \"case_id\": \"live_ca_homelessness_top15_2026_04_29\", \"created_at\": \"2026-04-30T21:10:11+00:00\", \"methodology\": \"Official enforcement and docket triage rows are manually curated from official federal and municipal sources when live docket parsing is not yet implemented. Rows trigger deep review only; they do not create legal conclusions.\", \"rows\": [ { \"caveats\": [ \"The official federal source charges Taylor, not Weingart Center Associ...",
+      "checksum": "b0cdbb4bd373053c7af65ec421f09f8ecdf05730ded3fd16b80c0410412b7bfd",
+      "excerpt": "Official enforcement and docket source table for top-15 homelessness triage. This table creates deep-dive triggers only. It does not create legal conclusions. { \"case_id\": \"live_ca_homelessness_top15_2026_04_29\", \"created_at\": \"2026-05-01T00:24:48+00:00\", \"methodology\": \"Official enforcement and docket triage rows are manually curated from official federal and municipal sources when live docket parsing is not yet implemented. Rows trigger deep review only; they do not create legal conclusions.\", \"rows\": [ { \"caveats\": [ \"The official federal source charges Taylor, not Weingart Center Associ...",
       "internal_evidence_id": "evidence_a98f846f1a9e2142",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run.",
       "link_status": "derived_external_source_linked",
