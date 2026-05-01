@@ -5,39 +5,345 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Live web case: top California homelessness nonprofits by state Homekey award exposure | CalDS Public Case Viewer</title>
   <style>
-    :root { color-scheme: light; --ink:#172026; --muted:#59666f; --line:#d8dee4; --soft:#f6f8fa; --accent:#0b5cad; --warn:#8a4b00; }
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--ink); background:#fff; line-height:1.5; }
-    header { background:#102a43; color:#fff; padding:28px 36px; }
-    header h1 { margin:0 0 8px; font-size:28px; }
-    header p { margin:4px 0; max-width:960px; }
-    main { max-width:1120px; margin:0 auto; padding:28px 24px 64px; }
-    nav { display:flex; flex-wrap:wrap; gap:12px; margin:18px 0 0; }
-    nav a { color:#fff; border:1px solid rgba(255,255,255,.5); padding:6px 10px; text-decoration:none; }
-    h1, h2, h3, h4 { line-height:1.25; }
-    h2 { margin-top:34px; padding-top:14px; border-top:1px solid var(--line); }
-    a { color:var(--accent); }
-    code { background:var(--soft); border:1px solid var(--line); padding:1px 4px; border-radius:4px; }
-    .notice { border-left:4px solid var(--warn); background:#fff8ec; padding:12px 14px; margin:18px 0; }
-    .dossier { margin-top:24px; }
-    .table-block { overflow:auto; background:var(--soft); border:1px solid var(--line); padding:12px; white-space:pre; }
-    .evidence-ref { font-weight:700; text-decoration:none; }
-    .evidence-card { border:1px solid var(--line); padding:16px; margin:14px 0; border-radius:6px; }
-    .evidence-card h3 { margin-top:0; }
-    .meta { color:var(--muted); font-size:14px; }
-    .source-list { margin:8px 0 0; padding-left:20px; }
-    footer { color:var(--muted); border-top:1px solid var(--line); margin-top:42px; padding-top:18px; font-size:14px; }
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap');
+:root {
+  color-scheme: light;
+  --paper: #f3ead8;
+  --paper-2: #fff9ed;
+  --paper-3: #e6d7bb;
+  --ink: #19150f;
+  --muted: #665f52;
+  --quiet: #867866;
+  --charcoal: #121615;
+  --charcoal-2: #1e2925;
+  --civic-blue: #214f72;
+  --civic-blue-2: #2d6f8f;
+  --docket-red: #9e2f2b;
+  --audit-amber: #d89d28;
+  --ledger-green: #2f6d55;
+  --line: rgba(25, 21, 15, .18);
+  --line-dark: rgba(255, 249, 237, .18);
+  --shadow: 0 24px 65px rgba(25, 21, 15, .18);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(25, 21, 15, .035) 1px, transparent 1px) 0 0 / 38px 38px,
+    linear-gradient(180deg, rgba(25, 21, 15, .028) 1px, transparent 1px) 0 0 / 38px 38px,
+    radial-gradient(circle at 10% 0%, rgba(216, 157, 40, .22), transparent 34%),
+    linear-gradient(145deg, #f6ecd7 0%, #efe0c2 38%, #f8f1e2 100%);
+  font-family: "Source Serif 4", Georgia, serif;
+  line-height: 1.58;
+}
+a { color: var(--civic-blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+code, pre, .mono, .evidence-ref {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  letter-spacing: 0;
+}
+code {
+  background: rgba(255, 249, 237, .82);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+.case-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(18, 22, 21, .97), rgba(30, 41, 37, .95)),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 32px);
+  color: var(--paper-2);
+  border-bottom: 7px solid var(--docket-red);
+}
+.case-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, transparent 0 56%, rgba(216,157,40,.18) 56% 58%, transparent 58%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 1px, transparent 1px 18px);
+  pointer-events: none;
+}
+.case-hero__inner {
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 44px 24px 34px;
+}
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--audit-amber);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.case-hero h1 {
+  margin: 0;
+  max-width: 940px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(38px, 7vw, 86px);
+  line-height: .92;
+  letter-spacing: 0;
+}
+.case-title {
+  max-width: 860px;
+  margin: 18px 0 0;
+  color: rgba(255, 249, 237, .88);
+  font-size: 20px;
+}
+.status-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 30px 0 0;
+}
+.status-tile {
+  min-height: 108px;
+  padding: 14px;
+  border: 1px solid var(--line-dark);
+  background: rgba(255, 249, 237, .08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+.status-tile strong {
+  display: block;
+  color: #fff9ed;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.status-tile span {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 249, 237, .82);
+  font-size: 18px;
+}
+.case-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+.case-nav a {
+  color: var(--paper-2);
+  border: 1px solid rgba(255, 249, 237, .35);
+  background: rgba(255, 249, 237, .08);
+  padding: 8px 11px;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.case-shell {
+  display: grid;
+  grid-template-columns: 252px minmax(0, 1fr);
+  gap: 28px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 30px 24px 72px;
+}
+.case-rail {
+  position: sticky;
+  top: 18px;
+  align-self: start;
+  padding: 18px;
+  background: rgba(255, 249, 237, .82);
+  border: 1px solid var(--line);
+  box-shadow: 8px 8px 0 rgba(158, 47, 43, .12);
+}
+.case-rail h2 {
+  margin: 0 0 10px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 24px;
+  line-height: 1;
+}
+.case-rail a {
+  display: block;
+  margin: 7px 0;
+  color: var(--charcoal);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.case-main { min-width: 0; }
+.notice {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  gap: 14px;
+  margin: 0 0 24px;
+  padding: 18px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.notice::before { content: ""; background: var(--audit-amber); }
+.notice strong { color: var(--docket-red); }
+.dossier, #source-ledger {
+  background: rgba(255, 249, 237, .9);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.dossier {
+  padding: 28px;
+}
+#source-ledger {
+  margin-top: 28px;
+  padding: 28px;
+}
+h1, h2, h3, h4 {
+  font-family: "Fraunces", Georgia, serif;
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+.dossier h1 {
+  margin-top: 0;
+  font-size: clamp(34px, 4vw, 52px);
+}
+.dossier h2, #source-ledger h2 {
+  margin-top: 38px;
+  padding-top: 18px;
+  border-top: 2px solid rgba(158, 47, 43, .28);
+  color: var(--charcoal);
+}
+.dossier h3 { color: var(--civic-blue); }
+.dossier p, .dossier li { font-size: 18px; }
+.dossier ul, .dossier ol { padding-left: 26px; }
+.table-block {
+  overflow: auto;
+  margin: 18px 0;
+  padding: 14px;
+  color: #f9edd4;
+  background:
+    linear-gradient(90deg, rgba(216, 157, 40, .1), transparent 26%),
+    #18201d;
+  border: 1px solid rgba(25, 21, 15, .42);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+  white-space: pre;
+}
+.evidence-ref {
+  display: inline-block;
+  color: var(--paper-2);
+  background: var(--docket-red);
+  border: 1px solid rgba(25, 21, 15, .22);
+  border-radius: 3px;
+  padding: 0 5px;
+  font-size: .78em;
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.evidence-card {
+  position: relative;
+  margin: 16px 0;
+  padding: 18px 18px 18px 26px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(47, 109, 85, .12), transparent 32%),
+    #fffaf0;
+}
+.evidence-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background: var(--ledger-green);
+}
+.evidence-card--not-externally-linkable::before { background: var(--audit-amber); }
+.evidence-card--external-source-linked::before { background: var(--ledger-green); }
+.evidence-card--derived-external-source-linked::before { background: var(--civic-blue-2); }
+.evidence-card h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+.meta, .link-status, footer {
+  color: var(--muted);
+  font-size: 14px;
+}
+.source-list {
+  margin: 8px 0 0;
+  padding-left: 22px;
+  overflow-wrap: anywhere;
+}
+.source-list a { word-break: break-word; }
+footer {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 22px 24px 38px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .case-hero__inner, .notice, .dossier, #source-ledger, .evidence-card {
+    animation: rise-in .7s ease both;
+  }
+  .notice { animation-delay: .08s; }
+  .dossier { animation-delay: .14s; }
+  #source-ledger { animation-delay: .2s; }
+  .evidence-card:nth-of-type(2n) { animation-delay: .05s; }
+  @keyframes rise-in {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+@media (max-width: 880px) {
+  .status-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case-shell { grid-template-columns: 1fr; }
+  .case-rail { position: static; }
+}
+@media (max-width: 560px) {
+  .case-hero__inner, .case-shell { padding-left: 16px; padding-right: 16px; }
+  .status-strip { grid-template-columns: 1fr; }
+  .dossier, #source-ledger { padding: 18px; }
+  .dossier p, .dossier li { font-size: 16px; }
+}
+@media print {
+  body { background: #fff; color: #000; }
+  .case-hero, .case-rail, .case-nav { background: #fff; color: #000; border: 0; }
+  .case-shell { display: block; max-width: none; padding: 0; }
+  .dossier, #source-ledger, .notice { box-shadow: none; border-color: #999; }
+}
+
   </style>
 </head>
 <body>
-<header>
-  <h1>CalDS Public Case Viewer</h1>
-  <p>Live web case: top California homelessness nonprofits by state Homekey award exposure</p>
-  <p>Sentinel posture: <strong>DOWNGRADE_FOR_REVIEW</strong>. This is an internal-review aid, not a formal finding.</p>
-  <nav><a href="#dossier">Dossier</a><a href="#source-ledger">Source Ledger</a><a href="case_dossier.md">Markdown</a><a href="source_ledger.json">Source JSON</a></nav>
+<header class="case-hero">
+  <div class="case-hero__inner">
+    <p class="eyebrow">California Evidence Room</p>
+    <h1>CalDS Public Case Viewer</h1>
+    <p class="case-title">Live web case: top California homelessness nonprofits by state Homekey award exposure</p>
+    <div class="status-strip" aria-label="Case publication status">
+      <div class="status-tile"><strong>Sentinel posture</strong><span>DOWNGRADE_FOR_REVIEW</span></div>
+      <div class="status-tile"><strong>Human posture</strong><span>Review required</span></div>
+      <div class="status-tile"><strong>Evidence ledger</strong><span>90 records</span></div>
+      <div class="status-tile"><strong>Internet links</strong><span>89 linked / 1 marked</span></div>
+    </div>
+    <nav class="case-nav" aria-label="Case links">
+      <a href="#dossier">Briefing</a>
+      <a href="#source-ledger">Source Ledger</a>
+      <a href="case_dossier.md">Markdown</a>
+      <a href="source_ledger.json">Source JSON</a>
+    </nav>
+  </div>
 </header>
-<main>
+<main class="case-shell">
+  <aside class="case-rail" aria-label="Case navigation">
+    <h2>Read Order</h2>
+    <a href="#dossier">Start With The Brief</a>
+    <a href="#source-ledger">Audit The Sources</a>
+    <a href="case_dossier.md">Open Markdown</a>
+    <a href="case_dossier.json">Open Metadata</a>
+    <a href="source_ledger.json">Open Source JSON</a>
+  </aside>
+  <div class="case-main">
   <section class="notice">
-    <strong>Publication safety note:</strong> local file paths are omitted. Evidence labels link to source-ledger cards with official internet source links where recovered. Items without an internet source are marked explicitly.
+    <div><strong>Publication safety note:</strong> This page is a public-safe review aid, not a formal finding. Local file paths are omitted. Evidence labels jump to source-ledger cards; source rows either link to recovered internet sources or state why the record is not externally linkable in this run.</div>
   </section>
   <section id="dossier" class="dossier"><h1 id="case-dossier-live-web-case-top-california-homelessness-nonprofits-by-state-homekey-award-exposure">Case Dossier: Live web case: top California homelessness nonprofits by state Homekey award exposure</h1>
 <h2 id="1-executive-snapshot">1. Executive Snapshot</h2>
@@ -3533,8 +3839,9 @@
     <h2>Source Ledger</h2>
     <p>Every evidence label used in the dossier resolves here. Original URLs are linked when available; otherwise the row states why the source is not externally linkable in this run.</p>
 
-<article class="evidence-card" id="evidence-E01">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E01">
   <h3>E01: Contract/payment acquisition gap: California Supportive Housing</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>contract_payment_discovery_california_supportive_housing</code> | <strong>Source type:</strong> Contract and payment acquisition gap record | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/funding/homekey/funding-overview</p>
   <p><strong>Checksum:</strong> <code>41342662d15a98dd04444d8c4091bffb86eec8d92203377a1da293629f146ee5</code></p>
@@ -3544,8 +3851,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E02">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E02">
   <h3>E02: Contract/payment acquisition gap: DignityMoves</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>contract_payment_discovery_dignitymoves</code> | <strong>Source type:</strong> Contract and payment acquisition gap record | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/funding/homekey/funding-overview</p>
   <p><strong>Checksum:</strong> <code>918455949ff81683eee73e5c1e1a94666c6ef4fe6b0ba758e1a1bb8993f20ad2</code></p>
@@ -3555,8 +3863,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E03">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E03">
   <h3>E03: Contract/payment acquisition gap: Hope the Mission</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>contract_payment_discovery_hope_the_mission</code> | <strong>Source type:</strong> Contract and payment acquisition gap record | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/funding/homekey/funding-overview</p>
   <p><strong>Checksum:</strong> <code>6e6050bc2bf31feb6e4d8036c4d950ae42a7ae672c7550c1471a1dc2980c05ee</code></p>
@@ -3566,8 +3875,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E04">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E04">
   <h3>E04: Contract/payment acquisition gap: The People Concern</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>contract_payment_discovery_the_people_concern</code> | <strong>Source type:</strong> Contract and payment acquisition gap record | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/funding/homekey/funding-overview</p>
   <p><strong>Checksum:</strong> <code>3cc5df21fce4850e120554551ae8b594e15ba6184cf68c60d01aee240e1aab2f</code></p>
@@ -3577,8 +3887,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E05">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E05">
   <h3>E05: Contract/payment acquisition gap: Weingart Center Association</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>contract_payment_discovery_weingart_center_association</code> | <strong>Source type:</strong> Contract and payment acquisition gap record | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/funding/homekey/funding-overview</p>
   <p><strong>Checksum:</strong> <code>d32ea8e0575d16751a7c32b45c30b7f461f7973e55852406ac364f6f416e349a</code></p>
@@ -3588,8 +3899,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E06">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E06">
   <h3>E06: Official enforcement/docket public-source search: Weingart Center Association</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>enforcement_docket_discovery_weingart_center_association</code> | <strong>Source type:</strong> enforcement_docket_discovery | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.justice.gov/</p>
   <p><strong>Checksum:</strong> <code>9fcdbc0bb4a6fd5ae6c361cd285b78dea625041a8cddabc1003afb43de1ec966</code></p>
@@ -3599,8 +3911,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E07">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E07">
   <h3>E07: Raw Form 990 artifact acquisition: DignityMoves</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_raw_artifacts_dignitymoves</code> | <strong>Source type:</strong> irs_990_raw_artifact | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip</p>
   <p><strong>Checksum:</strong> <code>75759a8010411495a2893ccf1f5cdd4940c35a354f71ac8f88f582419750d635</code></p>
@@ -3610,8 +3923,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E08">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E08">
   <h3>E08: Raw Form 990 artifact acquisition: Hope the Mission</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_raw_artifacts_hope_the_mission</code> | <strong>Source type:</strong> irs_990_raw_artifact | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip</p>
   <p><strong>Checksum:</strong> <code>d87a9839f320f16679e04397db8f0fe5976b683c11ee63a5ce0b77f3eeb5806a</code></p>
@@ -3621,8 +3935,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E09">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E09">
   <h3>E09: Raw Form 990 artifact acquisition: The People Concern</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_raw_artifacts_the_people_concern</code> | <strong>Source type:</strong> irs_990_raw_artifact | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip</p>
   <p><strong>Checksum:</strong> <code>8178ea1767ed836c844929633cfa24ac6408ec60bcd4b8cfc67ca2bab1f6f9ea</code></p>
@@ -3632,8 +3947,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E10">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E10">
   <h3>E10: Raw Form 990 artifact acquisition: Weingart Center Association</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_raw_artifacts_weingart_center_association</code> | <strong>Source type:</strong> irs_990_raw_artifact | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip</p>
   <p><strong>Checksum:</strong> <code>0dbd09449f7ae78e683f647ddb4788b1fd19efb7cd67b967246bcc4bf5b46942</code></p>
@@ -3643,8 +3959,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E11">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E11">
   <h3>E11: California Department of Housing and Community Development Homekey/Homekey+ award rows: Habitat for Humanity Yuba/Sutter, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_habitat_yuba_sutter</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2026-02-13</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf; https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>45b904c642eb366c3093e57757316c9e120ee711d89a9d83bed994ea9e4ae21d</code></p>
@@ -3654,8 +3971,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E12">
+<article class="evidence-card evidence-card--derived-external-source-linked" id="evidence-E12">
   <h3>E12: Parsed California Department of Housing and Community Development Homekey/Homekey+ state homelessness award exposure table</h3>
+  <p class="link-status mono">Link status: derived external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>source_table_state_homeless_awards</code> | <strong>Source type:</strong> Parsed California state homelessness award table | <strong>Published:</strong> 2026-02-18</p>
   <p><strong>Source reference:</strong> derived local artifact: state_homeless_award_summary.json</p>
   <p><strong>Checksum:</strong> <code>8d21e9c1811bebf4953fd723f77805a4abda721837f168622a28760fa81b72e9</code></p>
@@ -3665,8 +3983,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E13">
+<article class="evidence-card evidence-card--derived-external-source-linked" id="evidence-E13">
   <h3>E13: Official homelessness outcome-source manifest</h3>
+  <p class="link-status mono">Link status: derived external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>source_table_official_homelessness_outcomes</code> | <strong>Source type:</strong> Parsed official outcome source table | <strong>Published:</strong> 2025-12-22</p>
   <p><strong>Source reference:</strong> derived local artifact: official_outcome_source_manifest.json</p>
   <p><strong>Checksum:</strong> <code>ce2a7822961f34a00bb1f844ece58b8a2fed6df4d74fa29f03ee323804984fc6</code></p>
@@ -3676,8 +3995,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E14">
+<article class="evidence-card evidence-card--not-externally-linkable" id="evidence-E14">
   <h3>E14: Deterministic state-award exposure versus homelessness outcome-context join</h3>
+  <p class="link-status mono">Link status: not externally linkable</p>
   <p class="meta"><strong>Record:</strong> <code>source_table_spend_vs_results_join</code> | <strong>Source type:</strong> Parsed spend-versus-results join | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> derived local artifact: outcome_join_summary.json</p>
   <p><strong>Checksum:</strong> <code>d343125dd179fbbebf3a2038c08ee76d82caa3f6d3ba2797c777f7d0a818eadd</code></p>
@@ -3687,8 +4007,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E15">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E15">
   <h3>E15: Official service/program page harvest: TLCS, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_tlcs_inc</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://hopecoop.org/</p>
   <p><strong>Checksum:</strong> <code>52f439bafbe1a0081d86a1bc2e6b1c7bdf09075470734375b42b05880a179141</code></p>
@@ -3698,8 +4019,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E16">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E16">
   <h3>E16: Public statement page harvest: TLCS, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_tlcs_inc</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://hopecoop.org/</p>
   <p><strong>Checksum:</strong> <code>1ee3cac5d50a90e8ba0864df86ee6ed1b8a6672805cfbe1da14abcd6f7dae879</code></p>
@@ -3709,8 +4031,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E17">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E17">
   <h3>E17: ProPublica/Internal Revenue Service Form 990 summary: Habitat for Humanity Yuba/Sutter, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_habitat_yuba_sutter</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/680301692</p>
   <p><strong>Checksum:</strong> <code>5d28263ef59ef08aab19caf2aedf911ad0b493d3a221728688dbdece2467e1dd</code></p>
@@ -3720,8 +4043,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E18">
+<article class="evidence-card evidence-card--derived-external-source-linked" id="evidence-E18">
   <h3>E18: ProPublica Nonprofit Explorer Internal Revenue Service Form 990 filing summary table</h3>
+  <p class="link-status mono">Link status: derived external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>source_table_irs_990_propublica</code> | <strong>Source type:</strong> Parsed Internal Revenue Service source table | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> derived local artifact: propublica_irs_990_summary.json</p>
   <p><strong>Checksum:</strong> <code>9ca27f08499519b3ead70059269478de78ed02fadeba99a2b533cbaf388898a8</code></p>
@@ -3731,8 +4055,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E19">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E19">
   <h3>E19: Federal Audit Clearinghouse coverage: Burbank Housing Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_burbank_housing_development_corporation</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>752bdeb153160439941b9a639df39785b65b6ee083583756a5bbddef0f45bd4a</code></p>
@@ -3742,8 +4067,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E20">
+<article class="evidence-card evidence-card--derived-external-source-linked" id="evidence-E20">
   <h3>E20: Federal Audit Clearinghouse target audit-source extraction table</h3>
+  <p class="link-status mono">Link status: derived external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>source_table_fac_audit</code> | <strong>Source type:</strong> Parsed Federal Audit Clearinghouse audit table | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> derived local artifact: fac_audit_summary.json</p>
   <p><strong>Checksum:</strong> <code>94cf259a888fe626faab8030aa2075e320fc820c6c636925f21dc67e80aa3502</code></p>
@@ -3753,8 +4079,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E21">
+<article class="evidence-card evidence-card--derived-external-source-linked" id="evidence-E21">
   <h3>E21: Parsed official enforcement and docket source table</h3>
+  <p class="link-status mono">Link status: derived external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>source_table_enforcement_docket</code> | <strong>Source type:</strong> Parsed enforcement and docket source table | <strong>Published:</strong> 2025-10-16</p>
   <p><strong>Source reference:</strong> derived local artifact: enforcement_docket_source_summary.json</p>
   <p><strong>Checksum:</strong> <code>b0cdbb4bd373053c7af65ec421f09f8ecdf05730ded3fd16b80c0410412b7bfd</code></p>
@@ -3764,8 +4091,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E22">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E22">
   <h3>E22: Official enforcement/docket triage source: Weingart Center Association</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>enforcement_docket_weingart_center_association_1</code> | <strong>Source type:</strong> Official enforcement or docket source | <strong>Published:</strong> 2025-10-16</p>
   <p><strong>Source reference:</strong> https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf</p>
   <p><strong>Checksum:</strong> <code>4704d83cf192b49b41a868106f4774b607fd7d38d74e54c7fc8127d1f80cf145</code></p>
@@ -3775,8 +4103,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E23">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E23">
   <h3>E23: Public statement page harvest: Weingart Center Association</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_weingart_center</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.weingart.org/</p>
   <p><strong>Checksum:</strong> <code>2b008aab7a0605be9b4fa5af2c23b2b15e10edf48cd76614e3d9e6eb9bc732dd</code></p>
@@ -3786,8 +4115,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E24">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E24">
   <h3>E24: Official service/program page harvest: Abode Housing Development</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_abode_housing_development</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://abode.org/housing-development</p>
   <p><strong>Checksum:</strong> <code>760bf54cf390ebfd88b9ea6e369c126c5a3e94966aa583173493fdae2cde0303</code></p>
@@ -3797,8 +4127,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E25">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E25">
   <h3>E25: Official service/program page harvest: Burbank Housing Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_burbank_housing_development</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://burbankhousing.org/our-story/</p>
   <p><strong>Checksum:</strong> <code>bdc978988f690ff2bb368c7368dadd763a8772fc4a3fc7e00b6d46f6ec77c241</code></p>
@@ -3808,8 +4139,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E26">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E26">
   <h3>E26: Official service/program page harvest: PATH Ventures</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_path_ventures</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://epath.org/path-ventures/</p>
   <p><strong>Checksum:</strong> <code>91dfc7a21e6bea124a899ad6dc94434b9a0dad13d048ed489285e2ca90906e5e</code></p>
@@ -3819,8 +4151,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E27">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E27">
   <h3>E27: Official service/program page harvest: Habitat for Humanity Yuba/Sutter, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_habitat_yuba_sutter</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/</p>
   <p><strong>Checksum:</strong> <code>0f0c1b043fb53e7db762ec1b3d1b67aa7970fe76008c98aefea0a760b752d07c</code></p>
@@ -3830,8 +4163,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E28">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E28">
   <h3>E28: Official service/program page harvest: Weingart Center Association</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_weingart_center</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.weingart.org/programs</p>
   <p><strong>Checksum:</strong> <code>9f5b80f62a6b025b0b16a939fa7c692fba91cd84c33670c8a743e482a562efcf</code></p>
@@ -3841,8 +4175,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E29">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E29">
   <h3>E29: Public statement page harvest: Burbank Housing Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_burbank_housing_development</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://burbankhousing.org/</p>
   <p><strong>Checksum:</strong> <code>9ad1ac08fc76f8318e09795bd23f93ad051a607f2a100d023df0c1676d011f58</code></p>
@@ -3852,8 +4187,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E30">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E30">
   <h3>E30: Public statement page harvest: PATH Ventures</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_path_ventures</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://epath.org/</p>
   <p><strong>Checksum:</strong> <code>ba19a586152c256a829211f5c5706fd1e133984234cf837e12b472aaecf2f0bf</code></p>
@@ -3863,8 +4199,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E31">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E31">
   <h3>E31: Official service/program page harvest: Service First Northern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_service_first_northern_california</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://servicefirstnc.org/</p>
   <p><strong>Checksum:</strong> <code>f8c83a1012058eb37f28dca78699cf5ab0a550f4df5424d87f529ae20468bee9</code></p>
@@ -3874,8 +4211,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E32">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E32">
   <h3>E32: Public statement page harvest: Service First Northern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_service_first_northern_california</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://servicefirstnc.org/</p>
   <p><strong>Checksum:</strong> <code>b170016b03b80dad1f83572def44e5381530a2faf14bcfbc8bdf453b286bfc95</code></p>
@@ -3885,8 +4223,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E33">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E33">
   <h3>E33: Public statement page harvest: Habitat for Humanity Yuba/Sutter, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_habitat_yuba_sutter</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/</p>
   <p><strong>Checksum:</strong> <code>19bdcce1bf7868431963321cce280ad28c17ddf9d714ace5d6435c930b3c29f6</code></p>
@@ -3896,8 +4235,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E34">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E34">
   <h3>E34: Public statement page harvest: Abode Housing Development</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_abode_housing_development</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://abode.org/</p>
   <p><strong>Checksum:</strong> <code>09ebac11dd62d9db67de498f0fdc1fc9f5dd82ff20c97e7b66db444d683ef58d</code></p>
@@ -3907,8 +4247,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E35">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E35">
   <h3>E35: Official service/program page harvest: Swords to Plowshares</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_swords_to_plowshares</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.swords-to-plowshares.org/</p>
   <p><strong>Checksum:</strong> <code>ede63193eaa8435c500527cc6400411df36ef269c4124c22943a79e06ffd0d1c</code></p>
@@ -3918,8 +4259,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E36">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E36">
   <h3>E36: Official service/program page harvest: The People Concern</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_the_people_concern</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.thepeopleconcern.org/homeless-services/</p>
   <p><strong>Checksum:</strong> <code>eff37e12040c98a16ba6afad5c1a21f5c66ae664cfb998456dd5e92c87f90d61</code></p>
@@ -3929,8 +4271,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E37">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E37">
   <h3>E37: California Department of Housing and Community Development Homekey/Homekey+ award rows: Abode Housing Development</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_abode_housing_development</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2025-07-15</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>bba7d0b713962be2cf152366b3e572cdcd32e7a26b3ca888c9a93023b5535356</code></p>
@@ -3940,8 +4283,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E38">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E38">
   <h3>E38: California Department of Housing and Community Development Homekey/Homekey+ award rows: Burbank Housing Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_burbank_housing_development</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2025-09-19</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>0d79f95ebf76d5ed59b0c694e96c25c71f4a11a86abc28c907318063f22ce6b3</code></p>
@@ -3951,8 +4295,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E39">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E39">
   <h3>E39: California Department of Housing and Community Development Homekey/Homekey+ award rows: TLCS, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_tlcs_inc</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2023-09-26</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>4bf939b3f70c1ddd896e7175b33fd5e932169beba8a7c7dca949a390242f86d4</code></p>
@@ -3962,8 +4307,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E40">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E40">
   <h3>E40: Public statement page harvest: The People Concern</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_the_people_concern</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.thepeopleconcern.org/</p>
   <p><strong>Checksum:</strong> <code>98542059d2a46f8cfe741e3e393fe0667784fab2496aa267645816565e9d83e1</code></p>
@@ -3973,8 +4319,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E41">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E41">
   <h3>E41: California Department of Housing and Community Development Homekey/Homekey+ award rows: PATH Ventures</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_path_ventures</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2026-02-13</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>25674aa8d84f4c723318411d9efd71684e1d1fd4f4c8f764df2020c17074831e</code></p>
@@ -3984,8 +4331,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E42">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E42">
   <h3>E42: California Department of Housing and Community Development Homekey/Homekey+ award rows: Weingart Center Association</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_weingart_center</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2023-11-21</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>a53399b5cd34b8716358d253bf73fd9f6f7ee2b2e6d9b337d74c658c0c09ce7f</code></p>
@@ -3995,8 +4343,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E43">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E43">
   <h3>E43: ProPublica/Internal Revenue Service Form 990 summary: Burbank Housing Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_burbank_housing_development</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/942837785</p>
   <p><strong>Checksum:</strong> <code>50997d57686fc59769b858a130c7174ab0fb4829796fcbe873e0efc23bc29dfd</code></p>
@@ -4006,8 +4355,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E44">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E44">
   <h3>E44: ProPublica/Internal Revenue Service Form 990 summary: TLCS, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_tlcs_inc</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/942777955</p>
   <p><strong>Checksum:</strong> <code>39587efee570110ad688818ba99e0e7b4b95614147cd59702661e3be00bd8c86</code></p>
@@ -4017,8 +4367,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E45">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E45">
   <h3>E45: ProPublica/Internal Revenue Service Form 990 summary: Weingart Center Association</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_weingart_center</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/956054617</p>
   <p><strong>Checksum:</strong> <code>2a00304db8f306c518be3fc67bdb3b2130b99007e2bd6ac9e1a617317813c927</code></p>
@@ -4028,8 +4379,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E46">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E46">
   <h3>E46: California Department of Housing and Community Development Homekey/Homekey+ award rows: Service First Northern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_service_first_northern_california</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2026-01-27</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>040d16453983171df88116ffb9c9c9d0d5d4153d1f9792ec2f32da65258c884d</code></p>
@@ -4039,8 +4391,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E47">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E47">
   <h3>E47: ProPublica/Internal Revenue Service Form 990 summary: Abode Housing Development</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_abode_housing_development</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/943205085</p>
   <p><strong>Checksum:</strong> <code>5c02a392837cfa9fd9c46b4b6216e3ea84817aca117073f39db509bd8e8a194e</code></p>
@@ -4050,8 +4403,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E48">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E48">
   <h3>E48: Official service/program page harvest: Self-Help Enterprises</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_self_help_enterprises</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.selfhelpenterprises.org/</p>
   <p><strong>Checksum:</strong> <code>d4426b06fedb23b164f24a2ee14e8ecbd1b5c91c83c2e26378181ee21d71ada6</code></p>
@@ -4061,8 +4415,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E49">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E49">
   <h3>E49: Public statement page harvest: Self-Help Enterprises</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_self_help_enterprises</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.selfhelpenterprises.org/</p>
   <p><strong>Checksum:</strong> <code>5ad503cd45343db6eb49971958ceea57376b7bf893900cff1c9bebef698ea2d9</code></p>
@@ -4072,8 +4427,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E50">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E50">
   <h3>E50: Public statement page harvest: Hope the Mission</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_hope_the_mission</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://hopethemission.org/</p>
   <p><strong>Checksum:</strong> <code>d8a6f8dead43a4d380e4023d8d8f1cef3fda1c99b7482bb2d3330e6b60ae0948</code></p>
@@ -4083,8 +4439,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E51">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E51">
   <h3>E51: Public statement page harvest: Swords to Plowshares</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_swords_to_plowshares</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.swords-to-plowshares.org/about/vision-for-impact/care/</p>
   <p><strong>Checksum:</strong> <code>f16be1b01a6e237deb594674ccef54dfaa834ceca17431993df031f9c3b1a228</code></p>
@@ -4094,8 +4451,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E52">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E52">
   <h3>E52: California Department of Housing and Community Development Homekey/Homekey+ award rows: The People Concern</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_the_people_concern</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2026-02-13</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>cbc494a65b069d7ede1133a7acec89b9c576eb4ee12aa302b32e5ea5d432899f</code></p>
@@ -4105,8 +4463,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E53">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E53">
   <h3>E53: ProPublica/Internal Revenue Service Form 990 summary: PATH Ventures</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_path_ventures</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/201892523</p>
   <p><strong>Checksum:</strong> <code>e79a0f341089a5c88c750ecc734b3798a7046da7c2e2e039f9892411df79e7c8</code></p>
@@ -4116,8 +4475,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E54">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E54">
   <h3>E54: Official service/program page harvest: Hope the Mission</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_hope_the_mission</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://hopethemission.org/our-programs/</p>
   <p><strong>Checksum:</strong> <code>b446f2278cea4547b60d6864dfc737d3cc6131e3e70335b93fd38f035287e234</code></p>
@@ -4127,8 +4487,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E55">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E55">
   <h3>E55: ProPublica/Internal Revenue Service Form 990 summary: Service First Northern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_service_first_northern_california</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/680367046</p>
   <p><strong>Checksum:</strong> <code>d444c8b16c72a6b4ba44d9c3165fbc0d88cf8f08865b83e085c08eb0b03997a7</code></p>
@@ -4138,8 +4499,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E56">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E56">
   <h3>E56: Official service/program page harvest: Lutheran Social Services of Southern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_lutheran_social_services_socal</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.lsssc.org/sbd-main</p>
   <p><strong>Checksum:</strong> <code>a73e27647151275415ef7a282823a308b39ef04bbfa273bff9a9a565dd18c418</code></p>
@@ -4149,8 +4511,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E57">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E57">
   <h3>E57: Official service/program page harvest: DignityMoves</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_dignitymoves</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://dignitymoves.org/interim-supportive-housing/</p>
   <p><strong>Checksum:</strong> <code>e2b7179210fb980a412f5247e583f502cb19237bae808ea626c986c2187e2cbd</code></p>
@@ -4160,8 +4523,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E58">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E58">
   <h3>E58: California Department of Housing and Community Development Homekey/Homekey+ award rows: Swords to Plowshares</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_swords_to_plowshares</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2025-09-19</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>1f2f4620555bb66820ac506afdd96cfd37e98065a97d27575917647f2a21a39f</code></p>
@@ -4171,8 +4535,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E59">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E59">
   <h3>E59: Official service/program page harvest: California Supportive Housing</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_california_supportive_housing</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.cshousing.org/</p>
   <p><strong>Checksum:</strong> <code>a856cc6a81cbc631fd555f40ccea4046225ff4f8d659bc01c6b9fe57471dd2e5</code></p>
@@ -4182,8 +4547,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E60">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E60">
   <h3>E60: Public statement page harvest: DignityMoves</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_dignitymoves</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://dignitymoves.org/</p>
   <p><strong>Checksum:</strong> <code>2a942e98c10c575a3f6c098868818fcaefa7a7f2e3aa4e3b2f1f0b6e598d1275</code></p>
@@ -4193,8 +4559,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E61">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E61">
   <h3>E61: ProPublica/Internal Revenue Service Form 990 summary: Swords to Plowshares</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_swords_to_plowshares</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/942260626</p>
   <p><strong>Checksum:</strong> <code>5fd6f79c73826cc97e45ce1e6f31afa3431abd7a5a971bd5a048f1172c956023</code></p>
@@ -4204,8 +4571,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E62">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E62">
   <h3>E62: Public statement page harvest: Lutheran Social Services of Southern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_lutheran_social_services_socal</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.lsssc.org/articles/get-out-there-n9t2h-wk9tc-mfxze</p>
   <p><strong>Checksum:</strong> <code>da1e58ec13ea693342d790721dc344759bf27ae93f33c6a19d4e7c79b4302971</code></p>
@@ -4215,8 +4583,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E63">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E63">
   <h3>E63: Public statement page harvest: California Supportive Housing</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_california_supportive_housing</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://www.cshousing.org/</p>
   <p><strong>Checksum:</strong> <code>52b324ce5e2e670a1c64f844139b93a0767a3a365b64b8f7fe5cd4031b6c58fe</code></p>
@@ -4226,8 +4595,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E64">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E64">
   <h3>E64: California Department of Housing and Community Development Homekey/Homekey+ award rows: Hope the Mission</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_hope_the_mission</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2024-02-06</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>d7a3bc3d3d226842c55b5b799583a869e38ebc47dd0b95c96e6614ba91a9f7e2</code></p>
@@ -4237,8 +4607,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E65">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E65">
   <h3>E65: ProPublica/Internal Revenue Service Form 990 summary: The People Concern</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_the_people_concern</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/956143865</p>
   <p><strong>Checksum:</strong> <code>3aead2d382d520dc9fd4adcbddd063205fb48d4d517e0b7a2fd5f7a1669c2331</code></p>
@@ -4248,8 +4619,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E66">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E66">
   <h3>E66: Official service/program page harvest: Community Revitalization and Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>org_service_pages_community_revitalization_development</code> | <strong>Source type:</strong> Organization service page | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://crdc.org/</p>
   <p><strong>Checksum:</strong> <code>beaf42a1917a91309e8682c73549d031f9a658aa45290a48f59b06b2595211cc</code></p>
@@ -4259,8 +4631,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E67">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E67">
   <h3>E67: California Department of Housing and Community Development Homekey/Homekey+ award rows: DignityMoves</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_dignitymoves</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2025-07-15</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf; https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>8323304285a3a93f2dcaec057385d211b942ec939e5dbde8fab444b8efca7662</code></p>
@@ -4270,8 +4643,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E68">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E68">
   <h3>E68: California Department of Housing and Community Development Homekey/Homekey+ award rows: Self-Help Enterprises</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_self_help_enterprises</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2025-11-13</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>fdc710b4478327304e3550394ec05b9dd9a80d91ade37287ece59e2ac29312b0</code></p>
@@ -4281,8 +4655,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E69">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E69">
   <h3>E69: ProPublica/Internal Revenue Service Form 990 summary: Hope the Mission</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_hope_the_mission</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/272053273</p>
   <p><strong>Checksum:</strong> <code>2d8518f88a56a8bdac78ab222632a74ba0a69195b4eefa61dd08a70a972bdbb4</code></p>
@@ -4292,8 +4667,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E70">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E70">
   <h3>E70: Public statement page harvest: Community Revitalization and Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>public_statements_community_revitalization_development</code> | <strong>Source type:</strong> Public statement source | <strong>Published:</strong> 2026-04-29</p>
   <p><strong>Source reference:</strong> https://crdc.org/</p>
   <p><strong>Checksum:</strong> <code>6d8e7b494429bb05d3bfe93d603d7fac365700c089bbdd503202cb779ce6963e</code></p>
@@ -4303,8 +4679,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E71">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E71">
   <h3>E71: California Department of Housing and Community Development Homekey/Homekey+ award rows: Community Revitalization and Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_community_revitalization_development</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2025-10-13</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>d87941b1eaa28768e8e7c2fa67a2e7bf27e00e7ade1528fd3f116fc3ca122643</code></p>
@@ -4314,8 +4691,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E72">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E72">
   <h3>E72: California Department of Housing and Community Development Homekey/Homekey+ award rows: Lutheran Social Services of Southern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_lutheran_social_services_socal</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2023-12-19</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>accc0fad2f5fbbb0ba6f4374fad5cdc99d70d67c9a19dd42162681abdb2cb300</code></p>
@@ -4325,8 +4703,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E73">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E73">
   <h3>E73: Federal Audit Clearinghouse coverage: Abode Housing Development</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_abode_housing_development</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>9489bf9bcd5c5cb5bcb514c4ad9ca0366d72bac663f777413956425e05c27263</code></p>
@@ -4336,8 +4715,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E74">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E74">
   <h3>E74: Federal Audit Clearinghouse coverage: Weingart Center Association</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_weingart_center_association</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>3a0a1d814d682ec1dab8fe0401a8a3930fcb199cfb40c2d14b2f94ef00626a8a</code></p>
@@ -4347,8 +4727,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E75">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E75">
   <h3>E75: ProPublica/Internal Revenue Service Form 990 summary: Self-Help Enterprises</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_self_help_enterprises</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/941592676</p>
   <p><strong>Checksum:</strong> <code>ed87fd3047dab4401e7a5cd711cb5ea2395378c33f3f8a49d313969e75ae0f46</code></p>
@@ -4358,8 +4739,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E76">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E76">
   <h3>E76: California Department of Housing and Community Development Homekey/Homekey+ award rows: California Supportive Housing</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>state_homeless_awards_california_supportive_housing</code> | <strong>Source type:</strong> California Department of Housing and Community Development homelessness award record | <strong>Published:</strong> 2025-12-16</p>
   <p><strong>Source reference:</strong> https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf; https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf</p>
   <p><strong>Checksum:</strong> <code>70a7b707f384c0dc41b2af73fe8fd8ea81ccbc096f59acc5c1828977fbd233b4</code></p>
@@ -4369,8 +4751,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E77">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E77">
   <h3>E77: Federal Audit Clearinghouse coverage: PATH Ventures</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_path_ventures</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>bef7efa5f3b3f815c0a3b00eac56502d97814ed4016e93baf21482af6711e549</code></p>
@@ -4380,8 +4763,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E78">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E78">
   <h3>E78: Federal Audit Clearinghouse coverage: Self-Help Enterprises</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_self_help_enterprises</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>6d5db75d3b3a4f746f804b3b3ed2f25e0f8d6f69adf6a9ba8cdbab50710385e7</code></p>
@@ -4391,8 +4775,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E79">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E79">
   <h3>E79: Federal Audit Clearinghouse coverage: TLCS, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_tlcs_inc</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>1a245f108876c74bc24038028c3344ec978d29190b87c0cba8550041613b54f3</code></p>
@@ -4402,8 +4787,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E80">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E80">
   <h3>E80: ProPublica/Internal Revenue Service Form 990 summary: DignityMoves</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_dignitymoves</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/871111468</p>
   <p><strong>Checksum:</strong> <code>86822a82a928600316928e145d959c28c56ebb2d18ac4a42c1c1ddaaf0fd4cb5</code></p>
@@ -4413,8 +4799,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E81">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E81">
   <h3>E81: Federal Audit Clearinghouse coverage: Habitat for Humanity Yuba/Sutter, Inc.</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_habitat_for_humanity_yuba_sutter_inc</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>ea5c4b4b1f7d65979384d373c12d2c56dd8e00cf553b447a3b52f0f7c194562d</code></p>
@@ -4424,8 +4811,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E82">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E82">
   <h3>E82: ProPublica/Internal Revenue Service Form 990 summary: Community Revitalization and Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_community_revitalization_development</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/680248670</p>
   <p><strong>Checksum:</strong> <code>2dba159b08bdd56bc59a4048608f0ff5d00323d34ed6c6d26796a303b59d403d</code></p>
@@ -4435,8 +4823,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E83">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E83">
   <h3>E83: ProPublica/Internal Revenue Service Form 990 summary: Lutheran Social Services of Southern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_lutheran_social_services_socal</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2023</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/952225798</p>
   <p><strong>Checksum:</strong> <code>659f7f4f1cac7994a351815f8600bda40d5c4f43ad4121e10df0e263044675cf</code></p>
@@ -4446,8 +4835,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E84">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E84">
   <h3>E84: Federal Audit Clearinghouse coverage: DignityMoves</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_dignitymoves</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>bb1bbb78e960d7be14606d48e69403ba775e010867d097921f6f660746c842e2</code></p>
@@ -4457,8 +4847,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E85">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E85">
   <h3>E85: Federal Audit Clearinghouse coverage: Community Revitalization and Development Corporation</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_community_revitalization_and_development_corporation</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>ebfb11384ff705c388c9e61100d3a7e6c1552850c517f1177b79dc47edf55ff1</code></p>
@@ -4468,8 +4859,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E86">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E86">
   <h3>E86: Federal Audit Clearinghouse coverage: Lutheran Social Services of Southern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_lutheran_social_services_of_southern_california</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>6aecc94fda7efbfbdeb523da493d15eb5be274276f11f0b7f1c3f2ed75af8dc4</code></p>
@@ -4479,8 +4871,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E87">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E87">
   <h3>E87: ProPublica/Internal Revenue Service Form 990 profile without parsed filings: California Supportive Housing</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>irs_990_summary_california_supportive_housing</code> | <strong>Source type:</strong> Internal Revenue Service Form 990 summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://projects.propublica.org/nonprofits/organizations/884329113</p>
   <p><strong>Checksum:</strong> <code>46a8f987872615cc460907428dd0a2671d3184094ff2b0f0c964091eb5dd3783</code></p>
@@ -4490,8 +4883,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E88">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E88">
   <h3>E88: Federal Audit Clearinghouse coverage: Service First Northern California</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_service_first_northern_california</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>6ea27016190dec22197fe5d261eb014b0bf1558445b3c404c52d881d8e9ff639</code></p>
@@ -4501,8 +4895,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E89">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E89">
   <h3>E89: Federal Audit Clearinghouse coverage: California Supportive Housing</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_california_supportive_housing</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>ad37c6739bef9304b449a4c608e8590a765c44b902cf9eccbb99e40f87fa4563</code></p>
@@ -4512,8 +4907,9 @@
 </article>
 
 
-<article class="evidence-card" id="evidence-E90">
+<article class="evidence-card evidence-card--external-source-linked" id="evidence-E90">
   <h3>E90: Federal Audit Clearinghouse coverage: Hope the Mission</h3>
+  <p class="link-status mono">Link status: external source linked</p>
   <p class="meta"><strong>Record:</strong> <code>fac_audit_summary_hope_the_mission</code> | <strong>Source type:</strong> Federal Audit Clearinghouse audit summary | <strong>Published:</strong> 2026-04-30</p>
   <p><strong>Source reference:</strong> https://www.fac.gov/data/download/current/</p>
   <p><strong>Checksum:</strong> <code>e510d79ef7261a1602ff9f142fe0f34ce76d05ce249772094f0a0405098899a4</code></p>
@@ -4523,7 +4919,8 @@
 </article>
 
   </section>
-  <footer>Generated 2026-05-01T00:28:20+00:00. Human review remains required before outside-facing use.</footer>
+  </div>
 </main>
+<footer>Generated 2026-05-01T12:00:28+00:00. Human review remains required before outside-facing use.</footer>
 </body>
 </html>
