@@ -2,9 +2,9 @@
   "case_id": "live_ca_homelessness_top15_2026_04_29",
   "citation_verification": {
     "case_id": "live_ca_homelessness_top15_2026_04_29",
-    "checked_claim_count": 1249,
+    "checked_claim_count": 1381,
     "checks": [],
-    "created_at": "2026-05-01T13:35:23+00:00",
+    "created_at": "2026-05-01T13:52:43+00:00",
     "error_count": 0,
     "status": "PASS",
     "verification_id": "citation_verification_d3df184e0bc5b7d5",
@@ -16,7 +16,7 @@
     "index_html": "index.html",
     "source_ledger_json": "source_ledger.json"
   },
-  "generated_at": "2026-05-01T13:36:20+00:00",
+  "generated_at": "2026-05-01T13:53:37+00:00",
   "human_review_required": true,
   "link_integrity": {
     "checked_url_count": 86,
@@ -526,46 +526,46 @@
         "url": "https://www.fac.gov/api"
       },
       {
-        "check_id": "link_check_c09d59f39e6462b9",
+        "check_id": "link_check_6fd6054fd9414336",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/general.csv?response-content-disposition=attachment%3Bfilename%3Dgeneral.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T133605Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=513275b979ee7fcb19a2b092bb1e54631fce3acf10d38a4648e9f4ccfd735523",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/general.csv?response-content-disposition=attachment%3Bfilename%3Dgeneral.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T135323Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=e8a399999bec8087f7ec06c1923462e1baf192cf45e43b8770a06f4e2feb4cd0",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/general.csv"
       },
       {
-        "check_id": "link_check_cf07717409422ebf",
+        "check_id": "link_check_5d40a1ee5098e24d",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/federal_awards.csv?response-content-disposition=attachment%3Bfilename%3Dfederal_awards.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T133606Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=b84a9cc78fc493b55f81f5a0528fc410af4e2ada170c05fec8f5616eed4ae9f1",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/federal_awards.csv?response-content-disposition=attachment%3Bfilename%3Dfederal_awards.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T135324Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=40eaf388378c65b1f96dea8791fe6dede32dea5672b66b4a3f5973118c0bc8fb",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv"
       },
       {
-        "check_id": "link_check_828cf1e1d20f6456",
+        "check_id": "link_check_b05ee9b0bd37dd81",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings.csv?response-content-disposition=attachment%3Bfilename%3Dfindings.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T133607Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=e199f26dfc11d3db59a36a50c129d669dfceef2e75d368db415adaefc9f58003",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings.csv?response-content-disposition=attachment%3Bfilename%3Dfindings.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T135324Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=e8cc5352adf06d46634c829d95b20a55c58430db6c880e00445232252624e5c5",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv"
       },
       {
-        "check_id": "link_check_686964651a094881",
+        "check_id": "link_check_984b86a53d861e54",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings_text.csv?response-content-disposition=attachment%3Bfilename%3Dfindings_text.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T133608Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=f5e22235cbadf86805a7c8367f8be2e4d73f072f8d67da9ac557da43560356b6",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings_text.csv?response-content-disposition=attachment%3Bfilename%3Dfindings_text.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T135325Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=56c0c5f03a185f6d723d8df16c8c46740f4fb6116df3dc70f5f33e428010790d",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings_text.csv"
       },
       {
-        "check_id": "link_check_fff5736ec4aa03fc",
+        "check_id": "link_check_06453c9671adef70",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/corrective_action_plans.csv?response-content-disposition=attachment%3Bfilename%3Dcorrective_action_plans.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T133609Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=2460045e5346e7effa5f2a34e409e2d3e8ab3301b840b88b817b7976c2aa22d2",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/corrective_action_plans.csv?response-content-disposition=attachment%3Bfilename%3Dcorrective_action_plans.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T135326Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=2a2a3c947d7ec9fa2b7ecf37574b9aa2f996e4592b6631979d8e2e45fdef07d8",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/corrective_action_plans.csv"
@@ -796,7 +796,7 @@
         "url": "https://projects.propublica.org/nonprofits/organizations/952225798"
       }
     ],
-    "created_at": "2026-05-01T13:36:19+00:00",
+    "created_at": "2026-05-01T13:53:37+00:00",
     "error_count": 0,
     "report_id": "link_integrity_254f7406bfe25044",
     "status": "PASS",
@@ -922,7 +922,7 @@
     "verified_linked_evidence_count": 90,
     "workflow_state": "AWAITING_HUMAN_REVIEW"
   },
-  "publication_id": "publication_0a7db958b236cf8d",
+  "publication_id": "publication_33141acd3d9a13be",
   "safety": {
     "checked_files": [
       "case_dossier.md",

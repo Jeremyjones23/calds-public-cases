@@ -14,8 +14,8 @@ Bottom line: CalDS screened 7 entities and keeps Behavioral Health Services Inc,
 What CalDS found first:
 
 - `E21` Public statement page harvest: Tarzana Treatment Centers Inc (Public statement source, 2026-04-24): treatment ag housing: rvices Medical Care Primary Medical Care Specialty Care Dental and Oral Health Care Chiropractic Care Pain Management Health Care HIV / AIDS Telehealth Services Recovery Housing Veterans Youth and Family Services Overview Substance Use...
-- `E12` Parsed Internal Revenue Service Form 990 machine-readable filing data financial fields for target entities (Parsed Internal Revenue Service source table, 2026-04-24): Deterministic parser output from downloaded Internal Revenue Service Form 990 machine-readable filing data files. Raw machine-readable filing data remains the controlling source. | entity | ein | tax_period | tax_period_year | total_revenue | total_expenses |...
-- `E13` Parsed Federal Audit Clearinghouse audit-control and findings table for target entities (Parsed Federal Audit Clearinghouse audit table, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse general, findings, federal_awards source data tables, with downloaded audit source document presence. Audit source documents and Federal Audit Clearinghouse source data table rows remain the...
+- `E12` Internal Revenue Service Form 990 summary table (Parsed Internal Revenue Service dataset, 2026-04-24): Deterministic parser output from downloaded Internal Revenue Service Form 990 machine-readable filing data files. Raw machine-readable filing data remains the controlling source. | entity | ein | tax_period | tax_period_year | total_revenue | total_expenses |...
+- `E13` Federal Audit Clearinghouse audit summary table (Parsed Federal Audit Clearinghouse audit dataset, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse general, findings, federal_awards source data tables, with downloaded audit source document presence. Audit source documents and Federal Audit Clearinghouse source data table rows remain the...
 - 4 additional evidence item(s) are in the citation ledger.
 
 Why this is on a reviewer's desk:
@@ -84,7 +84,7 @@ These entities have matrix signals or source gaps, but they were not selected fo
 
 Why this entity is in the review set:
 
-CalDS selected Behavioral Health Services Inc as a watchlist or matrix-only subject, not a deep-review target selected by this run because the cited records show audit-control concerns, facility-capacity or license-status stress, material public-funding exposure, and spend-versus-results mismatch. The strongest current cited trigger is: Federal Audit Clearinghouse data in this run reports material-weakness year(s): 2021, 2024; internal-control-deficiency year(s): 2017, 2018, 2019, 2020, 2022; not-low-risk year(s): 2018, 2019, 2020, 2021, 2022, 2023, 2024; finding row count: 2. Evidence: `E13`, `E14`, `E15`, `E18`, `E19`.
+CalDS selected Behavioral Health Services Inc for watchlist review; it was not selected for deep review by this run because the cited records show audit-control concerns, facility-capacity or license-status stress, material public-funding exposure, and spend-versus-results mismatch. The strongest current cited trigger is: Federal Audit Clearinghouse data in this run reports material-weakness year(s): 2021, 2024; internal-control-deficiency year(s): 2017, 2018, 2019, 2020, 2022; not-low-risk year(s): 2018, 2019, 2020, 2021, 2022, 2023, 2024; finding row count: 2. Evidence: `E13`, `E14`, `E15`, `E18`, `E19`.
 
 What the organization says it does:
 
@@ -92,9 +92,9 @@ this run did not recover a direct service-page or public-statement description f
 
 Key retrieved records:
 
-- `E14` Parsed Federal Audit Clearinghouse federal award program totals for target entities (Parsed Federal Audit Clearinghouse award table, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse federal_awards rows filtered to matched reports. Amount totals support funding-trace review only. | entity | federal_program_name | amount_expended_total | | --- | --- | --- | | Tarzana Treatment...
-- `E46` Federal Audit Clearinghouse audit record: Behavioral Health Services Inc 2016 (Federal Audit Clearinghouse audit source document, 2017-03-23): Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2016-06-CENSUS-0000124927 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-23 Auditee name: BEHAVIORAL HEALTH SERVICES, INC. Auditee Employer...
-- `E50` Federal Audit Clearinghouse audit record: Behavioral Health Services Inc 2017 (Federal Audit Clearinghouse audit source document, 2018-04-17): Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2017-06-CENSUS-0000124927 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2018-04-17 Auditee name: BEHAVIORAL HEALTH SERVICES, INC. Auditee Employer...
+- `E14` Federal Audit Clearinghouse audit summary table (Parsed Federal Audit Clearinghouse award dataset, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse federal_awards rows filtered to matched reports. Amount totals support funding-trace review only. | entity | federal_program_name | amount_expended_total | | --- | --- | --- | | Tarzana Treatment...
+- `E46` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2017-03-23): Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2016-06-CENSUS-0000124927 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-23 Auditee name: BEHAVIORAL HEALTH SERVICES, INC. Auditee Employer...
+- `E50` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2018-04-17): Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2017-06-CENSUS-0000124927 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2018-04-17 Auditee name: BEHAVIORAL HEALTH SERVICES, INC. Auditee Employer...
 - 4 additional matched source item(s) appear in the citation ledger.
 
 What the records show:
@@ -102,7 +102,7 @@ What the records show:
 - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): 2021, 2024; internal-control-deficiency year(s): 2017, 2018, 2019, 2020, 2022; not-low-risk year(s): 2018, 2019, 2020, 2021, 2022, 2023, 2024; finding row count: 2. (year(s): 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024; subject: Behavioral Health Services Inc; evidence `E13`, `E14`.)
 - Facility status: Parsed California Department of Health Care Services status rows show 40 active and 25 closed facilities out of 65 matched rows (38.5% closed). (place: California Department of Health Care Services facility set matched to the entity; subject: Behavioral Health Services Inc; evidence `E15`.)
 - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $68,101,243. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $44,537,114. (subject: Behavioral Health Services Inc; evidence `E13`, `E14`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Alpine: homelessness services count up 17.7%, violent crime count up 33.3%, property crime count up 110.0%; Amador: homelessness services count up 7.6%, drug overdose death rate up 13.6%, violent crime count up 26.7%; Calaveras: homelessness services count up 7.6%, drug overdose death rate up 24.3%; Contra Costa: drug overdose death rate up 43.5%; plus 12 additional matched county context(s). Parsed entity growth context: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Alpine: homelessness services count up 17.7%, violent crime count up 33.3%, property crime count up 110.0%; Amador: homelessness services count up 7.6%, drug overdose death rate up 13.6%, violent crime count up 26.7%; Calaveras: homelessness services count up 7.6%, drug overdose death rate up 24.3%; Contra Costa: drug overdose death rate up 43.5%; plus 12 additional matched county context(s). Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
 - Source gaps that limit judgment: Off-scope activity. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
 
 Why CalDS flagged it:
@@ -117,7 +117,7 @@ Next human step: Open the Federal Audit Clearinghouse audit source document and 
 
 Why this entity is in the review set:
 
-CalDS selected CRI-Help Inc as a watchlist or matrix-only subject, not a deep-review target selected by this run because the cited records show facility-capacity or license-status stress, rapid financial growth, executive-compensation or payroll-governance questions, material public-funding exposure, payroll or wage-growth questions, and spend-versus-results mismatch. The strongest current cited trigger is: Parsed California Department of Health Care Services status rows show 4 active and 9 closed facilities out of 13 matched rows (69.2% closed). Evidence: `E15`, `E12`, `E13`, `E14`, `E18`, `E19`.
+CalDS selected CRI-Help Inc for watchlist review; it was not selected for deep review by this run because the cited records show facility-capacity or license-status stress, rapid financial growth, executive-compensation or payroll-governance questions, material public-funding exposure, payroll or wage-growth questions, and spend-versus-results mismatch. The strongest current cited trigger is: Parsed California Department of Health Care Services status rows show 4 active and 9 closed facilities out of 13 matched rows (69.2% closed). Evidence: `E15`, `E12`, `E13`, `E14`, `E18`, `E19`.
 
 What the organization says it does:
 
@@ -125,9 +125,9 @@ this run did not recover a direct service-page or public-statement description f
 
 Key retrieved records:
 
-- `E14` Parsed Federal Audit Clearinghouse federal award program totals for target entities (Parsed Federal Audit Clearinghouse award table, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse federal_awards rows filtered to matched reports. Amount totals support funding-trace review only. | entity | federal_program_name | amount_expended_total | | --- | --- | --- | | Tarzana Treatment...
-- `E45` Federal Audit Clearinghouse audit record: CRI-Help Inc 2016 (Federal Audit Clearinghouse audit source document, 2017-03-29): Federal Audit Clearinghouse general-table record for CRI-Help Inc. Report ID: 2016-06-CENSUS-0000124840 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-29 Auditee name: CRI-HELP, INC. Auditee Employer Identification Number: 952758951 Audit...
-- `E49` Federal Audit Clearinghouse audit record: CRI-Help Inc 2017 (Federal Audit Clearinghouse audit source document, 2018-04-03): Federal Audit Clearinghouse general-table record for CRI-Help Inc. Report ID: 2017-06-CENSUS-0000124840 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2018-04-03 Auditee name: CRI-HELP, INC. Auditee Employer Identification Number: 952758951 Audit...
+- `E14` Federal Audit Clearinghouse audit summary table (Parsed Federal Audit Clearinghouse award dataset, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse federal_awards rows filtered to matched reports. Amount totals support funding-trace review only. | entity | federal_program_name | amount_expended_total | | --- | --- | --- | | Tarzana Treatment...
+- `E45` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2017-03-29): Federal Audit Clearinghouse general-table record for CRI-Help Inc. Report ID: 2016-06-CENSUS-0000124840 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-29 Auditee name: CRI-HELP, INC. Auditee Employer Identification Number: 952758951 Audit...
+- `E49` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2018-04-03): Federal Audit Clearinghouse general-table record for CRI-Help Inc. Report ID: 2017-06-CENSUS-0000124840 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2018-04-03 Auditee name: CRI-HELP, INC. Auditee Employer Identification Number: 952758951 Audit...
 - 4 additional matched source item(s) appear in the citation ledger.
 
 What the records show:
@@ -137,7 +137,7 @@ What the records show:
 - Executive compensation: Latest parsed return 2024 lists BRANDON FERNANDEZ-COMER (chief executive officer) with total reportable/other compensation of $235,530, equal to 1.38% of parsed expenses. (year(s): 2024; subject: CRI-Help Inc; evidence `E12`.)
 - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $118,010,797. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $97,783,530. (subject: CRI-Help Inc; evidence `E13`, `E14`.)
 - Payroll and wages: Parsed salaries, compensation, and benefits increased from $8,952,128 in 2023 to $10,886,092 in 2024 (+21.6%; $54,980 per employee using 198 employees). (year(s): 2023, 2024; subject: CRI-Help Inc; evidence `E12`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: drug overdose death rate up 69.6%. Parsed entity growth context: spending=+15.9%, revenue=+123.3%, government grants=not parsed. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15. 9%, revenue=+123.3%, government grants=not parsed. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
 - Source gaps that limit judgment: Off-scope activity. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
 
 Why CalDS flagged it:
@@ -152,7 +152,7 @@ Next human step: Request or retrieve California Department of Health Care Servic
 
 Why this entity is in the review set:
 
-CalDS selected HealthRIGHT 360 as a watchlist or matrix-only subject, not a deep-review target selected by this run because the cited records show facility-capacity or license-status stress, material public-funding exposure, audit-control concerns, possible scope-mismatch signals, and spend-versus-results mismatch. The strongest current cited trigger is: Parsed California Department of Health Care Services status rows show 21 active and 25 closed facilities out of 46 matched rows (54.3% closed). Evidence: `E15`, `E13`, `E14`, `E12`, `E18`, `E19`.
+CalDS selected HealthRIGHT 360 for watchlist review; it was not selected for deep review by this run because the cited records show facility-capacity or license-status stress, material public-funding exposure, audit-control concerns, possible scope-mismatch signals, and spend-versus-results mismatch. The strongest current cited trigger is: Parsed California Department of Health Care Services status rows show 21 active and 25 closed facilities out of 46 matched rows (54.3% closed). Evidence: `E15`, `E13`, `E14`, `E12`, `E18`, `E19`.
 
 What the organization says it does:
 
@@ -160,9 +160,9 @@ The recovered official service page, `HealthRIGHT 360 substance use disorder ser
 
 Key retrieved records:
 
-- `E13` Parsed Federal Audit Clearinghouse audit-control and findings table for target entities (Parsed Federal Audit Clearinghouse audit table, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse general, findings, federal_awards source data tables, with downloaded audit source document presence. Audit source documents and Federal Audit Clearinghouse source data table rows remain the...
-- `E14` Parsed Federal Audit Clearinghouse federal award program totals for target entities (Parsed Federal Audit Clearinghouse award table, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse federal_awards rows filtered to matched reports. Amount totals support funding-trace review only. | entity | federal_program_name | amount_expended_total | | --- | --- | --- | | Tarzana Treatment...
-- `E44` Federal Audit Clearinghouse audit record: HealthRIGHT 360 2016 (Federal Audit Clearinghouse audit source document, 2017-03-30): Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2016-06-CENSUS-0000122774 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-30 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071...
+- `E13` Federal Audit Clearinghouse audit summary table (Parsed Federal Audit Clearinghouse audit dataset, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse general, findings, federal_awards source data tables, with downloaded audit source document presence. Audit source documents and Federal Audit Clearinghouse source data table rows remain the...
+- `E14` Federal Audit Clearinghouse audit summary table (Parsed Federal Audit Clearinghouse award dataset, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse federal_awards rows filtered to matched reports. Amount totals support funding-trace review only. | entity | federal_program_name | amount_expended_total | | --- | --- | --- | | Tarzana Treatment...
+- `E44` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2017-03-30): Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2016-06-CENSUS-0000122774 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-30 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071...
 - 8 additional matched source item(s) appear in the citation ledger.
 
 What the records show:
@@ -172,7 +172,7 @@ What the records show:
 - Public-funds concentration: The latest parsed Internal Revenue Service return in this run is 2023. It reports $131,876,992 in government grants and $147,317,593 in total revenue, so government grants were 89.5% of revenue. (year(s): 2023; subject: HealthRIGHT 360; evidence `E12`.)
 - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): none; finding row count: 5. (subject: HealthRIGHT 360; evidence `E13`, `E14`.)
 - Off-scope activity: The latest parsed return in this run is 2023. The parsed political-campaign activity indicator is no; the parsed lobbying-activity indicator is yes. (year(s): 2023; subject: HealthRIGHT 360; evidence `E12`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Alameda: drug overdose death rate up 39.9%; Los Angeles: drug overdose death rate up 69.6%; Orange: drug overdose death rate up 73.2%; San Diego: drug overdose death rate up 72.5%; plus 4 additional matched county context(s). Parsed entity growth context: spending=not parsed, revenue=not parsed, government grants=not parsed. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Alameda: drug overdose death rate up 39.9%; Los Angeles: drug overdose death rate up 69.6%; Orange: drug overdose death rate up 73.2%; San Diego: drug overdose death rate up 72.5%; plus 4 additional matched county context(s). This run did not parse entity-level spending, revenue, or grant growth for that comparison. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
 - Source gaps that limit judgment: Financial growth, Payroll and wages, Spending growth. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
 
 Why CalDS flagged it:
@@ -187,7 +187,7 @@ Next human step: Request or retrieve California Department of Health Care Servic
 
 Why this entity is in the review set:
 
-CalDS selected Phoenix Houses Of California Inc as a watchlist or matrix-only subject, not a deep-review target selected by this run because the cited records show facility-capacity or license-status stress, spend-versus-results mismatch, rapid financial growth, audit-control concerns, and executive-compensation or payroll-governance questions. The strongest current cited trigger is: Parsed California Department of Health Care Services status rows show 3 active and 5 closed facilities out of 8 matched rows (62.5% closed). Evidence: `E15`, `E18`, `E19`, `E12`, `E13`, `E14`.
+CalDS selected Phoenix Houses Of California Inc for watchlist review; it was not selected for deep review by this run because the cited records show facility-capacity or license-status stress, spend-versus-results mismatch, rapid financial growth, audit-control concerns, and executive-compensation or payroll-governance questions. The strongest current cited trigger is: Parsed California Department of Health Care Services status rows show 3 active and 5 closed facilities out of 8 matched rows (62.5% closed). Evidence: `E15`, `E18`, `E19`, `E12`, `E13`, `E14`.
 
 What the organization says it does:
 
@@ -195,9 +195,9 @@ this run did not recover a direct service-page or public-statement description f
 
 Key retrieved records:
 
-- `E13` Parsed Federal Audit Clearinghouse audit-control and findings table for target entities (Parsed Federal Audit Clearinghouse audit table, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse general, findings, federal_awards source data tables, with downloaded audit source document presence. Audit source documents and Federal Audit Clearinghouse source data table rows remain the...
-- `E59` Federal Audit Clearinghouse audit record: Phoenix Houses Of California Inc 2019 (Federal Audit Clearinghouse audit source document, 2020-04-23): Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc. Report ID: 2019-06-CENSUS-0000249434 Audit year: 2019 Federal Audit Clearinghouse accepted date: 2020-04-23 Auditee name: PHOENIX HOUSES OF CALIFORNIA INC Auditee Employer...
-- `E20` Official and public statement page harvest for target entities (Parsed public statement source table, 2026-04-24): are California Inc | True | advocacy; criminal justice; evidence-based; homelessness; housing; outcomes | https://westcare.com/leadership/senior/ | | | WestCare California Inc | True | advocacy; criminal justice; housing; outcomes |...
+- `E13` Federal Audit Clearinghouse audit summary table (Parsed Federal Audit Clearinghouse audit dataset, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse general, findings, federal_awards source data tables, with downloaded audit source document presence. Audit source documents and Federal Audit Clearinghouse source data table rows remain the...
+- `E59` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2020-04-23): Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc. Report ID: 2019-06-CENSUS-0000249434 Audit year: 2019 Federal Audit Clearinghouse accepted date: 2020-04-23 Auditee name: PHOENIX HOUSES OF CALIFORNIA INC Auditee Employer...
+- `E20` Official and public statement page harvest for target entities (Parsed public statement source dataset, 2026-04-24): are California Inc | True | advocacy; criminal justice; evidence-based; homelessness; housing; outcomes | https://westcare.com/leadership/senior/ | | | WestCare California Inc | True | advocacy; criminal justice; housing; outcomes |...
 
 What the records show:
 
@@ -205,7 +205,7 @@ What the records show:
 - Spending growth: Internal Revenue Service parsed expenses moved from $15,548,520 in 2023 to $23,857,807 in 2024 (+53.4%). (year(s): 2023, 2024; subject: Phoenix Houses Of California Inc; evidence `E12`.)
 - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2019, 2020, 2021; finding row count: 1. (year(s): 2019, 2020, 2021; subject: Phoenix Houses Of California Inc; evidence `E13`, `E14`.)
 - Executive compensation: Latest parsed return 2024 lists ALICE GLEGHORN (President & chief executive officer) with total reportable/other compensation of $364,096, equal to 1.53% of parsed expenses. (year(s): 2024; subject: Phoenix Houses Of California Inc; evidence `E12`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: drug overdose death rate up 69.6%; Stanislaus: drug overdose death rate up 78.7%. Parsed entity growth context: spending=+53.4%, revenue=+7.4%, government grants=not parsed. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: drug overdose death rate up 69.6%; Stanislaus: drug overdose death rate up 78.7%. Parsed entity growth context in this run: spending=+53. 4%, revenue=+7.4%, government grants=not parsed. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
 - Source gaps that limit judgment: Off-scope activity. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
 
 Why CalDS flagged it:
@@ -220,7 +220,7 @@ Next human step: Request or retrieve California Department of Health Care Servic
 
 Why this entity is in the review set:
 
-CalDS selected Social Model Recovery Systems Inc as a watchlist or matrix-only subject, not a deep-review target selected by this run because the cited records show material public-funding exposure, audit-control concerns, facility-capacity or license-status stress, rapid financial growth, and spend-versus-results mismatch. The strongest current cited trigger is: The latest parsed Internal Revenue Service return in this run is 2025. It reports $31,308,364 in government grants and $33,662,291 in total revenue, so government grants were 93.0% of revenue. Evidence: `E12`, `E13`, `E14`, `E15`, `E18`, `E19`.
+CalDS selected Social Model Recovery Systems Inc for watchlist review; it was not selected for deep review by this run because the cited records show material public-funding exposure, audit-control concerns, facility-capacity or license-status stress, rapid financial growth, and spend-versus-results mismatch. The strongest current cited trigger is: The latest parsed Internal Revenue Service return in this run is 2025. It reports $31,308,364 in government grants and $33,662,291 in total revenue, so government grants were 93.0% of revenue. Evidence: `E12`, `E13`, `E14`, `E15`, `E18`, `E19`.
 
 What the organization says it does:
 
@@ -228,9 +228,9 @@ this run did not recover a direct service-page or public-statement description f
 
 Key retrieved records:
 
-- `E22` Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2016 (Federal Audit Clearinghouse audit source document, 2016-12-28): Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc. Report ID: 2016-06-CENSUS-0000126607 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2016-12-28 Auditee name: SOCIAL MODEL RECOVERY SYSTEMS, INC. Auditee...
-- `E24` Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2017 (Federal Audit Clearinghouse audit source document, 2017-12-18): Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc. Report ID: 2017-06-CENSUS-0000126607 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2017-12-18 Auditee name: SOCIAL MODEL RECOVERY SYSTEMS, INC. Auditee...
-- `E26` Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2018 (Federal Audit Clearinghouse audit source document, 2018-11-25): Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc. Report ID: 2018-06-CENSUS-0000126607 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2018-11-25 Auditee name: SOCIAL MODEL RECOVERY SYSTEMS, INC. Auditee...
+- `E22` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2016-12-28): Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc. Report ID: 2016-06-CENSUS-0000126607 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2016-12-28 Auditee name: SOCIAL MODEL RECOVERY SYSTEMS, INC. Auditee...
+- `E24` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2017-12-18): Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc. Report ID: 2017-06-CENSUS-0000126607 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2017-12-18 Auditee name: SOCIAL MODEL RECOVERY SYSTEMS, INC. Auditee...
+- `E26` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2018-11-25): Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc. Report ID: 2018-06-CENSUS-0000126607 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2018-11-25 Auditee name: SOCIAL MODEL RECOVERY SYSTEMS, INC. Auditee...
 - 13 additional matched source item(s) appear in the citation ledger.
 
 What the records show:
@@ -240,7 +240,7 @@ What the records show:
 - Facility status: Parsed California Department of Health Care Services status rows show 9 active and 4 closed facilities out of 13 matched rows (30.8% closed). (place: California Department of Health Care Services facility set matched to the entity; subject: Social Model Recovery Systems Inc; evidence `E15`.)
 - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $111,988,155. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $81,561,046. (subject: Social Model Recovery Systems Inc; evidence `E13`, `E14`.)
 - Financial growth: Parsed Internal Revenue Service revenue increased from $26,707,166 in 2024 to $33,662,291 in 2025 (+26.0%). (year(s): 2024, 2025; subject: Social Model Recovery Systems Inc; evidence `E12`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: drug overdose death rate up 69.6%; Orange: drug overdose death rate up 73.2%. Parsed entity growth context: spending=+15.8%, revenue=+26.0%, government grants=+26.3%. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: drug overdose death rate up 69.6%; Orange: drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=+15. 8%, revenue=+26.0%, government grants=+26.3%. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
 - Source gaps that limit judgment: Off-scope activity. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
 
 Why CalDS flagged it:
@@ -255,7 +255,7 @@ Next human step: Trace award programs to contracts, grant terms, deliverables, a
 
 Why this entity is in the review set:
 
-CalDS selected Tarzana Treatment Centers Inc as a watchlist or matrix-only subject, not a deep-review target selected by this run because the cited records show executive-compensation or payroll-governance questions, material public-funding exposure, rapid financial growth, possible scope-mismatch signals, and spend-versus-results mismatch. The strongest current cited trigger is: Latest parsed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of parsed expenses. Evidence: `E12`, `E13`, `E14`, `E21`, `E18`, `E19`.
+CalDS selected Tarzana Treatment Centers Inc for watchlist review; it was not selected for deep review by this run because the cited records show executive-compensation or payroll-governance questions, material public-funding exposure, rapid financial growth, possible scope-mismatch signals, and spend-versus-results mismatch. The strongest current cited trigger is: Latest parsed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of parsed expenses. Evidence: `E12`, `E13`, `E14`, `E21`, `E18`, `E19`.
 
 What the organization says it does:
 
@@ -263,9 +263,9 @@ The recovered public statement source, `Public statement page harvest: Tarzana T
 
 Key retrieved records:
 
-- `E02` Internal Revenue Service Form 990 machine-readable filing data: Tarzana Treatment Centers Inc tax period 2023 (Downloaded Internal Revenue Service Form 990 machine-readable filing data, 202306): Internal Revenue Service Form 990 machine-readable filing data downloaded for Tarzana Treatment Centers Inc. Employer Identification Number: 942219349 Tax period year: 2023 Tax period: 202306 Object ID: 202441109349300129 ZIP batch: 2024_TEOS_XML_04a Local...
-- `E05` Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2016 (Federal Audit Clearinghouse audit source document, 2016-12-21): Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2016-06-CENSUS-0000119575 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2016-12-21 Auditee name: TARZANA TREATMENT CENTERS, INC. Auditee Employer...
-- `E23` Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2017 (Federal Audit Clearinghouse audit source document, 2018-01-17): Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2017-06-CENSUS-0000119575 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2018-01-17 Auditee name: TARZANA TREATMENT CENTER Auditee Employer...
+- `E02` Internal Revenue Service Form 990 summary table (Downloaded Internal Revenue Service Form 990 machine-readable filing data, 202306): Internal Revenue Service Form 990 machine-readable filing data downloaded for Tarzana Treatment Centers Inc. Employer Identification Number: 942219349 Tax period year: 2023 Tax period: 202306 Object ID: 202441109349300129 ZIP batch: 2024_TEOS_XML_04a Local...
+- `E05` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2016-12-21): Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2016-06-CENSUS-0000119575 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2016-12-21 Auditee name: TARZANA TREATMENT CENTERS, INC. Auditee Employer...
+- `E23` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2018-01-17): Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2017-06-CENSUS-0000119575 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2018-01-17 Auditee name: TARZANA TREATMENT CENTER Auditee Employer...
 - 16 additional matched source item(s) appear in the citation ledger.
 
 What the records show:
@@ -274,7 +274,7 @@ What the records show:
 - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $270,742,899. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $110,858,168. (subject: Tarzana Treatment Centers Inc; evidence `E13`, `E14`.)
 - Financial growth: Parsed Internal Revenue Service revenue increased from $132,064,342 in 2023 to $181,548,768 in 2024 (+37.5%). (year(s): 2023, 2024; subject: Tarzana Treatment Centers Inc; evidence `E12`.)
 - Public statements: Configured public statement pages were harvested. Matched review terms: advocacy. (subject: Tarzana Treatment Centers Inc; evidence `E21`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: drug overdose death rate up 69.6%. Parsed entity growth context: spending=+14.4%, revenue=+37.5%, government grants=not parsed. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Los Angeles: drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+14. 4%, revenue=+37.5%, government grants=not parsed. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
 - Source gaps that limit judgment: Public-funds concentration. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
 
 Why CalDS flagged it:
@@ -289,7 +289,7 @@ Next human step: Verify the underlying Form 990 officer table, board approval pr
 
 Why this entity is in the review set:
 
-CalDS selected WestCare California Inc as a watchlist or matrix-only subject, not a deep-review target selected by this run because the cited records show facility-capacity or license-status stress, material public-funding exposure, possible scope-mismatch signals, and spend-versus-results mismatch. The strongest current cited trigger is: Parsed California Department of Health Care Services status rows show 6 active and 6 closed facilities out of 12 matched rows (50.0% closed). Evidence: `E15`, `E13`, `E14`, `E18`, `E19`, `E12`.
+CalDS selected WestCare California Inc for watchlist review; it was not selected for deep review by this run because the cited records show facility-capacity or license-status stress, material public-funding exposure, possible scope-mismatch signals, and spend-versus-results mismatch. The strongest current cited trigger is: Parsed California Department of Health Care Services status rows show 6 active and 6 closed facilities out of 12 matched rows (50.0% closed). Evidence: `E15`, `E13`, `E14`, `E18`, `E19`, `E12`.
 
 What the organization says it does:
 
@@ -297,17 +297,17 @@ this run did not recover a direct service-page or public-statement description f
 
 Key retrieved records:
 
-- `E13` Parsed Federal Audit Clearinghouse audit-control and findings table for target entities (Parsed Federal Audit Clearinghouse audit table, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse general, findings, federal_awards source data tables, with downloaded audit source document presence. Audit source documents and Federal Audit Clearinghouse source data table rows remain the...
-- `E14` Parsed Federal Audit Clearinghouse federal award program totals for target entities (Parsed Federal Audit Clearinghouse award table, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse federal_awards rows filtered to matched reports. Amount totals support funding-trace review only. | entity | federal_program_name | amount_expended_total | | --- | --- | --- | | Tarzana Treatment...
-- `E54` Federal Audit Clearinghouse audit record: WestCare California Inc 2018 (Federal Audit Clearinghouse audit source document, 2019-02-28): Federal Audit Clearinghouse general-table record for WestCare California Inc. Report ID: 2018-06-CENSUS-0000247998 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2019-02-28 Auditee name: WESTCARE CALIFORNIA, INC. Auditee Employer Identification...
+- `E13` Federal Audit Clearinghouse audit summary table (Parsed Federal Audit Clearinghouse audit dataset, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse general, findings, federal_awards source data tables, with downloaded audit source document presence. Audit source documents and Federal Audit Clearinghouse source data table rows remain the...
+- `E14` Federal Audit Clearinghouse audit summary table (Parsed Federal Audit Clearinghouse award dataset, 2026-04-24): Deterministic parser output from Federal Audit Clearinghouse federal_awards rows filtered to matched reports. Amount totals support funding-trace review only. | entity | federal_program_name | amount_expended_total | | --- | --- | --- | | Tarzana Treatment...
+- `E54` Federal Audit Clearinghouse audit summary table (Federal Audit Clearinghouse audit source document, 2019-02-28): Federal Audit Clearinghouse general-table record for WestCare California Inc. Report ID: 2018-06-CENSUS-0000247998 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2019-02-28 Auditee name: WESTCARE CALIFORNIA, INC. Auditee Employer Identification...
 - 2 additional matched source item(s) appear in the citation ledger.
 
 What the records show:
 
 - Facility status: Parsed California Department of Health Care Services status rows show 6 active and 6 closed facilities out of 12 matched rows (50.0% closed). (place: California Department of Health Care Services facility set matched to the entity; subject: WestCare California Inc; evidence `E15`.)
 - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $79,713,890. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $43,839,518. (subject: WestCare California Inc; evidence `E13`, `E14`.)
-- Public statements: Configured public statement pages were harvested. Matched review terms: advocacy, criminal justice. (subject: WestCare California Inc; evidence `public_statements_westcare`, `https://westcare.com/leadership/`.)
-- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Contra Costa: drug overdose death rate up 43.5%; Fresno: drug overdose death rate up 56.9%; Kern: drug overdose death rate up 71.9%; Kings: drug overdose death rate up 27.8%, violent crime count up 11.9%; plus 1 additional matched county context(s). Parsed entity growth context: spending=+9.1%, revenue=+9.3%, government grants=not parsed. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
+- Public statements: Configured public statement pages were harvested. Matched review terms: advocacy, criminal justice. (subject: WestCare California Inc; evidence risk-matrix source-gap row.)
+- Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: Contra Costa: drug overdose death rate up 43.5%; Fresno: drug overdose death rate up 56.9%; Kern: drug overdose death rate up 71.9%; Kings: drug overdose death rate up 27.8%, violent crime count up 11.9%; plus 1 additional matched county context(s). Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. This is a review signal, not provider attribution. Evidence `E18`, `E19`.
 - Source gaps that limit judgment: Public-funds concentration. These gaps explain what CalDS still cannot test; they are not adverse findings by themselves.
 
 Why CalDS flagged it:
@@ -323,11 +323,11 @@ Next human step: Request or retrieve California Department of Health Care Servic
 These are not nonprofit organization-specific findings. They are run-level blockers that limit how strongly CalDS can rank or clear the case.
 
 - License/adverse-action history: California Department of Health Care Services adverse-action pages were fetched but did not expose machine-readable target rows in static text during this run.
-  Evidence: `E18`, `source table`. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
+  Evidence: `E18`. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
 - Public attention and traffic: No social media account metrics, website analytics, ad-library records, or third-party traffic estimates are ingested in this run.
-  Evidence: source-gap artifact listed in the risk matrix. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
+  Evidence: risk-matrix source-gap row. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
 - Treatment completion: The California Department of Health Care Services CalOMS/DATAR public page was probed, but this run did not recover a machine-readable provider/county treatment completion table.
-  Evidence: `E18`, `source table`. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
+  Evidence: `E18`. Human action: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
 
 
 ## 4. Methodology, Guardrails, and Source Status
@@ -419,44 +419,44 @@ This section preserves the system opinion and source-fact detail behind the brie
 
 ### Behavioral Health Services Inc
 
-CalDS keeps Behavioral Health Services Inc in the dossier as a watchlist or matrix-only subject, not a deep-review target selected by this run. The source-backed reasons are listed below. Evidence: `E13`, `E14`, `source table`, `source table`, `E15`, `source table`, `E18`, `E19`, `source table`, `source table`.
+CalDS keeps Behavioral Health Services Inc in the dossier for watchlist review; it was not selected for deep review by this run. The source-backed reasons are listed below. Evidence: `E13`, `E14`, `E15`, `E18`, `E19`.
 
 Specific findings that drove the flag:
 
-1. High - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): 2021, 2024; internal-control-deficiency year(s): 2017, 2018, 2019, 2020, 2022; not-low-risk year(s): 2018, 2019, 2020, 2021, 2022, 2023, 2024; finding row count: 2. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: year(s): 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024; subject: Behavioral Health Services Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: High Audit controls screen via test 'Federal Audit Clearinghouse control flags and findings'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+1. High - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): 2021, 2024; internal-control-deficiency year(s): 2017, 2018, 2019, 2020, 2022; not-low-risk year(s): 2018, 2019, 2020, 2021, 2022, 2023, 2024; finding row count: 2. Evidence: `E13`, `E14`.
+   - When/where: year(s): 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024; subject: Behavioral Health Services Inc Evidence: `E13`, `E14`.
+   - Why this row is here: High Audit controls screen matched the implemented check: Federal Audit Clearinghouse control flags and findings. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
 
-2. Medium - Facility status: Parsed California Department of Health Care Services status rows show 40 active and 25 closed facilities out of 65 matched rows (38.5% closed). Evidence: `E15`, `source table`.
-   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Behavioral Health Services Inc Evidence: `E15`, `source table`.
-   - How it triggered: Medium Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-   - Evidence: `E15`, `source table`; source: [private source artifact]
+2. Medium - Facility status: Parsed California Department of Health Care Services status rows show 40 active and 25 closed facilities out of 65 matched rows (38.5% closed). Evidence: `E15`.
+   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Behavioral Health Services Inc Evidence: `E15`.
+   - Why this row is here: Medium Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
    - Why it matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
 
-3. Medium - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $68,101,243. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $44,537,114. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: subject: Behavioral Health Services Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: Medium Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+3. Medium - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $68,101,243. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $44,537,114. Evidence: `E13`, `E14`.
+   - When/where: subject: Behavioral Health Services Inc Evidence: `E13`, `E14`.
+   - Why this row is here: Medium Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
 
-4. Medium - Spend-versus-results: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Alpine; official county or Continuum of Care context flags homelessness services count up 17.7%, violent crime count up 33.3%, property crime count up 110.0%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Alpine; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Alpine'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+4. Medium - Spend-versus-results: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Alpine; official county or Continuum of Care context flags homelessness services count up 17.7%, violent crime count up 33.3%, property crime count up 110.0%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+   - When/where: place: Alpine; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+   - Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Alpine. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
-5. Medium - Spend-versus-results: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Amador; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 13.6%, violent crime count up 26.7%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Amador; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Amador'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+5. Medium - Spend-versus-results: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Amador; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 13.6%, violent crime count up 26.7%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+   - When/where: place: Amador; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+   - Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Amador. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
-6. Medium - Spend-versus-results: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Calaveras; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 24.3%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Calaveras; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Calaveras'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+6. Medium - Spend-versus-results: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Calaveras; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 24.3%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+   - When/where: place: Calaveras; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+   - Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Calaveras. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
 - The full matrix contains additional lower-priority source-backed review items for this entity.
@@ -465,44 +465,44 @@ Review stance: The system would not close this item from summary records alone; 
 
 ### CRI-Help Inc
 
-CalDS keeps CRI-Help Inc in the dossier as a watchlist or matrix-only subject, not a deep-review target selected by this run. The source-backed reasons are listed below. Evidence: `E15`, `source table`, `E12`, `source table`, `E13`, `E14`, `source table`, `source table`, `E18`, `E19`, `source table`, `source table`.
+CalDS keeps CRI-Help Inc in the dossier for watchlist review; it was not selected for deep review by this run. The source-backed reasons are listed below. Evidence: `E15`, `E12`, `E13`, `E14`, `E18`, `E19`.
 
 Specific findings that drove the flag:
 
-1. High - Facility status: Parsed California Department of Health Care Services status rows show 4 active and 9 closed facilities out of 13 matched rows (69.2% closed). Evidence: `E15`, `source table`.
-   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: CRI-Help Inc Evidence: `E15`, `source table`.
-   - How it triggered: High Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-   - Evidence: `E15`, `source table`; source: [private source artifact]
+1. High - Facility status: Parsed California Department of Health Care Services status rows show 4 active and 9 closed facilities out of 13 matched rows (69.2% closed). Evidence: `E15`.
+   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: CRI-Help Inc Evidence: `E15`.
+   - Why this row is here: High Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
    - Why it matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
 
-2. High - Financial growth: Parsed Internal Revenue Service revenue increased from $19,243,515 in 2023 to $42,978,055 in 2024 (+123.3%). Evidence: `E12`, `source table`.
-   - When/where: year(s): 2023, 2024; subject: CRI-Help Inc Evidence: `E12`, `source table`.
-   - How it triggered: High Financial growth screen via test 'Year-over-year total revenue growth'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+2. High - Financial growth: Parsed Internal Revenue Service revenue increased from $19,243,515 in 2023 to $42,978,055 in 2024 (+123.3%). Evidence: `E12`.
+   - When/where: year(s): 2023, 2024; subject: CRI-Help Inc Evidence: `E12`.
+   - Why this row is here: High Financial growth screen matched the implemented check: Year-over-year total revenue growth. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
 
-3. Medium - Executive compensation: Latest parsed return 2024 lists BRANDON FERNANDEZ-COMER (chief executive officer) with total reportable/other compensation of $235,530, equal to 1.38% of parsed expenses. Evidence: `E12`, `source table`.
-   - When/where: year(s): 2024; subject: CRI-Help Inc Evidence: `E12`, `source table`.
-   - How it triggered: Medium Executive compensation screen via test 'Highest officer/key employee compensation from Form 990 Part VII'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+3. Medium - Executive compensation: Latest parsed return 2024 lists BRANDON FERNANDEZ-COMER (chief executive officer) with total reportable/other compensation of $235,530, equal to 1.38% of parsed expenses. Evidence: `E12`.
+   - When/where: year(s): 2024; subject: CRI-Help Inc Evidence: `E12`.
+   - Why this row is here: Medium Executive compensation screen matched the implemented check: Highest officer/key employee compensation from Form 990 Part VII. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: High executive pay at a publicly funded service nonprofit is a materiality and governance question; the reviewer needs to know whether pay, approval, and outcomes line up.
 
-4. Medium - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $118,010,797. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $97,783,530. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: subject: CRI-Help Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: Medium Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+4. Medium - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $118,010,797. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $97,783,530. Evidence: `E13`, `E14`.
+   - When/where: subject: CRI-Help Inc Evidence: `E13`, `E14`.
+   - Why this row is here: Medium Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
 
-5. Medium - Payroll and wages: Parsed salaries, compensation, and benefits increased from $8,952,128 in 2023 to $10,886,092 in 2024 (+21.6%; $54,980 per employee using 198 employees). Evidence: `E12`, `source table`.
-   - When/where: year(s): 2023, 2024; subject: CRI-Help Inc Evidence: `E12`, `source table`.
-   - How it triggered: Medium Payroll and wages screen via test 'Year-over-year salaries, compensation, and benefits growth'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+5. Medium - Payroll and wages: Parsed salaries, compensation, and benefits increased from $8,952,128 in 2023 to $10,886,092 in 2024 (+21.6%; $54,980 per employee using 198 employees). Evidence: `E12`.
+   - When/where: year(s): 2023, 2024; subject: CRI-Help Inc Evidence: `E12`.
+   - Why this row is here: Medium Payroll and wages screen matched the implemented check: Year-over-year salaries, compensation, and benefits growth. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: The row matters because it is a measurable source-backed proxy for public-funds oversight risk.
 
-6. Medium - Spend-versus-results: CRI-Help Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15.9%, revenue=+123.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Los Angeles; subject: CRI-Help Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+6. Medium - Spend-versus-results: CRI-Help Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15. 9%, revenue=+123.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+   - When/where: place: Los Angeles; subject: CRI-Help Inc Evidence: `E18`, `E19`.
+   - Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
 - The full matrix contains additional lower-priority source-backed review items for this entity.
@@ -511,76 +511,76 @@ Review stance: The system would not close this item from summary records alone; 
 
 ### Case-wide
 
-CalDS keeps Case-wide in the dossier as a watchlist source-gap subject, not a deep-review target selected by this run. The source-backed reasons are listed below. Evidence: `E18`, `source table`, `E19`, `source table`.
+CalDS keeps Case-wide in the dossier for watchlist source-gap review; it was not selected for deep review by this run. The source-backed reasons are listed below. Evidence: `E18`, `E19`.
 
 Specific findings that drove the flag:
 
-1. Data gap - License/adverse-action history: California Department of Health Care Services adverse-action pages were fetched but did not expose machine-readable target rows in static text during this run. Evidence: `E18`, `source table`.
-   - When/where: subject: Case-wide Evidence: `E18`, `source table`.
-   - How it triggered: Data gap License/adverse-action history screen via test 'California Department of Health Care Services adverse-action page machine readability'. Data status: non_machine_readable_source. Evidence: `E18`, `source table`.
-   - Evidence: `E18`, `source table`; source: [private source artifact]
+1. Data gap - License/adverse-action history: California Department of Health Care Services adverse-action pages were fetched but did not expose machine-readable target rows in static text during this run. Evidence: `E18`.
+   - When/where: subject: Case-wide Evidence: `E18`.
+   - Why this row is here: Data gap License/adverse-action history screen matched the implemented check: California Department of Health Care Services adverse-action page machine readability. Source status: non_machine_readable_source. Evidence: `E18`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`.
    - Why it matters: A missing source can hide the answer either way; the system keeps the issue open until the gap is resolved.
 
-2. Data gap - Public attention and traffic: No social media account metrics, website analytics, ad-library records, or third-party traffic estimates are ingested in this run. Evidence: source-gap artifact listed in the risk matrix.
-   - When/where: subject: Case-wide Evidence: source-gap artifact listed in the risk matrix.
-   - How it triggered: Data gap Public attention and traffic screen via test 'Social media and website traffic coverage'. Data status: missing_required_attention_sources. Evidence: source-gap artifact listed in the risk matrix.
-   - Evidence: source-gap artifact listed in the risk matrix; source: not listed on this row; use evidence ledger
+2. Data gap - Public attention and traffic: No social media account metrics, website analytics, ad-library records, or third-party traffic estimates are ingested in this run. Evidence: risk-matrix source-gap row.
+   - When/where: subject: Case-wide Evidence: risk-matrix source-gap row.
+   - Why this row is here: Data gap Public attention and traffic screen matched the implemented check: Social media and website traffic coverage. Source status: missing_required_attention_sources. Evidence: risk-matrix source-gap row.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: risk-matrix source-gap row.
    - Why it matters: A missing source can hide the answer either way; the system keeps the issue open until the gap is resolved.
 
-3. Data gap - Treatment completion: The California Department of Health Care Services CalOMS/DATAR public page was probed, but this run did not recover a machine-readable provider/county treatment completion table. Evidence: `E18`, `source table`.
-   - When/where: subject: Case-wide Evidence: `E18`, `source table`.
-   - How it triggered: Data gap Treatment completion screen via test 'Direct CalOMS/DATAR treatment completion coverage'. Data status: restricted_or_non_machine_readable_source. Evidence: `E18`, `source table`.
-   - Evidence: `E18`, `source table`; source: [private source artifact]
+3. Data gap - Treatment completion: The California Department of Health Care Services CalOMS/DATAR public page was probed, but this run did not recover a machine-readable provider/county treatment completion table. Evidence: `E18`.
+   - When/where: subject: Case-wide Evidence: `E18`.
+   - Why this row is here: Data gap Treatment completion screen matched the implemented check: Direct CalOMS/DATAR treatment completion coverage. Source status: restricted_or_non_machine_readable_source. Evidence: `E18`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`.
    - Why it matters: A missing source can hide the answer either way; the system keeps the issue open until the gap is resolved.
 
-4. Low - Spend-versus-results: Official outcome series are ingested and joined into 35 entity/county context rows. These rows remain contextual and are not provider-attributable results. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: subject: Case-wide Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Low Spend-versus-results screen via test 'Outcome-denominator coverage for homelessness, drug use, crime, and treatment results'. Data status: observed. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+4. Low - Spend-versus-results: Official outcome series are ingested and joined into 35 entity/county context rows. These rows remain contextual and are not provider-attributable results. Evidence: `E18`, `E19`.
+   - When/where: subject: Case-wide Evidence: `E18`, `E19`.
+   - Why this row is here: Low Spend-versus-results screen matched the implemented check: Outcome-denominator coverage for homelessness, drug use, crime, and treatment results. Source status: observed. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
 Review stance: The system would not close this item from summary records alone; spending and footprint need provider-attributable outcome records.
 
 ### HealthRIGHT 360
 
-CalDS keeps HealthRIGHT 360 in the dossier as a watchlist or matrix-only subject, not a deep-review target selected by this run. The source-backed reasons are listed below. Evidence: `E15`, `source table`, `E13`, `E14`, `source table`, `source table`, `E12`, `source table`, `public_statements_healthright`.
+CalDS keeps HealthRIGHT 360 in the dossier for watchlist review; it was not selected for deep review by this run. The source-backed reasons are listed below. Evidence: `E15`, `E13`, `E14`, `E12`.
 
 Specific findings that drove the flag:
 
-1. High - Facility status: Parsed California Department of Health Care Services status rows show 21 active and 25 closed facilities out of 46 matched rows (54.3% closed). Evidence: `E15`, `source table`.
-   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: HealthRIGHT 360 Evidence: `E15`, `source table`.
-   - How it triggered: High Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-   - Evidence: `E15`, `source table`; source: [private source artifact]
+1. High - Facility status: Parsed California Department of Health Care Services status rows show 21 active and 25 closed facilities out of 46 matched rows (54.3% closed). Evidence: `E15`.
+   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: HealthRIGHT 360 Evidence: `E15`.
+   - Why this row is here: High Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
    - Why it matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
 
-2. High - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $228,206,845. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $85,463,667. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: subject: HealthRIGHT 360 Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: High Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+2. High - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $228,206,845. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $85,463,667. Evidence: `E13`, `E14`.
+   - When/where: subject: HealthRIGHT 360 Evidence: `E13`, `E14`.
+   - Why this row is here: High Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
 
-3. High - Public-funds concentration: The latest parsed Internal Revenue Service return in this run is 2023. It reports $131,876,992 in government grants and $147,317,593 in total revenue, so government grants were 89.5% of revenue. Evidence: `E12`, `source table`.
-   - When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`, `source table`.
-   - How it triggered: High Public-funds concentration screen via test 'Government grants as share of Form 990 revenue'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+3. High - Public-funds concentration: The latest parsed Internal Revenue Service return in this run is 2023. It reports $131,876,992 in government grants and $147,317,593 in total revenue, so government grants were 89.5% of revenue. Evidence: `E12`.
+   - When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`.
+   - Why this row is here: High Public-funds concentration screen matched the implemented check: Government grants as share of Form 990 revenue. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
 
-4. Medium - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): none; finding row count: 5. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: subject: HealthRIGHT 360 Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: Medium Audit controls screen via test 'Federal Audit Clearinghouse control flags and findings'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+4. Medium - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): none; finding row count: 5. Evidence: `E13`, `E14`.
+   - When/where: subject: HealthRIGHT 360 Evidence: `E13`, `E14`.
+   - Why this row is here: Medium Audit controls screen matched the implemented check: Federal Audit Clearinghouse control flags and findings. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
 
-5. Medium - Off-scope activity: The latest parsed return in this run is 2023. The parsed political-campaign activity indicator is no; the parsed lobbying-activity indicator is yes. Evidence: `E12`, `source table`.
-   - When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`, `source table`.
-   - How it triggered: Medium Off-scope activity screen via test 'Form 990 political campaign and lobbying indicators'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+5. Medium - Off-scope activity: The latest parsed return in this run is 2023. The parsed political-campaign activity indicator is no; the parsed lobbying-activity indicator is yes. Evidence: `E12`.
+   - When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`.
+   - Why this row is here: Medium Off-scope activity screen matched the implemented check: Form 990 political campaign and lobbying indicators. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
 
-6. Medium - Public statements: Configured public statement pages were harvested. Matched review terms: advocacy, public affairs, criminal justice, equity. Evidence: `public_statements_healthright`.
-   - When/where: subject: HealthRIGHT 360 Evidence: `public_statements_healthright`.
-   - How it triggered: Medium Public statements screen via test 'Official/public page term screen'. Data status: observed. Evidence: `public_statements_healthright`.
-   - Evidence: `public_statements_healthright`; source: https://www.healthright360.org/about/staff-and-board/
+6. Medium - Public statements: Configured public statement pages were harvested. Matched review terms: advocacy, public affairs, criminal justice, equity. Evidence: risk-matrix source-gap row.
+   - When/where: subject: HealthRIGHT 360 Evidence: risk-matrix source-gap row.
+   - Why this row is here: Medium Public statements screen matched the implemented check: Official/public page term screen. Source status: observed. Evidence: risk-matrix source-gap row.
+   - Source access: https://www.healthright360.org/about/staff-and-board/ Evidence: risk-matrix source-gap row.
    - Why it matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
 
 - The full matrix contains additional lower-priority source-backed review items for this entity.
@@ -589,44 +589,44 @@ Review stance: The system would not close this item from summary records alone; 
 
 ### Phoenix Houses Of California Inc
 
-CalDS keeps Phoenix Houses Of California Inc in the dossier as a watchlist or matrix-only subject, not a deep-review target selected by this run. The source-backed reasons are listed below. Evidence: `E15`, `source table`, `E18`, `E19`, `source table`, `source table`, `E12`, `source table`, `E13`, `E14`, `source table`, `source table`.
+CalDS keeps Phoenix Houses Of California Inc in the dossier for watchlist review; it was not selected for deep review by this run. The source-backed reasons are listed below. Evidence: `E15`, `E18`, `E19`, `E12`, `E13`, `E14`.
 
 Specific findings that drove the flag:
 
-1. High - Facility status: Parsed California Department of Health Care Services status rows show 3 active and 5 closed facilities out of 8 matched rows (62.5% closed). Evidence: `E15`, `source table`.
-   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Phoenix Houses Of California Inc Evidence: `E15`, `source table`.
-   - How it triggered: High Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-   - Evidence: `E15`, `source table`; source: [private source artifact]
+1. High - Facility status: Parsed California Department of Health Care Services status rows show 3 active and 5 closed facilities out of 8 matched rows (62.5% closed). Evidence: `E15`.
+   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Phoenix Houses Of California Inc Evidence: `E15`.
+   - Why this row is here: High Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
    - Why it matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
 
-2. High - Spend-versus-results: Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+53.4%, revenue=+7.4%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Los Angeles; subject: Phoenix Houses Of California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: High Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+2. High - Spend-versus-results: Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+53. 4%, revenue=+7.4%, government grants=not parsed. Evidence: `E18`, `E19`.
+   - When/where: place: Los Angeles; subject: Phoenix Houses Of California Inc Evidence: `E18`, `E19`.
+   - Why this row is here: High Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
-3. High - Spend-versus-results: Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Stanislaus; official county or Continuum of Care context flags drug overdose death rate up 78.7%. Parsed entity growth context in this run: spending=+53.4%, revenue=+7.4%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Stanislaus; subject: Phoenix Houses Of California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: High Spend-versus-results screen via test 'County outcome movement and entity spending context: Stanislaus'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+3. High - Spend-versus-results: Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Stanislaus; official county or Continuum of Care context flags drug overdose death rate up 78.7%. Parsed entity growth context in this run: spending=+53. 4%, revenue=+7.4%, government grants=not parsed. Evidence: `E18`, `E19`.
+   - When/where: place: Stanislaus; subject: Phoenix Houses Of California Inc Evidence: `E18`, `E19`.
+   - Why this row is here: High Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Stanislaus. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
-4. High - Spending growth: Internal Revenue Service parsed expenses moved from $15,548,520 in 2023 to $23,857,807 in 2024 (+53.4%). Evidence: `E12`, `source table`.
-   - When/where: year(s): 2023, 2024; subject: Phoenix Houses Of California Inc Evidence: `E12`, `source table`.
-   - How it triggered: High Spending growth screen via test 'Year-over-year total expense growth'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+4. High - Spending growth: Internal Revenue Service parsed expenses moved from $15,548,520 in 2023 to $23,857,807 in 2024 (+53.4%). Evidence: `E12`.
+   - When/where: year(s): 2023, 2024; subject: Phoenix Houses Of California Inc Evidence: `E12`.
+   - Why this row is here: High Spending growth screen matched the implemented check: Year-over-year total expense growth. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
 
-5. Medium - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2019, 2020, 2021; finding row count: 1. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: year(s): 2019, 2020, 2021; subject: Phoenix Houses Of California Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: Medium Audit controls screen via test 'Federal Audit Clearinghouse control flags and findings'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+5. Medium - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2019, 2020, 2021; finding row count: 1. Evidence: `E13`, `E14`.
+   - When/where: year(s): 2019, 2020, 2021; subject: Phoenix Houses Of California Inc Evidence: `E13`, `E14`.
+   - Why this row is here: Medium Audit controls screen matched the implemented check: Federal Audit Clearinghouse control flags and findings. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
 
-6. Medium - Executive compensation: Latest parsed return 2024 lists ALICE GLEGHORN (President & chief executive officer) with total reportable/other compensation of $364,096, equal to 1.53% of parsed expenses. Evidence: `E12`, `source table`.
-   - When/where: year(s): 2024; subject: Phoenix Houses Of California Inc Evidence: `E12`, `source table`.
-   - How it triggered: Medium Executive compensation screen via test 'Highest officer/key employee compensation from Form 990 Part VII'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+6. Medium - Executive compensation: Latest parsed return 2024 lists ALICE GLEGHORN (President & chief executive officer) with total reportable/other compensation of $364,096, equal to 1.53% of parsed expenses. Evidence: `E12`.
+   - When/where: year(s): 2024; subject: Phoenix Houses Of California Inc Evidence: `E12`.
+   - Why this row is here: Medium Executive compensation screen matched the implemented check: Highest officer/key employee compensation from Form 990 Part VII. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: High executive pay at a publicly funded service nonprofit is a materiality and governance question; the reviewer needs to know whether pay, approval, and outcomes line up.
 
 - The full matrix contains additional lower-priority source-backed review items for this entity.
@@ -635,44 +635,44 @@ Review stance: The system would not close this item from summary records alone; 
 
 ### Social Model Recovery Systems Inc
 
-CalDS keeps Social Model Recovery Systems Inc in the dossier as a watchlist or matrix-only subject, not a deep-review target selected by this run. The source-backed reasons are listed below. Evidence: `E12`, `source table`, `E13`, `E14`, `source table`, `source table`, `E15`, `source table`, `E18`, `E19`, `source table`, `source table`.
+CalDS keeps Social Model Recovery Systems Inc in the dossier for watchlist review; it was not selected for deep review by this run. The source-backed reasons are listed below. Evidence: `E12`, `E13`, `E14`, `E15`, `E18`, `E19`.
 
 Specific findings that drove the flag:
 
-1. High - Public-funds concentration: The latest parsed Internal Revenue Service return in this run is 2025. It reports $31,308,364 in government grants and $33,662,291 in total revenue, so government grants were 93.0% of revenue. Evidence: `E12`, `source table`.
-   - When/where: year(s): 2025; subject: Social Model Recovery Systems Inc Evidence: `E12`, `source table`.
-   - How it triggered: High Public-funds concentration screen via test 'Government grants as share of Form 990 revenue'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+1. High - Public-funds concentration: The latest parsed Internal Revenue Service return in this run is 2025. It reports $31,308,364 in government grants and $33,662,291 in total revenue, so government grants were 93.0% of revenue. Evidence: `E12`.
+   - When/where: year(s): 2025; subject: Social Model Recovery Systems Inc Evidence: `E12`.
+   - Why this row is here: High Public-funds concentration screen matched the implemented check: Government grants as share of Form 990 revenue. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
 
-2. Medium - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2023, 2024, 2025; finding row count: 0. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: year(s): 2023, 2024, 2025; subject: Social Model Recovery Systems Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: Medium Audit controls screen via test 'Federal Audit Clearinghouse control flags and findings'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+2. Medium - Audit controls: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2023, 2024, 2025; finding row count: 0. Evidence: `E13`, `E14`.
+   - When/where: year(s): 2023, 2024, 2025; subject: Social Model Recovery Systems Inc Evidence: `E13`, `E14`.
+   - Why this row is here: Medium Audit controls screen matched the implemented check: Federal Audit Clearinghouse control flags and findings. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
 
-3. Medium - Facility status: Parsed California Department of Health Care Services status rows show 9 active and 4 closed facilities out of 13 matched rows (30.8% closed). Evidence: `E15`, `source table`.
-   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Social Model Recovery Systems Inc Evidence: `E15`, `source table`.
-   - How it triggered: Medium Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-   - Evidence: `E15`, `source table`; source: [private source artifact]
+3. Medium - Facility status: Parsed California Department of Health Care Services status rows show 9 active and 4 closed facilities out of 13 matched rows (30.8% closed). Evidence: `E15`.
+   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Social Model Recovery Systems Inc Evidence: `E15`.
+   - Why this row is here: Medium Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
    - Why it matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
 
-4. Medium - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $111,988,155. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $81,561,046. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: subject: Social Model Recovery Systems Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: Medium Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+4. Medium - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $111,988,155. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $81,561,046. Evidence: `E13`, `E14`.
+   - When/where: subject: Social Model Recovery Systems Inc Evidence: `E13`, `E14`.
+   - Why this row is here: Medium Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
 
-5. Medium - Financial growth: Parsed Internal Revenue Service revenue increased from $26,707,166 in 2024 to $33,662,291 in 2025 (+26.0%). Evidence: `E12`, `source table`.
-   - When/where: year(s): 2024, 2025; subject: Social Model Recovery Systems Inc Evidence: `E12`, `source table`.
-   - How it triggered: Medium Financial growth screen via test 'Year-over-year total revenue growth'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+5. Medium - Financial growth: Parsed Internal Revenue Service revenue increased from $26,707,166 in 2024 to $33,662,291 in 2025 (+26.0%). Evidence: `E12`.
+   - When/where: year(s): 2024, 2025; subject: Social Model Recovery Systems Inc Evidence: `E12`.
+   - Why this row is here: Medium Financial growth screen matched the implemented check: Year-over-year total revenue growth. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
 
-6. Medium - Spend-versus-results: Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15.8%, revenue=+26.0%, government grants=+26.3%. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Los Angeles; subject: Social Model Recovery Systems Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+6. Medium - Spend-versus-results: Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15. 8%, revenue=+26.0%, government grants=+26.3%. Evidence: `E18`, `E19`.
+   - When/where: place: Los Angeles; subject: Social Model Recovery Systems Inc Evidence: `E18`, `E19`.
+   - Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
 - The full matrix contains additional lower-priority source-backed review items for this entity.
@@ -681,44 +681,44 @@ Review stance: The system would not close this item from summary records alone; 
 
 ### Tarzana Treatment Centers Inc
 
-CalDS keeps Tarzana Treatment Centers Inc in the dossier as a watchlist or matrix-only subject, not a deep-review target selected by this run. The source-backed reasons are listed below. Evidence: `E12`, `source table`, `E13`, `E14`, `source table`, `source table`, `E21`, `public_statements_tarzana`, `E18`, `E19`, `source table`, `source table`.
+CalDS keeps Tarzana Treatment Centers Inc in the dossier for watchlist review; it was not selected for deep review by this run. The source-backed reasons are listed below. Evidence: `E12`, `E13`, `E14`, `E21`, `E18`, `E19`.
 
 Specific findings that drove the flag:
 
-1. High - Executive compensation: Latest parsed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of parsed expenses. Evidence: `E12`, `source table`.
-   - When/where: year(s): 2024; subject: Tarzana Treatment Centers Inc Evidence: `E12`, `source table`.
-   - How it triggered: High Executive compensation screen via test 'Highest officer/key employee compensation from Form 990 Part VII'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+1. High - Executive compensation: Latest parsed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of parsed expenses. Evidence: `E12`.
+   - When/where: year(s): 2024; subject: Tarzana Treatment Centers Inc Evidence: `E12`.
+   - Why this row is here: High Executive compensation screen matched the implemented check: Highest officer/key employee compensation from Form 990 Part VII. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: High executive pay at a publicly funded service nonprofit is a materiality and governance question; the reviewer needs to know whether pay, approval, and outcomes line up.
 
-2. High - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $270,742,899. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $110,858,168. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: subject: Tarzana Treatment Centers Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: High Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+2. High - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $270,742,899. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $110,858,168. Evidence: `E13`, `E14`.
+   - When/where: subject: Tarzana Treatment Centers Inc Evidence: `E13`, `E14`.
+   - Why this row is here: High Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
 
-3. Medium - Financial growth: Parsed Internal Revenue Service revenue increased from $132,064,342 in 2023 to $181,548,768 in 2024 (+37.5%). Evidence: `E12`, `source table`.
-   - When/where: year(s): 2023, 2024; subject: Tarzana Treatment Centers Inc Evidence: `E12`, `source table`.
-   - How it triggered: Medium Financial growth screen via test 'Year-over-year total revenue growth'. Data status: observed. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+3. Medium - Financial growth: Parsed Internal Revenue Service revenue increased from $132,064,342 in 2023 to $181,548,768 in 2024 (+37.5%). Evidence: `E12`.
+   - When/where: year(s): 2023, 2024; subject: Tarzana Treatment Centers Inc Evidence: `E12`.
+   - Why this row is here: Medium Financial growth screen matched the implemented check: Year-over-year total revenue growth. Source status: observed. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
 
-4. Medium - Public statements: Configured public statement pages were harvested. Matched review terms: advocacy. Evidence: `E21`, `public_statements_tarzana`.
-   - When/where: subject: Tarzana Treatment Centers Inc Evidence: `E21`, `public_statements_tarzana`.
-   - How it triggered: Medium Public statements screen via test 'Official/public page term screen'. Data status: observed. Evidence: `E21`, `public_statements_tarzana`.
-   - Evidence: `E21`, `public_statements_tarzana`; source: https://www.tarzanatc.org/who-we-are/meet-us/
+4. Medium - Public statements: Configured public statement pages were harvested. Matched review terms: advocacy. Evidence: `E21`.
+   - When/where: subject: Tarzana Treatment Centers Inc Evidence: `E21`.
+   - Why this row is here: Medium Public statements screen matched the implemented check: Official/public page term screen. Source status: observed. Evidence: `E21`.
+   - Source access: https://www.tarzanatc.org/who-we-are/meet-us/ Evidence: `E21`.
    - Why it matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
 
-5. Medium - Spend-versus-results: Tarzana Treatment Centers Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+14.4%, revenue=+37.5%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Los Angeles; subject: Tarzana Treatment Centers Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+5. Medium - Spend-versus-results: Tarzana Treatment Centers Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+14. 4%, revenue=+37.5%, government grants=not parsed. Evidence: `E18`, `E19`.
+   - When/where: place: Los Angeles; subject: Tarzana Treatment Centers Inc Evidence: `E18`, `E19`.
+   - Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
-6. Data gap - Public-funds concentration: No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Evidence: `E12`, `source table`.
-   - When/where: subject: Tarzana Treatment Centers Inc Evidence: `E12`, `source table`.
-   - How it triggered: Data gap Public-funds concentration screen via test 'Government grants as share of Form 990 revenue'. Data status: missing_source_or_field. Evidence: `E12`, `source table`.
-   - Evidence: `E12`, `source table`; source: [private source artifact]
+6. Data gap - Public-funds concentration: No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Evidence: `E12`.
+   - When/where: subject: Tarzana Treatment Centers Inc Evidence: `E12`.
+   - Why this row is here: Data gap Public-funds concentration screen matched the implemented check: Government grants as share of Form 990 revenue. Source status: missing_source_or_field. Evidence: `E12`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
    - Why it matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
 
 - The full matrix contains additional lower-priority source-backed review items for this entity.
@@ -727,44 +727,44 @@ Review stance: The system would not close this item from summary records alone; 
 
 ### WestCare California Inc
 
-CalDS keeps WestCare California Inc in the dossier as a watchlist or matrix-only subject, not a deep-review target selected by this run. The source-backed reasons are listed below. Evidence: `E15`, `source table`, `E13`, `E14`, `source table`, `source table`, `public_statements_westcare`, `E18`, `E19`, `source table`, `source table`.
+CalDS keeps WestCare California Inc in the dossier for watchlist review; it was not selected for deep review by this run. The source-backed reasons are listed below. Evidence: `E15`, `E13`, `E14`, `E18`, `E19`.
 
 Specific findings that drove the flag:
 
-1. High - Facility status: Parsed California Department of Health Care Services status rows show 6 active and 6 closed facilities out of 12 matched rows (50.0% closed). Evidence: `E15`, `source table`.
-   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: WestCare California Inc Evidence: `E15`, `source table`.
-   - How it triggered: High Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-   - Evidence: `E15`, `source table`; source: [private source artifact]
+1. High - Facility status: Parsed California Department of Health Care Services status rows show 6 active and 6 closed facilities out of 12 matched rows (50.0% closed). Evidence: `E15`.
+   - When/where: place: California Department of Health Care Services facility set matched to the entity; subject: WestCare California Inc Evidence: `E15`.
+   - Why this row is here: High Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
    - Why it matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
 
-2. Medium - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $79,713,890. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $43,839,518. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - When/where: subject: WestCare California Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-   - How it triggered: Medium Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-   - Evidence: `E13`, `E14`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+2. Medium - Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $79,713,890. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $43,839,518. Evidence: `E13`, `E14`.
+   - When/where: subject: WestCare California Inc Evidence: `E13`, `E14`.
+   - Why this row is here: Medium Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
    - Why it matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
 
-3. Medium - Public statements: Configured public statement pages were harvested. Matched review terms: advocacy, criminal justice. Evidence: `public_statements_westcare`.
-   - When/where: subject: WestCare California Inc Evidence: `public_statements_westcare`.
-   - How it triggered: Medium Public statements screen via test 'Official/public page term screen'. Data status: observed. Evidence: `public_statements_westcare`.
-   - Evidence: `public_statements_westcare`; source: https://westcare.com/leadership/
+3. Medium - Public statements: Configured public statement pages were harvested. Matched review terms: advocacy, criminal justice. Evidence: risk-matrix source-gap row.
+   - When/where: subject: WestCare California Inc Evidence: risk-matrix source-gap row.
+   - Why this row is here: Medium Public statements screen matched the implemented check: Official/public page term screen. Source status: observed. Evidence: risk-matrix source-gap row.
+   - Source access: https://westcare.com/leadership/ Evidence: risk-matrix source-gap row.
    - Why it matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
 
-4. Medium - Spend-versus-results: WestCare California Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Contra Costa; subject: WestCare California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Contra Costa'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+4. Medium - Spend-versus-results: WestCare California Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+   - When/where: place: Contra Costa; subject: WestCare California Inc Evidence: `E18`, `E19`.
+   - Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Contra Costa. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
-5. Medium - Spend-versus-results: WestCare California Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Fresno; subject: WestCare California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Fresno'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+5. Medium - Spend-versus-results: WestCare California Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+   - When/where: place: Fresno; subject: WestCare California Inc Evidence: `E18`, `E19`.
+   - Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Fresno. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
-6. Medium - Spend-versus-results: WestCare California Inc has California Department of Health Care Services facility footprint in Kern; official county or Continuum of Care context flags drug overdose death rate up 71.9%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - When/where: place: Kern; subject: WestCare California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-   - How it triggered: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Kern'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-   - Evidence: `E18`, `E19`, `source table`, `source table`; source: [private source artifact] [private source artifact]
+6. Medium - Spend-versus-results: WestCare California Inc has California Department of Health Care Services facility footprint in Kern; official county or Continuum of Care context flags drug overdose death rate up 71.9%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+   - When/where: place: Kern; subject: WestCare California Inc Evidence: `E18`, `E19`.
+   - Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Kern. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+   - Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
    - Why it matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
 
 - The full matrix contains additional lower-priority source-backed review items for this entity.
@@ -792,14 +792,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-1: Behavioral Health Services Inc - Audit controls
 
 - Test: Federal Audit Clearinghouse control flags and findings
-- What CalDS found: Federal Audit Clearinghouse data in this run reports material-weakness year(s): 2021, 2024; internal-control-deficiency year(s): 2017, 2018, 2019, 2020, 2022; not-low-risk year(s): 2018, 2019, 2020, 2021, 2022, 2023, 2024; finding row count: 2. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: year(s): 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024; subject: Behavioral Health Services Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: High Audit controls screen via test 'Federal Audit Clearinghouse control flags and findings'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Federal Audit Clearinghouse data in this run reports material-weakness year(s): 2021, 2024; internal-control-deficiency year(s): 2017, 2018, 2019, 2020, 2022; not-low-risk year(s): 2018, 2019, 2020, 2021, 2022, 2023, 2024; finding row count: 2. This source fact matches the implemented audit controls screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Federal Audit Clearinghouse data in this run reports material-weakness year(s): 2021, 2024; internal-control-deficiency year(s): 2017, 2018, 2019, 2020, 2022; not-low-risk year(s): 2018, 2019, 2020, 2021, 2022, 2023, 2024; finding row count: 2. Evidence: `E13`, `E14`.
+- When/where: year(s): 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024; subject: Behavioral Health Services Inc Evidence: `E13`, `E14`.
+- Why this row is here: High Audit controls screen matched the implemented check: Federal Audit Clearinghouse control flags and findings. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Federal Audit Clearinghouse data in this run reports material-weakness year(s): 2021, 2024; internal-control-deficiency year(s): 2017, 2018, 2019, 2020, 2022; not-low-risk year(s): 2018, 2019, 2020, 2021, 2022, 2023, 2024; finding row count: 2. This source fact matches the implemented audit controls screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
-- What this flags: Open the audit source documents and row-level Federal Audit Clearinghouse findings to verify finding status, program, agency, questioned costs, repeat status, and corrective-action response. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Open the audit source documents and row-level Federal Audit Clearinghouse findings to verify finding status, program, agency, questioned costs, repeat status, and corrective-action response. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
 - Human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
 - Caveat: Federal Audit Clearinghouse flags are audit-context signals; they must be interpreted at report year and program level.
@@ -807,14 +806,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-2: Tarzana Treatment Centers Inc - Executive compensation
 
 - Test: Highest officer/key employee compensation from Form 990 Part VII
-- What CalDS found: Latest parsed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of parsed expenses. Evidence: `E12`, `source table`.
-- When/where: year(s): 2024; subject: Tarzana Treatment Centers Inc Evidence: `E12`, `source table`.
-- How this triggered review: High Executive compensation screen via test 'Highest officer/key employee compensation from Form 990 Part VII'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Latest parsed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of parsed expenses. This source fact matches the implemented executive compensation screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: Latest parsed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of parsed expenses. Evidence: `E12`.
+- When/where: year(s): 2024; subject: Tarzana Treatment Centers Inc Evidence: `E12`.
+- Why this row is here: High Executive compensation screen matched the implemented check: Highest officer/key employee compensation from Form 990 Part VII. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Latest parsed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of parsed expenses. This source fact matches the implemented executive compensation screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: High executive pay at a publicly funded service nonprofit is a materiality and governance question; the reviewer needs to know whether pay, approval, and outcomes line up.
-- What this flags: Compare compensation to board approval process, market survey disclosure, related-organization pay, and peer organizations before any conclusion. Evidence: `E12`, `source table`.
+- What this flags: Compare compensation to board approval process, market survey disclosure, related-organization pay, and peer organizations before any conclusion. Evidence: `E12`.
 - What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed.
 - Human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
 - Caveat: High compensation can be explainable by size, clinical complexity, related-organization structures, or one-time items.
@@ -822,14 +820,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-3: CRI-Help Inc - Facility status
 
 - Test: California Department of Health Care Services active/closed facility-status ratio
-- What CalDS found: Parsed California Department of Health Care Services status rows show 4 active and 9 closed facilities out of 13 matched rows (69.2% closed). Evidence: `E15`, `source table`.
-- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: CRI-Help Inc Evidence: `E15`, `source table`.
-- How this triggered review: High Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-- Evidence refs: `E15`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 4 active and 9 closed facilities out of 13 matched rows (69.2% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`, `source table`.
+- What CalDS found: Parsed California Department of Health Care Services status rows show 4 active and 9 closed facilities out of 13 matched rows (69.2% closed). Evidence: `E15`.
+- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: CRI-Help Inc Evidence: `E15`.
+- Why this row is here: High Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 4 active and 9 closed facilities out of 13 matched rows (69.2% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`.
 - Why this matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
-- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`, `source table`.
+- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`.
 - What this does not prove: It does not prove current capacity loss or adverse entity status; facility-level California Department of Health Care Services records must be verified.
 - Human next step: Request or retrieve California Department of Health Care Services facility license/status history and adverse-status records for the named facilities before entity-level use.
 - Caveat: Closed status can be routine, historical, or administrative; facility-level records control.
@@ -837,14 +834,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-4: HealthRIGHT 360 - Facility status
 
 - Test: California Department of Health Care Services active/closed facility-status ratio
-- What CalDS found: Parsed California Department of Health Care Services status rows show 21 active and 25 closed facilities out of 46 matched rows (54.3% closed). Evidence: `E15`, `source table`.
-- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: HealthRIGHT 360 Evidence: `E15`, `source table`.
-- How this triggered review: High Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-- Evidence refs: `E15`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 21 active and 25 closed facilities out of 46 matched rows (54.3% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`, `source table`.
+- What CalDS found: Parsed California Department of Health Care Services status rows show 21 active and 25 closed facilities out of 46 matched rows (54.3% closed). Evidence: `E15`.
+- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: HealthRIGHT 360 Evidence: `E15`.
+- Why this row is here: High Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 21 active and 25 closed facilities out of 46 matched rows (54.3% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`.
 - Why this matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
-- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`, `source table`.
+- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`.
 - What this does not prove: It does not prove current capacity loss or adverse entity status; facility-level California Department of Health Care Services records must be verified.
 - Human next step: Request or retrieve California Department of Health Care Services facility license/status history and adverse-status records for the named facilities before entity-level use.
 - Caveat: Closed status can be routine, historical, or administrative; facility-level records control.
@@ -852,14 +848,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-5: Phoenix Houses Of California Inc - Facility status
 
 - Test: California Department of Health Care Services active/closed facility-status ratio
-- What CalDS found: Parsed California Department of Health Care Services status rows show 3 active and 5 closed facilities out of 8 matched rows (62.5% closed). Evidence: `E15`, `source table`.
-- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Phoenix Houses Of California Inc Evidence: `E15`, `source table`.
-- How this triggered review: High Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-- Evidence refs: `E15`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 3 active and 5 closed facilities out of 8 matched rows (62.5% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`, `source table`.
+- What CalDS found: Parsed California Department of Health Care Services status rows show 3 active and 5 closed facilities out of 8 matched rows (62.5% closed). Evidence: `E15`.
+- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Phoenix Houses Of California Inc Evidence: `E15`.
+- Why this row is here: High Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 3 active and 5 closed facilities out of 8 matched rows (62.5% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`.
 - Why this matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
-- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`, `source table`.
+- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`.
 - What this does not prove: It does not prove current capacity loss or adverse entity status; facility-level California Department of Health Care Services records must be verified.
 - Human next step: Request or retrieve California Department of Health Care Services facility license/status history and adverse-status records for the named facilities before entity-level use.
 - Caveat: Closed status can be routine, historical, or administrative; facility-level records control.
@@ -867,14 +862,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-6: WestCare California Inc - Facility status
 
 - Test: California Department of Health Care Services active/closed facility-status ratio
-- What CalDS found: Parsed California Department of Health Care Services status rows show 6 active and 6 closed facilities out of 12 matched rows (50.0% closed). Evidence: `E15`, `source table`.
-- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: WestCare California Inc Evidence: `E15`, `source table`.
-- How this triggered review: High Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-- Evidence refs: `E15`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 6 active and 6 closed facilities out of 12 matched rows (50.0% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`, `source table`.
+- What CalDS found: Parsed California Department of Health Care Services status rows show 6 active and 6 closed facilities out of 12 matched rows (50.0% closed). Evidence: `E15`.
+- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: WestCare California Inc Evidence: `E15`.
+- Why this row is here: High Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 6 active and 6 closed facilities out of 12 matched rows (50.0% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`.
 - Why this matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
-- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`, `source table`.
+- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`.
 - What this does not prove: It does not prove current capacity loss or adverse entity status; facility-level California Department of Health Care Services records must be verified.
 - Human next step: Request or retrieve California Department of Health Care Services facility license/status history and adverse-status records for the named facilities before entity-level use.
 - Caveat: Closed status can be routine, historical, or administrative; facility-level records control.
@@ -882,14 +876,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-7: HealthRIGHT 360 - Federal award exposure
 
 - Test: Federal Audit Clearinghouse cumulative award amount in retrieved reports
-- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $228,206,845. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $85,463,667. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: subject: HealthRIGHT 360 Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: High Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $228,206,845. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $85,463,667. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $228,206,845. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $85,463,667. Evidence: `E13`, `E14`.
+- When/where: subject: HealthRIGHT 360 Evidence: `E13`, `E14`.
+- Why this row is here: High Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $228,206,845. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $85,463,667. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Award exposure is a materiality signal, not an adverse finding.
@@ -897,14 +890,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-8: Tarzana Treatment Centers Inc - Federal award exposure
 
 - Test: Federal Audit Clearinghouse cumulative award amount in retrieved reports
-- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $270,742,899. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $110,858,168. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: subject: Tarzana Treatment Centers Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: High Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $270,742,899. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $110,858,168. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $270,742,899. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $110,858,168. Evidence: `E13`, `E14`.
+- When/where: subject: Tarzana Treatment Centers Inc Evidence: `E13`, `E14`.
+- Why this row is here: High Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $270,742,899. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $110,858,168. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Award exposure is a materiality signal, not an adverse finding.
@@ -912,14 +904,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-9: CRI-Help Inc - Financial growth
 
 - Test: Year-over-year total revenue growth
-- What CalDS found: Parsed Internal Revenue Service revenue increased from $19,243,515 in 2023 to $42,978,055 in 2024 (+123.3%). Evidence: `E12`, `source table`.
-- When/where: year(s): 2023, 2024; subject: CRI-Help Inc Evidence: `E12`, `source table`.
-- How this triggered review: High Financial growth screen via test 'Year-over-year total revenue growth'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed Internal Revenue Service revenue increased from $19,243,515 in 2023 to $42,978,055 in 2024 (+123.3%). This source fact matches the implemented financial growth screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: Parsed Internal Revenue Service revenue increased from $19,243,515 in 2023 to $42,978,055 in 2024 (+123.3%). Evidence: `E12`.
+- When/where: year(s): 2023, 2024; subject: CRI-Help Inc Evidence: `E12`.
+- Why this row is here: High Financial growth screen matched the implemented check: Year-over-year total revenue growth. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Parsed Internal Revenue Service revenue increased from $19,243,515 in 2023 to $42,978,055 in 2024 (+123.3%). This source fact matches the implemented financial growth screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
-- What this flags: Compare the growth to contract amendments, new grants, acquisitions, service volume, and program outcomes before escalation. Evidence: `E12`, `source table`.
+- What this flags: Compare the growth to contract amendments, new grants, acquisitions, service volume, and program outcomes before escalation. Evidence: `E12`.
 - What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
 - Human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
 - Caveat: Growth can be legitimate; it becomes useful only when compared with scope, staffing, service volume, and outcome data.
@@ -927,14 +918,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-10: HealthRIGHT 360 - Public-funds concentration
 
 - Test: Government grants as share of Form 990 revenue
-- What CalDS found: The latest parsed Internal Revenue Service return in this run is 2023. It reports $131,876,992 in government grants and $147,317,593 in total revenue, so government grants were 89.5% of revenue. Evidence: `E12`, `source table`.
-- When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`, `source table`.
-- How this triggered review: High Public-funds concentration screen via test 'Government grants as share of Form 990 revenue'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because The latest parsed Internal Revenue Service return in this run is 2023. It reports $131,876,992 in government grants and $147,317,593 in total revenue, so government grants were 89.5% of revenue. This source fact matches the implemented public-funds concentration screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: The latest parsed Internal Revenue Service return in this run is 2023. It reports $131,876,992 in government grants and $147,317,593 in total revenue, so government grants were 89.5% of revenue. Evidence: `E12`.
+- When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`.
+- Why this row is here: High Public-funds concentration screen matched the implemented check: Government grants as share of Form 990 revenue. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because The latest parsed Internal Revenue Service return in this run is 2023. It reports $131,876,992 in government grants and $147,317,593 in total revenue, so government grants were 89.5% of revenue. This source fact matches the implemented public-funds concentration screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Prioritize tracing grant terms, allowable costs, subawards, and reported service outputs for high public-funds exposure. Evidence: `E12`, `source table`.
+- What this flags: Prioritize tracing grant terms, allowable costs, subawards, and reported service outputs for high public-funds exposure. Evidence: `E12`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Public-funds concentration is an oversight-priority signal, not an allegation.
@@ -942,14 +932,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-11: Social Model Recovery Systems Inc - Public-funds concentration
 
 - Test: Government grants as share of Form 990 revenue
-- What CalDS found: The latest parsed Internal Revenue Service return in this run is 2025. It reports $31,308,364 in government grants and $33,662,291 in total revenue, so government grants were 93.0% of revenue. Evidence: `E12`, `source table`.
-- When/where: year(s): 2025; subject: Social Model Recovery Systems Inc Evidence: `E12`, `source table`.
-- How this triggered review: High Public-funds concentration screen via test 'Government grants as share of Form 990 revenue'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because The latest parsed Internal Revenue Service return in this run is 2025. It reports $31,308,364 in government grants and $33,662,291 in total revenue, so government grants were 93.0% of revenue. This source fact matches the implemented public-funds concentration screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: The latest parsed Internal Revenue Service return in this run is 2025. It reports $31,308,364 in government grants and $33,662,291 in total revenue, so government grants were 93.0% of revenue. Evidence: `E12`.
+- When/where: year(s): 2025; subject: Social Model Recovery Systems Inc Evidence: `E12`.
+- Why this row is here: High Public-funds concentration screen matched the implemented check: Government grants as share of Form 990 revenue. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because The latest parsed Internal Revenue Service return in this run is 2025. It reports $31,308,364 in government grants and $33,662,291 in total revenue, so government grants were 93.0% of revenue. This source fact matches the implemented public-funds concentration screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Prioritize tracing grant terms, allowable costs, subawards, and reported service outputs for high public-funds exposure. Evidence: `E12`, `source table`.
+- What this flags: Prioritize tracing grant terms, allowable costs, subawards, and reported service outputs for high public-funds exposure. Evidence: `E12`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Public-funds concentration is an oversight-priority signal, not an allegation.
@@ -957,14 +946,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-12: Phoenix Houses Of California Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Los Angeles
-- What CalDS found: Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+53.4%, revenue=+7.4%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Los Angeles; subject: Phoenix Houses Of California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: High Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+53.4%, revenue=+7.4%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+53. 4%, revenue=+7.4%, government grants=not parsed. Evidence: `E18`, `E19`.
+- When/where: place: Los Angeles; subject: Phoenix Houses Of California Inc Evidence: `E18`, `E19`.
+- Why this row is here: High Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+53. 4%, revenue=+7.4%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -974,14 +962,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-13: Phoenix Houses Of California Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Stanislaus
-- What CalDS found: Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Stanislaus; official county or Continuum of Care context flags drug overdose death rate up 78.7%. Parsed entity growth context in this run: spending=+53.4%, revenue=+7.4%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Stanislaus; subject: Phoenix Houses Of California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: High Spend-versus-results screen via test 'County outcome movement and entity spending context: Stanislaus'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Stanislaus; official county or Continuum of Care context flags drug overdose death rate up 78.7%. Parsed entity growth context in this run: spending=+53.4%, revenue=+7.4%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Stanislaus; official county or Continuum of Care context flags drug overdose death rate up 78.7%. Parsed entity growth context in this run: spending=+53. 4%, revenue=+7.4%, government grants=not parsed. Evidence: `E18`, `E19`.
+- When/where: place: Stanislaus; subject: Phoenix Houses Of California Inc Evidence: `E18`, `E19`.
+- Why this row is here: High Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Stanislaus. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Phoenix Houses Of California Inc has California Department of Health Care Services facility footprint in Stanislaus; official county or Continuum of Care context flags drug overdose death rate up 78.7%. Parsed entity growth context in this run: spending=+53. 4%, revenue=+7.4%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -991,14 +978,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### High-14: Phoenix Houses Of California Inc - Spending growth
 
 - Test: Year-over-year total expense growth
-- What CalDS found: Internal Revenue Service parsed expenses moved from $15,548,520 in 2023 to $23,857,807 in 2024 (+53.4%). Evidence: `E12`, `source table`.
-- When/where: year(s): 2023, 2024; subject: Phoenix Houses Of California Inc Evidence: `E12`, `source table`.
-- How this triggered review: High Spending growth screen via test 'Year-over-year total expense growth'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Internal Revenue Service parsed expenses moved from $15,548,520 in 2023 to $23,857,807 in 2024 (+53.4%). This source fact matches the implemented spending growth screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: Internal Revenue Service parsed expenses moved from $15,548,520 in 2023 to $23,857,807 in 2024 (+53.4%). Evidence: `E12`.
+- When/where: year(s): 2023, 2024; subject: Phoenix Houses Of California Inc Evidence: `E12`.
+- Why this row is here: High Spending growth screen matched the implemented check: Year-over-year total expense growth. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a high possible waste, fraud, abuse, or mismanagement review priority because Internal Revenue Service parsed expenses moved from $15,548,520 in 2023 to $23,857,807 in 2024 (+53.4%). This source fact matches the implemented spending growth screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
-- What this flags: Check whether expense growth maps to funded scope, staffing, facilities, and documented service results. Evidence: `E12`, `source table`.
+- What this flags: Check whether expense growth maps to funded scope, staffing, facilities, and documented service results. Evidence: `E12`.
 - What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
 - Human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
 - Caveat: Growth can be legitimate; it becomes useful only when compared with scope, staffing, service volume, and outcome data.
@@ -1008,14 +994,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-1: HealthRIGHT 360 - Audit controls
 
 - Test: Federal Audit Clearinghouse control flags and findings
-- What CalDS found: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): none; finding row count: 5. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: subject: HealthRIGHT 360 Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: Medium Audit controls screen via test 'Federal Audit Clearinghouse control flags and findings'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): none; finding row count: 5. This source fact matches the implemented audit controls screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): none; finding row count: 5. Evidence: `E13`, `E14`.
+- When/where: subject: HealthRIGHT 360 Evidence: `E13`, `E14`.
+- Why this row is here: Medium Audit controls screen matched the implemented check: Federal Audit Clearinghouse control flags and findings. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): none; finding row count: 5. This source fact matches the implemented audit controls screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
-- What this flags: Open the audit source documents and row-level Federal Audit Clearinghouse findings to verify finding status, program, agency, questioned costs, repeat status, and corrective-action response. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Open the audit source documents and row-level Federal Audit Clearinghouse findings to verify finding status, program, agency, questioned costs, repeat status, and corrective-action response. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
 - Human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
 - Caveat: Federal Audit Clearinghouse flags are audit-context signals; they must be interpreted at report year and program level.
@@ -1023,14 +1008,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-2: Phoenix Houses Of California Inc - Audit controls
 
 - Test: Federal Audit Clearinghouse control flags and findings
-- What CalDS found: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2019, 2020, 2021; finding row count: 1. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: year(s): 2019, 2020, 2021; subject: Phoenix Houses Of California Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: Medium Audit controls screen via test 'Federal Audit Clearinghouse control flags and findings'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2019, 2020, 2021; finding row count: 1. This source fact matches the implemented audit controls screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2019, 2020, 2021; finding row count: 1. Evidence: `E13`, `E14`.
+- When/where: year(s): 2019, 2020, 2021; subject: Phoenix Houses Of California Inc Evidence: `E13`, `E14`.
+- Why this row is here: Medium Audit controls screen matched the implemented check: Federal Audit Clearinghouse control flags and findings. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2019, 2020, 2021; finding row count: 1. This source fact matches the implemented audit controls screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
-- What this flags: Open the audit source documents and row-level Federal Audit Clearinghouse findings to verify finding status, program, agency, questioned costs, repeat status, and corrective-action response. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Open the audit source documents and row-level Federal Audit Clearinghouse findings to verify finding status, program, agency, questioned costs, repeat status, and corrective-action response. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
 - Human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
 - Caveat: Federal Audit Clearinghouse flags are audit-context signals; they must be interpreted at report year and program level.
@@ -1038,14 +1022,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-3: Social Model Recovery Systems Inc - Audit controls
 
 - Test: Federal Audit Clearinghouse control flags and findings
-- What CalDS found: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2023, 2024, 2025; finding row count: 0. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: year(s): 2023, 2024, 2025; subject: Social Model Recovery Systems Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: Medium Audit controls screen via test 'Federal Audit Clearinghouse control flags and findings'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2023, 2024, 2025; finding row count: 0. This source fact matches the implemented audit controls screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2023, 2024, 2025; finding row count: 0. Evidence: `E13`, `E14`.
+- When/where: year(s): 2023, 2024, 2025; subject: Social Model Recovery Systems Inc Evidence: `E13`, `E14`.
+- Why this row is here: Medium Audit controls screen matched the implemented check: Federal Audit Clearinghouse control flags and findings. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Federal Audit Clearinghouse data in this run reports material-weakness year(s): none; internal-control-deficiency year(s): none; not-low-risk year(s): 2023, 2024, 2025; finding row count: 0. This source fact matches the implemented audit controls screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Audit-control flags are direct oversight signals; repeated or unresolved findings can indicate weak controls over public funds.
-- What this flags: Open the audit source documents and row-level Federal Audit Clearinghouse findings to verify finding status, program, agency, questioned costs, repeat status, and corrective-action response. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Open the audit source documents and row-level Federal Audit Clearinghouse findings to verify finding status, program, agency, questioned costs, repeat status, and corrective-action response. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove a current unresolved program issue; audit year, finding status, response, and resolution must be checked.
 - Human next step: Open the Federal Audit Clearinghouse audit source document and finding rows; verify current finding status, agency response, corrective action, and repeat status.
 - Caveat: Federal Audit Clearinghouse flags are audit-context signals; they must be interpreted at report year and program level.
@@ -1053,14 +1036,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-4: CRI-Help Inc - Executive compensation
 
 - Test: Highest officer/key employee compensation from Form 990 Part VII
-- What CalDS found: Latest parsed return 2024 lists BRANDON FERNANDEZ-COMER (chief executive officer) with total reportable/other compensation of $235,530, equal to 1.38% of parsed expenses. Evidence: `E12`, `source table`.
-- When/where: year(s): 2024; subject: CRI-Help Inc Evidence: `E12`, `source table`.
-- How this triggered review: Medium Executive compensation screen via test 'Highest officer/key employee compensation from Form 990 Part VII'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Latest parsed return 2024 lists BRANDON FERNANDEZ-COMER (chief executive officer) with total reportable/other compensation of $235,530, equal to 1.38% of parsed expenses. This source fact matches the implemented executive compensation screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: Latest parsed return 2024 lists BRANDON FERNANDEZ-COMER (chief executive officer) with total reportable/other compensation of $235,530, equal to 1.38% of parsed expenses. Evidence: `E12`.
+- When/where: year(s): 2024; subject: CRI-Help Inc Evidence: `E12`.
+- Why this row is here: Medium Executive compensation screen matched the implemented check: Highest officer/key employee compensation from Form 990 Part VII. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Latest parsed return 2024 lists BRANDON FERNANDEZ-COMER (chief executive officer) with total reportable/other compensation of $235,530, equal to 1.38% of parsed expenses. This source fact matches the implemented executive compensation screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: High executive pay at a publicly funded service nonprofit is a materiality and governance question; the reviewer needs to know whether pay, approval, and outcomes line up.
-- What this flags: Compare compensation to board approval process, market survey disclosure, related-organization pay, and peer organizations before any conclusion. Evidence: `E12`, `source table`.
+- What this flags: Compare compensation to board approval process, market survey disclosure, related-organization pay, and peer organizations before any conclusion. Evidence: `E12`.
 - What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed.
 - Human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
 - Caveat: High compensation can be explainable by size, clinical complexity, related-organization structures, or one-time items.
@@ -1068,14 +1050,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-5: Phoenix Houses Of California Inc - Executive compensation
 
 - Test: Highest officer/key employee compensation from Form 990 Part VII
-- What CalDS found: Latest parsed return 2024 lists ALICE GLEGHORN (President & chief executive officer) with total reportable/other compensation of $364,096, equal to 1.53% of parsed expenses. Evidence: `E12`, `source table`.
-- When/where: year(s): 2024; subject: Phoenix Houses Of California Inc Evidence: `E12`, `source table`.
-- How this triggered review: Medium Executive compensation screen via test 'Highest officer/key employee compensation from Form 990 Part VII'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Latest parsed return 2024 lists ALICE GLEGHORN (President & chief executive officer) with total reportable/other compensation of $364,096, equal to 1.53% of parsed expenses. This source fact matches the implemented executive compensation screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: Latest parsed return 2024 lists ALICE GLEGHORN (President & chief executive officer) with total reportable/other compensation of $364,096, equal to 1.53% of parsed expenses. Evidence: `E12`.
+- When/where: year(s): 2024; subject: Phoenix Houses Of California Inc Evidence: `E12`.
+- Why this row is here: Medium Executive compensation screen matched the implemented check: Highest officer/key employee compensation from Form 990 Part VII. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Latest parsed return 2024 lists ALICE GLEGHORN (President & chief executive officer) with total reportable/other compensation of $364,096, equal to 1.53% of parsed expenses. This source fact matches the implemented executive compensation screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: High executive pay at a publicly funded service nonprofit is a materiality and governance question; the reviewer needs to know whether pay, approval, and outcomes line up.
-- What this flags: Compare compensation to board approval process, market survey disclosure, related-organization pay, and peer organizations before any conclusion. Evidence: `E12`, `source table`.
+- What this flags: Compare compensation to board approval process, market survey disclosure, related-organization pay, and peer organizations before any conclusion. Evidence: `E12`.
 - What this does not prove: It does not prove compensation is improper; board approval, comparability, role scope, and peer context must be reviewed.
 - Human next step: Verify the underlying Form 990 officer table, board approval process, comparability data, and related-organization compensation context.
 - Caveat: High compensation can be explainable by size, clinical complexity, related-organization structures, or one-time items.
@@ -1083,14 +1064,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-6: Behavioral Health Services Inc - Facility status
 
 - Test: California Department of Health Care Services active/closed facility-status ratio
-- What CalDS found: Parsed California Department of Health Care Services status rows show 40 active and 25 closed facilities out of 65 matched rows (38.5% closed). Evidence: `E15`, `source table`.
-- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Behavioral Health Services Inc Evidence: `E15`, `source table`.
-- How this triggered review: Medium Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-- Evidence refs: `E15`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 40 active and 25 closed facilities out of 65 matched rows (38.5% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`, `source table`.
+- What CalDS found: Parsed California Department of Health Care Services status rows show 40 active and 25 closed facilities out of 65 matched rows (38.5% closed). Evidence: `E15`.
+- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Behavioral Health Services Inc Evidence: `E15`.
+- Why this row is here: Medium Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 40 active and 25 closed facilities out of 65 matched rows (38.5% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`.
 - Why this matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
-- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`, `source table`.
+- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`.
 - What this does not prove: It does not prove current capacity loss or adverse entity status; facility-level California Department of Health Care Services records must be verified.
 - Human next step: Request or retrieve California Department of Health Care Services facility license/status history and adverse-status records for the named facilities before entity-level use.
 - Caveat: Closed status can be routine, historical, or administrative; facility-level records control.
@@ -1098,14 +1078,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-7: Social Model Recovery Systems Inc - Facility status
 
 - Test: California Department of Health Care Services active/closed facility-status ratio
-- What CalDS found: Parsed California Department of Health Care Services status rows show 9 active and 4 closed facilities out of 13 matched rows (30.8% closed). Evidence: `E15`, `source table`.
-- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Social Model Recovery Systems Inc Evidence: `E15`, `source table`.
-- How this triggered review: Medium Facility status screen via test 'California Department of Health Care Services active/closed facility-status ratio'. Data status: observed. Evidence: `E15`, `source table`.
-- Evidence refs: `E15`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 9 active and 4 closed facilities out of 13 matched rows (30.8% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`, `source table`.
+- What CalDS found: Parsed California Department of Health Care Services status rows show 9 active and 4 closed facilities out of 13 matched rows (30.8% closed). Evidence: `E15`.
+- When/where: place: California Department of Health Care Services facility set matched to the entity; subject: Social Model Recovery Systems Inc Evidence: `E15`.
+- Why this row is here: Medium Facility status screen matched the implemented check: California Department of Health Care Services active/closed facility-status ratio. Source status: observed. Evidence: `E15`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E15`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed California Department of Health Care Services status rows show 9 active and 4 closed facilities out of 13 matched rows (30.8% closed). This source fact matches the implemented facility status screen and should stay in the active review queue. Evidence: `E15`.
 - Why this matters: Facility closures or status changes can affect capacity, access, and contract performance; the system treats a high closed-facility ratio as a service-delivery red flag.
-- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`, `source table`.
+- What this flags: Review closed facility IDs, dates, license histories, probation/suspension/revocation records, and contract coverage before entity-level use. Evidence: `E15`.
 - What this does not prove: It does not prove current capacity loss or adverse entity status; facility-level California Department of Health Care Services records must be verified.
 - Human next step: Request or retrieve California Department of Health Care Services facility license/status history and adverse-status records for the named facilities before entity-level use.
 - Caveat: Closed status can be routine, historical, or administrative; facility-level records control.
@@ -1113,14 +1092,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-8: Behavioral Health Services Inc - Federal award exposure
 
 - Test: Federal Audit Clearinghouse cumulative award amount in retrieved reports
-- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $68,101,243. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $44,537,114. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: subject: Behavioral Health Services Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: Medium Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $68,101,243. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $44,537,114. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $68,101,243. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $44,537,114. Evidence: `E13`, `E14`.
+- When/where: subject: Behavioral Health Services Inc Evidence: `E13`, `E14`.
+- Why this row is here: Medium Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $68,101,243. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $44,537,114. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Award exposure is a materiality signal, not an adverse finding.
@@ -1128,14 +1106,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-9: CRI-Help Inc - Federal award exposure
 
 - Test: Federal Audit Clearinghouse cumulative award amount in retrieved reports
-- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $118,010,797. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $97,783,530. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: subject: CRI-Help Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: Medium Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $118,010,797. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $97,783,530. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $118,010,797. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $97,783,530. Evidence: `E13`, `E14`.
+- When/where: subject: CRI-Help Inc Evidence: `E13`, `E14`.
+- Why this row is here: Medium Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $118,010,797. Top parsed program: MEDICAL ASSISTANCE PROGRAM at $97,783,530. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Award exposure is a materiality signal, not an adverse finding.
@@ -1143,14 +1120,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-10: Social Model Recovery Systems Inc - Federal award exposure
 
 - Test: Federal Audit Clearinghouse cumulative award amount in retrieved reports
-- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $111,988,155. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $81,561,046. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: subject: Social Model Recovery Systems Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: Medium Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $111,988,155. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $81,561,046. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $111,988,155. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $81,561,046. Evidence: `E13`, `E14`.
+- When/where: subject: Social Model Recovery Systems Inc Evidence: `E13`, `E14`.
+- Why this row is here: Medium Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $111,988,155. Top parsed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $81,561,046. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Award exposure is a materiality signal, not an adverse finding.
@@ -1158,14 +1134,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-11: WestCare California Inc - Federal award exposure
 
 - Test: Federal Audit Clearinghouse cumulative award amount in retrieved reports
-- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $79,713,890. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $43,839,518. Evidence: `E13`, `E14`, `source table`, `source table`.
-- When/where: subject: WestCare California Inc Evidence: `E13`, `E14`, `source table`, `source table`.
-- How this triggered review: Medium Federal award exposure screen via test 'Federal Audit Clearinghouse cumulative award amount in retrieved reports'. Data status: observed. Evidence: `E13`, `E14`, `source table`, `source table`.
-- Evidence refs: `E13`, `E14`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $79,713,890. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $43,839,518. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What CalDS found: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $79,713,890. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $43,839,518. Evidence: `E13`, `E14`.
+- When/where: subject: WestCare California Inc Evidence: `E13`, `E14`.
+- Why this row is here: Medium Federal award exposure screen matched the implemented check: Federal Audit Clearinghouse cumulative award amount in retrieved reports. Source status: observed. Evidence: `E13`, `E14`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E13`, `E14`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $79,713,890. Top parsed program: VA SUPPORTIVE SERVICES FOR VETERAN FAMILIES PROGRAM at $43,839,518. This source fact matches the implemented federal award exposure screen and should stay in the active review queue. Evidence: `E13`, `E14`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`, `source table`, `source table`.
+- What this flags: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Evidence: `E13`, `E14`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Award exposure is a materiality signal, not an adverse finding.
@@ -1173,14 +1148,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-12: Social Model Recovery Systems Inc - Financial growth
 
 - Test: Year-over-year total revenue growth
-- What CalDS found: Parsed Internal Revenue Service revenue increased from $26,707,166 in 2024 to $33,662,291 in 2025 (+26.0%). Evidence: `E12`, `source table`.
-- When/where: year(s): 2024, 2025; subject: Social Model Recovery Systems Inc Evidence: `E12`, `source table`.
-- How this triggered review: Medium Financial growth screen via test 'Year-over-year total revenue growth'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Internal Revenue Service revenue increased from $26,707,166 in 2024 to $33,662,291 in 2025 (+26.0%). This source fact matches the implemented financial growth screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: Parsed Internal Revenue Service revenue increased from $26,707,166 in 2024 to $33,662,291 in 2025 (+26.0%). Evidence: `E12`.
+- When/where: year(s): 2024, 2025; subject: Social Model Recovery Systems Inc Evidence: `E12`.
+- Why this row is here: Medium Financial growth screen matched the implemented check: Year-over-year total revenue growth. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Internal Revenue Service revenue increased from $26,707,166 in 2024 to $33,662,291 in 2025 (+26.0%). This source fact matches the implemented financial growth screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
-- What this flags: Compare the growth to contract amendments, new grants, acquisitions, service volume, and program outcomes before escalation. Evidence: `E12`, `source table`.
+- What this flags: Compare the growth to contract amendments, new grants, acquisitions, service volume, and program outcomes before escalation. Evidence: `E12`.
 - What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
 - Human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
 - Caveat: Growth can be legitimate; it becomes useful only when compared with scope, staffing, service volume, and outcome data.
@@ -1188,14 +1162,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-13: Tarzana Treatment Centers Inc - Financial growth
 
 - Test: Year-over-year total revenue growth
-- What CalDS found: Parsed Internal Revenue Service revenue increased from $132,064,342 in 2023 to $181,548,768 in 2024 (+37.5%). Evidence: `E12`, `source table`.
-- When/where: year(s): 2023, 2024; subject: Tarzana Treatment Centers Inc Evidence: `E12`, `source table`.
-- How this triggered review: Medium Financial growth screen via test 'Year-over-year total revenue growth'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Internal Revenue Service revenue increased from $132,064,342 in 2023 to $181,548,768 in 2024 (+37.5%). This source fact matches the implemented financial growth screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: Parsed Internal Revenue Service revenue increased from $132,064,342 in 2023 to $181,548,768 in 2024 (+37.5%). Evidence: `E12`.
+- When/where: year(s): 2023, 2024; subject: Tarzana Treatment Centers Inc Evidence: `E12`.
+- Why this row is here: Medium Financial growth screen matched the implemented check: Year-over-year total revenue growth. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed Internal Revenue Service revenue increased from $132,064,342 in 2023 to $181,548,768 in 2024 (+37.5%). This source fact matches the implemented financial growth screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
-- What this flags: Compare the growth to contract amendments, new grants, acquisitions, service volume, and program outcomes before escalation. Evidence: `E12`, `source table`.
+- What this flags: Compare the growth to contract amendments, new grants, acquisitions, service volume, and program outcomes before escalation. Evidence: `E12`.
 - What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
 - Human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
 - Caveat: Growth can be legitimate; it becomes useful only when compared with scope, staffing, service volume, and outcome data.
@@ -1203,14 +1176,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-14: HealthRIGHT 360 - Off-scope activity
 
 - Test: Form 990 political campaign and lobbying indicators
-- What CalDS found: The latest parsed return in this run is 2023. The parsed political-campaign activity indicator is no; the parsed lobbying-activity indicator is yes. Evidence: `E12`, `source table`.
-- When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`, `source table`.
-- How this triggered review: Medium Off-scope activity screen via test 'Form 990 political campaign and lobbying indicators'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because The latest parsed return in this run is 2023. The parsed political-campaign activity indicator is no; the parsed lobbying-activity indicator is yes. This source fact matches the implemented off-scope activity screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: The latest parsed return in this run is 2023. The parsed political-campaign activity indicator is no; the parsed lobbying-activity indicator is yes. Evidence: `E12`.
+- When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`.
+- Why this row is here: Medium Off-scope activity screen matched the implemented check: Form 990 political campaign and lobbying indicators. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because The latest parsed return in this run is 2023. The parsed political-campaign activity indicator is no; the parsed lobbying-activity indicator is yes. This source fact matches the implemented off-scope activity screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
-- What this flags: If either indicator is yes, inspect the full return, schedules, funding restrictions, and cost allocation before escalation. Evidence: `E12`, `source table`.
+- What this flags: If either indicator is yes, inspect the full return, schedules, funding restrictions, and cost allocation before escalation. Evidence: `E12`.
 - What this does not prove: It does not prove spending outside allowed scope or unlawful activity; contract, grant, funding-source, and accounting records must be checked.
 - Human next step: Compare public statements to homelessness contract scopes, grant restrictions, funding source, lobbying disclosures, and accounting treatment before drawing conclusions.
 - Caveat: A yes indicator can reflect disclosed permissible activity; the reviewer must test allowability and funding source.
@@ -1218,14 +1190,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-15: CRI-Help Inc - Payroll and wages
 
 - Test: Year-over-year salaries, compensation, and benefits growth
-- What CalDS found: Parsed salaries, compensation, and benefits increased from $8,952,128 in 2023 to $10,886,092 in 2024 (+21.6%; $54,980 per employee using 198 employees). Evidence: `E12`, `source table`.
-- When/where: year(s): 2023, 2024; subject: CRI-Help Inc Evidence: `E12`, `source table`.
-- How this triggered review: Medium Payroll and wages screen via test 'Year-over-year salaries, compensation, and benefits growth'. Data status: observed. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed salaries, compensation, and benefits increased from $8,952,128 in 2023 to $10,886,092 in 2024 (+21.6%; $54,980 per employee using 198 employees). This source fact matches the implemented payroll and wages screen and should stay in the active review queue. Evidence: `E12`, `source table`.
+- What CalDS found: Parsed salaries, compensation, and benefits increased from $8,952,128 in 2023 to $10,886,092 in 2024 (+21.6%; $54,980 per employee using 198 employees). Evidence: `E12`.
+- When/where: year(s): 2023, 2024; subject: CRI-Help Inc Evidence: `E12`.
+- Why this row is here: Medium Payroll and wages screen matched the implemented check: Year-over-year salaries, compensation, and benefits growth. Source status: observed. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Parsed salaries, compensation, and benefits increased from $8,952,128 in 2023 to $10,886,092 in 2024 (+21.6%; $54,980 per employee using 198 employees). This source fact matches the implemented payroll and wages screen and should stay in the active review queue. Evidence: `E12`.
 - Why this matters: The row matters because it is a measurable source-backed proxy for public-funds oversight risk.
-- What this flags: Compare payroll growth with staffing changes, wage requirements, vacancy rates, service units, and contract deliverables. Evidence: `E12`, `source table`.
+- What this flags: Compare payroll growth with staffing changes, wage requirements, vacancy rates, service units, and contract deliverables. Evidence: `E12`.
 - What this does not prove: It does not prove wrongdoing; it is a source-backed review prompt.
 - Human next step: Open the cited source records for CRI-Help Inc and compare the raw source wording to this row.
 - Caveat: This is a spending efficiency trigger, not a compensation reasonableness finding.
@@ -1233,14 +1204,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-16: HealthRIGHT 360 - Public statements
 
 - Test: Official/public page term screen
-- What CalDS found: Configured public statement pages were harvested. Matched review terms: advocacy, public affairs, criminal justice, equity. Evidence: `public_statements_healthright`.
-- When/where: subject: HealthRIGHT 360 Evidence: `public_statements_healthright`.
-- How this triggered review: Medium Public statements screen via test 'Official/public page term screen'. Data status: observed. Evidence: `public_statements_healthright`.
-- Evidence refs: `public_statements_healthright`
-- Source URI(s): https://www.healthright360.org/about/staff-and-board/
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Configured public statement pages were harvested. Matched review terms: advocacy, public affairs, criminal justice, equity. This source fact matches the implemented public statements screen and should stay in the active review queue. Evidence: `public_statements_healthright`.
+- What CalDS found: Configured public statement pages were harvested. Matched review terms: advocacy, public affairs, criminal justice, equity. Evidence: risk-matrix source-gap row.
+- When/where: subject: HealthRIGHT 360 Evidence: risk-matrix source-gap row.
+- Why this row is here: Medium Public statements screen matched the implemented check: Official/public page term screen. Source status: observed. Evidence: risk-matrix source-gap row.
+- Source access: https://www.healthright360.org/about/staff-and-board/ Evidence: risk-matrix source-gap row.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Configured public statement pages were harvested. Matched review terms: advocacy, public affairs, criminal justice, equity. This source fact matches the implemented public statements screen and should stay in the active review queue. Evidence: risk-matrix source-gap row.
 - Why this matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
-- What this flags: If terms are present, inspect the archived page context, speaker attribution, funding restrictions, and cost allocation; statements alone do not establish spending outside scope. Evidence: `public_statements_healthright`.
+- What this flags: If terms are present, inspect the archived page context, speaker attribution, funding restrictions, and cost allocation; statements alone do not establish spending outside scope. Evidence: risk-matrix source-gap row.
 - What this does not prove: It does not prove spending outside allowed scope or unlawful activity; contract, grant, funding-source, and accounting records must be checked.
 - Human next step: Compare public statements to homelessness contract scopes, grant restrictions, funding source, lobbying disclosures, and accounting treatment before drawing conclusions.
 - Caveat: Website language is context only and must be tied to funding/expenditure records before escalation.
@@ -1248,14 +1218,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-17: Tarzana Treatment Centers Inc - Public statements
 
 - Test: Official/public page term screen
-- What CalDS found: Configured public statement pages were harvested. Matched review terms: advocacy. Evidence: `E21`, `public_statements_tarzana`.
-- When/where: subject: Tarzana Treatment Centers Inc Evidence: `E21`, `public_statements_tarzana`.
-- How this triggered review: Medium Public statements screen via test 'Official/public page term screen'. Data status: observed. Evidence: `E21`, `public_statements_tarzana`.
-- Evidence refs: `E21`, `public_statements_tarzana`
-- Source URI(s): https://www.tarzanatc.org/who-we-are/meet-us/
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Configured public statement pages were harvested. Matched review terms: advocacy. This source fact matches the implemented public statements screen and should stay in the active review queue. Evidence: `E21`, `public_statements_tarzana`.
+- What CalDS found: Configured public statement pages were harvested. Matched review terms: advocacy. Evidence: `E21`.
+- When/where: subject: Tarzana Treatment Centers Inc Evidence: `E21`.
+- Why this row is here: Medium Public statements screen matched the implemented check: Official/public page term screen. Source status: observed. Evidence: `E21`.
+- Source access: https://www.tarzanatc.org/who-we-are/meet-us/ Evidence: `E21`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Configured public statement pages were harvested. Matched review terms: advocacy. This source fact matches the implemented public statements screen and should stay in the active review queue. Evidence: `E21`.
 - Why this matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
-- What this flags: If terms are present, inspect the archived page context, speaker attribution, funding restrictions, and cost allocation; statements alone do not establish spending outside scope. Evidence: `E21`, `public_statements_tarzana`.
+- What this flags: If terms are present, inspect the archived page context, speaker attribution, funding restrictions, and cost allocation; statements alone do not establish spending outside scope. Evidence: `E21`.
 - What this does not prove: It does not prove spending outside allowed scope or unlawful activity; contract, grant, funding-source, and accounting records must be checked.
 - Human next step: Compare public statements to homelessness contract scopes, grant restrictions, funding source, lobbying disclosures, and accounting treatment before drawing conclusions.
 - Caveat: Website language is context only and must be tied to funding/expenditure records before escalation.
@@ -1263,14 +1232,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-18: WestCare California Inc - Public statements
 
 - Test: Official/public page term screen
-- What CalDS found: Configured public statement pages were harvested. Matched review terms: advocacy, criminal justice. Evidence: `public_statements_westcare`.
-- When/where: subject: WestCare California Inc Evidence: `public_statements_westcare`.
-- How this triggered review: Medium Public statements screen via test 'Official/public page term screen'. Data status: observed. Evidence: `public_statements_westcare`.
-- Evidence refs: `public_statements_westcare`
-- Source URI(s): https://westcare.com/leadership/
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Configured public statement pages were harvested. Matched review terms: advocacy, criminal justice. This source fact matches the implemented public statements screen and should stay in the active review queue. Evidence: `public_statements_westcare`.
+- What CalDS found: Configured public statement pages were harvested. Matched review terms: advocacy, criminal justice. Evidence: risk-matrix source-gap row.
+- When/where: subject: WestCare California Inc Evidence: risk-matrix source-gap row.
+- Why this row is here: Medium Public statements screen matched the implemented check: Official/public page term screen. Source status: observed. Evidence: risk-matrix source-gap row.
+- Source access: https://westcare.com/leadership/ Evidence: risk-matrix source-gap row.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Configured public statement pages were harvested. Matched review terms: advocacy, criminal justice. This source fact matches the implemented public statements screen and should stay in the active review queue. Evidence: risk-matrix source-gap row.
 - Why this matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
-- What this flags: If terms are present, inspect the archived page context, speaker attribution, funding restrictions, and cost allocation; statements alone do not establish spending outside scope. Evidence: `public_statements_westcare`.
+- What this flags: If terms are present, inspect the archived page context, speaker attribution, funding restrictions, and cost allocation; statements alone do not establish spending outside scope. Evidence: risk-matrix source-gap row.
 - What this does not prove: It does not prove spending outside allowed scope or unlawful activity; contract, grant, funding-source, and accounting records must be checked.
 - Human next step: Compare public statements to homelessness contract scopes, grant restrictions, funding source, lobbying disclosures, and accounting treatment before drawing conclusions.
 - Caveat: Website language is context only and must be tied to funding/expenditure records before escalation.
@@ -1278,14 +1246,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-19: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Alpine
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Alpine; official county or Continuum of Care context flags homelessness services count up 17.7%, violent crime count up 33.3%, property crime count up 110.0%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Alpine; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Alpine'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Alpine; official county or Continuum of Care context flags homelessness services count up 17.7%, violent crime count up 33.3%, property crime count up 110.0%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Alpine; official county or Continuum of Care context flags homelessness services count up 17.7%, violent crime count up 33.3%, property crime count up 110.0%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Alpine; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Alpine. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Alpine; official county or Continuum of Care context flags homelessness services count up 17.7%, violent crime count up 33.3%, property crime count up 110.0%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1295,14 +1262,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-20: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Amador
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Amador; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 13.6%, violent crime count up 26.7%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Amador; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Amador'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Amador; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 13.6%, violent crime count up 26.7%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Amador; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 13.6%, violent crime count up 26.7%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Amador; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Amador. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Amador; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 13.6%, violent crime count up 26.7%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1312,14 +1278,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-21: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Calaveras
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Calaveras; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 24.3%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Calaveras; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Calaveras'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Calaveras; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 24.3%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Calaveras; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 24.3%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Calaveras; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Calaveras. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Calaveras; official county or Continuum of Care context flags homelessness services count up 7.6%, drug overdose death rate up 24.3%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1329,14 +1294,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-22: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Contra Costa
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Contra Costa; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Contra Costa'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Contra Costa; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Contra Costa. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1346,14 +1310,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-23: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Fresno
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Fresno; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Fresno'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Fresno; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Fresno. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1363,14 +1326,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-24: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Los Angeles
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Los Angeles; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Los Angeles; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1380,14 +1342,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-25: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Madera
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Madera; official county or Continuum of Care context flags drug overdose death rate up 42.4%, property crime count up 5.0%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Madera; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Madera'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Madera; official county or Continuum of Care context flags drug overdose death rate up 42.4%, property crime count up 5.0%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Madera; official county or Continuum of Care context flags drug overdose death rate up 42.4%, property crime count up 5.0%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Madera; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Madera. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Madera; official county or Continuum of Care context flags drug overdose death rate up 42.4%, property crime count up 5.0%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1397,14 +1358,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-26: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Napa
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Napa; official county or Continuum of Care context flags drug overdose death rate up 52.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Napa; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Napa'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Napa; official county or Continuum of Care context flags drug overdose death rate up 52.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Napa; official county or Continuum of Care context flags drug overdose death rate up 52.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Napa; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Napa. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Napa; official county or Continuum of Care context flags drug overdose death rate up 52.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1414,14 +1374,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-27: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Orange
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Orange; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Orange'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Orange; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Orange. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1431,14 +1390,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-28: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Riverside
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Riverside; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Riverside; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Riverside'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Riverside; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Riverside; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Riverside; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Riverside. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Riverside; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1448,14 +1406,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-29: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: San Francisco
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in San Francisco; official county or Continuum of Care context flags drug overdose death rate up 37.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: San Francisco; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: San Francisco'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in San Francisco; official county or Continuum of Care context flags drug overdose death rate up 37.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in San Francisco; official county or Continuum of Care context flags drug overdose death rate up 37.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: San Francisco; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: San Francisco. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in San Francisco; official county or Continuum of Care context flags drug overdose death rate up 37.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1465,14 +1422,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-30: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: San Joaquin
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in San Joaquin; official county or Continuum of Care context flags drug overdose death rate up 53.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: San Joaquin; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: San Joaquin'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in San Joaquin; official county or Continuum of Care context flags drug overdose death rate up 53.9%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in San Joaquin; official county or Continuum of Care context flags drug overdose death rate up 53.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: San Joaquin; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: San Joaquin. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in San Joaquin; official county or Continuum of Care context flags drug overdose death rate up 53.9%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1482,14 +1438,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-31: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Santa Clara
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Santa Clara; official county or Continuum of Care context flags drug overdose death rate up 48.2%, violent crime count up 12.5%, property crime count up 13.1%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Santa Clara; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Santa Clara'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Santa Clara; official county or Continuum of Care context flags drug overdose death rate up 48.2%, violent crime count up 12.5%, property crime count up 13.1%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Santa Clara; official county or Continuum of Care context flags drug overdose death rate up 48.2%, violent crime count up 12.5%, property crime count up 13.1%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Santa Clara; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Santa Clara. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Santa Clara; official county or Continuum of Care context flags drug overdose death rate up 48.2%, violent crime count up 12.5%, property crime count up 13.1%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1499,14 +1454,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-32: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Solano
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Solano; official county or Continuum of Care context flags homelessness services count up 28.3%, drug overdose death rate up 67.2%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Solano; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Solano'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Solano; official county or Continuum of Care context flags homelessness services count up 28.3%, drug overdose death rate up 67.2%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Solano; official county or Continuum of Care context flags homelessness services count up 28.3%, drug overdose death rate up 67.2%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Solano; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Solano. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Solano; official county or Continuum of Care context flags homelessness services count up 28.3%, drug overdose death rate up 67.2%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1516,14 +1470,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-33: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Trinity
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Trinity; official county or Continuum of Care context flags drug overdose death rate up 49.8%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Trinity; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Trinity'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Trinity; official county or Continuum of Care context flags drug overdose death rate up 49.8%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Trinity; official county or Continuum of Care context flags drug overdose death rate up 49.8%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Trinity; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Trinity. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Trinity; official county or Continuum of Care context flags drug overdose death rate up 49.8%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1533,14 +1486,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-34: Behavioral Health Services Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Tulare
-- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Tulare; official county or Continuum of Care context flags drug overdose death rate up 88.4%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Tulare; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Tulare'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Tulare; official county or Continuum of Care context flags drug overdose death rate up 88.4%. Parsed entity growth context in this run: spending=+7.8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Tulare; official county or Continuum of Care context flags drug overdose death rate up 88.4%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. Evidence: `E18`, `E19`.
+- When/where: place: Tulare; subject: Behavioral Health Services Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Tulare. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Behavioral Health Services Inc has California Department of Health Care Services facility footprint in Tulare; official county or Continuum of Care context flags drug overdose death rate up 88.4%. Parsed entity growth context in this run: spending=+7. 8%, revenue=+12.3%, government grants=-19.5%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1550,14 +1502,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-35: CRI-Help Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Los Angeles
-- What CalDS found: CRI-Help Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15.9%, revenue=+123.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Los Angeles; subject: CRI-Help Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because CRI-Help Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15.9%, revenue=+123.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: CRI-Help Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15. 9%, revenue=+123.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+- When/where: place: Los Angeles; subject: CRI-Help Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because CRI-Help Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15. 9%, revenue=+123.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1567,14 +1518,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-36: HealthRIGHT 360 - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Alameda
-- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Alameda; official county or Continuum of Care context flags drug overdose death rate up 39.9%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Alameda; subject: HealthRIGHT 360 Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Alameda'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Alameda; official county or Continuum of Care context flags drug overdose death rate up 39.9%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Alameda; official county or Continuum of Care context flags drug overdose death rate up 39.9%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. Evidence: `E18`, `E19`.
+- When/where: place: Alameda; subject: HealthRIGHT 360 Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Alameda. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Alameda; official county or Continuum of Care context flags drug overdose death rate up 39.9%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1584,14 +1534,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-37: HealthRIGHT 360 - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Los Angeles
-- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Los Angeles; subject: HealthRIGHT 360 Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. Evidence: `E18`, `E19`.
+- When/where: place: Los Angeles; subject: HealthRIGHT 360 Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1601,14 +1550,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-38: HealthRIGHT 360 - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Orange
-- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Orange; subject: HealthRIGHT 360 Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Orange'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. Evidence: `E18`, `E19`.
+- When/where: place: Orange; subject: HealthRIGHT 360 Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Orange. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1618,14 +1566,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-39: HealthRIGHT 360 - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: San Diego
-- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Diego; official county or Continuum of Care context flags drug overdose death rate up 72.5%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: San Diego; subject: HealthRIGHT 360 Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: San Diego'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Diego; official county or Continuum of Care context flags drug overdose death rate up 72.5%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Diego; official county or Continuum of Care context flags drug overdose death rate up 72.5%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. Evidence: `E18`, `E19`.
+- When/where: place: San Diego; subject: HealthRIGHT 360 Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: San Diego. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Diego; official county or Continuum of Care context flags drug overdose death rate up 72.5%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1635,14 +1582,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-40: HealthRIGHT 360 - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: San Francisco
-- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Francisco; official county or Continuum of Care context flags drug overdose death rate up 37.9%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: San Francisco; subject: HealthRIGHT 360 Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: San Francisco'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Francisco; official county or Continuum of Care context flags drug overdose death rate up 37.9%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Francisco; official county or Continuum of Care context flags drug overdose death rate up 37.9%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. Evidence: `E18`, `E19`.
+- When/where: place: San Francisco; subject: HealthRIGHT 360 Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: San Francisco. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Francisco; official county or Continuum of Care context flags drug overdose death rate up 37.9%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1652,14 +1598,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-41: HealthRIGHT 360 - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: San Mateo
-- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Mateo; official county or Continuum of Care context flags homelessness services count up 5.1%, drug overdose death rate up 29.7%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: San Mateo; subject: HealthRIGHT 360 Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: San Mateo'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Mateo; official county or Continuum of Care context flags homelessness services count up 5.1%, drug overdose death rate up 29.7%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Mateo; official county or Continuum of Care context flags homelessness services count up 5.1%, drug overdose death rate up 29.7%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. Evidence: `E18`, `E19`.
+- When/where: place: San Mateo; subject: HealthRIGHT 360 Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: San Mateo. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in San Mateo; official county or Continuum of Care context flags homelessness services count up 5.1%, drug overdose death rate up 29.7%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1669,14 +1614,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-42: HealthRIGHT 360 - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Santa Clara
-- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Santa Clara; official county or Continuum of Care context flags drug overdose death rate up 48.2%, violent crime count up 12.5%, property crime count up 13.1%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Santa Clara; subject: HealthRIGHT 360 Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Santa Clara'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Santa Clara; official county or Continuum of Care context flags drug overdose death rate up 48.2%, violent crime count up 12.5%, property crime count up 13.1%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Santa Clara; official county or Continuum of Care context flags drug overdose death rate up 48.2%, violent crime count up 12.5%, property crime count up 13.1%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. Evidence: `E18`, `E19`.
+- When/where: place: Santa Clara; subject: HealthRIGHT 360 Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Santa Clara. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Santa Clara; official county or Continuum of Care context flags drug overdose death rate up 48.2%, violent crime count up 12.5%, property crime count up 13.1%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1686,14 +1630,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-43: HealthRIGHT 360 - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Ventura
-- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Ventura; official county or Continuum of Care context flags drug overdose death rate up 70.3%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Ventura; subject: HealthRIGHT 360 Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Ventura'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Ventura; official county or Continuum of Care context flags drug overdose death rate up 70.3%. Parsed entity growth context in this run: spending=not parsed, revenue=not parsed, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: HealthRIGHT 360 has California Department of Health Care Services facility footprint in Ventura; official county or Continuum of Care context flags drug overdose death rate up 70.3%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. Evidence: `E18`, `E19`.
+- When/where: place: Ventura; subject: HealthRIGHT 360 Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Ventura. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because HealthRIGHT 360 has California Department of Health Care Services facility footprint in Ventura; official county or Continuum of Care context flags drug overdose death rate up 70.3%. This run did not parse entity-level spending, revenue, or grant growth for that comparison. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1703,14 +1646,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-44: Social Model Recovery Systems Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Los Angeles
-- What CalDS found: Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15.8%, revenue=+26.0%, government grants=+26.3%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Los Angeles; subject: Social Model Recovery Systems Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15.8%, revenue=+26.0%, government grants=+26.3%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15. 8%, revenue=+26.0%, government grants=+26.3%. Evidence: `E18`, `E19`.
+- When/where: place: Los Angeles; subject: Social Model Recovery Systems Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+15. 8%, revenue=+26.0%, government grants=+26.3%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1720,14 +1662,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-45: Social Model Recovery Systems Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Orange
-- What CalDS found: Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=+15.8%, revenue=+26.0%, government grants=+26.3%. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Orange; subject: Social Model Recovery Systems Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Orange'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=+15.8%, revenue=+26.0%, government grants=+26.3%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=+15. 8%, revenue=+26.0%, government grants=+26.3%. Evidence: `E18`, `E19`.
+- When/where: place: Orange; subject: Social Model Recovery Systems Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Orange. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Social Model Recovery Systems Inc has California Department of Health Care Services facility footprint in Orange; official county or Continuum of Care context flags drug overdose death rate up 73.2%. Parsed entity growth context in this run: spending=+15. 8%, revenue=+26.0%, government grants=+26.3%. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1737,14 +1678,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-46: Tarzana Treatment Centers Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Los Angeles
-- What CalDS found: Tarzana Treatment Centers Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+14.4%, revenue=+37.5%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Los Angeles; subject: Tarzana Treatment Centers Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Los Angeles'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Tarzana Treatment Centers Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+14.4%, revenue=+37.5%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: Tarzana Treatment Centers Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+14. 4%, revenue=+37.5%, government grants=not parsed. Evidence: `E18`, `E19`.
+- When/where: place: Los Angeles; subject: Tarzana Treatment Centers Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Los Angeles. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because Tarzana Treatment Centers Inc has California Department of Health Care Services facility footprint in Los Angeles; official county or Continuum of Care context flags drug overdose death rate up 69.6%. Parsed entity growth context in this run: spending=+14. 4%, revenue=+37.5%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1754,14 +1694,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-47: WestCare California Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Contra Costa
-- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Contra Costa; subject: WestCare California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Contra Costa'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+- When/where: place: Contra Costa; subject: WestCare California Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Contra Costa. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in Contra Costa; official county or Continuum of Care context flags drug overdose death rate up 43.5%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1771,14 +1710,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-48: WestCare California Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Fresno
-- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Fresno; subject: WestCare California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Fresno'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+- When/where: place: Fresno; subject: WestCare California Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Fresno. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in Fresno; official county or Continuum of Care context flags drug overdose death rate up 56.9%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1788,14 +1726,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-49: WestCare California Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Kern
-- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in Kern; official county or Continuum of Care context flags drug overdose death rate up 71.9%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Kern; subject: WestCare California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Kern'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in Kern; official county or Continuum of Care context flags drug overdose death rate up 71.9%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in Kern; official county or Continuum of Care context flags drug overdose death rate up 71.9%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+- When/where: place: Kern; subject: WestCare California Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Kern. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in Kern; official county or Continuum of Care context flags drug overdose death rate up 71.9%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1805,14 +1742,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-50: WestCare California Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: Kings
-- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in Kings; official county or Continuum of Care context flags drug overdose death rate up 27.8%, violent crime count up 11.9%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: Kings; subject: WestCare California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: Kings'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in Kings; official county or Continuum of Care context flags drug overdose death rate up 27.8%, violent crime count up 11.9%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in Kings; official county or Continuum of Care context flags drug overdose death rate up 27.8%, violent crime count up 11.9%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+- When/where: place: Kings; subject: WestCare California Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: Kings. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in Kings; official county or Continuum of Care context flags drug overdose death rate up 27.8%, violent crime count up 11.9%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1822,14 +1758,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Medium-51: WestCare California Inc - Spend-versus-results
 
 - Test: County outcome movement and entity spending context: San Diego
-- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in San Diego; official county or Continuum of Care context flags drug overdose death rate up 72.5%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`, `source table`, `source table`.
-- When/where: place: San Diego; subject: WestCare California Inc Evidence: `E18`, `E19`, `source table`, `source table`.
-- How this triggered review: Medium Spend-versus-results screen via test 'County outcome movement and entity spending context: San Diego'. Data status: observed_contextual_join. Evidence: `E18`, `E19`, `source table`, `source table`.
-- Evidence refs: `E18`, `E19`, `source table`, `source table`
-- Source URI(s): [private source artifact] [private source artifact]
-- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in San Diego; official county or Continuum of Care context flags drug overdose death rate up 72.5%. Parsed entity growth context in this run: spending=+9.1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What CalDS found: WestCare California Inc has California Department of Health Care Services facility footprint in San Diego; official county or Continuum of Care context flags drug overdose death rate up 72.5%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. Evidence: `E18`, `E19`.
+- When/where: place: San Diego; subject: WestCare California Inc Evidence: `E18`, `E19`.
+- Why this row is here: Medium Spend-versus-results screen matched the implemented check: County outcome movement and entity spending context: San Diego. Source status: observed_contextual_join. Evidence: `E18`, `E19`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`, `E19`.
+- System opinion: CalDS flags this as a medium possible waste, fraud, abuse, or mismanagement review priority because WestCare California Inc has California Department of Health Care Services facility footprint in San Diego; official county or Continuum of Care context flags drug overdose death rate up 72.5%. Parsed entity growth context in this run: spending=+9. 1%, revenue=+9.3%, government grants=not parsed. This source fact matches the implemented spend-versus-results screen and should stay in the active review queue. Evidence: `E18`, `E19`.
 - Why this matters: Spending growth next to worsening county-level outcomes is not provider-attributable by itself, but it is exactly the mismatch CalDS should force into review.
-- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`, `source table`, `source table`.
+- What this flags: Review underlying county or Continuum of Care outcome rows, facility footprint, contract geography, and provider-specific outcome records before drawing any conclusion. Evidence: `E18`, `E19`.
 - What this does not prove: It does not prove the entity caused county or Continuum of Care outcome movement; it flags a spend/outcome question for review.
 - Human next step: Request provider-attributable utilization, completion, discharge, cost-per-service, and outcome records for the same county and year window.
 - Caveat: Outcome rows are county or Continuum of Care-level context; they are not provider-attributable results.
@@ -1841,14 +1776,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-1: HealthRIGHT 360 - Financial growth
 
 - Test: Year-over-year total revenue growth
-- What CalDS found: No two downloaded Internal Revenue Service returns with numeric revenue are available for this entity. Available parsed years: 2023. Evidence: `E12`, `source table`.
-- When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`, `source table`.
-- How this triggered review: Data gap Financial growth screen via test 'Year-over-year total revenue growth'. Data status: missing_source_or_field. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a data blocker because No two downloaded Internal Revenue Service returns with numeric revenue are available for this entity. Available parsed years: 2023. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`, `source table`.
+- What CalDS found: No two downloaded Internal Revenue Service returns with numeric revenue are available for this entity. Available parsed years: 2023. Evidence: `E12`.
+- When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`.
+- Why this row is here: Data gap Financial growth screen matched the implemented check: Year-over-year total revenue growth. Source status: missing_source_or_field. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a data blocker because No two downloaded Internal Revenue Service returns with numeric revenue are available for this entity. Available parsed years: 2023. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`.
 - Why this matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
-- What this flags: Compare the growth to contract amendments, new grants, acquisitions, service volume, and program outcomes before escalation. Evidence: `E12`, `source table`.
+- What this flags: Compare the growth to contract amendments, new grants, acquisitions, service volume, and program outcomes before escalation. Evidence: `E12`.
 - What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
 - Human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
 - Caveat: A missing year is not an adverse signal by itself, but it prevents the growth test.
@@ -1856,14 +1790,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-2: Case-wide - License/adverse-action history
 
 - Test: California Department of Health Care Services adverse-action page machine readability
-- What CalDS found: California Department of Health Care Services adverse-action pages were fetched but did not expose machine-readable target rows in static text during this run. Evidence: `E18`, `source table`.
-- When/where: subject: Case-wide Evidence: `E18`, `source table`.
-- How this triggered review: Data gap License/adverse-action history screen via test 'California Department of Health Care Services adverse-action page machine readability'. Data status: non_machine_readable_source. Evidence: `E18`, `source table`.
-- Evidence refs: `E18`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a data blocker because California Department of Health Care Services adverse-action pages were fetched but did not expose machine-readable target rows in static text during this run. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E18`, `source table`.
+- What CalDS found: California Department of Health Care Services adverse-action pages were fetched but did not expose machine-readable target rows in static text during this run. Evidence: `E18`.
+- When/where: subject: Case-wide Evidence: `E18`.
+- Why this row is here: Data gap License/adverse-action history screen matched the implemented check: California Department of Health Care Services adverse-action page machine readability. Source status: non_machine_readable_source. Evidence: `E18`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`.
+- System opinion: CalDS flags this as a data blocker because California Department of Health Care Services adverse-action pages were fetched but did not expose machine-readable target rows in static text during this run. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E18`.
 - Why this matters: A missing source can hide the answer either way; the system keeps the issue open until the gap is resolved.
-- What this flags: Archive the pages and pursue a row export or page-specific parser before ranking probation, suspension, revocation, or NOV history. Evidence: `E18`, `source table`.
+- What this flags: Archive the pages and pursue a row export or page-specific parser before ranking probation, suspension, revocation, or NOV history. Evidence: `E18`.
 - What this does not prove: It does not prove a substantive issue; it identifies a source gap that blocks stronger review.
 - Human next step: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
 - Caveat: Existing California Department of Health Care Services Active/Closed facility status remains available, but it is not the same as adverse-action history.
@@ -1871,14 +1804,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-3: Behavioral Health Services Inc - Off-scope activity
 
 - Test: Retrieved website/service-page keyword screen
-- What CalDS found: No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Evidence: source-gap artifact listed in the risk matrix.
-- When/where: subject: Behavioral Health Services Inc Evidence: source-gap artifact listed in the risk matrix.
-- How this triggered review: Data gap Off-scope activity screen via test 'Retrieved website/service-page keyword screen'. Data status: missing_source. Evidence: source-gap artifact listed in the risk matrix.
-- Evidence refs: source-gap artifact listed in the risk matrix
-- Source URI(s): not listed on this row; use evidence ledger
-- System opinion: CalDS flags this as a data blocker because No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: source-gap artifact listed in the risk matrix.
+- What CalDS found: No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Evidence: risk-matrix source-gap row.
+- When/where: subject: Behavioral Health Services Inc Evidence: risk-matrix source-gap row.
+- Why this row is here: Data gap Off-scope activity screen matched the implemented check: Retrieved website/service-page keyword screen. Source status: missing_source. Evidence: risk-matrix source-gap row.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: risk-matrix source-gap row.
+- System opinion: CalDS flags this as a data blocker because No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: risk-matrix source-gap row.
 - Why this matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
-- What this flags: Add official-site pages and social/traffic sources before judging public messaging or scope alignment. Evidence: source-gap artifact listed in the risk matrix.
+- What this flags: Add official-site pages and social/traffic sources before judging public messaging or scope alignment. Evidence: risk-matrix source-gap row.
 - What this does not prove: It does not prove spending outside allowed scope or unlawful activity; contract, grant, funding-source, and accounting records must be checked.
 - Human next step: Compare public statements to homelessness contract scopes, grant restrictions, funding source, lobbying disclosures, and accounting treatment before drawing conclusions.
 - Caveat: Absence of a retrieved page is not evidence that off-scope activity exists or does not exist.
@@ -1886,14 +1818,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-4: CRI-Help Inc - Off-scope activity
 
 - Test: Retrieved website/service-page keyword screen
-- What CalDS found: No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Evidence: source-gap artifact listed in the risk matrix.
-- When/where: subject: CRI-Help Inc Evidence: source-gap artifact listed in the risk matrix.
-- How this triggered review: Data gap Off-scope activity screen via test 'Retrieved website/service-page keyword screen'. Data status: missing_source. Evidence: source-gap artifact listed in the risk matrix.
-- Evidence refs: source-gap artifact listed in the risk matrix
-- Source URI(s): not listed on this row; use evidence ledger
-- System opinion: CalDS flags this as a data blocker because No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: source-gap artifact listed in the risk matrix.
+- What CalDS found: No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Evidence: risk-matrix source-gap row.
+- When/where: subject: CRI-Help Inc Evidence: risk-matrix source-gap row.
+- Why this row is here: Data gap Off-scope activity screen matched the implemented check: Retrieved website/service-page keyword screen. Source status: missing_source. Evidence: risk-matrix source-gap row.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: risk-matrix source-gap row.
+- System opinion: CalDS flags this as a data blocker because No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: risk-matrix source-gap row.
 - Why this matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
-- What this flags: Add official-site pages and social/traffic sources before judging public messaging or scope alignment. Evidence: source-gap artifact listed in the risk matrix.
+- What this flags: Add official-site pages and social/traffic sources before judging public messaging or scope alignment. Evidence: risk-matrix source-gap row.
 - What this does not prove: It does not prove spending outside allowed scope or unlawful activity; contract, grant, funding-source, and accounting records must be checked.
 - Human next step: Compare public statements to homelessness contract scopes, grant restrictions, funding source, lobbying disclosures, and accounting treatment before drawing conclusions.
 - Caveat: Absence of a retrieved page is not evidence that off-scope activity exists or does not exist.
@@ -1901,14 +1832,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-5: Phoenix Houses Of California Inc - Off-scope activity
 
 - Test: Retrieved website/service-page keyword screen
-- What CalDS found: No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Evidence: source-gap artifact listed in the risk matrix.
-- When/where: subject: Phoenix Houses Of California Inc Evidence: source-gap artifact listed in the risk matrix.
-- How this triggered review: Data gap Off-scope activity screen via test 'Retrieved website/service-page keyword screen'. Data status: missing_source. Evidence: source-gap artifact listed in the risk matrix.
-- Evidence refs: source-gap artifact listed in the risk matrix
-- Source URI(s): not listed on this row; use evidence ledger
-- System opinion: CalDS flags this as a data blocker because No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: source-gap artifact listed in the risk matrix.
+- What CalDS found: No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Evidence: risk-matrix source-gap row.
+- When/where: subject: Phoenix Houses Of California Inc Evidence: risk-matrix source-gap row.
+- Why this row is here: Data gap Off-scope activity screen matched the implemented check: Retrieved website/service-page keyword screen. Source status: missing_source. Evidence: risk-matrix source-gap row.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: risk-matrix source-gap row.
+- System opinion: CalDS flags this as a data blocker because No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: risk-matrix source-gap row.
 - Why this matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
-- What this flags: Add official-site pages and social/traffic sources before judging public messaging or scope alignment. Evidence: source-gap artifact listed in the risk matrix.
+- What this flags: Add official-site pages and social/traffic sources before judging public messaging or scope alignment. Evidence: risk-matrix source-gap row.
 - What this does not prove: It does not prove spending outside allowed scope or unlawful activity; contract, grant, funding-source, and accounting records must be checked.
 - Human next step: Compare public statements to homelessness contract scopes, grant restrictions, funding source, lobbying disclosures, and accounting treatment before drawing conclusions.
 - Caveat: Absence of a retrieved page is not evidence that off-scope activity exists or does not exist.
@@ -1916,14 +1846,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-6: Social Model Recovery Systems Inc - Off-scope activity
 
 - Test: Retrieved website/service-page keyword screen
-- What CalDS found: No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Evidence: source-gap artifact listed in the risk matrix.
-- When/where: subject: Social Model Recovery Systems Inc Evidence: source-gap artifact listed in the risk matrix.
-- How this triggered review: Data gap Off-scope activity screen via test 'Retrieved website/service-page keyword screen'. Data status: missing_source. Evidence: source-gap artifact listed in the risk matrix.
-- Evidence refs: source-gap artifact listed in the risk matrix
-- Source URI(s): not listed on this row; use evidence ledger
-- System opinion: CalDS flags this as a data blocker because No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: source-gap artifact listed in the risk matrix.
+- What CalDS found: No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Evidence: risk-matrix source-gap row.
+- When/where: subject: Social Model Recovery Systems Inc Evidence: risk-matrix source-gap row.
+- Why this row is here: Data gap Off-scope activity screen matched the implemented check: Retrieved website/service-page keyword screen. Source status: missing_source. Evidence: risk-matrix source-gap row.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: risk-matrix source-gap row.
+- System opinion: CalDS flags this as a data blocker because No organization service page was retrieved for this entity, so the run cannot screen web language for voter registration, power building, political action, or similar off-scope terms. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: risk-matrix source-gap row.
 - Why this matters: Public claims and program language matter when a homelessness-funded entity appears to describe voter, citizenship, immigration, advocacy, or political work that may need contract-scope, grant-scope, funding-source, or cost-allocation review.
-- What this flags: Add official-site pages and social/traffic sources before judging public messaging or scope alignment. Evidence: source-gap artifact listed in the risk matrix.
+- What this flags: Add official-site pages and social/traffic sources before judging public messaging or scope alignment. Evidence: risk-matrix source-gap row.
 - What this does not prove: It does not prove spending outside allowed scope or unlawful activity; contract, grant, funding-source, and accounting records must be checked.
 - Human next step: Compare public statements to homelessness contract scopes, grant restrictions, funding source, lobbying disclosures, and accounting treatment before drawing conclusions.
 - Caveat: Absence of a retrieved page is not evidence that off-scope activity exists or does not exist.
@@ -1931,14 +1860,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-7: HealthRIGHT 360 - Payroll and wages
 
 - Test: Year-over-year salaries, compensation, and benefits growth
-- What CalDS found: No two downloaded Internal Revenue Service returns with parsed salaries/compensation/benefits totals are available for this entity. Evidence: `E12`, `source table`.
-- When/where: subject: HealthRIGHT 360 Evidence: `E12`, `source table`.
-- How this triggered review: Data gap Payroll and wages screen via test 'Year-over-year salaries, compensation, and benefits growth'. Data status: missing_source_or_field. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a data blocker because No two downloaded Internal Revenue Service returns with parsed salaries/compensation/benefits totals are available for this entity. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`, `source table`.
+- What CalDS found: No two downloaded Internal Revenue Service returns with parsed salaries/compensation/benefits totals are available for this entity. Evidence: `E12`.
+- When/where: subject: HealthRIGHT 360 Evidence: `E12`.
+- Why this row is here: Data gap Payroll and wages screen matched the implemented check: Year-over-year salaries, compensation, and benefits growth. Source status: missing_source_or_field. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a data blocker because No two downloaded Internal Revenue Service returns with parsed salaries/compensation/benefits totals are available for this entity. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`.
 - Why this matters: A missing source can hide the answer either way; the system keeps the issue open until the gap is resolved.
-- What this flags: Parse the salaries/compensation/benefits line and compare payroll growth to headcount, contract scope, and service volume. Evidence: `E12`, `source table`.
+- What this flags: Parse the salaries/compensation/benefits line and compare payroll growth to headcount, contract scope, and service volume. Evidence: `E12`.
 - What this does not prove: It does not prove a substantive issue; it identifies a source gap that blocks stronger review.
 - Human next step: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
 - Caveat: Payroll growth alone does not show misuse; it is a spend-versus-output review trigger.
@@ -1946,14 +1874,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-8: Case-wide - Public attention and traffic
 
 - Test: Social media and website traffic coverage
-- What CalDS found: No social media account metrics, website analytics, ad-library records, or third-party traffic estimates are ingested in this run. Evidence: source-gap artifact listed in the risk matrix.
-- When/where: subject: Case-wide Evidence: source-gap artifact listed in the risk matrix.
-- How this triggered review: Data gap Public attention and traffic screen via test 'Social media and website traffic coverage'. Data status: missing_required_attention_sources. Evidence: source-gap artifact listed in the risk matrix.
-- Evidence refs: source-gap artifact listed in the risk matrix
-- Source URI(s): not listed on this row; use evidence ledger
-- System opinion: CalDS flags this as a data blocker because No social media account metrics, website analytics, ad-library records, or third-party traffic estimates are ingested in this run. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: source-gap artifact listed in the risk matrix.
+- What CalDS found: No social media account metrics, website analytics, ad-library records, or third-party traffic estimates are ingested in this run. Evidence: risk-matrix source-gap row.
+- When/where: subject: Case-wide Evidence: risk-matrix source-gap row.
+- Why this row is here: Data gap Public attention and traffic screen matched the implemented check: Social media and website traffic coverage. Source status: missing_required_attention_sources. Evidence: risk-matrix source-gap row.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: risk-matrix source-gap row.
+- System opinion: CalDS flags this as a data blocker because No social media account metrics, website analytics, ad-library records, or third-party traffic estimates are ingested in this run. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: risk-matrix source-gap row.
 - Why this matters: A missing source can hide the answer either way; the system keeps the issue open until the gap is resolved.
-- What this flags: Add a governed source policy for traffic/social metrics and preserve collection timestamps before using attention patterns as risk proxies. Evidence: source-gap artifact listed in the risk matrix.
+- What this flags: Add a governed source policy for traffic/social metrics and preserve collection timestamps before using attention patterns as risk proxies. Evidence: risk-matrix source-gap row.
 - What this does not prove: It does not prove a substantive issue; it identifies a source gap that blocks stronger review.
 - Human next step: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
 - Caveat: Traffic and social metrics are volatile and can be misleading without source timestamps and normalization.
@@ -1961,14 +1888,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-9: Tarzana Treatment Centers Inc - Public-funds concentration
 
 - Test: Government grants as share of Form 990 revenue
-- What CalDS found: No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Evidence: `E12`, `source table`.
-- When/where: subject: Tarzana Treatment Centers Inc Evidence: `E12`, `source table`.
-- How this triggered review: Data gap Public-funds concentration screen via test 'Government grants as share of Form 990 revenue'. Data status: missing_source_or_field. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a data blocker because No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`, `source table`.
+- What CalDS found: No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Evidence: `E12`.
+- When/where: subject: Tarzana Treatment Centers Inc Evidence: `E12`.
+- Why this row is here: Data gap Public-funds concentration screen matched the implemented check: Government grants as share of Form 990 revenue. Source status: missing_source_or_field. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a data blocker because No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Recover the full return or schedule detail before ranking public-funds concentration. Evidence: `E12`, `source table`.
+- What this flags: Recover the full return or schedule detail before ranking public-funds concentration. Evidence: `E12`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Blank government-grant fields may reflect parser coverage or return presentation; verify against raw machine-readable filing data/source document.
@@ -1976,14 +1902,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-10: WestCare California Inc - Public-funds concentration
 
 - Test: Government grants as share of Form 990 revenue
-- What CalDS found: No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Evidence: `E12`, `source table`.
-- When/where: subject: WestCare California Inc Evidence: `E12`, `source table`.
-- How this triggered review: Data gap Public-funds concentration screen via test 'Government grants as share of Form 990 revenue'. Data status: missing_source_or_field. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a data blocker because No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`, `source table`.
+- What CalDS found: No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Evidence: `E12`.
+- When/where: subject: WestCare California Inc Evidence: `E12`.
+- Why this row is here: Data gap Public-funds concentration screen matched the implemented check: Government grants as share of Form 990 revenue. Source status: missing_source_or_field. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a data blocker because No downloaded Internal Revenue Service row in the current corpus contains both government grants and total revenue for this entity. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`.
 - Why this matters: Large public-funds exposure raises the stakes of any control, deliverable, or outcome weakness because taxpayer dollars are material.
-- What this flags: Recover the full return or schedule detail before ranking public-funds concentration. Evidence: `E12`, `source table`.
+- What this flags: Recover the full return or schedule detail before ranking public-funds concentration. Evidence: `E12`.
 - What this does not prove: It does not prove poor performance or misuse; it marks funding exposure that needs source and outcome review.
 - Human next step: Trace award programs to contracts, grant terms, deliverables, and provider-attributable outcome reports.
 - Caveat: Blank government-grant fields may reflect parser coverage or return presentation; verify against raw machine-readable filing data/source document.
@@ -1991,14 +1916,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-11: HealthRIGHT 360 - Spending growth
 
 - Test: Year-over-year total expense growth
-- What CalDS found: No two downloaded Internal Revenue Service returns with numeric expenses are available for this entity. Available parsed years: 2023. Evidence: `E12`, `source table`.
-- When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`, `source table`.
-- How this triggered review: Data gap Spending growth screen via test 'Year-over-year total expense growth'. Data status: missing_source_or_field. Evidence: `E12`, `source table`.
-- Evidence refs: `E12`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a data blocker because No two downloaded Internal Revenue Service returns with numeric expenses are available for this entity. Available parsed years: 2023. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`, `source table`.
+- What CalDS found: No two downloaded Internal Revenue Service returns with numeric expenses are available for this entity. Available parsed years: 2023. Evidence: `E12`.
+- When/where: year(s): 2023; subject: HealthRIGHT 360 Evidence: `E12`.
+- Why this row is here: Data gap Spending growth screen matched the implemented check: Year-over-year total expense growth. Source status: missing_source_or_field. Evidence: `E12`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E12`.
+- System opinion: CalDS flags this as a data blocker because No two downloaded Internal Revenue Service returns with numeric expenses are available for this entity. Available parsed years: 2023. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E12`.
 - Why this matters: Rapid revenue or expense growth becomes a possible waste, fraud, abuse, or mismanagement review concern when it outpaces visible service capacity, documented outcomes, or clear grant-scope explanations.
-- What this flags: Check whether expense growth maps to funded scope, staffing, facilities, and documented service results. Evidence: `E12`, `source table`.
+- What this flags: Check whether expense growth maps to funded scope, staffing, facilities, and documented service results. Evidence: `E12`.
 - What this does not prove: It does not prove misuse; growth can have ordinary program, accounting, merger, or grant-timing explanations.
 - Human next step: Compare raw Internal Revenue Service machine-readable filing data/source document returns year over year, then separate program growth, grants, mergers, one-time receipts, and expense categories.
 - Caveat: A missing year is not an adverse signal by itself, but it prevents the growth test.
@@ -2006,14 +1930,13 @@ High and medium rows are review priorities. Data-gap rows are source-collection 
 #### Data gap-12: Case-wide - Treatment completion
 
 - Test: Direct CalOMS/DATAR treatment completion coverage
-- What CalDS found: The California Department of Health Care Services CalOMS/DATAR public page was probed, but this run did not recover a machine-readable provider/county treatment completion table. Evidence: `E18`, `source table`.
-- When/where: subject: Case-wide Evidence: `E18`, `source table`.
-- How this triggered review: Data gap Treatment completion screen via test 'Direct CalOMS/DATAR treatment completion coverage'. Data status: restricted_or_non_machine_readable_source. Evidence: `E18`, `source table`.
-- Evidence refs: `E18`, `source table`
-- Source URI(s): [private source artifact]
-- System opinion: CalDS flags this as a data blocker because The California Department of Health Care Services CalOMS/DATAR public page was probed, but this run did not recover a machine-readable provider/county treatment completion table. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E18`, `source table`.
+- What CalDS found: The California Department of Health Care Services CalOMS/DATAR public page was probed, but this run did not recover a machine-readable provider/county treatment completion table. Evidence: `E18`.
+- When/where: subject: Case-wide Evidence: `E18`.
+- Why this row is here: Data gap Treatment completion screen matched the implemented check: Direct CalOMS/DATAR treatment completion coverage. Source status: restricted_or_non_machine_readable_source. Evidence: `E18`.
+- Source access: Use the evidence labels for the source ledger; no public source URL is attached directly to this row. Evidence: `E18`.
+- System opinion: CalDS flags this as a data blocker because The California Department of Health Care Services CalOMS/DATAR public page was probed, but this run did not recover a machine-readable provider/county treatment completion table. Without the missing source, the system cannot responsibly downgrade or clear the issue. Evidence: `E18`.
 - Why this matters: A missing source can hide the answer either way; the system keeps the issue open until the gap is resolved.
-- What this flags: Use public reports or a governed data request before judging spend-versus-treatment-completion performance. Evidence: `E18`, `source table`.
+- What this flags: Use public reports or a governed data request before judging spend-versus-treatment-completion performance. Evidence: `E18`.
 - What this does not prove: It does not prove a substantive issue; it identifies a source gap that blocks stronger review.
 - Human next step: Collect the missing source named in the row and rerun the matrix before upgrading the signal.
 - Caveat: MAT membership and county outcomes are context; direct treatment completion data remains unavailable in this run.
@@ -2035,15 +1958,15 @@ Use this ledger to move from the readable case file back to source records. The 
 | `E09` | `evidence_06396cf5cd604958` | `dhcs_adverse_status_page_manifest` | California Department of Health Care Services adverse-status page manifest | https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx | 2025-10-16 | `20071a8d1f771941e1742d883e17ad7ae91759dda2d5cd987ee204e1ce839f25` |
 | `E10` | `evidence_67f61e0d157e345b` | `dhcs_adverse_status_source_discovery_gap` | California Department of Health Care Services adverse-status source discovery | [private source artifact] | 2026-04-24 | `ee95326a3e5ed3774442be0a91230e099aa69302d8547b234c6b6cc5de958f60` |
 | `E11` | `evidence_f45288bd81080ea1` | `county_monitoring_tarzana_dmh_2022` | County contract or monitoring source | https://file.lacounty.gov/SDSInter/auditor/cmr/1124357_2022-05-13TarzanaTreatmentCentersInc-ADepartmentofMentalHealthProgramServicesProvider-FiscalComplianceReview.pdf | 2022-05-13 | `0d89d6c5f41a01bfb2aa1c4810ff9885bf3aa176f9572c6c5659edc3ba2d67e9` |
-| `E12` | `evidence_ec0b74633b49a5bd` | `source table` | Parsed Internal Revenue Service source table | [private source artifact] | 2026-04-24 | `70244e77e1628bc4350642e2d9bf5a5d892fd668867c5605dd8050cbb4b3b0f9` |
-| `E13` | `evidence_092248a6e53f7d01` | `source table` | Parsed Federal Audit Clearinghouse audit table | [private source artifact] | 2026-04-24 | `3dc8c8b88652e2cfeef1697c8d8344df9ed77c512956400f4cc427e1023ba5f1` |
-| `E14` | `evidence_8dfb7fc1cb2a75ce` | `source table` | Parsed Federal Audit Clearinghouse award table | [private source artifact] | 2026-04-24 | `3d9c67fa7d86902b6098d0fe75abd0b7c37d2a96a417a7a5cc0d212e97b8e971` |
-| `E15` | `evidence_dfbbcee28e6ef7fa` | `source table` | Parsed California Department of Health Care Services status table | [private source artifact] | 2026-04-24 | `d27321fe5e710c500940fd57268974e94da44c45850898245b3090494c671629` |
-| `E16` | `evidence_0cd635f36c5cc6ee` | `source table` | Parsed source document text index | [private source artifact] | 2026-04-24 | `8b0cebf1e444fed4f803fa2e0d9f46421a3dc3bb7ecee282cd74ccba7d877eb5` |
+| `E12` | `evidence_ec0b74633b49a5bd` | `parsed source dataset` | Parsed Internal Revenue Service dataset | [private source artifact] | 2026-04-24 | `70244e77e1628bc4350642e2d9bf5a5d892fd668867c5605dd8050cbb4b3b0f9` |
+| `E13` | `evidence_092248a6e53f7d01` | `parsed source dataset` | Parsed Federal Audit Clearinghouse audit dataset | [private source artifact] | 2026-04-24 | `3dc8c8b88652e2cfeef1697c8d8344df9ed77c512956400f4cc427e1023ba5f1` |
+| `E14` | `evidence_8dfb7fc1cb2a75ce` | `parsed source dataset` | Parsed Federal Audit Clearinghouse award dataset | [private source artifact] | 2026-04-24 | `3d9c67fa7d86902b6098d0fe75abd0b7c37d2a96a417a7a5cc0d212e97b8e971` |
+| `E15` | `evidence_dfbbcee28e6ef7fa` | `parsed source dataset` | Parsed California Department of Health Care Services status dataset | [private source artifact] | 2026-04-24 | `d27321fe5e710c500940fd57268974e94da44c45850898245b3090494c671629` |
+| `E16` | `evidence_0cd635f36c5cc6ee` | `parsed source dataset` | Parsed source document text index | [private source artifact] | 2026-04-24 | `8b0cebf1e444fed4f803fa2e0d9f46421a3dc3bb7ecee282cd74ccba7d877eb5` |
 | `E17` | `evidence_bed9b2a3601e5f1a` | `healthright_services` | Organization service page | https://www.healthright360.org/our-services/substance-use-disorder/ | 2025-09-01 | `e561177cb02ad7616f3eaa1a290d677d5d23cfed23b7dd1e41683f090e624eee` |
-| `E18` | `evidence_910819e82ade8b13` | `source table` | Parsed official outcome source table | [private source artifact] | 2026-04-24 | `5e9cf8b9a174e5034846036b88c2d56d7997ce4fa6f700bb689bd27b3c6281cb` |
-| `E19` | `evidence_c01d627498d0bbaf` | `source table` | Parsed spend-versus-results join | [private source artifact] | 2026-04-24 | `046efc346991cb37451bf185e04819510dc4cc78b8ba85f0f8e74c4e5a4cfb66` |
-| `E20` | `evidence_e4140befe06315a5` | `source table` | Parsed public statement source table | [private source artifact] | 2026-04-24 | `d47eaf90ad8f5ac24d965cf3b2c6ca936ca2d804c5c559a402bf9fd54e12c76c` |
+| `E18` | `evidence_910819e82ade8b13` | `parsed source dataset` | Parsed official outcome source dataset | [private source artifact] | 2026-04-24 | `5e9cf8b9a174e5034846036b88c2d56d7997ce4fa6f700bb689bd27b3c6281cb` |
+| `E19` | `evidence_c01d627498d0bbaf` | `parsed source dataset` | Parsed spend-versus-results join | [private source artifact] | 2026-04-24 | `046efc346991cb37451bf185e04819510dc4cc78b8ba85f0f8e74c4e5a4cfb66` |
+| `E20` | `evidence_e4140befe06315a5` | `parsed source dataset` | Parsed public statement source dataset | [private source artifact] | 2026-04-24 | `d47eaf90ad8f5ac24d965cf3b2c6ca936ca2d804c5c559a402bf9fd54e12c76c` |
 | `E21` | `evidence_c55d81ce9edb821c` | `public_statements_tarzana` | Public statement source | https://www.tarzanatc.org/who-we-are/meet-us/ | 2026-04-24 | `cfadc2eb3629435548b6db1ebeacf0720954221aca6f72f07652ad5a3d107369` |
 | `E22` | `evidence_74436d012badbc38` | `fac_general_2016_06_census_0000126607` | Federal Audit Clearinghouse audit source document | https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000126607 | 2016-12-28 | `0d53b488c9ac250bc85dbae7d8834af7c1018d3174d31b13027a09ad41919f66` |
 | `E23` | `evidence_cf74deb80f859ea6` | `fac_general_2017_06_census_0000119575` | Federal Audit Clearinghouse audit source document | https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575 | 2018-01-17 | `d7f4354da7fb07838bb2de44a9c7a93db5b508733bd17b138c1be8b10a7bca54` |
@@ -2102,13 +2025,13 @@ Use this ledger to move from the readable case file back to source records. The 
 | Internal Revenue Service Form 990 summary | 1 |
 | Organization service page | 1 |
 | Public statement source | 1 |
-| Parsed California Department of Health Care Services status table | 1 |
-| Parsed Federal Audit Clearinghouse audit table | 1 |
-| Parsed Federal Audit Clearinghouse award table | 1 |
-| Parsed Internal Revenue Service source table | 1 |
-| Parsed official outcome source table | 1 |
+| Parsed California Department of Health Care Services status dataset | 1 |
+| Parsed Federal Audit Clearinghouse audit dataset | 1 |
+| Parsed Federal Audit Clearinghouse award dataset | 1 |
+| Parsed Internal Revenue Service dataset | 1 |
+| Parsed official outcome source dataset | 1 |
 | Parsed source document text index | 1 |
-| Parsed public statement source table | 1 |
+| Parsed public statement source dataset | 1 |
 | Parsed spend-versus-results join | 1 |
 
 ## 9. Human-Only Next Steps

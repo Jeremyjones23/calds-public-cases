@@ -22,7 +22,7 @@
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133"
       ],
-      "title": "Social Model Recovery Systems Inc 2024 Form 990 summary"
+      "title": "Internal Revenue Service Form 990 summary table"
     },
     {
       "active_signal_count": 2,
@@ -45,7 +45,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
       ],
-      "title": "Internal Revenue Service Form 990 machine-readable filing data: Tarzana Treatment Centers Inc tax period 2023"
+      "title": "Internal Revenue Service Form 990 summary table"
     },
     {
       "active_signal_count": 3,
@@ -70,7 +70,7 @@
         "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
         "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv"
       ],
-      "title": "Internal Revenue Service Form 990 machine-readable filing data manifest gap: Tarzana Treatment Centers Inc tax period 2025"
+      "title": "Internal Revenue Service Form 990 summary table"
     },
     {
       "active_signal_count": 3,
@@ -96,7 +96,7 @@
         "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
         "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv"
       ],
-      "title": "HealthRIGHT 360 2024 Form 990 rendered full-text fallback"
+      "title": "Internal Revenue Service Form 990 summary table"
     },
     {
       "active_signal_count": 3,
@@ -119,7 +119,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2016"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 1,
@@ -142,7 +142,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv"
       ],
-      "title": "Federal Audit Clearinghouse findings rows filtered to target Employer Identification Number reports"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 1,
@@ -165,7 +165,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv"
       ],
-      "title": "Federal Audit Clearinghouse federal award ledger rows filtered to target Employer Identification Number reports"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 4,
@@ -188,7 +188,7 @@
       "source_urls": [
         "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
       ],
-      "title": "California Department of Health Care Services substance use disorder facility-status matches: Social Model Recovery Systems Inc"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 2,
@@ -274,10 +274,10 @@
       "retrieval_relevance": 0.33,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: irs 990 financials.json",
-      "source_role": "Upstream public source for a parsed Parsed Internal Revenue Service source table evidence row.",
+      "source_role": "Upstream public source for a parsed Parsed Internal Revenue Service dataset evidence row.",
       "source_type": "source_extraction_irs_990_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed Internal Revenue Service source table",
+      "source_type_label": "Parsed Internal Revenue Service dataset",
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133",
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
@@ -309,7 +309,7 @@
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913",
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Parsed Internal Revenue Service Form 990 machine-readable filing data financial fields for target entities"
+      "title": "Internal Revenue Service Form 990 summary table"
     },
     {
       "active_signal_count": 3,
@@ -325,10 +325,10 @@
       "retrieval_relevance": 0.372,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: fac audit summary.json",
-      "source_role": "Upstream public source for a parsed Parsed Federal Audit Clearinghouse audit table evidence row.",
+      "source_role": "Upstream public source for a parsed Parsed Federal Audit Clearinghouse audit dataset evidence row.",
       "source_type": "source_extraction_fac_audit_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed Federal Audit Clearinghouse audit table",
+      "source_type_label": "Parsed Federal Audit Clearinghouse audit dataset",
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133",
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
@@ -360,7 +360,7 @@
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913",
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Parsed Federal Audit Clearinghouse audit-control and findings table for target entities"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 2,
@@ -376,10 +376,10 @@
       "retrieval_relevance": 0.33,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: fac audit summary.json",
-      "source_role": "Upstream public source for a parsed Parsed Federal Audit Clearinghouse award table evidence row.",
+      "source_role": "Upstream public source for a parsed Parsed Federal Audit Clearinghouse award dataset evidence row.",
       "source_type": "source_extraction_fac_award_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed Federal Audit Clearinghouse award table",
+      "source_type_label": "Parsed Federal Audit Clearinghouse award dataset",
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133",
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
@@ -411,7 +411,7 @@
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913",
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Parsed Federal Audit Clearinghouse federal award program totals for target entities"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -427,10 +427,10 @@
       "retrieval_relevance": 0.288,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: dhcs facility status summary.json",
-      "source_role": "Upstream public source for a parsed Parsed California Department of Health Care Services status table evidence row.",
+      "source_role": "Upstream public source for a parsed Parsed California Department of Health Care Services status dataset evidence row.",
       "source_type": "source_extraction_dhcs_status_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed California Department of Health Care Services status table",
+      "source_type_label": "Parsed California Department of Health Care Services status dataset",
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133",
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
@@ -462,7 +462,7 @@
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913",
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Parsed California Department of Health Care Services facility-status summary for target entities"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -514,7 +514,7 @@
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124840",
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927"
       ],
-      "title": "Parsed source document text index for Federal Audit Clearinghouse audits and county monitoring records"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 0,
@@ -553,10 +553,10 @@
       "retrieval_relevance": 0.247,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: official outcome source manifest.json",
-      "source_role": "Upstream public source for a parsed Parsed official outcome source table evidence row.",
+      "source_role": "Upstream public source for a parsed Parsed official outcome source dataset evidence row.",
       "source_type": "source_extraction_official_outcome_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed official outcome source table",
+      "source_type_label": "Parsed official outcome source dataset",
       "source_urls": [
         "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
         "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
@@ -618,10 +618,10 @@
       "retrieval_relevance": 0.205,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: public statement manifest.json",
-      "source_role": "Upstream public source for a parsed Parsed public statement source table evidence row.",
+      "source_role": "Upstream public source for a parsed Parsed public statement source dataset evidence row.",
       "source_type": "source_extraction_public_statement_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed public statement source table",
+      "source_type_label": "Parsed public statement source dataset",
       "source_urls": [
         "https://www.tarzanatc.org/who-we-are/meet-us/",
         "https://www.tarzanatc.org/who-we-are/our-history/",
@@ -693,7 +693,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2016"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -716,7 +716,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2017"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -739,7 +739,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2017"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -762,7 +762,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2018"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -785,7 +785,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2018"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 4,
@@ -808,7 +808,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2019"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -831,7 +831,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2019"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 4,
@@ -854,7 +854,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2020"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -877,7 +877,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2020"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -900,7 +900,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2021"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -923,7 +923,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2021"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -946,7 +946,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2022"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -969,7 +969,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2023"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 4,
@@ -992,7 +992,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2023"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1015,7 +1015,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2024"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 4,
@@ -1038,7 +1038,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000360511"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2024"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1061,7 +1061,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Tarzana Treatment Centers Inc 2025"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 4,
@@ -1084,7 +1084,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000408150"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Social Model Recovery Systems Inc 2025"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 2,
@@ -1107,7 +1107,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv"
       ],
-      "title": "Internal Revenue Service Form 990 machine-readable filing data: Tarzana Treatment Centers Inc tax period 2024"
+      "title": "Internal Revenue Service Form 990 summary table"
     },
     {
       "active_signal_count": 2,
@@ -1130,7 +1130,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
       ],
-      "title": "Internal Revenue Service Form 990 machine-readable filing data: Social Model Recovery Systems Inc tax period 2023"
+      "title": "Internal Revenue Service Form 990 summary table"
     },
     {
       "active_signal_count": 2,
@@ -1153,7 +1153,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv"
       ],
-      "title": "Internal Revenue Service Form 990 machine-readable filing data: Social Model Recovery Systems Inc tax period 2024"
+      "title": "Internal Revenue Service Form 990 summary table"
     },
     {
       "active_signal_count": 2,
@@ -1176,7 +1176,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv"
       ],
-      "title": "Internal Revenue Service Form 990 machine-readable filing data: Social Model Recovery Systems Inc tax period 2025"
+      "title": "Internal Revenue Service Form 990 summary table"
     },
     {
       "active_signal_count": 3,
@@ -1199,7 +1199,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit record: HealthRIGHT 360 2016"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1222,7 +1222,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124840"
       ],
-      "title": "Federal Audit Clearinghouse audit record: CRI-Help Inc 2016"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1245,7 +1245,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Behavioral Health Services Inc 2016"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 4,
@@ -1268,7 +1268,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000246480"
       ],
-      "title": "Federal Audit Clearinghouse audit record: HealthRIGHT 360 2016"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1291,7 +1291,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit record: HealthRIGHT 360 2017"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1314,7 +1314,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124840"
       ],
-      "title": "Federal Audit Clearinghouse audit record: CRI-Help Inc 2017"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 4,
@@ -1337,7 +1337,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Behavioral Health Services Inc 2017"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1360,7 +1360,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit record: HealthRIGHT 360 2018"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1383,7 +1383,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124840"
       ],
-      "title": "Federal Audit Clearinghouse audit record: CRI-Help Inc 2018"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 5,
@@ -1406,7 +1406,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Behavioral Health Services Inc 2018"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1429,7 +1429,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000247998"
       ],
-      "title": "Federal Audit Clearinghouse audit record: WestCare California Inc 2018"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1452,7 +1452,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit record: HealthRIGHT 360 2019"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1475,7 +1475,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124840"
       ],
-      "title": "Federal Audit Clearinghouse audit record: CRI-Help Inc 2019"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 5,
@@ -1498,7 +1498,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Behavioral Health Services Inc 2019"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1521,7 +1521,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000247998"
       ],
-      "title": "Federal Audit Clearinghouse audit record: WestCare California Inc 2019"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 4,
@@ -1544,7 +1544,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000249434"
       ],
-      "title": "Federal Audit Clearinghouse audit record: Phoenix Houses Of California Inc 2019"
+      "title": "Federal Audit Clearinghouse audit summary table"
     },
     {
       "active_signal_count": 3,
@@ -1567,7 +1567,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit record: HealthRIGHT 360 2020"
+      "title": "Federal Audit Clearinghouse audit summary table"
     }
   ]
 }
