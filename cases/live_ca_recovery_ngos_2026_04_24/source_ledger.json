@@ -22,7 +22,7 @@
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133"
       ],
-      "title": "Internal Revenue Service Form 990 summary table"
+      "title": "Internal Revenue Service Form 990 summary source collection"
     },
     {
       "active_signal_count": 2,
@@ -45,7 +45,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
       ],
-      "title": "Internal Revenue Service Form 990 summary table"
+      "title": "Internal Revenue Service Form 990 summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -70,7 +70,7 @@
         "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
         "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv"
       ],
-      "title": "Internal Revenue Service Form 990 summary table"
+      "title": "Internal Revenue Service Form 990 summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -96,7 +96,7 @@
         "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
         "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv"
       ],
-      "title": "Internal Revenue Service Form 990 summary table"
+      "title": "Internal Revenue Service Form 990 summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -119,13 +119,13 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 1,
       "anchor": "evidence-E06",
       "checksum": "814cff32cdf4b21fc65a278cf63763cf7ff35d46bdbcd98be07f8719181f973c",
-      "excerpt": "Filtered Federal Audit Clearinghouse findings table rows for target report IDs. Row count: 8.",
+      "excerpt": "Federal Audit Clearinghouse findings records were filtered to the target audit reports. The filtered set contains 8 finding record(s).",
       "internal_evidence_id": "evidence_67a8fff3ad9e8165",
       "link_note": "",
       "link_status": "external_source_linked",
@@ -135,20 +135,20 @@
       "retrieval_relevance": 0.247,
       "source_exactness": "Exact source link: the URL is the evidence item's direct public source reference.",
       "source_reference": "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv",
-      "source_role": "Direct public source for a Federal Audit Clearinghouse findings table evidence row.",
+      "source_role": "Direct public source for a Federal Audit Clearinghouse findings records evidence row.",
       "source_type": "fac_findings",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Federal Audit Clearinghouse findings table",
+      "source_type_label": "Federal Audit Clearinghouse findings records",
       "source_urls": [
         "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 1,
       "anchor": "evidence-E07",
       "checksum": "29ff42636ec4eb8b779b05617a3e6f55cd8d1c12765f64f9097a2572573aeab0",
-      "excerpt": "Filtered Federal Audit Clearinghouse federal_awards table rows for target report IDs. Row count: 976.",
+      "excerpt": "Federal Audit Clearinghouse federal-award records were filtered to the target audit reports. The filtered set contains 976 award record(s).",
       "internal_evidence_id": "evidence_571faf39d80ecdb3",
       "link_note": "",
       "link_status": "external_source_linked",
@@ -158,14 +158,14 @@
       "retrieval_relevance": 0.288,
       "source_exactness": "Exact source link: the URL is the evidence item's direct public source reference.",
       "source_reference": "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv",
-      "source_role": "Direct public source for a Federal Audit Clearinghouse federal awards table evidence row.",
+      "source_role": "Direct public source for a Federal Audit Clearinghouse federal awards records evidence row.",
       "source_type": "fac_federal_awards",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Federal Audit Clearinghouse federal awards table",
+      "source_type_label": "Federal Audit Clearinghouse federal awards records",
       "source_urls": [
         "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 4,
@@ -188,13 +188,13 @@
       "source_urls": [
         "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 2,
       "anchor": "evidence-E09",
       "checksum": "20071a8d1f771941e1742d883e17ad7ae91759dda2d5cd987ee204e1ce839f25",
-      "excerpt": "The California Department of Health Care Services page identifies an adverse-status list, but the page did not expose table rows in the static HTML fetched during this run.",
+      "excerpt": "The California Department of Health Care Services page identifies an adverse-status list, but the page did not expose source records in the static HTML fetched during this run.",
       "internal_evidence_id": "evidence_06396cf5cd604958",
       "link_note": "",
       "link_status": "external_source_linked",
@@ -264,7 +264,7 @@
       "active_signal_count": 3,
       "anchor": "evidence-E12",
       "checksum": "70244e77e1628bc4350642e2d9bf5a5d892fd668867c5605dd8050cbb4b3b0f9",
-      "excerpt": "Deterministic parser output from downloaded Internal Revenue Service Form 990 machine-readable filing data files. Raw machine-readable filing data remains the controlling source. | entity | ein | tax_period | tax_period_year | total_revenue | total_expenses | total_assets_eoy | net_assets_eoy | government_grants | top_compensation_person | top_compensation_title | top_compensation_total | salaries_comp_benefits_current_year | total_employee_count | political_campaign_activity | lobbying_activities | schedule_l_present | downloaded | | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---...",
+      "excerpt": "Internal Revenue Service Form 990 summary source collection. This source collection contains Form 990 fields used for revenue, government-grant share, expense, payroll, and compensation checks.",
       "internal_evidence_id": "evidence_ec0b74633b49a5bd",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run. Publication link repair replaced 1 stale or renamed public URL(s) with working public source page(s).",
       "link_status": "external_source_linked",
@@ -274,10 +274,10 @@
       "retrieval_relevance": 0.33,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: irs 990 financials.json",
-      "source_role": "Upstream public source for a parsed Parsed Internal Revenue Service dataset evidence row.",
+      "source_role": "Upstream public source for a parsed Internal Revenue Service source collection evidence row.",
       "source_type": "source_extraction_irs_990_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed Internal Revenue Service dataset",
+      "source_type_label": "Internal Revenue Service source collection",
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133",
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
@@ -309,13 +309,13 @@
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913",
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Internal Revenue Service Form 990 summary table"
+      "title": "Internal Revenue Service Form 990 summary source collection"
     },
     {
       "active_signal_count": 3,
       "anchor": "evidence-E13",
       "checksum": "3dc8c8b88652e2cfeef1697c8d8344df9ed77c512956400f4cc427e1023ba5f1",
-      "excerpt": "Deterministic parser output from Federal Audit Clearinghouse general, findings, federal_awards source data tables, with downloaded audit source document presence. Audit source documents and Federal Audit Clearinghouse source data table rows remain the controlling sources. | entity | ein | audit_years | report_count | latest_report_id | audit_pdf_downloaded_count | not_low_risk_years | material_weakness_years | internal_control_deficiency_years | fac_findings_row_count | fac_award_amount_total | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | WestCare California Inc |...",
+      "excerpt": "Federal Audit Clearinghouse audit summary source collection. This source collection contains federal audit fields used to check material weaknesses, internal-control findings, low-risk status, and audit finding counts.",
       "internal_evidence_id": "evidence_092248a6e53f7d01",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run. Publication link repair replaced 1 stale or renamed public URL(s) with working public source page(s).",
       "link_status": "external_source_linked",
@@ -325,10 +325,10 @@
       "retrieval_relevance": 0.372,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: fac audit summary.json",
-      "source_role": "Upstream public source for a parsed Parsed Federal Audit Clearinghouse audit dataset evidence row.",
+      "source_role": "Upstream public source for a parsed Federal Audit Clearinghouse audit source collection evidence row.",
       "source_type": "source_extraction_fac_audit_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed Federal Audit Clearinghouse audit dataset",
+      "source_type_label": "Federal Audit Clearinghouse audit source collection",
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133",
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
@@ -360,13 +360,13 @@
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913",
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 2,
       "anchor": "evidence-E14",
       "checksum": "3d9c67fa7d86902b6098d0fe75abd0b7c37d2a96a417a7a5cc0d212e97b8e971",
-      "excerpt": "Deterministic parser output from Federal Audit Clearinghouse federal_awards rows filtered to matched reports. Amount totals support funding-trace review only. | entity | federal_program_name | amount_expended_total | | --- | --- | --- | | Tarzana Treatment Centers Inc | MEDICAL ASSISTANCE PROGRAM | 110858168 | | CRI-Help Inc | MEDICAL ASSISTANCE PROGRAM | 97783530 | | HealthRIGHT 360 | BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE | 85463667 | | Social Model Recovery Systems Inc | BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE | 81561046 | | HealthRIGHT 360 |...",
+      "excerpt": "Federal Audit Clearinghouse award source collection. This source collection contains federal audit award totals used to understand public-funding exposure.",
       "internal_evidence_id": "evidence_8dfb7fc1cb2a75ce",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run. Publication link repair replaced 1 stale or renamed public URL(s) with working public source page(s).",
       "link_status": "external_source_linked",
@@ -376,10 +376,10 @@
       "retrieval_relevance": 0.33,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: fac audit summary.json",
-      "source_role": "Upstream public source for a parsed Parsed Federal Audit Clearinghouse award dataset evidence row.",
+      "source_role": "Upstream public source for a parsed Federal Audit Clearinghouse award source collection evidence row.",
       "source_type": "source_extraction_fac_award_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed Federal Audit Clearinghouse award dataset",
+      "source_type_label": "Federal Audit Clearinghouse award source collection",
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133",
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
@@ -411,13 +411,13 @@
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913",
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse award source collection"
     },
     {
       "active_signal_count": 3,
       "anchor": "evidence-E15",
       "checksum": "d27321fe5e710c500940fd57268974e94da44c45850898245b3090494c671629",
-      "excerpt": "Deterministic parser output from California Department of Health Care Services substance use disorder Facilities Licensing and Certification Division status rows. Facility rows are facility-level context, not entity-level findings. | entity | facility_rows | status_counts | service_type_counts | counties | closed_record_ids | | --- | --- | --- | --- | --- | --- | | Behavioral Health Services Inc | 65 | Active:40, Closed:25 | DET:1, DPH-DETOX:2, NON:50, NON-DETOX:2, RES:3, RES-DETOX:7 | Alpine County, Amador County, Calaveras County, Contra Costa County, Fresno County, Los Angeles County,...",
+      "excerpt": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
       "internal_evidence_id": "evidence_dfbbcee28e6ef7fa",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run. Publication link repair replaced 1 stale or renamed public URL(s) with working public source page(s).",
       "link_status": "external_source_linked",
@@ -427,10 +427,10 @@
       "retrieval_relevance": 0.288,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: dhcs facility status summary.json",
-      "source_role": "Upstream public source for a parsed Parsed California Department of Health Care Services status dataset evidence row.",
+      "source_role": "Upstream public source for a parsed California Department of Health Care Services status source collection evidence row.",
       "source_type": "source_extraction_dhcs_status_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed California Department of Health Care Services status dataset",
+      "source_type_label": "California Department of Health Care Services status source collection",
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133",
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
@@ -462,13 +462,13 @@
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913",
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
       "anchor": "evidence-E16",
       "checksum": "8b0cebf1e444fed4f803fa2e0d9f46421a3dc3bb7ecee282cd74ccba7d877eb5",
-      "excerpt": "Deterministic text extraction index from downloaded Federal Audit Clearinghouse audit source documents and county monitoring or contract source documents. Snippets are navigation aids; raw source documents remain controlling sources. Federal Audit Clearinghouse audit source documents indexed: 64 of 64. County source documents indexed: 8 of 8. Federal Audit Clearinghouse audit source documents with layout extraction: 64 of 64. County source documents with layout extraction: 8 of 8. OCR engine available: False. | document_kind | source_id | page_count | extracted_char_count | keyword_count |...",
+      "excerpt": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
       "internal_evidence_id": "evidence_0cd635f36c5cc6ee",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run.",
       "link_status": "derived_external_source_linked",
@@ -514,7 +514,7 @@
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124840",
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 0,
@@ -543,7 +543,7 @@
       "active_signal_count": 2,
       "anchor": "evidence-E18",
       "checksum": "5e9cf8b9a174e5034846036b88c2d56d7997ce4fa6f700bb689bd27b3c6281cb",
-      "excerpt": "Official outcome source acquisition manifest. Sources are deterministic inputs for spend-versus-results screening; they do not attribute county outcomes to any provider. | source | title | fetched | row_count | join_grain | source_url | error | | --- | --- | --- | --- | --- | --- | --- | | dhcs_caloms | dhcs caloms | True | 0 | page/text | https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx | | | dhcs_sus_rev_nov | dhcs sus rev nov | True | 0 | page/text | https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx | | | dhcs_suspension_revocation | dhcs suspension...",
+      "excerpt": "Official homelessness outcome source collection. This source collection contains official homelessness outcome measures used for county or Continuum of Care context.",
       "internal_evidence_id": "evidence_910819e82ade8b13",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run. Publication link repair replaced 3 stale or renamed public URL(s) with working public source page(s).",
       "link_status": "external_source_linked",
@@ -553,10 +553,10 @@
       "retrieval_relevance": 0.247,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: official outcome source manifest.json",
-      "source_role": "Upstream public source for a parsed Parsed official outcome source dataset evidence row.",
+      "source_role": "Upstream public source for a parsed Official outcome source collection evidence row.",
       "source_type": "source_extraction_official_outcome_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed official outcome source dataset",
+      "source_type_label": "Official outcome source collection",
       "source_urls": [
         "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
         "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
@@ -569,13 +569,13 @@
         "https://lab.data.ca.gov/dataset/medication-assisted-treatment-in-medi-cal-for-opioid-use-disorders-by-county",
         "https://data-openjustice.doj.ca.gov/sites/default/files/dataset/2025-07/Crimes_and_Clearances_with_Arson-1985-2024.csv"
       ],
-      "title": "Official outcome-source manifest for spend-versus-results review"
+      "title": "Official homelessness outcome source collection"
     },
     {
       "active_signal_count": 3,
       "anchor": "evidence-E19",
       "checksum": "046efc346991cb37451bf185e04819510dc4cc78b8ba85f0f8e74c4e5a4cfb66",
-      "excerpt": "Deterministic join from parsed Internal Revenue Service spending/grant growth, California Department of Health Care Services facility counties/capacity, and official county or Continuum of Care outcome series. County outcomes are context, not provider-attributable results. | entity | county | risk_level | outcome_flags | spending_growth_pct | revenue_growth_pct | government_grant_growth_pct | facility_total_capacity | | --- | --- | --- | --- | --- | --- | --- | --- | | Tarzana Treatment Centers Inc | Los Angeles | Medium | drug overdose death rate up 69.6% | 14.434219036667493 |...",
+      "excerpt": "Spend-versus-results context source collection. This source collection joins state-award geography with official outcome movement so reviewers can decide whether provider-specific outcome records are needed.",
       "internal_evidence_id": "evidence_c01d627498d0bbaf",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run. Publication link repair replaced 5 stale or renamed public URL(s) with working public source page(s).",
       "link_status": "external_source_linked",
@@ -585,10 +585,10 @@
       "retrieval_relevance": 0.247,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: outcome join summary.json",
-      "source_role": "Upstream public source for a parsed Parsed spend-versus-results join evidence row.",
+      "source_role": "Upstream public source for a parsed Spend-versus-results source collection evidence row.",
       "source_type": "source_extraction_spend_vs_results_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed spend-versus-results join",
+      "source_type_label": "Spend-versus-results source collection",
       "source_urls": [
         "https://projects.propublica.org/nonprofits/organizations/954079133",
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
@@ -602,13 +602,13 @@
         "https://data.chhs.ca.gov/dataset/county-health-status-profiles",
         "https://lab.data.ca.gov/dataset/homelessness-demographics"
       ],
-      "title": "Deterministic spend-versus-results join for target entities and counties"
+      "title": "Spend-versus-results context source collection"
     },
     {
       "active_signal_count": 3,
       "anchor": "evidence-E20",
       "checksum": "d47eaf90ad8f5ac24d965cf3b2c6ca936ca2d804c5c559a402bf9fd54e12c76c",
-      "excerpt": "are California Inc | True | advocacy; criminal justice; evidence-based; homelessness; housing; outcomes | https://westcare.com/leadership/senior/ | | | WestCare California Inc | True | advocacy; criminal justice; housing; outcomes | https://westcare.com/express/ | | | WestCare California Inc | True | criminal justice; housing; outcomes | https://westcare.com/impact-report/ | | | Behavioral Health Services Inc | True | | https://bhs-inc.org/ | | | Behavioral Health Services Inc | True | | https://www.bhs-inc.org/about-us | | | Behavioral Health Services Inc | True | homelessness; housing |...",
+      "excerpt": "Public statement review source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
       "internal_evidence_id": "evidence_e4140befe06315a5",
       "link_note": "This evidence item is a parsed local artifact; external links point to upstream official or public sources used by the run. Publication link repair replaced 4 stale or renamed public URL(s) with working public source page(s).",
       "link_status": "external_source_linked",
@@ -618,10 +618,10 @@
       "retrieval_relevance": 0.205,
       "source_exactness": "Upstream source: the link opens the official/public dataset or document family used to create the parsed row, not necessarily the exact local row file.",
       "source_reference": "derived private source artifact: public statement manifest.json",
-      "source_role": "Upstream public source for a parsed Parsed public statement source dataset evidence row.",
+      "source_role": "Upstream public source for a parsed Public statement source collection evidence row.",
       "source_type": "source_extraction_public_statement_table",
       "source_type_count_in_bundle": 1,
-      "source_type_label": "Parsed public statement source dataset",
+      "source_type_label": "Public statement source collection",
       "source_urls": [
         "https://www.tarzanatc.org/who-we-are/meet-us/",
         "https://www.tarzanatc.org/who-we-are/our-history/",
@@ -647,7 +647,7 @@
         "https://phoenixhouseca.org/annual-reports/",
         "https://phoenixhouseca.org/impact-annual-reports/"
       ],
-      "title": "Official and public statement page harvest for target entities"
+      "title": "Public statement review source collection"
     },
     {
       "active_signal_count": 3,
@@ -693,7 +693,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -716,7 +716,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -739,7 +739,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -762,7 +762,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -785,7 +785,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 4,
@@ -808,7 +808,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -831,7 +831,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 4,
@@ -854,7 +854,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -877,7 +877,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -900,7 +900,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -923,7 +923,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000126607"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -946,7 +946,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119575"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -969,7 +969,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 4,
@@ -992,7 +992,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1015,7 +1015,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 4,
@@ -1038,7 +1038,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000360511"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1061,7 +1061,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 4,
@@ -1084,7 +1084,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000408150"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 2,
@@ -1107,7 +1107,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv"
       ],
-      "title": "Internal Revenue Service Form 990 summary table"
+      "title": "Internal Revenue Service Form 990 summary source collection"
     },
     {
       "active_signal_count": 2,
@@ -1130,7 +1130,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
       ],
-      "title": "Internal Revenue Service Form 990 summary table"
+      "title": "Internal Revenue Service Form 990 summary source collection"
     },
     {
       "active_signal_count": 2,
@@ -1153,7 +1153,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv"
       ],
-      "title": "Internal Revenue Service Form 990 summary table"
+      "title": "Internal Revenue Service Form 990 summary source collection"
     },
     {
       "active_signal_count": 2,
@@ -1176,7 +1176,7 @@
       "source_urls": [
         "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv"
       ],
-      "title": "Internal Revenue Service Form 990 summary table"
+      "title": "Internal Revenue Service Form 990 summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1199,7 +1199,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1222,7 +1222,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124840"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1245,7 +1245,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 4,
@@ -1268,7 +1268,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000246480"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1291,7 +1291,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1314,7 +1314,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124840"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 4,
@@ -1337,7 +1337,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1360,7 +1360,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1383,7 +1383,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124840"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 5,
@@ -1406,7 +1406,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1429,7 +1429,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000247998"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1452,7 +1452,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1475,7 +1475,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124840"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 5,
@@ -1498,7 +1498,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1521,7 +1521,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000247998"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 4,
@@ -1544,7 +1544,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000249434"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     },
     {
       "active_signal_count": 3,
@@ -1567,7 +1567,7 @@
       "source_urls": [
         "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774"
       ],
-      "title": "Federal Audit Clearinghouse audit summary table"
+      "title": "Federal Audit Clearinghouse audit summary source collection"
     }
   ]
 }
