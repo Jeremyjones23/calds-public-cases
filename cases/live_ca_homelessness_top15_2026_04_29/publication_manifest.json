@@ -2,9 +2,9 @@
   "case_id": "live_ca_homelessness_top15_2026_04_29",
   "citation_verification": {
     "case_id": "live_ca_homelessness_top15_2026_04_29",
-    "checked_claim_count": 1381,
+    "checked_claim_count": 1346,
     "checks": [],
-    "created_at": "2026-05-01T16:58:17+00:00",
+    "created_at": "2026-05-02T22:44:41+00:00",
     "error_count": 0,
     "status": "PASS",
     "verification_id": "citation_verification_d3df184e0bc5b7d5",
@@ -16,10 +16,10 @@
     "index_html": "index.html",
     "source_ledger_json": "source_ledger.json"
   },
-  "generated_at": "2026-05-01T16:59:14+00:00",
+  "generated_at": "2026-05-02T22:44:46+00:00",
   "human_review_required": true,
   "link_integrity": {
-    "checked_url_count": 86,
+    "checked_url_count": 9,
     "checks": [
       {
         "check_id": "link_check_12a83b8ffd814ec0",
@@ -76,15 +76,6 @@
         "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip"
       },
       {
-        "check_id": "link_check_5efcdfb1e9aa8cea",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
-      },
-      {
         "check_id": "link_check_0f80936cefa686fa",
         "content_type": "application/pdf",
         "error": "",
@@ -92,24 +83,6 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
-      },
-      {
-        "check_id": "link_check_23f2b742e3500b68",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.hcd.ca.gov/funding/homekey",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.hcd.ca.gov/grants-and-funding/homekey/eligibility"
-      },
-      {
-        "check_id": "link_check_dc56b3c8bfc32243",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.hcd.ca.gov/grants-and-funding/homekey-plus/timeline-and-eligibility",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.hcd.ca.gov/grants-and-funding/homekey-plus/timeline-and-eligibility"
       },
       {
         "check_id": "link_check_c3484df4ab421f13",
@@ -121,748 +94,29 @@
         "url": "https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf"
       },
       {
-        "check_id": "link_check_66d03d74b19d7280",
+        "check_id": "link_check_5efcdfb1e9aa8cea",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://cityclerk.lacity.org/onlinedocs/2021/21-0112-S3_misc_6-16-23.pdf",
+        "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://cityclerk.lacity.org/onlinedocs/2021/21-0112-S3_misc_6-16-23.pdf"
-      },
-      {
-        "check_id": "link_check_e1f9018818ea8234",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://cityclerk.lacity.org/onlinedocs/2023/23-1022-s27_rpt_cao_2-10-26.pdf",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://cityclerk.lacity.org/onlinedocs/2023/23-1022-s27_rpt_cao_2-10-26.pdf"
-      },
-      {
-        "check_id": "link_check_7f5608f0d5e0b908",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc"
-      },
-      {
-        "check_id": "link_check_a1ff033489af6c41",
-        "content_type": "text/html",
-        "error": "",
-        "final_url": "https://bcsh.ca.gov/calich/hdis.html",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://bcsh.ca.gov/calich/hdis.html"
-      },
-      {
-        "check_id": "link_check_89b442b28347cea0",
-        "content_type": "text/csv",
-        "error": "",
-        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
-      },
-      {
-        "check_id": "link_check_315173aeb8c53daf",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/680301692",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/680301692"
-      },
-      {
-        "check_id": "link_check_b9560515942872f4",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/"
-      },
-      {
-        "check_id": "link_check_d17c52d0a0640195",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.irs.gov/charities-non-profits/form-990-series-downloads",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.irs.gov/charities-non-profits/form-990-series-downloads"
-      },
-      {
-        "check_id": "link_check_926a2435c42eba7d",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads"
-      },
-      {
-        "check_id": "link_check_5fe9287d98c2d27e",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/943205085"
-      },
-      {
-        "check_id": "link_check_07031c89fc23b53e",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://servicefirstnc.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://servicefirstnc.org/"
-      },
-      {
-        "check_id": "link_check_07c29bb10764caa2",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/942837785",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/942837785"
-      },
-      {
-        "check_id": "link_check_829cbdc35de6748a",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/942777955",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/942777955"
-      },
-      {
-        "check_id": "link_check_045a2da65aa5d46f",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/956054617",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/956054617"
-      },
-      {
-        "check_id": "link_check_687af2927125de2c",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/201892523",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/201892523"
-      },
-      {
-        "check_id": "link_check_6e108e4a6bdb100d",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/201892523.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/201892523.json"
-      },
-      {
-        "check_id": "link_check_d7f6675199e9a1a2",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/680367046",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/680367046"
-      },
-      {
-        "check_id": "link_check_f3d154b797f8c463",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://hopecoop.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://hopecoop.org/"
-      },
-      {
-        "check_id": "link_check_e39f163e0a55dee7",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf"
-      },
-      {
-        "check_id": "link_check_6e9333496c6f834f",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.irs.gov/statistics/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data"
-      },
-      {
-        "check_id": "link_check_defa46e1eaa5205f",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/272053273.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/272053273.json"
-      },
-      {
-        "check_id": "link_check_726d8360e94c2c1a",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/272053273",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/272053273"
-      },
-      {
-        "check_id": "link_check_5edb17e1327bfe98",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Hope+the+Mission&state%5Bid%5D=CA&c_code%5Bid%5D=3",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Hope+the+Mission&state%5Bid%5D=CA&c_code%5Bid%5D=3"
-      },
-      {
-        "check_id": "link_check_63ccbfbf59cca266",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/956054617.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/956054617.json"
-      },
-      {
-        "check_id": "link_check_1783ab47d00aa09c",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Weingart+Center+Association&state%5Bid%5D=CA&c_code%5Bid%5D=3",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Weingart+Center+Association&state%5Bid%5D=CA&c_code%5Bid%5D=3"
-      },
-      {
-        "check_id": "link_check_55669ad1541ad723",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/871111468.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/871111468.json"
-      },
-      {
-        "check_id": "link_check_fea244eabe373692",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/871111468",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/871111468"
-      },
-      {
-        "check_id": "link_check_df4d014be714bd7c",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=DignityMoves&state%5Bid%5D=CA&c_code%5Bid%5D=3",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=DignityMoves&state%5Bid%5D=CA&c_code%5Bid%5D=3"
-      },
-      {
-        "check_id": "link_check_5f03d6cdc2198311",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/956143865.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/956143865.json"
-      },
-      {
-        "check_id": "link_check_0685deed833104fe",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/956143865",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/956143865"
-      },
-      {
-        "check_id": "link_check_c47d4b17a3c51086",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=The+People+Concern&state%5Bid%5D=CA&c_code%5Bid%5D=3",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=The+People+Concern&state%5Bid%5D=CA&c_code%5Bid%5D=3"
-      },
-      {
-        "check_id": "link_check_f307694171250fe5",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/884329113.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/884329113.json"
-      },
-      {
-        "check_id": "link_check_50218dd67ea50eda",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/884329113",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/884329113"
-      },
-      {
-        "check_id": "link_check_52705e69fefd37e9",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=California+Supportive+Housing&state%5Bid%5D=CA&c_code%5Bid%5D=3",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=California+Supportive+Housing&state%5Bid%5D=CA&c_code%5Bid%5D=3"
-      },
-      {
-        "check_id": "link_check_c78fede741050ce6",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/941592676.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/941592676.json"
-      },
-      {
-        "check_id": "link_check_15ab63fe840e1eae",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/941592676",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/941592676"
-      },
-      {
-        "check_id": "link_check_77ba59f42f8687f5",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Self-Help+Enterprises&state%5Bid%5D=CA&c_code%5Bid%5D=3",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Self-Help+Enterprises&state%5Bid%5D=CA&c_code%5Bid%5D=3"
-      },
-      {
-        "check_id": "link_check_165015bb7b36e3dd",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=PATH+Ventures&state%5Bid%5D=CA&c_code%5Bid%5D=3",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=PATH+Ventures&state%5Bid%5D=CA&c_code%5Bid%5D=3"
-      },
-      {
-        "check_id": "link_check_9966e841a9442c46",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/943205085.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/943205085.json"
-      },
-      {
-        "check_id": "link_check_e43a02b49650e46e",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Abode+Housing+Development&state%5Bid%5D=CA&c_code%5Bid%5D=3",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Abode+Housing+Development&state%5Bid%5D=CA&c_code%5Bid%5D=3"
-      },
-      {
-        "check_id": "link_check_16493a364591e60c",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/942777955.json",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/organizations/942777955.json"
-      },
-      {
-        "check_id": "link_check_d313ad72d28fd1d8",
-        "content_type": "application/json; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=TLCS%2C+Inc.&state%5Bid%5D=CA&c_code%5Bid%5D=3",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=TLCS%2C+Inc.&state%5Bid%5D=CA&c_code%5Bid%5D=3"
-      },
-      {
-        "check_id": "link_check_5c872ec9e4c6d775",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://www.fac.gov/data/download/current/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.fac.gov/data/download/current/"
-      },
-      {
-        "check_id": "link_check_89e71a83a8dff71f",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://www.fac.gov/data/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.fac.gov/data/"
-      },
-      {
-        "check_id": "link_check_5f3dd66658ade86f",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://www.fac.gov/api/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.fac.gov/api"
-      },
-      {
-        "check_id": "link_check_8ff64e142a2e7aa1",
-        "content_type": "text/csv",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/general.csv?response-content-disposition=attachment%3Bfilename%3Dgeneral.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165900Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=dada007e5b68b32f279d17ecb0d774b59288bf8c75659bee42e163b9d6e49725",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/public-data/gsa/full/general.csv"
-      },
-      {
-        "check_id": "link_check_d6fec420fee9b2d0",
-        "content_type": "text/csv",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/federal_awards.csv?response-content-disposition=attachment%3Bfilename%3Dfederal_awards.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165901Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=cb1281a76e145bf45e76f19baae2b980ac92183ceaee1c19fd6a3648ffcd1483",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv"
-      },
-      {
-        "check_id": "link_check_2d60e2ca1e53eef6",
-        "content_type": "text/csv",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings.csv?response-content-disposition=attachment%3Bfilename%3Dfindings.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165902Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=faa115e3922a69ad8690555ed3de0a3f1d48321ea3aaca2f0efc477d8fa8f5f6",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv"
-      },
-      {
-        "check_id": "link_check_abb569335de1b66f",
-        "content_type": "text/csv",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings_text.csv?response-content-disposition=attachment%3Bfilename%3Dfindings_text.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165903Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=dadc94ed8d32ce8f1e65664fc8a4a7bd8ca3c664b26598a1dbaa19f1dd89afdc",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings_text.csv"
-      },
-      {
-        "check_id": "link_check_a73ff36271f4ed53",
-        "content_type": "text/csv",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/corrective_action_plans.csv?response-content-disposition=attachment%3Bfilename%3Dcorrective_action_plans.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165904Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=f768f33e34de43288cbd56075bed5114b5c7bce40821e6a4431ff540b4e072f8",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/public-data/gsa/full/corrective_action_plans.csv"
-      },
-      {
-        "check_id": "link_check_5ce77a389ba4c2c6",
-        "content_type": "text/html;charset=utf-8",
-        "error": "",
-        "final_url": "https://www.weingart.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.weingart.org/"
-      },
-      {
-        "check_id": "link_check_811f22123c890409",
-        "content_type": "text/html;charset=utf-8",
-        "error": "",
-        "final_url": "https://abode.org/housing-development",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://abode.org/housing-development"
-      },
-      {
-        "check_id": "link_check_00136e174d891551",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://burbankhousing.org/our-story/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://burbankhousing.org/our-story/"
-      },
-      {
-        "check_id": "link_check_72bde5735590af09",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://epath.org/path-ventures/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://epath.org/path-ventures/"
-      },
-      {
-        "check_id": "link_check_8ca774b51947536d",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.habitatca.org/affiliate/habitat-for-humanity-yubasutter/"
-      },
-      {
-        "check_id": "link_check_e31b6a03f026176b",
-        "content_type": "text/html;charset=utf-8",
-        "error": "",
-        "final_url": "https://www.weingart.org/programs",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.weingart.org/programs"
-      },
-      {
-        "check_id": "link_check_7b1436213cd72c54",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://burbankhousing.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://burbankhousing.org/"
-      },
-      {
-        "check_id": "link_check_95d65b5598f150e9",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://epath.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://epath.org/"
-      },
-      {
-        "check_id": "link_check_f65ecc31beabeb40",
-        "content_type": "text/html;charset=utf-8",
-        "error": "",
-        "final_url": "https://abode.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://abode.org/"
-      },
-      {
-        "check_id": "link_check_411ab0a69b82fb0b",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://www.swords-to-plowshares.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.swords-to-plowshares.org/"
-      },
-      {
-        "check_id": "link_check_7e2adeee2f5ad6d6",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://thepeopleconcern.org/homeless-services/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.thepeopleconcern.org/homeless-services/"
-      },
-      {
-        "check_id": "link_check_124764e58f0fb4fc",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://thepeopleconcern.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.thepeopleconcern.org/"
-      },
-      {
-        "check_id": "link_check_6ad4d2243dac422a",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://www.selfhelpenterprises.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.selfhelpenterprises.org/"
-      },
-      {
-        "check_id": "link_check_6d350038ee0720ea",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://hopethemission.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://hopethemission.org/"
-      },
-      {
-        "check_id": "link_check_bf323790fc567cba",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://www.swords-to-plowshares.org/about/vision-for-impact/care",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.swords-to-plowshares.org/about/vision-for-impact/care/"
-      },
-      {
-        "check_id": "link_check_125d2ad5861139db",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://hopethemission.org/our-programs/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://hopethemission.org/our-programs/"
-      },
-      {
-        "check_id": "link_check_6b5f738592276613",
-        "content_type": "text/html;charset=utf-8",
-        "error": "",
-        "final_url": "https://www.lsssc.org/sbd-main",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.lsssc.org/sbd-main"
-      },
-      {
-        "check_id": "link_check_2cca80909040ed72",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://dignitymoves.org/interim-supportive-housing/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://dignitymoves.org/interim-supportive-housing/"
-      },
-      {
-        "check_id": "link_check_b99ae9171305be14",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://www.cshousing.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.cshousing.org/"
-      },
-      {
-        "check_id": "link_check_40eff21dee654d5f",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://dignitymoves.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://dignitymoves.org/"
-      },
-      {
-        "check_id": "link_check_e14bc7bfc8fc8d04",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/942260626",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/942260626"
-      },
-      {
-        "check_id": "link_check_783bc53863a60218",
-        "content_type": "text/html;charset=utf-8",
-        "error": "",
-        "final_url": "https://www.lsssc.org/articles/get-out-there-n9t2h-wk9tc-mfxze",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://www.lsssc.org/articles/get-out-there-n9t2h-wk9tc-mfxze"
-      },
-      {
-        "check_id": "link_check_51609fdb3cc2c783",
-        "content_type": "text/html; charset=UTF-8",
-        "error": "",
-        "final_url": "https://crdc.org/",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://crdc.org/"
-      },
-      {
-        "check_id": "link_check_04be6c5920519ef8",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/680248670",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/680248670"
-      },
-      {
-        "check_id": "link_check_7b539e6362267da8",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://projects.propublica.org/nonprofits/organizations/952225798",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://projects.propublica.org/nonprofits/organizations/952225798"
+        "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
       }
     ],
-    "created_at": "2026-05-01T16:59:13+00:00",
+    "created_at": "2026-05-02T22:44:46+00:00",
     "error_count": 0,
-    "report_id": "link_integrity_254f7406bfe25044",
+    "report_id": "link_integrity_35791ea2fcfd9349",
     "status": "PASS",
     "warning_count": 0
   },
   "link_repair": {
-    "affected_evidence_refs": [
-      "E14"
-    ],
+    "affected_evidence_refs": [],
     "note": "Stale or renamed public URLs are repaired to working source pages before publication. Links are not removed as a substitute for repair.",
-    "repaired_public_links": 10,
-    "replacements": [
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024120622935468_public.xml",
-        "ref": "E14"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/871111468_202306_990_2024120622935468_public.xml",
-        "ref": "E14"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024040522347579_public.xml",
-        "ref": "E14"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/956054617_202304_990_2024040522347579_public.xml",
-        "ref": "E14"
-      },
-      {
-        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
-        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2012_05_EO%2F94-3205085_990_201106.pdf",
-        "ref": "E14"
-      },
-      {
-        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
-        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2013_03_EO%2F94-3205085_990_201206.pdf",
-        "ref": "E14"
-      },
-      {
-        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
-        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2014_03_EO%2F94-3205085_990_201306.pdf",
-        "ref": "E14"
-      },
-      {
-        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
-        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2015_03_EO%2F94-3205085_990_201406.pdf",
-        "ref": "E14"
-      },
-      {
-        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
-        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=2016_07_EO%2F94-3205085_990_201506.pdf",
-        "ref": "E14"
-      },
-      {
-        "new_url": "https://projects.propublica.org/nonprofits/organizations/943205085",
-        "old_unlinked_reference": "projects.propublica.org/nonprofits/download-filing?path=IRS%2F943205085_201606_990_2017100314799747.pdf",
-        "ref": "E14"
-      }
-    ]
+    "repaired_public_links": 0,
+    "replacements": []
   },
   "public_link_access": {
-    "checked_url_count": 86,
+    "checked_url_count": 9,
     "complete": true,
     "error_count": 0,
     "evidence_rows_without_verified_public_link": 0,
@@ -871,20 +125,46 @@
     "warning_count": 0
   },
   "publication_context": {
-    "completion_guard_blocker_count": 4,
+    "completeness_blocker_count": 25,
+    "completeness_retry_required_count": 0,
+    "completeness_status": "PASS_WITH_BLOCKERS",
+    "completion_guard_blocker_count": 0,
     "completion_guard_hit_count": 31,
-    "completion_guard_missing_required": [
-      "Hope the Mission: enforcement_or_docket",
-      "DignityMoves: enforcement_or_docket",
-      "The People Concern: enforcement_or_docket",
-      "California Supportive Housing: enforcement_or_docket"
-    ],
-    "completion_guard_status": "PASS_WITH_BLOCKERS",
+    "completion_guard_missing_required": [],
+    "completion_guard_status": "PASS",
     "completion_guard_total": 35,
-    "evidence_count": 90,
+    "deep_source_blocker_count": 25,
+    "deep_source_missing_required": [
+      "Hope the Mission / state_awards",
+      "Hope the Mission / state_charity_registry",
+      "Hope the Mission / state_entity_registry",
+      "Hope the Mission / board_files",
+      "Hope the Mission / campaign_finance",
+      "Weingart Center Association / state_awards",
+      "Weingart Center Association / state_charity_registry",
+      "Weingart Center Association / state_entity_registry",
+      "Weingart Center Association / board_files",
+      "Weingart Center Association / campaign_finance",
+      "DignityMoves / state_awards",
+      "DignityMoves / state_charity_registry",
+      "DignityMoves / state_entity_registry",
+      "DignityMoves / board_files",
+      "DignityMoves / campaign_finance",
+      "The People Concern / state_awards",
+      "The People Concern / state_charity_registry",
+      "The People Concern / state_entity_registry",
+      "The People Concern / board_files",
+      "The People Concern / campaign_finance",
+      "California Supportive Housing / state_awards",
+      "California Supportive Housing / state_charity_registry",
+      "California Supportive Housing / state_entity_registry",
+      "California Supportive Housing / board_files",
+      "California Supportive Housing / campaign_finance"
+    ],
+    "evidence_count": 16,
     "human_decision": "PENDING",
     "public_link_access": {
-      "checked_url_count": 86,
+      "checked_url_count": 9,
       "complete": true,
       "error_count": 0,
       "evidence_rows_without_verified_public_link": 0,
@@ -892,37 +172,65 @@
       "status": "PASS",
       "warning_count": 0
     },
-    "public_link_checked_count": 86,
+    "public_link_checked_count": 9,
     "public_link_error_count": 0,
     "public_link_status": "PASS",
-    "publication_confidence": 59.21,
-    "review_priority": 86.23,
-    "risk_severity": 93.62,
+    "publication_confidence": 74.12,
+    "review_priority": 94.82,
+    "risk_severity": 100.0,
     "run_label": "live_ca_homelessness_top15_2026_04_29",
     "source_access": {
       "affected_evidence_refs": [],
       "complete": false,
-      "completion_guard_access_complete": false,
-      "completion_guard_blocker_count": 4,
-      "completion_guard_missing_required": [
-        "Hope the Mission: enforcement_or_docket",
-        "DignityMoves: enforcement_or_docket",
-        "The People Concern: enforcement_or_docket",
-        "California Supportive Housing: enforcement_or_docket"
+      "completeness_blocker_count": 25,
+      "completeness_retry_required_count": 0,
+      "completeness_status": "PASS_WITH_BLOCKERS",
+      "completion_guard_access_complete": true,
+      "completion_guard_blocker_count": 0,
+      "completion_guard_missing_required": [],
+      "completion_guard_status": "PASS",
+      "deep_source_access_complete": false,
+      "deep_source_blocker_count": 25,
+      "deep_source_missing_required": [
+        "Hope the Mission / state_awards",
+        "Hope the Mission / state_charity_registry",
+        "Hope the Mission / state_entity_registry",
+        "Hope the Mission / board_files",
+        "Hope the Mission / campaign_finance",
+        "Weingart Center Association / state_awards",
+        "Weingart Center Association / state_charity_registry",
+        "Weingart Center Association / state_entity_registry",
+        "Weingart Center Association / board_files",
+        "Weingart Center Association / campaign_finance",
+        "DignityMoves / state_awards",
+        "DignityMoves / state_charity_registry",
+        "DignityMoves / state_entity_registry",
+        "DignityMoves / board_files",
+        "DignityMoves / campaign_finance",
+        "The People Concern / state_awards",
+        "The People Concern / state_charity_registry",
+        "The People Concern / state_entity_registry",
+        "The People Concern / board_files",
+        "The People Concern / campaign_finance",
+        "California Supportive Housing / state_awards",
+        "California Supportive Housing / state_charity_registry",
+        "California Supportive Housing / state_entity_registry",
+        "California Supportive Housing / board_files",
+        "California Supportive Housing / campaign_finance"
       ],
-      "completion_guard_status": "PASS_WITH_BLOCKERS",
       "items": [],
-      "note": "Source access combines public-link access with completion-guard access. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
+      "note": "Source access combines public-link access, completion-guard access, and deep source-acquisition blockers. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
       "partial_items": [],
       "partial_source_access_issue_count": 0,
       "public_link_access_complete": true,
-      "source_access_required_count": 0
+      "source_access_required_count": 0,
+      "total_source_blocker_count": 25
     },
-    "source_completeness": 88.57,
-    "verified_linked_evidence_count": 90,
+    "source_completeness": 100.0,
+    "verified_linked_evidence_count": 16,
     "workflow_state": "AWAITING_HUMAN_REVIEW"
   },
-  "publication_id": "publication_9836f92ea6b21df3",
+  "publication_id": "publication_35553d0878ee3dcd",
   "safety": {
     "checked_files": [
       "case_dossier.md",
@@ -930,49 +238,105 @@
       "source_ledger.json"
     ],
     "errors": [],
-    "evidence_refs_checked": 90,
+    "evidence_refs_checked": 16,
     "passed": true,
     "source_access": {
       "affected_evidence_refs": [],
       "complete": false,
-      "completion_guard_access_complete": false,
-      "completion_guard_blocker_count": 4,
-      "completion_guard_missing_required": [
-        "Hope the Mission: enforcement_or_docket",
-        "DignityMoves: enforcement_or_docket",
-        "The People Concern: enforcement_or_docket",
-        "California Supportive Housing: enforcement_or_docket"
+      "completeness_blocker_count": 25,
+      "completeness_retry_required_count": 0,
+      "completeness_status": "PASS_WITH_BLOCKERS",
+      "completion_guard_access_complete": true,
+      "completion_guard_blocker_count": 0,
+      "completion_guard_missing_required": [],
+      "completion_guard_status": "PASS",
+      "deep_source_access_complete": false,
+      "deep_source_blocker_count": 25,
+      "deep_source_missing_required": [
+        "Hope the Mission / state_awards",
+        "Hope the Mission / state_charity_registry",
+        "Hope the Mission / state_entity_registry",
+        "Hope the Mission / board_files",
+        "Hope the Mission / campaign_finance",
+        "Weingart Center Association / state_awards",
+        "Weingart Center Association / state_charity_registry",
+        "Weingart Center Association / state_entity_registry",
+        "Weingart Center Association / board_files",
+        "Weingart Center Association / campaign_finance",
+        "DignityMoves / state_awards",
+        "DignityMoves / state_charity_registry",
+        "DignityMoves / state_entity_registry",
+        "DignityMoves / board_files",
+        "DignityMoves / campaign_finance",
+        "The People Concern / state_awards",
+        "The People Concern / state_charity_registry",
+        "The People Concern / state_entity_registry",
+        "The People Concern / board_files",
+        "The People Concern / campaign_finance",
+        "California Supportive Housing / state_awards",
+        "California Supportive Housing / state_charity_registry",
+        "California Supportive Housing / state_entity_registry",
+        "California Supportive Housing / board_files",
+        "California Supportive Housing / campaign_finance"
       ],
-      "completion_guard_status": "PASS_WITH_BLOCKERS",
       "items": [],
-      "note": "Source access combines public-link access with completion-guard access. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
+      "note": "Source access combines public-link access, completion-guard access, and deep source-acquisition blockers. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
       "partial_items": [],
       "partial_source_access_issue_count": 0,
       "public_link_access_complete": true,
-      "source_access_required_count": 0
+      "source_access_required_count": 0,
+      "total_source_blocker_count": 25
     },
-    "source_ledger_entries": 90,
+    "source_ledger_entries": 16,
     "warnings": []
   },
   "sentinel_decision": "DOWNGRADE_FOR_REVIEW",
   "source_access": {
     "affected_evidence_refs": [],
     "complete": false,
-    "completion_guard_access_complete": false,
-    "completion_guard_blocker_count": 4,
-    "completion_guard_missing_required": [
-      "Hope the Mission: enforcement_or_docket",
-      "DignityMoves: enforcement_or_docket",
-      "The People Concern: enforcement_or_docket",
-      "California Supportive Housing: enforcement_or_docket"
+    "completeness_blocker_count": 25,
+    "completeness_retry_required_count": 0,
+    "completeness_status": "PASS_WITH_BLOCKERS",
+    "completion_guard_access_complete": true,
+    "completion_guard_blocker_count": 0,
+    "completion_guard_missing_required": [],
+    "completion_guard_status": "PASS",
+    "deep_source_access_complete": false,
+    "deep_source_blocker_count": 25,
+    "deep_source_missing_required": [
+      "Hope the Mission / state_awards",
+      "Hope the Mission / state_charity_registry",
+      "Hope the Mission / state_entity_registry",
+      "Hope the Mission / board_files",
+      "Hope the Mission / campaign_finance",
+      "Weingart Center Association / state_awards",
+      "Weingart Center Association / state_charity_registry",
+      "Weingart Center Association / state_entity_registry",
+      "Weingart Center Association / board_files",
+      "Weingart Center Association / campaign_finance",
+      "DignityMoves / state_awards",
+      "DignityMoves / state_charity_registry",
+      "DignityMoves / state_entity_registry",
+      "DignityMoves / board_files",
+      "DignityMoves / campaign_finance",
+      "The People Concern / state_awards",
+      "The People Concern / state_charity_registry",
+      "The People Concern / state_entity_registry",
+      "The People Concern / board_files",
+      "The People Concern / campaign_finance",
+      "California Supportive Housing / state_awards",
+      "California Supportive Housing / state_charity_registry",
+      "California Supportive Housing / state_entity_registry",
+      "California Supportive Housing / board_files",
+      "California Supportive Housing / campaign_finance"
     ],
-    "completion_guard_status": "PASS_WITH_BLOCKERS",
     "items": [],
-    "note": "Source access combines public-link access with completion-guard access. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
+    "note": "Source access combines public-link access, completion-guard access, and deep source-acquisition blockers. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
     "partial_items": [],
     "partial_source_access_issue_count": 0,
     "public_link_access_complete": true,
-    "source_access_required_count": 0
+    "source_access_required_count": 0,
+    "total_source_blocker_count": 25
   },
   "source_run_label": "live_ca_homelessness_top15_2026_04_29",
   "unverified_link_access": {

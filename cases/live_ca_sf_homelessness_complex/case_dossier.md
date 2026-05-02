@@ -3137,19 +3137,19 @@ Use this ledger to move from the readable case file back to source records. The 
 | --- | --- | --- | --- | --- | --- | --- |
 | `E01` | `evidence_61c91defd6b85620` | `enforcement_docket_discovery_community_housing_partnership` | enforcement_docket_discovery | https://www.justice.gov/ | 2026-04-30 | `567ceb983e43fe8715c3a273550fc99607d75d829570ec8f4e916ef6185d17db` |
 | `E02` | `evidence_d8f58310f721d0cd` | `enforcement_docket_discovery_united_council_of_human_services` | enforcement_docket_discovery | https://www.justice.gov/ | 2026-04-30 | `16ce647e2730e9c85ccb64ededd26dd7678cb89a2ee07962f6a81c256a479a83` |
-| `E03` | `evidence_e922a2faf801322b` | `irs_990_raw_artifacts_brilliant_corners` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `c3dc1fe52781a3402f61f0294f8a4fd00f4392f4475cd145916788ec4730a757` |
-| `E04` | `evidence_9fb8e3e6b405f99d` | `irs_990_raw_artifacts_catholic_charities` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip | 2024 | `af8a08e3c33a220273dbd6d29dcb11c690cb69ff7599c34e28190b89f979bd0e` |
-| `E05` | `evidence_11669604eaf6ae5c` | `irs_990_raw_artifacts_community_housing_partnership` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip | 2023 | `68c6bfe552fbfc59c1d772c6df1bcf7e106219ec3e0101543f2d773a1538b463` |
-| `E06` | `evidence_97a45d168f71b6c5` | `irs_990_raw_artifacts_compass_family_services` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `ee7f0565c5c8d056f63951015d998e0216fb8894591e9ba5c35609338b1815b6` |
-| `E07` | `evidence_89bd349fb759286e` | `irs_990_raw_artifacts_episcopal_community_svcs_of_sf_inc` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip | 2023 | `c91e2506348178770a097744608d4f8c1a00c5a36ef976a8f992beddea790e35` |
+| `E03` | `evidence_e922a2faf801322b` | `irs_990_raw_artifacts_brilliant_corners` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `563e3d7e0ad77c203c871485d1abf649ae2cb349499296deb3c9396eddebe431` |
+| `E04` | `evidence_9fb8e3e6b405f99d` | `irs_990_raw_artifacts_catholic_charities` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip | 2024 | `8996ffb9de696b6ab6e9b40c2e49269ab77e3a1b2a97961a82b3583820f6312e` |
+| `E05` | `evidence_11669604eaf6ae5c` | `irs_990_raw_artifacts_community_housing_partnership` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip | 2023 | `a41a4f86472f6538245fc14fa9217df63106d645a1690bc240e7151c7386dbb8` |
+| `E06` | `evidence_97a45d168f71b6c5` | `irs_990_raw_artifacts_compass_family_services` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `932b3dd07fa62d58f9b3da6a87dd603ff989aa64984af808d1e413adc90e3e88` |
+| `E07` | `evidence_89bd349fb759286e` | `irs_990_raw_artifacts_episcopal_community_svcs_of_sf_inc` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip | 2023 | `bb2e7f41cdf495f1301f49753f312b02cf1f5be4b21ed70332de4884ed190aa8` |
 | `E08` | `evidence_0f2c577d8c6aa710` | `irs_990_raw_artifacts_five_keys_schools_and_programs` | irs_990_raw_artifact | https://projects.propublica.org/nonprofits/organizations/810622701 | 2022 | `74e62122dd07494d8027a269c7e5b7af53c903f3e870e87aa869ae6a70e8c7ab` |
-| `E09` | `evidence_2e55a5b8990b7c8d` | `irs_990_raw_artifacts_hamilton_families` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `b941c4c62e70c4218a7792dd2cb9d097b030ba9ccaf518051a929e992b63544a` |
-| `E10` | `evidence_153ee70fe84162fb` | `irs_990_raw_artifacts_heluna_health` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip | 2023 | `a873f48b09b1390dd1c1ff7ec3cbb6710e86d0312da9a6fe66191f63136d4042` |
-| `E11` | `evidence_a0366ad56e7f6be1` | `irs_990_raw_artifacts_larkin_street_youth_services` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `84b45ffa6ed1813499f5b58a093013d5a612c3c51d87e8e33db1e89afa2807c0` |
-| `E12` | `evidence_6c64fd0b4a1d198a` | `irs_990_raw_artifacts_providence_foundation_of_san_francisco` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip | 2023 | `425768e36b5364e345ac1824a2b3cf13da70c64bc4dc1f268fb7e4c3f01ffbb0` |
-| `E13` | `evidence_480cffd0a958870a` | `irs_990_raw_artifacts_tenderloin_housing_clinic_inc` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip | 2023 | `071e38084978225e39b046e1667b523b36e7ba63c90031f2e298df1221a4eca0` |
-| `E14` | `evidence_67ba46a4035b81a8` | `irs_990_raw_artifacts_tenderloin_neighborhood_development_corp` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip | 2023 | `c8b3674f08cfa72aa163ea5cbaf53a47f36feae7fffae6b53dbd70e95281bef5` |
-| `E15` | `evidence_0cee1e8d9685529f` | `irs_990_raw_artifacts_tides_center` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip | 2023 | `e684ae0bc07a9dcf88e2fd5f456d343f5e033701b512ddb3a61e53ae97bb1f87` |
+| `E09` | `evidence_2e55a5b8990b7c8d` | `irs_990_raw_artifacts_hamilton_families` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `7af9f8c2ed39e982ce57e4b16306db0d7b8c5ce7228121c5bc5e120fd470d1df` |
+| `E10` | `evidence_153ee70fe84162fb` | `irs_990_raw_artifacts_heluna_health` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip | 2023 | `f87678af1f6622c32b51b030513f084215161a66defbfba096198ebabaf44eb1` |
+| `E11` | `evidence_a0366ad56e7f6be1` | `irs_990_raw_artifacts_larkin_street_youth_services` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip | 2023 | `9c5cd892eb8d062ce705f07064164b7708248d46b131600e5b54918e1cd7caa1` |
+| `E12` | `evidence_6c64fd0b4a1d198a` | `irs_990_raw_artifacts_providence_foundation_of_san_francisco` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip | 2023 | `a44ed78de3c362c5ebc659f06650c30dcd569ae67f352381e3b16dcf1ddd89a1` |
+| `E13` | `evidence_480cffd0a958870a` | `irs_990_raw_artifacts_tenderloin_housing_clinic_inc` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip | 2023 | `e109931254a9e1a4cc347fc8bda175af3e219518294dbb3e3b7d3959505732e0` |
+| `E14` | `evidence_67ba46a4035b81a8` | `irs_990_raw_artifacts_tenderloin_neighborhood_development_corp` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip | 2023 | `20d5156e724f97ef38ca7fdbc3e7412ec1846a311f50ed456f4812ff26420a31` |
+| `E15` | `evidence_0cee1e8d9685529f` | `irs_990_raw_artifacts_tides_center` | irs_990_raw_artifact | https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip | 2023 | `be870bbfbedc1ccb3df7033a27f19caf55fe0744d8ae346fa03e0b07f5203773` |
 | `E16` | `evidence_31abfd3757d85f34` | `irs_990_raw_artifacts_united_council_of_human_services` | irs_990_raw_artifact_discovery | https://projects.propublica.org/nonprofits/organizations/942936270 | 2020 | `5e41dde0e278484f53e35a4caf63da2e5d213f9fb9f618395bff213dabe48378` |
 | `E17` | `evidence_d8a1194045b785dd` | `public_statements_tenderloin_housing_clinic_inc` | Public statement source | https://www.thclinic.org/ | 2026-04-29 | `31d654bea80ce238ca63d265a3d55bf50920eb1239abd8d467cdbca958d48d30` |
 | `E18` | `evidence_9aa0c74ce6f46415` | `enforcement_docket_community_housing_partnership_2` | Official enforcement or docket source | https://www.sf.gov/news--audit-finds-one-citys-providers-housing-unhoused-residents-had-serious-financial-shortfalls | 2025-10-16 | `1a5d27e7a2b06a7757d3b3c70399ccb9f4e3e5472339b8d7e07b13594ea91aba` |
@@ -3174,14 +3174,19 @@ Use this ledger to move from the readable case file back to source records. The 
 
 These actions are outside the current CalDS runtime. They require a human reviewer or authorized records process before any escalation beyond internal review.
 
-1. Open the review packet and verify each priority row against the cited evidence ledger before changing case status.
-2. Resolve sentinel caution: Use exact legal status and named-party scope from official sources; do not convert third-party charges into entity-level conclusions.
-3. Resolve sentinel caution: Preserve open gap-burden caveats in the review packet.
-4. Verify raw Internal Revenue Service machine-readable filing data or official return images for revenue, expenses, grants, officer compensation, and year-over-year movement.
-5. Request county contract files, monitoring letters, corrective-action status, deliverables, and provider-level outcome records for the same year window.
-6. Benchmark officer and key employee compensation against comparable organizations and verify documented approval procedures.
-7. Compare harvested public statements and web pages to homelessness grant scopes, contract restrictions, funding sources, and accounting records; treat statements as context until dollars and scope are linked.
-8. For connected-party enforcement rows, verify the official charging record, docket status, named parties, nonprofit relationship, transaction documents, and public-dollar flow before any entity-level statement.
+1. Highest-leverage next step: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Source: human_action_plan.json.
+2. High - Brilliant Corners - money-trail verification: Use large award totals to prioritize allowable-cost, subrecipient, and deliverable testing; do not infer performance from amount alone. Authority required: authorized human reviewer. Why: Federal Audit Clearinghouse award data captured in this run totals $155,994,121 across the retrieved audit reports. Source: source collection; [private source artifact]
+3. High - Brilliant Corners - money-trail verification: Verify exact SF contracts, invoices, deliverables, monitoring, corrective-action records, and program outcome records before treating payment exposure as performance evidence. Authority required: authorized human reviewer. Why: SF Open Data lists Brilliant Corners in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $62,699,311. Programs/source grouping: San Francisco HSH nonprofit... Source: source collection; state_homeless_awards_brilliant_corners; [private source artifact] https://catalog.data.gov/dataset/citywide-nonprofit-spending
+4. High - Brilliant Corners - outcome attribution review: Review underlying county or Continuum of Care outcome rows, San Francisco contract scopes, deliverables, invoices, monitoring letters, corrective actions, and provider-specific outcome records before drawing any conclusion. Authority required: authorized human reviewer. Why: Brilliant Corners has San Francisco payment geography in San Francisco; the official county or Continuum of Care context flags San Francisco Continuum of Care M1a service-system volume measure increased from 19,118 in... Source: source collection; source collection; [private source artifact] [private source artifact]
+5. High - Catholic Charities - money-trail verification: Verify exact SF contracts, invoices, deliverables, monitoring, corrective-action records, and program outcome records before treating payment exposure as performance evidence. Authority required: authorized human reviewer. Why: SF Open Data lists Catholic Charities in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $67,007,205. Programs/source grouping: San Francisco HSH nonprofit... Source: source collection; state_homeless_awards_catholic_charities; [private source artifact] https://catalog.data.gov/dataset/citywide-nonprofit-spending
+6. High - Catholic Charities - outcome attribution review: Review underlying county or Continuum of Care outcome rows, San Francisco contract scopes, deliverables, invoices, monitoring letters, corrective actions, and provider-specific outcome records before drawing any conclusion. Authority required: authorized human reviewer. Why: Catholic Charities has San Francisco payment geography in San Francisco; the official county or Continuum of Care context flags San Francisco Continuum of Care M1a service-system volume measure increased from 19,118 in... Source: source collection; source collection; [private source artifact] [private source artifact]
+7. High - Catholic Charities - source review: Compare compensation to board approval process, market survey disclosure, related-organization pay, and peer organizations before any conclusion. Authority required: authorized human reviewer. Why: The latest Form 990 compensation data captured in this run is for 2024. It reports Ken F Sawa (chief executive officer/Exec VP) compensation of $139,952, equal to 2.09% of expenses reported in the parsed return. Source: source collection; source collection; [private source artifact] [private source artifact]
+8. High - Community Housing Partnership - audit verification: Open the audit source documents and row-level Federal Audit Clearinghouse findings to verify finding status, program, agency, questioned costs, repeat status, and corrective-action response. Authority required: authorized human reviewer. Why: Federal Audit Clearinghouse data in this run shows a material weakness in 2023. It shows an internal-control deficiency in 2024. The auditee was listed as not low risk in 2022, 2023, 2024. The audit data captured in... Source: source collection; [private source artifact]
+9. High - Community Housing Partnership - legal-status verification: Open the Controller announcement and audit source document; verify the audit period, contracts reviewed, fiscal findings, corrective-action status, current HSH payment exposure, and whether subsequent monitoring records show remediation. Authority required: authorized human reviewer. Why: A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents. The Controller announcement... Source: evidence_9aa0c74ce6f46415; enforcement_docket_community_housing_partnership_2; source collection; source collection
+10. High - Community Housing Partnership - money-trail verification: Verify exact SF contracts, invoices, deliverables, monitoring, corrective-action records, and program outcome records before treating payment exposure as performance evidence. Authority required: authorized human reviewer. Why: SF Open Data lists Community Housing Partnership in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $57,553,247. Programs/source grouping: San Francisco HSH... Source: source collection; state_homeless_awards_community_housing_partnership; [private source artifact] https://catalog.data.gov/dataset/citywide-nonprofit-spending
+11. High - Community Housing Partnership - outcome attribution review: Review underlying county or Continuum of Care outcome rows, San Francisco contract scopes, deliverables, invoices, monitoring letters, corrective actions, and provider-specific outcome records before drawing any conclusion. Authority required: authorized human reviewer. Why: Community Housing Partnership has San Francisco payment geography in San Francisco; the official county or Continuum of Care context flags San Francisco Continuum of Care M1a service-system volume measure increased from... Source: source collection; source collection; [private source artifact] [private source artifact]
+12. High - Compass Family Services - money-trail verification: Verify exact SF contracts, invoices, deliverables, monitoring, corrective-action records, and program outcome records before treating payment exposure as performance evidence. Authority required: authorized human reviewer. Why: SF Open Data lists Compass Family Services in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $71,193,054. Programs/source grouping: San Francisco HSH nonprofit... Source: source collection; state_homeless_awards_compass_family_services; [private source artifact] https://catalog.data.gov/dataset/citywide-nonprofit-spending
+13. High - Compass Family Services - outcome attribution review: Review underlying county or Continuum of Care outcome rows, San Francisco contract scopes, deliverables, invoices, monitoring letters, corrective actions, and provider-specific outcome records before drawing any conclusion. Authority required: authorized human reviewer. Why: Compass Family Services has San Francisco payment geography in San Francisco; the official county or Continuum of Care context flags San Francisco Continuum of Care M1a service-system volume measure increased from... Source: source collection; source collection; [private source artifact] [private source artifact]
 
 ## 10. Artifact References
 
@@ -3199,20 +3204,27 @@ These are the durable workflow artifacts used by the compiler.
 | completion_guard.json | `[private source artifact] |
 | context_handoff_ledger.json | `[private source artifact] |
 | entity_network_analysis.json | `[private source artifact] |
+| entity_resolution.json | `[private source artifact] |
 | entity_triage_results.json | `[private source artifact] |
 | evidence_analysis.json | `[private source artifact] |
 | evidence_bundle.json | `[private source artifact] |
+| evidence_store_manifest.json | `[private source artifact] |
 | forensic_findings.json | `[private source artifact] |
 | forensic_investigation_plan.json | `[private source artifact] |
+| forensic_test_results.json | `[private source artifact] |
+| human_action_plan.json | `[private source artifact] |
 | investigation_profile.json | `[private source artifact] |
 | lead_candidate.json | `[private source artifact] |
 | oversight_risk_matrix.json | `[private source artifact] |
+| profile_gate_audit.json | `[private source artifact] |
 | retrieval_plan.json | `[private source artifact] |
 | review_decision.json | `[private source artifact] |
 | review_packet.json | `[private source artifact] |
 | review_packet.md | `[private source artifact] |
 | search_hits.json | `[private source artifact] |
 | sentinel_decision.json | `[private source artifact] |
+| source_acquisition_plan.json | `[private source artifact] |
+| target_universe.json | `[private source artifact] |
 | task_case_compiler.json | `[private source artifact] |
 | task_case_director.json | `[private source artifact] |
 | task_citation_verifier.json | `[private source artifact] |
@@ -3220,12 +3232,19 @@ These are the durable workflow artifacts used by the compiler.
 | task_completion_guard.json | `[private source artifact] |
 | task_context_steward.json | `[private source artifact] |
 | task_entity_network_analyst.json | `[private source artifact] |
+| task_entity_resolver.json | `[private source artifact] |
 | task_evidence_analyst.json | `[private source artifact] |
+| task_evidence_custodian.json | `[private source artifact] |
 | task_forensic_synthesis_analyst.json | `[private source artifact] |
+| task_forensic_tester.json | `[private source artifact] |
+| task_human_action_compiler.json | `[private source artifact] |
 | task_lead_scorer.json | `[private source artifact] |
+| task_profile_guard.json | `[private source artifact] |
 | task_retrieval_strategist.json | `[private source artifact] |
 | task_review_packager.json | `[private source artifact] |
 | task_sentinel.json | `[private source artifact] |
+| task_source_acquisition_planner.json | `[private source artifact] |
+| task_target_discovery.json | `[private source artifact] |
 | task_triage_screener.json | `[private source artifact] |
 
 ## 11. Human Review Required
