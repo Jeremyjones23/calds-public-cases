@@ -1,0 +1,281 @@
+{
+  "case_id": "live_ca_sf_homelessness_complex",
+  "citation_verification": {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "checked_claim_count": 1248,
+    "checks": [],
+    "created_at": "2026-05-02T14:13:35+00:00",
+    "error_count": 0,
+    "status": "PASS",
+    "verification_id": "citation_verification_aa23d036259d3064",
+    "warning_count": 0
+  },
+  "files": {
+    "case_dossier_json": "case_dossier.json",
+    "case_dossier_markdown": "case_dossier.md",
+    "index_html": "index.html",
+    "source_ledger_json": "source_ledger.json"
+  },
+  "generated_at": "2026-05-02T14:13:43+00:00",
+  "human_review_required": true,
+  "link_integrity": {
+    "checked_url_count": 16,
+    "checks": [
+      {
+        "check_id": "link_check_c99fa5d5332ec0a0",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.justice.gov/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.justice.gov/"
+      },
+      {
+        "check_id": "link_check_9be6cb2cf147d46b",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+      },
+      {
+        "check_id": "link_check_8e29e455846e2db0",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip"
+      },
+      {
+        "check_id": "link_check_cd5d282b368c3fd9",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+      },
+      {
+        "check_id": "link_check_74f598a2702504ba",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip"
+      },
+      {
+        "check_id": "link_check_f97d2049eda0c7c1",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/810622701",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/810622701"
+      },
+      {
+        "check_id": "link_check_0999e4ae8c6bc84c",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip"
+      },
+      {
+        "check_id": "link_check_5081cd27ed0fecff",
+        "content_type": "application/zip",
+        "error": "",
+        "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip"
+      },
+      {
+        "check_id": "link_check_c53a25544ce8c686",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://projects.propublica.org/nonprofits/organizations/942936270",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://projects.propublica.org/nonprofits/organizations/942936270"
+      },
+      {
+        "check_id": "link_check_0faa2241124f69e2",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.thclinic.org/en/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.thclinic.org/"
+      },
+      {
+        "check_id": "link_check_e7a851ab2c7d6b80",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://www.sf.gov/news--audit-finds-one-citys-providers-housing-unhoused-residents-had-serious-financial-shortfalls",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.sf.gov/news--audit-finds-one-citys-providers-housing-unhoused-residents-had-serious-financial-shortfalls"
+      },
+      {
+        "check_id": "link_check_6b9fd57aa7683b6e",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://homerisesf.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://homerisesf.org/"
+      },
+      {
+        "check_id": "link_check_9970c2fff7cff26a",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://catholiccharitiessf.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.catholiccharitiessf.org/"
+      },
+      {
+        "check_id": "link_check_e47d0beabec3a1af",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://www.sf.gov/news--united-council-human-services-found-be-violation-city-agreements",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.sf.gov/news--united-council-human-services-found-be-violation-city-agreements"
+      },
+      {
+        "check_id": "link_check_d378e858323cb8bd",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.tndc.org/our-work",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.tndc.org/our-work/"
+      },
+      {
+        "check_id": "link_check_ed70282989de8909",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.tndc.org/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.tndc.org/"
+      }
+    ],
+    "created_at": "2026-05-02T14:13:43+00:00",
+    "error_count": 0,
+    "report_id": "link_integrity_0d9bd4801ce893a1",
+    "status": "PASS",
+    "warning_count": 0
+  },
+  "link_repair": {
+    "affected_evidence_refs": [],
+    "note": "Stale or renamed public URLs are repaired to working source pages before publication. Links are not removed as a substitute for repair.",
+    "repaired_public_links": 0,
+    "replacements": []
+  },
+  "public_link_access": {
+    "checked_url_count": 16,
+    "complete": true,
+    "error_count": 0,
+    "evidence_rows_without_verified_public_link": 0,
+    "note": "Public link access means every published evidence row has a verified browser-openable URL or a visible source-access note. It is not the same as raw-source or completion-guard access.",
+    "status": "PASS",
+    "warning_count": 0
+  },
+  "publication_context": {
+    "completion_guard_blocker_count": 0,
+    "completion_guard_hit_count": 92,
+    "completion_guard_missing_required": [],
+    "completion_guard_status": "PASS",
+    "completion_guard_total": 105,
+    "evidence_count": 23,
+    "human_decision": "PENDING",
+    "public_link_access": {
+      "checked_url_count": 16,
+      "complete": true,
+      "error_count": 0,
+      "evidence_rows_without_verified_public_link": 0,
+      "note": "Public link access means every published evidence row has a verified browser-openable URL or a visible source-access note. It is not the same as raw-source or completion-guard access.",
+      "status": "PASS",
+      "warning_count": 0
+    },
+    "public_link_checked_count": 16,
+    "public_link_error_count": 0,
+    "public_link_status": "PASS",
+    "publication_confidence": 87.75,
+    "review_priority": 97.55,
+    "risk_severity": 100.0,
+    "run_label": "live_ca_sf_homelessness_complex",
+    "source_access": {
+      "affected_evidence_refs": [],
+      "complete": true,
+      "completion_guard_access_complete": true,
+      "completion_guard_blocker_count": 0,
+      "completion_guard_missing_required": [],
+      "completion_guard_status": "PASS",
+      "items": [],
+      "note": "Source access combines public-link access with completion-guard access. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
+      "partial_items": [],
+      "partial_source_access_issue_count": 0,
+      "public_link_access_complete": true,
+      "source_access_required_count": 0
+    },
+    "source_completeness": 100.0,
+    "verified_linked_evidence_count": 23,
+    "workflow_state": "AWAITING_HUMAN_REVIEW"
+  },
+  "publication_id": "publication_82cede3f9b2d043c",
+  "safety": {
+    "checked_files": [
+      "case_dossier.md",
+      "index.html",
+      "source_ledger.json"
+    ],
+    "errors": [],
+    "evidence_refs_checked": 23,
+    "passed": true,
+    "source_access": {
+      "affected_evidence_refs": [],
+      "complete": true,
+      "completion_guard_access_complete": true,
+      "completion_guard_blocker_count": 0,
+      "completion_guard_missing_required": [],
+      "completion_guard_status": "PASS",
+      "items": [],
+      "note": "Source access combines public-link access with completion-guard access. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
+      "partial_items": [],
+      "partial_source_access_issue_count": 0,
+      "public_link_access_complete": true,
+      "source_access_required_count": 0
+    },
+    "source_ledger_entries": 23,
+    "warnings": []
+  },
+  "sentinel_decision": "DOWNGRADE_FOR_REVIEW",
+  "source_access": {
+    "affected_evidence_refs": [],
+    "complete": true,
+    "completion_guard_access_complete": true,
+    "completion_guard_blocker_count": 0,
+    "completion_guard_missing_required": [],
+    "completion_guard_status": "PASS",
+    "items": [],
+    "note": "Source access combines public-link access with completion-guard access. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
+    "partial_items": [],
+    "partial_source_access_issue_count": 0,
+    "public_link_access_complete": true,
+    "source_access_required_count": 0
+  },
+  "source_run_label": "live_ca_sf_homelessness_complex",
+  "unverified_link_access": {
+    "affected_evidence_refs": [],
+    "items": [],
+    "note": "All public source URLs passed link verification after deterministic repairs.",
+    "unverified_public_links": 0
+  }
+}
