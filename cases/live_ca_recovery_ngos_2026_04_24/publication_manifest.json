@@ -2,9 +2,9 @@
   "case_id": "live_ca_recovery_ngos_2026_04_24",
   "citation_verification": {
     "case_id": "live_ca_recovery_ngos_2026_04_24",
-    "checked_claim_count": 726,
+    "checked_claim_count": 806,
     "checks": [],
-    "created_at": "2026-05-01T16:58:17+00:00",
+    "created_at": "2026-05-04T02:50:34+00:00",
     "error_count": 0,
     "status": "PASS",
     "verification_id": "citation_verification_50d65ba265aadb59",
@@ -16,10 +16,10 @@
     "index_html": "index.html",
     "source_ledger_json": "source_ledger.json"
   },
-  "generated_at": "2026-05-01T17:00:17+00:00",
+  "generated_at": "2026-05-04T02:52:52+00:00",
   "human_review_required": true,
   "link_integrity": {
-    "checked_url_count": 78,
+    "checked_url_count": 82,
     "checks": [
       {
         "check_id": "link_check_93d8655e54e96737",
@@ -58,28 +58,28 @@
         "url": "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv"
       },
       {
-        "check_id": "link_check_9bb4f81fe52f71a1",
+        "check_id": "link_check_3b74f3ac3ee23b50",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2016-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2016-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165919Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=7c8326ee44df9aecc731c07897713bf4beccfdc6b0f96a860c934da450d71860",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2016-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2016-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025150Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=3c8af7db204a0fbf54e654384ed5bfe3749883a860bc9c5596317edd58d3d86c",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774"
       },
       {
-        "check_id": "link_check_4596155faf3a73ce",
+        "check_id": "link_check_f51017284a040f36",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings.csv?response-content-disposition=attachment%3Bfilename%3Dfindings.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165920Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=00473e88bd72dac6b0a78a03273464c7fcda2ca7a6e2e57e79db9dceb64917f3",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/findings.csv?response-content-disposition=attachment%3Bfilename%3Dfindings.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025151Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=dc9bdfadbb5ce78efce30858ea5eda8faf9aa3e715c581cc82ee8084c02180e6",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv"
       },
       {
-        "check_id": "link_check_70cf7038f6d58731",
+        "check_id": "link_check_b7dc3b1f4a470e63",
         "content_type": "text/csv",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/federal_awards.csv?response-content-disposition=attachment%3Bfilename%3Dfederal_awards.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165920Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=dcdf52609ba84435561b93f856c624824767234821c0cc8bbee69e938c8d688a",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/public-data/gsa/full/federal_awards.csv?response-content-disposition=attachment%3Bfilename%3Dfederal_awards.csv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025152Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=6986cae1f561552b4f28cb0da50308e920ee128e0b667ade29af72f17d2e8043",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv"
@@ -103,13 +103,22 @@
         "url": "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx"
       },
       {
-        "check_id": "link_check_c25cd4f7f00b0c44",
+        "check_id": "link_check_1d544eec2816fc7a",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://file.lacounty.gov/SDSInter/auditor/cmr/1124357_2022-05-13TarzanaTreatmentCentersInc-ADepartmentofMentalHealthProgramServicesProvider-FiscalComplianceReview.pdf",
+        "final_url": "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://file.lacounty.gov/SDSInter/auditor/cmr/1124357_2022-05-13TarzanaTreatmentCentersInc-ADepartmentofMentalHealthProgramServicesProvider-FiscalComplianceReview.pdf"
+        "url": "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf"
+      },
+      {
+        "check_id": "link_check_cbaf9c1b9729b7d6",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.santabarbara.courts.ca.gov/online-services/court-calendars/search-court-calendars/court-calendars-civil",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.santabarbara.courts.ca.gov/es/online-services/court-calendars/search-court-calendars/calendarios-judiciales-civil?case_type=All&hearing_type=All&keyword=&order=field_party_name&page=56&sort=asc"
       },
       {
         "check_id": "link_check_3452d98ce8c00879",
@@ -139,247 +148,238 @@
         "url": "https://data.chhs.ca.gov/dataset/county-health-status-profiles"
       },
       {
-        "check_id": "link_check_e6db47d498fe276e",
-        "content_type": "text/html; charset=utf-8",
-        "error": "",
-        "final_url": "https://lab.data.ca.gov/dataset/homelessness-demographics",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://lab.data.ca.gov/dataset/homelessness-demographics"
-      },
-      {
-        "check_id": "link_check_a1f11f4d8a9bb3c4",
+        "check_id": "link_check_3821ceaec69bfabf",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2016-06-CENSUS-0000126607.pdf?response-content-disposition=attachment%3Bfilename%3D2016-06-CENSUS-0000126607.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165924Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=c0ad4f5dd193a83a2c0e5acac9d413f6e517f54f81f3d983ddcadc40f7ffb69d",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000126607"
-      },
-      {
-        "check_id": "link_check_623a7fe2bfe3e625",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2017-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2017-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165925Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=68562b7d2803cd538dc55d8ac78e9f9ec7749794c94315d521d17bf0f5d41660",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575"
-      },
-      {
-        "check_id": "link_check_e18a91bdbdcaa0b3",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2017-06-CENSUS-0000126607.pdf?response-content-disposition=attachment%3Bfilename%3D2017-06-CENSUS-0000126607.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165925Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=f056fe58e34e0d28bb1c4f64ab022dd8fd8e984da19f9c9c5645230946aee7e4",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607"
-      },
-      {
-        "check_id": "link_check_624e2fbb2eadf4c9",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165926Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=b0a50e4820ef05535bcebf952ac7cd378ca09129b4cc77b87b3371c8a15e3226",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575"
-      },
-      {
-        "check_id": "link_check_537960779fade524",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000126607.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000126607.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165927Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=2ea14604e12f10949c9bcee53ebd3fa3b04b3a758ee5438037931901497fa481",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607"
-      },
-      {
-        "check_id": "link_check_320fb69471a01066",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165928Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=75b2a06e790e01ab80f3a7419f4c75875a0d7423800bb2635e5618eb20988942",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575"
-      },
-      {
-        "check_id": "link_check_b259c4e5f65f94f4",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000126607.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000126607.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165929Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=4b467990b963a447b999ed412bbe0870e94e373dc85640af3c6fa5b37699a736",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000126607.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000126607.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025155Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=cf252e1477d6663d2dfba30cca372de2974eb06f30feef04ebb6ca628795a98f",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607"
       },
       {
-        "check_id": "link_check_a4cf30fc0208262a",
+        "check_id": "link_check_4732752fd1642339",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2020-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2020-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165930Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=d1bcb31e3ace83b144cfb833aee0b1f7553c9a9708a9233593fe05e20776ec78",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2023-06-GSAFAC-0000017535.pdf?response-content-disposition=attachment%3Bfilename%3D2023-06-GSAFAC-0000017535.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025156Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=31ce8aa9a2444698b306a0cf933aef612c48a24f7233359c6f3deca5319cfd63",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535"
       },
       {
-        "check_id": "link_check_e7c00bdbdb3ec6f2",
+        "check_id": "link_check_d402fe298dedc597",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2020-06-CENSUS-0000126607.pdf?response-content-disposition=attachment%3Bfilename%3D2020-06-CENSUS-0000126607.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165930Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=0599c313c7d6515e3055f7483bc5c40cc349ba6d0aa377fb74329aa55ca3ee0f",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000126607"
-      },
-      {
-        "check_id": "link_check_cf2278308a36e292",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2021-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2021-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165931Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=b66bbb158432ebcd805fba63ed502e68d14a8ff5a78bb89dc462e50606f0827b",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575"
-      },
-      {
-        "check_id": "link_check_91fd63ac65b88244",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2021-06-CENSUS-0000126607.pdf?response-content-disposition=attachment%3Bfilename%3D2021-06-CENSUS-0000126607.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165932Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=53353aa72beaa711fffe9a3436841097af3306721dfbd475518e8bedb2a15411",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000126607"
-      },
-      {
-        "check_id": "link_check_743ab77ac8c329ac",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2022-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2022-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165933Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=e62b2357038876602e1a58778f0da556a06c2f924049c9566ff9ff3feb1eb857",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119575"
-      },
-      {
-        "check_id": "link_check_ae5f96aa1040eea9",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2023-06-GSAFAC-0000019151.pdf?response-content-disposition=attachment%3Bfilename%3D2023-06-GSAFAC-0000019151.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165934Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=08d3356e0c819f1c69b53561208bc625f6c960d3b4d39ba05726ae2768ae639e",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2023-06-GSAFAC-0000019151.pdf?response-content-disposition=attachment%3Bfilename%3D2023-06-GSAFAC-0000019151.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025157Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=51eb127e3c1f8397622055740552dc7c51c901b88c8f72d3fe94630405fb1f5f",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151"
       },
       {
-        "check_id": "link_check_30dc255e423cf146",
+        "check_id": "link_check_c2835c9f35c92b50",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2023-06-GSAFAC-0000031913.pdf?response-content-disposition=attachment%3Bfilename%3D2023-06-GSAFAC-0000031913.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165935Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=60f02415c071195a68f649bbe1ad0bc0f8c0eaf66a3bca463721885eacd6647c",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2024-06-GSAFAC-0000348075.pdf?response-content-disposition=attachment%3Bfilename%3D2024-06-GSAFAC-0000348075.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025158Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=c86fbe2b078dff0fa565b11bfb815354403a3037a721a72b2729bb0b0b59f649",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000031913"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075"
       },
       {
-        "check_id": "link_check_06e4d85a0807998d",
+        "check_id": "link_check_f21b9e74e25b7194",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2024-06-GSAFAC-0000354996.pdf?response-content-disposition=attachment%3Bfilename%3D2024-06-GSAFAC-0000354996.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165936Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=bd18b9f50002f57f3b767c35dae2cefc616f5e692ba5d026195e3c3048c7b8ad",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2024-06-GSAFAC-0000354996.pdf?response-content-disposition=attachment%3Bfilename%3D2024-06-GSAFAC-0000354996.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025159Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=f4de8451133e556b18fd3fa92120ba52dbba80621329f4b5858292f71e633867",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
       },
       {
-        "check_id": "link_check_94f095e22466a8f9",
+        "check_id": "link_check_4105fa9a414fc2eb",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2024-06-GSAFAC-0000360511.pdf?response-content-disposition=attachment%3Bfilename%3D2024-06-GSAFAC-0000360511.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165937Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=4b98e4e5112c428d082d139dcd98bd49a5a085d656506f2fea2f7f349ad605e9",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2025-06-GSAFAC-0000400073.pdf?response-content-disposition=attachment%3Bfilename%3D2025-06-GSAFAC-0000400073.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025200Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=5e6748a9c2118930d2d8bc6547884e5e701f4116cf454fa24df0deb7986afda7",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000360511"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073"
       },
       {
-        "check_id": "link_check_73ff207c44c12476",
+        "check_id": "link_check_d7089722f7df5ae4",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2025-06-GSAFAC-0000405366.pdf?response-content-disposition=attachment%3Bfilename%3D2025-06-GSAFAC-0000405366.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165937Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=99f326f84304f59099387f73c30ba91c4eb8256c70265912b6c41e8458d941de",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2025-06-GSAFAC-0000405366.pdf?response-content-disposition=attachment%3Bfilename%3D2025-06-GSAFAC-0000405366.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025201Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=9895712d687d0484388074f4f2ae9c16f22aecca46e3cfb6ca0e31356e9011f2",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366"
       },
       {
-        "check_id": "link_check_4d4f2c1ed201be2e",
+        "check_id": "link_check_6b8e98dc8aa1808f",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2025-06-GSAFAC-0000408150.pdf?response-content-disposition=attachment%3Bfilename%3D2025-06-GSAFAC-0000408150.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165938Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=ecf6b89731cf5712a834900a9f0a2becccb0eebf2a7cfdea8bf8e9fe629f7cdd",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2016-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2016-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025202Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=664e1350db976a72b022eb52e860b84f654172f66de3354b284db1454b9183ed",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000408150"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575"
       },
       {
-        "check_id": "link_check_8c76885a38c27820",
+        "check_id": "link_check_06b6e4b197fa8b6f",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2016-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2016-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165939Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=b46c1d739a4b8854c381fb95bc557af209138df51784dd0c6c6fe1cd4fda615e",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774"
-      },
-      {
-        "check_id": "link_check_39d4f8ff12b5bb17",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2016-06-CENSUS-0000124840.pdf?response-content-disposition=attachment%3Bfilename%3D2016-06-CENSUS-0000124840.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165940Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=90d10fda08817b47f622c45e8e8e9e10fdb22695fdcbd6004057769156c77e6e",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124840"
-      },
-      {
-        "check_id": "link_check_3f5fa0354d191e22",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2016-06-CENSUS-0000124927.pdf?response-content-disposition=attachment%3Bfilename%3D2016-06-CENSUS-0000124927.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165941Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=c44e5f59c72b566a9e2b41d8198cdf30e20fc07d82c76b1526857082a4bb9b1a",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2016-06-CENSUS-0000124927.pdf?response-content-disposition=attachment%3Bfilename%3D2016-06-CENSUS-0000124927.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025203Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=b2a4fba2b55d9acb7c4f5ed8aa09fd2d63c3837973480453c8d974bd70a5b8c5",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927"
       },
       {
-        "check_id": "link_check_f768fdd9112116e5",
+        "check_id": "link_check_4519c4ad583c5a01",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2016-06-CENSUS-0000246480.pdf?response-content-disposition=attachment%3Bfilename%3D2016-06-CENSUS-0000246480.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165942Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=187ea1e08ac1e79b637f1c326df7174d8c0be54d907e2e1dea558bfdb98fec9d",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2017-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2017-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025204Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=008b92613896af0345b4984c6d65bed228152efae9d4497ca2e11956f2689d6d",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000246480"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575"
       },
       {
-        "check_id": "link_check_eda3bfb0533ebfce",
+        "check_id": "link_check_e7fb33c35cd57dd1",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2017-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2017-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165943Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=97576626520f06e2d92324757050023e2b5c606402dd5cb3a1d10b8df3ea78ba",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2017-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2017-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025205Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=2cdf0bf07a4eb33293009343395d0a92276dba98d83fb07b9905129ed6cd9f90",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774"
       },
       {
-        "check_id": "link_check_503af64499a787ac",
+        "check_id": "link_check_a22cc5593a31864a",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2017-06-CENSUS-0000124840.pdf?response-content-disposition=attachment%3Bfilename%3D2017-06-CENSUS-0000124840.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165944Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=91383423dc0674c0fbbef291786f907af64843f72ee482b8a349989a74a1a3ad",
-        "http_status": 200,
-        "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124840"
-      },
-      {
-        "check_id": "link_check_23e9801e1fdec04c",
-        "content_type": "application/pdf",
-        "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2017-06-CENSUS-0000124927.pdf?response-content-disposition=attachment%3Bfilename%3D2017-06-CENSUS-0000124927.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T165945Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=e87634e13af8c220a44224f4e6471476621a8d9a6c933efc2674c9afa499eb76",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2017-06-CENSUS-0000124927.pdf?response-content-disposition=attachment%3Bfilename%3D2017-06-CENSUS-0000124927.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025206Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=cf0ce916a9fd1d0bd3afc9573d71a163dcb0b75cf30ab9b5c0195c3fddb087bc",
         "http_status": 200,
         "status": "PASS",
         "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927"
       },
       {
-        "check_id": "link_check_1f72cd96ddf0e001",
-        "content_type": "text/html; charset=UTF-8",
+        "check_id": "link_check_a535e2b7ebf62c2e",
+        "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://www.healthright360.org/our-services/substance-use-disorder/",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2017-06-CENSUS-0000126607.pdf?response-content-disposition=attachment%3Bfilename%3D2017-06-CENSUS-0000126607.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025207Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=c549f561ef3634b4b69668379718c4e10d7818615243d9993caa162d26bdda01",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://www.healthright360.org/our-services/substance-use-disorder/"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607"
+      },
+      {
+        "check_id": "link_check_d82a0e836c5af77e",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025207Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=34a88fce7f85686012abd0067e5750fc8c8d2ec513a277ade2c793ce11000559",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575"
+      },
+      {
+        "check_id": "link_check_98c63e27cb827fe9",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025208Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=2a6c05d7ebd4cdc8b397dfa27ae8e2683b8f5100cfc7ad5a7d485912a6cb5cc7",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
+      },
+      {
+        "check_id": "link_check_050ff10b4ba7e4eb",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000124927.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000124927.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025209Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=8f55bf1a6ed0097d396837534e9e016ca52a5fe16996178724bc7f670ae673a3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927"
+      },
+      {
+        "check_id": "link_check_afc8eda07a6898dc",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000126607.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000126607.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025210Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=5ea2d2004a607303d235e041fe5429c061a49a0954f022282ccf61b43b26eb0c",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607"
+      },
+      {
+        "check_id": "link_check_389e3f8834e73f64",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025211Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=475b6c4d0fdb3154f9b54d484e6cdf1315cbf33a0f8161103972f4152084d486",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575"
+      },
+      {
+        "check_id": "link_check_d07f0adf313999a2",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025212Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=fe3e71396ad559c7ccf923184c52f62a56d3080653f2ab85e46e763f9eea4f9e",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774"
+      },
+      {
+        "check_id": "link_check_f8a9d95fc6bb50db",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000124927.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000124927.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025213Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=b3afb328222b49fabe491a521aa9f545afd83fb75a4029d67c5809613d3828ba",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927"
+      },
+      {
+        "check_id": "link_check_6fec29024f4d1c26",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2020-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2020-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025214Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=c4453eac7ea6c47b3df9ff4d87437139e1106556231b1ea7f705f6850d2ed5b3",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575"
+      },
+      {
+        "check_id": "link_check_3c0c61908d7d6f22",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2020-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2020-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025215Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=24ddae2cd3734a8e627c00fd269a1ef76692da9d96c2de5e1daee104d693f8f6",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774"
+      },
+      {
+        "check_id": "link_check_fab3b7b5f3f97c22",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2020-06-CENSUS-0000124927.pdf?response-content-disposition=attachment%3Bfilename%3D2020-06-CENSUS-0000124927.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025216Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=b0751a5e23725a2c9f70eeb3ddaf27714fa7b533e3e7e72e83566e5d89587fd9",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000124927"
+      },
+      {
+        "check_id": "link_check_87d635fca5de84c0",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2020-06-CENSUS-0000249434.pdf?response-content-disposition=attachment%3Bfilename%3D2020-06-CENSUS-0000249434.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025217Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=721c718c3861746e3e8bda840e9071e94353a3f52db3c2a426db9b92ab9d4b8e",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000249434"
+      },
+      {
+        "check_id": "link_check_95477f4acd523454",
+        "content_type": "application/pdf",
+        "error": "",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2021-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2021-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025217Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=54ec15b2f8b12138fae07302949c950ec3d25bcd2d0ea280ce5c4de037390339",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575"
+      },
+      {
+        "check_id": "link_check_b0f3be8738dd2dd7",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.tarzanatc.org/services/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.tarzanatc.org/services/"
       },
       {
         "check_id": "link_check_2cbee6147a858a1c",
@@ -398,6 +398,15 @@
         "http_status": 200,
         "status": "PASS",
         "url": "https://lab.data.ca.gov/"
+      },
+      {
+        "check_id": "link_check_e6db47d498fe276e",
+        "content_type": "text/html; charset=utf-8",
+        "error": "",
+        "final_url": "https://lab.data.ca.gov/dataset/homelessness-demographics",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://lab.data.ca.gov/dataset/homelessness-demographics"
       },
       {
         "check_id": "link_check_7f5608f0d5e0b908",
@@ -634,99 +643,126 @@
         "url": "https://phoenixhouseca.org/impact-annual-reports/"
       },
       {
-        "check_id": "link_check_74d8196041ac16ab",
+        "check_id": "link_check_7df73b7712b31869",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170008Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=5106b5204ffa0de932a33ed741d7bde446f6da628e17a374f3171e2624aef325",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2021-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2021-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025241Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=03826275107775a783ff80ead5e9f5995d01be53af686137b9c02eadd2ede862",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000122774"
       },
       {
-        "check_id": "link_check_eb4c95e64450ae6c",
+        "check_id": "link_check_df88078f68fefa8a",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000124840.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000124840.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170009Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=4e877bda69f79815ffb3e9695240a054dba7279bef4b09491d432766282ad93a",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2021-06-CENSUS-0000249434.pdf?response-content-disposition=attachment%3Bfilename%3D2021-06-CENSUS-0000249434.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025242Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=0e2b92178f623f4f9006133145552e38d63ca9e5a2ffeefc020a78cc687d8cbb",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124840"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000249434"
       },
       {
-        "check_id": "link_check_ba779c2ce64e5bb3",
+        "check_id": "link_check_4d761146c62e2a42",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000124927.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000124927.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170010Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=03b6be9662257b3a033416a304aafd036c02ecc67b21c5c3c916fd677a833f16",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2021-06-GSAFAC-0000011418.pdf?response-content-disposition=attachment%3Bfilename%3D2021-06-GSAFAC-0000011418.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025242Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=6d5be22d4f2261dcb3e592159a7b17de6132ef4929d48704e5df1938443c1556",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-GSAFAC-0000011418"
       },
       {
-        "check_id": "link_check_165ed730443d240a",
+        "check_id": "link_check_edd4b30ad951cf5c",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2018-06-CENSUS-0000247998.pdf?response-content-disposition=attachment%3Bfilename%3D2018-06-CENSUS-0000247998.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170011Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=1e0fe309a2193012e8fd325e265d7a6fe10dc7e3396b59cdde860a2b2c7cd95b",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2022-06-CENSUS-0000119575.pdf?response-content-disposition=attachment%3Bfilename%3D2022-06-CENSUS-0000119575.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025243Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=058a9d26c20cf08c96c8c7b7dea478fd304cf06fe152822e7706d9978cb77125",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000247998"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119575"
       },
       {
-        "check_id": "link_check_8811375c5df01103",
+        "check_id": "link_check_5be550bd4e0e3ef2",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170011Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=358a9c4fb6416e500d51eb34d6f22fb639a551256f599468d1accf093089f088",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2022-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2022-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025244Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=fc3abe8f4396196e5abe03bd65037c471796f6c8607a961bae6215a44d05269f",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000122774"
       },
       {
-        "check_id": "link_check_7d124379f5c16ef4",
+        "check_id": "link_check_baac99b3194d5ab5",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000124840.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000124840.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170012Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=6cb0615bb9495c1ce2e30071057247e668b56670b7a379a898ea1972a40d0cfe",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2022-06-GSAFAC-0000366337.pdf?response-content-disposition=attachment%3Bfilename%3D2022-06-GSAFAC-0000366337.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025245Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=7684601a319196e2978164a6b47b56c0f8483a728107656f2729e6c07802c1ac",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124840"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-GSAFAC-0000366337"
       },
       {
-        "check_id": "link_check_1f8b2204bc312847",
+        "check_id": "link_check_0f6daf8017c3a21e",
         "content_type": "application/pdf",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000124927.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000124927.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170013Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=cfc3148e39a18617f6edbb9cc305418a36269e3376b12aab041ad4ee6f3c5305",
+        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2023-06-GSAFAC-0000384194.pdf?response-content-disposition=attachment%3Bfilename%3D2023-06-GSAFAC-0000384194.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260504%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260504T025246Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=5616c42c255f0063374270b484f6f73e78c273e44588facd436a8e55791ca43b",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927"
+        "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000384194"
       },
       {
-        "check_id": "link_check_4d397eaf7f70a4a9",
-        "content_type": "application/pdf",
+        "check_id": "link_check_1f72cd96ddf0e001",
+        "content_type": "text/html; charset=UTF-8",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000247998.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000247998.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170014Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=ac6dc9150bce0083a74934b2f38500fbb1893b8a09b7aa451adeab8f9277b7db",
+        "final_url": "https://www.healthright360.org/our-services/substance-use-disorder/",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000247998"
+        "url": "https://www.healthright360.org/our-services/substance-use-disorder/"
       },
       {
-        "check_id": "link_check_2fa799ee80a0a96f",
-        "content_type": "application/pdf",
+        "check_id": "link_check_a5a201d97532d072",
+        "content_type": "text/html; charset=UTF-8",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2019-06-CENSUS-0000249434.pdf?response-content-disposition=attachment%3Bfilename%3D2019-06-CENSUS-0000249434.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170015Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=307865a61f98b33f7ddad516288511a3539f58ed847f87ac8a9a9c42d622d75e",
+        "final_url": "https://cri-help.org/programs/residential-treatment/overview.html",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000249434"
+        "url": "https://cri-help.org/programs/residential-treatment/overview.html"
       },
       {
-        "check_id": "link_check_ee0b099b8e165e6d",
-        "content_type": "application/pdf",
+        "check_id": "link_check_5553a886527eb3ce",
+        "content_type": "text/html; charset=utf-8",
         "error": "",
-        "final_url": "https://s3-us-gov-west-1.amazonaws.com/cg-ac8bf271-4c6d-4ee0-bd36-1415b839a93c/singleauditreport/2020-06-CENSUS-0000122774.pdf?response-content-disposition=attachment%3Bfilename%3D2020-06-CENSUS-0000122774.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAR7FXZINYPTKJO46C%2F20260501%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260501T170016Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Signature=87f2c295975e0143ba8fc45e21a3fb1ec76a5023718e5c784b6ddfa1cd0b30f7",
+        "final_url": "https://phoenixhouseca.org/what-we-do/",
         "http_status": 200,
         "status": "PASS",
-        "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774"
+        "url": "https://phoenixhouseca.org/what-we-do/"
+      },
+      {
+        "check_id": "link_check_dc6266c545136960",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://westcare.com/places/california/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://westcare.com/places/california/"
+      },
+      {
+        "check_id": "link_check_0b85704418ef5ae7",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://www.tarzanatc.org/services/substance-abuse-disorder-treatment/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://www.tarzanatc.org/services/substance-abuse-disorder-treatment/"
+      },
+      {
+        "check_id": "link_check_1dfe7387b32df9fb",
+        "content_type": "text/html; charset=UTF-8",
+        "error": "",
+        "final_url": "https://westcarecalifornia.org/services/treatment-rehab/",
+        "http_status": 200,
+        "status": "PASS",
+        "url": "https://westcarecalifornia.org/services/treatment-rehab/"
       }
     ],
-    "created_at": "2026-05-01T17:00:17+00:00",
+    "created_at": "2026-05-04T02:52:52+00:00",
     "error_count": 0,
-    "report_id": "link_integrity_614745fc2d81feee",
+    "report_id": "link_integrity_9c145e9449cc6e64",
     "status": "PASS",
     "warning_count": 0
   },
@@ -734,155 +770,91 @@
     "affected_evidence_refs": [
       "E02",
       "E04",
-      "E12",
       "E13",
       "E14",
       "E15",
-      "E18",
+      "E16",
       "E19",
       "E20",
-      "E40",
-      "E41",
-      "E42",
-      "E43"
+      "E21"
     ],
     "note": "Stale or renamed public URLs are repaired to working source pages before publication. Links are not removed as a substitute for repair.",
-    "repaired_public_links": 26,
+    "repaired_public_links": 14,
     "replacements": [
       {
         "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202441109349300129_public.xml",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip#2024_TEOS_XML_05A/202421369349300712_public.xml",
         "ref": "E02"
       },
       {
         "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202441109349300129_public.xml",
-        "ref": "E04"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_04A.zip#202501089349300500_public.xml",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip#2024_TEOS_XML_05A/202421369349300712_public.xml",
         "ref": "E04"
       },
       {
         "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202400959349300030_public.xml",
-        "ref": "E04"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_04A.zip#202541049349301739_public.xml",
-        "ref": "E04"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2026/2026_TEOS_XML_03A.zip#202620839349300647_public.xml",
-        "ref": "E04"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202441109349300129_public.xml",
-        "ref": "E12"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202441109349300129_public.xml",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip#2024_TEOS_XML_05A/202421369349300712_public.xml",
         "ref": "E13"
       },
       {
         "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202441109349300129_public.xml",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip#2024_TEOS_XML_05A/202421369349300712_public.xml",
         "ref": "E14"
       },
       {
         "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202441109349300129_public.xml",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip#2024_TEOS_XML_05A/202421369349300712_public.xml",
         "ref": "E15"
+      },
+      {
+        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip#2024_TEOS_XML_05A/202421369349300712_public.xml",
+        "ref": "E16"
       },
       {
         "new_url": "https://data.chhs.ca.gov/",
         "old_unlinked_reference": "data.chhs.ca.gov/api/3/action",
-        "ref": "E18"
+        "ref": "E19"
       },
       {
         "new_url": "https://lab.data.ca.gov/",
         "old_unlinked_reference": "data.ca.gov/api/3/action",
-        "ref": "E18"
+        "ref": "E19"
       },
       {
         "new_url": "https://lab.data.ca.gov/dataset/medication-assisted-treatment-in-medi-cal-for-opioid-use-disorders-by-county",
         "old_unlinked_reference": "data.chhs.ca.gov/dataset/medication-assisted-treatment-in-medi-cal-for-opioid-use-disorders-by-county",
-        "ref": "E18"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202441109349300129_public.xml",
-        "ref": "E19"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_04A.zip#202501089349300500_public.xml",
         "ref": "E19"
       },
       {
         "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202400959349300030_public.xml",
-        "ref": "E19"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_04A.zip#202541049349301739_public.xml",
-        "ref": "E19"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2026/2026_TEOS_XML_03A.zip#202620839349300647_public.xml",
-        "ref": "E19"
+        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip#2024_TEOS_XML_05A/202421369349300712_public.xml",
+        "ref": "E20"
       },
       {
         "new_url": "https://www.tarzanatc.org/treatment-news/",
         "old_unlinked_reference": "www.tarzanatc.org/news-events/",
-        "ref": "E20"
+        "ref": "E21"
       },
       {
         "new_url": "https://socialmodelrecovery.org/",
         "old_unlinked_reference": "socialmodelrecovery.org/annual-report/",
-        "ref": "E20"
+        "ref": "E21"
       },
       {
         "new_url": "https://socialmodelrecovery.org/services/",
         "old_unlinked_reference": "www.socialmodelrecovery.org/about-us/",
-        "ref": "E20"
+        "ref": "E21"
       },
       {
         "new_url": "https://socialmodelrecovery.org/services/",
         "old_unlinked_reference": "www.socialmodelrecovery.org/programs/",
-        "ref": "E20"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_04A.zip#202501089349300500_public.xml",
-        "ref": "E40"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip#2024_TEOS_XML_04A/202400959349300030_public.xml",
-        "ref": "E41"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_04A.zip#202541049349301739_public.xml",
-        "ref": "E42"
-      },
-      {
-        "new_url": "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv",
-        "old_unlinked_reference": "apps.irs.gov/pub/epostcard/990/xml/2026/2026_TEOS_XML_03A.zip#202620839349300647_public.xml",
-        "ref": "E43"
+        "ref": "E21"
       }
     ]
   },
   "public_link_access": {
-    "checked_url_count": 78,
+    "checked_url_count": 82,
     "complete": true,
     "error_count": 0,
     "evidence_rows_without_verified_public_link": 0,
@@ -891,15 +863,20 @@
     "warning_count": 0
   },
   "publication_context": {
+    "completeness_blocker_count": 0,
+    "completeness_retry_required_count": 0,
+    "completeness_status": "not computed",
     "completion_guard_blocker_count": 0,
     "completion_guard_hit_count": 0,
     "completion_guard_missing_required": [],
     "completion_guard_status": "not computed",
     "completion_guard_total": 0,
-    "evidence_count": 60,
+    "deep_source_blocker_count": 0,
+    "deep_source_missing_required": [],
+    "evidence_count": 69,
     "human_decision": "PENDING",
     "public_link_access": {
-      "checked_url_count": 78,
+      "checked_url_count": 82,
       "complete": true,
       "error_count": 0,
       "evidence_rows_without_verified_public_link": 0,
@@ -907,32 +884,90 @@
       "status": "PASS",
       "warning_count": 0
     },
-    "public_link_checked_count": 78,
+    "public_link_checked_count": 82,
     "public_link_error_count": 0,
     "public_link_status": "PASS",
     "publication_confidence": "not computed",
-    "review_priority": 51.52,
+    "review_priority": 63.91,
     "risk_severity": "not computed",
     "run_label": "live_ca_recovery_ngos_2026_04_24",
     "source_access": {
       "affected_evidence_refs": [],
       "complete": false,
+      "completeness_blocker_count": 0,
+      "completeness_retry_required_count": 0,
+      "completeness_status": "not computed",
       "completion_guard_access_complete": false,
       "completion_guard_blocker_count": 0,
       "completion_guard_missing_required": [],
       "completion_guard_status": "not computed",
+      "deep_source_access_complete": true,
+      "deep_source_blocker_count": 0,
+      "deep_source_missing_required": [],
       "items": [],
-      "note": "Source access combines public-link access with completion-guard access. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
-      "partial_items": [],
-      "partial_source_access_issue_count": 0,
+      "note": "Source access combines public-link access, completion-guard access, and deep source-acquisition blockers. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
+      "partial_items": [
+        {
+          "record_id": "source_table_irs_990_financials",
+          "ref": "E13",
+          "remaining_verified_url_count": 28,
+          "source_type": "source_extraction_irs_990_table",
+          "title": "Internal Revenue Service Form 990 summary source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        },
+        {
+          "record_id": "source_table_fac_audit_controls",
+          "ref": "E14",
+          "remaining_verified_url_count": 28,
+          "source_type": "source_extraction_fac_audit_table",
+          "title": "Federal Audit Clearinghouse audit summary source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        },
+        {
+          "record_id": "source_table_fac_award_programs",
+          "ref": "E15",
+          "remaining_verified_url_count": 28,
+          "source_type": "source_extraction_fac_award_table",
+          "title": "Federal Audit Clearinghouse award source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        },
+        {
+          "record_id": "source_table_dhcs_facility_status",
+          "ref": "E16",
+          "remaining_verified_url_count": 28,
+          "source_type": "source_extraction_dhcs_status_table",
+          "title": "Federal Audit Clearinghouse audit summary source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        },
+        {
+          "record_id": "source_table_spend_vs_results_join",
+          "ref": "E20",
+          "remaining_verified_url_count": 10,
+          "source_type": "source_extraction_spend_vs_results_table",
+          "title": "Spend-versus-results context source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        }
+      ],
+      "partial_source_access_issue_count": 5,
       "public_link_access_complete": true,
-      "source_access_required_count": 0
+      "source_access_required_count": 0,
+      "total_source_blocker_count": 0
     },
     "source_completeness": "not computed",
-    "verified_linked_evidence_count": 60,
+    "verified_linked_evidence_count": 69,
     "workflow_state": "AWAITING_HUMAN_REVIEW"
   },
-  "publication_id": "publication_ec60b944dc459114",
+  "publication_id": "publication_0fd5cc7d8b2d8593",
   "safety": {
     "checked_files": [
       "case_dossier.md",
@@ -940,45 +975,208 @@
       "source_ledger.json"
     ],
     "errors": [],
-    "evidence_refs_checked": 60,
+    "evidence_refs_checked": 69,
     "passed": true,
     "source_access": {
       "affected_evidence_refs": [],
       "complete": false,
+      "completeness_blocker_count": 0,
+      "completeness_retry_required_count": 0,
+      "completeness_status": "not computed",
       "completion_guard_access_complete": false,
       "completion_guard_blocker_count": 0,
       "completion_guard_missing_required": [],
       "completion_guard_status": "not computed",
+      "deep_source_access_complete": true,
+      "deep_source_blocker_count": 0,
+      "deep_source_missing_required": [],
       "items": [],
-      "note": "Source access combines public-link access with completion-guard access. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
-      "partial_items": [],
-      "partial_source_access_issue_count": 0,
+      "note": "Source access combines public-link access, completion-guard access, and deep source-acquisition blockers. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
+      "partial_items": [
+        {
+          "record_id": "source_table_irs_990_financials",
+          "ref": "E13",
+          "remaining_verified_url_count": 28,
+          "source_type": "source_extraction_irs_990_table",
+          "title": "Internal Revenue Service Form 990 summary source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        },
+        {
+          "record_id": "source_table_fac_audit_controls",
+          "ref": "E14",
+          "remaining_verified_url_count": 28,
+          "source_type": "source_extraction_fac_audit_table",
+          "title": "Federal Audit Clearinghouse audit summary source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        },
+        {
+          "record_id": "source_table_fac_award_programs",
+          "ref": "E15",
+          "remaining_verified_url_count": 28,
+          "source_type": "source_extraction_fac_award_table",
+          "title": "Federal Audit Clearinghouse award source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        },
+        {
+          "record_id": "source_table_dhcs_facility_status",
+          "ref": "E16",
+          "remaining_verified_url_count": 28,
+          "source_type": "source_extraction_dhcs_status_table",
+          "title": "Federal Audit Clearinghouse audit summary source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        },
+        {
+          "record_id": "source_table_spend_vs_results_join",
+          "ref": "E20",
+          "remaining_verified_url_count": 10,
+          "source_type": "source_extraction_spend_vs_results_table",
+          "title": "Spend-versus-results context source collection",
+          "unverified_source_references": [
+            "lab"
+          ]
+        }
+      ],
+      "partial_source_access_issue_count": 5,
       "public_link_access_complete": true,
-      "source_access_required_count": 0
+      "source_access_required_count": 0,
+      "total_source_blocker_count": 0
     },
-    "source_ledger_entries": 60,
+    "source_ledger_entries": 69,
     "warnings": []
   },
   "sentinel_decision": "DOWNGRADE_FOR_REVIEW",
   "source_access": {
     "affected_evidence_refs": [],
     "complete": false,
+    "completeness_blocker_count": 0,
+    "completeness_retry_required_count": 0,
+    "completeness_status": "not computed",
     "completion_guard_access_complete": false,
     "completion_guard_blocker_count": 0,
     "completion_guard_missing_required": [],
     "completion_guard_status": "not computed",
+    "deep_source_access_complete": true,
+    "deep_source_blocker_count": 0,
+    "deep_source_missing_required": [],
     "items": [],
-    "note": "Source access combines public-link access with completion-guard access. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
-    "partial_items": [],
-    "partial_source_access_issue_count": 0,
+    "note": "Source access combines public-link access, completion-guard access, and deep source-acquisition blockers. Verified links do not clear unresolved acquisition blockers, and missing source access is never treated as completion.",
+    "partial_items": [
+      {
+        "record_id": "source_table_irs_990_financials",
+        "ref": "E13",
+        "remaining_verified_url_count": 28,
+        "source_type": "source_extraction_irs_990_table",
+        "title": "Internal Revenue Service Form 990 summary source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      },
+      {
+        "record_id": "source_table_fac_audit_controls",
+        "ref": "E14",
+        "remaining_verified_url_count": 28,
+        "source_type": "source_extraction_fac_audit_table",
+        "title": "Federal Audit Clearinghouse audit summary source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      },
+      {
+        "record_id": "source_table_fac_award_programs",
+        "ref": "E15",
+        "remaining_verified_url_count": 28,
+        "source_type": "source_extraction_fac_award_table",
+        "title": "Federal Audit Clearinghouse award source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      },
+      {
+        "record_id": "source_table_dhcs_facility_status",
+        "ref": "E16",
+        "remaining_verified_url_count": 28,
+        "source_type": "source_extraction_dhcs_status_table",
+        "title": "Federal Audit Clearinghouse audit summary source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      },
+      {
+        "record_id": "source_table_spend_vs_results_join",
+        "ref": "E20",
+        "remaining_verified_url_count": 10,
+        "source_type": "source_extraction_spend_vs_results_table",
+        "title": "Spend-versus-results context source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      }
+    ],
+    "partial_source_access_issue_count": 5,
     "public_link_access_complete": true,
-    "source_access_required_count": 0
+    "source_access_required_count": 0,
+    "total_source_blocker_count": 0
   },
   "source_run_label": "live_ca_recovery_ngos_2026_04_24",
   "unverified_link_access": {
-    "affected_evidence_refs": [],
-    "items": [],
-    "note": "All public source URLs passed link verification after deterministic repairs.",
-    "unverified_public_links": 0
+    "affected_evidence_refs": [
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E20"
+    ],
+    "items": [
+      {
+        "ref": "E13",
+        "remaining_verified_url_count": 28,
+        "title": "Internal Revenue Service Form 990 summary source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      },
+      {
+        "ref": "E14",
+        "remaining_verified_url_count": 28,
+        "title": "Federal Audit Clearinghouse audit summary source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      },
+      {
+        "ref": "E15",
+        "remaining_verified_url_count": 28,
+        "title": "Federal Audit Clearinghouse award source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      },
+      {
+        "ref": "E16",
+        "remaining_verified_url_count": 28,
+        "title": "Federal Audit Clearinghouse audit summary source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      },
+      {
+        "ref": "E20",
+        "remaining_verified_url_count": 10,
+        "title": "Spend-versus-results context source collection",
+        "unverified_source_references": [
+          "lab"
+        ]
+      }
+    ],
+    "note": "Broken or blocked public URLs are not published as live links. They are preserved as unlinked source-access references, and the evidence row remains visible for reviewer repair.",
+    "unverified_public_links": 5
   }
 }

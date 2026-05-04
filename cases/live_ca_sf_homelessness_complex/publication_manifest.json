@@ -4,7 +4,7 @@
     "case_id": "live_ca_sf_homelessness_complex",
     "checked_claim_count": 1255,
     "checks": [],
-    "created_at": "2026-05-02T22:44:42+00:00",
+    "created_at": "2026-05-04T02:50:24+00:00",
     "error_count": 0,
     "status": "PASS",
     "verification_id": "citation_verification_aa23d036259d3064",
@@ -16,7 +16,7 @@
     "index_html": "index.html",
     "source_ledger_json": "source_ledger.json"
   },
-  "generated_at": "2026-05-02T22:44:50+00:00",
+  "generated_at": "2026-05-04T02:50:34+00:00",
   "human_review_required": true,
   "link_integrity": {
     "checked_url_count": 16,
@@ -166,7 +166,7 @@
         "url": "https://www.tndc.org/"
       }
     ],
-    "created_at": "2026-05-02T22:44:49+00:00",
+    "created_at": "2026-05-04T02:50:33+00:00",
     "error_count": 0,
     "report_id": "link_integrity_0d9bd4801ce893a1",
     "status": "PASS",
@@ -393,7 +393,7 @@
     "verified_linked_evidence_count": 23,
     "workflow_state": "AWAITING_HUMAN_REVIEW"
   },
-  "publication_id": "publication_3321600a369f5dc7",
+  "publication_id": "publication_238d39ec653f39e6",
   "safety": {
     "checked_files": [
       "case_dossier.md",

@@ -6,25 +6,27 @@
   <title>San Francisco homelessness NGO complex triage | CalDS Public Case Viewer</title>
   <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Geist:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 :root {
   color-scheme: light;
-  --paper: #f3ead8;
-  --paper-2: #fff9ed;
-  --paper-3: #e6d7bb;
-  --ink: #19150f;
-  --muted: #665f52;
-  --quiet: #867866;
-  --charcoal: #121615;
-  --charcoal-2: #1e2925;
-  --civic-blue: #214f72;
-  --civic-blue-2: #2d6f8f;
-  --docket-red: #9e2f2b;
-  --audit-amber: #d89d28;
-  --ledger-green: #2f6d55;
-  --line: rgba(25, 21, 15, .18);
-  --line-dark: rgba(255, 249, 237, .18);
-  --shadow: 0 24px 65px rgba(25, 21, 15, .18);
+  --paper: #f5ecda;
+  --paper-2: #fffaf0;
+  --paper-3: #e8d7ba;
+  --ink: #171511;
+  --muted: #625b50;
+  --quiet: #8a7d69;
+  --charcoal: #101513;
+  --charcoal-2: #17231f;
+  --civic-blue: #234f72;
+  --civic-blue-2: #2e728d;
+  --docket-red: #9d302c;
+  --audit-amber: #dca326;
+  --ledger-green: #2d6d55;
+  --line: rgba(23, 21, 17, .16);
+  --line-strong: rgba(23, 21, 17, .34);
+  --line-dark: rgba(255, 250, 240, .18);
+  --shadow: 0 28px 80px rgba(23, 21, 17, .18);
+  --hard-shadow: 10px 10px 0 rgba(157, 48, 44, .14);
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -32,12 +34,14 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    linear-gradient(90deg, rgba(25, 21, 15, .035) 1px, transparent 1px) 0 0 / 38px 38px,
-    linear-gradient(180deg, rgba(25, 21, 15, .028) 1px, transparent 1px) 0 0 / 38px 38px,
-    radial-gradient(circle at 10% 0%, rgba(216, 157, 40, .22), transparent 34%),
-    linear-gradient(145deg, #f6ecd7 0%, #efe0c2 38%, #f8f1e2 100%);
-  font-family: "Source Serif 4", Georgia, serif;
-  line-height: 1.58;
+    radial-gradient(circle at 10% -4%, rgba(220, 163, 38, .28), transparent 30%),
+    radial-gradient(circle at 88% 8%, rgba(35, 79, 114, .14), transparent 34%),
+    linear-gradient(90deg, rgba(23, 21, 17, .035) 1px, transparent 1px) 0 0 / 42px 42px,
+    linear-gradient(180deg, rgba(23, 21, 17, .026) 1px, transparent 1px) 0 0 / 42px 42px,
+    linear-gradient(145deg, #f8edda 0%, #ecddc1 42%, #fff7e8 100%);
+  font-family: "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.55;
+  overflow-x: hidden;
 }
 a { color: var(--civic-blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible, summary:focus-visible {
@@ -61,7 +65,7 @@ code, pre, .mono, .evidence-ref {
   letter-spacing: 0;
 }
 code {
-  background: rgba(255, 249, 237, .82);
+  background: rgba(255, 250, 240, .82);
   border: 1px solid var(--line);
   border-radius: 4px;
   padding: 1px 5px;
@@ -69,73 +73,142 @@ code {
 .case-hero {
   position: relative;
   overflow: hidden;
-  background:
-    linear-gradient(135deg, rgba(18, 22, 21, .97), rgba(30, 41, 37, .95)),
-    repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 32px);
   color: var(--paper-2);
-  border-bottom: 7px solid var(--docket-red);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(220, 163, 38, .16), transparent 24%),
+    radial-gradient(circle at 86% 22%, rgba(46, 114, 141, .22), transparent 32%),
+    linear-gradient(135deg, rgba(16, 21, 19, .98), rgba(23, 35, 31, .97)),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 32px);
+  border-bottom: 8px solid var(--docket-red);
 }
 .case-hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(120deg, transparent 0 56%, rgba(216,157,40,.18) 56% 58%, transparent 58%),
-    repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 1px, transparent 1px 18px);
+    linear-gradient(120deg, transparent 0 52%, rgba(220,163,38,.18) 52% 53%, transparent 53%),
+    linear-gradient(90deg, rgba(255,250,240,.04) 1px, transparent 1px) 0 0 / 54px 54px,
+    repeating-linear-gradient(135deg, rgba(255,255,255,.032) 0 1px, transparent 1px 18px);
   pointer-events: none;
 }
 .case-hero__inner {
   position: relative;
-  max-width: 1220px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 44px 24px 34px;
+  padding: 22px 24px 38px;
 }
+.case-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 36px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 250, 240, .13);
+}
+.case-brand {
+  color: var(--paper-2);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.case-topbar__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.case-topbar__links a,
+.case-topbar__links button,
+.case-nav a,
+.print-button {
+  color: rgba(255, 250, 240, .92);
+  border: 1px solid rgba(255, 250, 240, .24);
+  border-radius: 999px;
+  background: rgba(255, 250, 240, .07);
+  padding: 8px 11px;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.case-topbar__links button,
+.print-button { cursor: pointer; }
+.case-command-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 28px;
+  align-items: end;
+}
+.case-command-grid > * { min-width: 0; }
 .eyebrow {
   margin: 0 0 12px;
   color: var(--audit-amber);
   font-family: "IBM Plex Mono", Consolas, monospace;
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0;
   text-transform: uppercase;
 }
 .case-hero h1 {
   margin: 0;
-  max-width: 940px;
+  max-width: 1180px;
   font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(38px, 7vw, 86px);
-  line-height: .92;
+  font-size: 5rem;
+  line-height: .9;
   letter-spacing: 0;
 }
 .case-title {
-  max-width: 860px;
-  margin: 18px 0 0;
-  color: rgba(255, 249, 237, .88);
-  font-size: 20px;
+  max-width: 880px;
+  margin: 20px 0 0;
+  color: rgba(255, 250, 240, .88);
+  font-size: 22px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 .case-id {
   margin: 14px 0 0;
-  color: rgba(255, 249, 237, .72);
+  color: rgba(255, 250, 240, .72);
   font-family: "IBM Plex Mono", Consolas, monospace;
   font-size: 12px;
   overflow-wrap: anywhere;
 }
+.case-docket {
+  min-height: 248px;
+  padding: 18px;
+  background: rgba(255, 250, 240, .08);
+  border: 1px solid rgba(255, 250, 240, .18);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 12px 12px 0 rgba(0,0,0,.18);
+}
+.case-docket h2 {
+  margin: 0 0 16px;
+  color: var(--paper-2);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 30px;
+}
+.case-docket p {
+  margin: 0;
+  color: rgba(255, 250, 240, .78);
+  font-size: 14px;
+}
 .status-strip {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: 1.25fr 1fr 1fr 1.25fr;
+  grid-auto-flow: dense;
   gap: 12px;
-  margin: 30px 0 0;
+  margin: 34px 0 0;
 }
 .status-tile {
-  min-height: 108px;
-  padding: 14px;
+  min-height: 132px;
+  padding: 16px;
   border: 1px solid var(--line-dark);
-  background: rgba(255, 249, 237, .08);
+  background: rgba(255, 250, 240, .08);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
 }
 .status-tile strong {
   display: block;
-  color: #fff9ed;
+  color: #fffaf0;
   font-family: "IBM Plex Mono", Consolas, monospace;
   font-size: 12px;
   font-weight: 600;
@@ -144,52 +217,30 @@ code {
 .status-tile span {
   display: block;
   margin-top: 8px;
-  color: rgba(255, 249, 237, .82);
-  font-size: 18px;
+  color: rgba(255, 250, 240, .84);
+  font-size: 20px;
+  line-height: 1.2;
   overflow-wrap: anywhere;
 }
-.print-button {
-  border: 1px solid rgba(255, 249, 237, .35);
-  background: rgba(255, 249, 237, .12);
-  color: var(--paper-2);
-  cursor: pointer;
-  padding: 8px 11px;
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 12px;
-  text-transform: uppercase;
-}
 .case-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 24px;
-}
-.case-nav a {
-  color: var(--paper-2);
-  border: 1px solid rgba(255, 249, 237, .35);
-  background: rgba(255, 249, 237, .08);
-  padding: 8px 11px;
-  text-decoration: none;
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 12px;
-  text-transform: uppercase;
+  display: none;
 }
 .case-shell {
   display: grid;
-  grid-template-columns: 252px minmax(0, 1fr);
-  gap: 28px;
-  max-width: 1220px;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 30px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 30px 24px 72px;
+  padding: 34px 24px 80px;
 }
 .case-rail {
   position: sticky;
   top: 18px;
   align-self: start;
-  padding: 18px;
-  background: rgba(255, 249, 237, .82);
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(255,250,240,.94), rgba(245,236,218,.88));
   border: 1px solid var(--line);
-  box-shadow: 8px 8px 0 rgba(158, 47, 43, .12);
+  box-shadow: var(--hard-shadow);
 }
 .case-rail h2 {
   margin: 0 0 10px;
@@ -199,30 +250,34 @@ code {
 }
 .case-rail a {
   display: block;
-  margin: 7px 0;
+  margin: 8px 0;
+  padding: 8px 0;
   color: var(--charcoal);
+  border-bottom: 1px solid rgba(23, 21, 17, .08);
   font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 12px;
+  font-size: 11px;
   text-decoration: none;
   text-transform: uppercase;
 }
 .case-main { min-width: 0; }
 .reviewer-panel {
   margin: 0 0 24px;
-  padding: 20px;
-  background: #fffdf5;
-  border: 2px solid rgba(47, 109, 85, .35);
-  box-shadow: 8px 8px 0 rgba(47, 109, 85, .12);
+  padding: 22px;
+  background: linear-gradient(120deg, rgba(47,109,85,.12), transparent 46%), #fffdf5;
+  border: 2px solid rgba(47, 109, 85, .38);
+  box-shadow: 10px 10px 0 rgba(47, 109, 85, .13);
 }
 .reviewer-panel p { margin: 8px 0 0; }
 .reviewer-panel__grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-flow: dense;
   gap: 10px;
   margin-top: 14px;
 }
 .reviewer-panel__grid div {
-  padding: 10px;
+  min-height: 92px;
+  padding: 12px;
   background: rgba(243, 234, 216, .72);
   border: 1px solid var(--line);
 }
@@ -239,6 +294,32 @@ code {
   border-top: 1px solid var(--line);
   padding-top: 10px;
 }
+.case-intel-strip {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-auto-flow: dense;
+  gap: 12px;
+  margin: 0 0 24px;
+}
+.case-intel-card {
+  min-height: 124px;
+  padding: 16px;
+  background: rgba(255, 250, 240, .88);
+  border: 1px solid var(--line);
+}
+.case-intel-card strong {
+  display: block;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.case-intel-card span {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
 .notice {
   display: grid;
   grid-template-columns: 10px 1fr;
@@ -252,21 +333,21 @@ code {
 .notice::before { content: ""; background: var(--audit-amber); }
 .notice strong { color: var(--docket-red); }
 .dossier, #source-ledger {
-  background: rgba(255, 249, 237, .9);
+  background: rgba(255, 250, 240, .94);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
 .dossier {
-  padding: 28px;
+  padding: 36px;
 }
 #source-ledger {
-  margin-top: 28px;
-  padding: 28px;
+  margin-top: 30px;
+  padding: 36px;
 }
 .ledger-digest {
-  margin: 18px 0 26px;
-  padding: 16px;
-  background: rgba(243, 234, 216, .7);
+  margin: 20px 0 28px;
+  padding: 18px;
+  background: linear-gradient(135deg, rgba(35,79,114,.1), transparent 44%), rgba(243, 234, 216, .76);
   border: 1px solid var(--line);
 }
 .ledger-digest h3 { margin-top: 0; }
@@ -293,26 +374,25 @@ h1, h2, h3, h4 {
   letter-spacing: 0;
 }
 .dossier h1 {
+  max-width: 920px;
   margin-top: 0;
-  font-size: clamp(34px, 4vw, 52px);
+  font-size: 48px;
 }
 .dossier h2, #source-ledger h2 {
-  margin-top: 38px;
-  padding-top: 18px;
-  border-top: 2px solid rgba(158, 47, 43, .28);
+  margin-top: 44px;
+  padding-top: 20px;
+  border-top: 3px solid rgba(157, 48, 44, .24);
   color: var(--charcoal);
 }
 .dossier h3 { color: var(--civic-blue); }
-.dossier p, .dossier li { font-size: 18px; }
+.dossier p, .dossier li { font-size: 17px; }
 .dossier ul, .dossier ol { padding-left: 26px; }
 .table-block {
   overflow: auto;
   margin: 18px 0;
-  padding: 14px;
+  padding: 16px;
   color: #f9edd4;
-  background:
-    linear-gradient(90deg, rgba(216, 157, 40, .1), transparent 26%),
-    #18201d;
+  background: linear-gradient(90deg, rgba(216, 157, 40, .1), transparent 26%), #18201d;
   border: 1px solid rgba(25, 21, 15, .42);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
   white-space: pre;
@@ -331,12 +411,16 @@ h1, h2, h3, h4 {
 }
 .evidence-card {
   position: relative;
-  margin: 16px 0;
-  padding: 18px 18px 18px 26px;
+  margin: 18px 0;
+  padding: 20px 20px 20px 30px;
   border: 1px solid var(--line);
-  background:
-    linear-gradient(90deg, rgba(47, 109, 85, .12), transparent 32%),
-    #fffaf0;
+  background: linear-gradient(90deg, rgba(47, 109, 85, .12), transparent 32%), #fffaf0;
+  box-shadow: 6px 6px 0 rgba(23, 21, 17, .06);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.evidence-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 10px 10px 0 rgba(23, 21, 17, .09);
 }
 .evidence-card::before {
   content: "";
@@ -383,12 +467,12 @@ h1, h2, h3, h4 {
 }
 .source-list a { word-break: break-word; }
 footer {
-  max-width: 1220px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 22px 24px 38px;
 }
 @media (prefers-reduced-motion: no-preference) {
-  .case-hero__inner, .notice, .dossier, #source-ledger, .evidence-card {
+  .notice, .dossier, #source-ledger, .evidence-card, .reviewer-panel {
     animation: rise-in .7s ease both;
   }
   .notice { animation-delay: .08s; }
@@ -408,14 +492,56 @@ footer {
     transition-duration: .001ms !important;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 940px) {
+  .case-command-grid { grid-template-columns: 1fr; }
   .status-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .case-shell { grid-template-columns: 1fr; }
   .case-rail { position: static; }
   .reviewer-panel__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case-intel-strip { grid-template-columns: 1fr; }
+  .case-hero h1 { font-size: 3.9rem; }
+  .case-title { font-size: 20px; }
 }
 @media (max-width: 560px) {
-  .case-hero__inner, .case-shell { padding-left: 16px; padding-right: 16px; }
+  .case-hero * { box-sizing: border-box; }
+  .case-hero__inner, .case-shell {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .case-hero__inner,
+  .case-command-grid,
+  .case-command-grid > *,
+  .case-title,
+  .case-id {
+    max-width: 320px;
+    width: 100%;
+  }
+  .case-command-grid { display: block; }
+  .case-title { overflow-wrap: break-word; font-size: 18px; }
+  .case-docket { margin-top: 22px; width: 100%; max-width: 320px; }
+  .case-hero h1 {
+    max-width: 320px;
+    font-size: 2.35rem;
+    line-height: .96;
+    overflow-wrap: anywhere;
+  }
+  .case-topbar { align-items: flex-start; flex-direction: column; }
+  .case-topbar__links {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    width: 100%;
+    max-width: 320px;
+  }
+  .case-topbar__links a,
+  .case-topbar__links button {
+    min-width: 0;
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
   .status-strip { grid-template-columns: 1fr; }
   .reviewer-panel__grid { grid-template-columns: 1fr; }
   .dossier, #source-ledger { padding: 18px; }
@@ -424,7 +550,7 @@ footer {
 @media print {
   body { background: #fff; color: #000; }
   .case-hero, .case-rail, .case-nav { background: #fff; color: #000; border: 0; }
-  .case-nav, .print-button, .skip-link { display: none; }
+  .case-topbar, .case-nav, .print-button, .skip-link { display: none; }
   .case-shell { display: block; max-width: none; padding: 0; }
   .dossier, #source-ledger, .notice { box-shadow: none; border-color: #999; }
   .reviewer-panel, .evidence-card { break-inside: avoid; box-shadow: none; }
@@ -437,12 +563,31 @@ footer {
 <a class="skip-link" href="#dossier">Skip to case briefing</a>
 <header class="case-hero">
   <div class="case-hero__inner">
-    <p class="eyebrow">California Evidence Room</p>
-    <h1>San Francisco homelessness NGO complex triage</h1>
-    <p class="case-title">Public-safe source-cited review packet. Human review required; not a formal finding.</p>
-    <p class="case-id">Case ID: live_ca_sf_homelessness_complex | Generated: 2026-05-02T22:44:49+00:00 | Run: live_ca_sf_homelessness_complex</p>
+    <nav class="case-topbar" aria-label="Case tools">
+      <a class="case-brand" href="../../">California Evidence Room</a>
+      <div class="case-topbar__links">
+        <a href="#dossier">Briefing</a>
+        <a href="#source-ledger">Source Ledger</a>
+        <a href="case_dossier.md">Markdown</a>
+        <a href="source_ledger.json">Source JSON</a>
+        <a href="publication_manifest.json">Publication Manifest</a>
+        <button class="print-button" type="button" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </nav>
+    <div class="case-command-grid">
+      <div>
+        <p class="eyebrow">Human-review case packet</p>
+        <h1>San Francisco homelessness NGO complex triage</h1>
+        <p class="case-title">Public-safe, source-cited briefing for a reviewer who needs to see the money trail, the flags, the source receipts, and the unresolved blockers before taking action.</p>
+        <p class="case-id">Case ID: live_ca_sf_homelessness_complex | Generated: 2026-05-04T02:50:33+00:00 | Run: live_ca_sf_homelessness_complex</p>
+      </div>
+      <aside class="case-docket" aria-label="Publication posture">
+        <h2>Review posture</h2>
+        <p>This page is a review aid. It preserves source blockers and sentinel caveats instead of converting unresolved gaps into conclusions.</p>
+      </aside>
+    </div>
     <div class="status-strip" aria-label="Case publication status">
-      <div class="status-tile"><strong>Sentinel posture</strong><span>DOWNGRADE_FOR_REVIEW</span></div>
+      <div class="status-tile"><strong>Sentinel posture</strong><span>Downgrade For Review</span></div>
       <div class="status-tile"><strong>Review priority</strong><span>97.55 / 100</span></div>
       <div class="status-tile"><strong>Evidence ledger</strong><span>23 records</span></div>
       <div class="status-tile"><strong>Source status</strong><span>16 verified URLs; 75 source blocker(s)</span></div>
@@ -485,14 +630,19 @@ footer {
     <p>Start with the briefing, click each <span class="mono">E##</span> evidence label, and verify the linked source card before relying on a claim. This page is a review aid, not a formal finding.</p>
   </div>
   <div class="reviewer-panel__grid">
-    <div><span>Workflow state</span><strong>AWAITING_HUMAN_REVIEW</strong></div>
-    <div><span>Human decision</span><strong>PENDING</strong></div>
-    <div><span>Public links</span><strong>PASS / 16 checked</strong></div>
-    <div><span>Source gates</span><strong>PASS_WITH_BLOCKERS / 75 blocker(s)</strong></div>
+    <div><span>Workflow state</span><strong>Awaiting Human Review</strong></div>
+    <div><span>Human decision</span><strong>Pending</strong></div>
+    <div><span>Public links</span><strong>Pass / 16 checked</strong></div>
+    <div><span>Source gates</span><strong>Pass With Blockers / 75 blocker(s)</strong></div>
   </div>
 <details><summary>Open source blockers</summary><ul><li>Tenderloin Housing Clinic Inc / state_awards</li><li>Tenderloin Housing Clinic Inc / state_charity_registry</li><li>Tenderloin Housing Clinic Inc / state_entity_registry</li><li>Tenderloin Housing Clinic Inc / board_files</li><li>Tenderloin Housing Clinic Inc / campaign_finance</li><li>Episcopal Community Svcs of SF Inc / state_awards</li><li>+69 additional blocker(s) in the manifest.</li></ul></details>
 </section>
 
+  <section class="case-intel-strip" aria-label="Case status summary">
+    <div class="case-intel-card"><strong>Human-review state</strong><span>Awaiting Human Review</span></div>
+    <div class="case-intel-card"><strong>Verified source links</strong><span>16</span></div>
+    <div class="case-intel-card"><strong>Open source blockers</strong><span>75</span></div>
+  </section>
   <section class="notice">
     <div><strong>Publication safety note:</strong> This page is a public-safe review aid, not a formal finding. Local file paths are omitted. Evidence labels jump to source-ledger cards; source rows either link to verified internet sources or state that source access is still required and must be resolved before the packet is treated as complete.</div>
   </section>
@@ -4026,6 +4176,32 @@ footer {
   </section>
   </div>
 </main>
-<footer>Generated 2026-05-02T22:44:49+00:00. Human review remains required before outside-facing use.</footer>
+<footer>Generated 2026-05-04T02:50:33+00:00. Human review remains required before outside-facing use.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script>
+window.addEventListener("load", function () {
+  if (!window.gsap || !window.ScrollTrigger || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return;
+  }
+  window.gsap.registerPlugin(window.ScrollTrigger);
+  window.gsap.utils.toArray(".evidence-card").slice(0, 24).forEach(function (card, index) {
+    window.gsap.from(card, {
+      scrollTrigger: { trigger: card, start: "top 92%" },
+      y: 22,
+      opacity: 0,
+      duration: 0.42,
+      delay: Math.min(index * 0.015, 0.16),
+      ease: "power2.out"
+    });
+  });
+  window.gsap.to(".case-rail", {
+    scrollTrigger: { trigger: ".case-shell", start: "top top", end: "bottom bottom", scrub: true },
+    boxShadow: "2px 2px 0 rgba(157, 48, 44, .1)"
+  });
+});
+</script>
+
 </body>
 </html>
