@@ -104,6 +104,35 @@ if (!publicText.includes("red flag, not a verdict") && !publicText.includes("Red
 if (!publicText.includes("calds-build")) {
   fail("build marker missing");
 }
+if (!publicText.includes("Follow the receipts.")) {
+  fail("approved editorial direction missing");
+}
+if (!publicText.includes("Private stays private")) {
+  fail("public/private boundary copy missing");
+}
+if (!publicText.includes("data-money-filter")) {
+  fail("money filter controls missing");
+}
+if (!publicText.includes("empty-money")) {
+  fail("money filter empty state missing");
+}
+if (!publicText.includes("receiptCount")) {
+  fail("money filter visible-count control missing");
+}
+const indexHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
+const moneyCards = Array.from(indexHtml.matchAll(/class="receipt-card reveal" data-case="([^"]+)"/g)).map((match) => match[1]);
+const filterButtons = Array.from(indexHtml.matchAll(/data-money-filter="([^"]+)"><span>[^<]+<\/span><b>(\d+)<\/b>/g)).map((match) => ({
+  caseId: match[1],
+  count: Number(match[2]),
+}));
+if (!moneyCards.length) fail("money receipt cards missing");
+if (!filterButtons.length) fail("money filter buttons missing");
+for (const filter of filterButtons) {
+  const expected = filter.caseId === "all" ? moneyCards.length : moneyCards.filter((caseId) => caseId === filter.caseId).length;
+  if (filter.count !== expected) {
+    fail(`money filter count mismatch for ${filter.caseId}: expected ${expected}, got ${filter.count}`);
+  }
+}
 
 if (!process.exitCode) {
   console.log(`PASS public data verified: cases=${publicCases.cases.length} claims=${claims.length} sources=${sources.length}`);
