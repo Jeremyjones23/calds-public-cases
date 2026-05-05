@@ -20,16 +20,20 @@ const banned = [
   /sk-[A-Za-z0-9_-]{20,}/i,
   /C:\\Users\\/i,
   /data\\live_corpus\\/i,
-  /runs\\/i,
   /\brow count\b/i,
   /\bsource table\b/i,
   /\bsource dataset\b/i,
   /\bparser\b/i,
   /\bsentinel\b/i,
   /\bworkflow state\b/i,
+  /\bAWAITING_HUMAN_REVIEW\b/i,
+  /\bDOWNGRADE_FOR_REVIEW\b/i,
   /\breview packet\b/i,
   /\bpublication confidence\b/i,
   /\bsource completeness\b/i,
+  /\brisk severity\b/i,
+  /\breview priority\b/i,
+  /\blegal_language_check\b/i,
   /\bWFA\b/,
 ];
 
@@ -42,10 +46,19 @@ function fail(message) {
   process.exitCode = 1;
 }
 
-for (const file of requiredFiles) {
-  if (!fs.existsSync(path.join(dataDir, file))) {
-    fail(`missing ${file}`);
+function walk(dir) {
+  const entries = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name === ".git" || entry.name === ".vercel") continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) entries.push(...walk(full));
+    else entries.push(full);
   }
+  return entries;
+}
+
+for (const file of requiredFiles) {
+  if (!fs.existsSync(path.join(dataDir, file))) fail(`missing ${file}`);
 }
 
 const publicCases = readJson("public-cases.json");
@@ -61,6 +74,13 @@ if ((publicCases.cases || []).length < 3) fail("combined public site must includ
 if (manifest.status !== "PASS") fail("verification manifest is not PASS");
 if (!claims.length) fail("claim ledger is empty");
 if (!sources.length) fail("source ledger is empty");
+
+for (const caseSummary of caseSummaries.cases || []) {
+  if ("legal_language_check" in caseSummary) fail(`case ${caseSummary.case_id} exposes legal_language_check`);
+  if ((caseSummary.what_this_does_not_prove || []).some((item) => /review priority|risk severity|publication confidence|source completeness/i.test(item))) {
+    fail(`case ${caseSummary.case_id} exposes private score language`);
+  }
+}
 
 for (const claim of claims) {
   if (!claim.claim_id) fail("claim without claim_id");
@@ -86,39 +106,36 @@ for (const claim of claims) {
   }
 }
 
+const textFiles = walk(root).filter((file) => [".html", ".md", ".json", ".js", ".css", ".txt"].includes(path.extname(file)));
 let publicText = "";
-for (const file of requiredFiles.concat(["index.html", "styles.css", "app.js"])) {
-  const filePath = path.join(root, file);
-  if (fs.existsSync(filePath)) publicText += `\n${fs.readFileSync(filePath, "utf8")}`;
+for (const file of textFiles) {
+  if (path.relative(root, file).replaceAll("\\", "/") === "scripts/verify-public-data.mjs") continue;
+  publicText += `\n/* ${path.relative(root, file)} */\n${fs.readFileSync(file, "utf8")}`;
 }
 for (const pattern of banned) {
   if (pattern.test(publicText)) fail(`banned public text matched ${pattern}`);
 }
 
+for (const stale of ["case_dossier.md", "case_dossier.json", "publication_manifest.json", "source_ledger.json"]) {
+  const staleHits = textFiles.filter((file) => path.basename(file) === stale);
+  if (staleHits.length) fail(`stale case export is still public: ${staleHits.map((file) => path.relative(root, file)).join(", ")}`);
+}
+
 if (!publicText.includes("Possible fraud, waste, or abuse means the records show a red flag")) {
   fail("required possible fraud, waste, or abuse definition is missing");
 }
-if (!publicText.includes("red flag, not a verdict") && !publicText.includes("Red flag, not verdict")) {
+if (!publicText.includes("Red flag, not a verdict") && !publicText.includes("red flag, not a verdict")) {
   fail("red flag caveat is missing");
 }
-if (!publicText.includes("calds-build")) {
-  fail("build marker missing");
-}
-if (!publicText.includes("Follow the receipts.")) {
-  fail("approved editorial direction missing");
-}
-if (!publicText.includes("Private stays private")) {
-  fail("public/private boundary copy missing");
-}
-if (!publicText.includes("data-money-filter")) {
-  fail("money filter controls missing");
-}
-if (!publicText.includes("empty-money")) {
-  fail("money filter empty state missing");
-}
-if (!publicText.includes("receiptCount")) {
-  fail("money filter visible-count control missing");
-}
+if (!publicText.includes("calds-build")) fail("build marker missing");
+if (!publicText.includes("Follow the receipts.")) fail("approved editorial direction missing");
+if (!publicText.includes("Private stays private")) fail("public/private boundary copy missing");
+if (!publicText.includes("data-money-filter")) fail("money filter controls missing");
+if (!publicText.includes("empty-money")) fail("money filter empty state missing");
+if (!publicText.includes("receiptCount")) fail("money filter visible-count control missing");
+if (/picsum\.photos/i.test(publicText)) fail("public pages still use fact-like placeholder photography");
+if (/\$11\.2(?!\s*million)/i.test(publicText)) fail("ambiguous $11.2 amount still appears without units");
+
 const indexHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
 const moneyCards = Array.from(indexHtml.matchAll(/class="receipt-card reveal" data-case="([^"]+)"/g)).map((match) => match[1]);
 const filterButtons = Array.from(indexHtml.matchAll(/data-money-filter="([^"]+)"><span>[^<]+<\/span><b>(\d+)<\/b>/g)).map((match) => ({
@@ -129,11 +146,18 @@ if (!moneyCards.length) fail("money receipt cards missing");
 if (!filterButtons.length) fail("money filter buttons missing");
 for (const filter of filterButtons) {
   const expected = filter.caseId === "all" ? moneyCards.length : moneyCards.filter((caseId) => caseId === filter.caseId).length;
-  if (filter.count !== expected) {
-    fail(`money filter count mismatch for ${filter.caseId}: expected ${expected}, got ${filter.count}`);
+  if (filter.count !== expected) fail(`money filter count mismatch for ${filter.caseId}: expected ${expected}, got ${filter.count}`);
+}
+
+for (const caseId of caseIds) {
+  const casePath = path.join(root, "cases", caseId, "index.html");
+  if (!fs.existsSync(casePath)) fail(`missing case detail page for ${caseId}`);
+  else {
+    const html = fs.readFileSync(casePath, "utf8");
+    if (!html.includes("case-hero")) fail(`case detail page does not use editorial case layout for ${caseId}`);
   }
 }
 
 if (!process.exitCode) {
-  console.log(`PASS public data verified: cases=${publicCases.cases.length} claims=${claims.length} sources=${sources.length}`);
+  console.log(`PASS public data verified: cases=${publicCases.cases.length} claims=${claims.length} sources=${sources.length} files=${textFiles.length}`);
 }

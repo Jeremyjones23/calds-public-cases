@@ -16,14 +16,13 @@
         "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries."
       ],
       "red_flags": [
-        "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
-        "Entity: California Supportive Housing."
+        "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries."
       ],
       "source_ids": [
         "source_aed0b285da2580f7",
         "source_809845a7789f5908"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -42,15 +41,14 @@
       ],
       "red_flags": [
         "DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
-        "Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023.",
-        "Entity: DignityMoves."
+        "Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023."
       ],
       "source_ids": [
         "source_623e8384c050cac1",
         "source_7c26a981736f8012",
         "source_38b519ff478dcadc"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -69,15 +67,14 @@
       ],
       "red_flags": [
         "Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.",
-        "Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023.",
-        "Entity: Hope the Mission."
+        "Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023."
       ],
       "source_ids": [
         "source_24b3eae831438e36",
         "source_7d071dd160e1c081",
         "source_954f81e4282c6710"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -96,15 +93,14 @@
       ],
       "red_flags": [
         "The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
-        "Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023.",
-        "Entity: The People Concern."
+        "Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023."
       ],
       "source_ids": [
         "source_98b8fc83c977ef43",
         "source_ff7add9be3fc69ad",
         "source_fd54c34a3b3221be"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -118,7 +114,6 @@
       "geography": "California",
       "issue_area": "Homelessness services",
       "official_records_found": [
-        "Official enforcement row already recovered: True.",
         "An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and St..."
       ],
       "public_money_found": [
@@ -127,8 +122,7 @@
       ],
       "red_flags": [
         "Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
-        "Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023.",
-        "Entity: Weingart Center Association."
+        "Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023."
       ],
       "source_ids": [
         "source_82cf4e7d5e876356",
@@ -137,7 +131,7 @@
         "source_2c61fae7fe11eb0a",
         "source_e0633bb90df98b6e"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -149,7 +143,6 @@
       "geography": "California",
       "issue_area": "Recovery and treatment services",
       "official_records_found": [
-        "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.",
         "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc."
       ],
       "public_money_found": [],
@@ -160,7 +153,7 @@
         "source_10afb536b0568f6c",
         "source_c2e8e3b5646d0862"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -191,7 +184,7 @@
       "geography": "California",
       "issue_area": "Recovery and treatment services",
       "official_records_found": [
-        "Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a docket-search manifest only; it is not a merits finding and the court page itself states calendar information is not the official court r"
+        "Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a court-calendar search result only; it is not a merits finding and the court page itself states calendar information is not the official court r"
       ],
       "public_money_found": [],
       "red_flags": [],
@@ -306,7 +299,7 @@
       "source_ids": [
         "source_beafc8e6b2faec8e"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -317,9 +310,7 @@
       "entity_id": "entity_f66ab3fe7c417473",
       "geography": "San Francisco",
       "issue_area": "Homelessness services",
-      "official_records_found": [
-        "Public or official statement pages fetched: 1 of 1."
-      ],
+      "official_records_found": [],
       "public_money_found": [],
       "red_flags": [
         "Latest matched Form 990 filing for Catholic Charities: Employer Identification Number 953516461, tax period year 2024."
@@ -328,7 +319,7 @@
         "source_4545e7396f339aaa",
         "source_30e5a3ee1dfa75f0"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -340,9 +331,7 @@
       "geography": "San Francisco",
       "issue_area": "Homelessness services",
       "official_records_found": [
-        "Official enforcement row already recovered: True.",
-        "A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents.",
-        "Public or official statement pages fetched: 1 of 1."
+        "A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents."
       ],
       "public_money_found": [],
       "red_flags": [
@@ -354,7 +343,7 @@
         "source_f691cbf0f378e4ba",
         "source_3a3226cda0b61582"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -373,7 +362,7 @@
       "source_ids": [
         "source_d5646de584349230"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -392,7 +381,7 @@
       "source_ids": [
         "source_0ae5c78ea31712d0"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -411,7 +400,7 @@
       "source_ids": [
         "source_2f605c63ea06b6cd"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -430,7 +419,7 @@
       "source_ids": [
         "source_5f745f1f1e12a9c2"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -449,7 +438,7 @@
       "source_ids": [
         "source_f7e275ee394ae375"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -468,7 +457,7 @@
       "source_ids": [
         "source_d78d1f32934356e6"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -483,7 +472,7 @@
       "public_money_found": [],
       "red_flags": [],
       "source_ids": [],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -494,9 +483,7 @@
       "entity_id": "entity_b745487f2f70df6d",
       "geography": "San Francisco",
       "issue_area": "Homelessness services",
-      "official_records_found": [
-        "Public or official statement pages fetched: 1 of 1."
-      ],
+      "official_records_found": [],
       "public_money_found": [],
       "red_flags": [
         "Latest matched Form 990 filing for Tenderloin Housing Clinic Inc: Employer Identification Number 942681706, tax period year 2023."
@@ -505,7 +492,7 @@
         "source_868778ebc063f7b1",
         "source_8e0933ca65ef1157"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -516,9 +503,7 @@
       "entity_id": "entity_d5687d39d148121c",
       "geography": "San Francisco",
       "issue_area": "Homelessness services",
-      "official_records_found": [
-        "Public or official statement pages fetched: 1 of 1."
-      ],
+      "official_records_found": [],
       "public_money_found": [],
       "red_flags": [
         "Latest matched Form 990 filing for Tenderloin Neighborhood Development Corp: Employer Identification Number 942761808, tax period year 2023."
@@ -528,7 +513,7 @@
         "source_db020f59e1b42025",
         "source_05e53e03feb352d0"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -547,7 +532,7 @@
       "source_ids": [
         "source_5e46448b92435084"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -559,7 +544,6 @@
       "geography": "San Francisco",
       "issue_area": "Homelessness services",
       "official_records_found": [
-        "Official enforcement row already recovered: True.",
         "San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements."
       ],
       "public_money_found": [],
@@ -571,7 +555,7 @@
         "source_29cd168e97a8af11",
         "source_8cea8805b08dda9f"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
     {
       "case_ids": [
@@ -590,7 +574,7 @@
       "source_ids": [
         "source_907b723ea823cbaa"
       ],
-      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+      "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     }
   ]
 }

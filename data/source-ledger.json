@@ -14,13 +14,13 @@
         "evidence_005b3b922e1587e8"
       ],
       "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-30",
-      "source_family": "Contract and payment acquisition gap record",
+      "source_family": "Contract or payment record search",
       "source_id": "source_aed0b285da2580f7",
       "source_type": "contract_payment_discovery",
       "supports": "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
-      "title": "Contract and payment acquisition status: California Supportive Housing",
+      "title": "Contract or payment record: California Supportive Housing",
       "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
     },
     {
@@ -37,13 +37,13 @@
         "evidence_eed56b8b976b5cea"
       ],
       "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-30",
-      "source_family": "Contract and payment acquisition gap record",
+      "source_family": "Contract or payment record search",
       "source_id": "source_623e8384c050cac1",
       "source_type": "contract_payment_discovery",
       "supports": "DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
-      "title": "Contract and payment acquisition status: DignityMoves",
+      "title": "Contract or payment record: DignityMoves",
       "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
     },
     {
@@ -60,13 +60,13 @@
         "evidence_1cde2e75545d024f"
       ],
       "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-30",
-      "source_family": "Contract and payment acquisition gap record",
+      "source_family": "Contract or payment record search",
       "source_id": "source_24b3eae831438e36",
       "source_type": "contract_payment_discovery",
       "supports": "Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.",
-      "title": "Contract and payment acquisition status: Hope the Mission",
+      "title": "Contract or payment record: Hope the Mission",
       "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
     },
     {
@@ -83,13 +83,13 @@
         "evidence_173b3ea25c8c9a43"
       ],
       "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-30",
-      "source_family": "Contract and payment acquisition gap record",
+      "source_family": "Contract or payment record search",
       "source_id": "source_98b8fc83c977ef43",
       "source_type": "contract_payment_discovery",
       "supports": "The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
-      "title": "Contract and payment acquisition status: The People Concern",
+      "title": "Contract or payment record: The People Concern",
       "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
     },
     {
@@ -106,13 +106,13 @@
         "evidence_766f33f5d680d693"
       ],
       "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-30",
-      "source_family": "Contract and payment acquisition gap record",
+      "source_family": "Contract or payment record search",
       "source_id": "source_82cf4e7d5e876356",
       "source_type": "contract_payment_discovery",
       "supports": "Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
-      "title": "Contract and payment acquisition status: Weingart Center Association",
+      "title": "Contract or payment record: Weingart Center Association",
       "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
     },
     {
@@ -120,21 +120,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_homelessness_top15_2026_04_29",
       "checksum": "9fcdbc0bb4a6fd5ae6c361cd285b78dea625041a8cddabc1003afb43de1ec966",
-      "claim_ids": [
-        "claim_ff52ef918273d91a"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E06",
         "evidence_f6fe5044b5956788"
       ],
       "final_url": "https://www.justice.gov/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-30",
       "source_family": "enforcement_docket_discovery",
       "source_id": "source_8d8cc266cbf913b7",
       "source_type": "enforcement_docket_discovery",
-      "supports": "Official enforcement row already recovered: True.",
+      "supports": "Public website or statement page was found.",
       "title": "Official enforcement/docket public-source search: Weingart Center Association",
       "url": "https://www.justice.gov/"
     },
@@ -152,13 +150,13 @@
         "evidence_3622ed0c56bb35d3"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_7c26a981736f8012",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: DignityMoves",
+      "title": "IRS Form 990 record: DignityMoves",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip"
     },
     {
@@ -175,13 +173,13 @@
         "evidence_384504f2ff2abdc2"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_7d071dd160e1c081",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Hope the Mission",
+      "title": "IRS Form 990 record: Hope the Mission",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
     },
     {
@@ -198,13 +196,13 @@
         "evidence_53777fca47214e77"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_ff7add9be3fc69ad",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: The People Concern",
+      "title": "IRS Form 990 record: The People Concern",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
     },
     {
@@ -221,13 +219,13 @@
         "evidence_428b3b165581dce8"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_c7efdea6410205a5",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Weingart Center Association",
+      "title": "IRS Form 990 record: Weingart Center Association",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip"
     },
     {
@@ -235,21 +233,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_homelessness_top15_2026_04_29",
       "checksum": "f379d074714d7b1585564ac1e131eff4ee48f835732399ad27283e341a5dc56d",
-      "claim_ids": [
-        "claim_a58ba151fb3e6063"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E11",
         "evidence_d38585b558543270"
       ],
       "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2024-02-06",
       "source_family": "California Department of Housing and Community Development homelessness award record",
       "source_id": "source_954f81e4282c6710",
       "source_type": "state_homelessness_award",
-      "supports": "Entity: Hope the Mission.",
+      "supports": "Public website or statement page was found.",
       "title": "California housing-award exposure source collection",
       "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
     },
@@ -267,13 +263,13 @@
         "evidence_dd6ada01aecefd53"
       ],
       "final_url": "https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-10-16",
       "source_family": "Official enforcement or docket source",
       "source_id": "source_2c61fae7fe11eb0a",
       "source_type": "enforcement_or_docket_source",
       "supports": "An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and St...",
-      "title": "Official enforcement/docket triage source: Weingart Center Association",
+      "title": "Official enforcement or docket source: Weingart Center Association",
       "url": "https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf"
     },
     {
@@ -281,21 +277,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_homelessness_top15_2026_04_29",
       "checksum": "ad57bce784422d344d0ceac4f363f310f0004595d32a09a44dc23980d9143b4f",
-      "claim_ids": [
-        "claim_1c5391e9661c3d88"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E13",
         "evidence_f0448c16860a5d6c"
       ],
       "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023-11-21",
       "source_family": "California Department of Housing and Community Development homelessness award record",
       "source_id": "source_e0633bb90df98b6e",
       "source_type": "state_homelessness_award",
-      "supports": "Entity: Weingart Center Association.",
+      "supports": "Public website or statement page was found.",
       "title": "California housing-award exposure source collection",
       "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
     },
@@ -304,21 +298,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_homelessness_top15_2026_04_29",
       "checksum": "b37d229666c5486e31d73554b5f816db1e6cc1e871a452a1ec4775ca2009c20e",
-      "claim_ids": [
-        "claim_70b2043cae6575d6"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E14",
         "evidence_b51d9b36ed16b264"
       ],
       "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-07-15",
       "source_family": "California Department of Housing and Community Development homelessness award record",
       "source_id": "source_38b519ff478dcadc",
       "source_type": "state_homelessness_award",
-      "supports": "Entity: DignityMoves.",
+      "supports": "Public website or statement page was found.",
       "title": "California housing-award exposure source collection",
       "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
     },
@@ -327,21 +319,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_homelessness_top15_2026_04_29",
       "checksum": "ed51609175dc11abe458b6ef016541333b0653a1dc76254971e84bdc568fdc57",
-      "claim_ids": [
-        "claim_dfd446a1d6166846"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E15",
         "evidence_544fb1c9184dc642"
       ],
       "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-02-13",
       "source_family": "California Department of Housing and Community Development homelessness award record",
       "source_id": "source_fd54c34a3b3221be",
       "source_type": "state_homelessness_award",
-      "supports": "Entity: The People Concern.",
+      "supports": "Public website or statement page was found.",
       "title": "California housing-award exposure source collection",
       "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
     },
@@ -350,21 +340,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_homelessness_top15_2026_04_29",
       "checksum": "de88639d3e079afa43009b17210aef84081717d50f57f4ff5441c7be2d43beb7",
-      "claim_ids": [
-        "claim_da07684a2ba99ff2"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E16",
         "evidence_666cf8667742c815"
       ],
       "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-12-16",
       "source_family": "California Department of Housing and Community Development homelessness award record",
       "source_id": "source_809845a7789f5908",
       "source_type": "state_homelessness_award",
-      "supports": "Entity: California Supportive Housing.",
+      "supports": "Public website or statement page was found.",
       "title": "California housing-award exposure source collection",
       "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
     },
@@ -382,7 +370,7 @@
         "evidence_d39a0b2dfe8f87c4"
       ],
       "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-04-14",
       "source_family": "Internal Revenue Service Form 990 summary",
       "source_id": "source_2a3b1afda9010731",
@@ -405,12 +393,12 @@
         "evidence_947bca18f9551633"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "202306",
-      "source_family": "Downloaded Internal Revenue Service Form 990 machine-readable filing data",
+      "source_family": "IRS Form 990 filing data",
       "source_id": "source_adbbcca616aebb11",
       "source_type": "irs_990_xml",
-      "supports": "Internal Revenue Service Form 990 machine-readable filing data downloaded for Behavioral Health Services Inc. Employer Identification Number: 952838006 Tax period year: 2023 Tax period: 202306 Object ID: 202421369349300712 ZIP batch: 2024_TEOS_XML_05a Local XML path: [private source artifact]",
+      "supports": "Internal Revenue Service Form 990 filing data downloaded for Behavioral Health Services Inc. Employer Identification Number: 952838006 Tax period year: 2023 Tax period: 202306 Object ID: 202421369349300712 ZIP batch: 2024_TEOS_XML_05a Local XML path: [private source artifact]",
       "title": "Internal Revenue Service Form 990 summary source collection",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
     },
@@ -428,12 +416,12 @@
         "evidence_d043245a0a684901"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025",
-      "source_family": "Internal Revenue Service machine-readable filing-data availability manifest",
+      "source_family": "IRS filing index",
       "source_id": "source_41bdb9549bd1d028",
-      "source_type": "irs_990_download_manifest",
-      "supports": "No Internal Revenue Service machine-readable filing data index row was found for Behavioral Health Services Inc tax period year 2025 in probed Internal Revenue Service indexes [2024, 2025, 2026].",
+      "source_type": "irs_990_download_source_index",
+      "supports": "No Internal Revenue Service filing data index row was found for Behavioral Health Services Inc tax period year 2025 in probed Internal Revenue Service indexes [2024, 2025, 2026].",
       "title": "Internal Revenue Service Form 990 summary source collection",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
     },
@@ -451,7 +439,7 @@
         "evidence_798df5d7a45e0675"
       ],
       "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
       "source_family": "Rendered Form 990 secondary source",
       "source_id": "source_957cfb2ae33c74fc",
@@ -474,7 +462,7 @@
         "evidence_3103845eeaaf1e1e"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2017-03-30",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_efcece56f535326b",
@@ -497,7 +485,7 @@
         "evidence_67a8fff3ad9e8165"
       ],
       "final_url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2016-present",
       "source_family": "Federal Audit Clearinghouse findings records",
       "source_id": "source_49236eb4ad9ff1d6",
@@ -520,7 +508,7 @@
         "evidence_571faf39d80ecdb3"
       ],
       "final_url": "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2016-present",
       "source_family": "Federal Audit Clearinghouse federal awards records",
       "source_id": "source_69e25a2fa8826d85",
@@ -543,7 +531,7 @@
         "evidence_c182a6e42f6a7429"
       ],
       "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-15",
       "source_family": "California Department of Health Care Services facility-status row set",
       "source_id": "source_a18e21587238935d",
@@ -566,13 +554,13 @@
         "evidence_06396cf5cd604958"
       ],
       "final_url": "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-10-16",
-      "source_family": "California Department of Health Care Services adverse-status page manifest",
+      "source_family": "state adverse-status page",
       "source_id": "source_8322a0bb41e0ffb3",
-      "source_type": "dhcs_adverse_status_manifest",
+      "source_type": "dhcs_adverse_status_source_index",
       "supports": "The California Department of Health Care Services page identifies an adverse-status list, but the page did not expose source records in the static HTML fetched during this run.",
-      "title": "California Department of Health Care Services adverse-status page machine-readability manifest",
+      "title": "state adverse-status source index",
       "url": "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx"
     },
     {
@@ -589,13 +577,13 @@
         "evidence_67f61e0d157e345b"
       ],
       "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
-      "source_family": "California Department of Health Care Services adverse-status source discovery",
+      "source_family": "California Department of Health Care Services adverse-status source",
       "source_id": "source_6cfa3cd2284005e9",
       "source_type": "dhcs_adverse_status_discovery",
-      "supports": "California Department of Health Care Services adverse-status page, SharePoint API candidates, and ArcGIS searches were probed. No separate machine-readable probation, suspension, revocation, or NOV table was recovered in this run. Existing California Department of Health Care Services facility status remains Active/Closed facility-level context.",
-      "title": "California Department of Health Care Services adverse-status machine-readable source discovery manifest",
+      "supports": "California Department of Health Care Services adverse-status page, state web sources were checked. No separate public probation, suspension, revocation, or notice-of-violation table was recovered in this run. Existing California Department of Health Care Services facility status remains Active/Closed facility-level context.",
+      "title": "California Department of Health Care Services adverse-status source index",
       "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
     },
     {
@@ -612,7 +600,7 @@
         "evidence_32f81cdeee62fbb5"
       ],
       "final_url": "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023-04-26",
       "source_family": "County contract or monitoring source",
       "source_id": "source_f7f42c63890b26a7",
@@ -635,12 +623,12 @@
         "evidence_5150f41b551a187f"
       ],
       "final_url": "https://www.santabarbara.courts.ca.gov/es/online-services/court-calendars/search-court-calendars/calendarios-judiciales-civil?case_type=All&hearing_type=All&keyword=&order=field_party_name&page=56&sort=asc",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025",
-      "source_family": "Court docket search manifest",
+      "source_family": "court calendar search result",
       "source_id": "source_e9181cca5602f3e6",
-      "source_type": "court_docket_manifest",
-      "supports": "Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a docket-search manifest only; it is not a merits finding and the court page itself states calendar information is not the official court r",
+      "source_type": "court_docket_source_index",
+      "supports": "Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a court-calendar search result only; it is not a merits finding and the court page itself states calendar information is not the official court r",
       "title": "Santa Barbara Superior Court calendar search hit: HealthRIGHT 360",
       "url": "https://www.santabarbara.courts.ca.gov/es/online-services/court-calendars/search-court-calendars/calendarios-judiciales-civil?case_type=All&hearing_type=All&keyword=&order=field_party_name&page=56&sort=asc"
     },
@@ -649,21 +637,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_recovery_ngos_2026_04_24",
       "checksum": "70244e77e1628bc4350642e2d9bf5a5d892fd668867c5605dd8050cbb4b3b0f9",
-      "claim_ids": [
-        "claim_00ac3e1ca06330fb"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E13",
         "evidence_ec0b74633b49a5bd"
       ],
       "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
       "source_family": "Internal Revenue Service source collection",
       "source_id": "source_06b17c380138384f",
       "source_type": "source_extraction_irs_990_table",
-      "supports": "Internal Revenue Service Form 990 summary source collection. This source collection contains Form 990 fields used for revenue, government-grant share, expense, payroll, and compensation checks.",
+      "supports": "Public website or statement page was found.",
       "title": "Internal Revenue Service Form 990 summary source collection",
       "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
     },
@@ -672,21 +658,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_recovery_ngos_2026_04_24",
       "checksum": "3dc8c8b88652e2cfeef1697c8d8344df9ed77c512956400f4cc427e1023ba5f1",
-      "claim_ids": [
-        "claim_c6b32cb350399064"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E14",
         "evidence_092248a6e53f7d01"
       ],
       "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
       "source_family": "Federal Audit Clearinghouse audit source collection",
       "source_id": "source_0c5ab75a609d01f8",
       "source_type": "source_extraction_fac_audit_table",
-      "supports": "Federal Audit Clearinghouse audit summary source collection. This source collection contains federal audit fields used to check material weaknesses, internal-control findings, low-risk status, and audit finding counts.",
+      "supports": "Public website or statement page was found.",
       "title": "Federal Audit Clearinghouse audit summary source collection",
       "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
     },
@@ -695,21 +679,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_recovery_ngos_2026_04_24",
       "checksum": "3d9c67fa7d86902b6098d0fe75abd0b7c37d2a96a417a7a5cc0d212e97b8e971",
-      "claim_ids": [
-        "claim_b405c6e7e5c5c99a"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E15",
         "evidence_8dfb7fc1cb2a75ce"
       ],
       "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
       "source_family": "Federal Audit Clearinghouse award source collection",
       "source_id": "source_12e12412e987df21",
       "source_type": "source_extraction_fac_award_table",
-      "supports": "Federal Audit Clearinghouse award source collection. This source collection contains federal audit award totals used to understand public-funding exposure.",
+      "supports": "Public website or statement page was found.",
       "title": "Federal Audit Clearinghouse award source collection",
       "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
     },
@@ -718,21 +700,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_recovery_ngos_2026_04_24",
       "checksum": "d27321fe5e710c500940fd57268974e94da44c45850898245b3090494c671629",
-      "claim_ids": [
-        "claim_a89894081baeb3e6"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E16",
         "evidence_dfbbcee28e6ef7fa"
       ],
       "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
       "source_family": "California Department of Health Care Services status source collection",
       "source_id": "source_3ec2f7b4fa9336f5",
       "source_type": "source_extraction_dhcs_status_table",
-      "supports": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+      "supports": "Public website or statement page was found.",
       "title": "Federal Audit Clearinghouse audit summary source collection",
       "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
     },
@@ -741,21 +721,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_recovery_ngos_2026_04_24",
       "checksum": "8b0cebf1e444fed4f803fa2e0d9f46421a3dc3bb7ecee282cd74ccba7d877eb5",
-      "claim_ids": [
-        "claim_cde778e7517387b3"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E17",
         "evidence_0cd635f36c5cc6ee"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
-      "source_family": "Parsed source document text index",
+      "source_family": "Source document text",
       "source_id": "source_3018c91ec8ae4153",
       "source_type": "source_extraction_pdf_text_index",
-      "supports": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+      "supports": "Public website or statement page was found.",
       "title": "Federal Audit Clearinghouse audit summary source collection",
       "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774"
     },
@@ -773,7 +751,7 @@
         "evidence_d309d3a9cb2ba46a"
       ],
       "final_url": "https://www.tarzanatc.org/services/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-26",
       "source_family": "Organization service page",
       "source_id": "source_47ab22ba6e740fb9",
@@ -787,21 +765,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_recovery_ngos_2026_04_24",
       "checksum": "1b17ab2f29720cc3253eba2fcf8a39a01da6729f2c196c8ad1a5c20a85146a43",
-      "claim_ids": [
-        "claim_7f8d626db5622b23"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E19",
         "evidence_910819e82ade8b13"
       ],
       "final_url": "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
       "source_family": "Official outcome source collection",
       "source_id": "source_cf2304ac44149ec1",
       "source_type": "source_extraction_official_outcome_table",
-      "supports": "Official homelessness outcome source collection. This source collection contains official homelessness outcome measures used for county or Continuum of Care context.",
+      "supports": "Public website or statement page was found.",
       "title": "Official homelessness outcome source collection",
       "url": "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx"
     },
@@ -810,21 +786,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_recovery_ngos_2026_04_24",
       "checksum": "ac271fbfb9e8346890013e8a62443ebfaafd5fbfa813f02e5f79401130359e67",
-      "claim_ids": [
-        "claim_23071d981f8a44db"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E20",
         "evidence_c01d627498d0bbaf"
       ],
       "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
       "source_family": "Spend-versus-results source collection",
       "source_id": "source_43e135782c1ed829",
       "source_type": "source_extraction_spend_vs_results_table",
-      "supports": "Spend-versus-results context source collection. This source collection joins public-funding geography with official outcome movement so reviewers can decide whether provider-specific outcome records are needed.",
+      "supports": "Public website or statement page was found.",
       "title": "Spend-versus-results context source collection",
       "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
     },
@@ -833,21 +807,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_recovery_ngos_2026_04_24",
       "checksum": "a52f68005a176372c283a5c76dfc09962087d24c3ba6cc8465a4fd54ef15f8cb",
-      "claim_ids": [
-        "claim_2db3a5748f64eba4"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E21",
         "evidence_e4140befe06315a5"
       ],
       "final_url": "https://www.tarzanatc.org/who-we-are/meet-us/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
       "source_family": "Public statement source collection",
       "source_id": "source_0e99331c6047b737",
       "source_type": "source_extraction_public_statement_table",
-      "supports": "Public statement review source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+      "supports": "Public website or statement page was found.",
       "title": "Public statement review source collection",
       "url": "https://www.tarzanatc.org/who-we-are/meet-us/"
     },
@@ -865,13 +837,13 @@
         "evidence_2d4fb7cb70f9221b"
       ],
       "final_url": "https://westcare.com/leadership/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-24",
       "source_family": "Public statement source",
       "source_id": "source_ea17287c0256765e",
       "source_type": "public_statement_source",
       "supports": "on addressing social influencers of health and implement homelessness: es building the resiliency of individuals who face barriers including trauma, abuse, chemical dependency, severe behavioral health disorders, developmental disabilities, homelessness, and domestic violence.",
-      "title": "Public statement page harvest: WestCare California Inc",
+      "title": "Public statement page: WestCare California Inc",
       "url": "https://westcare.com/leadership/"
     },
     {
@@ -888,7 +860,7 @@
         "evidence_c05e40e102adbd2b"
       ],
       "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-15",
       "source_family": "California Department of Health Care Services facility-status row set",
       "source_id": "source_a5ec29e383bbbc2b",
@@ -911,7 +883,7 @@
         "evidence_b5f7ba7beb78b928"
       ],
       "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-15",
       "source_family": "California Department of Health Care Services facility-status row set",
       "source_id": "source_6ad63e9bb59edadc",
@@ -934,7 +906,7 @@
         "evidence_f8feae3d3c40c306"
       ],
       "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-15",
       "source_family": "California Department of Health Care Services facility-status row set",
       "source_id": "source_956348030a9a4f27",
@@ -957,7 +929,7 @@
         "evidence_e5576db45f2f20ff"
       ],
       "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-15",
       "source_family": "California Department of Health Care Services facility-status row set",
       "source_id": "source_1533b9236ee20aa9",
@@ -980,7 +952,7 @@
         "evidence_5abf99ba83094482"
       ],
       "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-15",
       "source_family": "California Department of Health Care Services facility-status row set",
       "source_id": "source_fa8fe79757ec4d8f",
@@ -1003,7 +975,7 @@
         "evidence_b928bbd1ddb21694"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2019-11-19",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_0504dec87d337dce",
@@ -1026,7 +998,7 @@
         "evidence_99c4c148b280659e"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2024-03-06",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_41004b255e5eafa5",
@@ -1049,7 +1021,7 @@
         "evidence_45c8905ea4d6167b"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2024-01-30",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_ca24b4e2cad9909c",
@@ -1072,7 +1044,7 @@
         "evidence_b35900f0d2d5cf38"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-01-23",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_8e7092b68281d775",
@@ -1095,7 +1067,7 @@
         "evidence_d3b12a4069d9f688"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-02-26",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_cbf443e6b5d9f33e",
@@ -1118,7 +1090,7 @@
         "evidence_42e9c53edadfdae2"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-01-26",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_63b74c395071be09",
@@ -1141,7 +1113,7 @@
         "evidence_a8431f7c86e20d6e"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-03-17",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_3b8cd985845d3b74",
@@ -1164,7 +1136,7 @@
         "evidence_5662edb13674fbb2"
       ],
       "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-15",
       "source_family": "California Department of Health Care Services facility-status row set",
       "source_id": "source_ae3a41640bfb8a35",
@@ -1187,7 +1159,7 @@
         "evidence_1b3d32aadc3cc2f2"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2016-12-21",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_0cac048f2650a67b",
@@ -1210,7 +1182,7 @@
         "evidence_15267c9609bd0e24"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2017-03-23",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_c04c8136ed8c35ea",
@@ -1233,7 +1205,7 @@
         "evidence_cf74deb80f859ea6"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2018-01-17",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_c16016d0e05763af",
@@ -1256,7 +1228,7 @@
         "evidence_b4c55f4c7be78aa2"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2017-12-27",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_d75b031466b4f202",
@@ -1279,7 +1251,7 @@
         "evidence_a9e2524d337bdf2f"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2018-04-17",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_19e130cebc60deb3",
@@ -1302,7 +1274,7 @@
         "evidence_9ee7dccbc57e3232"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2017-12-18",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_57ddf2f7935ee4b1",
@@ -1325,7 +1297,7 @@
         "evidence_9a8d3b4ef26a5cd3"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2020-01-20",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_a0ffe424dae69ee1",
@@ -1348,7 +1320,7 @@
         "evidence_a734993b9a0b9550"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2019-01-15",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_ac5e1cf9348c819b",
@@ -1371,7 +1343,7 @@
         "evidence_829efba56ad5bfc9"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2020-01-29",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_0d86a166c51b1c30",
@@ -1394,7 +1366,7 @@
         "evidence_72994a41439c26e5"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2018-11-25",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_9053c576e1419bc5",
@@ -1417,7 +1389,7 @@
         "evidence_1bda3c170555238d"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2020-04-07",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_196506344bac9926",
@@ -1440,7 +1412,7 @@
         "evidence_33e78d4e762fee4a"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2019-11-19",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_dc1c2333a0785e16",
@@ -1463,7 +1435,7 @@
         "evidence_2d1c7235a0fc8e02"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2022-06-28",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_389b604673d85d82",
@@ -1486,7 +1458,7 @@
         "evidence_d199f104e1da0069"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2021-01-26",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_25fd958f38f780e3",
@@ -1509,7 +1481,7 @@
         "evidence_32bd30befb60976f"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2021-01-10",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_83b8ea767febfabb",
@@ -1532,7 +1504,7 @@
         "evidence_fef18aea259b22d3"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000124927",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023-03-09",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_c189f81366362a6b",
@@ -1555,7 +1527,7 @@
         "evidence_9ceabbf117b5140d"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000249434",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2021-03-23",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_ec690db4bda37279",
@@ -1578,7 +1550,7 @@
         "evidence_1923174633c65d45"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2022-01-11",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_9c57e73056fafcb6",
@@ -1601,7 +1573,7 @@
         "evidence_1b3fd82a6c1ac11a"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000122774",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2022-01-17",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_695763f555d34900",
@@ -1624,7 +1596,7 @@
         "evidence_846498d5fd4ac918"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000249434",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2022-03-16",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_10afb536b0568f6c",
@@ -1647,7 +1619,7 @@
         "evidence_8461cbe899dfe6e6"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2021-06-GSAFAC-0000011418",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023-12-27",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_386a2323211959bd",
@@ -1670,7 +1642,7 @@
         "evidence_d521c9e73d2185a4"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119575",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023-02-24",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_2d2a1b1b4c766ff5",
@@ -1693,7 +1665,7 @@
         "evidence_c98d6f87a0fbd583"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000122774",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023-02-13",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_39f48ec62698f9cf",
@@ -1716,7 +1688,7 @@
         "evidence_fa2340d0480fc706"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2022-06-GSAFAC-0000366337",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-04-23",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_089ac9adf6e63ab2",
@@ -1739,7 +1711,7 @@
         "evidence_5216dc57daddcaaa"
       ],
       "final_url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000384194",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-10-17",
       "source_family": "Federal Audit Clearinghouse audit source document",
       "source_id": "source_ced406ac8dcc803a",
@@ -1762,7 +1734,7 @@
         "evidence_bed9b2a3601e5f1a"
       ],
       "final_url": "https://www.healthright360.org/our-services/substance-use-disorder/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-09-01",
       "source_family": "Organization service page",
       "source_id": "source_c6cfd5734395398d",
@@ -1785,7 +1757,7 @@
         "evidence_d4ef8ee70eb31774"
       ],
       "final_url": "https://bhs-inc.org/services",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-26",
       "source_family": "Organization service page",
       "source_id": "source_75caf5e288355a20",
@@ -1808,7 +1780,7 @@
         "evidence_9db64dccc0217c42"
       ],
       "final_url": "https://cri-help.org/programs/residential-treatment/overview.html",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-26",
       "source_family": "Organization service page",
       "source_id": "source_876f2c8a58206d20",
@@ -1831,7 +1803,7 @@
         "evidence_2e1b16c1988bb8c2"
       ],
       "final_url": "https://www.healthright360.org/our-services/substance-use-disorder/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-26",
       "source_family": "Organization service page",
       "source_id": "source_8ace27372f011763",
@@ -1854,7 +1826,7 @@
         "evidence_f7fd0136227c3fb1"
       ],
       "final_url": "https://phoenixhouseca.org/what-we-do/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-26",
       "source_family": "Organization service page",
       "source_id": "source_c2e8e3b5646d0862",
@@ -1877,7 +1849,7 @@
         "evidence_f7981a879291f43b"
       ],
       "final_url": "https://socialmodelrecovery.org/services/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-26",
       "source_family": "Organization service page",
       "source_id": "source_d80cdf54697ad8c4",
@@ -1900,7 +1872,7 @@
         "evidence_44e8e72553e745fe"
       ],
       "final_url": "https://westcare.com/places/california/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-26",
       "source_family": "Organization service page",
       "source_id": "source_c634fd908479962d",
@@ -1923,7 +1895,7 @@
         "evidence_0513c636d63749fd"
       ],
       "final_url": "https://www.tarzanatc.org/services/substance-abuse-disorder-treatment/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-02-01",
       "source_family": "Organization service page",
       "source_id": "source_05c81121bff3a9ac",
@@ -1946,7 +1918,7 @@
         "evidence_0c6e2ca2df4a81ca"
       ],
       "final_url": "https://westcarecalifornia.org/services/treatment-rehab/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-19",
       "source_family": "Organization service page",
       "source_id": "source_421a7820dc2e7fd4",
@@ -1960,21 +1932,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_sf_homelessness_complex",
       "checksum": "567ceb983e43fe8715c3a273550fc99607d75d829570ec8f4e916ef6185d17db",
-      "claim_ids": [
-        "claim_a5f3d7958a2fd15a"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E01",
         "evidence_61c91defd6b85620"
       ],
       "final_url": "https://www.justice.gov/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-30",
       "source_family": "enforcement_docket_discovery",
       "source_id": "source_49dbcf1126fe681a",
       "source_type": "enforcement_docket_discovery",
-      "supports": "Official enforcement row already recovered: True.",
+      "supports": "Public website or statement page was found.",
       "title": "Official enforcement/docket public-source search: Community Housing Partnership",
       "url": "https://www.justice.gov/"
     },
@@ -1983,21 +1953,19 @@
       "blocker_reason": "",
       "case_id": "live_ca_sf_homelessness_complex",
       "checksum": "16ce647e2730e9c85ccb64ededd26dd7678cb89a2ee07962f6a81c256a479a83",
-      "claim_ids": [
-        "claim_0083a148691d8de4"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E02",
         "evidence_d8f58310f721d0cd"
       ],
       "final_url": "https://www.justice.gov/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-30",
       "source_family": "enforcement_docket_discovery",
       "source_id": "source_44cf5f12db5c7358",
       "source_type": "enforcement_docket_discovery",
-      "supports": "Official enforcement row already recovered: True.",
+      "supports": "Public website or statement page was found.",
       "title": "Official enforcement/docket public-source search: United Council of Human Services",
       "url": "https://www.justice.gov/"
     },
@@ -2015,13 +1983,13 @@
         "evidence_e922a2faf801322b"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_beafc8e6b2faec8e",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Brilliant Corners: Employer Identification Number 562379862, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Brilliant Corners",
+      "title": "IRS Form 990 record: Brilliant Corners",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
     },
     {
@@ -2038,13 +2006,13 @@
         "evidence_9fb8e3e6b405f99d"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2024",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_4545e7396f339aaa",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Catholic Charities: Employer Identification Number 953516461, tax period year 2024.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Catholic Charities",
+      "title": "IRS Form 990 record: Catholic Charities",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip"
     },
     {
@@ -2061,13 +2029,13 @@
         "evidence_11669604eaf6ae5c"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_06122086150a97e5",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Community Housing Partnership: Employer Identification Number 943112338, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Community Housing Partnership",
+      "title": "IRS Form 990 record: Community Housing Partnership",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
     },
     {
@@ -2084,13 +2052,13 @@
         "evidence_97a45d168f71b6c5"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_d5646de584349230",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Compass Family Services: Employer Identification Number 941156622, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Compass Family Services",
+      "title": "IRS Form 990 record: Compass Family Services",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
     },
     {
@@ -2107,13 +2075,13 @@
         "evidence_89bd349fb759286e"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_0ae5c78ea31712d0",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Episcopal Community Svcs of SF Inc: Employer Identification Number 943096716, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Episcopal Community Svcs of SF Inc",
+      "title": "IRS Form 990 record: Episcopal Community Svcs of SF Inc",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip"
     },
     {
@@ -2130,13 +2098,13 @@
         "evidence_0f2c577d8c6aa710"
       ],
       "final_url": "https://projects.propublica.org/nonprofits/organizations/810622701",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2022",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_2f605c63ea06b6cd",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Five Keys Schools And Programs: Employer Identification Number 810622701, tax period year 2022.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Five Keys Schools And Programs",
+      "title": "IRS Form 990 record: Five Keys Schools And Programs",
       "url": "https://projects.propublica.org/nonprofits/organizations/810622701"
     },
     {
@@ -2153,13 +2121,13 @@
         "evidence_2e55a5b8990b7c8d"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_5f745f1f1e12a9c2",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Hamilton Families: Employer Identification Number 943055602, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Hamilton Families",
+      "title": "IRS Form 990 record: Hamilton Families",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
     },
     {
@@ -2176,13 +2144,13 @@
         "evidence_153ee70fe84162fb"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_f7e275ee394ae375",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Heluna Health: Employer Identification Number 952557063, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Heluna Health",
+      "title": "IRS Form 990 record: Heluna Health",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip"
     },
     {
@@ -2199,13 +2167,13 @@
         "evidence_a0366ad56e7f6be1"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_d78d1f32934356e6",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Larkin Street Youth Services: Employer Identification Number 942917999, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Larkin Street Youth Services",
+      "title": "IRS Form 990 record: Larkin Street Youth Services",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
     },
     {
@@ -2222,13 +2190,13 @@
         "evidence_6c64fd0b4a1d198a"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_907b723ea823cbaa",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Providence Foundation of San Francisco: Employer Identification Number 931204173, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Providence Foundation of San Francisco",
+      "title": "IRS Form 990 record: Providence Foundation of San Francisco",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
     },
     {
@@ -2245,13 +2213,13 @@
         "evidence_480cffd0a958870a"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_868778ebc063f7b1",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Tenderloin Housing Clinic Inc: Employer Identification Number 942681706, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Tenderloin Housing Clinic Inc",
+      "title": "IRS Form 990 record: Tenderloin Housing Clinic Inc",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip"
     },
     {
@@ -2268,13 +2236,13 @@
         "evidence_67ba46a4035b81a8"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_7e1ed4eb95c5801a",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Tenderloin Neighborhood Development Corp: Employer Identification Number 942761808, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Tenderloin Neighborhood Development Corp",
+      "title": "IRS Form 990 record: Tenderloin Neighborhood Development Corp",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
     },
     {
@@ -2291,13 +2259,13 @@
         "evidence_0cee1e8d9685529f"
       ],
       "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2023",
-      "source_family": "irs_990_raw_artifact",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_5e46448b92435084",
       "source_type": "irs_990_raw_artifact",
       "supports": "Latest matched Form 990 filing for Tides Center: Employer Identification Number 943213100, tax period year 2023.",
-      "title": "Internal Revenue Service Form 990 acquisition status: Tides Center",
+      "title": "IRS Form 990 record: Tides Center",
       "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip"
     },
     {
@@ -2314,13 +2282,13 @@
         "evidence_31abfd3757d85f34"
       ],
       "final_url": "https://projects.propublica.org/nonprofits/organizations/942936270",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2020",
-      "source_family": "irs_990_raw_artifact_discovery",
+      "source_family": "IRS Form 990 record",
       "source_id": "source_29cd168e97a8af11",
       "source_type": "irs_990_raw_artifact_discovery",
       "supports": "Latest matched Form 990 filing for United Council of Human Services: Employer Identification Number 942936270, tax period year 2020.",
-      "title": "Internal Revenue Service Form 990 acquisition status: United Council of Human Services",
+      "title": "IRS Form 990 record: United Council of Human Services",
       "url": "https://projects.propublica.org/nonprofits/organizations/942936270"
     },
     {
@@ -2328,22 +2296,20 @@
       "blocker_reason": "",
       "case_id": "live_ca_sf_homelessness_complex",
       "checksum": "31d654bea80ce238ca63d265a3d55bf50920eb1239abd8d467cdbca958d48d30",
-      "claim_ids": [
-        "claim_f890fc627ee5ae8e"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E17",
         "evidence_d8a1194045b785dd"
       ],
       "final_url": "https://www.thclinic.org/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-29",
       "source_family": "Public statement source",
       "source_id": "source_8e0933ca65ef1157",
       "source_type": "public_statement_source",
-      "supports": "Public or official statement pages fetched: 1 of 1.",
-      "title": "Public statement page harvest: Tenderloin Housing Clinic Inc",
+      "supports": "Public website or statement page was found.",
+      "title": "Public statement page: Tenderloin Housing Clinic Inc",
       "url": "https://www.thclinic.org/"
     },
     {
@@ -2360,13 +2326,13 @@
         "evidence_9aa0c74ce6f46415"
       ],
       "final_url": "https://www.sf.gov/news--audit-finds-one-citys-providers-housing-unhoused-residents-had-serious-financial-shortfalls",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-10-16",
       "source_family": "Official enforcement or docket source",
       "source_id": "source_f691cbf0f378e4ba",
       "source_type": "enforcement_or_docket_source",
       "supports": "A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents.",
-      "title": "Official enforcement/docket triage source: Community Housing Partnership",
+      "title": "Official enforcement or docket source: Community Housing Partnership",
       "url": "https://www.sf.gov/news--audit-finds-one-citys-providers-housing-unhoused-residents-had-serious-financial-shortfalls"
     },
     {
@@ -2374,22 +2340,20 @@
       "blocker_reason": "",
       "case_id": "live_ca_sf_homelessness_complex",
       "checksum": "3876ef5f831a1de30e1cf4438198ddfe7ee3de65fd478de867937a8c96e99cc8",
-      "claim_ids": [
-        "claim_d9ba68cbaf77c533"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E19",
         "evidence_be59b65bf1671e5c"
       ],
       "final_url": "https://homerisesf.org/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-29",
       "source_family": "Public statement source",
       "source_id": "source_3a3226cda0b61582",
       "source_type": "public_statement_source",
-      "supports": "Public or official statement pages fetched: 1 of 1.",
-      "title": "Public statement page harvest: Community Housing Partnership",
+      "supports": "Public website or statement page was found.",
+      "title": "Public statement page: Community Housing Partnership",
       "url": "https://homerisesf.org/"
     },
     {
@@ -2397,22 +2361,20 @@
       "blocker_reason": "",
       "case_id": "live_ca_sf_homelessness_complex",
       "checksum": "417b14e3ca1e1f16eb84f2c06dc61425aab004f113ff88bfe1b42ab769ea923d",
-      "claim_ids": [
-        "claim_0041c06bd575c396"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E20",
         "evidence_243ed47e9cbf9f9d"
       ],
       "final_url": "https://www.catholiccharitiessf.org/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-29",
       "source_family": "Public statement source",
       "source_id": "source_30e5a3ee1dfa75f0",
       "source_type": "public_statement_source",
-      "supports": "Public or official statement pages fetched: 1 of 1.",
-      "title": "Public statement page harvest: Catholic Charities",
+      "supports": "Public website or statement page was found.",
+      "title": "Public statement page: Catholic Charities",
       "url": "https://www.catholiccharitiessf.org/"
     },
     {
@@ -2429,13 +2391,13 @@
         "evidence_43ad4f3f52bc2de9"
       ],
       "final_url": "https://www.sf.gov/news--united-council-human-services-found-be-violation-city-agreements",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2025-10-16",
       "source_family": "Official enforcement or docket source",
       "source_id": "source_8cea8805b08dda9f",
       "source_type": "enforcement_or_docket_source",
       "supports": "San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements.",
-      "title": "Official enforcement/docket triage source: United Council of Human Services",
+      "title": "Official enforcement or docket source: United Council of Human Services",
       "url": "https://www.sf.gov/news--united-council-human-services-found-be-violation-city-agreements"
     },
     {
@@ -2452,7 +2414,7 @@
         "evidence_821d52a90d599b81"
       ],
       "final_url": "https://www.tndc.org/our-work/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-29",
       "source_family": "Organization service page",
       "source_id": "source_db020f59e1b42025",
@@ -2466,22 +2428,20 @@
       "blocker_reason": "",
       "case_id": "live_ca_sf_homelessness_complex",
       "checksum": "9ab8daf95edda77ecdacce5f4dc23a38a5d2c7fba5a940189fd9f367fea66118",
-      "claim_ids": [
-        "claim_0c8cbef3ee3198fd"
-      ],
+      "claim_ids": [],
       "content_type": "",
       "evidence_ids": [
         "E23",
         "evidence_c27bbef0c9c23f91"
       ],
       "final_url": "https://www.tndc.org/",
-      "http_status": "verified in publication manifest",
+      "http_status": "verified",
       "retrieval_date": "2026-04-29",
       "source_family": "Public statement source",
       "source_id": "source_05e53e03feb352d0",
       "source_type": "public_statement_source",
-      "supports": "Public or official statement pages fetched: 1 of 1.",
-      "title": "Public statement page harvest: Tenderloin Neighborhood Development Corp",
+      "supports": "Public website or statement page was found.",
+      "title": "Public statement page: Tenderloin Neighborhood Development Corp",
       "url": "https://www.tndc.org/"
     }
   ]

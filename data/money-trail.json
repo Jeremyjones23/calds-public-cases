@@ -61,9 +61,9 @@
       "year": ""
     },
     {
-      "amount": "$11.2",
+      "amount": "$11.2 million",
       "amount_type": "public amount or filing amount named in cited record",
-      "calculation_note": "Amount is published only as it appears in the cited evidence excerpt.",
+      "calculation_note": "Amount is normalized from a cited source phrase that says $11.2 million.",
       "case_id": "live_ca_homelessness_top15_2026_04_29",
       "claim_id": "claim_6bba841780d65eb6",
       "entity_id": "entity_45e45ff4ee04b3f9",

@@ -38,6 +38,12 @@
     button.addEventListener("click", () => {
       const sourceId = button.dataset.source;
       if (!sourceId) return;
+      if (sourceSearch) {
+        sourceSearch.value = "";
+        sourceRows.forEach((sourceRow) => {
+          sourceRow.hidden = false;
+        });
+      }
       const row = document.querySelector(`[data-source-id="${CSS.escape(sourceId)}"]`);
       if (row) {
         row.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -72,6 +78,19 @@
     const offset = Math.min(window.scrollY * 0.04, 32);
     document.documentElement.style.setProperty("--paper-drift", `${offset}px`);
   }, { passive: true });
+
+  document.querySelectorAll(".case-ticket, .case-panel, .finding-card, .mini-receipt").forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      if (reduceMotion) return;
+      const rect = card.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * -8;
+      card.style.transform = `translateY(-4px) rotateX(${y}deg) rotateY(${x}deg)`;
+    });
+    card.addEventListener("pointerleave", () => {
+      card.style.transform = "";
+    });
+  });
 
   setMoneyFilter("all");
 })();

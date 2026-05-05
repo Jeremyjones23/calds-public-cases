@@ -4,30 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Method | CalDS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Geist:wght@400;520;650;760;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-  <nav class="top-nav" aria-label="Primary navigation">
-    <a class="brand" href="../">CalDS</a>
-    <div class="nav-links">
-      <a href="../#pattern">Pattern</a>
+<body class="route-page">
+
+  <a class="skip-link" href="#main">Skip to story</a>
+  <nav class="record-rail" aria-label="Primary navigation">
+    <a class="brand" href="../index.html">CalDS</a>
+    <div class="rail-links">
+      <a href="../index.html#pattern">Pattern</a>
       <a href="../cases/">Cases</a>
-      <a href="../#money">Money trail</a>
-      <a href="../#sources">Sources</a>
+      <a href="../index.html#money">Money trail</a>
+      <a href="../sources/">Sources</a>
       <a href="../method/">Method</a>
     </div>
+    <p>Public records. Public interest.</p>
   </nav>
-  <main class="story-section" style="padding-top: 140px">
 
-    <p class="section-kicker">Method</p>
-    <h1>How CalDS keeps the public story tied to records.</h1>
+  <main id="main" class="story-route">
+
+    <section class="route-hero">
+      <p class="type-stamp">Method</p>
+      <h1>How CalDS keeps the public story tied to records.</h1>
+      <p>CalDS publishes review leads. That means public records raised a question. It does not mean CalDS has proved wrongdoing.</p>
+    </section>
     <div class="method-grid">
-      <article><strong>Claims need records.</strong><p>No public claim ships unless it maps to a claim row and a source record.</p></article>
-      <article><strong>Links are checked.</strong><p>Sources must be live, archived, or visibly blocked.</p></article>
-      <article><strong>Language is checked.</strong><p>Legal words stay tied to official source status.</p></article>
-      <article><strong>Private data stays private.</strong><p>The public app is built from sanitized JSON, not private runs.</p></article>
+      <article><strong>Claims need records.</strong><p>No public claim ships unless it maps to a source record.</p></article>
+      <article><strong>Links are checked.</strong><p>Sources must be live, archived, or visibly listed as records still needed.</p></article>
+      <article><strong>Legal words are limited.</strong><p>Charges, violations, settlements, or convictions appear only when an official source supports the word.</p></article>
+      <article><strong>Private data stays private.</strong><p>The public app is built from sanitized JSON, not raw work files.</p></article>
     </div>
 
   </main>
+  <script src="../app.js"></script>
 </body>
 </html>
