@@ -1,0 +1,596 @@
+{
+  "entities": [
+    {
+      "case_ids": [
+        "live_ca_homelessness_top15_2026_04_29"
+      ],
+      "caveats": [
+        "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries."
+      ],
+      "display_name": "California Supportive Housing",
+      "entity_id": "entity_25a98e5142db0f41",
+      "geography": "California",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [
+        "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries."
+      ],
+      "red_flags": [
+        "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+        "Entity: California Supportive Housing."
+      ],
+      "source_ids": [
+        "source_aed0b285da2580f7",
+        "source_809845a7789f5908"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_homelessness_top15_2026_04_29"
+      ],
+      "caveats": [
+        "DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries."
+      ],
+      "display_name": "DignityMoves",
+      "entity_id": "entity_52acfad8d2cdf9cc",
+      "geography": "California",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [
+        "DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries."
+      ],
+      "red_flags": [
+        "DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+        "Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023.",
+        "Entity: DignityMoves."
+      ],
+      "source_ids": [
+        "source_623e8384c050cac1",
+        "source_7c26a981736f8012",
+        "source_38b519ff478dcadc"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_homelessness_top15_2026_04_29"
+      ],
+      "caveats": [
+        "Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries."
+      ],
+      "display_name": "Hope the Mission",
+      "entity_id": "entity_f607b6ec5ee5e246",
+      "geography": "California",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [
+        "Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries."
+      ],
+      "red_flags": [
+        "Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.",
+        "Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023.",
+        "Entity: Hope the Mission."
+      ],
+      "source_ids": [
+        "source_24b3eae831438e36",
+        "source_7d071dd160e1c081",
+        "source_954f81e4282c6710"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_homelessness_top15_2026_04_29"
+      ],
+      "caveats": [
+        "The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries."
+      ],
+      "display_name": "The People Concern",
+      "entity_id": "entity_d81e3fabdffaf1b0",
+      "geography": "California",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [
+        "The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries."
+      ],
+      "red_flags": [
+        "The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+        "Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023.",
+        "Entity: The People Concern."
+      ],
+      "source_ids": [
+        "source_98b8fc83c977ef43",
+        "source_ff7add9be3fc69ad",
+        "source_fd54c34a3b3221be"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_homelessness_top15_2026_04_29"
+      ],
+      "caveats": [
+        "Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries."
+      ],
+      "display_name": "Weingart Center Association",
+      "entity_id": "entity_45e45ff4ee04b3f9",
+      "geography": "California",
+      "issue_area": "Homelessness services",
+      "official_records_found": [
+        "Official enforcement row already recovered: True.",
+        "An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and St..."
+      ],
+      "public_money_found": [
+        "Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+        "An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and St..."
+      ],
+      "red_flags": [
+        "Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+        "Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023.",
+        "Entity: Weingart Center Association."
+      ],
+      "source_ids": [
+        "source_82cf4e7d5e876356",
+        "source_8d8cc266cbf913b7",
+        "source_c7efdea6410205a5",
+        "source_2c61fae7fe11eb0a",
+        "source_e0633bb90df98b6e"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_recovery_ngos_2026_04_24"
+      ],
+      "caveats": [],
+      "display_name": "Phoenix Houses Of California Inc",
+      "entity_id": "entity_bca6875084a8df74",
+      "geography": "California",
+      "issue_area": "Recovery and treatment services",
+      "official_records_found": [
+        "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.",
+        "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc."
+      ],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [
+        "source_956348030a9a4f27",
+        "source_ec690db4bda37279",
+        "source_10afb536b0568f6c",
+        "source_c2e8e3b5646d0862"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_recovery_ngos_2026_04_24"
+      ],
+      "caveats": [],
+      "display_name": "BHS SAPC provider",
+      "entity_id": "entity_a791099e824c44fc",
+      "geography": "California",
+      "issue_area": "Recovery and treatment services",
+      "official_records_found": [
+        "Los Angeles County Auditor-Controller fiscal compliance review: BHS SAPC provider Source URI: https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf Local source document path: [private source artifact]"
+      ],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [
+        "source_f7f42c63890b26a7"
+      ],
+      "what_it_claims_to_do": ""
+    },
+    {
+      "case_ids": [
+        "live_ca_recovery_ngos_2026_04_24"
+      ],
+      "caveats": [],
+      "display_name": "HealthRIGHT 360",
+      "entity_id": "entity_253f9b712fe1531a",
+      "geography": "California",
+      "issue_area": "Recovery and treatment services",
+      "official_records_found": [
+        "Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a docket-search manifest only; it is not a merits finding and the court page itself states calendar information is not the official court r"
+      ],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [
+        "source_e9181cca5602f3e6",
+        "source_8ace27372f011763"
+      ],
+      "what_it_claims_to_do": ""
+    },
+    {
+      "case_ids": [
+        "live_ca_recovery_ngos_2026_04_24"
+      ],
+      "caveats": [],
+      "display_name": "Tarzana Treatment Centers Inc",
+      "entity_id": "entity_343e5a548c463db1",
+      "geography": "California",
+      "issue_area": "Recovery and treatment services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [
+        "source_47ab22ba6e740fb9"
+      ],
+      "what_it_claims_to_do": ""
+    },
+    {
+      "case_ids": [
+        "live_ca_recovery_ngos_2026_04_24"
+      ],
+      "caveats": [],
+      "display_name": "WestCare California Inc",
+      "entity_id": "entity_83d3068349f1803a",
+      "geography": "California",
+      "issue_area": "Recovery and treatment services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [
+        "source_ea17287c0256765e",
+        "source_c634fd908479962d"
+      ],
+      "what_it_claims_to_do": ""
+    },
+    {
+      "case_ids": [
+        "live_ca_recovery_ngos_2026_04_24"
+      ],
+      "caveats": [],
+      "display_name": "Behavioral Health Services Inc",
+      "entity_id": "entity_01f035968439b53d",
+      "geography": "California",
+      "issue_area": "Recovery and treatment services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [
+        "source_75caf5e288355a20"
+      ],
+      "what_it_claims_to_do": ""
+    },
+    {
+      "case_ids": [
+        "live_ca_recovery_ngos_2026_04_24"
+      ],
+      "caveats": [],
+      "display_name": "CRI-Help Inc",
+      "entity_id": "entity_7dd8e467040da8f4",
+      "geography": "California",
+      "issue_area": "Recovery and treatment services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [
+        "source_876f2c8a58206d20"
+      ],
+      "what_it_claims_to_do": ""
+    },
+    {
+      "case_ids": [
+        "live_ca_recovery_ngos_2026_04_24"
+      ],
+      "caveats": [],
+      "display_name": "Social Model Recovery Systems Inc",
+      "entity_id": "entity_f68438bd1b1f2cd0",
+      "geography": "California",
+      "issue_area": "Recovery and treatment services",
+      "official_records_found": [
+        "Official Social Model Recovery Systems Programs/Services Social Model Recovery Systems, Inc."
+      ],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [
+        "source_d80cdf54697ad8c4"
+      ],
+      "what_it_claims_to_do": ""
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Brilliant Corners",
+      "entity_id": "entity_ec0fdbeecd9b97a3",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Brilliant Corners: Employer Identification Number 562379862, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_beafc8e6b2faec8e"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Catholic Charities",
+      "entity_id": "entity_f66ab3fe7c417473",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [
+        "Public or official statement pages fetched: 1 of 1."
+      ],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Catholic Charities: Employer Identification Number 953516461, tax period year 2024."
+      ],
+      "source_ids": [
+        "source_4545e7396f339aaa",
+        "source_30e5a3ee1dfa75f0"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Community Housing Partnership",
+      "entity_id": "entity_113a6c82820e63b5",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [
+        "Official enforcement row already recovered: True.",
+        "A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents.",
+        "Public or official statement pages fetched: 1 of 1."
+      ],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Community Housing Partnership: Employer Identification Number 943112338, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_49dbcf1126fe681a",
+        "source_06122086150a97e5",
+        "source_f691cbf0f378e4ba",
+        "source_3a3226cda0b61582"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Compass Family Services",
+      "entity_id": "entity_4101b4c0c3bac610",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Compass Family Services: Employer Identification Number 941156622, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_d5646de584349230"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Episcopal Community Svcs of SF Inc",
+      "entity_id": "entity_f8eafdfd265c6682",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Episcopal Community Svcs of SF Inc: Employer Identification Number 943096716, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_0ae5c78ea31712d0"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Five Keys Schools And Programs",
+      "entity_id": "entity_1762ba05ea72482e",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Five Keys Schools And Programs: Employer Identification Number 810622701, tax period year 2022."
+      ],
+      "source_ids": [
+        "source_2f605c63ea06b6cd"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Hamilton Families",
+      "entity_id": "entity_9b87e3219672278d",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Hamilton Families: Employer Identification Number 943055602, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_5f745f1f1e12a9c2"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Heluna Health",
+      "entity_id": "entity_83ce396ea562d1ba",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Heluna Health: Employer Identification Number 952557063, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_f7e275ee394ae375"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Larkin Street Youth Services",
+      "entity_id": "entity_ffe9cb93b4e7364c",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Larkin Street Youth Services: Employer Identification Number 942917999, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_d78d1f32934356e6"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "St Vincent De Paul Society of SF",
+      "entity_id": "entity_ab0b942065192b6c",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Tenderloin Housing Clinic Inc",
+      "entity_id": "entity_b745487f2f70df6d",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [
+        "Public or official statement pages fetched: 1 of 1."
+      ],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Tenderloin Housing Clinic Inc: Employer Identification Number 942681706, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_868778ebc063f7b1",
+        "source_8e0933ca65ef1157"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Tenderloin Neighborhood Development Corp",
+      "entity_id": "entity_d5687d39d148121c",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [
+        "Public or official statement pages fetched: 1 of 1."
+      ],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Tenderloin Neighborhood Development Corp: Employer Identification Number 942761808, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_7e1ed4eb95c5801a",
+        "source_db020f59e1b42025",
+        "source_05e53e03feb352d0"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Tides Center",
+      "entity_id": "entity_ff38db49d4cf84b3",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Tides Center: Employer Identification Number 943213100, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_5e46448b92435084"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "United Council of Human Services",
+      "entity_id": "entity_c9801fd4cf1d4275",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [
+        "Official enforcement row already recovered: True.",
+        "San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements."
+      ],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for United Council of Human Services: Employer Identification Number 942936270, tax period year 2020."
+      ],
+      "source_ids": [
+        "source_44cf5f12db5c7358",
+        "source_29cd168e97a8af11",
+        "source_8cea8805b08dda9f"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Providence Foundation of San Francisco",
+      "entity_id": "entity_8d0d49a22c1fbacd",
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [
+        "Latest matched Form 990 filing for Providence Foundation of San Francisco: Employer Identification Number 931204173, tax period year 2023."
+      ],
+      "source_ids": [
+        "source_907b723ea823cbaa"
+      ],
+      "what_it_claims_to_do": "CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so."
+    }
+  ]
+}

@@ -1,0 +1,2779 @@
+[
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_426e3030d3b098d7",
+    "claim_type": "gap",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-30",
+    "entity": "California Supportive Housing",
+    "evidence_ids": [
+      "E01",
+      "evidence_005b3b922e1587e8"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+    "public_language_allowed": true,
+    "public_sentence": "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+    "retrieval_date": "2026-04-30",
+    "source_excerpt": "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+    "source_family": "Contract and payment acquisition gap record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_c58947ada30394b6",
+    "claim_type": "gap",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-30",
+    "entity": "DignityMoves",
+    "evidence_ids": [
+      "E02",
+      "evidence_eed56b8b976b5cea"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+    "public_language_allowed": true,
+    "public_sentence": "DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+    "retrieval_date": "2026-04-30",
+    "source_excerpt": "DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries. No direct standard agreement, payment ledger, monitoring letter, corrective-action record, or deliverable ledger was recovered in this pass. Official sources to search next: https://www.hcd.ca.gov/funding/homekey/funding-overview, https://www.hcd.ca.gov/grants-and-funding/homekey-plus/timeline-and-eligibility, https://www.hcd.ca.gov/grants-and-funding/homekey/eligibility,...",
+    "source_family": "Contract and payment acquisition gap record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_e5250164ba6d6d9f",
+    "claim_type": "gap",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-30",
+    "entity": "Hope the Mission",
+    "evidence_ids": [
+      "E03",
+      "evidence_1cde2e75545d024f"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.",
+    "public_language_allowed": true,
+    "public_sentence": "Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.",
+    "retrieval_date": "2026-04-30",
+    "source_excerpt": "Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.",
+    "source_family": "Contract and payment acquisition gap record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_c86e20d234c306d7",
+    "claim_type": "gap",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-30",
+    "entity": "The People Concern",
+    "evidence_ids": [
+      "E04",
+      "evidence_173b3ea25c8c9a43"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+    "public_language_allowed": true,
+    "public_sentence": "The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+    "retrieval_date": "2026-04-30",
+    "source_excerpt": "The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+    "source_family": "Contract and payment acquisition gap record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_c5edebaf1c873f8f",
+    "claim_type": "gap",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-30",
+    "entity": "Weingart Center Association",
+    "evidence_ids": [
+      "E05",
+      "evidence_766f33f5d680d693"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+    "public_language_allowed": true,
+    "public_sentence": "Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+    "retrieval_date": "2026-04-30",
+    "source_excerpt": "Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+    "source_family": "Contract and payment acquisition gap record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_ff52ef918273d91a",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-30",
+    "entity": "Weingart Center Association",
+    "evidence_ids": [
+      "E06",
+      "evidence_f6fe5044b5956788"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Official enforcement row already recovered: True.",
+    "public_language_allowed": true,
+    "public_sentence": "Official enforcement row already recovered: True.",
+    "retrieval_date": "2026-04-30",
+    "source_excerpt": "Official enforcement row already recovered: True. Status: citation_ready_official_row_present. Completed public official search count: 4. Possible public adverse search-hit count: 0. Public official search results: - U.S. Department of Justice official Search.gov index: completed public official no-record search for query \"Weingart Center Association\" (indictment OR charged OR prosecution OR settlement OR violation OR fraud); URL...",
+    "source_family": "enforcement_docket_discovery",
+    "source_urls": [
+      "https://www.justice.gov/"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_f4dc4e3ade328830",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "DignityMoves",
+    "evidence_ids": [
+      "E07",
+      "evidence_3622ed0c56bb35d3"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_292c345885b673ef",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Hope the Mission",
+    "evidence_ids": [
+      "E08",
+      "evidence_384504f2ff2abdc2"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_06166defdb275216",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "The People Concern",
+    "evidence_ids": [
+      "E09",
+      "evidence_53777fca47214e77"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_f647a44a018c869f",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Weingart Center Association",
+    "evidence_ids": [
+      "E10",
+      "evidence_428b3b165581dce8"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_a58ba151fb3e6063",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2024-02-06",
+    "entity": "Hope the Mission",
+    "evidence_ids": [
+      "E11",
+      "evidence_d38585b558543270"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Entity: Hope the Mission.",
+    "public_language_allowed": true,
+    "public_sentence": "Entity: Hope the Mission.",
+    "retrieval_date": "2024-02-06",
+    "source_excerpt": "Entity: Hope the Mission. Rank by parsed state project-award exposure: 1 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $115,337,991. Funding rows: - 2023-11-01 Homekey Round 3: Sierra Highway PSH Portfolio in Lancaster, Los Angeles County; eligible applicant County of Los Angeles; total awarded amount $19,789,357; California Department of Housing and Community Development source note Rou",
+    "source_family": "California Department of Housing and Community Development homelessness award record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_6bba841780d65eb6",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025-10-16",
+    "entity": "Weingart Center Association",
+    "evidence_ids": [
+      "E12",
+      "evidence_dd6ada01aecefd53"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "Legal term appears with official-source link",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and St...",
+    "public_language_allowed": true,
+    "public_sentence": "An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and St...",
+    "retrieval_date": "2025-10-16",
+    "source_excerpt": "An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and State of California public funds for $27.3 million in a double-escrow transaction hidden from the lender.",
+    "source_family": "Official enforcement or docket source",
+    "source_urls": [
+      "https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_1c5391e9661c3d88",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023-11-21",
+    "entity": "Weingart Center Association",
+    "evidence_ids": [
+      "E13",
+      "evidence_f0448c16860a5d6c"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Entity: Weingart Center Association.",
+    "public_language_allowed": true,
+    "public_sentence": "Entity: Weingart Center Association.",
+    "retrieval_date": "2023-11-21",
+    "source_excerpt": "Entity: Weingart Center Association. Rank by parsed state project-award exposure: 2 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $95,565,300. Funding rows: - 2023-09-26 Homekey Round 3: The Weingart Sycamore in Baldwin Park, Los Angeles County; eligible applicant County of Los Angeles; total awarded amount $34,629,600; California Department of Housing and Community Development source no",
+    "source_family": "California Department of Housing and Community Development homelessness award record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_70b2043cae6575d6",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2025-07-15",
+    "entity": "DignityMoves",
+    "evidence_ids": [
+      "E14",
+      "evidence_b51d9b36ed16b264"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Entity: DignityMoves.",
+    "public_language_allowed": true,
+    "public_sentence": "Entity: DignityMoves.",
+    "retrieval_date": "2025-07-15",
+    "source_excerpt": "Entity: DignityMoves. Rank by parsed state project-award exposure: 3 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $77,180,702. Funding rows: - 2023-12-19 Homekey Round 3: San Bernardino Community Wellness Campus in San Bernardino, San Bernardino County; eligible applicant City of San Bernardino; total awarded amount $34,944,702; California Department of Housing and Community Development",
+    "source_family": "California Department of Housing and Community Development homelessness award record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
+      "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_dfd446a1d6166846",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2026-02-13",
+    "entity": "The People Concern",
+    "evidence_ids": [
+      "E15",
+      "evidence_544fb1c9184dc642"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Entity: The People Concern.",
+    "public_language_allowed": true,
+    "public_sentence": "Entity: The People Concern.",
+    "retrieval_date": "2026-02-13",
+    "source_excerpt": "Entity: The People Concern. Rank by parsed state project-award exposure: 4 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $53,435,650. Funding rows: - 2025-05-20 Homekey+: Safe Harbor I in Wilmington, Los Angeles County; eligible applicant City of Los Angeles; total awarded amount $14,935,650; California Department of Housing and Community Development source note Homekey+ source document page 1 lines",
+    "source_family": "California Department of Housing and Community Development homelessness award record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
+    ]
+  },
+  {
+    "case_id": "live_ca_homelessness_top15_2026_04_29",
+    "claim_id": "claim_da07684a2ba99ff2",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2025-12-16",
+    "entity": "California Supportive Housing",
+    "evidence_ids": [
+      "E16",
+      "evidence_666cf8667742c815"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Entity: California Supportive Housing.",
+    "public_language_allowed": true,
+    "public_sentence": "Entity: California Supportive Housing.",
+    "retrieval_date": "2025-12-16",
+    "source_excerpt": "Entity: California Supportive Housing. Rank by parsed state project-award exposure: 5 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $51,891,854. Funding rows: - 2023-12-19 Homekey Round 3: CSH Enterprise Housing in Oakland, Alameda County; eligible applicant City of Oakland; total awarded amount $20,368,264; California Department of Housing and Community Development source note Round 3 P",
+    "source_family": "California Department of Housing and Community Development homelessness award record",
+    "source_urls": [
+      "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
+      "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_9b8121de0a8fc3cd",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2025-04-14",
+    "entity": "",
+    "evidence_ids": [
+      "E01",
+      "evidence_d39a0b2dfe8f87c4"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "Legal term requires review before stronger wording",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "ProPublica Nonprofit Explorer reports Social Model Recovery Systems Inc as a Covina, California 501(c)(3) in the Alcohol, Drug Abuse, Treatment Only category.",
+    "public_language_allowed": true,
+    "public_sentence": "ProPublica Nonprofit Explorer reports Social Model Recovery Systems Inc as a Covina, California 501(c)(3) in the Alcohol, Drug Abuse, Treatment Only category.",
+    "retrieval_date": "2025-04-14",
+    "source_excerpt": "ProPublica Nonprofit Explorer reports Social Model Recovery Systems Inc as a Covina, California 501(c)(3) in the Alcohol, Drug Abuse, Treatment Only category. Its 2024 Form 990 summary shows revenue of $26,707,166, expenses of $26,225,250, net income of $481,916, assets of $20,665,354, liabilities of $10,966,480, and net assets of $9,698,874. The page shows an",
+    "source_family": "Internal Revenue Service Form 990 summary",
+    "source_urls": [
+      "https://projects.propublica.org/nonprofits/organizations/954079133"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_97c83ebafe10c3d2",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "202306",
+    "entity": "",
+    "evidence_ids": [
+      "E02",
+      "evidence_947bca18f9551633"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Internal Revenue Service Form 990 machine-readable filing data downloaded for Behavioral Health Services Inc. Employer Identification Number: 952838006 Tax period year: 2023 Tax period: 202306 Object ID: 202421369349300712 ZIP batch: 2024_TEOS_XML_05a Local XML path: [private source artifact]",
+    "public_language_allowed": true,
+    "public_sentence": "Internal Revenue Service Form 990 machine-readable filing data downloaded for Behavioral Health Services Inc. Employer Identification Number: 952838006 Tax period year: 2023 Tax period: 202306 Object ID: 202421369349300712 ZIP batch: 2024_TEOS_XML_05a Local XML path: [private source artifact]",
+    "retrieval_date": "202306",
+    "source_excerpt": "Internal Revenue Service Form 990 machine-readable filing data downloaded for Behavioral Health Services Inc. Employer Identification Number: 952838006 Tax period year: 2023 Tax period: 202306 Object ID: 202421369349300712 ZIP batch: 2024_TEOS_XML_05a Local XML path: [private source artifact]",
+    "source_family": "Downloaded Internal Revenue Service Form 990 machine-readable filing data",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_2929f027088b03c3",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2025",
+    "entity": "",
+    "evidence_ids": [
+      "E03",
+      "evidence_d043245a0a684901"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "No Internal Revenue Service machine-readable filing data index row was found for Behavioral Health Services Inc tax period year 2025 in probed Internal Revenue Service indexes [2024, 2025, 2026].",
+    "public_language_allowed": true,
+    "public_sentence": "No Internal Revenue Service machine-readable filing data index row was found for Behavioral Health Services Inc tax period year 2025 in probed Internal Revenue Service indexes [2024, 2025, 2026].",
+    "retrieval_date": "2025",
+    "source_excerpt": "No Internal Revenue Service machine-readable filing data index row was found for Behavioral Health Services Inc tax period year 2025 in probed Internal Revenue Service indexes [2024, 2025, 2026].",
+    "source_family": "Internal Revenue Service machine-readable filing-data availability manifest",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_b073c8ece7beb46f",
+    "claim_type": "gap",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E04",
+      "evidence_798df5d7a45e0675"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "HealthRIGHT 360 Form 990 fallback recovered from ProPublica rendered full-text schedules.",
+    "public_language_allowed": true,
+    "public_sentence": "HealthRIGHT 360 Form 990 fallback recovered from ProPublica rendered full-text schedules.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "HealthRIGHT 360 Form 990 fallback recovered from ProPublica rendered full-text schedules.",
+    "source_family": "Rendered Form 990 secondary source",
+    "source_urls": [
+      "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_eeb3914554ccdb5b",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2017-03-30",
+    "entity": "",
+    "evidence_ids": [
+      "E05",
+      "evidence_3103845eeaaf1e1e"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2016-06-CENSUS-0000122774 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-30 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2016-06-CENSUS-0000122774 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-30 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2017-03-30",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2016-06-CENSUS-0000122774 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-30 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_0f54e8909dda17be",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2016-present",
+    "entity": "",
+    "evidence_ids": [
+      "E06",
+      "evidence_67a8fff3ad9e8165"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse findings records were filtered to the target audit reports. The filtered set contains 8 finding record(s).",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse findings records were filtered to the target audit reports. The filtered set contains 8 finding record(s).",
+    "retrieval_date": "2016-present",
+    "source_excerpt": "Federal Audit Clearinghouse findings records were filtered to the target audit reports. The filtered set contains 8 finding record(s).",
+    "source_family": "Federal Audit Clearinghouse findings records",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_037f140672270002",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2016-present",
+    "entity": "",
+    "evidence_ids": [
+      "E07",
+      "evidence_571faf39d80ecdb3"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse federal-award records were filtered to the target audit reports. The filtered set contains 976 award record(s).",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse federal-award records were filtered to the target audit reports. The filtered set contains 976 award record(s).",
+    "retrieval_date": "2016-present",
+    "source_excerpt": "Federal Audit Clearinghouse federal-award records were filtered to the target audit reports. The filtered set contains 976 award record(s).",
+    "source_family": "Federal Audit Clearinghouse federal awards records",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_7c0975e971b12252",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-15",
+    "entity": "",
+    "evidence_ids": [
+      "E08",
+      "evidence_c182a6e42f6a7429"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "California Department of Health Care Services facility-status cross-check for CRI-Help Inc. Licensing and Certification Division status rows matched: 13 Active rows: 4 Closed rows: 9 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a",
+    "public_language_allowed": true,
+    "public_sentence": "California Department of Health Care Services facility-status cross-check for CRI-Help Inc. Licensing and Certification Division status rows matched: 13 Active rows: 4 Closed rows: 9 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a",
+    "retrieval_date": "2026-04-15",
+    "source_excerpt": "California Department of Health Care Services facility-status cross-check for CRI-Help Inc. Licensing and Certification Division status rows matched: 13 Active rows: 4 Closed rows: 9 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a",
+    "source_family": "California Department of Health Care Services facility-status row set",
+    "source_urls": [
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_571f40d8cd421d20",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025-10-16",
+    "entity": "",
+    "evidence_ids": [
+      "E09",
+      "evidence_06396cf5cd604958"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "The California Department of Health Care Services page identifies an adverse-status list, but the page did not expose source records in the static HTML fetched during this run.",
+    "public_language_allowed": true,
+    "public_sentence": "The California Department of Health Care Services page identifies an adverse-status list, but the page did not expose source records in the static HTML fetched during this run.",
+    "retrieval_date": "2025-10-16",
+    "source_excerpt": "The California Department of Health Care Services page identifies an adverse-status list, but the page did not expose source records in the static HTML fetched during this run.",
+    "source_family": "California Department of Health Care Services adverse-status page manifest",
+    "source_urls": [
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_a71412b3266755ed",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E10",
+      "evidence_67f61e0d157e345b"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "California Department of Health Care Services adverse-status page, SharePoint API candidates, and ArcGIS searches were probed. No separate machine-readable probation, suspension, revocation, or NOV table was recovered in this run. Existing California Department of Health Care Services facility status remains Active/Closed facility-level context.",
+    "public_language_allowed": true,
+    "public_sentence": "California Department of Health Care Services adverse-status page, SharePoint API candidates, and ArcGIS searches were probed. No separate machine-readable probation, suspension, revocation, or NOV table was recovered in this run. Existing California Department of Health Care Services facility status remains Active/Closed facility-level context.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "California Department of Health Care Services adverse-status page, SharePoint API candidates, and ArcGIS searches were probed. No separate machine-readable probation, suspension, revocation, or NOV table was recovered in this run. Existing California Department of Health Care Services facility status remains Active/Closed facility-level context.",
+    "source_family": "California Department of Health Care Services adverse-status source discovery",
+    "source_urls": [
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_03796a4c789e9b32",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2023-04-26",
+    "entity": "BHS SAPC provider",
+    "evidence_ids": [
+      "E11",
+      "evidence_32f81cdeee62fbb5"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Los Angeles County Auditor-Controller fiscal compliance review: BHS SAPC provider Source URI: https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf Local source document path: [private source artifact]",
+    "public_language_allowed": true,
+    "public_sentence": "Los Angeles County Auditor-Controller fiscal compliance review: BHS SAPC provider Source URI: https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf Local source document path: [private source artifact]",
+    "retrieval_date": "2023-04-26",
+    "source_excerpt": "Los Angeles County Auditor-Controller fiscal compliance review: BHS SAPC provider Source URI: https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf Local source document path: [private source artifact]",
+    "source_family": "County contract or monitoring source",
+    "source_urls": [
+      "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_5b8a9456506b09d9",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025",
+    "entity": "HealthRIGHT 360",
+    "evidence_ids": [
+      "E12",
+      "evidence_5150f41b551a187f"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a docket-search manifest only; it is not a merits finding and the court page itself states calendar information is not the official court r",
+    "public_language_allowed": true,
+    "public_sentence": "Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a docket-search manifest only; it is not a merits finding and the court page itself states calendar information is not the official court r",
+    "retrieval_date": "2025",
+    "source_excerpt": "Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a docket-search manifest only; it is not a merits finding and the court page itself states calendar information is not the official court r",
+    "source_family": "Court docket search manifest",
+    "source_urls": [
+      "https://www.santabarbara.courts.ca.gov/es/online-services/court-calendars/search-court-calendars/calendarios-judiciales-civil?case_type=All&hearing_type=All&keyword=&order=field_party_name&page=56&sort=asc"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_00ac3e1ca06330fb",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E13",
+      "evidence_ec0b74633b49a5bd"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Internal Revenue Service Form 990 summary source collection. This source collection contains Form 990 fields used for revenue, government-grant share, expense, payroll, and compensation checks.",
+    "public_language_allowed": true,
+    "public_sentence": "Internal Revenue Service Form 990 summary source collection. This source collection contains Form 990 fields used for revenue, government-grant share, expense, payroll, and compensation checks.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "Internal Revenue Service Form 990 summary source collection. This source collection contains Form 990 fields used for revenue, government-grant share, expense, payroll, and compensation checks.",
+    "source_family": "Internal Revenue Service source collection",
+    "source_urls": [
+      "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv",
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
+      "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf",
+      "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/Suspension-Revocation.aspx",
+      "https://data.chhs.ca.gov/dataset/county-health-status-profiles",
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_c6b32cb350399064",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E14",
+      "evidence_092248a6e53f7d01"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse audit summary source collection. This source collection contains federal audit fields used to check material weaknesses, internal-control findings, low-risk status, and audit finding counts.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse audit summary source collection. This source collection contains federal audit fields used to check material weaknesses, internal-control findings, low-risk status, and audit finding counts.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "Federal Audit Clearinghouse audit summary source collection. This source collection contains federal audit fields used to check material weaknesses, internal-control findings, low-risk status, and audit finding counts.",
+    "source_family": "Federal Audit Clearinghouse audit source collection",
+    "source_urls": [
+      "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv",
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
+      "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf",
+      "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/Suspension-Revocation.aspx",
+      "https://data.chhs.ca.gov/dataset/county-health-status-profiles",
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_b405c6e7e5c5c99a",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E15",
+      "evidence_8dfb7fc1cb2a75ce"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse award source collection. This source collection contains federal audit award totals used to understand public-funding exposure.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse award source collection. This source collection contains federal audit award totals used to understand public-funding exposure.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "Federal Audit Clearinghouse award source collection. This source collection contains federal audit award totals used to understand public-funding exposure.",
+    "source_family": "Federal Audit Clearinghouse award source collection",
+    "source_urls": [
+      "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv",
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
+      "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf",
+      "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/Suspension-Revocation.aspx",
+      "https://data.chhs.ca.gov/dataset/county-health-status-profiles",
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_a89894081baeb3e6",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E16",
+      "evidence_dfbbcee28e6ef7fa"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+    "source_family": "California Department of Health Care Services status source collection",
+    "source_urls": [
+      "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv",
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
+      "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf",
+      "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/Suspension-Revocation.aspx",
+      "https://data.chhs.ca.gov/dataset/county-health-status-profiles",
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_cde778e7517387b3",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E17",
+      "evidence_0cd635f36c5cc6ee"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+    "source_family": "Parsed source document text index",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv",
+      "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv",
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf",
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535",
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075",
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073",
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607",
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575",
+      "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774",
+      "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000124927",
+      "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000249434",
+      "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_11410e2fcb51c840",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-26",
+    "entity": "Tarzana Treatment Centers Inc",
+    "evidence_ids": [
+      "E18",
+      "evidence_d309d3a9cb2ba46a"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Tarzana Treatment Centers, Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Tarzana Treatment Centers, Inc.",
+    "retrieval_date": "2026-04-26",
+    "source_excerpt": "Tarzana Treatment Centers, Inc.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://www.tarzanatc.org/services/"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_7f8d626db5622b23",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E19",
+      "evidence_910819e82ade8b13"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Official homelessness outcome source collection. This source collection contains official homelessness outcome measures used for county or Continuum of Care context.",
+    "public_language_allowed": true,
+    "public_sentence": "Official homelessness outcome source collection. This source collection contains official homelessness outcome measures used for county or Continuum of Care context.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "Official homelessness outcome source collection. This source collection contains official homelessness outcome measures used for county or Continuum of Care context.",
+    "source_family": "Official outcome source collection",
+    "source_urls": [
+      "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/Suspension-Revocation.aspx",
+      "https://data.chhs.ca.gov/",
+      "https://data.chhs.ca.gov/dataset/county-health-status-profiles",
+      "https://lab.data.ca.gov/",
+      "https://lab.data.ca.gov/dataset/homelessness-demographics",
+      "https://lab.data.ca.gov/dataset/ca-system-performance-measures-statewide-and-by-coc",
+      "https://lab.data.ca.gov/dataset/medication-assisted-treatment-in-medi-cal-for-opioid-use-disorders-by-county",
+      "https://data-openjustice.doj.ca.gov/sites/default/files/dataset/2025-07/Crimes_and_Clearances_with_Arson-1985-2024.csv"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_23071d981f8a44db",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E20",
+      "evidence_c01d627498d0bbaf"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Spend-versus-results context source collection. This source collection joins public-funding geography with official outcome movement so reviewers can decide whether provider-specific outcome records are needed.",
+    "public_language_allowed": true,
+    "public_sentence": "Spend-versus-results context source collection. This source collection joins public-funding geography with official outcome movement so reviewers can decide whether provider-specific outcome records are needed.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "Spend-versus-results context source collection. This source collection joins public-funding geography with official outcome movement so reviewers can decide whether provider-specific outcome records are needed.",
+    "source_family": "Spend-versus-results source collection",
+    "source_urls": [
+      "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv",
+      "https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv",
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
+      "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf",
+      "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
+      "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/Suspension-Revocation.aspx",
+      "https://data.chhs.ca.gov/dataset/county-health-status-profiles"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_2db3a5748f64eba4",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "",
+    "evidence_ids": [
+      "E21",
+      "evidence_e4140befe06315a5"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Public statement review source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+    "public_language_allowed": true,
+    "public_sentence": "Public statement review source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "Public statement review source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+    "source_family": "Public statement source collection",
+    "source_urls": [
+      "https://www.tarzanatc.org/who-we-are/meet-us/",
+      "https://www.tarzanatc.org/who-we-are/our-history/",
+      "https://www.tarzanatc.org/treatment-news/",
+      "https://www.healthright360.org/about/staff-and-board/",
+      "https://www.healthright360.org/about/news/",
+      "https://www.healthright360.org/about/news",
+      "https://www.healthright360.org/about/our-impact/",
+      "https://westcare.com/leadership/",
+      "https://westcare.com/leadership/senior/",
+      "https://westcare.com/express/",
+      "https://westcare.com/impact-report/",
+      "https://bhs-inc.org/",
+      "https://www.bhs-inc.org/about-us",
+      "https://bhs-inc.org/services",
+      "https://bhs-inc.org/services/",
+      "https://cri-help.org/news-events/newsroom.html",
+      "https://cri-help.org/who-we-are/core-values.html",
+      "https://cri-help.org/",
+      "https://socialmodelrecovery.org/",
+      "https://socialmodelrecovery.org/services/",
+      "https://phoenixhouseca.org/measuring-our-impact/",
+      "https://phoenixhouseca.org/annual-reports/",
+      "https://phoenixhouseca.org/impact-annual-reports/"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_08fc0d7b640ebfff",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-24",
+    "entity": "WestCare California Inc",
+    "evidence_ids": [
+      "E22",
+      "evidence_2d4fb7cb70f9221b"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "Legal term requires review before stronger wording",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "on addressing social influencers of health and implement homelessness: es building the resiliency of individuals who face barriers including trauma, abuse, chemical dependency, severe behavioral health disorders, developmental disabilities, homelessness, and domestic violence.",
+    "public_language_allowed": true,
+    "public_sentence": "on addressing social influencers of health and implement homelessness: es building the resiliency of individuals who face barriers including trauma, abuse, chemical dependency, severe behavioral health disorders, developmental disabilities, homelessness, and domestic violence.",
+    "retrieval_date": "2026-04-24",
+    "source_excerpt": "on addressing social influencers of health and implement homelessness: es building the resiliency of individuals who face barriers including trauma, abuse, chemical dependency, severe behavioral health disorders, developmental disabilities, homelessness, and domestic violence. Ms. Ramos currently serves as the Chief Operations Officer for WestCare Pacific Islands. As a me",
+    "source_family": "Public statement source",
+    "source_urls": [
+      "https://westcare.com/leadership/"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_8dcde05858b358a7",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-15",
+    "entity": "",
+    "evidence_ids": [
+      "E23",
+      "evidence_c05e40e102adbd2b"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "California Department of Health Care Services facility-status cross-check for Behavioral Health Services Inc. Licensing and Certification Division status rows matched: 65 Active rows: 40 Closed rows: 25 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HT",
+    "public_language_allowed": true,
+    "public_sentence": "California Department of Health Care Services facility-status cross-check for Behavioral Health Services Inc. Licensing and Certification Division status rows matched: 65 Active rows: 40 Closed rows: 25 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HT",
+    "retrieval_date": "2026-04-15",
+    "source_excerpt": "California Department of Health Care Services facility-status cross-check for Behavioral Health Services Inc. Licensing and Certification Division status rows matched: 65 Active rows: 40 Closed rows: 25 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HT",
+    "source_family": "California Department of Health Care Services facility-status row set",
+    "source_urls": [
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_e388e91996b564e1",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-15",
+    "entity": "",
+    "evidence_ids": [
+      "E24",
+      "evidence_b5f7ba7beb78b928"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "California Department of Health Care Services facility-status cross-check for HealthRIGHT 360. Licensing and Certification Division status rows matched: 46 Active rows: 21 Closed rows: 25 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a machine",
+    "public_language_allowed": true,
+    "public_sentence": "California Department of Health Care Services facility-status cross-check for HealthRIGHT 360. Licensing and Certification Division status rows matched: 46 Active rows: 21 Closed rows: 25 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a machine",
+    "retrieval_date": "2026-04-15",
+    "source_excerpt": "California Department of Health Care Services facility-status cross-check for HealthRIGHT 360. Licensing and Certification Division status rows matched: 46 Active rows: 21 Closed rows: 25 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a machine",
+    "source_family": "California Department of Health Care Services facility-status row set",
+    "source_urls": [
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_69a80348547a7c94",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-15",
+    "entity": "Phoenix Houses Of California Inc",
+    "evidence_ids": [
+      "E25",
+      "evidence_f8feae3d3c40c306"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "California Department of Health Care Services facility-status cross-check for Phoenix Houses Of California Inc. Licensing and Certification Division status rows matched: 8 Active rows: 3 Closed rows: 5 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-st",
+    "public_language_allowed": true,
+    "public_sentence": "California Department of Health Care Services facility-status cross-check for Phoenix Houses Of California Inc. Licensing and Certification Division status rows matched: 8 Active rows: 3 Closed rows: 5 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-st",
+    "retrieval_date": "2026-04-15",
+    "source_excerpt": "California Department of Health Care Services facility-status cross-check for Phoenix Houses Of California Inc. Licensing and Certification Division status rows matched: 8 Active rows: 3 Closed rows: 5 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-st",
+    "source_family": "California Department of Health Care Services facility-status row set",
+    "source_urls": [
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_e6ade0e49573e608",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-15",
+    "entity": "",
+    "evidence_ids": [
+      "E26",
+      "evidence_e5576db45f2f20ff"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "California Department of Health Care Services facility-status cross-check for Social Model Recovery Systems Inc. Licensing and Certification Division status rows matched: 13 Active rows: 9 Closed rows: 4 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-",
+    "public_language_allowed": true,
+    "public_sentence": "California Department of Health Care Services facility-status cross-check for Social Model Recovery Systems Inc. Licensing and Certification Division status rows matched: 13 Active rows: 9 Closed rows: 4 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-",
+    "retrieval_date": "2026-04-15",
+    "source_excerpt": "California Department of Health Care Services facility-status cross-check for Social Model Recovery Systems Inc. Licensing and Certification Division status rows matched: 13 Active rows: 9 Closed rows: 4 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-",
+    "source_family": "California Department of Health Care Services facility-status row set",
+    "source_urls": [
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_63175b5554d6940c",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-15",
+    "entity": "",
+    "evidence_ids": [
+      "E27",
+      "evidence_5abf99ba83094482"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "California Department of Health Care Services facility-status cross-check for Tarzana Treatment Centers Inc. Licensing and Certification Division status rows matched: 25 Active rows: 23 Closed rows: 2 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a",
+    "public_language_allowed": true,
+    "public_sentence": "California Department of Health Care Services facility-status cross-check for Tarzana Treatment Centers Inc. Licensing and Certification Division status rows matched: 25 Active rows: 23 Closed rows: 2 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a",
+    "retrieval_date": "2026-04-15",
+    "source_excerpt": "California Department of Health Care Services facility-status cross-check for Tarzana Treatment Centers Inc. Licensing and Certification Division status rows matched: 25 Active rows: 23 Closed rows: 2 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a",
+    "source_family": "California Department of Health Care Services facility-status row set",
+    "source_urls": [
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_7a0f4363750b7814",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2019-11-19",
+    "entity": "",
+    "evidence_ids": [
+      "E28",
+      "evidence_b928bbd1ddb21694"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc.",
+    "retrieval_date": "2019-11-19",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc. Report ID: 2019-06-CENSUS-0000126607 Audit year: 2019 Federal Audit Clearinghouse accepted date: 2019-11-19 Auditee name: SOCIAL MODEL RECOVERY SYSTEMS, INC. Auditee Employer Identification Number: 954079133 Audit type: single-audit Total amount expended: 10970163 Low-risk audi",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_789c8133f37dbaa1",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2024-03-06",
+    "entity": "",
+    "evidence_ids": [
+      "E29",
+      "evidence_99c4c148b280659e"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2023-06-GSAFAC-0000017535 Audit year: 2023 Federal Audit Clearinghouse accepted date: 2024-03-06 Auditee name: Healthright 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2023-06-GSAFAC-0000017535 Audit year: 2023 Federal Audit Clearinghouse accepted date: 2024-03-06 Auditee name: Healthright 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2024-03-06",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2023-06-GSAFAC-0000017535 Audit year: 2023 Federal Audit Clearinghouse accepted date: 2024-03-06 Auditee name: Healthright 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_b8678c3471516be5",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2024-01-30",
+    "entity": "",
+    "evidence_ids": [
+      "E30",
+      "evidence_45c8905ea4d6167b"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2024-01-30",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2023-06-GSAFAC-0000019151 Audit year: 2023 Federal Audit Clearinghouse accepted date: 2024-01-30 Auditee name: Tarzana Treatment Centers, Inc. Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 19429513 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_a8d81aabd63bd216",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025-01-23",
+    "entity": "",
+    "evidence_ids": [
+      "E31",
+      "evidence_b35900f0d2d5cf38"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2024-06-GSAFAC-0000348075 Audit year: 2024 Federal Audit Clearinghouse accepted date: 2025-01-23 Auditee name: HealthRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2024-06-GSAFAC-0000348075 Audit year: 2024 Federal Audit Clearinghouse accepted date: 2025-01-23 Auditee name: HealthRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2025-01-23",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2024-06-GSAFAC-0000348075 Audit year: 2024 Federal Audit Clearinghouse accepted date: 2025-01-23 Auditee name: HealthRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_e2a8d5ed837ec728",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025-02-26",
+    "entity": "",
+    "evidence_ids": [
+      "E32",
+      "evidence_d3b12a4069d9f688"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2025-02-26",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2024-06-GSAFAC-0000354996 Audit year: 2024 Federal Audit Clearinghouse accepted date: 2025-02-26 Auditee name: Tarzana Treatment Centers, Inc. Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 16891413 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_93f16a47288dabf4",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-01-26",
+    "entity": "",
+    "evidence_ids": [
+      "E33",
+      "evidence_42e9c53edadfdae2"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2025-06-GSAFAC-0000400073 Audit year: 2025 Federal Audit Clearinghouse accepted date: 2026-01-26 Auditee name: HealthRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2025-06-GSAFAC-0000400073 Audit year: 2025 Federal Audit Clearinghouse accepted date: 2026-01-26 Auditee name: HealthRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2026-01-26",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2025-06-GSAFAC-0000400073 Audit year: 2025 Federal Audit Clearinghouse accepted date: 2026-01-26 Auditee name: HealthRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_80ad129e0e3a58af",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-03-17",
+    "entity": "",
+    "evidence_ids": [
+      "E34",
+      "evidence_a8431f7c86e20d6e"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2026-03-17",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2025-06-GSAFAC-0000405366 Audit year: 2025 Federal Audit Clearinghouse accepted date: 2026-03-17 Auditee name: Tarzana Treatment Centers, Inc. Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 14765752 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_6259e4b63d2adc36",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-15",
+    "entity": "",
+    "evidence_ids": [
+      "E35",
+      "evidence_5662edb13674fbb2"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "California Department of Health Care Services facility-status cross-check for WestCare California Inc. Licensing and Certification Division status rows matched: 12 Active rows: 6 Closed rows: 6 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status pag",
+    "public_language_allowed": true,
+    "public_sentence": "California Department of Health Care Services facility-status cross-check for WestCare California Inc. Licensing and Certification Division status rows matched: 12 Active rows: 6 Closed rows: 6 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status pag",
+    "retrieval_date": "2026-04-15",
+    "source_excerpt": "California Department of Health Care Services facility-status cross-check for WestCare California Inc. Licensing and Certification Division status rows matched: 12 Active rows: 6 Closed rows: 6 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status pag",
+    "source_family": "California Department of Health Care Services facility-status row set",
+    "source_urls": [
+      "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_987994b71db8e4e5",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2016-12-21",
+    "entity": "",
+    "evidence_ids": [
+      "E36",
+      "evidence_1b3d32aadc3cc2f2"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2016-12-21",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2016-06-CENSUS-0000119575 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2016-12-21 Auditee name: TARZANA TREATMENT CENTERS, INC. Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 12302458 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_8993b80cc5ff1cf9",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2017-03-23",
+    "entity": "",
+    "evidence_ids": [
+      "E37",
+      "evidence_15267c9609bd0e24"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "retrieval_date": "2017-03-23",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2016-06-CENSUS-0000124927 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-23 Auditee name: BEHAVIORAL HEALTH SERVICES, INC. Auditee Employer Identification Number: 952838006 Audit type: single-audit Total amount expended: 6143363 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_ec7cf9d0cfa72024",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2018-01-17",
+    "entity": "",
+    "evidence_ids": [
+      "E38",
+      "evidence_cf74deb80f859ea6"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2018-01-17",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2017-06-CENSUS-0000119575 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2018-01-17 Auditee name: TARZANA TREATMENT CENTER Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 18612048 Low-risk auditee: Yes Pr",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_3bbdf42696b16e21",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2017-12-27",
+    "entity": "",
+    "evidence_ids": [
+      "E39",
+      "evidence_b4c55f4c7be78aa2"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2017-06-CENSUS-0000122774 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2017-12-27 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2017-06-CENSUS-0000122774 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2017-12-27 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2017-12-27",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2017-06-CENSUS-0000122774 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2017-12-27 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_3e227603515404bf",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2018-04-17",
+    "entity": "",
+    "evidence_ids": [
+      "E40",
+      "evidence_a9e2524d337bdf2f"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "retrieval_date": "2018-04-17",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2017-06-CENSUS-0000124927 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2018-04-17 Auditee name: BEHAVIORAL HEALTH SERVICES, INC. Auditee Employer Identification Number: 952838006 Audit type: single-audit Total amount expended: 10483612 Low-risk auditee",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_7d3217dec366a31c",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2017-12-18",
+    "entity": "",
+    "evidence_ids": [
+      "E41",
+      "evidence_9ee7dccbc57e3232"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc.",
+    "retrieval_date": "2017-12-18",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc. Report ID: 2017-06-CENSUS-0000126607 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2017-12-18 Auditee name: SOCIAL MODEL RECOVERY SYSTEMS, INC. Auditee Employer Identification Number: 954079133 Audit type: single-audit Total amount expended: 6167193 Low-risk audit",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_b7577dc0225e0bb5",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2020-01-20",
+    "entity": "",
+    "evidence_ids": [
+      "E42",
+      "evidence_9a8d3b4ef26a5cd3"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2020-01-20",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2018-06-CENSUS-0000119575 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2020-01-20 Auditee name: TARZANA TREATMENT CENTER, INC. Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 28103263 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_d87c42cab08ae64a",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2019-01-15",
+    "entity": "",
+    "evidence_ids": [
+      "E43",
+      "evidence_a734993b9a0b9550"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2018-06-CENSUS-0000122774 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2019-01-15 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2018-06-CENSUS-0000122774 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2019-01-15 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2019-01-15",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2018-06-CENSUS-0000122774 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2019-01-15 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_7715a6f48d72a979",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2020-01-29",
+    "entity": "",
+    "evidence_ids": [
+      "E44",
+      "evidence_829efba56ad5bfc9"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "retrieval_date": "2020-01-29",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2018-06-CENSUS-0000124927 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2020-01-29 Auditee name: BEHAVIORAL HEALTH SERVICES, INC. Auditee Employer Identification Number: 952838006 Audit type: single-audit Total amount expended: 12324057 Low-risk auditee",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_62e47ecd3cd1635d",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2018-11-25",
+    "entity": "",
+    "evidence_ids": [
+      "E45",
+      "evidence_72994a41439c26e5"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc.",
+    "retrieval_date": "2018-11-25",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc. Report ID: 2018-06-CENSUS-0000126607 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2018-11-25 Auditee name: SOCIAL MODEL RECOVERY SYSTEMS, INC. Auditee Employer Identification Number: 954079133 Audit type: single-audit Total amount expended: 10519273 Low-risk audi",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_85a91d0332821e35",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2020-04-07",
+    "entity": "",
+    "evidence_ids": [
+      "E46",
+      "evidence_1bda3c170555238d"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2020-04-07",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2019-06-CENSUS-0000119575 Audit year: 2019 Federal Audit Clearinghouse accepted date: 2020-04-07 Auditee name: TARZANA TREATMENT CENTERS, INC. Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 32613722 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_171ff93488229afd",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2019-11-19",
+    "entity": "",
+    "evidence_ids": [
+      "E47",
+      "evidence_33e78d4e762fee4a"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2019-06-CENSUS-0000122774 Audit year: 2019 Federal Audit Clearinghouse accepted date: 2019-11-19 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2019-06-CENSUS-0000122774 Audit year: 2019 Federal Audit Clearinghouse accepted date: 2019-11-19 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2019-11-19",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2019-06-CENSUS-0000122774 Audit year: 2019 Federal Audit Clearinghouse accepted date: 2019-11-19 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_97f071bdcaf6b057",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2022-06-28",
+    "entity": "",
+    "evidence_ids": [
+      "E48",
+      "evidence_2d1c7235a0fc8e02"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "retrieval_date": "2022-06-28",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2019-06-CENSUS-0000124927 Audit year: 2019 Federal Audit Clearinghouse accepted date: 2022-06-28 Auditee name: BEHAVIORAL HEALTH SERVICES, INC Auditee Employer Identification Number: 952838006 Audit type: single-audit Total amount expended: 4178184 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_841c8dc2644cb1c1",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2021-01-26",
+    "entity": "",
+    "evidence_ids": [
+      "E49",
+      "evidence_d199f104e1da0069"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2021-01-26",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2020-06-CENSUS-0000119575 Audit year: 2020 Federal Audit Clearinghouse accepted date: 2021-01-26 Auditee name: TARZANA TREATMENT CENTERS, INC. Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 55229120 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_d7f50a48b973ee58",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2021-01-10",
+    "entity": "",
+    "evidence_ids": [
+      "E50",
+      "evidence_32bd30befb60976f"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2020-06-CENSUS-0000122774 Audit year: 2020 Federal Audit Clearinghouse accepted date: 2021-01-10 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2020-06-CENSUS-0000122774 Audit year: 2020 Federal Audit Clearinghouse accepted date: 2021-01-10 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2021-01-10",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2020-06-CENSUS-0000122774 Audit year: 2020 Federal Audit Clearinghouse accepted date: 2021-01-10 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_299375293f31a71a",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2023-03-09",
+    "entity": "",
+    "evidence_ids": [
+      "E51",
+      "evidence_fef18aea259b22d3"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "retrieval_date": "2023-03-09",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2020-06-CENSUS-0000124927 Audit year: 2020 Federal Audit Clearinghouse accepted date: 2023-03-09 Auditee name: BEHAVIORAL HEALTH SERVICES, INC. Auditee Employer Identification Number: 952838006 Audit type: single-audit Total amount expended: 7714112 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000124927"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_ab958e9f22382b1a",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2021-03-23",
+    "entity": "Phoenix Houses Of California Inc",
+    "evidence_ids": [
+      "E52",
+      "evidence_9ceabbf117b5140d"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.",
+    "retrieval_date": "2021-03-23",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc. Report ID: 2020-06-CENSUS-0000249434 Audit year: 2020 Federal Audit Clearinghouse accepted date: 2021-03-23 Auditee name: PHOENIX HOUSES OF CALIFORNIA INC Auditee Employer Identification Number: 943015376 Audit type: single-audit Total amount expended: 3945544 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000249434"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_c295bb56e7aff466",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2022-01-11",
+    "entity": "",
+    "evidence_ids": [
+      "E53",
+      "evidence_1923174633c65d45"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2022-01-11",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2021-06-CENSUS-0000119575 Audit year: 2021 Federal Audit Clearinghouse accepted date: 2022-01-11 Auditee name: TARZANA TREATMENT CENTERS, INC. Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 57374106 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_aaf3a54283931868",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2022-01-17",
+    "entity": "",
+    "evidence_ids": [
+      "E54",
+      "evidence_1b3fd82a6c1ac11a"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2021-06-CENSUS-0000122774 Audit year: 2021 Federal Audit Clearinghouse accepted date: 2022-01-17 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2021-06-CENSUS-0000122774 Audit year: 2021 Federal Audit Clearinghouse accepted date: 2022-01-17 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2022-01-17",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2021-06-CENSUS-0000122774 Audit year: 2021 Federal Audit Clearinghouse accepted date: 2022-01-17 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_e44b7581eb472742",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2022-03-16",
+    "entity": "Phoenix Houses Of California Inc",
+    "evidence_ids": [
+      "E55",
+      "evidence_846498d5fd4ac918"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.",
+    "retrieval_date": "2022-03-16",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc. Report ID: 2021-06-CENSUS-0000249434 Audit year: 2021 Federal Audit Clearinghouse accepted date: 2022-03-16 Auditee name: PHOENIX HOUSES OF CALIFORNIA INC Auditee Employer Identification Number: 943015376 Audit type: single-audit Total amount expended: 5569654 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000249434"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_3603f564e227bba1",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2023-12-27",
+    "entity": "",
+    "evidence_ids": [
+      "E56",
+      "evidence_8461cbe899dfe6e6"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "retrieval_date": "2023-12-27",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2021-06-GSAFAC-0000011418 Audit year: 2021 Federal Audit Clearinghouse accepted date: 2023-12-27 Auditee name: Behavioral Health Services, Inc. Auditee Employer Identification Number: 952838006 Audit type: single-audit Total amount expended: 6538784 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2021-06-GSAFAC-0000011418"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_c84350d8dfda841c",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2023-02-24",
+    "entity": "",
+    "evidence_ids": [
+      "E57",
+      "evidence_d521c9e73d2185a4"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+    "retrieval_date": "2023-02-24",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc. Report ID: 2022-06-CENSUS-0000119575 Audit year: 2022 Federal Audit Clearinghouse accepted date: 2023-02-24 Auditee name: TARZANA TREATMENT CENTERS, INC. Auditee Employer Identification Number: 942219349 Audit type: single-audit Total amount expended: 15421504 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119575"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_d492538b73f372f6",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2023-02-13",
+    "entity": "",
+    "evidence_ids": [
+      "E58",
+      "evidence_c98d6f87a0fbd583"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2022-06-CENSUS-0000122774 Audit year: 2022 Federal Audit Clearinghouse accepted date: 2023-02-13 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2022-06-CENSUS-0000122774 Audit year: 2022 Federal Audit Clearinghouse accepted date: 2023-02-13 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "retrieval_date": "2023-02-13",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2022-06-CENSUS-0000122774 Audit year: 2022 Federal Audit Clearinghouse accepted date: 2023-02-13 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000122774"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_cdb9bac90b906a0c",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025-04-23",
+    "entity": "",
+    "evidence_ids": [
+      "E59",
+      "evidence_fa2340d0480fc706"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "retrieval_date": "2025-04-23",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2022-06-GSAFAC-0000366337 Audit year: 2022 Federal Audit Clearinghouse accepted date: 2025-04-23 Auditee name: Behavioral Health Services, Inc. Auditee Employer Identification Number: 952838006 Audit type: single-audit Total amount expended: 7611895 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2022-06-GSAFAC-0000366337"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_49a7ae4cf94e19b4",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025-10-17",
+    "entity": "",
+    "evidence_ids": [
+      "E60",
+      "evidence_5216dc57daddcaaa"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+    "retrieval_date": "2025-10-17",
+    "source_excerpt": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc. Report ID: 2023-06-GSAFAC-0000384194 Audit year: 2023 Federal Audit Clearinghouse accepted date: 2025-10-17 Auditee name: Behavioral Health Services, Inc. Auditee Employer Identification Number: 952838006 Audit type: single-audit Total amount expended: 7949854 Low-risk auditee:",
+    "source_family": "Federal Audit Clearinghouse audit source document",
+    "source_urls": [
+      "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000384194"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_9793b354436b4c68",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025-09-01",
+    "entity": "",
+    "evidence_ids": [
+      "E61",
+      "evidence_bed9b2a3601e5f1a"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "HealthRIGHT 360 describes a full continuum of substance use disorder treatment services for adults, youth, and families, including outpatient, residential, custody-based, sober living environments, and case management programs.",
+    "public_language_allowed": true,
+    "public_sentence": "HealthRIGHT 360 describes a full continuum of substance use disorder treatment services for adults, youth, and families, including outpatient, residential, custody-based, sober living environments, and case management programs.",
+    "retrieval_date": "2025-09-01",
+    "source_excerpt": "HealthRIGHT 360 describes a full continuum of substance use disorder treatment services for adults, youth, and families, including outpatient, residential, custody-based, sober living environments, and case management programs. The organization describes integrated mental health services, medication management, primary medical care, chronic disease management, specialized services for women, family reentry services, workforce development, and housing referrals.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://www.healthright360.org/our-services/substance-use-disorder/"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_a5099b50f443eea5",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-26",
+    "entity": "Behavioral Health Services Inc",
+    "evidence_ids": [
+      "E62",
+      "evidence_d4ef8ee70eb31774"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "Legal term requires review before stronger wording",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "BHS programming attempts to address these issues and problems related to substance abuse, mental health, related stigma, health disparities, homelessness, and helping the elderly stay in their homes.",
+    "public_language_allowed": true,
+    "public_sentence": "BHS programming attempts to address these issues and problems related to substance abuse, mental health, related stigma, health disparities, homelessness, and helping the elderly stay in their homes.",
+    "retrieval_date": "2026-04-26",
+    "source_excerpt": "BHS programming attempts to address these issues and problems related to substance abuse, mental health, related stigma, health disparities, homelessness, and helping the elderly stay in their homes.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://bhs-inc.org/services"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_4095107926ed6907",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-26",
+    "entity": "CRI-Help Inc",
+    "evidence_ids": [
+      "E63",
+      "evidence_9db64dccc0217c42"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "Legal term requires review before stronger wording",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "residential treatment program is designed to provide a safe, structured, and supportive environment for those seeking to break free from substance abuse and embark on a journey toward lasting recovery.",
+    "public_language_allowed": true,
+    "public_sentence": "residential treatment program is designed to provide a safe, structured, and supportive environment for those seeking to break free from substance abuse and embark on a journey toward lasting recovery.",
+    "retrieval_date": "2026-04-26",
+    "source_excerpt": "residential treatment program is designed to provide a safe, structured, and supportive environment for those seeking to break free from substance abuse and embark on a journey toward lasting recovery.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://cri-help.org/programs/residential-treatment/overview.html"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_8726f991a21e9b79",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-26",
+    "entity": "HealthRIGHT 360",
+    "evidence_ids": [
+      "E64",
+      "evidence_2e1b16c1988bb8c2"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "HealthRIGHT 360 provides a full continuum of substance use disorder treatment services to adults, youth, and families, including outpatient, residential, custody-based, sober living environments, and case management programs.",
+    "public_language_allowed": true,
+    "public_sentence": "HealthRIGHT 360 provides a full continuum of substance use disorder treatment services to adults, youth, and families, including outpatient, residential, custody-based, sober living environments, and case management programs.",
+    "retrieval_date": "2026-04-26",
+    "source_excerpt": "HealthRIGHT 360 provides a full continuum of substance use disorder treatment services to adults, youth, and families, including outpatient, residential, custody-based, sober living environments, and case management programs.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://www.healthright360.org/our-services/substance-use-disorder/"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_8abba69db4a77ba9",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-26",
+    "entity": "Phoenix Houses Of California Inc",
+    "evidence_ids": [
+      "E65",
+      "evidence_f7fd0136227c3fb1"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "At Phoenix House California, we take a holistic approach to drug addiction and mental health disorders that focuses on the power of being both proactive and reactive: prevention, early intervention, and recovery services.",
+    "public_language_allowed": true,
+    "public_sentence": "At Phoenix House California, we take a holistic approach to drug addiction and mental health disorders that focuses on the power of being both proactive and reactive: prevention, early intervention, and recovery services.",
+    "retrieval_date": "2026-04-26",
+    "source_excerpt": "At Phoenix House California, we take a holistic approach to drug addiction and mental health disorders that focuses on the power of being both proactive and reactive: prevention, early intervention, and recovery services.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://phoenixhouseca.org/what-we-do/"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_638bca2f1bde8902",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-26",
+    "entity": "Social Model Recovery Systems Inc",
+    "evidence_ids": [
+      "E66",
+      "evidence_f7981a879291f43b"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Official Social Model Recovery Systems Programs/Services Social Model Recovery Systems, Inc.",
+    "public_language_allowed": true,
+    "public_sentence": "Official Social Model Recovery Systems Programs/Services Social Model Recovery Systems, Inc.",
+    "retrieval_date": "2026-04-26",
+    "source_excerpt": "Official Social Model Recovery Systems Programs/Services Social Model Recovery Systems, Inc.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://socialmodelrecovery.org/services/"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_cee5dcd79b391069",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-26",
+    "entity": "WestCare California Inc",
+    "evidence_ids": [
+      "E67",
+      "evidence_44e8e72553e745fe"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "WestCare California has been providing an opportunity for individuals to lead fuller, richer lives.",
+    "public_language_allowed": true,
+    "public_sentence": "WestCare California has been providing an opportunity for individuals to lead fuller, richer lives.",
+    "retrieval_date": "2026-04-26",
+    "source_excerpt": "WestCare California has been providing an opportunity for individuals to lead fuller, richer lives.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://westcare.com/places/california/"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_41b0a40368824d87",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-02-01",
+    "entity": "",
+    "evidence_ids": [
+      "E68",
+      "evidence_0513c636d63749fd"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Tarzana Treatment Centers describes substance use disorder treatment, medical detoxification, medical care, mental health care, alcohol and drug counseling, individual and group therapy, and recreational therapy.",
+    "public_language_allowed": true,
+    "public_sentence": "Tarzana Treatment Centers describes substance use disorder treatment, medical detoxification, medical care, mental health care, alcohol and drug counseling, individual and group therapy, and recreational therapy.",
+    "retrieval_date": "2026-02-01",
+    "source_excerpt": "Tarzana Treatment Centers describes substance use disorder treatment, medical detoxification, medical care, mental health care, alcohol and drug counseling, individual and group therapy, and recreational therapy. The lists Southern California locations in Los Angeles County, Lancaster, Long Beach, Northridge, Reseda, Palmdale, and Woodland Hills, and states that programs are licensed and certified by the California Department of Health Care Services.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://www.tarzanatc.org/services/substance-abuse-disorder-treatment/"
+    ]
+  },
+  {
+    "case_id": "live_ca_recovery_ngos_2026_04_24",
+    "claim_id": "claim_a6a317fd52c235d2",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-19",
+    "entity": "",
+    "evidence_ids": [
+      "E69",
+      "evidence_0c6e2ca2df4a81ca"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "WestCare California describes substance use and co-occurring treatment services, including adult residential and outpatient services in Fresno and Bakersfield, adolescent outpatient programs in Hanford and Corcoran, residential services in Richmond, withdrawal management at MLK Residential in Fresno and Richmond Health and Wellness Center, and recovery resid...",
+    "public_language_allowed": true,
+    "public_sentence": "WestCare California describes substance use and co-occurring treatment services, including adult residential and outpatient services in Fresno and Bakersfield, adolescent outpatient programs in Hanford and Corcoran, residential services in Richmond, withdrawal management at MLK Residential in Fresno and Richmond Health and Wellness Center, and recovery resid...",
+    "retrieval_date": "2026-04-19",
+    "source_excerpt": "WestCare California describes substance use and co-occurring treatment services, including adult residential and outpatient services in Fresno and Bakersfield, adolescent outpatient programs in Hanford and Corcoran, residential services in Richmond, withdrawal management at MLK Residential in Fresno and Richmond Health and Wellness Center, and recovery residences for people lacking a safe or substance-free environment.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://westcarecalifornia.org/services/treatment-rehab/"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_a5f3d7958a2fd15a",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-30",
+    "entity": "Community Housing Partnership",
+    "evidence_ids": [
+      "E01",
+      "evidence_61c91defd6b85620"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Official enforcement row already recovered: True.",
+    "public_language_allowed": true,
+    "public_sentence": "Official enforcement row already recovered: True.",
+    "retrieval_date": "2026-04-30",
+    "source_excerpt": "Official enforcement row already recovered: True. Status: citation_ready_official_row_present. Completed public official search count: 4. Possible public adverse search-hit count: 0. Public official search results: - U.S. Department of Justice official Search.gov index: completed public official no-record search for query \"Community Housing Partnership\" (indictment OR charged OR prosecution OR settlement OR violation OR fraud); URL...",
+    "source_family": "enforcement_docket_discovery",
+    "source_urls": [
+      "https://www.justice.gov/"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_0083a148691d8de4",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-30",
+    "entity": "United Council of Human Services",
+    "evidence_ids": [
+      "E02",
+      "evidence_d8f58310f721d0cd"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Official enforcement row already recovered: True.",
+    "public_language_allowed": true,
+    "public_sentence": "Official enforcement row already recovered: True.",
+    "retrieval_date": "2026-04-30",
+    "source_excerpt": "Official enforcement row already recovered: True. Status: citation_ready_official_row_present. Completed public official search count: 4. Possible public adverse search-hit count: 0. Public official search results: - U.S. Department of Justice official Search.gov index: completed public official no-record search for query \"United Council of Human Services\" (indictment OR charged OR prosecution OR settlement OR violation OR fraud); URL...",
+    "source_family": "enforcement_docket_discovery",
+    "source_urls": [
+      "https://www.justice.gov/"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_b800ee8e0c131e6c",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Brilliant Corners",
+    "evidence_ids": [
+      "E03",
+      "evidence_e922a2faf801322b"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Brilliant Corners: Employer Identification Number 562379862, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Brilliant Corners: Employer Identification Number 562379862, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Brilliant Corners: Employer Identification Number 562379862, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_a258777da09efc26",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2024",
+    "entity": "Catholic Charities",
+    "evidence_ids": [
+      "E04",
+      "evidence_9fb8e3e6b405f99d"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Catholic Charities: Employer Identification Number 953516461, tax period year 2024.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Catholic Charities: Employer Identification Number 953516461, tax period year 2024.",
+    "retrieval_date": "2024",
+    "source_excerpt": "Latest matched Form 990 filing for Catholic Charities: Employer Identification Number 953516461, tax period year 2024.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_c932cff229c4e78e",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Community Housing Partnership",
+    "evidence_ids": [
+      "E05",
+      "evidence_11669604eaf6ae5c"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Community Housing Partnership: Employer Identification Number 943112338, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Community Housing Partnership: Employer Identification Number 943112338, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Community Housing Partnership: Employer Identification Number 943112338, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_32db37f6eee428f7",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Compass Family Services",
+    "evidence_ids": [
+      "E06",
+      "evidence_97a45d168f71b6c5"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Compass Family Services: Employer Identification Number 941156622, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Compass Family Services: Employer Identification Number 941156622, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Compass Family Services: Employer Identification Number 941156622, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_9a3bd12f889b0727",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Episcopal Community Svcs of SF Inc",
+    "evidence_ids": [
+      "E07",
+      "evidence_89bd349fb759286e"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Episcopal Community Svcs of SF Inc: Employer Identification Number 943096716, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Episcopal Community Svcs of SF Inc: Employer Identification Number 943096716, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Episcopal Community Svcs of SF Inc: Employer Identification Number 943096716, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_cbd042e5bfe0654f",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2022",
+    "entity": "Five Keys Schools And Programs",
+    "evidence_ids": [
+      "E08",
+      "evidence_0f2c577d8c6aa710"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Five Keys Schools And Programs: Employer Identification Number 810622701, tax period year 2022.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Five Keys Schools And Programs: Employer Identification Number 810622701, tax period year 2022.",
+    "retrieval_date": "2022",
+    "source_excerpt": "Latest matched Form 990 filing for Five Keys Schools And Programs: Employer Identification Number 810622701, tax period year 2022.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://projects.propublica.org/nonprofits/organizations/810622701"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_4df272a0160ab185",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Hamilton Families",
+    "evidence_ids": [
+      "E09",
+      "evidence_2e55a5b8990b7c8d"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Hamilton Families: Employer Identification Number 943055602, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Hamilton Families: Employer Identification Number 943055602, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Hamilton Families: Employer Identification Number 943055602, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_c7a3b35ca3f2a648",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Heluna Health",
+    "evidence_ids": [
+      "E10",
+      "evidence_153ee70fe84162fb"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Heluna Health: Employer Identification Number 952557063, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Heluna Health: Employer Identification Number 952557063, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Heluna Health: Employer Identification Number 952557063, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_e925422c1d1c9d7c",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Larkin Street Youth Services",
+    "evidence_ids": [
+      "E11",
+      "evidence_a0366ad56e7f6be1"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Larkin Street Youth Services: Employer Identification Number 942917999, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Larkin Street Youth Services: Employer Identification Number 942917999, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Larkin Street Youth Services: Employer Identification Number 942917999, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_3146fe2efd1ce160",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Providence Foundation of San Francisco",
+    "evidence_ids": [
+      "E12",
+      "evidence_6c64fd0b4a1d198a"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Providence Foundation of San Francisco: Employer Identification Number 931204173, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Providence Foundation of San Francisco: Employer Identification Number 931204173, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Providence Foundation of San Francisco: Employer Identification Number 931204173, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_5075e1ada8e86090",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Tenderloin Housing Clinic Inc",
+    "evidence_ids": [
+      "E13",
+      "evidence_480cffd0a958870a"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Tenderloin Housing Clinic Inc: Employer Identification Number 942681706, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Tenderloin Housing Clinic Inc: Employer Identification Number 942681706, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Tenderloin Housing Clinic Inc: Employer Identification Number 942681706, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_4e69a2fb9e14aa34",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Tenderloin Neighborhood Development Corp",
+    "evidence_ids": [
+      "E14",
+      "evidence_67ba46a4035b81a8"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Tenderloin Neighborhood Development Corp: Employer Identification Number 942761808, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Tenderloin Neighborhood Development Corp: Employer Identification Number 942761808, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Tenderloin Neighborhood Development Corp: Employer Identification Number 942761808, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_820ef4b9ab478f4a",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2023",
+    "entity": "Tides Center",
+    "evidence_ids": [
+      "E15",
+      "evidence_0cee1e8d9685529f"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for Tides Center: Employer Identification Number 943213100, tax period year 2023.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for Tides Center: Employer Identification Number 943213100, tax period year 2023.",
+    "retrieval_date": "2023",
+    "source_excerpt": "Latest matched Form 990 filing for Tides Center: Employer Identification Number 943213100, tax period year 2023.",
+    "source_family": "irs_990_raw_artifact",
+    "source_urls": [
+      "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_2080297cddaebc31",
+    "claim_type": "measured comparison",
+    "confidence": "source-backed",
+    "date_of_source": "2020",
+    "entity": "United Council of Human Services",
+    "evidence_ids": [
+      "E16",
+      "evidence_31abfd3757d85f34"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Latest matched Form 990 filing for United Council of Human Services: Employer Identification Number 942936270, tax period year 2020.",
+    "public_language_allowed": true,
+    "public_sentence": "Latest matched Form 990 filing for United Council of Human Services: Employer Identification Number 942936270, tax period year 2020.",
+    "retrieval_date": "2020",
+    "source_excerpt": "Latest matched Form 990 filing for United Council of Human Services: Employer Identification Number 942936270, tax period year 2020.",
+    "source_family": "irs_990_raw_artifact_discovery",
+    "source_urls": [
+      "https://projects.propublica.org/nonprofits/organizations/942936270"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_f890fc627ee5ae8e",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-29",
+    "entity": "Tenderloin Housing Clinic Inc",
+    "evidence_ids": [
+      "E17",
+      "evidence_d8a1194045b785dd"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Public or official statement pages fetched: 1 of 1.",
+    "public_language_allowed": true,
+    "public_sentence": "Public or official statement pages fetched: 1 of 1.",
+    "retrieval_date": "2026-04-29",
+    "source_excerpt": "Public or official statement pages fetched: 1 of 1.",
+    "source_family": "Public statement source",
+    "source_urls": [
+      "https://www.thclinic.org/"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_0b8dd79ded931882",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025-10-16",
+    "entity": "Community Housing Partnership",
+    "evidence_ids": [
+      "E18",
+      "evidence_9aa0c74ce6f46415"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents.",
+    "public_language_allowed": true,
+    "public_sentence": "A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents.",
+    "retrieval_date": "2025-10-16",
+    "source_excerpt": "A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents.",
+    "source_family": "Official enforcement or docket source",
+    "source_urls": [
+      "https://www.sf.gov/news--audit-finds-one-citys-providers-housing-unhoused-residents-had-serious-financial-shortfalls"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_d9ba68cbaf77c533",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-29",
+    "entity": "Community Housing Partnership",
+    "evidence_ids": [
+      "E19",
+      "evidence_be59b65bf1671e5c"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Public or official statement pages fetched: 1 of 1.",
+    "public_language_allowed": true,
+    "public_sentence": "Public or official statement pages fetched: 1 of 1.",
+    "retrieval_date": "2026-04-29",
+    "source_excerpt": "Public or official statement pages fetched: 1 of 1.",
+    "source_family": "Public statement source",
+    "source_urls": [
+      "https://homerisesf.org/"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_0041c06bd575c396",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-29",
+    "entity": "Catholic Charities",
+    "evidence_ids": [
+      "E20",
+      "evidence_243ed47e9cbf9f9d"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Public or official statement pages fetched: 1 of 1.",
+    "public_language_allowed": true,
+    "public_sentence": "Public or official statement pages fetched: 1 of 1.",
+    "retrieval_date": "2026-04-29",
+    "source_excerpt": "Public or official statement pages fetched: 1 of 1.",
+    "source_family": "Public statement source",
+    "source_urls": [
+      "https://www.catholiccharitiessf.org/"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_fb8237183963e7f1",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2025-10-16",
+    "entity": "United Council of Human Services",
+    "evidence_ids": [
+      "E21",
+      "evidence_43ad4f3f52bc2de9"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "Legal term appears with official-source link",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements.",
+    "public_language_allowed": true,
+    "public_sentence": "San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements.",
+    "retrieval_date": "2025-10-16",
+    "source_excerpt": "San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements. The San Francisco District Attorney separately announced that a former nonprofit chief executive officer was charged with stealing and misappropriating public funds. This combination is a mandatory deep-review trigger for the entity and its public-funding controls. Official source URLs: https://www.sf.gov/news--united-council-human-services-found-be-violation-city-agreements...",
+    "source_family": "Official enforcement or docket source",
+    "source_urls": [
+      "https://www.sf.gov/news--united-council-human-services-found-be-violation-city-agreements"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_d698ca32f1d724a0",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-29",
+    "entity": "Tenderloin Neighborhood Development Corp",
+    "evidence_ids": [
+      "E22",
+      "evidence_821d52a90d599b81"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "stay stably housed with the of social work and physical and mental wellness programming, we strive to provide that communities will need.",
+    "public_language_allowed": true,
+    "public_sentence": "stay stably housed with the of social work and physical and mental wellness programming, we strive to provide that communities will need.",
+    "retrieval_date": "2026-04-29",
+    "source_excerpt": "stay stably housed with the of social work and physical and mental wellness programming, we strive to provide that communities will need.",
+    "source_family": "Organization service page",
+    "source_urls": [
+      "https://www.tndc.org/our-work/"
+    ]
+  },
+  {
+    "case_id": "live_ca_sf_homelessness_complex",
+    "claim_id": "claim_0c8cbef3ee3198fd",
+    "claim_type": "verified fact",
+    "confidence": "source-backed",
+    "date_of_source": "2026-04-29",
+    "entity": "Tenderloin Neighborhood Development Corp",
+    "evidence_ids": [
+      "E23",
+      "evidence_c27bbef0c9c23f91"
+    ],
+    "legal_language_notes": "Red flag, not verdict. Do not treat this claim as a legal finding.",
+    "legal_language_status": "No legal term used",
+    "meaning_preservation_status": "plain sentence is derived from evidence excerpt",
+    "plain_language_sentence": "Public or official statement pages fetched: 1 of 1.",
+    "public_language_allowed": true,
+    "public_sentence": "Public or official statement pages fetched: 1 of 1.",
+    "retrieval_date": "2026-04-29",
+    "source_excerpt": "Public or official statement pages fetched: 1 of 1.",
+    "source_family": "Public statement source",
+    "source_urls": [
+      "https://www.tndc.org/"
+    ]
+  }
+]

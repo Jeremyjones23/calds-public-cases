@@ -1,0 +1,2488 @@
+{
+  "sources": [
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "41342662d15a98dd04444d8c4091bffb86eec8d92203377a1da293629f146ee5",
+      "claim_ids": [
+        "claim_426e3030d3b098d7"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E01",
+        "evidence_005b3b922e1587e8"
+      ],
+      "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-30",
+      "source_family": "Contract and payment acquisition gap record",
+      "source_id": "source_aed0b285da2580f7",
+      "source_type": "contract_payment_discovery",
+      "supports": "California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+      "title": "Contract and payment acquisition status: California Supportive Housing",
+      "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "918455949ff81683eee73e5c1e1a94666c6ef4fe6b0ba758e1a1bb8993f20ad2",
+      "claim_ids": [
+        "claim_c58947ada30394b6"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E02",
+        "evidence_eed56b8b976b5cea"
+      ],
+      "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-30",
+      "source_family": "Contract and payment acquisition gap record",
+      "source_id": "source_623e8384c050cac1",
+      "source_type": "contract_payment_discovery",
+      "supports": "DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+      "title": "Contract and payment acquisition status: DignityMoves",
+      "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "6e6050bc2bf31feb6e4d8036c4d950ae42a7ae672c7550c1471a1dc2980c05ee",
+      "claim_ids": [
+        "claim_e5250164ba6d6d9f"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E03",
+        "evidence_1cde2e75545d024f"
+      ],
+      "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-30",
+      "source_family": "Contract and payment acquisition gap record",
+      "source_id": "source_24b3eae831438e36",
+      "source_type": "contract_payment_discovery",
+      "supports": "Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.",
+      "title": "Contract and payment acquisition status: Hope the Mission",
+      "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "3cc5df21fce4850e120554551ae8b594e15ba6184cf68c60d01aee240e1aab2f",
+      "claim_ids": [
+        "claim_c86e20d234c306d7"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E04",
+        "evidence_173b3ea25c8c9a43"
+      ],
+      "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-30",
+      "source_family": "Contract and payment acquisition gap record",
+      "source_id": "source_98b8fc83c977ef43",
+      "source_type": "contract_payment_discovery",
+      "supports": "The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.",
+      "title": "Contract and payment acquisition status: The People Concern",
+      "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "d32ea8e0575d16751a7c32b45c30b7f461f7973e55852406ac364f6f416e349a",
+      "claim_ids": [
+        "claim_c5edebaf1c873f8f"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E05",
+        "evidence_766f33f5d680d693"
+      ],
+      "final_url": "https://www.hcd.ca.gov/funding/homekey/funding-overview",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-30",
+      "source_family": "Contract and payment acquisition gap record",
+      "source_id": "source_82cf4e7d5e876356",
+      "source_type": "contract_payment_discovery",
+      "supports": "Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.",
+      "title": "Contract and payment acquisition status: Weingart Center Association",
+      "url": "https://www.hcd.ca.gov/funding/homekey/funding-overview"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "9fcdbc0bb4a6fd5ae6c361cd285b78dea625041a8cddabc1003afb43de1ec966",
+      "claim_ids": [
+        "claim_ff52ef918273d91a"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E06",
+        "evidence_f6fe5044b5956788"
+      ],
+      "final_url": "https://www.justice.gov/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-30",
+      "source_family": "enforcement_docket_discovery",
+      "source_id": "source_8d8cc266cbf913b7",
+      "source_type": "enforcement_docket_discovery",
+      "supports": "Official enforcement row already recovered: True.",
+      "title": "Official enforcement/docket public-source search: Weingart Center Association",
+      "url": "https://www.justice.gov/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "7d62086eb8268c2876f4053e43d776d4af6e503418ff8cb0b850e9b04939d999",
+      "claim_ids": [
+        "claim_f4dc4e3ade328830"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E07",
+        "evidence_3622ed0c56bb35d3"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_7c26a981736f8012",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: DignityMoves",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "112d4e065da23153bdca4b6338423796e048407c1310172a4e2c1c66d24f14bf",
+      "claim_ids": [
+        "claim_292c345885b673ef"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E08",
+        "evidence_384504f2ff2abdc2"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_7d071dd160e1c081",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Hope the Mission",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "3d0f35378bb10d2bed050dc69ceeec85a637bc32a880a9b9a225c9fb4cbd3b2b",
+      "claim_ids": [
+        "claim_06166defdb275216"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E09",
+        "evidence_53777fca47214e77"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_ff7add9be3fc69ad",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: The People Concern",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "922b1c8eeeda6d1039f97ac77bbb1e9dc322529455634b28c5b7d66ed8a332b2",
+      "claim_ids": [
+        "claim_f647a44a018c869f"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E10",
+        "evidence_428b3b165581dce8"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_c7efdea6410205a5",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Weingart Center Association",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "f379d074714d7b1585564ac1e131eff4ee48f835732399ad27283e341a5dc56d",
+      "claim_ids": [
+        "claim_a58ba151fb3e6063"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E11",
+        "evidence_d38585b558543270"
+      ],
+      "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2024-02-06",
+      "source_family": "California Department of Housing and Community Development homelessness award record",
+      "source_id": "source_954f81e4282c6710",
+      "source_type": "state_homelessness_award",
+      "supports": "Entity: Hope the Mission.",
+      "title": "California housing-award exposure source collection",
+      "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "4704d83cf192b49b41a868106f4774b607fd7d38d74e54c7fc8127d1f80cf145",
+      "claim_ids": [
+        "claim_6bba841780d65eb6"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E12",
+        "evidence_dd6ada01aecefd53"
+      ],
+      "final_url": "https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-10-16",
+      "source_family": "Official enforcement or docket source",
+      "source_id": "source_2c61fae7fe11eb0a",
+      "source_type": "enforcement_or_docket_source",
+      "supports": "An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and St...",
+      "title": "Official enforcement/docket triage source: Weingart Center Association",
+      "url": "https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "ad57bce784422d344d0ceac4f363f310f0004595d32a09a44dc23980d9143b4f",
+      "claim_ids": [
+        "claim_1c5391e9661c3d88"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E13",
+        "evidence_f0448c16860a5d6c"
+      ],
+      "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023-11-21",
+      "source_family": "California Department of Housing and Community Development homelessness award record",
+      "source_id": "source_e0633bb90df98b6e",
+      "source_type": "state_homelessness_award",
+      "supports": "Entity: Weingart Center Association.",
+      "title": "California housing-award exposure source collection",
+      "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "b37d229666c5486e31d73554b5f816db1e6cc1e871a452a1ec4775ca2009c20e",
+      "claim_ids": [
+        "claim_70b2043cae6575d6"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E14",
+        "evidence_b51d9b36ed16b264"
+      ],
+      "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-07-15",
+      "source_family": "California Department of Housing and Community Development homelessness award record",
+      "source_id": "source_38b519ff478dcadc",
+      "source_type": "state_homelessness_award",
+      "supports": "Entity: DignityMoves.",
+      "title": "California housing-award exposure source collection",
+      "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "ed51609175dc11abe458b6ef016541333b0653a1dc76254971e84bdc568fdc57",
+      "claim_ids": [
+        "claim_dfd446a1d6166846"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E15",
+        "evidence_544fb1c9184dc642"
+      ],
+      "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-02-13",
+      "source_family": "California Department of Housing and Community Development homelessness award record",
+      "source_id": "source_fd54c34a3b3221be",
+      "source_type": "state_homelessness_award",
+      "supports": "Entity: The People Concern.",
+      "title": "California housing-award exposure source collection",
+      "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "checksum": "de88639d3e079afa43009b17210aef84081717d50f57f4ff5441c7be2d43beb7",
+      "claim_ids": [
+        "claim_da07684a2ba99ff2"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E16",
+        "evidence_666cf8667742c815"
+      ],
+      "final_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-12-16",
+      "source_family": "California Department of Housing and Community Development homelessness award record",
+      "source_id": "source_809845a7789f5908",
+      "source_type": "state_homelessness_award",
+      "supports": "Entity: California Supportive Housing.",
+      "title": "California housing-award exposure source collection",
+      "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "fd0b410985ab61190109d6d137b002114af439a87540aff8fa21741b763cc99b",
+      "claim_ids": [
+        "claim_9b8121de0a8fc3cd"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E01",
+        "evidence_d39a0b2dfe8f87c4"
+      ],
+      "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-04-14",
+      "source_family": "Internal Revenue Service Form 990 summary",
+      "source_id": "source_2a3b1afda9010731",
+      "source_type": "irs_990_summary",
+      "supports": "ProPublica Nonprofit Explorer reports Social Model Recovery Systems Inc as a Covina, California 501(c)(3) in the Alcohol, Drug Abuse, Treatment Only category.",
+      "title": "Internal Revenue Service Form 990 summary source collection",
+      "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "48ee5dd76e341a2ad82dc6de4f5d58ae6c08fe75647bf49a32a2d88eb07287da",
+      "claim_ids": [
+        "claim_97c83ebafe10c3d2"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E02",
+        "evidence_947bca18f9551633"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "202306",
+      "source_family": "Downloaded Internal Revenue Service Form 990 machine-readable filing data",
+      "source_id": "source_adbbcca616aebb11",
+      "source_type": "irs_990_xml",
+      "supports": "Internal Revenue Service Form 990 machine-readable filing data downloaded for Behavioral Health Services Inc. Employer Identification Number: 952838006 Tax period year: 2023 Tax period: 202306 Object ID: 202421369349300712 ZIP batch: 2024_TEOS_XML_05a Local XML path: [private source artifact]",
+      "title": "Internal Revenue Service Form 990 summary source collection",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "eac47c8d30638dce5451d52bf7b23e40f26d60034302326d55e92764a18ff36e",
+      "claim_ids": [
+        "claim_2929f027088b03c3"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E03",
+        "evidence_d043245a0a684901"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025",
+      "source_family": "Internal Revenue Service machine-readable filing-data availability manifest",
+      "source_id": "source_41bdb9549bd1d028",
+      "source_type": "irs_990_download_manifest",
+      "supports": "No Internal Revenue Service machine-readable filing data index row was found for Behavioral Health Services Inc tax period year 2025 in probed Internal Revenue Service indexes [2024, 2025, 2026].",
+      "title": "Internal Revenue Service Form 990 summary source collection",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "86d71b86de5bad3f587f06518d77a4f6bcd2c82c0d3ef2f16a916b29233c303d",
+      "claim_ids": [
+        "claim_b073c8ece7beb46f"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E04",
+        "evidence_798df5d7a45e0675"
+      ],
+      "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "Rendered Form 990 secondary source",
+      "source_id": "source_957cfb2ae33c74fc",
+      "source_type": "irs_990_full_text_fallback",
+      "supports": "HealthRIGHT 360 Form 990 fallback recovered from ProPublica rendered full-text schedules.",
+      "title": "Internal Revenue Service Form 990 summary source collection",
+      "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "f5e2047b989cc608ab685265693a3a272ef88f1d9fc09a59e2f0206ff55cf5fd",
+      "claim_ids": [
+        "claim_eeb3914554ccdb5b"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E05",
+        "evidence_3103845eeaaf1e1e"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2017-03-30",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_efcece56f535326b",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2016-06-CENSUS-0000122774 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-30 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "814cff32cdf4b21fc65a278cf63763cf7ff35d46bdbcd98be07f8719181f973c",
+      "claim_ids": [
+        "claim_0f54e8909dda17be"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E06",
+        "evidence_67a8fff3ad9e8165"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2016-present",
+      "source_family": "Federal Audit Clearinghouse findings records",
+      "source_id": "source_49236eb4ad9ff1d6",
+      "source_type": "fac_findings",
+      "supports": "Federal Audit Clearinghouse findings records were filtered to the target audit reports. The filtered set contains 8 finding record(s).",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "29ff42636ec4eb8b779b05617a3e6f55cd8d1c12765f64f9097a2572573aeab0",
+      "claim_ids": [
+        "claim_037f140672270002"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E07",
+        "evidence_571faf39d80ecdb3"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2016-present",
+      "source_family": "Federal Audit Clearinghouse federal awards records",
+      "source_id": "source_69e25a2fa8826d85",
+      "source_type": "fac_federal_awards",
+      "supports": "Federal Audit Clearinghouse federal-award records were filtered to the target audit reports. The filtered set contains 976 award record(s).",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "546453871c99b0252f3006ceac490636e892de07562884897249436d9e82e2d6",
+      "claim_ids": [
+        "claim_7c0975e971b12252"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E08",
+        "evidence_c182a6e42f6a7429"
+      ],
+      "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-15",
+      "source_family": "California Department of Health Care Services facility-status row set",
+      "source_id": "source_a18e21587238935d",
+      "source_type": "dhcs_facility_status",
+      "supports": "California Department of Health Care Services facility-status cross-check for CRI-Help Inc. Licensing and Certification Division status rows matched: 13 Active rows: 4 Closed rows: 9 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "20071a8d1f771941e1742d883e17ad7ae91759dda2d5cd987ee204e1ce839f25",
+      "claim_ids": [
+        "claim_571f40d8cd421d20"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E09",
+        "evidence_06396cf5cd604958"
+      ],
+      "final_url": "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-10-16",
+      "source_family": "California Department of Health Care Services adverse-status page manifest",
+      "source_id": "source_8322a0bb41e0ffb3",
+      "source_type": "dhcs_adverse_status_manifest",
+      "supports": "The California Department of Health Care Services page identifies an adverse-status list, but the page did not expose source records in the static HTML fetched during this run.",
+      "title": "California Department of Health Care Services adverse-status page machine-readability manifest",
+      "url": "https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "ee95326a3e5ed3774442be0a91230e099aa69302d8547b234c6b6cc5de958f60",
+      "claim_ids": [
+        "claim_a71412b3266755ed"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E10",
+        "evidence_67f61e0d157e345b"
+      ],
+      "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "California Department of Health Care Services adverse-status source discovery",
+      "source_id": "source_6cfa3cd2284005e9",
+      "source_type": "dhcs_adverse_status_discovery",
+      "supports": "California Department of Health Care Services adverse-status page, SharePoint API candidates, and ArcGIS searches were probed. No separate machine-readable probation, suspension, revocation, or NOV table was recovered in this run. Existing California Department of Health Care Services facility status remains Active/Closed facility-level context.",
+      "title": "California Department of Health Care Services adverse-status machine-readable source discovery manifest",
+      "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "f219a8c51d2cee5e80f88f7cdfab27910f8a795ac2822ce6edb060c4c255f6a8",
+      "claim_ids": [
+        "claim_03796a4c789e9b32"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E11",
+        "evidence_32f81cdeee62fbb5"
+      ],
+      "final_url": "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023-04-26",
+      "source_family": "County contract or monitoring source",
+      "source_id": "source_f7f42c63890b26a7",
+      "source_type": "county_contract_or_monitoring",
+      "supports": "Los Angeles County Auditor-Controller fiscal compliance review: BHS SAPC provider Source URI: https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf Local source document path: [private source artifact]",
+      "title": "Los Angeles County Auditor-Controller fiscal compliance review: BHS SAPC provider",
+      "url": "https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "31da365fc629f7f0a549a85316e756c07102fd45a68d032a24c731e10ac8b47d",
+      "claim_ids": [
+        "claim_5b8a9456506b09d9"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E12",
+        "evidence_5150f41b551a187f"
+      ],
+      "final_url": "https://www.santabarbara.courts.ca.gov/es/online-services/court-calendars/search-court-calendars/calendarios-judiciales-civil?case_type=All&hearing_type=All&keyword=&order=field_party_name&page=56&sort=asc",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025",
+      "source_family": "Court docket search manifest",
+      "source_id": "source_e9181cca5602f3e6",
+      "source_type": "court_docket_manifest",
+      "supports": "Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a docket-search manifest only; it is not a merits finding and the court page itself states calendar information is not the official court r",
+      "title": "Santa Barbara Superior Court calendar search hit: HealthRIGHT 360",
+      "url": "https://www.santabarbara.courts.ca.gov/es/online-services/court-calendars/search-court-calendars/calendarios-judiciales-civil?case_type=All&hearing_type=All&keyword=&order=field_party_name&page=56&sort=asc"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "70244e77e1628bc4350642e2d9bf5a5d892fd668867c5605dd8050cbb4b3b0f9",
+      "claim_ids": [
+        "claim_00ac3e1ca06330fb"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E13",
+        "evidence_ec0b74633b49a5bd"
+      ],
+      "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "Internal Revenue Service source collection",
+      "source_id": "source_06b17c380138384f",
+      "source_type": "source_extraction_irs_990_table",
+      "supports": "Internal Revenue Service Form 990 summary source collection. This source collection contains Form 990 fields used for revenue, government-grant share, expense, payroll, and compensation checks.",
+      "title": "Internal Revenue Service Form 990 summary source collection",
+      "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "3dc8c8b88652e2cfeef1697c8d8344df9ed77c512956400f4cc427e1023ba5f1",
+      "claim_ids": [
+        "claim_c6b32cb350399064"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E14",
+        "evidence_092248a6e53f7d01"
+      ],
+      "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "Federal Audit Clearinghouse audit source collection",
+      "source_id": "source_0c5ab75a609d01f8",
+      "source_type": "source_extraction_fac_audit_table",
+      "supports": "Federal Audit Clearinghouse audit summary source collection. This source collection contains federal audit fields used to check material weaknesses, internal-control findings, low-risk status, and audit finding counts.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "3d9c67fa7d86902b6098d0fe75abd0b7c37d2a96a417a7a5cc0d212e97b8e971",
+      "claim_ids": [
+        "claim_b405c6e7e5c5c99a"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E15",
+        "evidence_8dfb7fc1cb2a75ce"
+      ],
+      "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "Federal Audit Clearinghouse award source collection",
+      "source_id": "source_12e12412e987df21",
+      "source_type": "source_extraction_fac_award_table",
+      "supports": "Federal Audit Clearinghouse award source collection. This source collection contains federal audit award totals used to understand public-funding exposure.",
+      "title": "Federal Audit Clearinghouse award source collection",
+      "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "d27321fe5e710c500940fd57268974e94da44c45850898245b3090494c671629",
+      "claim_ids": [
+        "claim_a89894081baeb3e6"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E16",
+        "evidence_dfbbcee28e6ef7fa"
+      ],
+      "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "California Department of Health Care Services status source collection",
+      "source_id": "source_3ec2f7b4fa9336f5",
+      "source_type": "source_extraction_dhcs_status_table",
+      "supports": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "8b0cebf1e444fed4f803fa2e0d9f46421a3dc3bb7ecee282cd74ccba7d877eb5",
+      "claim_ids": [
+        "claim_cde778e7517387b3"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E17",
+        "evidence_0cd635f36c5cc6ee"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "Parsed source document text index",
+      "source_id": "source_3018c91ec8ae4153",
+      "source_type": "source_extraction_pdf_text_index",
+      "supports": "Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "56ac75caa75bb1ebbfa2210bcbdb0708f7d587ae64d90127bc330132a934d26a",
+      "claim_ids": [
+        "claim_11410e2fcb51c840"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E18",
+        "evidence_d309d3a9cb2ba46a"
+      ],
+      "final_url": "https://www.tarzanatc.org/services/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-26",
+      "source_family": "Organization service page",
+      "source_id": "source_47ab22ba6e740fb9",
+      "source_type": "org_service_page",
+      "supports": "Tarzana Treatment Centers, Inc.",
+      "title": "Official service page: Tarzana Treatment Centers Inc",
+      "url": "https://www.tarzanatc.org/services/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "1b17ab2f29720cc3253eba2fcf8a39a01da6729f2c196c8ad1a5c20a85146a43",
+      "claim_ids": [
+        "claim_7f8d626db5622b23"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E19",
+        "evidence_910819e82ade8b13"
+      ],
+      "final_url": "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "Official outcome source collection",
+      "source_id": "source_cf2304ac44149ec1",
+      "source_type": "source_extraction_official_outcome_table",
+      "supports": "Official homelessness outcome source collection. This source collection contains official homelessness outcome measures used for county or Continuum of Care context.",
+      "title": "Official homelessness outcome source collection",
+      "url": "https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "ac271fbfb9e8346890013e8a62443ebfaafd5fbfa813f02e5f79401130359e67",
+      "claim_ids": [
+        "claim_23071d981f8a44db"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E20",
+        "evidence_c01d627498d0bbaf"
+      ],
+      "final_url": "https://projects.propublica.org/nonprofits/organizations/954079133",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "Spend-versus-results source collection",
+      "source_id": "source_43e135782c1ed829",
+      "source_type": "source_extraction_spend_vs_results_table",
+      "supports": "Spend-versus-results context source collection. This source collection joins public-funding geography with official outcome movement so reviewers can decide whether provider-specific outcome records are needed.",
+      "title": "Spend-versus-results context source collection",
+      "url": "https://projects.propublica.org/nonprofits/organizations/954079133"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "a52f68005a176372c283a5c76dfc09962087d24c3ba6cc8465a4fd54ef15f8cb",
+      "claim_ids": [
+        "claim_2db3a5748f64eba4"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E21",
+        "evidence_e4140befe06315a5"
+      ],
+      "final_url": "https://www.tarzanatc.org/who-we-are/meet-us/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "Public statement source collection",
+      "source_id": "source_0e99331c6047b737",
+      "source_type": "source_extraction_public_statement_table",
+      "supports": "Public statement review source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.",
+      "title": "Public statement review source collection",
+      "url": "https://www.tarzanatc.org/who-we-are/meet-us/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "e3ae5f3ea87df115c63150148e1a83652d893486c859f5ef789ce7a0815a5fd7",
+      "claim_ids": [
+        "claim_08fc0d7b640ebfff"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E22",
+        "evidence_2d4fb7cb70f9221b"
+      ],
+      "final_url": "https://westcare.com/leadership/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-24",
+      "source_family": "Public statement source",
+      "source_id": "source_ea17287c0256765e",
+      "source_type": "public_statement_source",
+      "supports": "on addressing social influencers of health and implement homelessness: es building the resiliency of individuals who face barriers including trauma, abuse, chemical dependency, severe behavioral health disorders, developmental disabilities, homelessness, and domestic violence.",
+      "title": "Public statement page harvest: WestCare California Inc",
+      "url": "https://westcare.com/leadership/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "4bf89f2c445f93bf655f41449b484580e062148dbe378b8b2b69ab1d72ac3b16",
+      "claim_ids": [
+        "claim_8dcde05858b358a7"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E23",
+        "evidence_c05e40e102adbd2b"
+      ],
+      "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-15",
+      "source_family": "California Department of Health Care Services facility-status row set",
+      "source_id": "source_a5ec29e383bbbc2b",
+      "source_type": "dhcs_facility_status",
+      "supports": "California Department of Health Care Services facility-status cross-check for Behavioral Health Services Inc. Licensing and Certification Division status rows matched: 65 Active rows: 40 Closed rows: 25 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HT",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "18f1b53101d5118e97181ee7adce0ba9ecc5f95c53a182bfefa84df320561bb1",
+      "claim_ids": [
+        "claim_e388e91996b564e1"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E24",
+        "evidence_b5f7ba7beb78b928"
+      ],
+      "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-15",
+      "source_family": "California Department of Health Care Services facility-status row set",
+      "source_id": "source_6ad63e9bb59edadc",
+      "source_type": "dhcs_facility_status",
+      "supports": "California Department of Health Care Services facility-status cross-check for HealthRIGHT 360. Licensing and Certification Division status rows matched: 46 Active rows: 21 Closed rows: 25 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a machine",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "6ca390acbf502e63939860d1d4351f586ec6935df360320a728278cf2ebbac48",
+      "claim_ids": [
+        "claim_69a80348547a7c94"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E25",
+        "evidence_f8feae3d3c40c306"
+      ],
+      "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-15",
+      "source_family": "California Department of Health Care Services facility-status row set",
+      "source_id": "source_956348030a9a4f27",
+      "source_type": "dhcs_facility_status",
+      "supports": "California Department of Health Care Services facility-status cross-check for Phoenix Houses Of California Inc. Licensing and Certification Division status rows matched: 8 Active rows: 3 Closed rows: 5 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-st",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "ae2d69219ae286a1a6e06366a384d70c95268d116849f6096dfeb71478502487",
+      "claim_ids": [
+        "claim_e6ade0e49573e608"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E26",
+        "evidence_e5576db45f2f20ff"
+      ],
+      "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-15",
+      "source_family": "California Department of Health Care Services facility-status row set",
+      "source_id": "source_1533b9236ee20aa9",
+      "source_type": "dhcs_facility_status",
+      "supports": "California Department of Health Care Services facility-status cross-check for Social Model Recovery Systems Inc. Licensing and Certification Division status rows matched: 13 Active rows: 9 Closed rows: 4 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "b7f07891095c6e172c55f993b844e30e4e3c7509fd84ea143d31a898092df9c4",
+      "claim_ids": [
+        "claim_63175b5554d6940c"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E27",
+        "evidence_5abf99ba83094482"
+      ],
+      "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-15",
+      "source_family": "California Department of Health Care Services facility-status row set",
+      "source_id": "source_fa8fe79757ec4d8f",
+      "source_type": "dhcs_facility_status",
+      "supports": "California Department of Health Care Services facility-status cross-check for Tarzana Treatment Centers Inc. Licensing and Certification Division status rows matched: 25 Active rows: 23 Closed rows: 2 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "6c59d97dcc3111b69d1c455066144e72cc454c06ba539baa9057a76d991c0dd3",
+      "claim_ids": [
+        "claim_7a0f4363750b7814"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E28",
+        "evidence_b928bbd1ddb21694"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2019-11-19",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_0504dec87d337dce",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "d477fc6c5916c5668737232e59b22ee66ef70f038dc9a984700f7a14579405e8",
+      "claim_ids": [
+        "claim_789c8133f37dbaa1"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E29",
+        "evidence_99c4c148b280659e"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2024-03-06",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_41004b255e5eafa5",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2023-06-GSAFAC-0000017535 Audit year: 2023 Federal Audit Clearinghouse accepted date: 2024-03-06 Auditee name: Healthright 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "e7f38a4e886d8b082932ab21c2e65444ac07d369e5e5cadcc0fe8475333f4919",
+      "claim_ids": [
+        "claim_b8678c3471516be5"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E30",
+        "evidence_45c8905ea4d6167b"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2024-01-30",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_ca24b4e2cad9909c",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "deade35632823f137f64ffb344fa62fd1796e8bf9c186eff1c16262d02b2ccd4",
+      "claim_ids": [
+        "claim_a8d81aabd63bd216"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E31",
+        "evidence_b35900f0d2d5cf38"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-01-23",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_8e7092b68281d775",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2024-06-GSAFAC-0000348075 Audit year: 2024 Federal Audit Clearinghouse accepted date: 2025-01-23 Auditee name: HealthRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "9ecbeffed3f73ecf961dd9bc2e7b5bceb8e8ca6b964f241972e0b9864377baf0",
+      "claim_ids": [
+        "claim_e2a8d5ed837ec728"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E32",
+        "evidence_d3b12a4069d9f688"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-02-26",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_cbf443e6b5d9f33e",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "cea777bdca38058fc4982cf645ef7df7099518d395b9a647854c0493f65e0960",
+      "claim_ids": [
+        "claim_93f16a47288dabf4"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E33",
+        "evidence_42e9c53edadfdae2"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-01-26",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_63b74c395071be09",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2025-06-GSAFAC-0000400073 Audit year: 2025 Federal Audit Clearinghouse accepted date: 2026-01-26 Auditee name: HealthRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "9e5792cf5f43762db94c43453a7d15850a07f330037078aca76964398097d277",
+      "claim_ids": [
+        "claim_80ad129e0e3a58af"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E34",
+        "evidence_a8431f7c86e20d6e"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-03-17",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_3b8cd985845d3b74",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "a243d2c2d4a1bf1107e34cc5e973a054a120ca6dbaf0f7befe5b356ce54429f0",
+      "claim_ids": [
+        "claim_6259e4b63d2adc36"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E35",
+        "evidence_5662edb13674fbb2"
+      ],
+      "final_url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-15",
+      "source_family": "California Department of Health Care Services facility-status row set",
+      "source_id": "source_ae3a41640bfb8a35",
+      "source_type": "dhcs_facility_status",
+      "supports": "California Department of Health Care Services facility-status cross-check for WestCare California Inc. Licensing and Certification Division status rows matched: 12 Active rows: 6 Closed rows: 6 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status pag",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "a037c82d24e8e15be68d5f50cd2c96c3b5c6ff7afbccb39150c319f4aea54d55",
+      "claim_ids": [
+        "claim_987994b71db8e4e5"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E36",
+        "evidence_1b3d32aadc3cc2f2"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2016-12-21",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_0cac048f2650a67b",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "e50f3dcf0d14ea8adc8a21f653abda5c3019332760defa848499fcedfcfcc8af",
+      "claim_ids": [
+        "claim_8993b80cc5ff1cf9"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E37",
+        "evidence_15267c9609bd0e24"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2017-03-23",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_c04c8136ed8c35ea",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "d7f4354da7fb07838bb2de44a9c7a93db5b508733bd17b138c1be8b10a7bca54",
+      "claim_ids": [
+        "claim_ec7cf9d0cfa72024"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E38",
+        "evidence_cf74deb80f859ea6"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2018-01-17",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_c16016d0e05763af",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "7aaba757ba7a09484fba6a1bc5b0f446b6071276e5dfd8967d09af863b43d631",
+      "claim_ids": [
+        "claim_3bbdf42696b16e21"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E39",
+        "evidence_b4c55f4c7be78aa2"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2017-12-27",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_d75b031466b4f202",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2017-06-CENSUS-0000122774 Audit year: 2017 Federal Audit Clearinghouse accepted date: 2017-12-27 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "41c707a3a83023d24d40dc09d41b293f8524e1e3515cb9a57402a5e72493c1b2",
+      "claim_ids": [
+        "claim_3e227603515404bf"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E40",
+        "evidence_a9e2524d337bdf2f"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2018-04-17",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_19e130cebc60deb3",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "5df2e727457f9f5bd6f8140cb79dd59ee15ec26a7e96f08cba81d4511c9f39ea",
+      "claim_ids": [
+        "claim_7d3217dec366a31c"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E41",
+        "evidence_9ee7dccbc57e3232"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2017-12-18",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_57ddf2f7935ee4b1",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "2b8e2050a37f228017148d9680a3c879b3708178802af9eac37b048b98662d19",
+      "claim_ids": [
+        "claim_b7577dc0225e0bb5"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E42",
+        "evidence_9a8d3b4ef26a5cd3"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2020-01-20",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_a0ffe424dae69ee1",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "484c0c6cd1828940b93fc3606a1baebff609a1800120cdef59244479f32afbbd",
+      "claim_ids": [
+        "claim_d87c42cab08ae64a"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E43",
+        "evidence_a734993b9a0b9550"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2019-01-15",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_ac5e1cf9348c819b",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2018-06-CENSUS-0000122774 Audit year: 2018 Federal Audit Clearinghouse accepted date: 2019-01-15 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "670cd36eef99f2404c5563141918e43c22240d849164fdf9abe37446d95249c1",
+      "claim_ids": [
+        "claim_7715a6f48d72a979"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E44",
+        "evidence_829efba56ad5bfc9"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2020-01-29",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_0d86a166c51b1c30",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "da1a47333abf216469e16cd6c78c788b571d54a278e33bb4ab1e5d9720653a7c",
+      "claim_ids": [
+        "claim_62e47ecd3cd1635d"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E45",
+        "evidence_72994a41439c26e5"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2018-11-25",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_9053c576e1419bc5",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Social Model Recovery Systems Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "735d5863340de2306cb4ec6961e3c3d70eab07fbe0b160cd0deb059ec711f7ff",
+      "claim_ids": [
+        "claim_85a91d0332821e35"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E46",
+        "evidence_1bda3c170555238d"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2020-04-07",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_196506344bac9926",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "36fc8ffb0ed42806cd232640702f2c3f4d505a9ca301a746b5ebda05cdbebabd",
+      "claim_ids": [
+        "claim_171ff93488229afd"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E47",
+        "evidence_33e78d4e762fee4a"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2019-11-19",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_dc1c2333a0785e16",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2019-06-CENSUS-0000122774 Audit year: 2019 Federal Audit Clearinghouse accepted date: 2019-11-19 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "54566b9a36b57d9286fda92071527c595c1294fcd2830c6d27094554da2fe628",
+      "claim_ids": [
+        "claim_97f071bdcaf6b057"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E48",
+        "evidence_2d1c7235a0fc8e02"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2022-06-28",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_389b604673d85d82",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "2de591919a94b90c01b539f668c7e3eaa1ad2335be62256a51ef460699f6e85a",
+      "claim_ids": [
+        "claim_841c8dc2644cb1c1"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E49",
+        "evidence_d199f104e1da0069"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2021-01-26",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_25fd958f38f780e3",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "dec298813131ada2f9fb71f14424654b3d1733bf8ee58f4f2af9561cbb154121",
+      "claim_ids": [
+        "claim_d7f50a48b973ee58"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E50",
+        "evidence_32bd30befb60976f"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2021-01-10",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_83b8ea767febfabb",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2020-06-CENSUS-0000122774 Audit year: 2020 Federal Audit Clearinghouse accepted date: 2021-01-10 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "54076295638fdd01211a1ceaf432189b70baeaa4674f4ad312cb5f188af77434",
+      "claim_ids": [
+        "claim_299375293f31a71a"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E51",
+        "evidence_fef18aea259b22d3"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000124927",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023-03-09",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_c189f81366362a6b",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000124927"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "4cce6fcfdd211f542a4aeef82c5ca9d385178a66a5feb4365313d7cb81a7b895",
+      "claim_ids": [
+        "claim_ab958e9f22382b1a"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E52",
+        "evidence_9ceabbf117b5140d"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000249434",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2021-03-23",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_ec690db4bda37279",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000249434"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "aa1e7c7a8c2ba264d55d0bb41a5ca0e554d9f4c92b5e572cd50691a403ead11d",
+      "claim_ids": [
+        "claim_c295bb56e7aff466"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E53",
+        "evidence_1923174633c65d45"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2022-01-11",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_9c57e73056fafcb6",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "a97cdbfbcb48d2b652fe28f6a5ca642611092a16d015d54fb1c77984f2c362ba",
+      "claim_ids": [
+        "claim_aaf3a54283931868"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E54",
+        "evidence_1b3fd82a6c1ac11a"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000122774",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2022-01-17",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_695763f555d34900",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2021-06-CENSUS-0000122774 Audit year: 2021 Federal Audit Clearinghouse accepted date: 2022-01-17 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000122774"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "51cd34461c231f3ed81cb7414aad18af6608a475497cfc4e9a8dd7d4c840acda",
+      "claim_ids": [
+        "claim_e44b7581eb472742"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E55",
+        "evidence_846498d5fd4ac918"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000249434",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2022-03-16",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_10afb536b0568f6c",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000249434"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "d9728f83a7a692d40c66f5a19fafee648b463be11f6fc15e3ae45472b3ffafda",
+      "claim_ids": [
+        "claim_3603f564e227bba1"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E56",
+        "evidence_8461cbe899dfe6e6"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2021-06-GSAFAC-0000011418",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023-12-27",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_386a2323211959bd",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-GSAFAC-0000011418"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "19f33dc6e817fff4e5f21d5adca4bedf0f80cd72c89802367893ebc6463c5686",
+      "claim_ids": [
+        "claim_c84350d8dfda841c"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E57",
+        "evidence_d521c9e73d2185a4"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119575",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023-02-24",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_2d2a1b1b4c766ff5",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Tarzana Treatment Centers Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119575"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "88c2436f4aa891f35b47bf01771b5c6fc4eb62e71902dc3299d1f22faa0a854c",
+      "claim_ids": [
+        "claim_d492538b73f372f6"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E58",
+        "evidence_c98d6f87a0fbd583"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000122774",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023-02-13",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_39f48ec62698f9cf",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2022-06-CENSUS-0000122774 Audit year: 2022 Federal Audit Clearinghouse accepted date: 2023-02-13 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000122774"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "9163486fc79e91dc70872c61de92c49b5431d07795cd9403697c12bbcfc28c66",
+      "claim_ids": [
+        "claim_cdb9bac90b906a0c"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E59",
+        "evidence_fa2340d0480fc706"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2022-06-GSAFAC-0000366337",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-04-23",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_089ac9adf6e63ab2",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-GSAFAC-0000366337"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "00f7db816410677998c8783b5903bd0948599095b9d47e886e5c6a6a90914d09",
+      "claim_ids": [
+        "claim_49a7ae4cf94e19b4"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E60",
+        "evidence_5216dc57daddcaaa"
+      ],
+      "final_url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000384194",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-10-17",
+      "source_family": "Federal Audit Clearinghouse audit source document",
+      "source_id": "source_ced406ac8dcc803a",
+      "source_type": "fac_audit_pdf",
+      "supports": "Federal Audit Clearinghouse general-table record for Behavioral Health Services Inc.",
+      "title": "Federal Audit Clearinghouse audit summary source collection",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000384194"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "e561177cb02ad7616f3eaa1a290d677d5d23cfed23b7dd1e41683f090e624eee",
+      "claim_ids": [
+        "claim_9793b354436b4c68"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E61",
+        "evidence_bed9b2a3601e5f1a"
+      ],
+      "final_url": "https://www.healthright360.org/our-services/substance-use-disorder/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-09-01",
+      "source_family": "Organization service page",
+      "source_id": "source_c6cfd5734395398d",
+      "source_type": "org_service_page",
+      "supports": "HealthRIGHT 360 describes a full continuum of substance use disorder treatment services for adults, youth, and families, including outpatient, residential, custody-based, sober living environments, and case management programs.",
+      "title": "HealthRIGHT 360 substance use disorder services",
+      "url": "https://www.healthright360.org/our-services/substance-use-disorder/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "5731c8d8120c7f2d4ea52e254ea392fdc2f0a30b4a45944ebde88d94a2d2d950",
+      "claim_ids": [
+        "claim_a5099b50f443eea5"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E62",
+        "evidence_d4ef8ee70eb31774"
+      ],
+      "final_url": "https://bhs-inc.org/services",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-26",
+      "source_family": "Organization service page",
+      "source_id": "source_75caf5e288355a20",
+      "source_type": "org_service_page",
+      "supports": "BHS programming attempts to address these issues and problems related to substance abuse, mental health, related stigma, health disparities, homelessness, and helping the elderly stay in their homes.",
+      "title": "Official service page: Behavioral Health Services Inc",
+      "url": "https://bhs-inc.org/services"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "6052639cb9d5979d377d4cc3ca53e2291cd5b0d2602ab9b07a3023a4fcc823cd",
+      "claim_ids": [
+        "claim_4095107926ed6907"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E63",
+        "evidence_9db64dccc0217c42"
+      ],
+      "final_url": "https://cri-help.org/programs/residential-treatment/overview.html",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-26",
+      "source_family": "Organization service page",
+      "source_id": "source_876f2c8a58206d20",
+      "source_type": "org_service_page",
+      "supports": "residential treatment program is designed to provide a safe, structured, and supportive environment for those seeking to break free from substance abuse and embark on a journey toward lasting recovery.",
+      "title": "Official service page: CRI-Help Inc",
+      "url": "https://cri-help.org/programs/residential-treatment/overview.html"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "1a4016d9640fe5724a76406c40f0f9fa1b847ff6b1b8a88ca142f68d22f566d3",
+      "claim_ids": [
+        "claim_8726f991a21e9b79"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E64",
+        "evidence_2e1b16c1988bb8c2"
+      ],
+      "final_url": "https://www.healthright360.org/our-services/substance-use-disorder/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-26",
+      "source_family": "Organization service page",
+      "source_id": "source_8ace27372f011763",
+      "source_type": "org_service_page",
+      "supports": "HealthRIGHT 360 provides a full continuum of substance use disorder treatment services to adults, youth, and families, including outpatient, residential, custody-based, sober living environments, and case management programs.",
+      "title": "Official service page: HealthRIGHT 360",
+      "url": "https://www.healthright360.org/our-services/substance-use-disorder/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "9db75684a4f357989cd1b1e700c98b38a626c677463199769a41693c73c61e2b",
+      "claim_ids": [
+        "claim_8abba69db4a77ba9"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E65",
+        "evidence_f7fd0136227c3fb1"
+      ],
+      "final_url": "https://phoenixhouseca.org/what-we-do/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-26",
+      "source_family": "Organization service page",
+      "source_id": "source_c2e8e3b5646d0862",
+      "source_type": "org_service_page",
+      "supports": "At Phoenix House California, we take a holistic approach to drug addiction and mental health disorders that focuses on the power of being both proactive and reactive: prevention, early intervention, and recovery services.",
+      "title": "Official service page: Phoenix Houses Of California Inc",
+      "url": "https://phoenixhouseca.org/what-we-do/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "9090c41c6609356687800614c680a40490b220bbbf71091970265ee8aaa19a73",
+      "claim_ids": [
+        "claim_638bca2f1bde8902"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E66",
+        "evidence_f7981a879291f43b"
+      ],
+      "final_url": "https://socialmodelrecovery.org/services/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-26",
+      "source_family": "Organization service page",
+      "source_id": "source_d80cdf54697ad8c4",
+      "source_type": "org_service_page",
+      "supports": "Official Social Model Recovery Systems Programs/Services Social Model Recovery Systems, Inc.",
+      "title": "Official service page: Social Model Recovery Systems Inc",
+      "url": "https://socialmodelrecovery.org/services/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "8d4f93d6578432c569fb7f6006597be7621de2480fb52dc7aa01b0f0553dff5a",
+      "claim_ids": [
+        "claim_cee5dcd79b391069"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E67",
+        "evidence_44e8e72553e745fe"
+      ],
+      "final_url": "https://westcare.com/places/california/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-26",
+      "source_family": "Organization service page",
+      "source_id": "source_c634fd908479962d",
+      "source_type": "org_service_page",
+      "supports": "WestCare California has been providing an opportunity for individuals to lead fuller, richer lives.",
+      "title": "Official service page: WestCare California Inc",
+      "url": "https://westcare.com/places/california/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "51f0b694b8d874b41e8fa2309a3f577b72f7b615408d5e0549fb8fd4feaac227",
+      "claim_ids": [
+        "claim_41b0a40368824d87"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E68",
+        "evidence_0513c636d63749fd"
+      ],
+      "final_url": "https://www.tarzanatc.org/services/substance-abuse-disorder-treatment/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-02-01",
+      "source_family": "Organization service page",
+      "source_id": "source_05c81121bff3a9ac",
+      "source_type": "org_service_page",
+      "supports": "Tarzana Treatment Centers describes substance use disorder treatment, medical detoxification, medical care, mental health care, alcohol and drug counseling, individual and group therapy, and recreational therapy.",
+      "title": "Tarzana Treatment Centers substance use disorder services",
+      "url": "https://www.tarzanatc.org/services/substance-abuse-disorder-treatment/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "bf1946cd40fcbedc31832d817e7d789f0f0c3c09a6e9f1c00a17097c9660fd52",
+      "claim_ids": [
+        "claim_a6a317fd52c235d2"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E69",
+        "evidence_0c6e2ca2df4a81ca"
+      ],
+      "final_url": "https://westcarecalifornia.org/services/treatment-rehab/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-19",
+      "source_family": "Organization service page",
+      "source_id": "source_421a7820dc2e7fd4",
+      "source_type": "org_service_page",
+      "supports": "WestCare California describes substance use and co-occurring treatment services, including adult residential and outpatient services in Fresno and Bakersfield, adolescent outpatient programs in Hanford and Corcoran, residential services in Richmond, withdrawal management at MLK Residential in Fresno and Richmond Health and Wellness Center, and recovery resid...",
+      "title": "WestCare California treatment and rehabilitation services",
+      "url": "https://westcarecalifornia.org/services/treatment-rehab/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "567ceb983e43fe8715c3a273550fc99607d75d829570ec8f4e916ef6185d17db",
+      "claim_ids": [
+        "claim_a5f3d7958a2fd15a"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E01",
+        "evidence_61c91defd6b85620"
+      ],
+      "final_url": "https://www.justice.gov/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-30",
+      "source_family": "enforcement_docket_discovery",
+      "source_id": "source_49dbcf1126fe681a",
+      "source_type": "enforcement_docket_discovery",
+      "supports": "Official enforcement row already recovered: True.",
+      "title": "Official enforcement/docket public-source search: Community Housing Partnership",
+      "url": "https://www.justice.gov/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "16ce647e2730e9c85ccb64ededd26dd7678cb89a2ee07962f6a81c256a479a83",
+      "claim_ids": [
+        "claim_0083a148691d8de4"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E02",
+        "evidence_d8f58310f721d0cd"
+      ],
+      "final_url": "https://www.justice.gov/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-30",
+      "source_family": "enforcement_docket_discovery",
+      "source_id": "source_44cf5f12db5c7358",
+      "source_type": "enforcement_docket_discovery",
+      "supports": "Official enforcement row already recovered: True.",
+      "title": "Official enforcement/docket public-source search: United Council of Human Services",
+      "url": "https://www.justice.gov/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "563e3d7e0ad77c203c871485d1abf649ae2cb349499296deb3c9396eddebe431",
+      "claim_ids": [
+        "claim_b800ee8e0c131e6c"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E03",
+        "evidence_e922a2faf801322b"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_beafc8e6b2faec8e",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Brilliant Corners: Employer Identification Number 562379862, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Brilliant Corners",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "8996ffb9de696b6ab6e9b40c2e49269ab77e3a1b2a97961a82b3583820f6312e",
+      "claim_ids": [
+        "claim_a258777da09efc26"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E04",
+        "evidence_9fb8e3e6b405f99d"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2024",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_4545e7396f339aaa",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Catholic Charities: Employer Identification Number 953516461, tax period year 2024.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Catholic Charities",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "a41a4f86472f6538245fc14fa9217df63106d645a1690bc240e7151c7386dbb8",
+      "claim_ids": [
+        "claim_c932cff229c4e78e"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E05",
+        "evidence_11669604eaf6ae5c"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_06122086150a97e5",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Community Housing Partnership: Employer Identification Number 943112338, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Community Housing Partnership",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "932b3dd07fa62d58f9b3da6a87dd603ff989aa64984af808d1e413adc90e3e88",
+      "claim_ids": [
+        "claim_32db37f6eee428f7"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E06",
+        "evidence_97a45d168f71b6c5"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_d5646de584349230",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Compass Family Services: Employer Identification Number 941156622, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Compass Family Services",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "bb2e7f41cdf495f1301f49753f312b02cf1f5be4b21ed70332de4884ed190aa8",
+      "claim_ids": [
+        "claim_9a3bd12f889b0727"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E07",
+        "evidence_89bd349fb759286e"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_0ae5c78ea31712d0",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Episcopal Community Svcs of SF Inc: Employer Identification Number 943096716, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Episcopal Community Svcs of SF Inc",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "74e62122dd07494d8027a269c7e5b7af53c903f3e870e87aa869ae6a70e8c7ab",
+      "claim_ids": [
+        "claim_cbd042e5bfe0654f"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E08",
+        "evidence_0f2c577d8c6aa710"
+      ],
+      "final_url": "https://projects.propublica.org/nonprofits/organizations/810622701",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2022",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_2f605c63ea06b6cd",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Five Keys Schools And Programs: Employer Identification Number 810622701, tax period year 2022.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Five Keys Schools And Programs",
+      "url": "https://projects.propublica.org/nonprofits/organizations/810622701"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "7af9f8c2ed39e982ce57e4b16306db0d7b8c5ce7228121c5bc5e120fd470d1df",
+      "claim_ids": [
+        "claim_4df272a0160ab185"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E09",
+        "evidence_2e55a5b8990b7c8d"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_5f745f1f1e12a9c2",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Hamilton Families: Employer Identification Number 943055602, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Hamilton Families",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "f87678af1f6622c32b51b030513f084215161a66defbfba096198ebabaf44eb1",
+      "claim_ids": [
+        "claim_c7a3b35ca3f2a648"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E10",
+        "evidence_153ee70fe84162fb"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_f7e275ee394ae375",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Heluna Health: Employer Identification Number 952557063, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Heluna Health",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "9c5cd892eb8d062ce705f07064164b7708248d46b131600e5b54918e1cd7caa1",
+      "claim_ids": [
+        "claim_e925422c1d1c9d7c"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E11",
+        "evidence_a0366ad56e7f6be1"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_d78d1f32934356e6",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Larkin Street Youth Services: Employer Identification Number 942917999, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Larkin Street Youth Services",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "a44ed78de3c362c5ebc659f06650c30dcd569ae67f352381e3b16dcf1ddd89a1",
+      "claim_ids": [
+        "claim_3146fe2efd1ce160"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E12",
+        "evidence_6c64fd0b4a1d198a"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_907b723ea823cbaa",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Providence Foundation of San Francisco: Employer Identification Number 931204173, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Providence Foundation of San Francisco",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "e109931254a9e1a4cc347fc8bda175af3e219518294dbb3e3b7d3959505732e0",
+      "claim_ids": [
+        "claim_5075e1ada8e86090"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E13",
+        "evidence_480cffd0a958870a"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_868778ebc063f7b1",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Tenderloin Housing Clinic Inc: Employer Identification Number 942681706, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Tenderloin Housing Clinic Inc",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "20d5156e724f97ef38ca7fdbc3e7412ec1846a311f50ed456f4812ff26420a31",
+      "claim_ids": [
+        "claim_4e69a2fb9e14aa34"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E14",
+        "evidence_67ba46a4035b81a8"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_7e1ed4eb95c5801a",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Tenderloin Neighborhood Development Corp: Employer Identification Number 942761808, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Tenderloin Neighborhood Development Corp",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "be870bbfbedc1ccb3df7033a27f19caf55fe0744d8ae346fa03e0b07f5203773",
+      "claim_ids": [
+        "claim_820ef4b9ab478f4a"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E15",
+        "evidence_0cee1e8d9685529f"
+      ],
+      "final_url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2023",
+      "source_family": "irs_990_raw_artifact",
+      "source_id": "source_5e46448b92435084",
+      "source_type": "irs_990_raw_artifact",
+      "supports": "Latest matched Form 990 filing for Tides Center: Employer Identification Number 943213100, tax period year 2023.",
+      "title": "Internal Revenue Service Form 990 acquisition status: Tides Center",
+      "url": "https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "5e41dde0e278484f53e35a4caf63da2e5d213f9fb9f618395bff213dabe48378",
+      "claim_ids": [
+        "claim_2080297cddaebc31"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E16",
+        "evidence_31abfd3757d85f34"
+      ],
+      "final_url": "https://projects.propublica.org/nonprofits/organizations/942936270",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2020",
+      "source_family": "irs_990_raw_artifact_discovery",
+      "source_id": "source_29cd168e97a8af11",
+      "source_type": "irs_990_raw_artifact_discovery",
+      "supports": "Latest matched Form 990 filing for United Council of Human Services: Employer Identification Number 942936270, tax period year 2020.",
+      "title": "Internal Revenue Service Form 990 acquisition status: United Council of Human Services",
+      "url": "https://projects.propublica.org/nonprofits/organizations/942936270"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "31d654bea80ce238ca63d265a3d55bf50920eb1239abd8d467cdbca958d48d30",
+      "claim_ids": [
+        "claim_f890fc627ee5ae8e"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E17",
+        "evidence_d8a1194045b785dd"
+      ],
+      "final_url": "https://www.thclinic.org/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-29",
+      "source_family": "Public statement source",
+      "source_id": "source_8e0933ca65ef1157",
+      "source_type": "public_statement_source",
+      "supports": "Public or official statement pages fetched: 1 of 1.",
+      "title": "Public statement page harvest: Tenderloin Housing Clinic Inc",
+      "url": "https://www.thclinic.org/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "1a5d27e7a2b06a7757d3b3c70399ccb9f4e3e5472339b8d7e07b13594ea91aba",
+      "claim_ids": [
+        "claim_0b8dd79ded931882"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E18",
+        "evidence_9aa0c74ce6f46415"
+      ],
+      "final_url": "https://www.sf.gov/news--audit-finds-one-citys-providers-housing-unhoused-residents-had-serious-financial-shortfalls",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-10-16",
+      "source_family": "Official enforcement or docket source",
+      "source_id": "source_f691cbf0f378e4ba",
+      "source_type": "enforcement_or_docket_source",
+      "supports": "A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents.",
+      "title": "Official enforcement/docket triage source: Community Housing Partnership",
+      "url": "https://www.sf.gov/news--audit-finds-one-citys-providers-housing-unhoused-residents-had-serious-financial-shortfalls"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "3876ef5f831a1de30e1cf4438198ddfe7ee3de65fd478de867937a8c96e99cc8",
+      "claim_ids": [
+        "claim_d9ba68cbaf77c533"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E19",
+        "evidence_be59b65bf1671e5c"
+      ],
+      "final_url": "https://homerisesf.org/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-29",
+      "source_family": "Public statement source",
+      "source_id": "source_3a3226cda0b61582",
+      "source_type": "public_statement_source",
+      "supports": "Public or official statement pages fetched: 1 of 1.",
+      "title": "Public statement page harvest: Community Housing Partnership",
+      "url": "https://homerisesf.org/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "417b14e3ca1e1f16eb84f2c06dc61425aab004f113ff88bfe1b42ab769ea923d",
+      "claim_ids": [
+        "claim_0041c06bd575c396"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E20",
+        "evidence_243ed47e9cbf9f9d"
+      ],
+      "final_url": "https://www.catholiccharitiessf.org/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-29",
+      "source_family": "Public statement source",
+      "source_id": "source_30e5a3ee1dfa75f0",
+      "source_type": "public_statement_source",
+      "supports": "Public or official statement pages fetched: 1 of 1.",
+      "title": "Public statement page harvest: Catholic Charities",
+      "url": "https://www.catholiccharitiessf.org/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "32c3b8a0eb27c31e3f06b03216584ecfc798965c2d4d9695d78249761f07074f",
+      "claim_ids": [
+        "claim_fb8237183963e7f1"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E21",
+        "evidence_43ad4f3f52bc2de9"
+      ],
+      "final_url": "https://www.sf.gov/news--united-council-human-services-found-be-violation-city-agreements",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2025-10-16",
+      "source_family": "Official enforcement or docket source",
+      "source_id": "source_8cea8805b08dda9f",
+      "source_type": "enforcement_or_docket_source",
+      "supports": "San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements.",
+      "title": "Official enforcement/docket triage source: United Council of Human Services",
+      "url": "https://www.sf.gov/news--united-council-human-services-found-be-violation-city-agreements"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "ef49637362a731301ac3d5c2cad219f44f625ed43196ab5ccb268f8e1eda3682",
+      "claim_ids": [
+        "claim_d698ca32f1d724a0"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E22",
+        "evidence_821d52a90d599b81"
+      ],
+      "final_url": "https://www.tndc.org/our-work/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-29",
+      "source_family": "Organization service page",
+      "source_id": "source_db020f59e1b42025",
+      "source_type": "org_service_page",
+      "supports": "stay stably housed with the of social work and physical and mental wellness programming, we strive to provide that communities will need.",
+      "title": "Official service page: Tenderloin Neighborhood Development Corp",
+      "url": "https://www.tndc.org/our-work/"
+    },
+    {
+      "archive_status": "Live",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "9ab8daf95edda77ecdacce5f4dc23a38a5d2c7fba5a940189fd9f367fea66118",
+      "claim_ids": [
+        "claim_0c8cbef3ee3198fd"
+      ],
+      "content_type": "",
+      "evidence_ids": [
+        "E23",
+        "evidence_c27bbef0c9c23f91"
+      ],
+      "final_url": "https://www.tndc.org/",
+      "http_status": "verified in publication manifest",
+      "retrieval_date": "2026-04-29",
+      "source_family": "Public statement source",
+      "source_id": "source_05e53e03feb352d0",
+      "source_type": "public_statement_source",
+      "supports": "Public or official statement pages fetched: 1 of 1.",
+      "title": "Public statement page harvest: Tenderloin Neighborhood Development Corp",
+      "url": "https://www.tndc.org/"
+    }
+  ]
+}

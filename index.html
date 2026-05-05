@@ -3,686 +3,1774 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CalDS Public Case Index</title>
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Geist:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
-:root {
-  color-scheme: light;
-  --paper: #f5ecda;
-  --paper-2: #fffaf0;
-  --paper-3: #e8d7ba;
-  --ink: #171511;
-  --muted: #625b50;
-  --quiet: #8a7d69;
-  --charcoal: #101513;
-  --charcoal-2: #17231f;
-  --civic-blue: #234f72;
-  --civic-blue-2: #2e728d;
-  --docket-red: #9d302c;
-  --audit-amber: #dca326;
-  --ledger-green: #2d6d55;
-  --line: rgba(23, 21, 17, .16);
-  --line-strong: rgba(23, 21, 17, .34);
-  --line-dark: rgba(255, 250, 240, .18);
-  --shadow: 0 28px 80px rgba(23, 21, 17, .18);
-  --hard-shadow: 10px 10px 0 rgba(157, 48, 44, .14);
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  color: var(--ink);
-  background:
-    radial-gradient(circle at 10% -4%, rgba(220, 163, 38, .28), transparent 30%),
-    radial-gradient(circle at 88% 8%, rgba(35, 79, 114, .14), transparent 34%),
-    linear-gradient(90deg, rgba(23, 21, 17, .035) 1px, transparent 1px) 0 0 / 42px 42px,
-    linear-gradient(180deg, rgba(23, 21, 17, .026) 1px, transparent 1px) 0 0 / 42px 42px,
-    linear-gradient(145deg, #f8edda 0%, #ecddc1 42%, #fff7e8 100%);
-  font-family: "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.55;
-  overflow-x: hidden;
-}
-a { color: var(--civic-blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-a:focus-visible, button:focus-visible, summary:focus-visible {
-  outline: 3px solid var(--audit-amber);
-  outline-offset: 3px;
-}
-.skip-link {
-  position: absolute;
-  left: 16px;
-  top: -60px;
-  z-index: 10;
-  padding: 10px 12px;
-  color: var(--ink);
-  background: var(--audit-amber);
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 12px;
-}
-.skip-link:focus { top: 12px; }
-code, pre, .mono, .evidence-ref {
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  letter-spacing: 0;
-}
-code {
-  background: rgba(255, 250, 240, .82);
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  padding: 1px 5px;
-}
-.case-hero {
-  position: relative;
-  overflow: hidden;
-  color: var(--paper-2);
-  background:
-    radial-gradient(circle at 18% 18%, rgba(220, 163, 38, .16), transparent 24%),
-    radial-gradient(circle at 86% 22%, rgba(46, 114, 141, .22), transparent 32%),
-    linear-gradient(135deg, rgba(16, 21, 19, .98), rgba(23, 35, 31, .97)),
-    repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 32px);
-  border-bottom: 8px solid var(--docket-red);
-}
-.case-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(120deg, transparent 0 52%, rgba(220,163,38,.18) 52% 53%, transparent 53%),
-    linear-gradient(90deg, rgba(255,250,240,.04) 1px, transparent 1px) 0 0 / 54px 54px,
-    repeating-linear-gradient(135deg, rgba(255,255,255,.032) 0 1px, transparent 1px 18px);
-  pointer-events: none;
-}
-.case-hero__inner {
-  position: relative;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 22px 24px 38px;
-}
-.case-topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 36px;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 250, 240, .13);
-}
-.case-brand {
-  color: var(--paper-2);
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.case-topbar__links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
-.case-topbar__links a,
-.case-topbar__links button,
-.case-nav a,
-.print-button {
-  color: rgba(255, 250, 240, .92);
-  border: 1px solid rgba(255, 250, 240, .24);
-  border-radius: 999px;
-  background: rgba(255, 250, 240, .07);
-  padding: 8px 11px;
-  text-decoration: none;
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 11px;
-  line-height: 1;
-  text-transform: uppercase;
-}
-.case-topbar__links button,
-.print-button { cursor: pointer; }
-.case-command-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 28px;
-  align-items: end;
-}
-.case-command-grid > * { min-width: 0; }
-.eyebrow {
-  margin: 0 0 12px;
-  color: var(--audit-amber);
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.case-hero h1 {
-  margin: 0;
-  max-width: 1180px;
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 5rem;
-  line-height: .9;
-  letter-spacing: 0;
-}
-.case-title {
-  max-width: 880px;
-  margin: 20px 0 0;
-  color: rgba(255, 250, 240, .88);
-  font-size: 22px;
-  line-height: 1.35;
-  overflow-wrap: anywhere;
-}
-.case-id {
-  margin: 14px 0 0;
-  color: rgba(255, 250, 240, .72);
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 12px;
-  overflow-wrap: anywhere;
-}
-.case-docket {
-  min-height: 248px;
-  padding: 18px;
-  background: rgba(255, 250, 240, .08);
-  border: 1px solid rgba(255, 250, 240, .18);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 12px 12px 0 rgba(0,0,0,.18);
-}
-.case-docket h2 {
-  margin: 0 0 16px;
-  color: var(--paper-2);
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 30px;
-}
-.case-docket p {
-  margin: 0;
-  color: rgba(255, 250, 240, .78);
-  font-size: 14px;
-}
-.status-strip {
-  display: grid;
-  grid-template-columns: 1.25fr 1fr 1fr 1.25fr;
-  grid-auto-flow: dense;
-  gap: 12px;
-  margin: 34px 0 0;
-}
-.status-tile {
-  min-height: 132px;
-  padding: 16px;
-  border: 1px solid var(--line-dark);
-  background: rgba(255, 250, 240, .08);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
-}
-.status-tile strong {
-  display: block;
-  color: #fffaf0;
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.status-tile span {
-  display: block;
-  margin-top: 8px;
-  color: rgba(255, 250, 240, .84);
-  font-size: 20px;
-  line-height: 1.2;
-  overflow-wrap: anywhere;
-}
-.case-nav {
-  display: none;
-}
-.case-shell {
-  display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: 30px;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 34px 24px 80px;
-}
-.case-rail {
-  position: sticky;
-  top: 18px;
-  align-self: start;
-  padding: 20px;
-  background: linear-gradient(180deg, rgba(255,250,240,.94), rgba(245,236,218,.88));
-  border: 1px solid var(--line);
-  box-shadow: var(--hard-shadow);
-}
-.case-rail h2 {
-  margin: 0 0 10px;
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 24px;
-  line-height: 1;
-}
-.case-rail a {
-  display: block;
-  margin: 8px 0;
-  padding: 8px 0;
-  color: var(--charcoal);
-  border-bottom: 1px solid rgba(23, 21, 17, .08);
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 11px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.case-main { min-width: 0; }
-.reviewer-panel {
-  margin: 0 0 24px;
-  padding: 22px;
-  background: linear-gradient(120deg, rgba(47,109,85,.12), transparent 46%), #fffdf5;
-  border: 2px solid rgba(47, 109, 85, .38);
-  box-shadow: 10px 10px 0 rgba(47, 109, 85, .13);
-}
-.reviewer-panel p { margin: 8px 0 0; }
-.reviewer-panel__grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-auto-flow: dense;
-  gap: 10px;
-  margin-top: 14px;
-}
-.reviewer-panel__grid div {
-  min-height: 92px;
-  padding: 12px;
-  background: rgba(243, 234, 216, .72);
-  border: 1px solid var(--line);
-}
-.reviewer-panel__grid span {
-  display: block;
-  color: var(--muted);
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 11px;
-  text-transform: uppercase;
-}
-.reviewer-panel__grid strong { overflow-wrap: anywhere; }
-.reviewer-panel details {
-  margin-top: 12px;
-  border-top: 1px solid var(--line);
-  padding-top: 10px;
-}
-.case-intel-strip {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  grid-auto-flow: dense;
-  gap: 12px;
-  margin: 0 0 24px;
-}
-.case-intel-card {
-  min-height: 124px;
-  padding: 16px;
-  background: rgba(255, 250, 240, .88);
-  border: 1px solid var(--line);
-}
-.case-intel-card strong {
-  display: block;
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 11px;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.case-intel-card span {
-  display: block;
-  margin-top: 8px;
-  font-size: 22px;
-  font-weight: 700;
-}
-.notice {
-  display: grid;
-  grid-template-columns: 10px 1fr;
-  gap: 14px;
-  margin: 0 0 24px;
-  padding: 18px;
-  background: var(--paper-2);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-}
-.notice::before { content: ""; background: var(--audit-amber); }
-.notice strong { color: var(--docket-red); }
-.dossier, #source-ledger {
-  background: rgba(255, 250, 240, .94);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-}
-.dossier {
-  padding: 36px;
-}
-#source-ledger {
-  margin-top: 30px;
-  padding: 36px;
-}
-.ledger-digest {
-  margin: 20px 0 28px;
-  padding: 18px;
-  background: linear-gradient(135deg, rgba(35,79,114,.1), transparent 44%), rgba(243, 234, 216, .76);
-  border: 1px solid var(--line);
-}
-.ledger-digest h3 { margin-top: 0; }
-.table-scroll { overflow-x: auto; }
-.ledger-digest table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-.ledger-digest th, .ledger-digest td {
-  padding: 8px;
-  border-bottom: 1px solid var(--line);
-  text-align: left;
-  vertical-align: top;
-}
-.ledger-digest th {
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 11px;
-  text-transform: uppercase;
-}
-h1, h2, h3, h4 {
-  font-family: "Fraunces", Georgia, serif;
-  line-height: 1.12;
-  letter-spacing: 0;
-}
-.dossier h1 {
-  max-width: 920px;
-  margin-top: 0;
-  font-size: 48px;
-}
-.dossier h2, #source-ledger h2 {
-  margin-top: 44px;
-  padding-top: 20px;
-  border-top: 3px solid rgba(157, 48, 44, .24);
-  color: var(--charcoal);
-}
-.dossier h3 { color: var(--civic-blue); }
-.dossier p, .dossier li { font-size: 17px; }
-.dossier ul, .dossier ol { padding-left: 26px; }
-.table-block {
-  overflow: auto;
-  margin: 18px 0;
-  padding: 16px;
-  color: #f9edd4;
-  background: linear-gradient(90deg, rgba(216, 157, 40, .1), transparent 26%), #18201d;
-  border: 1px solid rgba(25, 21, 15, .42);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
-  white-space: pre;
-}
-.evidence-ref {
-  display: inline-block;
-  color: var(--paper-2);
-  background: var(--docket-red);
-  border: 1px solid rgba(25, 21, 15, .22);
-  border-radius: 3px;
-  padding: 0 5px;
-  font-size: .78em;
-  font-weight: 600;
-  text-decoration: none;
-  transform: translateY(-1px);
-}
-.evidence-card {
-  position: relative;
-  margin: 18px 0;
-  padding: 20px 20px 20px 30px;
-  border: 1px solid var(--line);
-  background: linear-gradient(90deg, rgba(47, 109, 85, .12), transparent 32%), #fffaf0;
-  box-shadow: 6px 6px 0 rgba(23, 21, 17, .06);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-.evidence-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 10px 10px 0 rgba(23, 21, 17, .09);
-}
-.evidence-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 8px;
-  background: var(--ledger-green);
-}
-.evidence-card--source-access-required::before { background: var(--audit-amber); }
-.evidence-card--external-source-linked::before { background: var(--ledger-green); }
-.evidence-card--derived-external-source-linked::before { background: var(--civic-blue-2); }
-.evidence-card h3 {
-  margin: 0 0 10px;
-  font-size: 24px;
-}
-.meta, .link-status, footer {
-  color: var(--muted);
-  font-size: 14px;
-}
-.source-role {
-  margin: 8px 0;
-  padding: 10px;
-  background: rgba(33, 79, 114, .08);
-  border-left: 4px solid var(--civic-blue);
-}
-.repro-details {
-  margin: 12px 0;
-  padding: 10px;
-  background: rgba(25, 21, 15, .04);
-  border: 1px solid var(--line);
-}
-.repro-details summary {
-  cursor: pointer;
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.source-list {
-  margin: 8px 0 0;
-  padding-left: 22px;
-  overflow-wrap: anywhere;
-}
-.source-list a { word-break: break-word; }
-footer {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 22px 24px 38px;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .notice, .dossier, #source-ledger, .evidence-card, .reviewer-panel {
-    animation: rise-in .7s ease both;
-  }
-  .notice { animation-delay: .08s; }
-  .dossier { animation-delay: .14s; }
-  #source-ledger { animation-delay: .2s; }
-  .evidence-card:nth-of-type(2n) { animation-delay: .05s; }
-  @keyframes rise-in {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    animation-duration: .001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: .001ms !important;
-  }
-}
-@media (max-width: 940px) {
-  .case-command-grid { grid-template-columns: 1fr; }
-  .status-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .case-shell { grid-template-columns: 1fr; }
-  .case-rail { position: static; }
-  .reviewer-panel__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .case-intel-strip { grid-template-columns: 1fr; }
-  .case-hero h1 { font-size: 3.9rem; }
-  .case-title { font-size: 20px; }
-}
-@media (max-width: 560px) {
-  .case-hero * { box-sizing: border-box; }
-  .case-hero__inner, .case-shell {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .case-hero__inner,
-  .case-command-grid,
-  .case-command-grid > *,
-  .case-title,
-  .case-id {
-    max-width: 320px;
-    width: 100%;
-  }
-  .case-command-grid { display: block; }
-  .case-title { overflow-wrap: break-word; font-size: 18px; }
-  .case-docket { margin-top: 22px; width: 100%; max-width: 320px; }
-  .case-hero h1 {
-    max-width: 320px;
-    font-size: 2.35rem;
-    line-height: .96;
-    overflow-wrap: anywhere;
-  }
-  .case-topbar { align-items: flex-start; flex-direction: column; }
-  .case-topbar__links {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: stretch;
-    width: 100%;
-    max-width: 320px;
-  }
-  .case-topbar__links a,
-  .case-topbar__links button {
-    min-width: 0;
-    width: 100%;
-    white-space: normal;
-    text-align: center;
-  }
-  .status-strip { grid-template-columns: 1fr; }
-  .reviewer-panel__grid { grid-template-columns: 1fr; }
-  .dossier, #source-ledger { padding: 18px; }
-  .dossier p, .dossier li { font-size: 16px; }
-}
-@media print {
-  body { background: #fff; color: #000; }
-  .case-hero, .case-rail, .case-nav { background: #fff; color: #000; border: 0; }
-  .case-topbar, .case-nav, .print-button, .skip-link { display: none; }
-  .case-shell { display: block; max-width: none; padding: 0; }
-  .dossier, #source-ledger, .notice { box-shadow: none; border-color: #999; }
-  .reviewer-panel, .evidence-card { break-inside: avoid; box-shadow: none; }
-  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 10px; }
-}
-
-.index-main { max-width: 1280px; margin: 0 auto; padding: 34px 24px 82px; }
-.case-index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); grid-auto-flow: dense; gap: 18px; }
-.case-index-card {
-  position: relative;
-  overflow: hidden;
-  min-height: 380px;
-  background: linear-gradient(135deg, rgba(255, 250, 240, .97), rgba(245, 236, 218, .9));
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  padding: 22px;
-}
-.case-index-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 8px;
-  background: var(--docket-red);
-}
-.case-index-card h2 {
-  margin: 0 0 12px;
-  max-width: 720px;
-  font-size: 32px;
-}
-.case-index-card h2 a { color: var(--ink); text-decoration: none; }
-.case-index-card__meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-flow: dense; gap: 8px; margin: 16px 0; }
-.case-index-card__meta div { min-height: 82px; padding: 10px; background: rgba(243, 234, 216, .72); border: 1px solid var(--line); }
-.case-index-card__meta span { display: block; color: var(--muted); font-family: "IBM Plex Mono", Consolas, monospace; font-size: 11px; text-transform: uppercase; }
-.case-index-card__meta strong { overflow-wrap: anywhere; }
-.case-index-card__links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-.case-index-card__links a {
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  padding: 8px 10px;
-  background: #fffdf5;
-  color: var(--ink);
-  font-family: "IBM Plex Mono", Consolas, monospace;
-  font-size: 11px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-</style>
+  <meta name="calds-build" content="editorial_publication_0c3c85970d23a1d6">
+  <title>The California Case File | CalDS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#cases">Skip to cases</a>
-<header class="case-hero">
-  <div class="case-hero__inner">
-    <nav class="case-topbar" aria-label="Site tools">
-      <a class="case-brand" href="./">California Evidence Room</a>
-      <div class="case-topbar__links">
-        <a href="#cases">Cases</a>
-        <a href="https://github.com/Jeremyjones23/calds-public-cases">GitHub</a>
-      </div>
-    </nav>
-    <div class="case-command-grid">
-      <div>
-        <p class="eyebrow">Public review packets</p>
-        <h1>CalDS Public Case Index</h1>
-        <p class="case-title">Source-cited case rooms for state and local government reviewers. Each case keeps evidence links, source blockers, sentinel posture, and human-review status visible.</p>
-        <p class="case-id">Generated: 2026-05-04T02:53:24+00:00</p>
-      </div>
-      <aside class="case-docket" aria-label="Index posture">
-        <h2>Read like a case room</h2>
-        <p>Open a case, read the briefing first, then audit every evidence label in the source ledger before relying on the lead.</p>
-      </aside>
+  <a class="skip-link" href="#story">Skip to story</a>
+  <nav class="top-nav" aria-label="Primary navigation">
+    <a class="brand" href="#top">CalDS</a>
+    <div class="nav-links">
+      <a href="#pattern">Pattern</a>
+      <a href="#cases">Cases</a>
+      <a href="#money">Money trail</a>
+      <a href="#sources">Sources</a>
+      <a href="#method">Method</a>
     </div>
-  </div>
-</header>
-<main id="cases" class="index-main">
-  <section class="notice"><div><strong>How to read this index:</strong> open a case, read the executive snapshot, then audit the linked evidence labels in the source ledger. Link integrity and source-access status are shown per case.</div></section>
-  <section class="case-index-grid">
-<article class="case-index-card">
-  <h2><a href="cases/live_ca_homelessness_top15_2026_04_29/">California homelessness top-15 nonprofit triage</a></h2>
-  <p>CalDS screened 15 entities and keeps Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing in deep review because the strongest source-backed pattern is audit-control concerns, connected-party enforcement exposure, material public-funding exposure, and rapid financial growth. Evidence: Federal Audit...</p>
-  <div class="case-index-card__meta">
-    <div><span>Case ID</span><strong>live_ca_homelessness_top15_2026_04_29</strong></div>
-    <div><span>Generated</span><strong>2026-05-04T02:50:24+00:00</strong></div>
-    <div><span>Sentinel</span><strong>Downgrade For Review</strong></div>
-    <div><span>Links and source access</span><strong>PASS / 9 verified URL(s); 25 source blocker(s)</strong></div>
-  </div>
-  <p><strong>Public posture:</strong> Human review required; not a formal finding.</p>
-  <div class="case-index-card__links">
-    <a href="cases/live_ca_homelessness_top15_2026_04_29/">Open Viewer</a>
-    <a href="cases/live_ca_homelessness_top15_2026_04_29/case_dossier.md">Markdown</a>
-    <a href="cases/live_ca_homelessness_top15_2026_04_29/source_ledger.json">Source Ledger</a>
-    <a href="cases/live_ca_homelessness_top15_2026_04_29/publication_manifest.json">Manifest</a>
-  </div>
-</article>
+  </nav>
 
+  <main id="top">
+    <header class="hero" id="story">
+      <div class="hero__inner">
+        <p class="eyebrow">The California Case File</p>
+        <h1><span>Public money</span><span>moved.</span><span>What came back?</span></h1>
+        <p class="hero-copy">CalDS checked public records across homelessness, recovery, and treatment nonprofit cases. The records raise questions about money, outcomes, missing oversight records, and public accountability. This is a red flag, not a verdict.</p>
+        <div class="hero-actions">
+          <a href="#money">See the money trail</a>
+          <a href="#cases">Open the cases</a>
+          <a href="#sources">Check the sources</a>
+        </div>
+        <div class="hero-ledger" aria-label="Publication status">
+          <div><span>3</span><p>case families</p></div>
+          <div><span>108</span><p>source-backed public claims</p></div>
+          <div><span>108/108</span><p>live source receipts</p></div>
+          <div><span>100</span><p>records still needed</p></div>
+        </div>
+      </div>
+    </header>
 
-<article class="case-index-card">
-  <h2><a href="cases/live_ca_recovery_ngos_2026_04_24/">Live web case: large California recovery and treatment nonprofits</a></h2>
-  <p>CalDS screened 7 entities and keeps Phoenix Houses Of California Inc in deep review because the strongest source-backed pattern is spend-versus-results mismatch. Evidence: `E19`, `E20`. The review priority score is 63.91 / 100, source completeness is 0.0 / 100, publication confidence is 0.0 / 100, and the sentinel posture is `DOWNGRADE_FOR_REVIEW`; this i...</p>
-  <div class="case-index-card__meta">
-    <div><span>Case ID</span><strong>live_ca_recovery_ngos_2026_04_24</strong></div>
-    <div><span>Generated</span><strong>2026-05-04T02:52:52+00:00</strong></div>
-    <div><span>Sentinel</span><strong>Downgrade For Review</strong></div>
-    <div><span>Links and source access</span><strong>PASS / 82 verified URL(s); 0 source blocker(s)</strong></div>
-  </div>
-  <p><strong>Public posture:</strong> Human review required; not a formal finding.</p>
-  <div class="case-index-card__links">
-    <a href="cases/live_ca_recovery_ngos_2026_04_24/">Open Viewer</a>
-    <a href="cases/live_ca_recovery_ngos_2026_04_24/case_dossier.md">Markdown</a>
-    <a href="cases/live_ca_recovery_ngos_2026_04_24/source_ledger.json">Source Ledger</a>
-    <a href="cases/live_ca_recovery_ngos_2026_04_24/publication_manifest.json">Manifest</a>
-  </div>
-</article>
+    <section class="story-section" id="pattern">
+      <div class="section-kicker">The pattern</div>
+      <div class="split">
+        <div>
+          <h2>More public money. More pressure. Not enough easy answers.</h2>
+          <p>CalDS checked public records across homelessness, recovery, and treatment nonprofit cases. The same problem kept showing up: money and public outcomes are hard to connect in a clean way.</p>
+          <p>That does not prove wrongdoing. It does mean the public should be able to see more.</p>
+        </div>
+        <div class="pattern-grid">
+          <article><strong>Money trail</strong><p>Dollar figures stay tied to source records or a visible gap.</p></article>
+          <article><strong>Official records</strong><p>Audit findings, charges, and violations keep their exact source status.</p></article>
+          <article><strong>Missing records</strong><p>Missing records stay visible. They are not treated as proof.</p></article>
+          <article><strong>Plain language</strong><p>The public story avoids internal terms and explains the limits.</p></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="story-section" id="cases">
+      <div class="section-kicker">Case map</div>
+      <h2>Three case families, one oversight story.</h2>
+      <div class="case-accordion" role="list">
 
-<article class="case-index-card">
-  <h2><a href="cases/live_ca_sf_homelessness_complex/">San Francisco homelessness nonprofit organization complex triage</a></h2>
-  <p>CalDS screened 15 entities and keeps Tenderloin Housing Clinic Inc, Episcopal Community Svcs of SF Inc, Five Keys Schools And Programs, Community Housing Partnership, Providence Foundation of San Francisco, United Council of Human Services, St Vincent De Paul Society of SF, Larkin Street Youth Services, Heluna Health, Tides Center, Compass Family Services...</p>
-  <div class="case-index-card__meta">
-    <div><span>Case ID</span><strong>live_ca_sf_homelessness_complex</strong></div>
-    <div><span>Generated</span><strong>2026-05-04T02:50:34+00:00</strong></div>
-    <div><span>Sentinel</span><strong>Downgrade For Review</strong></div>
-    <div><span>Links and source access</span><strong>PASS / 16 verified URL(s); 75 source blocker(s)</strong></div>
-  </div>
-  <p><strong>Public posture:</strong> Human review required; not a formal finding.</p>
-  <div class="case-index-card__links">
-    <a href="cases/live_ca_sf_homelessness_complex/">Open Viewer</a>
-    <a href="cases/live_ca_sf_homelessness_complex/case_dossier.md">Markdown</a>
-    <a href="cases/live_ca_sf_homelessness_complex/source_ledger.json">Source Ledger</a>
-    <a href="cases/live_ca_sf_homelessness_complex/publication_manifest.json">Manifest</a>
-  </div>
-</article>
-</section>
-</main>
-<footer>Generated 2026-05-04T02:53:24+00:00. Human review remains required before outside-facing use.</footer>
+            <article class="case-panel" id="live_ca_homelessness_top15_2026_04_29" data-case="live_ca_homelessness_top15_2026_04_29" data-area="Homelessness services">
+              <div class="case-panel__header">
+                <p>California / Homelessness services</p>
+                <h3>California homelessness nonprofit triage</h3>
+              </div>
+              <p class="case-summary">CalDS screened 15 entities in California for this objective: Run CalDS homelessness triage against a source-listed California homelessness nonprofit target set.</p>
+              <div class="case-stats">
+                <span><strong>5</strong> organizations</span>
+                <span><strong>16</strong> claims</span>
+                <span><strong>16</strong> sources</span>
+                <span><strong>25</strong> records still needed</span>
+              </div>
+              <details class="case-detail">
+                <summary>What stood out</summary>
+                <ul><li>Entities selected for deep review: Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing.</li><li>E12 Official enforcement/docket triage source: Weingart Center Association (Official enforcement or docket source, 2025-10-16): An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for...</li><li>E16 California housing-award exposure source collection (California Department of Housing and Community Development homelessness award record, 2025-12-16): Entity: California Supportive Housing. Rank by parsed state project-award exposure: 5 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $51,891,854. Funding rows: - 2023-12-19 Homekey Round 3: CSH Enterprise Housing in...</li></ul>
+              </details>
+              <details class="case-detail">
+                <summary>What this does not prove</summary>
+                <ul><li>Case posture: internal possible waste, fraud, abuse, or mismanagement review lead; not a formal finding.</li><li>Entities selected for deep review: Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing.</li><li>Main signal pattern: audit-control concerns, connected-party enforcement exposure, material public-funding exposure, rapid financial growth, payroll or wage-growth questions, spend-versus-results mismatch, executive-compensation or payroll-governance questions, and possible scope-mismatch signals.</li></ul>
+              </details>
+              <a class="case-link" href="cases/live_ca_homelessness_top15_2026_04_29/">Open original case file</a>
+            </article>
+
+            <article class="case-panel" id="live_ca_recovery_ngos_2026_04_24" data-case="live_ca_recovery_ngos_2026_04_24" data-area="Recovery and treatment services">
+              <div class="case-panel__header">
+                <p>California / Recovery and treatment services</p>
+                <h3>California recovery and treatment nonprofits</h3>
+              </div>
+              <p class="case-summary">CalDS screened 7 entities in California for this objective: Using public Form 990 XML for the 2023-2025 tax-period window where available, Federal Audit Clearinghouse audit source documents and award ledgers, California Department of Health Care Services facility-status records, county contract or monitoring records, litigation docket manifests, and organization service-page re...</p>
+              <div class="case-stats">
+                <span><strong>1</strong> organizations</span>
+                <span><strong>69</strong> claims</span>
+                <span><strong>69</strong> sources</span>
+                <span><strong></strong> records still needed</span>
+              </div>
+              <details class="case-detail">
+                <summary>What stood out</summary>
+                <ul><li>Entities selected for deep review: Phoenix Houses Of California Inc.</li><li>E22 Public statement page harvest: WestCare California Inc (Public statement source, 2026-04-24): on addressing social influencers of health and implement homelessness: es building the resiliency of individuals who face barriers including trauma, abuse, chemical dependency, severe behavioral health disorders, developmental disabilities, homelessness, and...</li><li>E19 Official homelessness outcome source collection (Official outcome source collection, 2026-04-24): Official homelessness outcome source collection. This source collection contains official homelessness outcome measures used for county or Continuum of Care context.</li></ul>
+              </details>
+              <details class="case-detail">
+                <summary>What this does not prove</summary>
+                <ul><li>Case posture: internal possible waste, fraud, abuse, or mismanagement review lead; not a formal finding.</li><li>Entities selected for deep review: Phoenix Houses Of California Inc.</li><li>Main signal pattern: spend-versus-results mismatch.</li></ul>
+              </details>
+              <a class="case-link" href="cases/live_ca_recovery_ngos_2026_04_24/">Open original case file</a>
+            </article>
+
+            <article class="case-panel" id="live_ca_sf_homelessness_complex" data-case="live_ca_sf_homelessness_complex" data-area="Homelessness services">
+              <div class="case-panel__header">
+                <p>San Francisco / Homelessness services</p>
+                <h3>San Francisco homelessness nonprofit complex</h3>
+              </div>
+              <p class="case-summary">CalDS screened 15 entities in San Francisco, California for this objective: Run a generic CalDS investigation profile against San Francisco homelessness-service nonprofit candidates, rank targets by Review Value Score, deep-dive entities with public-dollar exposure plus official adverse-record or scope-mismatch signals, and pause for human review with source-cited findings.</p>
+              <div class="case-stats">
+                <span><strong>15</strong> organizations</span>
+                <span><strong>23</strong> claims</span>
+                <span><strong>23</strong> sources</span>
+                <span><strong>75</strong> records still needed</span>
+              </div>
+              <details class="case-detail">
+                <summary>What stood out</summary>
+                <ul><li>Entities selected for deep review: Tenderloin Housing Clinic Inc, Episcopal Community Svcs of SF Inc, Five Keys Schools And Programs, Community Housing Partnership, Providence Foundation of San Francisco, United Council of Human Services, St Vincent De Paul Society of SF, Larkin Street Youth Services, Heluna Health, Tides Center, Compass Family Services, Catholic Charities, Brilliant Corners, Tenderloin Neighborhood Development Corp, Hamilton Families.</li><li>E21 Official enforcement/docket triage source: United Council of Human Services (Official enforcement or docket source, 2025-10-16): San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements. The San Francisco District Attorney separately announced that a former nonprofit chief executive officer was charged with stealing...</li><li>E18 Official enforcement/docket triage source: Community Housing Partnership (Official enforcement or docket source, 2025-10-16): A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents. The Controller announcement says the audit found serious financial...</li></ul>
+              </details>
+              <details class="case-detail">
+                <summary>What this does not prove</summary>
+                <ul><li>Case posture: internal possible waste, fraud, abuse, or mismanagement review lead; not a formal finding.</li><li>Entities selected for deep review: Tenderloin Housing Clinic Inc, Episcopal Community Svcs of SF Inc, Five Keys Schools And Programs, Community Housing Partnership, Providence Foundation of San Francisco, United Council of Human Services, St Vincent De Paul Society of SF, Larkin Street Youth Services, Heluna Health, Tides Center, Compass Family Services, Catholic Charities, Brilliant Corners, Tenderloin Neighborhood Development Corp, Hamilton Families.</li><li>Main signal pattern: audit-control concerns, connected-party enforcement exposure, Enforcement and docket history review signals, executive-compensation or payroll-governance questions, material public-funding exposure, payroll or wage-growth questions, San Francisco homelessness payment exposure review signals, spend-versus-results mismatch, rapid financial growth, and possible scope-mismatch signals.</li></ul>
+              </details>
+              <a class="case-link" href="cases/live_ca_sf_homelessness_complex/">Open original case file</a>
+            </article>
+
+      </div>
+    </section>
+
+    <section class="story-section pinned-section" id="money">
+      <div class="pin-copy">
+        <div class="section-kicker">Money trail</div>
+        <h2>Every number needs a receipt.</h2>
+        <p>These cards show dollar figures that were exported from cited public records. Some figures are partial. A partial figure is not a total.</p>
+        <label for="caseFilter">Filter by case</label>
+        <select id="caseFilter">
+          <option value="all">All cases</option>
+          <option value="live_ca_homelessness_top15_2026_04_29">Statewide homelessness</option><option value="live_ca_recovery_ngos_2026_04_24">Recovery and treatment</option><option value="live_ca_sf_homelessness_complex">San Francisco homelessness</option>
+        </select>
+      </div>
+      <div class="money-grid">
+
+            <article class="money-card" data-case="live_ca_homelessness_top15_2026_04_29">
+              <strong>$51,891,854</strong>
+              <span>year not stated</span>
+              <p>public amount or filing amount named in cited record</p>
+              <button class="source-jump" data-source="source_aed0b285da2580f7">Open source receipt</button>
+            </article>
+
+            <article class="money-card" data-case="live_ca_homelessness_top15_2026_04_29">
+              <strong>$77,180,702</strong>
+              <span>year not stated</span>
+              <p>public amount or filing amount named in cited record</p>
+              <button class="source-jump" data-source="source_623e8384c050cac1">Open source receipt</button>
+            </article>
+
+            <article class="money-card" data-case="live_ca_homelessness_top15_2026_04_29">
+              <strong>$115,337,991</strong>
+              <span>year not stated</span>
+              <p>public amount or filing amount named in cited record</p>
+              <button class="source-jump" data-source="source_24b3eae831438e36">Open source receipt</button>
+            </article>
+
+            <article class="money-card" data-case="live_ca_homelessness_top15_2026_04_29">
+              <strong>$53,435,650</strong>
+              <span>year not stated</span>
+              <p>public amount or filing amount named in cited record</p>
+              <button class="source-jump" data-source="source_98b8fc83c977ef43">Open source receipt</button>
+            </article>
+
+            <article class="money-card" data-case="live_ca_homelessness_top15_2026_04_29">
+              <strong>$95,565,300</strong>
+              <span>year not stated</span>
+              <p>public amount or filing amount named in cited record</p>
+              <button class="source-jump" data-source="source_82cf4e7d5e876356">Open source receipt</button>
+            </article>
+
+            <article class="money-card" data-case="live_ca_homelessness_top15_2026_04_29">
+              <strong>$11.2</strong>
+              <span>2025</span>
+              <p>public amount or filing amount named in cited record</p>
+              <button class="source-jump" data-source="source_2c61fae7fe11eb0a">Open source receipt</button>
+            </article>
+
+      </div>
+    </section>
+
+    <section class="story-section" id="entities">
+      <div class="section-kicker">Organizations</div>
+      <h2>Open an organization to see the red flags and limits.</h2>
+      <div class="entity-grid">
+
+            <details class="entity-card" data-entity="Weingart Center Association">
+              <summary>
+                <span>Weingart Center Association</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.</li><li>Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023.</li><li>Entity: Weingart Center Association.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="DignityMoves">
+              <summary>
+                <span>DignityMoves</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries.</li><li>Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023.</li><li>Entity: DignityMoves.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Hope the Mission">
+              <summary>
+                <span>Hope the Mission</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.</li><li>Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023.</li><li>Entity: Hope the Mission.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="The People Concern">
+              <summary>
+                <span>The People Concern</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.</li><li>Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023.</li><li>Entity: The People Concern.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Community Housing Partnership">
+              <summary>
+                <span>Community Housing Partnership</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Latest matched Form 990 filing for Community Housing Partnership: Employer Identification Number 943112338, tax period year 2023.</li><li>Official enforcement row already recovered: True.</li><li>A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="California Supportive Housing">
+              <summary>
+                <span>California Supportive Housing</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.</li><li>Entity: California Supportive Housing.</li><li>California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="United Council of Human Services">
+              <summary>
+                <span>United Council of Human Services</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Latest matched Form 990 filing for United Council of Human Services: Employer Identification Number 942936270, tax period year 2020.</li><li>Official enforcement row already recovered: True.</li><li>San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Phoenix Houses Of California Inc">
+              <summary>
+                <span>Phoenix Houses Of California Inc</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.</li><li>Federal Audit Clearinghouse general-table record for Phoenix Houses Of California Inc.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Catholic Charities">
+              <summary>
+                <span>Catholic Charities</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Latest matched Form 990 filing for Catholic Charities: Employer Identification Number 953516461, tax period year 2024.</li><li>Public or official statement pages fetched: 1 of 1.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Tenderloin Housing Clinic Inc">
+              <summary>
+                <span>Tenderloin Housing Clinic Inc</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Latest matched Form 990 filing for Tenderloin Housing Clinic Inc: Employer Identification Number 942681706, tax period year 2023.</li><li>Public or official statement pages fetched: 1 of 1.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Tenderloin Neighborhood Development Corp">
+              <summary>
+                <span>Tenderloin Neighborhood Development Corp</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Latest matched Form 990 filing for Tenderloin Neighborhood Development Corp: Employer Identification Number 942761808, tax period year 2023.</li><li>Public or official statement pages fetched: 1 of 1.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="BHS SAPC provider">
+              <summary>
+                <span>BHS SAPC provider</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p></p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Los Angeles County Auditor-Controller fiscal compliance review: BHS SAPC provider Source URI: https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf Local source document path: [private source artifact]</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="HealthRIGHT 360">
+              <summary>
+                <span>HealthRIGHT 360</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p></p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a docket-search manifest only; it is not a merits finding and the court page itself states calendar information is not the official court r</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Social Model Recovery Systems Inc">
+              <summary>
+                <span>Social Model Recovery Systems Inc</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p></p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Official Social Model Recovery Systems Programs/Services Social Model Recovery Systems, Inc.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Brilliant Corners">
+              <summary>
+                <span>Brilliant Corners</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Latest matched Form 990 filing for Brilliant Corners: Employer Identification Number 562379862, tax period year 2023.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Compass Family Services">
+              <summary>
+                <span>Compass Family Services</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Latest matched Form 990 filing for Compass Family Services: Employer Identification Number 941156622, tax period year 2023.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Episcopal Community Svcs of SF Inc">
+              <summary>
+                <span>Episcopal Community Svcs of SF Inc</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Latest matched Form 990 filing for Episcopal Community Svcs of SF Inc: Employer Identification Number 943096716, tax period year 2023.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+            <details class="entity-card" data-entity="Five Keys Schools And Programs">
+              <summary>
+                <span>Five Keys Schools And Programs</span>
+                <small>1 case link(s)</small>
+              </summary>
+              <div class="entity-card__body">
+                <p>CalDS shows only source-backed service descriptions. If no public service page was recovered, the public story says so.</p>
+                <h4>Records CalDS found</h4>
+                <ul><li>Latest matched Form 990 filing for Five Keys Schools And Programs: Employer Identification Number 810622701, tax period year 2022.</li></ul>
+                <h4>What this does not prove</h4>
+                <ul><li>This does not prove wrongdoing. It marks records that deserve review.</li></ul>
+              </div>
+            </details>
+
+      </div>
+    </section>
+
+    <section class="story-section dark-section" id="evidence">
+      <div class="section-kicker">Evidence stack</div>
+      <h2>What CalDS found, one source-backed claim at a time.</h2>
+      <div class="evidence-stack">
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_426e3030d3b098d7">
+              <p class="evidence-card__type">gap / Contract and payment acquisition gap record</p>
+              <h3>California Supportive Housing has $51,891,854 in California Department of Housing and Community Development award-list exposure across 2 project entries.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E01, evidence_005b3b922e1587e8</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_c58947ada30394b6">
+              <p class="evidence-card__type">gap / Contract and payment acquisition gap record</p>
+              <h3>DignityMoves has $77,180,702 in California Department of Housing and Community Development award-list exposure across 3 project entries.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E02, evidence_eed56b8b976b5cea</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_e5250164ba6d6d9f">
+              <p class="evidence-card__type">gap / Contract and payment acquisition gap record</p>
+              <h3>Hope the Mission has $115,337,991 in California Department of Housing and Community Development award-list exposure across 5 project entries.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E03, evidence_1cde2e75545d024f</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_c86e20d234c306d7">
+              <p class="evidence-card__type">gap / Contract and payment acquisition gap record</p>
+              <h3>The People Concern has $53,435,650 in California Department of Housing and Community Development award-list exposure across 2 project entries.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E04, evidence_173b3ea25c8c9a43</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_c5edebaf1c873f8f">
+              <p class="evidence-card__type">gap / Contract and payment acquisition gap record</p>
+              <h3>Weingart Center Association has $95,565,300 in California Department of Housing and Community Development award-list exposure across 3 project entries.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E05, evidence_766f33f5d680d693</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_ff52ef918273d91a">
+              <p class="evidence-card__type">verified fact / enforcement_docket_discovery</p>
+              <h3>Official enforcement row already recovered: True.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E06, evidence_f6fe5044b5956788</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_f4dc4e3ade328830">
+              <p class="evidence-card__type">measured comparison / irs_990_raw_artifact</p>
+              <h3>Latest matched Form 990 filing for DignityMoves: Employer Identification Number 871111468, tax period year 2023.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E07, evidence_3622ed0c56bb35d3</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_292c345885b673ef">
+              <p class="evidence-card__type">measured comparison / irs_990_raw_artifact</p>
+              <h3>Latest matched Form 990 filing for Hope the Mission: Employer Identification Number 272053273, tax period year 2023.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E08, evidence_384504f2ff2abdc2</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_06166defdb275216">
+              <p class="evidence-card__type">measured comparison / irs_990_raw_artifact</p>
+              <h3>Latest matched Form 990 filing for The People Concern: Employer Identification Number 956143865, tax period year 2023.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E09, evidence_53777fca47214e77</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_f647a44a018c869f">
+              <p class="evidence-card__type">measured comparison / irs_990_raw_artifact</p>
+              <h3>Latest matched Form 990 filing for Weingart Center Association: Employer Identification Number 956054617, tax period year 2023.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E10, evidence_428b3b165581dce8</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_a58ba151fb3e6063">
+              <p class="evidence-card__type">measured comparison / California Department of Housing and Community Development homelessness award record</p>
+              <h3>Entity: Hope the Mission.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E11, evidence_d38585b558543270</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_6bba841780d65eb6">
+              <p class="evidence-card__type">verified fact / Official enforcement or docket source</p>
+              <h3>An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for $11.2 million and contracted to sell to a homeless housing developer using City of Los Angeles and St...</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E12, evidence_dd6ada01aecefd53</span>
+                <span>Legal term appears with official-source link</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_1c5391e9661c3d88">
+              <p class="evidence-card__type">measured comparison / California Department of Housing and Community Development homelessness award record</p>
+              <h3>Entity: Weingart Center Association.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E13, evidence_f0448c16860a5d6c</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_70b2043cae6575d6">
+              <p class="evidence-card__type">measured comparison / California Department of Housing and Community Development homelessness award record</p>
+              <h3>Entity: DignityMoves.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E14, evidence_b51d9b36ed16b264</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_dfd446a1d6166846">
+              <p class="evidence-card__type">measured comparison / California Department of Housing and Community Development homelessness award record</p>
+              <h3>Entity: The People Concern.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E15, evidence_544fb1c9184dc642</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_homelessness_top15_2026_04_29" data-claim="claim_da07684a2ba99ff2">
+              <p class="evidence-card__type">measured comparison / California Department of Housing and Community Development homelessness award record</p>
+              <h3>Entity: California Supportive Housing.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E16, evidence_666cf8667742c815</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_9b8121de0a8fc3cd">
+              <p class="evidence-card__type">measured comparison / Internal Revenue Service Form 990 summary</p>
+              <h3>ProPublica Nonprofit Explorer reports Social Model Recovery Systems Inc as a Covina, California 501(c)(3) in the Alcohol, Drug Abuse, Treatment Only category.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E01, evidence_d39a0b2dfe8f87c4</span>
+                <span>Legal term requires review before stronger wording</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_97c83ebafe10c3d2">
+              <p class="evidence-card__type">measured comparison / Downloaded Internal Revenue Service Form 990 machine-readable filing data</p>
+              <h3>Internal Revenue Service Form 990 machine-readable filing data downloaded for Behavioral Health Services Inc. Employer Identification Number: 952838006 Tax period year: 2023 Tax period: 202306 Object ID: 202421369349300712 ZIP batch: 2024_TEOS_XML_05a Local XML path: [private source artifact]</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E02, evidence_947bca18f9551633</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_2929f027088b03c3">
+              <p class="evidence-card__type">measured comparison / Internal Revenue Service machine-readable filing-data availability manifest</p>
+              <h3>No Internal Revenue Service machine-readable filing data index row was found for Behavioral Health Services Inc tax period year 2025 in probed Internal Revenue Service indexes [2024, 2025, 2026].</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E03, evidence_d043245a0a684901</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_b073c8ece7beb46f">
+              <p class="evidence-card__type">gap / Rendered Form 990 secondary source</p>
+              <h3>HealthRIGHT 360 Form 990 fallback recovered from ProPublica rendered full-text schedules.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E04, evidence_798df5d7a45e0675</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_eeb3914554ccdb5b">
+              <p class="evidence-card__type">verified fact / Federal Audit Clearinghouse audit source document</p>
+              <h3>Federal Audit Clearinghouse general-table record for HealthRIGHT 360. Report ID: 2016-06-CENSUS-0000122774 Audit year: 2016 Federal Audit Clearinghouse accepted date: 2017-03-30 Auditee name: HEALTHRIGHT 360 Auditee Employer Identification Number: 946129071 Audit type: single-audit Total amount expended:</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E05, evidence_3103845eeaaf1e1e</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_0f54e8909dda17be">
+              <p class="evidence-card__type">verified fact / Federal Audit Clearinghouse findings records</p>
+              <h3>Federal Audit Clearinghouse findings records were filtered to the target audit reports. The filtered set contains 8 finding record(s).</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E06, evidence_67a8fff3ad9e8165</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_037f140672270002">
+              <p class="evidence-card__type">verified fact / Federal Audit Clearinghouse federal awards records</p>
+              <h3>Federal Audit Clearinghouse federal-award records were filtered to the target audit reports. The filtered set contains 976 award record(s).</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E07, evidence_571faf39d80ecdb3</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_7c0975e971b12252">
+              <p class="evidence-card__type">verified fact / California Department of Health Care Services facility-status row set</p>
+              <h3>California Department of Health Care Services facility-status cross-check for CRI-Help Inc. Licensing and Certification Division status rows matched: 13 Active rows: 4 Closed rows: 9 Statuses observed: Active, Closed The separate California Department of Health Care Services adverse-status page was checked, but static HTML did not expose a</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E08, evidence_c182a6e42f6a7429</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_571f40d8cd421d20">
+              <p class="evidence-card__type">verified fact / California Department of Health Care Services adverse-status page manifest</p>
+              <h3>The California Department of Health Care Services page identifies an adverse-status list, but the page did not expose source records in the static HTML fetched during this run.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E09, evidence_06396cf5cd604958</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_a71412b3266755ed">
+              <p class="evidence-card__type">verified fact / California Department of Health Care Services adverse-status source discovery</p>
+              <h3>California Department of Health Care Services adverse-status page, SharePoint API candidates, and ArcGIS searches were probed. No separate machine-readable probation, suspension, revocation, or NOV table was recovered in this run. Existing California Department of Health Care Services facility status remains Active/Closed facility-level context.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E10, evidence_67f61e0d157e345b</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_03796a4c789e9b32">
+              <p class="evidence-card__type">verified fact / County contract or monitoring source</p>
+              <h3>Los Angeles County Auditor-Controller fiscal compliance review: BHS SAPC provider Source URI: https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf Local source document path: [private source artifact]</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E11, evidence_32f81cdeee62fbb5</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_5b8a9456506b09d9">
+              <p class="evidence-card__type">verified fact / Court docket search manifest</p>
+              <h3>Official court website calendar page surfaced a HealthRIGHT 360 party-name hit for case VENCI00555357. This is a docket-search manifest only; it is not a merits finding and the court page itself states calendar information is not the official court r</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E12, evidence_5150f41b551a187f</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_00ac3e1ca06330fb">
+              <p class="evidence-card__type">measured comparison / Internal Revenue Service source collection</p>
+              <h3>Internal Revenue Service Form 990 summary source collection. This source collection contains Form 990 fields used for revenue, government-grant share, expense, payroll, and compensation checks.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E13, evidence_ec0b74633b49a5bd</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_c6b32cb350399064">
+              <p class="evidence-card__type">verified fact / Federal Audit Clearinghouse audit source collection</p>
+              <h3>Federal Audit Clearinghouse audit summary source collection. This source collection contains federal audit fields used to check material weaknesses, internal-control findings, low-risk status, and audit finding counts.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E14, evidence_092248a6e53f7d01</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_b405c6e7e5c5c99a">
+              <p class="evidence-card__type">verified fact / Federal Audit Clearinghouse award source collection</p>
+              <h3>Federal Audit Clearinghouse award source collection. This source collection contains federal audit award totals used to understand public-funding exposure.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E15, evidence_8dfb7fc1cb2a75ce</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_a89894081baeb3e6">
+              <p class="evidence-card__type">verified fact / California Department of Health Care Services status source collection</p>
+              <h3>Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E16, evidence_dfbbcee28e6ef7fa</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_cde778e7517387b3">
+              <p class="evidence-card__type">verified fact / Parsed source document text index</p>
+              <h3>Federal Audit Clearinghouse audit summary source collection. This source collection supports the cited review checks and remains tied to the source ledger for audit traceability.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E17, evidence_0cd635f36c5cc6ee</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_11410e2fcb51c840">
+              <p class="evidence-card__type">verified fact / Organization service page</p>
+              <h3>Tarzana Treatment Centers, Inc.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E18, evidence_d309d3a9cb2ba46a</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_7f8d626db5622b23">
+              <p class="evidence-card__type">verified fact / Official outcome source collection</p>
+              <h3>Official homelessness outcome source collection. This source collection contains official homelessness outcome measures used for county or Continuum of Care context.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E19, evidence_910819e82ade8b13</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+            <article class="evidence-card" data-case="live_ca_recovery_ngos_2026_04_24" data-claim="claim_23071d981f8a44db">
+              <p class="evidence-card__type">verified fact / Spend-versus-results source collection</p>
+              <h3>Spend-versus-results context source collection. This source collection joins public-funding geography with official outcome movement so reviewers can decide whether provider-specific outcome records are needed.</h3>
+              <p><strong>Why it matters:</strong> This is a source-backed red flag or caveat. It is not a verdict.</p>
+              <p><strong>What it does not prove:</strong> It does not prove wrongdoing unless the cited official source says so.</p>
+              <div class="evidence-card__refs">
+                <span>E20, evidence_c01d627498d0bbaf</span>
+                <span>No legal term used</span>
+              </div>
+            </article>
+
+      </div>
+    </section>
+
+    <section class="story-section" id="limits">
+      <div class="section-kicker">What this does not prove</div>
+      <div class="split">
+        <div>
+          <h2>A red flag is not a verdict.</h2>
+          <p>CalDS is not making a legal finding. The site shows records that deserve review. Some records are still missing. Missing records do not prove wrongdoing.</p>
+        </div>
+        <aside class="definition-card">
+          <h3>Possible fraud, waste, or abuse</h3>
+          <p>Possible fraud, waste, or abuse means the records show a red flag. It does not mean CalDS has proved a crime.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="story-section" id="sources">
+      <div class="section-kicker">Source room</div>
+      <h2>Check the receipts.</h2>
+      <p>Every source row connects back to an evidence record and a public claim. Live links open in a new tab. Blocked rows explain what still needs to be recovered.</p>
+      <input id="sourceSearch" class="source-search" type="search" placeholder="Search sources, cases, organizations, or record types" aria-label="Search sources">
+      <div class="source-table-wrap">
+        <table class="source-table">
+          <thead><tr><th>Case</th><th>Source family</th><th>Title</th><th>Status</th><th>Receipt</th></tr></thead>
+          <tbody>
+            <tr data-source-id="source_aed0b285da2580f7" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>Contract and payment acquisition gap record</td>
+              <td>Contract and payment acquisition status: California Supportive Housing</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/funding/homekey/funding-overview" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_623e8384c050cac1" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>Contract and payment acquisition gap record</td>
+              <td>Contract and payment acquisition status: DignityMoves</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/funding/homekey/funding-overview" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_24b3eae831438e36" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>Contract and payment acquisition gap record</td>
+              <td>Contract and payment acquisition status: Hope the Mission</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/funding/homekey/funding-overview" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_98b8fc83c977ef43" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>Contract and payment acquisition gap record</td>
+              <td>Contract and payment acquisition status: The People Concern</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/funding/homekey/funding-overview" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_82cf4e7d5e876356" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>Contract and payment acquisition gap record</td>
+              <td>Contract and payment acquisition status: Weingart Center Association</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/funding/homekey/funding-overview" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_8d8cc266cbf913b7" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>enforcement_docket_discovery</td>
+              <td>Official enforcement/docket public-source search: Weingart Center Association</td>
+              <td>Live</td>
+              <td><a href="https://www.justice.gov/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_7c26a981736f8012" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: DignityMoves</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_07A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_7d071dd160e1c081" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Hope the Mission</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_ff7add9be3fc69ad" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: The People Concern</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_c7efdea6410205a5" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Weingart Center Association</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_954f81e4282c6710" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>California Department of Housing and Community Development homelessness award record</td>
+              <td>California housing-award exposure source collection</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_2c61fae7fe11eb0a" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>Official enforcement or docket source</td>
+              <td>Official enforcement/docket triage source: Weingart Center Association</td>
+              <td>Live</td>
+              <td><a href="https://www.fhfaoig.gov/sites/default/files/Beverly-Hills-Man-Arrested%2C-Brentwood-Man-Charged-in-Separate-Criminal-Cases-Linked-to-Fraud-in-Public-Homelessness-Funds.pdf" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_e0633bb90df98b6e" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>California Department of Housing and Community Development homelessness award record</td>
+              <td>California housing-award exposure source collection</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/homekey-round-3-awardee-list.pdf" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_38b519ff478dcadc" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>California Department of Housing and Community Development homelessness award record</td>
+              <td>California housing-award exposure source collection</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_fd54c34a3b3221be" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>California Department of Housing and Community Development homelessness award record</td>
+              <td>California housing-award exposure source collection</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_809845a7789f5908" data-case="live_ca_homelessness_top15_2026_04_29">
+              <td>live_ca_homelessness_top15_2026_04_29</td>
+              <td>California Department of Housing and Community Development homelessness award record</td>
+              <td>California housing-award exposure source collection</td>
+              <td>Live</td>
+              <td><a href="https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/homekey/hk-plus-awardee-list.pdf" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_2a3b1afda9010731" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Internal Revenue Service Form 990 summary</td>
+              <td>Internal Revenue Service Form 990 summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://projects.propublica.org/nonprofits/organizations/954079133" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_adbbcca616aebb11" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Downloaded Internal Revenue Service Form 990 machine-readable filing data</td>
+              <td>Internal Revenue Service Form 990 summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_41bdb9549bd1d028" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Internal Revenue Service machine-readable filing-data availability manifest</td>
+              <td>Internal Revenue Service Form 990 summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_957cfb2ae33c74fc" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Rendered Form 990 secondary source</td>
+              <td>Internal Revenue Service Form 990 summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://projects.propublica.org/nonprofits/organizations/954079133" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_efcece56f535326b" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_49236eb4ad9ff1d6" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse findings records</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_69e25a2fa8826d85" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse federal awards records</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/public-data/gsa/full/federal_awards.csv" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_a18e21587238935d" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services facility-status row set</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_8322a0bb41e0ffb3" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services adverse-status page manifest</td>
+              <td>California Department of Health Care Services adverse-status page machine-readability manifest</td>
+              <td>Live</td>
+              <td><a href="https://www.dhcs.ca.gov/provgovpart/SUD-LCR/Pages/SUS-REV-NOV.aspx" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_6cfa3cd2284005e9" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services adverse-status source discovery</td>
+              <td>California Department of Health Care Services adverse-status machine-readable source discovery manifest</td>
+              <td>Live</td>
+              <td><a href="https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_f7f42c63890b26a7" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>County contract or monitoring source</td>
+              <td>Los Angeles County Auditor-Controller fiscal compliance review: BHS SAPC provider</td>
+              <td>Live</td>
+              <td><a href="https://file.lacounty.gov/SDSInter/auditor/cmr/1141106_2023-04-26BehavioralHealthServicesInc-ADPHSAPCServiceProvider-FiscalComplianceReview.pdf" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_e9181cca5602f3e6" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Court docket search manifest</td>
+              <td>Santa Barbara Superior Court calendar search hit: HealthRIGHT 360</td>
+              <td>Live</td>
+              <td><a href="https://www.santabarbara.courts.ca.gov/es/online-services/court-calendars/search-court-calendars/calendarios-judiciales-civil?case_type=All&amp;hearing_type=All&amp;keyword=&amp;order=field_party_name&amp;page=56&amp;sort=asc" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_06b17c380138384f" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Internal Revenue Service source collection</td>
+              <td>Internal Revenue Service Form 990 summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://projects.propublica.org/nonprofits/organizations/954079133" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_0c5ab75a609d01f8" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source collection</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://projects.propublica.org/nonprofits/organizations/954079133" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_12e12412e987df21" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse award source collection</td>
+              <td>Federal Audit Clearinghouse award source collection</td>
+              <td>Live</td>
+              <td><a href="https://projects.propublica.org/nonprofits/organizations/954079133" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_3ec2f7b4fa9336f5" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services status source collection</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://projects.propublica.org/nonprofits/organizations/954079133" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_3018c91ec8ae4153" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Parsed source document text index</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000122774" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_47ab22ba6e740fb9" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>Official service page: Tarzana Treatment Centers Inc</td>
+              <td>Live</td>
+              <td><a href="https://www.tarzanatc.org/services/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_cf2304ac44149ec1" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Official outcome source collection</td>
+              <td>Official homelessness outcome source collection</td>
+              <td>Live</td>
+              <td><a href="https://www.dhcs.ca.gov/provgovpart/Pages/caloms-treatment.aspx" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_43e135782c1ed829" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Spend-versus-results source collection</td>
+              <td>Spend-versus-results context source collection</td>
+              <td>Live</td>
+              <td><a href="https://projects.propublica.org/nonprofits/organizations/954079133" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_0e99331c6047b737" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Public statement source collection</td>
+              <td>Public statement review source collection</td>
+              <td>Live</td>
+              <td><a href="https://www.tarzanatc.org/who-we-are/meet-us/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_ea17287c0256765e" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Public statement source</td>
+              <td>Public statement page harvest: WestCare California Inc</td>
+              <td>Live</td>
+              <td><a href="https://westcare.com/leadership/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_a5ec29e383bbbc2b" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services facility-status row set</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_6ad63e9bb59edadc" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services facility-status row set</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_956348030a9a4f27" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services facility-status row set</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_1533b9236ee20aa9" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services facility-status row set</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_fa8fe79757ec4d8f" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services facility-status row set</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_0504dec87d337dce" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000126607" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_41004b255e5eafa5" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000017535" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_ca24b4e2cad9909c" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000019151" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_8e7092b68281d775" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000348075" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_cbf443e6b5d9f33e" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000354996" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_63b74c395071be09" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000400073" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_3b8cd985845d3b74" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405366" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_ae3a41640bfb8a35" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>California Department of Health Care Services facility-status row set</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/SUDS_Facilities_LCD_view/FeatureServer/7" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_0cac048f2650a67b" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119575" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_c04c8136ed8c35ea" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000124927" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_c16016d0e05763af" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000119575" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_d75b031466b4f202" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000122774" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_19e130cebc60deb3" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000124927" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_57ddf2f7935ee4b1" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000126607" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_a0ffe424dae69ee1" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119575" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_ac5e1cf9348c819b" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000122774" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_0d86a166c51b1c30" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000124927" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_9053c576e1419bc5" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000126607" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_196506344bac9926" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119575" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_dc1c2333a0785e16" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000122774" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_389b604673d85d82" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000124927" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_25fd958f38f780e3" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119575" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_83b8ea767febfabb" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000122774" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_c189f81366362a6b" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000124927" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_ec690db4bda37279" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000249434" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_9c57e73056fafcb6" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119575" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_695763f555d34900" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000122774" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_10afb536b0568f6c" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000249434" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_386a2323211959bd" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2021-06-GSAFAC-0000011418" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_2d2a1b1b4c766ff5" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119575" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_39f48ec62698f9cf" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000122774" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_089ac9adf6e63ab2" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2022-06-GSAFAC-0000366337" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_ced406ac8dcc803a" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Federal Audit Clearinghouse audit source document</td>
+              <td>Federal Audit Clearinghouse audit summary source collection</td>
+              <td>Live</td>
+              <td><a href="https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000384194" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_c6cfd5734395398d" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>HealthRIGHT 360 substance use disorder services</td>
+              <td>Live</td>
+              <td><a href="https://www.healthright360.org/our-services/substance-use-disorder/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_75caf5e288355a20" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>Official service page: Behavioral Health Services Inc</td>
+              <td>Live</td>
+              <td><a href="https://bhs-inc.org/services" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_876f2c8a58206d20" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>Official service page: CRI-Help Inc</td>
+              <td>Live</td>
+              <td><a href="https://cri-help.org/programs/residential-treatment/overview.html" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_8ace27372f011763" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>Official service page: HealthRIGHT 360</td>
+              <td>Live</td>
+              <td><a href="https://www.healthright360.org/our-services/substance-use-disorder/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_c2e8e3b5646d0862" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>Official service page: Phoenix Houses Of California Inc</td>
+              <td>Live</td>
+              <td><a href="https://phoenixhouseca.org/what-we-do/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_d80cdf54697ad8c4" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>Official service page: Social Model Recovery Systems Inc</td>
+              <td>Live</td>
+              <td><a href="https://socialmodelrecovery.org/services/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_c634fd908479962d" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>Official service page: WestCare California Inc</td>
+              <td>Live</td>
+              <td><a href="https://westcare.com/places/california/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_05c81121bff3a9ac" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>Tarzana Treatment Centers substance use disorder services</td>
+              <td>Live</td>
+              <td><a href="https://www.tarzanatc.org/services/substance-abuse-disorder-treatment/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_421a7820dc2e7fd4" data-case="live_ca_recovery_ngos_2026_04_24">
+              <td>live_ca_recovery_ngos_2026_04_24</td>
+              <td>Organization service page</td>
+              <td>WestCare California treatment and rehabilitation services</td>
+              <td>Live</td>
+              <td><a href="https://westcarecalifornia.org/services/treatment-rehab/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_49dbcf1126fe681a" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>enforcement_docket_discovery</td>
+              <td>Official enforcement/docket public-source search: Community Housing Partnership</td>
+              <td>Live</td>
+              <td><a href="https://www.justice.gov/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_44cf5f12db5c7358" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>enforcement_docket_discovery</td>
+              <td>Official enforcement/docket public-source search: United Council of Human Services</td>
+              <td>Live</td>
+              <td><a href="https://www.justice.gov/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_beafc8e6b2faec8e" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Brilliant Corners</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_4545e7396f339aaa" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Catholic Charities</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_06122086150a97e5" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Community Housing Partnership</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_d5646de584349230" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Compass Family Services</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_0ae5c78ea31712d0" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Episcopal Community Svcs of SF Inc</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2025/2025_TEOS_XML_07A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_2f605c63ea06b6cd" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Five Keys Schools And Programs</td>
+              <td>Live</td>
+              <td><a href="https://projects.propublica.org/nonprofits/organizations/810622701" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_5f745f1f1e12a9c2" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Hamilton Families</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_f7e275ee394ae375" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Heluna Health</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_03A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_d78d1f32934356e6" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Larkin Street Youth Services</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_05A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_907b723ea823cbaa" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Providence Foundation of San Francisco</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_868778ebc063f7b1" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Tenderloin Housing Clinic Inc</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_04A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_7e1ed4eb95c5801a" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Tenderloin Neighborhood Development Corp</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_11A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_5e46448b92435084" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact</td>
+              <td>Internal Revenue Service Form 990 acquisition status: Tides Center</td>
+              <td>Live</td>
+              <td><a href="https://apps.irs.gov/pub/epostcard/990/xml/2024/2024_TEOS_XML_10A.zip" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_29cd168e97a8af11" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>irs_990_raw_artifact_discovery</td>
+              <td>Internal Revenue Service Form 990 acquisition status: United Council of Human Services</td>
+              <td>Live</td>
+              <td><a href="https://projects.propublica.org/nonprofits/organizations/942936270" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_8e0933ca65ef1157" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>Public statement source</td>
+              <td>Public statement page harvest: Tenderloin Housing Clinic Inc</td>
+              <td>Live</td>
+              <td><a href="https://www.thclinic.org/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_f691cbf0f378e4ba" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>Official enforcement or docket source</td>
+              <td>Official enforcement/docket triage source: Community Housing Partnership</td>
+              <td>Live</td>
+              <td><a href="https://www.sf.gov/news--audit-finds-one-citys-providers-housing-unhoused-residents-had-serious-financial-shortfalls" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_3a3226cda0b61582" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>Public statement source</td>
+              <td>Public statement page harvest: Community Housing Partnership</td>
+              <td>Live</td>
+              <td><a href="https://homerisesf.org/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_30e5a3ee1dfa75f0" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>Public statement source</td>
+              <td>Public statement page harvest: Catholic Charities</td>
+              <td>Live</td>
+              <td><a href="https://www.catholiccharitiessf.org/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_8cea8805b08dda9f" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>Official enforcement or docket source</td>
+              <td>Official enforcement/docket triage source: United Council of Human Services</td>
+              <td>Live</td>
+              <td><a href="https://www.sf.gov/news--united-council-human-services-found-be-violation-city-agreements" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_db020f59e1b42025" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>Organization service page</td>
+              <td>Official service page: Tenderloin Neighborhood Development Corp</td>
+              <td>Live</td>
+              <td><a href="https://www.tndc.org/our-work/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+
+            <tr data-source-id="source_05e53e03feb352d0" data-case="live_ca_sf_homelessness_complex">
+              <td>live_ca_sf_homelessness_complex</td>
+              <td>Public statement source</td>
+              <td>Public statement page harvest: Tenderloin Neighborhood Development Corp</td>
+              <td>Live</td>
+              <td><a href="https://www.tndc.org/" target="_blank" rel="noreferrer">Open source</a></td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="story-section" id="method">
+      <div class="section-kicker">Method</div>
+      <h2>How CalDS keeps the public story tied to records.</h2>
+      <div class="method-grid">
+        <article><strong>Claims need records.</strong><p>No public claim ships unless it maps to a claim row and a source record.</p></article>
+        <article><strong>Links are checked.</strong><p>Sources must be live, archived, or visibly blocked.</p></article>
+        <article><strong>Language is checked.</strong><p>Legal words stay tied to official source status.</p></article>
+        <article><strong>Private data stays private.</strong><p>The public app is built from sanitized JSON, not private runs.</p></article>
+      </div>
+      <details class="gate-detail">
+        <summary>Publication gates for this build</summary>
+        <ul><li>live_ca_homelessness_top15_2026_04_29: citations PASS, links PASS, safety True, records still needed 25</li><li>live_ca_recovery_ngos_2026_04_24: citations PASS, links PASS, safety True, records still needed </li><li>live_ca_sf_homelessness_complex: citations PASS, links PASS, safety True, records still needed 75</li></ul>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CalDS publishes source-backed review leads, not legal findings.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

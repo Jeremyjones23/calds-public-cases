@@ -1,0 +1,62 @@
+{
+  "case_manifest_status": [
+    {
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "citation_status": "PASS",
+      "link_status": "PASS",
+      "safety_passed": true,
+      "source_blocker_count": 25
+    },
+    {
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "citation_status": "PASS",
+      "link_status": "PASS",
+      "safety_passed": true,
+      "source_blocker_count": 0
+    },
+    {
+      "case_id": "live_ca_sf_homelessness_complex",
+      "citation_status": "PASS",
+      "link_status": "PASS",
+      "safety_passed": true,
+      "source_blocker_count": 75
+    }
+  ],
+  "claim_coverage": {
+    "claim_count": 108,
+    "claims_by_case": {
+      "live_ca_homelessness_top15_2026_04_29": 16,
+      "live_ca_recovery_ngos_2026_04_24": 69,
+      "live_ca_sf_homelessness_complex": 23
+    },
+    "evidence_backed_claim_count": 108,
+    "status": "PASS"
+  },
+  "generated_at": "2026-05-05T13:54:16+00:00",
+  "included_cases": [
+    "live_ca_homelessness_top15_2026_04_29",
+    "live_ca_recovery_ngos_2026_04_24",
+    "live_ca_sf_homelessness_complex"
+  ],
+  "public_safety": {
+    "banned_internal_phrase_hits": [],
+    "private_or_secret_hits": [],
+    "status": "PASS"
+  },
+  "readability": {
+    "average_words_per_sentence": 16.27,
+    "long_sentence_count": 12,
+    "sentence_count": 146,
+    "status": "PASS",
+    "target": "fifth_sixth_grade_plain_language",
+    "word_count": 2375
+  },
+  "runtime_source": "calds_runtime.editorial_export",
+  "source_status": {
+    "counts": {
+      "Live": 108
+    },
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

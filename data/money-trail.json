@@ -1,0 +1,76 @@
+{
+  "money_trail": [
+    {
+      "amount": "$51,891,854",
+      "amount_type": "public amount or filing amount named in cited record",
+      "calculation_note": "Amount is published only as it appears in the cited evidence excerpt.",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "claim_id": "claim_426e3030d3b098d7",
+      "entity_id": "entity_25a98e5142db0f41",
+      "is_partial": true,
+      "missing_records_note": "Treat as partial unless the case source says it is a full total.",
+      "source_id": "source_aed0b285da2580f7",
+      "year": ""
+    },
+    {
+      "amount": "$77,180,702",
+      "amount_type": "public amount or filing amount named in cited record",
+      "calculation_note": "Amount is published only as it appears in the cited evidence excerpt.",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "claim_id": "claim_c58947ada30394b6",
+      "entity_id": "entity_52acfad8d2cdf9cc",
+      "is_partial": true,
+      "missing_records_note": "Treat as partial unless the case source says it is a full total.",
+      "source_id": "source_623e8384c050cac1",
+      "year": ""
+    },
+    {
+      "amount": "$115,337,991",
+      "amount_type": "public amount or filing amount named in cited record",
+      "calculation_note": "Amount is published only as it appears in the cited evidence excerpt.",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "claim_id": "claim_e5250164ba6d6d9f",
+      "entity_id": "entity_f607b6ec5ee5e246",
+      "is_partial": true,
+      "missing_records_note": "Treat as partial unless the case source says it is a full total.",
+      "source_id": "source_24b3eae831438e36",
+      "year": ""
+    },
+    {
+      "amount": "$53,435,650",
+      "amount_type": "public amount or filing amount named in cited record",
+      "calculation_note": "Amount is published only as it appears in the cited evidence excerpt.",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "claim_id": "claim_c86e20d234c306d7",
+      "entity_id": "entity_d81e3fabdffaf1b0",
+      "is_partial": true,
+      "missing_records_note": "Treat as partial unless the case source says it is a full total.",
+      "source_id": "source_98b8fc83c977ef43",
+      "year": ""
+    },
+    {
+      "amount": "$95,565,300",
+      "amount_type": "public amount or filing amount named in cited record",
+      "calculation_note": "Amount is published only as it appears in the cited evidence excerpt.",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "claim_id": "claim_c5edebaf1c873f8f",
+      "entity_id": "entity_45e45ff4ee04b3f9",
+      "is_partial": true,
+      "missing_records_note": "Treat as partial unless the case source says it is a full total.",
+      "source_id": "source_82cf4e7d5e876356",
+      "year": ""
+    },
+    {
+      "amount": "$11.2",
+      "amount_type": "public amount or filing amount named in cited record",
+      "calculation_note": "Amount is published only as it appears in the cited evidence excerpt.",
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "claim_id": "claim_6bba841780d65eb6",
+      "entity_id": "entity_45e45ff4ee04b3f9",
+      "is_partial": true,
+      "missing_records_note": "Treat as partial unless the case source says it is a full total.",
+      "source_id": "source_2c61fae7fe11eb0a",
+      "year": "2025"
+    }
+  ]
+}

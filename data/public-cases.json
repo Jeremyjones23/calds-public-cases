@@ -1,0 +1,122 @@
+{
+  "case_count": 3,
+  "cases": [
+    {
+      "case_id": "live_ca_homelessness_top15_2026_04_29",
+      "case_url": "cases/live_ca_homelessness_top15_2026_04_29/",
+      "citation_status": "PASS",
+      "entities": [
+        "California Supportive Housing",
+        "DignityMoves",
+        "Hope the Mission",
+        "The People Concern",
+        "Weingart Center Association"
+      ],
+      "evidence_count": 16,
+      "geography": "California",
+      "issue_area": "Homelessness services",
+      "legal_language_check": "Downgrade For Review",
+      "link_status": "PASS",
+      "public_summary": "CalDS screened 15 entities in California for this objective: Run CalDS homelessness triage against a source-listed California homelessness nonprofit target set.",
+      "short_title": "Statewide homelessness",
+      "source_blocker_count": 25,
+      "source_link_count": 9,
+      "strongest_supported_flags": [
+        "Entities selected for deep review: Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing.",
+        "E12 Official enforcement/docket triage source: Weingart Center Association (Official enforcement or docket source, 2025-10-16): An official federal press release dated October 16, 2025 says Steven Taylor was charged with seven counts of bank fraud, one count of aggravated identity theft, and one count of money laundering, and describes a Cheviot Hills property originally acquired for...",
+        "E16 California housing-award exposure source collection (California Department of Housing and Community Development homelessness award record, 2025-12-16): Entity: California Supportive Housing. Rank by parsed state project-award exposure: 5 of 15. Total Homekey/Homekey+ project-award exposure from source-listed co-applicant rows: $51,891,854. Funding rows: - 2023-12-19 Homekey Round 3: CSH Enterprise Housing in..."
+      ],
+      "title": "California homelessness nonprofit triage",
+      "what_this_does_not_prove": [
+        "Case posture: internal possible waste, fraud, abuse, or mismanagement review lead; not a formal finding.",
+        "Entities selected for deep review: Hope the Mission, Weingart Center Association, DignityMoves, The People Concern, California Supportive Housing.",
+        "Main signal pattern: audit-control concerns, connected-party enforcement exposure, material public-funding exposure, rapid financial growth, payroll or wage-growth questions, spend-versus-results mismatch, executive-compensation or payroll-governance questions, and possible scope-mismatch signals.",
+        "Review priority: 94.82 / 100; risk severity: 100.0 / 100; records we still could not get: 100.0 / 100; how safe this is to publish: 74.12 / 100.",
+        "Score scope: these are case-level scores for this run's evidence bundle. They are not entity-by-entity grades, not probabilities, and not a measure of how polished the report is."
+      ]
+    },
+    {
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "case_url": "cases/live_ca_recovery_ngos_2026_04_24/",
+      "citation_status": "PASS",
+      "entities": [
+        "Phoenix Houses Of California Inc"
+      ],
+      "evidence_count": 69,
+      "geography": "California",
+      "issue_area": "Recovery and treatment services",
+      "legal_language_check": "Downgrade For Review",
+      "link_status": "PASS",
+      "public_summary": "CalDS screened 7 entities in California for this objective: Using public Form 990 XML for the 2023-2025 tax-period window where available, Federal Audit Clearinghouse audit source documents and award ledgers, California Department of Health Care Services facility-status records, county contract or monitoring records, litigation docket manifests, and organization service-page re...",
+      "short_title": "Recovery and treatment",
+      "source_blocker_count": 0,
+      "source_link_count": 82,
+      "strongest_supported_flags": [
+        "Entities selected for deep review: Phoenix Houses Of California Inc.",
+        "E22 Public statement page harvest: WestCare California Inc (Public statement source, 2026-04-24): on addressing social influencers of health and implement homelessness: es building the resiliency of individuals who face barriers including trauma, abuse, chemical dependency, severe behavioral health disorders, developmental disabilities, homelessness, and...",
+        "E19 Official homelessness outcome source collection (Official outcome source collection, 2026-04-24): Official homelessness outcome source collection. This source collection contains official homelessness outcome measures used for county or Continuum of Care context."
+      ],
+      "title": "California recovery and treatment nonprofits",
+      "what_this_does_not_prove": [
+        "Case posture: internal possible waste, fraud, abuse, or mismanagement review lead; not a formal finding.",
+        "Entities selected for deep review: Phoenix Houses Of California Inc.",
+        "Main signal pattern: spend-versus-results mismatch.",
+        "Review priority: 63.91 / 100; risk severity: 0.0 / 100; records we still could not get: 0.0 / 100; how safe this is to publish: 0.0 / 100.",
+        "Score scope: these are case-level scores for this run's evidence bundle. They are not entity-by-entity grades, not probabilities, and not a measure of how polished the report is."
+      ]
+    },
+    {
+      "case_id": "live_ca_sf_homelessness_complex",
+      "case_url": "cases/live_ca_sf_homelessness_complex/",
+      "citation_status": "PASS",
+      "entities": [
+        "Brilliant Corners",
+        "Catholic Charities",
+        "Community Housing Partnership",
+        "Compass Family Services",
+        "Episcopal Community Svcs of SF Inc",
+        "Five Keys Schools And Programs",
+        "Hamilton Families",
+        "Heluna Health",
+        "Larkin Street Youth Services",
+        "St Vincent De Paul Society of SF",
+        "Tenderloin Housing Clinic Inc",
+        "Tenderloin Neighborhood Development Corp",
+        "Tides Center",
+        "United Council of Human Services",
+        "Providence Foundation of San Francisco"
+      ],
+      "evidence_count": 23,
+      "geography": "San Francisco",
+      "issue_area": "Homelessness services",
+      "legal_language_check": "Downgrade For Review",
+      "link_status": "PASS",
+      "public_summary": "CalDS screened 15 entities in San Francisco, California for this objective: Run a generic CalDS investigation profile against San Francisco homelessness-service nonprofit candidates, rank targets by Review Value Score, deep-dive entities with public-dollar exposure plus official adverse-record or scope-mismatch signals, and pause for human review with source-cited findings.",
+      "short_title": "San Francisco homelessness",
+      "source_blocker_count": 75,
+      "source_link_count": 16,
+      "strongest_supported_flags": [
+        "Entities selected for deep review: Tenderloin Housing Clinic Inc, Episcopal Community Svcs of SF Inc, Five Keys Schools And Programs, Community Housing Partnership, Providence Foundation of San Francisco, United Council of Human Services, St Vincent De Paul Society of SF, Larkin Street Youth Services, Heluna Health, Tides Center, Compass Family Services, Catholic Charities, Brilliant Corners, Tenderloin Neighborhood Development Corp, Hamilton Families.",
+        "E21 Official enforcement/docket triage source: United Council of Human Services (Official enforcement or docket source, 2025-10-16): San Francisco issued an official notice that United Council of Human Services was found to be in violation of City agreements. The San Francisco District Attorney separately announced that a former nonprofit chief executive officer was charged with stealing...",
+        "E18 Official enforcement/docket triage source: Community Housing Partnership (Official enforcement or docket source, 2025-10-16): A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents. The Controller announcement says the audit found serious financial..."
+      ],
+      "title": "San Francisco homelessness nonprofit complex",
+      "what_this_does_not_prove": [
+        "Case posture: internal possible waste, fraud, abuse, or mismanagement review lead; not a formal finding.",
+        "Entities selected for deep review: Tenderloin Housing Clinic Inc, Episcopal Community Svcs of SF Inc, Five Keys Schools And Programs, Community Housing Partnership, Providence Foundation of San Francisco, United Council of Human Services, St Vincent De Paul Society of SF, Larkin Street Youth Services, Heluna Health, Tides Center, Compass Family Services, Catholic Charities, Brilliant Corners, Tenderloin Neighborhood Development Corp, Hamilton Families.",
+        "Main signal pattern: audit-control concerns, connected-party enforcement exposure, Enforcement and docket history review signals, executive-compensation or payroll-governance questions, material public-funding exposure, payroll or wage-growth questions, San Francisco homelessness payment exposure review signals, spend-versus-results mismatch, rapid financial growth, and possible scope-mismatch signals.",
+        "Review priority: 97.55 / 100; risk severity: 100.0 / 100; records we still could not get: 100.0 / 100; how safe this is to publish: 87.75 / 100.",
+        "Score scope: these are case-level scores for this run's evidence bundle. They are not entity-by-entity grades, not probabilities, and not a measure of how polished the report is."
+      ]
+    }
+  ],
+  "claim_count": 108,
+  "dek": "CalDS checked public records across homelessness, recovery, and treatment nonprofit cases. The records raise questions about money, outcomes, missing oversight records, and public accountability. This is a red flag, not a verdict.",
+  "generated_at": "2026-05-05T13:54:16+00:00",
+  "public_policy": "Public story may publish only source-backed claims, caveats, or documented blockers.",
+  "publication_id": "editorial_publication_0c3c85970d23a1d6",
+  "site_language_level": "fifth_sixth_grade_plain_language",
+  "source_count": 108,
+  "title": "The California Case File",
+  "verification_status": "PASS"
+}
