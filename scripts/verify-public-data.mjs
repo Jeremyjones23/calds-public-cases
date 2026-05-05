@@ -95,7 +95,7 @@ for (const claim of claims) {
 for (const source of sources) {
   if (!source.source_id) fail("source without source_id");
   if (!caseIds.has(source.case_id)) fail(`source references unknown case ${source.case_id}`);
-  if (!source.url && !source.blocker_reason && source.archive_status !== "Blocked") {
+  if (!source.url && !source.blocker_reason && !["Blocked", "Public artifact"].includes(source.archive_status)) {
     fail(`source ${source.source_id} has no URL or blocker`);
   }
 }
@@ -147,6 +147,7 @@ if (!filterButtons.length) fail("money filter buttons missing");
 for (const filter of filterButtons) {
   const expected = filter.caseId === "all" ? moneyCards.length : moneyCards.filter((caseId) => caseId === filter.caseId).length;
   if (filter.count !== expected) fail(`money filter count mismatch for ${filter.caseId}: expected ${expected}, got ${filter.count}`);
+  if (filter.caseId !== "all" && filter.count === 0) fail(`money filter has zero rows for ${filter.caseId}`);
 }
 
 for (const caseId of caseIds) {

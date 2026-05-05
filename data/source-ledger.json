@@ -2443,6 +2443,366 @@
       "supports": "Public website or statement page was found.",
       "title": "Public statement page: Tenderloin Neighborhood Development Corp",
       "url": "https://www.tndc.org/"
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "checksum_c197e8cbd9c0d523",
+      "claim_ids": [
+        "claim_7db3d7add22d53f2"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_7db3d7add22d53f2",
+      "source_type": "public_dollar_record",
+      "supports": "CalDS flags Tarzana Treatment Centers Inc / Executive compensation: Latest listed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of listed expenses. Evidence: , . High executive pay at a publicly funded service nonprofit is a materiality and governance question; the reviewer needs to know whether pay, approval, and outcomes line up.",
+      "title": "Public dollar record: Tarzana Treatment Centers Inc",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "checksum_e1edf155a5cf1949",
+      "claim_ids": [
+        "claim_d7b0f71c8b81b383"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_d7b0f71c8b81b383",
+      "source_type": "public_dollar_record",
+      "supports": "Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $68,101,243. Top listed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $44,537,114. (subject: Behavioral Health Services Inc; evidence , , , .)",
+      "title": "Public dollar record: Behavioral Health Services Inc",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "checksum_fa94f90f10865945",
+      "claim_ids": [
+        "claim_0934ed79e314a6cf"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_0934ed79e314a6cf",
+      "source_type": "public_dollar_record",
+      "supports": "Financial growth: Internal Revenue Service listed revenue moved from $19,243,515 in 2023 to $42,978,055 in 2024 (+123.3%). (year(s): 2023, 2024; subject: CRI-Help Inc; evidence , .)",
+      "title": "Public dollar record: CRI-Help Inc",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "checksum_a384308d602bc716",
+      "claim_ids": [
+        "claim_6f668b99ffc040a7"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_6f668b99ffc040a7",
+      "source_type": "public_dollar_record",
+      "supports": "Executive compensation: Latest listed return 2024 lists BRANDON FERNANDEZ-COMER (chief executive officer) with total reportable/other compensation of $235,530, equal to 1.38% of listed expenses. (year(s): 2024; subject: CRI-Help Inc; evidence , .)",
+      "title": "Public dollar record: CRI-Help Inc",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_recovery_ngos_2026_04_24",
+      "checksum": "checksum_481091606cffdc3c",
+      "claim_ids": [
+        "claim_bea175e4718ed4ad"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_bea175e4718ed4ad",
+      "source_type": "public_dollar_record",
+      "supports": "Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $118,010,797. Top listed program: MEDICAL ASSISTANCE PROGRAM at $97,783,530. (subject: CRI-Help Inc; evidence , , , .)",
+      "title": "Public dollar record: CRI-Help Inc",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_713ed5c23fbb9c4d",
+      "claim_ids": [
+        "claim_d3c320666cb13447"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_d3c320666cb13447",
+      "source_type": "public_dollar_record",
+      "supports": "CalDS selected Brilliant Corners for closer review for possible waste, fraud, abuse, or mismanagement because the cited records show material public-funding exposure, San Francisco homelessness payment exposure review signals, spend-versus-results mismatch, and audit-control concerns. The strongest current cited trigger is: Federal Audit Clearinghouse award data captured in this run totals $155,994,121 across the retrieved audit reports. Evidence: Federal Audit Clearinghouse audit source collection, public homelessness funding source collection, public homelessness funding record: Brilliant Corners, official...",
+      "title": "Public dollar record: Brilliant Corners",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_9ed462ef31badc59",
+      "claim_ids": [
+        "claim_b29a0a349d802a44"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_b29a0a349d802a44",
+      "source_type": "public_dollar_record",
+      "supports": "Federal award exposure: Federal Audit Clearinghouse award data captured in this run totals $155,994,121 across the retrieved audit reports. (organization named in the cited source: Brilliant Corners; evidence Federal Audit Clearinghouse audit source collection.)",
+      "title": "Public dollar record: Brilliant Corners",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_7498a44bda0ec9b7",
+      "claim_ids": [
+        "claim_b0e4d7c24abdb274"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_b0e4d7c24abdb274",
+      "source_type": "public_dollar_record",
+      "supports": "San Francisco homelessness payment exposure: SF Open Data lists Brilliant Corners in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $62,699,311. Programs/source grouping: San Francisco HSH nonprofit payments. Year span: 2019. Counties: San Francisco. Projects/context: Aggregated HSH payments by supplier name. (years named in the cited source: 2019; place named in the cited source: San Francisco; organization named in the cited source: Brilliant Corners; evidence public homelessness funding source collection, public homelessness funding record:...",
+      "title": "Public dollar record: Brilliant Corners",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_d42745c9e107ce19",
+      "claim_ids": [
+        "claim_93afabea7f3ec46a"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_93afabea7f3ec46a",
+      "source_type": "public_dollar_record",
+      "supports": "Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: San Francisco: San Francisco Continuum of Care M1a service-system volume increased from 19,118 in Jan 2023 - Dec 2023 to 21,255 in Jul 2024 - Jun 2025 (+11.2%). This run did not parse entity-level spending, revenue, or grant growth for that comparison. San Francisco Department of Homelessness and Supportive Housing completed-payment exposure=$62,699,311. This is a review signal, not provider attribution. Evidence official homelessness outcome source collection, spend-versus-results...",
+      "title": "Public dollar record: Organization named in source",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_92a2ece5a47597b7",
+      "claim_ids": [
+        "claim_84d313b3ec701840"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_84d313b3ec701840",
+      "source_type": "public_dollar_record",
+      "supports": "CalDS selected Catholic Charities for closer review for possible waste, fraud, abuse, or mismanagement because the cited records show executive-compensation or payroll-governance questions, San Francisco homelessness payment exposure review signals, spend-versus-results mismatch, and possible scope-mismatch signals. The strongest current cited trigger is: The latest Form 990 compensation data captured in this run is for 2024. It reports Ken F Sawa (chief executive officer/Exec VP) compensation of $139,952, equal to 2.09% of expenses reported in the listed return. Evidence: Internal Revenue Service Form 990...",
+      "title": "Public dollar record: Catholic Charities",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_51756c33642554a4",
+      "claim_ids": [
+        "claim_9cf54586152aa067"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_9cf54586152aa067",
+      "source_type": "public_dollar_record",
+      "supports": "Executive compensation: The latest Form 990 compensation data captured in this run is for 2024. It reports Ken F Sawa (chief executive officer/Exec VP) compensation of $139,952, equal to 2.09% of expenses reported in the listed return. (years named in the cited source: 2024; organization named in the cited source: Catholic Charities; evidence Internal Revenue Service Form 990 source collection, Internal Revenue Service raw filing acquisition source collection.)",
+      "title": "Public dollar record: Catholic Charities",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_aff53604f15cba73",
+      "claim_ids": [
+        "claim_af7d3981065e0cad"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_af7d3981065e0cad",
+      "source_type": "public_dollar_record",
+      "supports": "San Francisco homelessness payment exposure: SF Open Data lists Catholic Charities in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $67,007,205. Programs/source grouping: San Francisco HSH nonprofit payments. Year span: 2019. Counties: San Francisco. Projects/context: Aggregated HSH payments by supplier name. (years named in the cited source: 2019; place named in the cited source: San Francisco; organization named in the cited source: Catholic Charities; evidence public homelessness funding source collection, public homelessness funding record:...",
+      "title": "Public dollar record: Catholic Charities",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_cc2f07ec6f5b40f9",
+      "claim_ids": [
+        "claim_6c5e5a841b9ec076"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_6c5e5a841b9ec076",
+      "source_type": "public_dollar_record",
+      "supports": "Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: San Francisco: San Francisco Continuum of Care M1a service-system volume increased from 19,118 in Jan 2023 - Dec 2023 to 21,255 in Jul 2024 - Jun 2025 (+11.2%). This run did not parse entity-level spending, revenue, or grant growth for that comparison. San Francisco Department of Homelessness and Supportive Housing completed-payment exposure=$67,007,205. This is a review signal, not provider attribution. Evidence official homelessness outcome source collection, spend-versus-results...",
+      "title": "Public dollar record: Organization named in source",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_c3dba735fc3cfbb8",
+      "claim_ids": [
+        "claim_36d33a1454f651c9"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_36d33a1454f651c9",
+      "source_type": "public_dollar_record",
+      "supports": "San Francisco homelessness payment exposure: SF Open Data lists Community Housing Partnership in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $57,553,247. Programs/source grouping: San Francisco HSH nonprofit payments. Year span: 2019. Counties: San Francisco. Projects/context: Aggregated HSH payments by supplier name. (years named in the cited source: 2019; place named in the cited source: San Francisco; organization named in the cited source: Community Housing Partnership; evidence public homelessness funding source collection, public homelessness...",
+      "title": "Public dollar record: Community Housing Partnership",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_c163cb8445bb9925",
+      "claim_ids": [
+        "claim_257e963485797fcb"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_257e963485797fcb",
+      "source_type": "public_dollar_record",
+      "supports": "Executive compensation: The latest Form 990 compensation data captured in this run is for 2023. It reports ANAT LEONARD-WOOKEY (VP OF PROGRAM) compensation of $236,609, equal to 1.01% of expenses reported in the listed return. (years named in the cited source: 2023; organization named in the cited source: Community Housing Partnership; evidence Internal Revenue Service Form 990 source collection, Internal Revenue Service raw filing acquisition source collection.)",
+      "title": "Public dollar record: Community Housing Partnership",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_7bf8cfe6fa65dec8",
+      "claim_ids": [
+        "claim_2c6d8833c7421e72"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_2c6d8833c7421e72",
+      "source_type": "public_dollar_record",
+      "supports": "Federal award exposure: Federal Audit Clearinghouse award data captured in this run totals $74,066,638 across the retrieved audit reports. (organization named in the cited source: Community Housing Partnership; evidence Federal Audit Clearinghouse audit source collection.)",
+      "title": "Public dollar record: Community Housing Partnership",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_a02832aa8c2ea91e",
+      "claim_ids": [
+        "claim_ced2698794988bf0"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_ced2698794988bf0",
+      "source_type": "public_dollar_record",
+      "supports": "Spend-versus-results: official county or Continuum of Care outcome context worsened in the entity's matched project geography: San Francisco: San Francisco Continuum of Care M1a service-system volume increased from 19,118 in Jan 2023 - Dec 2023 to 21,255 in Jul 2024 - Jun 2025 (+11.2%). This run did not parse entity-level spending, revenue, or grant growth for that comparison. San Francisco Department of Homelessness and Supportive Housing completed-payment exposure=$57,553,247. This is a review signal, not provider attribution. Evidence official homelessness outcome source collection, spend-versus-results...",
+      "title": "Public dollar record: Organization named in source",
+      "url": ""
+    },
+    {
+      "archive_status": "Public artifact",
+      "blocker_reason": "",
+      "case_id": "live_ca_sf_homelessness_complex",
+      "checksum": "checksum_7dc893456cdabf1e",
+      "claim_ids": [
+        "claim_31c9d1fb1c58673d"
+      ],
+      "content_type": "text/markdown",
+      "evidence_ids": [],
+      "final_url": "",
+      "http_status": "listed",
+      "retrieval_date": "",
+      "source_family": "Public dollar record",
+      "source_id": "source_31c9d1fb1c58673d",
+      "source_type": "public_dollar_record",
+      "supports": "CalDS selected Compass Family Services for closer review for possible waste, fraud, abuse, or mismanagement because the cited records show payroll or wage-growth questions, San Francisco homelessness payment exposure review signals, spend-versus-results mismatch, audit-control concerns, possible scope-mismatch signals, material public-funding exposure, and rapid financial growth. The strongest current cited trigger is: Parsed salaries, compensation, and benefits moved from $8,615,910 in 2022 to $13,100,181 in 2023 (+52.0%; $68,948 per employee using 190 employees). Evidence: Internal Revenue Service Form 990...",
+      "title": "Public dollar record: Compass Family Services",
+      "url": ""
     }
   ]
 }

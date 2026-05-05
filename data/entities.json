@@ -204,10 +204,13 @@
       "geography": "California",
       "issue_area": "Recovery and treatment services",
       "official_records_found": [],
-      "public_money_found": [],
+      "public_money_found": [
+        "CalDS flags Tarzana Treatment Centers Inc / Executive compensation: Latest listed return 2024 lists ALBERT SENELLA (PRESIDENT/chief executive officer) with total reportable/other compensation of $1,842,868, equal to 1.27% of listed expenses. Evidence: , . High executive pay at a publicly funded service nonprofit is a materiality and governance question; the reviewer needs to know whether pay, approval, and outcomes line up."
+      ],
       "red_flags": [],
       "source_ids": [
-        "source_47ab22ba6e740fb9"
+        "source_47ab22ba6e740fb9",
+        "source_7db3d7add22d53f2"
       ],
       "what_it_claims_to_do": ""
     },
@@ -239,10 +242,13 @@
       "geography": "California",
       "issue_area": "Recovery and treatment services",
       "official_records_found": [],
-      "public_money_found": [],
+      "public_money_found": [
+        "Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $68,101,243. Top listed program: BLOCK GRANTS FOR PREVENTION AND TREATMENT OF SUBSTANCE ABUSE at $44,537,114. (subject: Behavioral Health Services Inc; evidence , , , .)"
+      ],
       "red_flags": [],
       "source_ids": [
-        "source_75caf5e288355a20"
+        "source_75caf5e288355a20",
+        "source_d7b0f71c8b81b383"
       ],
       "what_it_claims_to_do": ""
     },
@@ -256,10 +262,17 @@
       "geography": "California",
       "issue_area": "Recovery and treatment services",
       "official_records_found": [],
-      "public_money_found": [],
+      "public_money_found": [
+        "Financial growth: Internal Revenue Service listed revenue moved from $19,243,515 in 2023 to $42,978,055 in 2024 (+123.3%). (year(s): 2023, 2024; subject: CRI-Help Inc; evidence , .)",
+        "Executive compensation: Latest listed return 2024 lists BRANDON FERNANDEZ-COMER (chief executive officer) with total reportable/other compensation of $235,530, equal to 1.38% of listed expenses. (year(s): 2024; subject: CRI-Help Inc; evidence , .)",
+        "Federal award exposure: Parsed Federal Audit Clearinghouse award amount total across retrieved reports is $118,010,797. Top listed program: MEDICAL ASSISTANCE PROGRAM at $97,783,530. (subject: CRI-Help Inc; evidence , , , .)"
+      ],
       "red_flags": [],
       "source_ids": [
-        "source_876f2c8a58206d20"
+        "source_876f2c8a58206d20",
+        "source_0934ed79e314a6cf",
+        "source_6f668b99ffc040a7",
+        "source_bea175e4718ed4ad"
       ],
       "what_it_claims_to_do": ""
     },
@@ -292,12 +305,17 @@
       "geography": "San Francisco",
       "issue_area": "Homelessness services",
       "official_records_found": [],
-      "public_money_found": [],
+      "public_money_found": [
+        "CalDS selected Brilliant Corners for closer review for possible waste, fraud, abuse, or mismanagement because the cited records show material public-funding exposure, San Francisco homelessness payment exposure review signals, spend-versus-results mismatch, and audit-control concerns. The strongest current cited trigger is: Federal Audit Clearinghouse award data captured in this run totals $155,994,121 across the retrieved audit reports. Evidence: Federal Audit Clearinghouse audit source collection, public homelessness funding source collection, public homelessness funding record: Brilliant Corners, official...",
+        "San Francisco homelessness payment exposure: SF Open Data lists Brilliant Corners in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $62,699,311. Programs/source grouping: San Francisco HSH nonprofit payments. Year span: 2019. Counties: San Francisco. Projects/context: Aggregated HSH payments by supplier name. (years named in the cited source: 2019; place named in the cited source: San Francisco; organization named in the cited source: Brilliant Corners; evidence public homelessness funding source collection, public homelessness funding record:..."
+      ],
       "red_flags": [
         "Latest matched Form 990 filing for Brilliant Corners: Employer Identification Number 562379862, tax period year 2023."
       ],
       "source_ids": [
-        "source_beafc8e6b2faec8e"
+        "source_beafc8e6b2faec8e",
+        "source_d3c320666cb13447",
+        "source_b0e4d7c24abdb274"
       ],
       "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
@@ -311,13 +329,18 @@
       "geography": "San Francisco",
       "issue_area": "Homelessness services",
       "official_records_found": [],
-      "public_money_found": [],
+      "public_money_found": [
+        "CalDS selected Catholic Charities for closer review for possible waste, fraud, abuse, or mismanagement because the cited records show executive-compensation or payroll-governance questions, San Francisco homelessness payment exposure review signals, spend-versus-results mismatch, and possible scope-mismatch signals. The strongest current cited trigger is: The latest Form 990 compensation data captured in this run is for 2024. It reports Ken F Sawa (chief executive officer/Exec VP) compensation of $139,952, equal to 2.09% of expenses reported in the listed return. Evidence: Internal Revenue Service Form 990...",
+        "San Francisco homelessness payment exposure: SF Open Data lists Catholic Charities in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $67,007,205. Programs/source grouping: San Francisco HSH nonprofit payments. Year span: 2019. Counties: San Francisco. Projects/context: Aggregated HSH payments by supplier name. (years named in the cited source: 2019; place named in the cited source: San Francisco; organization named in the cited source: Catholic Charities; evidence public homelessness funding source collection, public homelessness funding record:..."
+      ],
       "red_flags": [
         "Latest matched Form 990 filing for Catholic Charities: Employer Identification Number 953516461, tax period year 2024."
       ],
       "source_ids": [
         "source_4545e7396f339aaa",
-        "source_30e5a3ee1dfa75f0"
+        "source_30e5a3ee1dfa75f0",
+        "source_84d313b3ec701840",
+        "source_af7d3981065e0cad"
       ],
       "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
@@ -333,7 +356,11 @@
       "official_records_found": [
         "A San Francisco Controller announcement and audit report identify HomeRise, formerly Community Housing Partnership, as the provider in an audit of City-funded housing for unhoused residents."
       ],
-      "public_money_found": [],
+      "public_money_found": [
+        "San Francisco homelessness payment exposure: SF Open Data lists Community Housing Partnership in Department of Homelessness and Supportive Housing completed-payment aggregation with payment exposure of $57,553,247. Programs/source grouping: San Francisco HSH nonprofit payments. Year span: 2019. Counties: San Francisco. Projects/context: Aggregated HSH payments by supplier name. (years named in the cited source: 2019; place named in the cited source: San Francisco; organization named in the cited source: Community Housing Partnership; evidence public homelessness funding source collection, public homelessness...",
+        "Executive compensation: The latest Form 990 compensation data captured in this run is for 2023. It reports ANAT LEONARD-WOOKEY (VP OF PROGRAM) compensation of $236,609, equal to 1.01% of expenses reported in the listed return. (years named in the cited source: 2023; organization named in the cited source: Community Housing Partnership; evidence Internal Revenue Service Form 990 source collection, Internal Revenue Service raw filing acquisition source collection.)",
+        "Federal award exposure: Federal Audit Clearinghouse award data captured in this run totals $74,066,638 across the retrieved audit reports. (organization named in the cited source: Community Housing Partnership; evidence Federal Audit Clearinghouse audit source collection.)"
+      ],
       "red_flags": [
         "Latest matched Form 990 filing for Community Housing Partnership: Employer Identification Number 943112338, tax period year 2023."
       ],
@@ -341,7 +368,10 @@
         "source_49dbcf1126fe681a",
         "source_06122086150a97e5",
         "source_f691cbf0f378e4ba",
-        "source_3a3226cda0b61582"
+        "source_3a3226cda0b61582",
+        "source_36d33a1454f651c9",
+        "source_257e963485797fcb",
+        "source_2c6d8833c7421e72"
       ],
       "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
@@ -355,12 +385,15 @@
       "geography": "San Francisco",
       "issue_area": "Homelessness services",
       "official_records_found": [],
-      "public_money_found": [],
+      "public_money_found": [
+        "CalDS selected Compass Family Services for closer review for possible waste, fraud, abuse, or mismanagement because the cited records show payroll or wage-growth questions, San Francisco homelessness payment exposure review signals, spend-versus-results mismatch, audit-control concerns, possible scope-mismatch signals, material public-funding exposure, and rapid financial growth. The strongest current cited trigger is: Parsed salaries, compensation, and benefits moved from $8,615,910 in 2022 to $13,100,181 in 2023 (+52.0%; $68,948 per employee using 190 employees). Evidence: Internal Revenue Service Form 990..."
+      ],
       "red_flags": [
         "Latest matched Form 990 filing for Compass Family Services: Employer Identification Number 941156622, tax period year 2023."
       ],
       "source_ids": [
-        "source_d5646de584349230"
+        "source_d5646de584349230",
+        "source_31c9d1fb1c58673d"
       ],
       "what_it_claims_to_do": "No source-backed service description is shown in this public export."
     },
@@ -575,6 +608,21 @@
         "source_907b723ea823cbaa"
       ],
       "what_it_claims_to_do": "No source-backed service description is shown in this public export."
+    },
+    {
+      "case_ids": [
+        "live_ca_sf_homelessness_complex"
+      ],
+      "caveats": [],
+      "display_name": "Organization named in source",
+      "entity_id": "entity_4ab8cb1bdf4a6a39",
+      "geography": "",
+      "issue_area": "",
+      "official_records_found": [],
+      "public_money_found": [],
+      "red_flags": [],
+      "source_ids": [],
+      "what_it_claims_to_do": ""
     }
   ]
 }
