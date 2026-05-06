@@ -5,6 +5,7 @@
   const emptyMoney = document.querySelector(".empty-money");
   const sourceSearch = document.querySelector("#sourceSearch");
   const sourceRows = Array.from(document.querySelectorAll(".source-table tbody tr"));
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function setMoneyFilter(value) {
     let visibleCount = 0;
@@ -53,9 +54,8 @@
     });
   });
 
-  const revealTargets = document.querySelectorAll(".reveal, .chapter, .recent-source, .tip-note, .public-service");
+  const revealTargets = document.querySelectorAll(".reveal, .chapter, .recent-source, .tip-note, .public-service, .source-cabinet, .receipt-machine");
   revealTargets.forEach((node) => node.classList.add("reveal"));
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if ("IntersectionObserver" in window && !reduceMotion) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -73,24 +73,39 @@
     revealTargets.forEach((node) => node.classList.add("in-view"));
   }
 
-  window.addEventListener("scroll", () => {
+  function setScrollState() {
     if (reduceMotion) return;
-    const offset = Math.min(window.scrollY * 0.04, 32);
+    const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    const progress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
+    const offset = Math.min(window.scrollY * 0.04, 42);
     document.documentElement.style.setProperty("--paper-drift", `${offset}px`);
-  }, { passive: true });
+    document.documentElement.style.setProperty("--scroll-progress", progress.toFixed(4));
+  }
 
-  document.querySelectorAll(".case-ticket, .case-panel, .finding-card, .mini-receipt").forEach((card) => {
+  window.addEventListener("scroll", () => {
+    window.requestAnimationFrame(setScrollState);
+  }, { passive: true });
+  window.addEventListener("resize", setScrollState);
+
+  document.querySelectorAll(".case-ticket, .case-panel, .finding-card, .mini-receipt, .receipt-card").forEach((card) => {
     card.addEventListener("pointermove", (event) => {
       if (reduceMotion) return;
       const rect = card.getBoundingClientRect();
-      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
-      const y = ((event.clientY - rect.top) / rect.height - 0.5) * -8;
+      const localX = (event.clientX - rect.left) / rect.width;
+      const localY = (event.clientY - rect.top) / rect.height;
+      const x = (localX - 0.5) * 8;
+      const y = (localY - 0.5) * -8;
+      card.style.setProperty("--mx", `${Math.round(localX * 100)}%`);
+      card.style.setProperty("--my", `${Math.round(localY * 100)}%`);
       card.style.transform = `translateY(-4px) rotateX(${y}deg) rotateY(${x}deg)`;
     });
     card.addEventListener("pointerleave", () => {
       card.style.transform = "";
+      card.style.removeProperty("--mx");
+      card.style.removeProperty("--my");
     });
   });
 
   setMoneyFilter("all");
+  setScrollState();
 })();
