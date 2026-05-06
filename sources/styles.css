@@ -845,6 +845,15 @@ h3 {
   padding: clamp(90px, 11vw, 170px) clamp(22px, 5vw, 86px);
 }
 
+.chapter > *,
+.story-brief > *,
+.case-hero > *,
+.route-hero > *,
+.money-machine > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .pattern-chapter {
   min-height: 92dvh;
   align-items: center;
@@ -1001,20 +1010,26 @@ h3 {
 
 .receipt-roll {
   display: grid;
-  grid-template-columns: repeat(6, minmax(132px, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-auto-flow: dense;
   gap: 14px;
 }
 
 .receipt-card,
 .mini-receipt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   min-height: 234px;
+  overflow: hidden;
   padding: 24px;
   border: 1px solid rgba(23, 17, 11, .14);
   background:
     repeating-linear-gradient(0deg, rgba(23, 17, 11, .075) 0 1px, transparent 1px 38px),
     #fff8e7;
   box-shadow: 4px 4px 0 rgba(23, 17, 11, .12);
+  container-type: inline-size;
   transition: transform .22s ease, box-shadow .22s ease, opacity .22s ease;
   transform-style: preserve-3d;
 }
@@ -1028,18 +1043,21 @@ h3 {
 }
 
 .receipt-card:nth-child(7n + 3) {
-  grid-column: span 2;
+  grid-column: span 3;
 }
 
+.receipt-card__amount,
 .receipt-card strong,
-.mini-receipt span {
+.mini-receipt__amount {
   display: block;
+  max-width: 100%;
   color: var(--red);
   font-family: "IBM Plex Mono", monospace;
-  font-size: clamp(2rem, 3.9vw, 4rem);
+  font-size: clamp(1.45rem, 7.8cqw, 4rem);
   line-height: .94;
-  letter-spacing: 0;
+  letter-spacing: -.04em;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .receipt-card p,
@@ -1057,7 +1075,7 @@ h3 {
 }
 
 .source-jump {
-  margin-top: 20px;
+  margin-top: auto;
 }
 
 .empty-money {
@@ -1392,8 +1410,28 @@ h3 {
   min-height: 220px;
 }
 
-.mini-receipt span {
-  font-size: clamp(1.6rem, 2.5vw, 2.8rem);
+.mini-receipt__amount {
+  font-size: clamp(1.55rem, 8.5cqw, 2.8rem);
+}
+
+.mini-receipt__source {
+  margin-top: auto;
+}
+
+.mini-receipt__source span,
+.mini-receipt__source a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 10px;
+  color: var(--ink);
+  background: rgba(23, 17, 11, .08);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .finding-stack {
@@ -1500,6 +1538,7 @@ h3 {
   .capitol-rail,
   .loop-note,
   .public-service,
+  .verdict-note,
   .curiosity-card {
     display: none;
   }
@@ -1515,6 +1554,19 @@ h3 {
   .entity-folder:nth-child(n),
   .case-panel {
     grid-column: span 3;
+  }
+
+  .receipt-roll {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .receipt-card,
+  .receipt-card:nth-child(n) {
+    grid-column: span 2;
+  }
+
+  .receipt-card:nth-child(5n + 1) {
+    grid-column: span 4;
   }
 
   .marquee {
@@ -1635,6 +1687,7 @@ h3 {
   .machine-copy {
     position: relative;
     top: auto;
+    width: 100%;
   }
 
   .receipt-machine,
@@ -1652,7 +1705,12 @@ h3 {
   }
 
   .receipt-card strong {
-    font-size: clamp(2.2rem, 13vw, 3.4rem);
+    font-size: clamp(1.85rem, 12cqw, 3.1rem);
+  }
+
+  .filter-tab span {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
   .case-hero__art {
