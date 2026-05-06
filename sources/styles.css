@@ -699,8 +699,8 @@ h3 {
 
 .verdict-note {
   position: absolute;
-  right: clamp(260px, 24vw, 460px);
-  bottom: 166px;
+  right: clamp(24px, 4vw, 70px);
+  bottom: 238px;
   margin: 0;
   padding: 18px 22px;
   background: #f1ddba;
